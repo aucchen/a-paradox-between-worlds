@@ -1,0 +1,34 @@
+*comment This is a literal heart's choice... dont sue me cog
+*fake_choice
+    #❤️
+        *set heart_emoji "❤️"
+    #💖︄
+        *set heart_emoji "💖︄"
+    #💗︄
+        *set heart_emoji "💗︄"
+    #💚︄
+        *set heart_emoji "💚︄"
+    #💛︄
+        *set heart_emoji "💛︄"
+    #🧡︄
+        *set heart_emoji "🧡︄"
+    #💜︄
+        *set heart_emoji "💜︄"
+    #💝︄
+        *set heart_emoji "💝︄"
+    #💙︄
+        *set heart_emoji "💙︄"
+    #💞︄
+        *set heart_emoji "💞︄"
+    #🖤︄
+        *set heart_emoji "🖤︄"
+    #💟︄
+        *set heart_emoji "💟︄"
+    #😻︄
+        *set heart_emoji "😻︄"
+    #😍︄
+        *set heart_emoji "😍︄"
+    #<3
+        A classic.
+        *set heart_emoji "<3"
+*return

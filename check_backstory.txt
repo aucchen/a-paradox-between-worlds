@@ -1,0 +1,5 @@
+*temp bs_sum 0
+*set bs_sum (nv_info + (nv_elements + (nv_locations + (nv_characters + (nv_secrets + (nv_magic + (nv_bible)))))))
+*if bs_sum = 7
+    *achieve backstory
+*return

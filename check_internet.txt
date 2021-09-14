@@ -1,0 +1,22 @@
+*temp luna_sum 0
+*temp lux_sum 0
+*temp claire_sum 0
+*temp stella_sum 0
+*temp sofia_sum 0
+*temp karla_sum 0
+
+*set luna_sum (luna_ch1_seen + (luna_ch2_1_seen + (luna_ch2_2_seen + (luna_ch3_seen + (luna_ch4_seen + (luna_ch5_seen))))))
+*set lux_sum (lux_ch1_seen + (lux_ch2_1_seen + (lux_ch2_2_seen + (lux_ch3_seen + (lux_ch4_seen + (lux_ch5_seen))))))
+*set claire_sum (claire_ch1_seen + (claire_ch2_1_seen + (claire_ch2_2_seen + (claire_ch3_seen + (claire_ch4_seen + (claire_ch5_seen))))))
+*set sofia_sum (sofia_ch1_seen + (sofia_ch2_1_seen + (sofia_ch2_2_seen + (sofia_ch3_seen + (sofia_ch4_seen + (sofia_ch5_seen))))))
+*set stella_sum (stella_ch1_seen + (stella_ch2_1_seen + (stella_ch2_2_seen + (stella_ch3_seen + (stella_ch4_seen + (stella_ch5_seen))))))
+*set karla_sum (karla_ch1_seen + (karla_ch2_1_seen + (karla_ch2_2_seen + (karla_ch3_seen + (karla_ch4_seen + (karla_ch5_seen))))))
+
+*if (luna_sum = 6)
+    *if (lux_sum = 6)
+        *if (claire_sum = 6)
+            *if (sofia_sum = 6)
+                *if (stella_sum >= 5)
+                    *if (karla_sum = 6)
+                        *achieve internet
+*return

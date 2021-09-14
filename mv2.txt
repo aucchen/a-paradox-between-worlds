@@ -1,0 +1,3089 @@
+*set current_chapter 2
+[b]Movement 2: Fantasia-Impromptu[/b]
+
+[i]We all know that there are many "trolls" online -- people who get pleasure from going into enemy territory, being as obnoxious as possible, and then taking on all comers with all the aggressiveness and rudeness they can command.[/i]
+
+- Charlotte Lennox, The Ms. Scribe Story
+
+*page_break
+
+[b]Universe - Canon[/b]
+
+[b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 1: The Academy of Magi[/i] by G. T. Macmillan[/b]
+
+"It's not so hard," Astra said. "All you have to do is concentrate."
+
+But try as he might, Gali could not get the hang of wind magic. It wasn't like light magic, which was comparatively easy for him. Wind was a whole other beast. He memorized the formulae, recited them in his mind, focused on the target, and... Nothing.
+
+"You can't just memorize the formulae," Capella said. She was an Augur of Wind, so this was all natural to her. "You need to understand. You need to hold the semantics in your mind, not just the syntax."
+
+It was not the first time the two girls had tried to help Gali learn the principles of using magic outside of his light-bound range. But each time, it was hopeless. He was hopeless.
+
+Gali remembered the principles of magic, passed down so assiduously from teacher to student. Magic had two ingredients: the formula, and willpower. By holding the formula in his head while concentrating, a mage can channel his inner essence to the outside world. Formulae themselves were written in their own language, but it was a language of logic. He was fine at inscribing the formulae, but the concentration part, the toll of mental energy...
+
+*page_break A breeze stirred his hair...
+
+A breeze stirred his hair, brushing a few strands past his eyes. He tried to hold the same thoughts in his mind again, repeat the mental state, but it would not come.
+
+Capella stared at him with her piercing gaze. She must have thought him a failure, he thought. What if he simply could not do it? What if he failed out of the academy and had to go back to Galilee and become a farmer?
+
+At that moment, Tycho and Bruno walked through the door of the practice room. "What are you ladies doing here?" Bruno asked.
+
+*page_break "We're practicing windbound magic"
+
+"We're practicing windbound magic," Astra replied. "Wanna join?"
+
+"Nah, it's all so basic," Bruno said.
+
+But Tycho gazed at Gali, and must have recognized the frustration in the latter's eyes. That cursed stonebound instinct. "You can do it. I know it," he said.
+
+Gali was doing all he could to avoid exploding in frustration. He was taking deep breaths and reciting the equations when suddenly, Bruno rushed towards him. Fist raised. Gali let out a deep breath. The wind hit Bruno in the chest. It knocked him off balance, and he fell on his back.
+
+Bruno gave a salute and a wry smile as he got back on his feet. "I knew you had it in you," he said. Astra looked aghast, while Capella remained expressionless.
+
+"Now, can you repeat that performance?" she asked.
+
+*page_break Online
+
+[b]Online - Montage[/b]
+
+Another day, another night.
+
+*if (location = "bedroom")
+    Once more you find yourself alone in your bedroom, late at night, in front of your computer.
+*if (location = "living_room")
+    Once more you find yourself alone in the living room, late at night after everyone else has gone to bed.
+*if (location = "bed")
+    Once more you find yourself under the covers, late at night, with only your cell phone for company.
+A brief time in which you are allowed to exist for yourself.
+
+*gosub_scene calc_new_followers
+
+*gosub_scene check_blocked
+
+*temp read_count 0
+*temp luna_unread 1
+*temp brun_unread 1
+*temp shad_unread 1
+*temp nebu_unread 1
+*temp apoc_unread 1
+*temp trap_unread 1
+
+*temp luna_1_1_notes 0
+*temp luna_1_2_notes 578
+*temp luna_1_3_notes 13
+*temp luna_1_4_notes 6
+*temp luna_1_5_notes 342
+
+*temp brun_1_1_notes 599
+*temp brun_1_2_notes 17
+*temp brun_1_3_notes 1232
+*temp brun_1_4_notes 4
+*temp brun_1_5_notes 5
+
+*temp shad_1_1_notes 0
+*temp shad_1_2_notes 1032
+*temp shad_1_3_notes 88
+*temp shad_1_4_notes 4933
+*temp shad_1_5_notes 93
+
+*temp nebu_1_1_notes 324874
+*temp nebu_1_2_notes 78893
+*temp nebu_1_3_notes 511
+*temp nebu_1_4_notes 1348
+*temp nebu_1_5_notes 181
+
+*temp apoc_1_1_notes 467
+*temp apoc_1_2_notes 169584
+*temp apoc_1_3_notes 19920
+*temp apoc_1_4_notes 8762
+*temp apoc_1_5_notes 2598
+
+*temp trap_1_1_notes 821
+*temp trap_1_2_notes 291
+*temp trap_1_3_notes 3
+*temp trap_1_4_notes 4
+*temp trap_1_5_notes 11
+
+*temp luna_prog 1
+*temp brun_prog 1
+*temp shad_prog 1
+*temp nebu_prog 1
+*temp apoc_prog 1
+*temp trap_prog 1
+
+*temp annc_chat_ref "annc_chat_1"
+*temp writers_chat_ref "writers_chat_1"
+
+Internet weather report: fair so far. Storms lurk on the horizon; who knows where they're headed. But your small corner of the internet is doing just fine.
+
+*label montage_1
+
+Which blogs would you like to read?
+
+*choice
+    *selectable_if ((luna_blocked = false)) #@lunan0va
+        *set read_count + 1
+        *gotoref "luna_1_${luna_prog}"
+    *selectable_if ((lux_blocked = false)) #@brunova-official
+        *set read_count + 1
+        *gotoref "brun_1_${brun_prog}"
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+        *set read_count + 1
+        *gotoref "shad_1_${shad_prog}"
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+        *set read_count + 1
+        *gotoref "nebu_1_${nebu_prog}"
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+        *set read_count + 1
+        *gotoref "apoc_1_${apoc_prog}"
+    *selectable_if ((karla_blocked = false)) #@trappedinspace
+        *set read_count + 1
+        *gotoref "trap_1_${trap_prog}"
+    *disable_reuse *if ((in_claire_chat)) #See Claire's groupchat.
+        *gotoref writers_chat_ref
+    *disable_reuse *if ((in_luna_chat)) #See Luna's groupchat.
+        *gotoref annc_chat_ref
+    *if (read_count > 0) #Stop looking at blogs.
+        *goto montage1_end
+
+*label luna_1_1
+*set luna_prog 1
+[b]${luna_bio}[/b]
+
+[b]@lunan0va reblogged from @brunova-official at 8:30 PM. OP: @brunova-official[/b]
+
+Help my grandmother stay alive!
+
+Hey everyone, my abuela in Mexico has just been diagnosed with a brain tumor. There's a surgical procedure that could save her life, but they only do that procedure in a few hospitals in America, and none in Mexico. The problem is, it's going to cost us tens of thousands of dollars. I don't know if we can ever afford that.
+
+Can anyone help us out?
+
+[Picture of a child Lux with his grandmother]
+
+[Picture of the grandmother in a hospital gown, smiling and waving]
+
+[Link to fundraiser website]
+
+Thank you so much!
+
+Tags: #signal boost, #i asked my dad to let me donate. no new video games this month lol
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_interact + 1
+        *set brun_1_1_notes + 1
+        *set luna_blue %+ 2
+        *goto luna_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx lux_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set luna_interact + 1
+        *set brun_1_1_notes + 1
+        *set luna_blue %+ 3
+        *set lux_blue %+ 3
+        *set sympathy %+ 3
+        *goto luna_1_1
+    #Next post.
+        *goto luna_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_2
+*set luna_prog 2
+[b]@lunan0va reblogged from @radical-astra at 7:55 PM. OP: @lunan0va[/b]
+
+Content warning: transphobia
+
+*choice
+    #See post
+        *goto luna_1_2_post
+    #Next post
+        *goto luna_1_3
+    #Prev post
+        *goto luna_1_1
+
+*label luna_1_2_post
+So, I've spent a long time researching this theory... Please read it and tell me what you think!
+
+Title: Gali Nova is transfem-coded and here's why:
+
+Tl;dr: The name "Gali", being trapped in a literal closet and forced to confront your true feelings about yourself, being trapped in a closet again (on multiple occasions), feeling more at ease when around the girls up to the point of staying in their dorm (in like the most non-sexual way possible), "cross-dressing" in a way that's *not* portrayed as offensive or degrading, being naturally able to use both Light and Shadow magic, and yeah.
+
+(Read more)
+
+[b]@radical-astra:[/b]
+
+Lol this is insane. Troons say they don't reify gender stereotypes and then say shit like this.
+
+[b]@lunan0va:[/b]
+
+What is your problem here? Do you have an actual point?
+
+Tags: #transphobia cw, #reply
+
+${luna_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_1_2_notes + 1
+        *set luna_blue %+ 2
+        *goto luna_1_2_post
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set luna_1_2_notes + 1
+        *set luna_interact + 1
+        *set discourse %+ 3
+        *goto luna_1_2_post
+    #Next post.
+        *goto luna_1_3
+    #Prev post.
+        *goto luna_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_3
+*set luna_prog 3
+[b]@lunan0va reblogged from @trappedinspace 1 day ago. OP: @trappedinspace[/b]
+
+Okay I liked the trans girl gali headcanon so much I wrote a fic about it. It's the first time I've written fic in a while so uh. it might be cringe. Also some ellanova because.
+
+[Link to archive - "Beneath the Stars" by @capellanebula. ellanova, canon divergence, trans girl gali, happy ending]
+
+Tags: #trans girl gali, #fanfic, #omg!!!, #thank you!!!!
+
+${luna_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_1_3_notes + 1
+        *set luna_blue %+ 2
+        *set karla_blue %+ 3
+        *goto luna_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx karla_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set luna_interact + 1
+        *set luna_1_3_notes + 1
+        *set luna_blue %+ 2
+        *set karla_blue %+ 5
+        *set ellanova %+ 3
+        *set shipping %+ 3
+        *set gali %+ 2
+        *set capella %+ 2
+        *goto luna_1_3
+    #Next post.
+        *goto luna_1_4
+    #Prev post.
+        *goto luna_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_4
+*set luna_prog 4
+[b]@lunan0va reblogged from @lunan0va 1 day ago.[/b]
+
+This is an astrapella story I wrote... sorry if it's kind of angsty. It's exactly as the title says. I hope you can enjoy it.
+
+[Link to archive - "Holding hands until the end of the world" by @lunan0va. astrapella, hurt/comfort]
+
+Tags: #my fanfic, #astrapella, #nebulaverse fanfic, #holding hands until the end of the world, #i literally skipped homework for this so you'd better read it
+
+${luna_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_1_4_notes + 1
+        *set luna_interact + 1
+        *set luna_blue %+ 3
+        *goto luna_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set luna_1_4_notes + 1
+        *set luna_interact + 1
+        *set luna_blue %+ 5
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto luna_1_4
+    #Next post.
+        *goto luna_1_5
+    #Prev post.
+        *goto luna_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_5
+*set luna_ch2_1_seen 1
+*set luna_prog 5
+[b]@lunan0va reblogged from @cape11as 1 day ago. OP: @metastrapella[/b]
+
+Astrapella has some of the most sublime dynamics in the entirety of the Chronicles. The two of them have radically different value systems (see: Wind vs Ice), but they both manage to find similar expression in their passions for academics and magitech. So they have to work together, and hash out an understanding between their conflicting worldviews. And it turns out that they develop this sort of complicated understanding of each of their domains, of the other's triggers and trouble spots, and it just works. They're like two jigsaw puzzle pieces that don't seem to fit together at first, but when you turn them the right way, you see that they do fit together after all.
+
+And because no one likes femslash, this dynamic has gone totally unexplored.
+
+Tags: #astrapella, #meta, #this reminds me of an old friend :(, #she was in church and school with me, #she was really nice and we had really deep conversations about life and, #i thought we could talk about anything, #one day last year she said that she had a crush on me, #and i told her i was trans., #and... it could have been a lot worse., #she didn't call me gross or tell anyone else, #but... we just drifted apart. she didn't seem like she wanted to see me anymore., #we don't really hang out ever, #and like..., #i still don't know if i liked her back or if i wanted to be more like her, #or both?, #anyway sorry that was a 100% irrelevant rant, #idk what that has to do with astrapella im not kin or anything, #like if read i guess?
+
+${luna_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *if rx
+            *gosub_scene rx luna_like
+
+        *set luna_1_5_notes + 1
+        *set luna_blue %+ 5
+        *set luna_interact + 1
+        *goto luna_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx meta
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set luna_1_5_notes + 1
+        *set luna_interact + 1
+        *set luna_blue %+ 3
+        *set meta %+ 3
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto luna_1_5
+    #Prev post.
+        *goto luna_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_1
+*set brun_prog 1
+[b]${lux_bio}[/b]
+
+[b]@brunova-official reblogged from @brunova-official at 9:23 PM. OP: @brunova-official[/b]
+
+Help my grandmother stay alive!
+
+Hey everyone, my abuela in Mexico has just been diagnosed with a brain tumor. There's a surgical procedure that could save her life, but they only do that procedure in a few hospitals in America, and none in Mexico. The problem is, it's going to cost us tens of thousands of dollars. I don't know if we can ever afford that.
+
+Can anyone help us out?
+
+[Picture of a child Lux with his grandmother]
+
+[Picture of the grandmother in a hospital gown, smiling and waving]
+
+[Link to fundraiser website]
+
+Thank you so much!
+
+Tags: #self-reblog, #signal boost
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_1_notes + 1
+        *goto brun_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 3
+        *set brun_1_1_notes + 1
+        *set sympathy %+ 3
+        *goto brun_1_1
+    #Next post.
+        *goto brun_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label brun_1_2
+*set brun_prog 2
+[b]@brunova-official posted at 9:20 PM[/b]
+
+Anonymous asked: it is so obvious you're lying to get donations. Grandma with cancer? That's the oldest one in the book.
+
+Like literally what proof will be enough for you people?
+
+Here's the doctors note with attached MRIs. Hope you read Spanish.
+
+[image of the attached note]
+
+Here's the bill.
+
+[image of the bill]
+
+Here's some more pictures of me and her.
+
+[faded pictures of physical photos]
+
+Tags: #god f*ck this
+
+${brun_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_2_notes + 1
+        *set lux_blue %+ 1
+        *goto brun_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx sympathy
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 3
+        *set brun_1_2_notes + 1
+        *set sympathy %+ 3
+        *set discourse %+ 2
+        *goto brun_1_2
+    *disable_reuse #Comment that he's giving away too much information.
+        You comment that he should probably redact some of the information since it's enough to dox him probably. He replies surprisingly quickly.
+
+        @brunova-official: thanks... i'm gonna delete this post in a bit i guess.
+
+        *set lux_interact + 1
+        *set lux_blue %+ 5
+        *set brun_1_2_notes + 1
+        *goto brun_1_2
+    #Next post.
+        *goto brun_1_3
+    #Prev post.
+        *goto brun_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_3
+*set brun_prog 3
+[b]@brunova-official reblogged from @cyanstars at 9:17 PM. OP: @cyanstars[/b]
+
+[Fanart of Bruno Helios standing alone in his dorm room, leaning against the floor-to-ceiling window, staring outside. He is topless and wearing a chest binder. Outside, fires burn as meteors fall from the sky; the scene is of the First Invasion of Byblos as described in Book 3, Part 2: War Between Heaven and Earth. But Bruno's expression remains calm and collected.]
+
+Tags: #me, #bruno, #this is beautiful
+
+${brun_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_3_notes + 1
+        *goto brun_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 2
+        *set brun_1_3_notes + 1
+        *set gen %+ 3
+        *set bruno %+ 3
+        *goto brun_1_3
+    #Next post.
+        *goto brun_1_4
+    #Prev post.
+        *goto brun_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label brun_1_4
+*set brun_prog 4
+[b]@brunova-official posted at 9:07 PM[/b]
+
+Anonymous asked: isn't it a bit selfish for you to get hormones while your grandma is dying? Can't your hormone money be used for her?
+
+I'm on medi-cal so it barely costs anything. and she can't get on medi-cal insurance since she's not american.
+
+Tags: #anyway fuck medical and fuck you
+
+${brun_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set lux_interact + 1
+        *set brun_1_4_notes + 1
+        *goto brun_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_green %+ 5
+        *set brun_1_4_notes + 1
+        *set discourse %+ 3
+        *goto brun_1_4
+    #Next post.
+        *goto brun_1_5
+    #Prev post.
+        *goto brun_1_3
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_5
+*set lux_ch2_1_seen 1
+*set brun_prog 5
+[b]@brunova-official posted at 8:08 PM[/b]
+
+So I guess it's pretty obvious but I won't be making it to nebulacon. This sucks so much.
+
+Tags: #sorry...
+
+${brun_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_5_notes + 1
+        *set lux_blue %+ 3
+        *goto brun_1_5
+    *disable_reuse #Reblog the post, despite the general etiquette being not to reblog posts like this.
+        *if rx
+            *gosub_scene rx lux_dislike
+
+        *set rb_count + 1
+        *set brun_1_5_notes + 1
+        *set lux_green %+ 5
+        *goto brun_1_5
+    #Prev post.
+        *goto brun_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label shad_1_1
+*set shad_prog 1
+[b]${claire_bio}[/b]
+
+[b]@shadow-protectrix reblogged from @brunova-official at 9:11 PM. OP: @brunova-official[/b]
+
+Help my grandmother stay alive!
+
+Hey everyone, my abuela in Mexico has just been diagnosed with a brain tumor. There's a surgical procedure that could save her life, but they only do that procedure in a few hospitals in America, and none in Mexico. The problem is, it's going to cost us tens of thousands of dollars. I don't know if we can ever afford that.
+
+Can anyone help us out?
+
+[Picture of a child Lux with his grandmother]
+
+[Picture of the grandmother in a hospital gown, smiling and waving]
+
+[Link to fundraiser website]
+
+Thank you so much!
+
+Tags: #signal boost, #help lux out!
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_1_notes + 1
+        *goto shad_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set brun_1_1_notes + 1
+        *set lux_blue %+ 3
+        *set sympathy %+ 3
+        *goto shad_1_1
+    #Next post
+        *goto shad_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_2
+*set shad_prog 2
+[b]@shadow-protectrix posted at 6:51 PM[/b]
+
+The schedule for NebulaCon is here! We'll see you in Louisville in only a month! Unfortunately we couldn't bring our beloved author, but we'll have plenty of other fascinating special guests, including writers, artists, and creators from right here within the fandom!
+
+@noncanonical
+*line_break
+@nebulascribbler
+*line_break
+@monadcore
+*line_break
+@bruno-helios
+*line_break
+@cyanstars
+*line_break
+@theweaveroflight
+*line_break
+...Among others!
+
+[Link to schedule]
+
+[Gif of a man waving excitedly]
+
+[Gif of a person blowing out birthday candles]
+
+[Gif of the actors for Gali and Bruno hugging]
+
+Tags: #nebulacon
+
+${shad_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_2_notes + 1
+        *set claire_blue %+ 1
+        *goto shad_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_2_notes + 1
+        *set claire_blue %+ 3
+        *set gen %+ 3
+        *goto shad_1_2
+    #Next post.
+        *goto shad_1_3
+    #Prev post.
+        *goto shad_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_3
+*set shad_prog 3
+[b]@shadow-protectrix posted at 6:20 PM[/b]
+
+NebulaCon will have a ball pit. I repeat, NebulaCon will have a ball pit. This is not a drill.
+
+[Gif of adult man jumping into a huge ball pit in a swimming pool]
+
+[Gif of a man flailing his arms excitedly]
+
+[Gif of a man holding a pizza box walking into a burning room, zooming in on his face]
+
+Tags: #nebulacon
+
+${shad_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_3_notes + 1
+        *set claire_blue %+ 1
+        *goto shad_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx gen
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_3_notes + 1
+        *set karla_green %+ 2
+        *set claire_blue %+ 3
+        *set gen %+ 3
+        *set shitposting %+ 2
+        *goto shad_1_3
+    #Next post.
+        *goto shad_1_4
+    #Prev post.
+        *goto shad_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_4
+*set shad_prog 4
+[b]@shadow-protectrix reblogged from @puellainsomnio at 6:08 PM. OP: @puellainsomnio[/b]
+
+[fanart of Bruno Helios, overlaid with the lyrics to Regina Spektor's "Blue Lips". In the first image, he is a child, sitting down in shallow blue water stretching endlessly, staring at the sky, reaching up towards the sun.]
+
+[In the next image he is older, wearing the uniform of the Pulsar Academy, trudging on a green field. He is staring at the grass in front of him, eyes intense.]
+
+[In the third image, Bruno is on a battlefield surrounded by drones firing energy blasts in all directions. He is an island of calm, standing amidst the destruction, as if surrounded by a force field.]
+
+"But when he tried to walk again / he wasn't a child"
+
+Tags: #bruno, #fanart, #i love regina spektor so much
+
+${shad_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_4_notes + 1
+        *goto shad_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx lux_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set claire_blue %+ 2
+        *set lux_blue %+ 2
+        *set claire_interact + 1
+        *set shad_1_4_notes + 1
+        *set gen %+ 5
+        *set bruno %+ 3
+        *goto shad_1_4
+    #Next post.
+        *goto shad_1_5
+    #Prev post.
+        *goto shad_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_5
+*set claire_ch2_1_seen 1
+*set shad_prog 5
+[b]@shadow-protectrix posted at 6:06 PM[/b]
+
+Anonymous asked: I cannot imagine how you get so much done, with writing and planning the con.
+
+Don't forget my kids!
+
+(The secret is that I don't have a day job. This is my day job.)
+
+Tags: #ask, #anonymous
+
+${shad_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_5_notes + 1
+        *goto shad_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_5_notes + 1
+        *set claire_blue %+ 5
+        *set karla_green %+ 1
+        *set shitposting %+ 3
+        *goto shad_1_5
+    #Prev post.
+        *goto shad_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label nebu_1_1
+*set nebu_prog 1
+[b]${sofia_bio}[/b]
+
+[b]@nebulascribbler reblogged from @brunova-official at 8:55 PM. OP: @brunova-official[/b]
+
+Help my grandmother stay alive!
+
+Hey everyone, my abuela in Mexico has just been diagnosed with a brain tumor. There's a surgical procedure that could save her life, but they only do that procedure in a few hospitals in America, and none in Mexico. The problem is, it's going to cost us tens of thousands of dollars. I don't know if we can ever afford that.
+
+Can anyone help us out?
+
+[Picture of a child Lux with his grandmother]
+
+[Picture of the grandmother in a hospital gown, smiling and waving]
+
+[Link to fundraiser website]
+
+Thank you so much!
+
+Tags: #donation post
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_interact + 1
+        *set brun_1_1_notes + 1
+        *goto nebu_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set sofia_blue %+ 1
+        *set lux_blue %+ 2
+        *set brun_1_1_notes + 1
+        *set sympathy %+ 3
+        *goto nebu_1_1
+    #Next post.
+        *goto nebu_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label nebu_1_2
+*set nebu_prog 2
+[b]@nebulascribbler reblogged from @shadow-protectrix at 6:53 PM. OP: @shadow-protectrix[/b]
+
+The schedule for NebulaCon is here! We'll see you in Louisville in only a month! Unfortunately we couldn't bring our beloved author, but we'll have plenty of other fascinating special guests, including writers, artists, and creators from right here within the fandom!
+
+@noncanonical
+*line_break
+@nebulascribbler
+*line_break
+@monadcore
+*line_break
+@bruno-helios
+*line_break
+@cyanstars
+*line_break
+@theweaveroflight
+*line_break
+...Among others!
+
+[Link to schedule]
+
+[Gif of a man waving excitedly]
+
+[Gif of a person blowing out birthday candles]
+
+[Gif of the actors for Gali and Bruno hugging]
+
+[b]@nebulascribbler:[/b]
+
+omg I am SO EXCITED to be in this!!!!
+
+Tags: #nebulacon
+
+${shad_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_blue %+ 1
+        *set sofia_interact + 1
+        *set shad_1_2_notes + 1
+        *goto nebu_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx sofia_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set sofia_blue %+ 2
+        *set claire_blue %+ 2
+        *set karla_green %+ 2
+        *set sofia_interact + 1
+        *set shad_1_2_notes + 1
+        *set gen %+ 3
+        *goto nebu_1_2
+    #Next post.
+        *goto nebu_1_3
+    #Prev post.
+        *goto nebu_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label nebu_1_3
+*set nebu_prog 3
+[b]@nebulascribbler reblogged from @camillamacaulay at 6:22 PM. OP: @summersnow[/b]
+
+[Artwork of Astra Van Allen and Capella Taikong. Astra lies on a bed of white flowers, eyes closed, while Capella kneels next to her, hand in hand.]
+
+"Someone will remember us, I say / even in another time"
+
+(Sappho, trans. Anne Carson)
+
+This is for Sofia @nebulascribbler, based on her fic Someone will remember us!
+
+[b]@sapphicsunflower:[/b]
+
+I know this quote is a bit overplayed on here but it gets me every time.
+
+Tags: #astrapella, #art, #i know i've already reblogged it but this is so amazing
+
+${nebu_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_interact + 1
+        *set sofia_blue %+ 1
+        *set nebu_1_3_notes + 1
+        *goto nebu_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx luna_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set luna_blue %+ 2
+        *set sofia_blue %+ 2
+        *set nebu_1_3_notes + 1
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto nebu_1_3
+    #Next post.
+        *goto nebu_1_4
+    #Prev post.
+        *goto nebu_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label nebu_1_4
+*set nebu_prog 4
+[b]@nebulascribbler reblogged from @metacapella at 6:20 PM. OP: @canonautumnc[/b]
+
+I've made a nebulaverse OC generator! Check this out: https://perchance.org/xbvdqjmp77
+
+It's pretty basic right now, just character names and personae and stuff.
+
+Tags: #this is cool, #Estelle Copernicus is a 5th year student who is an Augur of Metal. They are a server who is friends with Gali Nova., #that's like... a whole backstory right there!!!
+
+${nebu_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_interact + 1
+        *set sofia_blue %+ 1
+        *set nebu_1_4_notes + 1
+        *goto nebu_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set sofia_blue %+ 2
+        *set nebu_1_4_notes + 1
+        *set gen %+ 3
+        *goto nebu_1_4
+    #Next post.
+        *goto nebu_1_5
+    #Prev post.
+        *goto nebu_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label nebu_1_5
+*set sofia_ch2_1_seen 1
+*set nebu_prog 5
+[b]@nebulascribbler posted at 5:51 PM[/b]
+
+FINALLY my new Astrapella oneshot is done and published! It's another standalone, not part of the broader MWiYH continuity.
+
+[Link to archive - "Jupiter in her hair" by @nebulascribbler. astrapella, angst, hurt/comfort]
+
+I'm really sorry to say that this is another angsty one, taking place after the Battle of Ephesus...
+
+Tags: #nebulaverse, #fanfic, #astrapella, #astra van allen, #capella taikong, #my fanfic
+
+${nebu_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_1_5_notes + 1
+        *set sofia_blue %+ 1
+        *goto nebu_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set nebu_1_5_notes + 1
+        *set sofia_blue %+ 3
+        *set stella_blue %+ 2
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto nebu_1_5
+    #Prev post.
+        *goto nebu_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+*label apoc_1_1
+*set apoc_prog 1
+[b]${stella_bio}[/b]
+
+[b]@apocalypse-hoarder reblogged from @brunova-official at 8:30 PM. OP: @brunova-official[/b]
+
+Help my grandmother stay alive!
+
+Hey everyone, my abuela in Mexico has just been diagnosed with a brain tumor. There's a surgical procedure that could save her life, but they only do that procedure in a few hospitals in America, and none in Mexico. The problem is, it's going to cost us tens of thousands of dollars. I don't know if we can ever afford that.
+
+Can anyone help us out?
+
+[Picture of a child Lux with his grandmother]
+
+[Picture of the grandmother in a hospital gown, smiling and waving]
+
+[Link to fundraiser website]
+
+Thank you so much!
+
+Tags: #queueasimodo, #boost
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_1_notes + 1
+        *goto apoc_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set brun_1_1_notes + 1
+        *set lux_blue %+ 2
+        *set stella_blue %+ 2
+        *set sympathy %+ 3
+        *goto apoc_1_1
+    #Next post.
+        *goto apoc_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label apoc_1_2
+*set apoc_prog 2
+[b]@apocalypse-hoarder reblogged from @sevenpennies at 8:00 PM. OP: unknown[/b]
+
+[gif from a TV show of a brain scan, where the head convulses and shakes, the lights in the brain turning to black.]
+
+This is someone dying while having an MRI scan. Before you die, your brain releases tons and tons of endorphins that make you feel a range of emotions. Tragically beautiful.
+
+Tags: #queueasimodo
+
+${apoc_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_2_notes + 1
+        *goto apoc_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set karla_green %+ 10
+        *set stella_blue %+ 1
+        *set apoc_1_2_notes + 1
+        *set shitposting %+ 5
+        *goto apoc_1_2
+    *disable_reuse #Reblog one of the people commenting that this is actually from a zombie TV show.
+        *set rb_count + 1
+        You reblog one of the people saying that this post is fiction, that this is not a real brain scan at all, that it's from a zombie TV show. Does that make you feel better about this abject disinformation?
+        
+        *set apoc_1_2_notes + 1
+        *goto apoc_1_3
+    #Next post.
+        *goto apoc_1_3
+    #Prev post.
+        *goto apoc_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label apoc_1_3
+*set apoc_prog 3
+[b]@apocalypse-hoarder reblogged from @puellainsomnio at 7:30 PM. OP: @helioss[/b]
+
+[b]@helioss[/b]:
+
+Predictions for End of the Shadow Nebula, go
+
+[b]@komm-susser-todd[/b]:
+
+Ariel's actions will make everyone in the empire dissolve into gray goop and then merge into a collective hivemind.
+
+[b]@anillusivewoman[/b]:
+
+The book is gonna have multiple endings and you'll pick from one of them, like a choose-your-adventure book. But all of these endings have Gali dying in self-sacrifice somehow and/or the entire nebula getting destroyed.
+
+[b]@blick-winkel[/b]:
+
+The reader is a character in the story all along. And you're changing the story by reading it. Like the Heisenberg effect or something like that (GTM's gonna come up with something). The only way the characters will get a good ending is if you stop reading.
+
+[b]@tjlc-johnlocked[/b]:
+
+Gali will turn out to have a secret evil twin sister who's been manipulating all of the events of the series from the very start. And the entirety of books 4 and 5 will be in Gali's mind.
+
+[b]@puellainsomnio[/b]:
+
+Gali will literally become the new God of the nebula.
+
+Tags: #queueasimodo, #this is a perfect post
+
+${apoc_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_3_notes + 1
+        *goto apoc_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx meta
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 2
+        *set sofia_blue %+ 2
+        *set apoc_1_3_notes + 1
+        *set meta %+ 4
+        *goto apoc_1_3
+    #Next post.
+        *goto apoc_1_4
+    #Prev post.
+        *goto apoc_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label apoc_1_4
+*set apoc_prog 4
+[b]@apocalypse-hoarder reblogged from @nonbinarycatmom at 7:00 PM. OP: @shadowsofyourheart[/b]
+
+[Fanart of Astra and Capella overlaid with the lyrics to Cosmic Love by Florence and the Machine. The images are animated gifs. The first two frames are side-profile portraits of Astra and Capella over backgrounds of meteor showers. Astra is facing left and Capella is facing right. Their eyes contain reflections of the stars and meteor showers.]
+
+[The next two frames show stars fading, as during the use of the Blackout Spell during the Battle of Ephesus in Book 3, Part 2: War Between Heaven and Earth. The stars and moons are blinking out of existence.]
+
+[There are frames for every line in the lyrics, showing mostly Astrapella but also some of the other characters, with hints of Brunova.]
+
+if i haven't posted anything for a while, it's because i've been working on this for a really, really long time. i'm glad to finally release it to the world...
+
+i love florence and this song especially, so so much.
+
+Tags: #astrapella, #brunova, #fav, $this is beautiful!!!, #queueasimodo
+
+${apoc_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_4_notes + 1
+        *set stella_blue %+ 1
+        *goto apoc_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx gen
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 5
+        *set apoc_1_4_notes + 1
+        *set gen %+ 3
+        *set shipping %+ 5
+        *set astrapella %+ 3
+        *set brunova %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto apoc_1_4
+    #Next post.
+        *goto apoc_1_5
+    #Prev post.
+        *goto apoc_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label apoc_1_5
+*set stella_ch2_1_seen 1
+*set apoc_prog 5
+[b]@apocalypse-hoarder reblogged from @nonbinarycatmom at 6:30 PM. OP: @u-n-owen-was-her[/b]
+
+Does anyone else think that Gali's character arc in Book 4 is a metaphor for the Obama presidency? Think about it: the heir to the empire sacrifices the Administrator (academia) and betrays Astra (social programs) in order to suck up to the fascist dictator Ariel (the GOP), who feels an irrational loyalty to the Demiurge (Reagan), a figure whom Ariel does not truly know or understand.
+
+Gali then goes on to confront Tycho (the increasingly dispossessed and disillusioned middle class) and Bruno (Bruno), and is increasingly becoming distant from the Creator (true leftism), who nevertheless has an unreasonable amount of trust in him despite his failures at enacting the Creator's goals.
+
+It just makes too much sense.
+
+Tags: #lol, #does this count as a meta, #meta, #queueasimodo
+
+${apoc_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_5_notes + 1
+        *goto apoc_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx shitposting
+            *gosub_scene rx meta
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 3
+        *set apoc_1_5_notes + 1
+        *set shitposting %+ 3
+        *set meta %+ 3
+        *goto apoc_1_5
+    #Prev post.
+        *goto apoc_1_3
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label trap_1_1
+*set trap_prog 1
+[b]${karla_bio}[/b]
+
+[b]@trappedinspace reblogged from @lunan0va at 9:00 PM. OP: @brunova-official[/b]
+
+Help my grandmother stay alive!
+
+Hey everyone, my abuela in Mexico has just been diagnosed with a brain tumor. There's a surgical procedure that could save her life, but they only do that procedure in a few hospitals in America, and none in Mexico. The problem is, it's going to cost us tens of thousands of dollars. I don't know if we can ever afford that.
+
+Can anyone help us out?
+
+[Picture of a child Lux with his grandmother]
+
+[Picture of the grandmother in a hospital gown, smiling and waving]
+
+[Link to fundraiser website]
+
+Thank you so much!
+
+Tags: #mutual aid
+
+${brun_1_1_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_1_notes + 1
+        *goto trap_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx karla_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set brun_1_1_notes + 1
+        *set lux_blue %+ 2
+        *set karla_blue %+ 2
+        *set sympathy %+ 3
+        *goto trap_1_1
+    #Next post.
+        *goto trap_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_2
+*set trap_prog 2
+[b]@trappedinspace reblogged from @redcapella 1 day ago. OP: @anomalocaridae[/b]
+
+Me going on ts roadmap dot org in 7th grade as part of a "research project": I sure hope this doesn't awaken anything in me!!!
+
+[b]@kshamasawantofficial:[/b]
+
+Me taking the cogiati as a "joke" in 9th grade: I hope this doesn't set back my mental development by ten years!
+
+[b]@evelyn-ecstacy:[/b]
+
+Me bookmarking tg storytime dot com in 10th grade: I just think this is good writing, that's all!
+
+Tags: #me reading the wikipedia page for aut*g*neph*lia in 9th grade: this isn't going to mess up my mind for the next five years at all
+
+${trap_1_2_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_2_notes + 1
+        *set karla_blue %+ 1
+        *goto trap_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        Wait. Do you even understand the post? Is this something that you relate to?
+
+        *choice
+            #As a trans girl, yeah...
+                Okay. You reblogged the post.
+
+                *set is_trans_girl true
+                *set karla_interact + 1
+                *set trap_1_2_notes + 1
+                *set karla_blue %+ 3
+                *set shitposting %+ 3
+            #Um, about that...
+                Okay. You reblogged the post.
+
+                *set karla_interact + 1
+                *set trap_1_2_notes + 1
+                *set karla_blue %+ 3
+                *set shitposting %+ 3
+            #No, but I'll reblog it anyway.
+                Karla's probably going to think you're weird.
+
+                *set karla_interact + 1
+                *set trap_1_2_notes + 1
+                *set shitposting %+ 3
+            #Actually, I won't reblog it.
+                Probably for the best.
+
+        *goto trap_1_2
+    #Next post.
+        *goto trap_1_3
+    #Prev post.
+        *goto trap_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_3
+*set trap_prog 3
+[b]@trappedinspace posted 1 day ago[/b]
+
+Anonymous asked: still, you're really capellanebula!!! i loved all your capella-centric fics!!! no one ever did ellanova from capella's pov like you... also it must be super annoying to get asked this but are you ever gonna finish the ww2 ellanova AU??!
+
+Yeah, I still get emails every time someone comments (it went from every day to once a week to like once a month now). If I'm feeling bad, it's one of the things that always makes me feel a little better. Even if they're stories written by a "me" that no longer exists, even if I don't really do ellanova anymore, they're still a part of what made me the person I am. Capella meant a ton to me as an adopted foreign kid growing up in the middle of nowhere; I really identified a lot with her.
+
+Don't worry about asking anything (I don't get a lot of asks here anyway). As for that series, the only way I imagine I'll continue is if Gali becomes an analogue for Christine Jorgensen lol. But it's never going to happen. I've moved on. That story is not something on my mind anymore.
+
+Tags: #anonymous, #ask, #god im nostalgic now, #for a childhood and adolescence i never had
+
+${trap_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_3_notes + 1
+        *set karla_blue %+ 2
+        *goto trap_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 2
+        *set trap_1_3_notes + 1
+        *set gen %+ 3
+        *goto trap_1_3
+    #Next post.
+        *goto trap_1_4
+    #Prev post.
+        *goto trap_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label trap_1_4
+*set trap_prog 4
+[b]@trappedinspace posted 1 day ago[/b]
+
+Anonymous asked: wait you're capellanebula from ffnet????? i've been following a celebrity all this time and i didn't realize it??? also i didn't know you were a girl!!!
+
+Unfortunately yeah. I'm not trying to hide it, but I try not to advertise it either. I've changed a lot from when I was 15, and not necessarily in the obvious ways.
+
+Tags: #anonymous, #ask, #thanks for remembering me lol, #that was a different epoch
+
+${trap_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_4_notes + 1
+        *set karla_blue %+ 2
+        *goto trap_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 1
+        *set trap_1_4_notes + 1
+        *set gen %+ 3
+        *goto trap_1_4
+    #Next post.
+        *goto trap_1_5
+    #Prev post.
+        *goto trap_1_3
+    #Look at another blog.
+        *goto montage_1
+
+
+*label trap_1_5
+*set karla_ch2_1_seen 1
+*set trap_prog 5
+[b]@trappedinspace posted 2 days ago[/b]
+
+Okay I liked the trans girl gali headcanon so much I wrote a fic about it. It's the first time I've written fic in a while so uh. it might be cringe. Also some ellanova because.
+
+[Link to archive - "Beneath the Stars" by @capellanebula. ellanova, canon divergence, trans girl gali, happy ending]
+
+Tags: #writing, #fanfic, #trans girl gali, #yes fanfic is inherently Cringe but. so are we all.
+
+${luna_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_1_3_notes + 1
+        *set karla_blue %+ 3
+        *goto trap_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 5
+        *set luna_1_3_notes + 1
+        *set shipping %+ 3
+        *set ellanova %+ 3
+        *set capella %+ 2
+        *set gali %+ 2
+        *goto trap_1_5
+    #Prev post.
+        *goto trap_1_4
+    #Look at another blog.
+        *goto montage_1
+
+*label writers_chat_1
+
+Right, you've been invited to Claire's Nebulaverse writers groupchat. It doesn't seem too busy right now. There are some messages from yesterday and earlier today.
+
+*label writers_chat_1_1
+
+[b]Nebulaverse Fandom Writer's Chat[/b]
+
+@shadow-protectrix: listen the wildest thing happened to me today. I was at the library and I saw someone reading fanfiction on the computer. And they were reading one of mine!
+
+@nebulascribbler: OMG that is wild!!! 😂😂😂
+
+@nebulascribbler: I literally cannot imagine someone reading my fics in the wild
+
+@nonbinarycatmom: wow 🤣
+
+@nebulascribbler: Also this is random but could I get a beta for my next brunova fic? I haven't written them in a while and I don't know if I'm getting them right. Thanks!
+
+@auguroflight: I'll look at it.
+
+@nonbinarycatmom: yeah i can read it!
+
+@nebulascribber: Thank you! I'll dm the link.
+
+...
+
+@brunova-official: hey sorry for barging in, but could you guys boost my donation post?
+
+@nebulascribbler: Yes, of course!.
+
+@shadow-protectrix: I am so sorry that this is happening to you, Lux. Is there anything else we could do to help?
+
+@brunova-official: the only thing that'll help is money
+
+@brunova-official: so just reblog the post i guess
+
+@shadow-protectrix: Already done. I wish I could do more to help 🙁
+
+...
+
+@shadow-protectrix: Also, hello $!{handle}! Welcome to our humble abode ;)
+
+@shadow-protectrix: We have cookies in the pantry and milks in the fridge. Feel free to take anything you want :)
+
+*choice
+    #Um, thanks?
+        *set claire_blue %+ 3
+        *set sofia_blue %+ 4
+        *label writers_chat_1_2
+        *set writers_chat_ref "writers_chat_1_2"
+        @you: um, thanks...
+
+        @shadow-protectrix: NP! It's great that you're here!
+
+        @shadow-protectrix: Feel free to talk about anything here! Nebulaverse-related or otherwise :)
+
+        @shadow-protectrix: Anyway, sorry but it's kind of getting late... I have to get off the computer now.
+
+        @shadow-protectrix: See you later $!{handle}.
+        *goto montage_1
+    #Look at something else.
+        *goto montage_1
+
+*label annc_chat_1
+
+This is the chat group that Luna invited you into.
+
+*label annc_chat_1_1
+
+[b]Anti-Nebulaverse Nebulaverse Club[/b]
+
+@lunan0va: the concept of a multiverse is super cool!
+
+@lunan0va: so like... multiverses exist so anything is possible... anything that can exist is existing somewhere? so there's a universe where i'm a cis girl? and there's a universe where the chronicles is literally real? 
+
+@trappedinspace: There's actually a philosophy paper kind of about this. Check out Possible Girls by Neil Sinhababu. Actually don't check it out because it sucks but, uh, it exists.
+
+@lunan0va: :D
+
+@lunan0va: i'm reading it and i don't really get it lol
+
+@trappedinspace: lol don't worry about it.
+
+@lunan0va: hey @${username} your fic is about the multiverse right?
+
+*choice
+    *hide_reuse #yeah...
+        *set posted_ch2_annc1 true
+        *set luna_blue %+ 3
+        *goto annc_chat_1_2
+    #Look at another blog
+        *goto montage_1
+
+
+*label annc_chat_1_2
+*set annc_chat_ref "annc_chat_1_2"
+@you: yeah...
+
+@lunan0va: that's so cool! i wish i could be smart enough to understand that stuff...
+
+@capellasgf: oh hey @${username}! what's this about your fic?
+
+*choice
+    #It's a metafictional narrative exploring how stories are constructed.
+        *set followers + 1
+        *set annc_chat_ref "annc_chat_1_3_1"
+        *label annc_chat_1_3_1
+        @you: it's a metafictional narrative exploring how stories are constructed.
+        *goto annc_chat_1_3
+    #It's about traveling to different fandom inspired worlds.
+        *set followers + 1
+        *set annc_chat_ref "annc_chat_1_3_2"
+        *label annc_chat_1_3_2
+        @you: it's basically about travelling to different fandom-inspired worlds.
+        *goto annc_chat_1_3
+    #It's about quantum mechanics.
+        *set followers + 1
+        *set annc_chat_ref "annc_chat_1_3_3"
+        *label annc_chat_1_3_3
+        @you: it's actually about quantum mechanics and how that relates to narratives...
+        *goto annc_chat_1_3
+    #Look at another blog
+        *goto montage_1
+
+*label annc_chat_1_3
+*set knows_laura true
+
+@capellasgf: that sounds super cool! i'm gonna have to start reading it
+
+@capellasgf: by the way, i'm laura! nice to meet you!
+
+@you: hi laura...
+
+The chat seems to have died down.
+
+*choice
+    #Look at something else.
+        *goto montage_1
+
+*label montage1_end
+
+You're done reading blogs for tonight. You should probably go to bed.
+
+*page_break Another day, another night...
+
+*gosub_scene fic_ice
+
+
+*label mv2_pt2
+*page_break
+*if in_claire_chat and in_luna_chat
+    *achieve people
+
+[b]Universe - Canon[/b]
+
+[b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 2: Planetary Dreams[/i] by G. T. Macmillan[/b]
+
+Gali slipped on the goggles. Just as Astra had described, he saw his friends as silhouettes of different colors. Tycho was a deep navy blue. Bruno was lime green. Astra was violet. And Capella was gray with a purple tinge.
+
+"What does this all mean?" asked Tycho.
+
+"You understand how all colors are a combination of red, green, and blue?" began Astra, but Bruno cut in.
+
+"I thought all colors were made of yellow, cyan, and magenta," said the boy.
+
+*page_break Astra sighed.
+
+Astra sighed. "Those are subtractive colors, for ink. These are additive colors, for light. Anyway, my point was, each of the primary colors you see in a person represent how they perceive of you. Blue for friendship, red for love, and green for enmity. Blue plus red makes magenta, blue plus green makes cyan, and red plus green makes yellow. Those mean exactly what you'd guess."
+
+Bruno jutted in again. "Huh, I didn't know you were-"
+
+"Shut up! Anyway, my point was, this could be a useful tool for understanding each other, so there will never be uncertainty about where we stand."
+
+Capella and Tycho had both ripped off their goggles.
+
+*page_break "This isn't right."
+
+"This isn't right," said Tycho, his soft voice quivering. "No one should have this knowledge. To peer into another's soul like this, it feels perverse. It feels wrong."
+
+Capella nodded. "This toy is just another prison. Right now, Astra, I just saw your color darken, just by a tinge. You disagree with me. What if we were constantly aware of how each other felt? Wouldn't it be paralyzing, to be always worrying about how you're perceived? How could one ever act?"
+
+But Bruno just shrugged. "I don't see what's so wrong. Isn't it better for us to keep each other honest?"
+
+"For once I agree with the brute," said Astra.
+
+"So your color is-"
+
+"Shut up!"
+
+*page_break Gali was silent...
+
+Gali was silent throughout this discourse. He did not know what to think. He wondered what color he appeared as in their eyes. But part of him did not want to know. It was terrifying, being perceived in others' eyes. What if they saw something in him that he did not recognize himself?
+
+*page_break
+
+[A/N: to peer into the souls of your internet acquaintances, go to the Show Stats page and check out the Relationships.]
+
+*page_break
+
+[b]Online - Montage[/b]
+*temp read_count 0
+*temp luna_unread 1
+*temp brun_unread 1
+*temp shad_unread 1
+*temp nebu_unread 1
+*temp apoc_unread 1
+*temp trap_unread 1
+
+*temp luna_2_1_notes 6
+*temp luna_2_2_notes 16
+*temp luna_2_3_notes 11
+*temp luna_2_4_notes 21
+*temp luna_2_5_notes 5
+
+*temp brun_2_1_notes 187
+*temp brun_2_2_notes 3
+*temp brun_2_3_notes 1432
+*temp brun_2_4_notes 3141
+*temp brun_2_5_notes 5837
+
+*temp shad_2_1_notes 59
+*temp shad_2_2_notes 54
+*temp shad_2_3_notes 232
+*temp shad_2_4_notes 23932
+*temp shad_2_5_notes 1089
+
+*temp nebu_2_1_notes 324874
+*temp nebu_2_2_notes 176
+*temp nebu_2_3_notes 213
+*temp nebu_2_4_notes 1219
+*temp nebu_2_5_notes 76291
+
+*temp apoc_2_1_notes 467
+*temp apoc_2_2_notes 16584
+*temp apoc_2_3_notes 102
+*temp apoc_2_4_notes 33
+*temp apoc_2_5_notes 25
+
+*temp trap_2_1_notes 821
+*temp trap_2_2_notes 108
+*temp trap_2_3_notes 11
+*temp trap_2_4_notes 232
+*temp trap_2_5_notes 7
+
+*temp luna_prog 1
+*temp brun_prog 1
+*temp shad_prog 1
+*temp nebu_prog 1
+*temp apoc_prog 1
+*temp trap_prog 1
+
+*gosub_scene calc_new_followers
+
+*gosub_scene check_blocked
+
+It's nearly midnight in your time zone. Online feels different tonight. Something is off. The vibes are wrong, like the static in the air right before a thunderstorm. Darkness is coming. You'll find out what's going on soon enough.
+
+*label montage_2
+
+Which blogs would you like to read?
+
+
+*choice
+    *selectable_if ((luna_blocked = false) and (luna_following)) #@lunan0va
+        *set read_count + 1
+        *gotoref "luna_2_${luna_prog}"
+    *selectable_if ((lux_blocked = false)) #@brunova-official
+        *set read_count + 1
+        *gotoref "brun_2_${brun_prog}"
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+        *set read_count + 1
+        *gotoref "shad_2_${shad_prog}"
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+        *set read_count + 1
+        *gotoref "nebu_2_${nebu_prog}"
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+        *set read_count + 1
+        *gotoref "apoc_2_${apoc_prog}"
+    *selectable_if ((karla_blocked = false)) #@trappedinspace
+        *set read_count + 1
+        *gotoref "trap_2_${trap_prog}"
+    *if (read_count > 1) #See GTM's post that everyone's talking about.
+        *goto gtm_post
+    *disable_reuse *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
+        *goto annc_chat_2
+    *disable_reuse *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
+        *goto writers_chat_2
+    *if (read_count > 0) #Stop looking at blogs.
+        *goto montage2_end
+
+*label luna_2_1
+*set luna_prog 1
+[b]${luna_bio}[/b]
+
+[b]@lunan0va posted at 11:57 PM[/b]
+
+Okay one last post bc I'm about to die from reading all these fricking asks
+
+God fuck gtm. Just fuck her for posting that shit. So many fuckin fancy words just to say that you hate trans people. I hope all transphobes die and this includes GTM.
+
+Tags: #moondust, #d/ont r/eblog, #anyway all transphobes can die
+
+${luna_2_1_notes} note@{luna_2_1_notes=1 |s}
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_interact + 1
+        *set luna_2_1_notes + 1
+        *set luna_blue %+ 4
+        *goto luna_2_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_st_dislike
+
+        *set rb_count + 1
+        *set luna_interact + 1
+        *set luna_2_1_notes + 1
+        *set luna_green + 25
+        Luna messages you:
+
+        @lunan0va: hey can you delete the post you just reblogged?
+        *choice
+            #Delete the post.
+                *set luna_green - 24
+                *set luna_2_1_notes - 1
+                You delete the post and let Luna know.
+
+                @lunan0va: thanks
+                *goto luna_2_1
+            #No. I'm a total asshole.
+                @lunan0va: :(
+
+                @lunan0va: why?
+
+                @lunan0va: is it really that big of a deal?
+                *choice
+                    #Just delete the post.
+                        *set luna_2_1_notes - 1
+                        *set luna_green - 15
+                        @lunan0va: thanks
+                        *goto luna_2_1
+                    #No.
+                        *set luna_green + 10
+                        *set luna_blue - 10
+                        @lunan0va: fine. whatever. just don't keep on doing this.
+                        *goto luna_2_1
+        *goto luna_2_1
+    #Next post.
+        *goto luna_2_2
+    #Look at another blog.
+        *goto montage_2
+
+*label luna_2_2
+*set luna_prog 2
+[b]@lunan0va posted at 11:34 PM[/b]
+
+Content warning: transphobia, slurs
+
+*choice
+    #See post
+        *goto luna_2_2_post
+    #Next post
+        *goto luna_2_3
+    #Prev post
+        *goto luna_2_1
+
+*label luna_2_2_post
+[b]@lunan0va posted at 11:34 PM[/b]
+
+Aaaaaaand the asks are rolling in!
+
+[Screenshot of an ask: Anonymous asked: I'm sorry for what she said about you. That was totally out of line.]
+
+Thanks.
+
+Anonymous asked: hey gtm fucked up here you were right 
+
+Anonymous asked: gtm is literally picking fights with a 16 year old what the fuck is wrong with that.
+
+Anonymous asked: hey don't let the transphobes get you down! You're an amazing person!
+
+Thanks to all of you...
+
+Anonymous asked: Macmillan was right. You'll never be a real woman.
+
+Anonymous asked: why do you hate women lol
+
+Anonymous asked: I'm glad gtm finally spoke up about people like you. You're the toxic presence making this site worse.
+
+And we have these. Like, do you think you can do worse than my parents? Do you think I've never heard stuff like this?
+
+Anonymous asked: when you die scientists will know that you're a male by the ridges on your skull :)
+
+Okay nvm that's a new one. Good thing my people do cremations!
+
+Anonymous asked: lol "gali is a trans girl" how delusional can you get. Are you brain damaged. Oh wait you are 'cause you're a tranny.
+
+Did you even read my post.
+
+Okay I should really. Go do homework or something. But god I can't stop thinking about this stuff.
+
+Tags: #moondust, #transphobia cw, #slurs cw
+
+${luna_2_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_2_2_notes + 1
+        *goto luna_2_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set luna_2_2_notes + 1
+        *set luna_interact + 1
+        *set luna_green %+ 2
+        *set discourse %+ 3
+        *goto luna_2_2
+    #Next post.
+        *goto luna_2_3
+    #Prev post.
+        *goto luna_2_1
+    #Look at another blog.
+        *goto montage_2
+
+*label luna_2_3
+*set luna_prog 3
+[b]@lunan0va posted at 10:40 PM[/b]
+
+No I'm not fine actually. This was transphobic as fuck right? Like the whole point of that article is that I'm "erasing women" somehow? By being trans? That I'm taking away rights for women? That's pretty fucked up.
+
+Okay I got called a mentally ill (derogatory) degenerate (got the first part right) and gtm went full mask off on transphobia. Is that right? Am I hallucinating?
+
+Honestly I'm still kinda in shock. This can't be happening.
+
+Tags: #moondust, #d/ont r/eblog
+
+${luna_2_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_2_3_notes + 1
+        *goto luna_2_3
+    *disable_reuse #Reblog the post.
+        Are you sure you want to reblog a post that's tagged "don't reblog"?
+        *choice
+            #Yes, reblog it.
+                Okay, you've reblogged it.
+
+                *if rx
+                    *gosub_scene rx luna_st_dislike
+                    *gosub_scene rx discourse
+
+                *set rb_count + 1
+                *set luna_interact + 1
+                *set luna_2_3_notes + 1
+                *set luna_blue %- 5
+                *set luna_green %+ 20
+                *goto luna_2_3
+            #No, never mind.
+                Good choice.
+
+                *goto luna_2_3
+    #Next post.
+        *goto luna_2_4
+    #Prev post.
+        *goto luna_2_2
+    #Look at another blog.
+        *goto montage_2
+
+*label luna_2_4
+*set luna_prog 4
+*set luna_ch2_2_seen 1
+[b]@lunan0va reblogged from @lunan0va at 10:31 PM[/b]
+
+God gtm literally posted about me. That was about my post. Wow wow wow.
+
+[b]@lunan0va:[/b]
+
+Okay I literally do not have the brainpower to read that shit I just had a calc midterm and this is like... how many pages of text again
+
+[b]@lunan0va:[/b]
+
+So I got called a brain-dead degenerate by gtm. Fun fun fun fun fun I'm fine I'm doing fine I'm doing fine I'm okay I'm okay
+
+
+Tags: #moondust, #d/ont r/eblog
+
+${luna_2_4_notes} notes
+
+(the next few posts are the previous reblogs of this post.)
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_2_4_notes + 1
+        *set luna_interact + 1
+        *set luna_blue %+ 4
+        *goto luna_2_4
+    *disable_reuse #Reblog the post.
+        Are you sure you want to reblog a post that's tagged "don't reblog"?
+        *choice
+            #Yes, reblog it.
+                Okay, you've reblogged it.
+
+                *if rx
+                    *gosub_scene rx luna_st_dislike
+                    *gosub_scene rx discourse
+
+                *set rb_count + 1
+                *set luna_interact + 1
+                *set luna_2_4_notes + 1
+                *set discourse %+ 5
+                *set luna_blue %- 5
+                *set luna_green %+ 20
+                *goto luna_2_4
+            #No, never mind.
+                Good choice.
+
+                *goto luna_2_4
+    #Prev post.
+        *goto luna_2_3
+    #Look at another blog.
+        *goto montage_2
+
+
+*label brun_2_1
+*set brun_prog 1
+[b]${lux_bio}[/b]
+
+[b]@brunova-official reblogged from @nebulascribbler at 10:30 PM. OP: @nebulascribbler[/b]
+
+Hey, did you hear what gtm just said? She said that according to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care...
+
+[This appears to be the entire script of Bee Movie (2007). It takes nearly a minute to scroll through.]
+
+${brun_2_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_2_1_notes + 1
+        *goto brun_2_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx sofia_like
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx discourse
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 2
+        *set sofia_blue %+ 2
+        *set karla_green %+ 5
+        *set luna_green %+ 5
+        *set discourse %+ 3
+        *set shitposting %+ 3
+        *set brun_2_1_notes + 1
+        *goto brun_2_1
+    #Next post.
+        *goto brun_2_2
+    #Look at another blog.
+        *goto montage_2
+
+*label brun_2_2
+*set brun_prog 2
+[b]@brunova-official posted at 9:59 PM[/b]
+
+okay i do not want to talk about gtm and i do not want to hear about gtm. just don't.
+
+Tags: #js;adfj;lksdj;slajfsjafs;
+
+${brun_2_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_2_2_notes + 1
+        *set lux_blue %+ 3
+        *goto brun_2_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_green %+ 5
+        *set discourse %+ 3
+        *set brun_2_2_notes + 1
+        *goto brun_2_2
+    #Next post.
+        *goto brun_2_3
+    #Prev post.
+        *goto brun_2_1
+    #Look at another blog.
+        *goto montage_2
+
+
+*label brun_2_3
+*set brun_prog 3
+[b]@brunova-official reblogged from @brunova-official at 8:23 PM[/b]
+
+Help my grandmother stay alive!
+
+Hey everyone, my abuela in Mexico has just been diagnosed with a brain tumor. There's a surgical procedure that could save her life, but they only do that procedure in a few hospitals in America, and none in Mexico. The problem is, it's going to cost us tens of thousands of dollars. I don't know if we can ever afford that.
+
+Can anyone help us out?
+
+[Picture of a child Lux with his grandmother]
+
+[Picture of the grandmother in a hospital gown, smiling and waving]
+
+[Link to fundraiser website]
+
+Thank you so much!
+
+[b]@brunova-official:[/b]
+
+As a reminder i'm open to fic/art commissions to pay for my abuela's cancer treatment! We can negotiate rates! For examples of my art, see below! No nsf/w or gore, and I can't do furry or detailed machinery.
+
+[collection of line art and some colored portraits, mostly of Nebulaverse characters in various poses, with a lot of Bruno and Gali.]
+
+Also here's my fanfics: [link to archive profile for @brunova-official]
+
+Tags: #donation post, #reminder that this is still going on
+
+${brun_2_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_2_3_notes + 1
+        *goto brun_2_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 4
+        *set brun_2_3_notes + 1
+        *set sympathy %+ 3
+        *goto brun_2_3
+    #Next post.
+        *goto brun_2_4
+    #Prev post.
+        *goto brun_2_2
+    #Look at another blog.
+        *goto montage_2
+
+*label brun_2_4
+*set brun_prog 4
+[b]@brunova-official reblogged from @bruno-helios at 6:59 PM. OP: @bruno-helios[/b]
+
+[This is a multi-panel comic of Bruno and Gali. "Do you know happened when the universe was born?" Gali asks. "The Binary Bible tells us that the Creator created the universe out of a need  for love, but that isn't true. The Demiurge and the Creator were born from the same origin, and the creation of our world was nothing more than an accident. What if the books that we were all taught weren't the words of Abraxas at all, but edited by the emperor in order to instill conformity?"]
+
+[There is a panel without dialogue, just Bruno staring at Gali. Bruno responds, "Do you know what will happen when the universe dies?"]
+
+[In the next panel, Bruno kisses Gali on the lips.]
+
+["This is what happens when the universe ends," says Bruno.]
+
+Don't tag as kin or id
+
+Tags: #brunova, #<3
+
+${brun_2_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_2_4_notes + 1
+        *set lux_blue %+ 1
+        *goto brun_2_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 3
+        *set brun_2_4_notes + 1
+        *set shipping %+ 4
+        *set brunova %+ 4
+        *set bruno %+ 3
+        *set gali %+ 3
+        *goto brun_2_4
+    #Next post.
+        *goto brun_2_5
+    #Prev post.
+        *goto brun_2_3
+    #Look at another blog.
+        *goto montage_2
+
+
+*label brun_2_5
+*set lux_ch2_2_seen 1
+*set brun_prog 5
+[b]@brunova-official reblogged from @tychoshelios at 7:12 PM. OP: @gayjizzwailer[/b]
+
+Because for some cursed reason I *still* see newly out guys do it: DO NOT BIND WITH ACE BANDAGES!!! It can literally break your ribs and do permanent damage to your lungs. Also don't wear your binder while sleeping, don't wear it for longer than 10 hours.
+
+Tags: #yeah this, #important
+
+${brun_2_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_2_5_notes + 1
+        *set lux_blue %+ 1
+        *goto brun_2_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set brun_2_5_notes + 1
+        *set lux_blue %+ 3
+        *set sympathy %+ 3
+        *goto brun_2_5
+    #Prev post.
+        *goto brun_2_4
+    #Look at another blog.
+        *goto montage_2
+
+
+
+*label shad_2_1
+*set shad_prog 1
+[b]${claire_bio}[/b]
+
+[b]@shadow-protectrix posted at 9:51 PM.[/b]
+
+Yes, I've read macmillian's latest comments. No, I will not be responding. Nor will I be commenting on other people's reactions.
+
+I have to put my youngest to bed. I don't have time for this right now.
+
+Tags: #gtm
+
+${shad_2_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_2_1_notes + 1
+        *goto shad_2_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_2_1_notes + 1
+        *set claire_blue %+ 3
+        *set karla_green %+ 1
+        *set discourse %+ 3
+        *goto shad_2_1
+    #Next post
+        *goto shad_2_2
+    #Look at another blog.
+        *goto montage_2
+
+*label shad_2_2
+*set shad_prog 2
+[b]@shadow-protectrix reblogged from @shadow-protectrix at 9:01 PM. OP: unknown[/b]
+
+It's Thursday, so you know what that means.
+
+[gif of Bruno, Gali, and Astra dancing in a circle from the Chronicles of the Shadow Nebula Book 2 movie]
+
+Reblog for OT3 Thursday!
+
+@auraweaver:
+
+OT3 Thursday!!!
+
+[gif of Bruno winking at Astra while Gali looks at the both of them, seemingly in jealousy]
+
+@reaperbruno:
+
+Why not OT5 Thursday?
+
+[gifs of all of the main 5 characters in various states of passionate gazes]
+
+@shadow-protectrix:
+
+Yes! OT5 Thursday!
+
+[gifs of almost every possible pair among the 5 making eye contact and hand contact with each other]
+
+[another 10 comments interspersed with gifs]
+
+[this post is a thousand pages long]
+
+Tags: #happy ot5 thursday
+
+${shad_2_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set claire_blue %+ 1
+        *set shad_2_2_notes + 1
+        *goto shad_2_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_2_2_notes + 1
+        *set claire_blue %+ 3
+        *set luna_green %+ 3
+        *set karla_green %+ 3
+        *set shitposting %+ 5
+        *goto shad_2_2
+    #Next post.
+        *goto shad_2_3
+    #Prev post.
+        *goto shad_2_1
+    #Look at another blog.
+        *goto montage_2
+
+*label shad_2_3
+*set shad_prog 3
+[b]@shadow-protectrix reblogged from @shadow-protectrix at 8:30 PM[/b]
+
+[Link to archive - "Mars, Bringer of War", Chapter 11 by @shadow-protectrix. brunova, canon divergence, enemies to lovers]
+
+[i]Mars, Bringer of War[/i] Chapter 11 is out! In this chapter:
+
+- Bruno discovers a secret of the magi.
+
+- The invasion of the Academy begins.
+
+- Gali gets a gun!!!
+
+Tags: #my fics, #mbow, #self-reblog
+
+${shad_2_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_2_3_notes + 1
+        *set claire_blue %+ 1
+        *goto shad_2_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_2_3_notes + 1
+        *set claire_blue %+ 3
+        *set shipping %+ 3
+        *set brunova %+ 3
+        *set bruno %+ 2
+        *set gali %+ 2
+        *goto shad_2_3
+    #Next post.
+        *goto shad_2_4
+    #Prev post.
+        *goto shad_2_2
+    #Look at another blog.
+        *goto montage_2
+
+*label shad_2_4
+*set shad_prog 4
+[b]@shadow-protectrix reblogged from @fyeahnebulaverse 1 day ago. OP: @fyeahnebulaverse[/b]
+
+[this post consists of a set of gifs from the trailer of the upcoming Chronicles movie, an adaptation of Book 4, Part 2: The Book of Birth.]
+
+[animated gif of Gali grabbing Bruno's hand, pulling him from an explosion. Their uniforms are charred and dirty.]
+
+[Animated gif of Capella spinning in a circle in a grassy clearing backdropped by the night sky, dancing to herself during a meteor shower]
+
+[animated gif of a shot-reverse shot of Gali and Tycho in conversation at the academy, serious expressions backlit with golden light]
+
+[animated gif of a fleet spaceships careening towards a blue and green planet, as another fleet of spaceships approaches. Golden beams of light erupt. Explosions ensue.]
+
+Chronicles of the Shadow Nebula, Book 4, Part 1: The Book of Birth
+
+[b]@shadow-protectrix:[/b]
+
+OMG I am so excited to finally watch this at NebulaCon with y'all!!!
+
+Tags: #nebulacon, #movie4
+
+${shad_2_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_2_4_notes + 1
+        *set claire_blue %+ 1
+        *goto shad_2_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set claire_blue %+ 3
+        *set claire_interact + 1
+        *set shad_2_4_notes + 1
+        *set gen %+ 3
+        *goto shad_2_4
+    #Next post.
+        *goto shad_2_5
+    #Prev post.
+        *goto shad_2_3
+    #Look at another blog.
+        *goto montage_2
+
+*label shad_2_5
+*set claire_ch2_2_seen 1
+*set shad_prog 5
+[b]@shadow-protectrix posted 1 day ago[/b]
+
+Hey y'all, NebulaCon is coming in no more than three weeks!!! Since it's coincidental with the premier of the Book 4 Part 1 movie, as a lot of people have requested, we will be hosting a screening of the premier, with a new guest, Nathan Emory, who you probably better know as Eridanus Sputnik from Book 2!!!
+
+[gif of an anime character with eyes sparkling in excitement.]
+
+[gif of a movie character shedding his coat, with "MY BODY IS READY" in Impact text at the bottom.]
+
+Tags: #nebulacon
+
+${shad_2_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_2_5_notes + 1
+        *set claire_blue %+ 1
+        *goto shad_2_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_2_5_notes + 1
+        *set claire_blue %+ 3
+        *set karla_green %+ 1
+        *set gen %+ 3
+        *goto shad_2_5
+    #Prev post.
+        *goto shad_2_4
+    #Look at another blog.
+        *goto montage_2
+
+
+
+*label nebu_2_1
+*set nebu_prog 1
+[b]${sofia_bio}[/b]
+
+[b]@nebulascribbler posted at 9:30 PM[/b]
+
+Hey, did you hear what gtm just said? She said that according to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care...
+
+[This appears to be the entire script of Bee Movie (2007). It takes nearly a minute to scroll through.]
+
+Tags: #gtm
+
+${brun_2_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_2_1_notes + 1
+        *goto nebu_2_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx discourse
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set brun_2_1_notes + 1
+        *set sofia_blue %+ 2
+        *set discourse %+ 3
+        *set shitposting %+ 3
+        *goto nebu_2_1
+    #Next post.
+        *goto nebu_2_2
+    #Look at another blog.
+        *goto montage_2
+
+
+*label nebu_2_2
+*set nebu_prog 2
+[b]@nebulascribbler posted at 9:19 PM[/b]
+
+So we're gonna start saying that Hatsune Miku wrote the Chronicles of the Shadow Nebula, right? 
+
+Tags: #gtm
+
+${nebu_2_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_blue %+ 1
+        *set nebu_2_2_notes + 1
+        *goto nebu_2_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx shitposting
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set sofia_blue %+ 2
+        *set sofia_interact + 1
+        *set nebu_2_2_notes + 1
+        *set shitposting %+ 3
+        *set discourse %+ 2
+        *goto nebu_2_2
+    #Next post.
+        *goto nebu_2_3
+    #Prev post.
+        *goto nebu_2_1
+    #Look at another blog.
+        *goto montage_2
+
+*label nebu_2_3
+*set nebu_prog 3
+[b]@nebulascribbler reblogged from @noncanonical at 9:10 PM. OP: @noncanonical[/b]
+
+I have read the entirety of GTM's latest post. No, your eyes aren't lying to you, this is transphobic, and in fact it is disturbing how rife it is with the latest in transphobic rhetoric. I'll deconstruct some of it below the cut.
+
+(Read more)
+
+Tags: #so this is happening..., #sigh...
+
+${nebu_2_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_blue %+ 1
+        *set sofia_interact + 1
+        *set nebu_2_3_notes + 1
+        *goto nebu_2_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+            *gosub_scene rx meta
+
+        *set rb_count + 1
+        *set sofia_blue %+ 1
+        *set sofia_interact + 1
+        *set nebu_2_3_notes + 1
+        *set discourse %+ 3
+        *set meta %+ 2
+        *goto nebu_2_3
+    #Next post.
+        *goto nebu_2_4
+    #Prev post.
+        *goto nebu_2_2
+    #Look at another blog.
+        *goto montage_2
+
+*label nebu_2_4
+*set nebu_prog 4
+[b]@nebulascribbler reblogged from @monadcore at 6:33 PM. OP: @theweaveroflight[/b]
+
+Anonymous asked: what do you think of the theory that Astra has fallen in love with Emperor Ariel? And that they'll end up together somehow?
+
+[i]Deep sigh[/i] I hoped I wouldn't get asked this. Listen, people, Stockholm syndrome is not a good foundation for romance to blossom! Not to mention that Astra viscerally despises Ariel; she isn't a hateful person by any means, so it means a lot that she actually dislikes someone. And contrary to popular belief, disliking someone is not a sign that you're secretly in love with them.
+
+[b]@astrastellar:[/b]
+
+You know what? No. Fuck this. Fuck you. This is internalized misogyny. People loooove ships like br*unova that are abusive as fuck as long as it's all about the men. But once you actually have a ship where the woman thinks for herself and rejects the confines of polite society, it's "Stockholm syndrome"? Puritans like you don't have any tolerance for moral complexity. You just want your stories to tell you how you should feel. You don't have the deep reading skills necessary to read between the lines to see what's actually going on. Not to mention you only give this treatment to the ships that are popular with women.
+
+[b]@theweaveroflight:[/b]
+
+Okay, what the fuck are you talking about? Brunova and ariastra aren't anything alike! For one, neither Bruno nor Gali is a several-hundred-year-old man who is the emperor and also a mass murderer. Neither of them have tried to kill or torture the other, as far as we know. And just fyi, literally every ship here is "popular with women" so that argument doesn't fly.
+
+[b]@monadcore:[/b]
+
+Can we absolutely not do this? Please???
+
+[b]@nebulascribbler:[/b]
+
+Yeah, everyone's entitled to their opinions but please try to be a bit less over-the-top.
+
+Tags: #meta, #discourse
+
+${nebu_2_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_blue %+ 1
+        *set nebu_2_4_notes + 1
+        *goto nebu_2_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx lux_dislike
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx discourse
+            *gosub_scene rx meta
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set sofia_blue %+ 2
+        *set luna_green %+ 2
+        *set lux_green %+ 2
+        *set karla_green %+ 2
+        *set nebu_2_4_notes + 1
+        *set meta %+ 3
+        *set discourse %+ 4
+        *goto nebu_2_4
+    #Next post.
+        *goto nebu_2_5
+    #Prev post.
+        *goto nebu_2_3
+    #Look at another blog.
+        *goto montage_2
+
+*label nebu_2_5
+*set sofia_ch2_2_seen 1
+*set nebu_prog 5
+[b]@nebulascribbler reblogged from @nonbinarycatmom at 4:33 PM. OP: @starsandshadows[/b]
+
+Hey everyone! You might remember me as the artist and animator who first created the sample for "Half Full, Half Empty." That one piece got a better reception than anything I've ever done before. Well guess what: we're turning this into an actual cartoon! I'm working with @ahistoricallyqueer who created the concept as the writer, along with @itsbrittany and @aceagentcarter as artists!
+
+[link to fundraising website]
+
+We need $16000 total to make 6 20-minute episodes. Most of that money will be going to salaries, so that we can pay rent and eat while we work on this and not have take extra part-time jobs.
+
+Thank you all so much!!!!!
+
+Tags: #half full half empty, #do it!!!
+
+${nebu_2_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_2_5_notes + 1
+        *goto nebu_2_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx lux_dislike
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set nebu_2_5_notes + 1
+        *set sofia_blue %+ 3
+        *set luna_green %+ 2
+        *set lux_green %+ 8
+        *set karla_green %+ 5
+        *set shitposting %+ 3
+        *goto nebu_2_5
+    #Prev post.
+        *goto nebu_2_4
+    #Look at another blog.
+        *goto montage_2
+
+
+*label apoc_2_1
+*set apoc_prog 1
+[b]${stella_bio}[/b]
+[b]@apocalypse-hoarder reblogged from @nebulascribber at 9:45 PM. OP: @nebulascribbler[/b]
+
+Hey, did you hear what gtm just said? She said that according to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care...
+
+[This appears to be the entire script of Bee Movie (2007). It takes nearly a minute to scroll through.]
+
+${brun_2_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_2_1_notes + 1
+        *goto apoc_2_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set brun_2_1_notes + 1
+        *set stella_blue %+ 2
+        *set sofia_blue %+ 1
+        *set discourse %+ 3
+        *set shitposting %+ 3
+        *goto apoc_2_1
+    #Next post.
+        *goto apoc_2_2
+    #Look at another blog.
+        *goto montage_2
+
+
+*label apoc_2_2
+*set apoc_prog 2
+[b]@apocalypse-hoarder reblogged from @nebulascribber at 9:41 PM. OP: @nebulascribbler[/b]
+
+So we're gonna start saying that Hatsune Miku wrote the Chronicles of the Shadow Nebula, right? 
+
+${nebu_2_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_2_2_notes + 1
+        *goto apoc_2_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx shitposting
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 2
+        *set sofia_blue %+ 1
+        *set nebu_2_2_notes + 1
+        *set shitposting %+ 3
+        *set discourse %+ 2
+        *goto apoc_2_2
+    #Next post.
+        *goto apoc_2_3
+    #Prev post.
+        *goto apoc_2_1
+    #Look at another blog.
+        *goto montage_2
+
+*label apoc_2_3
+*set apoc_prog 3
+[b]@apocalypse-hoarder posted at 9:39 PM[/b]
+
+finally making an original post just to say that the gtm post fucking sucks. thats all.
+
+Tags: #my post
+
+${apoc_2_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_2_3_notes + 1
+        *set stella_blue %+ 1
+        *goto apoc_2_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 3
+        *set apoc_2_3_notes + 1
+        *set discourse %+ 3
+        *goto apoc_2_3
+    #Next post.
+        *goto apoc_2_4
+    #Prev post.
+        *goto apoc_2_2
+    #Look at another blog.
+        *goto montage_2
+
+*label apoc_2_4
+*set apoc_prog 4
+[b]@apocalypse-hoarder reblogged from @fangirlingforever at 8:30 PM. OP: unknown[/b]
+
+[image of a close-up on a pale-skinned person's purple eye]
+
+"Alexandria's Genesis, a.k.a violet eyes (a genetic mutation).
+
+When someone is born with Alexandria's Genesis, their eyes are blue or gray at birth. After six months, the eyes begin to change from their original color to purple, and this process lasts six months. During puberty, the color deepens to dark purple, a deep purple, a royal purple, or a violet-blue color and remains that way. It does not affect the person's eyesight.
+
+Those who have this mutation will never grow any facial, body, pubic, or anal hair (not including hair on their head, on their ears, noses, eyebrows and eyelashes). Women also do not menstruate, but are fertile"
+
+[b]@augurofwinds99:[/b]
+
+OMG remember when capella's eyes suddenly started changing color in book 4 part 4??? that was wild!!! what if she has alexandria's genesis??????
+
+Tags: #queueasimodo, #lol
+
+${apoc_2_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_2_4_notes + 1
+        *goto apoc_2_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 1
+        *set karla_green %+ 8
+        *set apoc_2_4_notes + 1
+        *set shitposting %+ 3
+        *goto apoc_2_4
+    #Next post.
+        *goto apoc_2_5
+    #Prev post.
+        *goto apoc_2_3
+    #Look at another blog.
+        *goto montage_2
+
+*label apoc_2_5
+*set stella_ch2_2_seen 1
+*set apoc_prog 5
+[b]@apocalypse-hoarder reblogged from @nebulaverse-confessions at 8:00 PM. OP: @nebulaverse-confessions[/b]
+
+Anonymous said: I wish more people would appreciate Astrapella. That's it. That's the whole confession.
+
+Tags: #queueasimodo, #astrapella
+
+${apoc_2_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_2_5_notes + 1
+        *goto apoc_2_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 2
+        *set apoc_2_5_notes + 1
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *goto apoc_2_5
+    #Prev post.
+        *goto apoc_2_3
+    #Look at another blog.
+        *goto montage_2
+
+
+
+*label trap_2_1
+*set trap_prog 1
+[b]${karla_bio}[/b]
+
+[b]@trappedinspace posted at 10:00 PM[/b]
+
+well this sucks.
+
+Tags: #yes this is about what you probably think it's about., #tbh this was a long time coming but it's still surprising when it finally hits
+
+${trap_2_1_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set karla_blue %+ 3
+        *set trap_2_1_notes + 1
+        *goto trap_2_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set trap_2_1_notes + 1
+        *set discourse %+ 3
+        *goto trap_2_1
+    #Next post.
+        *goto trap_2_2
+    #Look at another blog.
+        *goto montage_2
+
+*label trap_2_2
+*set trap_prog 2
+[b]@trappedinspace reblogged from @redcapella at 8:43 PM. OP: @girlinprogress[/b]
+
+The only thing I will say about the whole chronicles deal is that billionaires shouldn't exist.
+
+Tags: #ugh i just became aware of the post...
+
+${trap_2_2_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_2_2_notes + 1
+        *goto trap_2_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 2
+        *set trap_2_2_notes + 1
+        *set discourse %+ 3
+        *goto trap_2_2
+    #Next post.
+        *goto trap_2_3
+    #Prev post.
+        *goto trap_2_1
+    #Look at another blog.
+        *goto montage_2
+
+*label trap_2_3
+*set trap_prog 3
+[b]@trappedinspace reblogged from @lunan0va 1 day ago. OP: @lunan0va[/b]
+
+This is an astrapella story I wrote... sorry if it's kind of angsty. It's exactly as the title says. I hope you can enjoy it.
+
+[Link to archive - "Holding hands until the end of the world" by @lunan0va. astrapella, hurt/comfort]
+
+Tags: #fanfic, #i love this
+
+${trap_2_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set karla_blue %+ 1
+        *set luna_blue %+ 2
+        *set trap_2_3_notes + 1
+        *goto trap_2_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx luna_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 2
+        *set luna_blue %+ 3
+        *set trap_2_3_notes + 1
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto trap_2_3
+    #Next post.
+        *goto trap_2_4
+    #Prev post.
+        *goto trap_2_2
+    #Look at another blog.
+        *goto montage_2
+
+
+*label trap_2_4
+*set trap_prog 4
+[b]@trappedinspace reblogged from @evelyn-ecstasy 1 day ago. OP: @girlinprogress[/b]
+
+Hey sorry for bringing this up again but i still need money for groceries and medical expenses, some transition-related, some not. My job isn't giving me enough hours and ofc I still don't have health insurance. Honestly any bit helps.
+
+[link to fundraiser]
+
+$140/300
+
+Tags: #mutual aid
+
+${trap_2_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_2_4_notes + 1
+        *set karla_blue %+ 1
+        *goto trap_2_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 2
+        *set trap_2_4_notes + 1
+        *set sympathy %+ 3
+        *goto trap_2_4
+    #Next post.
+        *goto trap_2_5
+    #Prev post.
+        *goto trap_2_3
+    #Look at another blog.
+        *goto montage_2
+
+
+*label trap_2_5
+*set karla_ch2_2_seen 1
+*set trap_prog 5
+[b]@trappedinspace posted 1 day ago[/b]
+
+[diary in tags]
+
+Tags: #done with med school interviews finally!, #traveling was an ordeal as usual., #but like i was open about being tr*ns and none of the interviewers gave me shit for it, #(as far as i can tell. not openly at least but we'll see), #god i wish 5-years-ago me can see me now, #i thought i would be de@d by age 20., #but i'm still alive. and... maybe not quite thriving but, #doing as well as i could given the circumstances., #trans girls: you have a future!, #now to somehow address the crushing debt that i'll be taking on..., #btw: i would appreciate if this were not r/eb/lo/gged
+
+${trap_2_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+
+        *set trap_2_5_notes + 1
+        *set karla_blue %+ 3
+        *goto trap_2_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_dislike
+
+        *set rb_count + 1
+        *set karla_green %+ 5
+        *set karla_interact + 1
+        *set trap_2_5_notes + 1
+        *goto trap_2_5
+    #Prev post.
+        *goto trap_2_4
+    #Look at another blog.
+        *goto montage_2
+
+*label gtm_post
+
+[b]@macmillan-gt posted at 8:00 PM:[/b]
+
+A number of individuals have asked me about a post on this website. Normally the discourse and discussions circulating on this website are none of my concern, but this time, I feel an obligation to respond.
+
+A post has recently been brought to my attention that describes Gali Nova as a "transwoman". First of all, the theory that he was somehow intended to be a transwoman is preposterous. I think any rational individual can see that. However, the presence of posts such as these indicates a deeper layer of pathological thinking among some of the young people on this site. It is exemplary of a certain postmodern, degenerated conception of "gender" that has gained a horrifying foothold among the populace on this website, and young people at large. Without exaggeration, this ideology will, if left unchecked, lead to the destruction of all that feminism has achieved over the past century.
+
+(Read more)
+
+*choice
+    #Look at another blog.
+        *goto montage_2
+
+*label annc_chat_2
+[b]Anti-Nebulaverse Nebulaverse Club[/b]
+
+@trappedinspace: Hey @lunan0va, I just saw your blog. I'm really sorry about what's happening. Are you doing okay?
+
+@lunan0va: yeah i'm fine lol
+
+@trappedinspace: If the comments are getting bad, you might want to turn off anon or turn off all asks and comments. 
+
+@lunan0va: don't worry, i'm not getting any more of the nasty asks. and it doesn't really bother me that much anyway. or at least, i'm trying to not be bothered by it.
+
+@trappedinspace: Are you sure it's okay? feel free to just go offline and take a break from this website if the harrassment is getting to you...
+
+@lunan0va: lmao i don't really have any other places to go
+
+@trappedinspace: Sorry, yeah I kinda get that.
+
+*if posted_ch2_annc_2_1
+    @you: sorry about what's going on...
+
+    @lunan0va: thanks ${handle}...
+
+    @lunan0va: i'm fine. i really am.
+
+    Everyone is offline now.
+
+*choice
+    *disable_reuse #Post: sympathize with Luna's current plight.
+        *set posted_ch2_annc_2_1 true
+        *set luna_blue %+ 5
+        *goto annc_chat_2
+    #Look at another blog.
+        *goto montage_2
+
+
+*label writers_chat_2
+[b]Nebulaverse Fandom Writer's Chat[/b]
+
+@shadow-protectrix: Hey I've got a few updates for Nebulacon! Check out my blog!
+
+@nebulascribbler: Thanks! This looks very cool.
+
+@brunova-official: i wish i could go :/
+
+@shadow-protectrix: Don't worry about it! We'll be streaming everything online and also recording video!
+
+@nebulascribbler: Whatever you do, don't check GTM's blog.
+
+@brunova-official: why?
+
+@brunova-official: oh. i c
+
+@brunova-official: this is uh. bad. right?
+
+@brunova-official: :/
+
+@brunova-official: yeah it's really bad. i'm logging off.
+
+@nebulascribbler: probably a wise decision.
+
+@shadow-protectrix: yeah... I'll have to think about what we're supposed to do.
+
+Everyone appears to be offline right now.
+
+*choice
+    #Look at another blog.
+        *goto montage_2
+
+
+
+*label montage2_end
+
+You should probably finish up with blogging for tonight. The mood on the website is taking a turn for the worse.
+
+*finish

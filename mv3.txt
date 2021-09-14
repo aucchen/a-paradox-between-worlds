@@ -1,0 +1,1886 @@
+*set current_chapter 3
+[b]Movement 3: Rondo - Vivace[/b]
+
+[i]DIRK 4: You monster. He barely got a character arc.[/i]
+
+[i]DIRK 3: What? He expressed, like, a bunch of emotions, a few pages ago. Then he went and tried to do something and failed. Then he died. How else do you write a story?[/i]
+
+- Duckface, THEATRE OF COOLTY
+
+*page_break
+
+[b]Universe - Canon[/b]
+
+[b]Excerpt from Chronicles of the Shadow Nebula, Book 3, Part 1: Peace Between Heaven and Earth by G. T. Macmillan[/b]
+
+The planet of Samaria was supposed to have been undefended. They were supposed to have been greeted as liberators. It was supposed to be a combination training and humanitarian mission.
+
+Gali could not forget what he saw. The rebel troopers with their pellet guns were no match for Imperial Magi, even magi-in-training. He remembered the glee with which Bruno had hollowed out their bodies, his spells turning their forms to shriveled up husks. He remembered the rebel emerging from the house, no older than a boy, shouldering a gun, frightened expression on his unmasked face, the bullets deflected by Gali's energy shield, his stiff body when the lightning had struck him. But Gali couldn't remember casting the spell.
+
+The Administrator strode forth. Gali confronted him.
+
+*page_break "Why did you lie to us?"
+
+"Why did you lie to us?" asked Gali. "You told us this would be a training mission."
+
+"We had faulty intelligence," the Administrator answered, and Gali could almost believe him. But then the man sighed.
+
+"I needed to show you something. Show all of you." The Administrator continued. "I needed to show you the costs of the Empire's rule. See this? This is what the Emperor has decreed. This is how it always ends."
+
+Gali didn't understand what the man was saying. "What do you mean?" he asked in an accusing voice.
+
+"I mean that..." The Administrator took a long pause, stroking his beard and gazing about the ruins. "I mean that this will never stop. It will only worsen."
+
+*page_break "Traitor."
+
+"Traitor." Bruno suddenly materialized, as if out of nowhere. "I know your game. You're a traitor to the Empire, that's what you are." The blond boy tossed a chunk of ice from one hand to the other, all the while glaring at the Administrator.
+
+The administrator only smiled, returning Bruno's gaze. Bruno's hand flicked. A blue bolt shot forth, only to be met with a red beam from the Administrator's fingers. The magical projectiles collided, exploding in midair, the resulting fireball scorching the grass.
+
+"I could have you executed, Mr. Helios," said the Administrator, not breaking his smile.
+
+"You would kill the scion of the Helios family?" Bruno smirked. "I could end you right now if I expose your plots."
+
+"The nebula is more complicated than you believe, my child. Come. I'll show you." The Administrator beckoned to the two boys.
+
+*page_break Gali followed...
+
+Gail followed the Administrator. Bruno walked in tow, arms folded across his chest. It was not a long walk to the field headquarters, situated in a green tent. Inside, Astra, Capella, and Tycho were already waiting.
+
+"A storm is afoot," said the Administrator in a dark voice. "Forces beyond our mortal comprehension are gathering, and I fear we may be powerless to stop them."
+
+Surprisingly, it was Tycho who stepped in. "So what do you expect us to do? Lay down and die? Let the Demiurge claim us?"
+
+"No," said the Administrator. He paced about his cramped headquarters, stroking his beard. "You do not understand. Perhaps you will never understand."
+
+"So tell us what going on! So at least we can try!" shouted Capella, who had previously been standing on the sidelines.
+
+The Administrator sighed. "Fine, if you so desire."
+
+*page_break Gali watched...
+
+Gail watched intently as the Administrator activated the holographic display on his table. A blue hologram projected upward, showing a map of the Empire's myriad worlds.
+
+The Administrator pointed at the Capitol world of Antioch.
+
+"We are at war with ourselves," he proclaimed. "A shadow movement is brewing against the Emperor, gathering more adherents daily. The Emperor has gone mad in trying to root it out. He has turned our armies against entire worlds. We see not just Samaria, but also Cappadocia, Ephesus, and countless other worlds all burning. This is the world you will enter. This is the lord you will serve."
+
+He takes a deep breath. "And the man leading the shadow movement... is standing before you."
+
+*page_break
+
+[b]Online - Montage[/b]
+*temp read_count 0
+*temp luna_unread 1
+*temp brun_unread 1
+*temp shad_unread 1
+*temp nebu_unread 1
+*temp apoc_unread 1
+*temp trap_unread 1
+
+*temp luna_1_1_notes 8
+*temp luna_1_2_notes 487
+*temp luna_1_3_notes 6385
+*temp luna_1_4_notes 3
+*temp luna_1_5_notes 342
+
+*temp brun_1_1_notes 2
+*temp brun_1_2_notes 1972
+*temp brun_1_3_notes 34
+*temp brun_1_4_notes 5381
+*temp brun_1_5_notes 3891
+
+*temp shad_1_1_notes 199
+*temp shad_1_2_notes 1781
+*temp shad_1_3_notes 4910
+*temp shad_1_4_notes 1391
+*temp shad_1_5_notes 101
+
+*temp nebu_1_1_notes 324874
+*temp nebu_1_2_notes 101
+*temp nebu_1_3_notes 10829
+*temp nebu_1_4_notes 21938
+*temp nebu_1_5_notes 1011
+
+*temp apoc_1_1_notes 467
+*temp apoc_1_2_notes 1248
+*temp apoc_1_3_notes 102
+*temp apoc_1_4_notes 33
+*temp apoc_1_5_notes 1205
+
+*temp trap_1_1_notes 541
+*temp trap_1_2_notes 108
+*temp trap_1_3_notes 0
+*temp trap_1_4_notes 7324
+*temp trap_1_5_notes 11
+
+*temp luna_prog 1
+*temp brun_prog 1
+*temp shad_prog 1
+*temp nebu_prog 1
+*temp apoc_prog 1
+*temp trap_prog 1
+
+*temp karla_sent_message false
+*temp sofia_sent_message false
+
+*gosub_scene calc_new_followers
+
+*gosub_scene check_blocked
+
+*comment TODO: you can get kicked out of the groupchat if your green gets too high.
+
+Vibes forecast for today: truly rancid, like the water after a sewage overflow. The rain is not helping. You hear lightning bolts and claps of thunder off in the distance, but they're coming closer. Or maybe they're already here.
+
+Is there hope for the future? Is there hope for humanity in the age of the online?
+
+*label montage_1
+*if ((karla_trust = 1) and ((karla_blue > karla_green) and (karla_mutuals or (karla_blue >= 25))))
+    *set karla_mutuals true
+    *set karla_sent_message true
+
+*if ((sofia_trust = 1) and ((sofia_blue > sofia_green) and (sofia_mutuals or ((sofia_blue >= 15) or (stella_blue >= 20)))))
+    *set sofia_mutuals true
+    *set sofia_sent_message true
+
+*if sofia_sent_message and (sofia_helped = 0)
+    Sofia @nebulascribbler has sent you a DM.
+
+*if karla_sent_message and (karla_investigation = 0)
+    Karla @trappedinspace has just sent you a DM.
+
+*if (sofia_helped != 0)
+    You can tell Claire about Sofia's plans, if you'd like.
+
+Which blogs would you like to read?
+
+*choice
+    *selectable_if ((luna_blocked = false)) #@lunan0va
+        *set read_count + 1
+        *gotoref "luna_1_${luna_prog}"
+    *selectable_if ((lux_blocked = false)) #@brunova-official
+        *set read_count + 1
+        *gotoref "brun_1_${brun_prog}"
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+        *set read_count + 1
+        *gotoref "shad_1_${shad_prog}"
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+        *set read_count + 1
+        *gotoref "nebu_1_${nebu_prog}"
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+        *set read_count + 1
+        *gotoref "apoc_1_${apoc_prog}"
+    *selectable_if ((karla_blocked = false)) #@trappedinspace
+        *set read_count + 1
+        *gotoref "trap_1_${trap_prog}"
+    *disable_reuse *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
+        *goto annc_chat
+    *disable_reuse *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
+        *goto writers_chat
+    *disable_reuse *if (karla_sent_message) #See Karla's message.
+        *goto karla_message
+    *disable_reuse *if (sofia_sent_message) #See Sofia's message.
+        *goto sofia_message
+    *disable_reuse *if ((sofia_helped != 0) and (claire_blue > 25)) #Tell Claire about Sofia's plans.
+        *goto claire_message
+    *disable_reuse *if ((sofia_helped != 0) and (karla_investigation > 0)) #Tell Karla about Sofia's plans.
+        *goto karla_message_1
+    *disable_reuse *if ((sofia_helped > 0)) #Reblog the callout.
+        *goto reblog_callout
+    *if (read_count > 0) #Stop looking at blogs.
+        *goto montage1_end
+
+*label luna_1_1
+*set luna_prog 1
+*set luna_ch3_seen 1
+[b]${luna_bio}[/b]
+
+[b]@lunan0va reblogged from @lunan0va at 12:01AM. OP: @lunan0va[/b]
+
+Content warnings: transphobia, suicide, homophobia, transmisogyny, slurs, death, abuse, anon hate
+
+*choice
+    #Read the post.
+        *goto luna_1_1_post
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_1_post
+*set luna_ch3_seen 1
+
+[b]@lunan0va reblogged from @lunan0va at 12:01AM. OP: @lunan0va[/b]
+
+Anonymous asked: 41% of trans people commit suicide. it's kinda funny, isn't it? it's a pretty popular life choice :)
+
+Okay that statistic is so fucking misleading. It's the percentage of trans teens who attempt suicide when they have unsupportive family. All of them are survivors by definition. Which means I'm technically already part of that 41%.
+
+[b]@lunan0va:[/b]
+
+Anonymous asked: 41%
+
+Anonymous asked: maybe next time you'll succeed :)
+
+Anonymous asked: 41414141
+
+Anonymous asked: join the 41% uwu ur friends are waiting
+
+Anonymous asked: *palpatine voice* do it. Kill urself
+
+Okay I have to say this is the fucking cringiest attempt at suicide baiting I've ever seen
+
+[b]@lunan0va:[/b]
+
+Anonymous asked: #IStandWithGTMacmillan and so does every thinking person in the world.
+
+Anonymous asked: why do u hate females you fucking pervert
+
+Anonymous asked: stop erasing women's lived experiences. wearing a dress doesn't make you a woman.
+
+Anonymous asked: okay groomer
+
+Anonymous asked: why are biological males like you always so obsessed with invading female spaces. sexual predator.
+
+Anonymous asked: bro why do you still bother when no one's ever gonna really see you as a woman. everyone will always you as a boy who thinks he's a woman because he's mentally ill. no one gives a fuck bro.
+
+Anonymous asked: why are you such a violent and hate-filled man? Why are so many trans-identified males like you so filled with hate and cruelty?
+
+Anonymous asked: trans "women" don't exist. Only deranged males who desperately want to pretend they're oppressed.
+
+Oh fuck it's the terfs. (i don't care about misgendering literally everyone irl misgenders me. like literally you're just making shit up about me now.) Also the suicide bait messages haven't stopped just fyi they're just all the same so I'm not gonna bother replying. By the way why are you people sexually harassing a 16 year old. I'm pretty sure that's like, actually illegal.
+
+[b]@lunan0va:[/b]
+
+Anonymous asked: get a grip no one's sexually harassing you.
+
+Okay.
+
+Anonymous asked: Luna you are the one of the most amazing young women I have ever known on this site. I really hope things get better for you.
+
+Thanks but this belief won't survive first contact with my physical visage.
+
+Anonymous asked: are ur parents proud they raised a tranny faggot son
+
+Anonymous asked: emotionally blackmailing your family by attempting suicide just to get them to pretend their son's a girl... smh it's too much for me.
+
+Anonymous asked: how do you think your ancestors must feel when they see their great-grandson's become a tranny who goes around thinking he's a girl because he wore a dress one time
+
+Not gonna respond to these.
+
+Anonymous asked: As a trans woman, all your behaviors have been so disappointing. You don't speak for me and not everything is about you.
+
+I'm not trying to speak for anyone but myself!!!
+
+Anonymous asked: I think your problem is that you're a fundamentally selfish person who only cares about himself. You've never ever thought about how other people feel.
+
+Okay.
+
+Anonymous asked: Are you a Gold Star lesbian? (Just in case you don't know what it means, a Gold Star lesbian is a lesbian that has never had the sex with a guy and would never have any intentions of ever doing so)
+
+What the fuck (i'm bi i'm not any kind of lesbian)
+
+Anyway the messages are coming too fast. I'm disabling anon.
+
+[b]@lunan0va:[/b]
+
+@speakeroflight97 asked: I'm really sorry what you're going through. I don't know if anything I say could make you feel better but here's hoping :)
+
+Thanks. I'm never going to feel better but thanks anyway.
+
+@misgenderer asked: you'll never be a woman no matter how much you mutilate your body. when you die your bones will always reveal who you really were.
+
+You don't even know who I am. Congrats on the highly apt username.
+
+@amegaotaku asked: i used to really respect and admire you but i have no idea why you would make up a rumor about amegaotaku being a Zionist. it’s not true so leave her the fuck alone.
+
+What the fuck
+
+[b]@lunan0va:[/b]
+
+@transsexualempire asked: #onlytwosexes #sexisreal #genderisamentalillness
+
+Hash tags don't make you more persuasive.
+
+@Carol1327644817 asked: join the 41%
+
+Still at this?????
+
+@laughinghorsemotel asked: smh why are you sending death threats to yourself you're pathetic.
+
+@laughinghorsemotel asked: anyway Macmillan was right you really are mentally ill.
+
+The juxtaposition is incredible.
+
+@imoutofckr93 asked: [link to Luna's old selfie] lol i knew you were a tranny but you're just the ugliest motherfucker i've ever seen
+
+someone whose blog is full of anime incest porn shouldn't be talking about ugliness.
+
+@capellasgf asked: hi Luna, just wanted to spread some positivity to drown out the hate. Feel free to close your asks if you need. Take a break from this site if you need to.
+
+Take a break and go where? But thanks anyway.
+
+Tags: #seriously when will you people stop, #cw transphobia, #cw suicide, #cw homophobia, #cw transmisogyny, #cw slurs, #cw death, #cw abuse, #anon hate, #idk if i want this to be rb'ed, #probably don't r/e/b/l/o/g this i guess
+
+${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_interact + 1
+        *set luna_1_1_notes + 1
+        *set luna_blue %+ 5
+        *goto luna_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx discourse
+
+        *set luna_interact + 1
+        *set luna_green %+ 5
+        *set discourse %+ 5
+        *set luna_1_1_notes + 1
+        *goto luna_1_1
+    #Next post.
+        *goto luna_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_2
+*set luna_prog 2
+
+All of Luna's other recent posts are just previous reblogs of the first post.
+
+*choice
+    #Prev post.
+        *goto luna_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_1
+*set brun_prog 1
+[b]${lux_bio}[/b]
+
+[b]@brunova-official posted at 9:17 PM[/b]
+
+I don't know how to deal with this!!! It's like I'm in the eye of the hurricane right now...
+
+Tags: #im logging off, #jalskdjfdaj;ldfasjdfs
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_1_notes + 1
+        *goto brun_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_dislike
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_green %+ 3
+        *set brun_1_1_notes + 1
+        *goto brun_1_1
+    #Next post.
+        *goto brun_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label brun_1_2
+*set brun_prog 2
+[b]@brunova-official reblogged from @brunova-official at 9:15 PM.[/b]
+
+Help my grandmother stay alive!
+
+Hey everyone, my abuela in Mexico has just been diagnosed with a brain tumor. There's a surgical procedure that could save her life, but they only do that procedure in a few hospitals in America, and none in Mexico. The problem is, it's going to cost us tens of thousands of dollars. I don't know if we can ever afford that.
+
+Can anyone help us out?
+
+[Picture of a child Lux with his grandmother]
+
+[Picture of the grandmother in a hospital gown, smiling and waving]
+
+[Link to fundraiser website]
+
+Thank you so much!
+
+[b]@brunova-official:[/b]
+
+As a reminder i'm open to fic/art commissions to pay for my abuela's cancer treatment! We can negotiate rates! For examples of my art, see below! No nsf/w or gore, and I can't do furry or detailed machinery.
+
+[collection of line art and some colored portraits, mostly of Nebulaverse characters in various poses, with a lot of Bruno and Gali.]
+
+Also here's my fanfics: [link to archive]
+
+[b]@brunova-official:[/b]
+
+Donations have slowed recently, but we're not nearly achieving our goals. I still have three slots open for art/fic commissions, nebulaverse or otherwise!!
+
+Tags: #donation, #please please PLEASE, #my family is dying but like literally
+
+${brun_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_2_notes + 1
+        *goto brun_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 5
+        *set sympathy %+ 3
+        *set brun_1_2_notes + 1
+        *goto brun_1_2
+    #Next post.
+        *goto brun_1_3
+    #Prev post.
+        *goto brun_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_3
+*set brun_prog 3
+[b]@brunova-official posted at 9:10 PM[/b]
+
+Here's a fic commission for @time-and-space-are-one!
+
+[Link to archive - "The beauty queen in tears" - gali/lyra/tycho, 2.5k words, angst, love triangle, cheating]
+
+I don't just write brunova, I can do other stuff as well! I'm still open for commissions.
+
+Tags: #my fic, #nebulaverse, #chronicles of the shadow nebula, #tychonova, #lyranova
+
+${brun_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_3_notes + 1
+        *goto brun_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 4
+        *set shipping %+ 3
+        *set brun_1_3_notes + 1
+        *goto brun_1_3
+    #Next post.
+        *goto brun_1_4
+    #Prev post.
+        *goto brun_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label brun_1_4
+*set brun_prog 4
+[b]@brunova-official reblogged from @nebulascribbler at 8:40 PM. OP: @saturnalia-emergent[/b]
+
+[Fan art of Gali and Bruno, two boys wrapped in a blue, pink, and white trans flag, making v symbols with their hands. Gali is a smiling dark haired brown skinned boy with glasses. Bruno is a light-skinned boy with blond hair and a frown.]
+
+The Shadow Nebula belongs to [i]us[/i]
+
+Tags: #brunova, #this is what we need right now i guess
+
+${brun_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_4_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 3
+        *set brun_1_4_notes + 1
+        *set shipping %+ 3
+        *set brunova %+ 3
+        *set bruno %+ 2
+        *set gali %+ 2
+        *goto brun_1_4
+    #Next post.
+        *goto brun_1_5
+    #Prev post.
+        *goto brun_1_3
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_5
+*set brun_prog 5
+*set lux_ch3_seen 1
+[b]@brunova-official reblogged from @apocalypse-hoarder at 8:33 PM. OP: @fyeahnebulaverse[/b]
+
+[Screenshot of a tweet by the actor who plays Gali Nova in the films, saying "To all trans people out there, your lives and experiences are valued and cherished. #TransRightsAreHumanRights" The tweet was retweeted by the actresses who play Astra and Capella.]
+
+A reminder that the actors have actively rejected GTM's transphobia. Most of the fandom is on our side.
+
+Tags: #does this make me feel better? idk
+
+${brun_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_5_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set brun_1_5_notes + 1
+        *set discourse %+ 3
+        *set lux_blue %+ 3
+        *goto montage_1
+    #Prev post.
+        *goto brun_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label shad_1_1
+*set shad_prog 1
+[b]${claire_bio}[/b]
+
+[b]@shadow-protectrix posted at 9:11 PM.[/b]
+
+I won't lie, this has been a difficult time for us. There's been a number of cancellations for Nebulacon. At this point I'm not sure if we will be able to bring the full show that we promised. I truly apologize if that's something you've been looking forward to.
+
+Anyway, in totally unrelated news, I'm working on the next chapter of Mars, Bringer of War. It should be out soon.
+
+Tags: #nebulacon, #nebulaverse
+
+${shad_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_1_notes + 1
+        *goto shad_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_1_notes + 1
+        *set claire_blue %+ 5
+        *set luna_green %+ 4
+        *set karla_green %+ 2
+        *set discourse %+ 3
+        *goto shad_1_1
+    #Next post
+        *goto shad_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_2
+*set shad_prog 2
+[b]@shadow-protectrix reblogged from @noncanonical at 9:00 PM. OP: @noncanonical[/b]
+
+The reason I am boycotting GT*M's products is because she is using her resources to directly harm the lives of trans people in the UK. She is personally bankrolling multiple lawsuits aimed at excluding trans women from women's spaces, and legalizing the harassment of trans people anywhere. She is donating to politicians who want to do the same, and trying to defeat trans-inclusive politicians, even those in her party. Her foundation is giving grants to avowedly anti-trans organizations that spread reactionary conspiracy theories about trans people. Giving her money at this point is a vote in favor of these actions. I would in fact say that if you support trans rights in the UK, it is unethical to keep on funding her.
+
+[b]@shadow-protectrix:[/b]
+
+Do you think your boycott will actually work? How many people will agree? Will this actually do anything to help trans people?
+
+Tags: #gtm, #nebulaverse
+
+${shad_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_2_notes + 1
+        *goto shad_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_2_notes + 1
+        *set claire_blue %+ 4
+        *set luna_green %+ 5
+        *set karla_green %+ 4
+        *set discourse %+ 3
+        *goto shad_1_2
+    #Next post.
+        *goto shad_1_3
+    #Prev post.
+        *goto shad_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_3
+*set shad_prog 3
+[b]@shadow-protectrix reblogged from @fyeahnebulaverse at 8:38 PM. OP: @fyeahnebulaverse[/b]
+
+A notice: as of today, we will no longer be updating this blog. Many of us running this blog are trans, and the author's comments and behaviors have led to a hostile environment towards trans members of the fandom. After a discussion with the mods, we have come to the understanding that we can no longer participate in Nebulaverse fandom in good conscience. 
+
+[b]@shadow-protectrix:[/b]
+
+Guys, come on. Do you really think a boycott would work? Is this the best use of our time and effort as a fandom?
+
+${shad_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_3_notes + 1
+        *goto shad_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_3_notes + 1
+        *set claire_blue %+ 5
+        *set luna_green %+ 5
+        *set karla_green %+ 4
+        *set discourse %+ 3
+        *goto shad_1_3
+    #Next post.
+        *goto shad_1_4
+    #Prev post.
+        *goto shad_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_4
+*set shad_prog 4
+[b]@shadow-protectrix posted at 8:30 PM[/b]
+
+Please, everyone, let's take one big, deep, breath. Everything is going to be okay.
+
+GTM said some things that a lot of us disagree with, maybe even consider personally offensive. I'm not asking people to agree with her, or even stop thinking of what she said as offensive. I'm asking you to take a step back, and remember that G. T. Macmillan is a real person, just like you. She is a human being with feelings, and she has been a victim too.
+
+Just have a little empathy, please?
+
+Tags: #gtm, #nebulaverse, #discourse
+
+${shad_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_4_notes + 1
+        *goto shad_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_4_notes + 1
+        *set claire_blue %+ 4
+        *set luna_green %+ 8
+        *set karla_green %+ 8
+        *set stella_green %+ 2
+        *set discourse %+ 3
+        *goto shad_1_4
+    #Next post.
+        *goto shad_1_5
+    #Prev post.
+        *goto shad_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_5
+*set shad_prog 5
+*set claire_ch3_seen 1
+[b]@shadow-protectrix reblogged from @lunan0va at 5:20 PM. OP: lunan0va[/b]
+
+Okay one last post bc I'm about to die from reading all these fricking asks
+
+God fuck gtm. Just fuck her for posting that shit. So many fuckin fancy words just to say that you hate trans people. I hope all transphobes die and this includes GTM.
+
+[b]@shadow-protectrix:[/b]
+
+This is not an appropriate thing to say. No matter what you feel, it's horrible to wish harm on people.
+
+${shad_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_5_notes + 1
+        *goto shad_1_5
+    *disable_reuse #Reblog the post (Luna will likely hate you).
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx luna_st_dislike
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_5_notes + 1
+        *set claire_blue %+ 2
+        *set luna_green %+ 20
+        *set karla_green %+ 10
+        *set discourse %+ 3
+        *goto shad_1_5
+    #Prev post.
+        *goto shad_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label nebu_1_1
+*set nebu_prog 1
+[b]${sofia_bio}[/b]
+
+[b]@nebulascribbler reblogged from @nonbinarycatmom at 8:23 PM. OP: @saturnalia-emergent[/b]
+
+[Fan art of Gali and Bruno, two boys wrapped in a blue, pink, and white trans flag, making v symbols with their hands. Gali is a smiling dark haired brown skinned boy with glasses. Bruno is a light-skinned boy with blond hair and a frown.]
+
+The Shadow Nebula belongs to [i]us[/i]
+
+Tags: #brunova, #this is beautiful
+
+${brun_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_4_notes + 1
+        *goto nebu_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set brun_1_4_notes + 1
+        *set sofia_blue %+ 2
+        *set lux_blue %+ 2
+        *set shipping %+ 3
+        *set brunova %+ 3
+        *set gali %+ 2
+        *set bruno %+ 2
+        *goto nebu_1_1
+    #Next post.
+        *goto nebu_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label nebu_1_2
+*set nebu_prog 2
+[b]@nebulascribbler posted at 8:10 PM[/b]
+
+I'm not sure if anyone still cares about this, given what's going on ~out there~, but I'm still writing The Milky Way in Your Heart. Here's chapter 21!
+
+[Link to archive - "The Milky Way in Your Heart" by @nebulascribbler, chapter 21/?. astrapella, slow burn, canon divergence.]
+
+Tags: #sofia speaks, #astrapella
+
+${nebu_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_1_2_notes + 1
+        *set sofia_blue %+ 2
+        *goto nebu_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set sofia_blue %+ 5
+        *set sofia_interact + 1
+        *set nebu_1_2_notes + 1
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto nebu_1_2
+    #Next post.
+        *goto nebu_1_3
+    #Prev post.
+        *goto nebu_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label nebu_1_3
+*set nebu_prog 3
+[b]@nebulascribbler reblogged from @gayportmanteau at 7:10 PM. OP: @trashcandiaries[/b]
+
+Yeah I love the dark nebula universe by gt macintosh. I love Gail and Star and Barney and Cathy and (looks at smudged writing on hand) Mike Tyson
+
+[b]@starsburningbright:[/b]
+
+This is so cringe O.M.G.
+
+Don't you mean Gali, Astra, Bruno, Capella, and Tycho?
+
+[b]@trashcandiaries:[/b]
+
+Haha yeah :)  I like burned ova and bureaucrat too :)
+
+[b]@nebulafan93:[/b]
+
+Ugh this is so *spontaneously combusts from the pent-up rage of a thousand suns*
+
+[b]@trashcandiaries:[/b]
+
+Are you okay ma'am... You look unwell :0
+
+Tags: #hahaha, #bureaucrat......
+
+${nebu_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_interact + 1
+        *set nebu_1_3_notes + 1
+        *set sofia_blue %+ 1
+        *goto nebu_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set nebu_1_3_notes + 1
+        *set sofia_blue %+ 3
+        *set shitposting %+ 5
+        *goto nebu_1_3
+    #Next post.
+        *goto nebu_1_4
+    #Prev post.
+        *goto nebu_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label nebu_1_4
+*set nebu_prog 4
+[b]@nebulascribbler reblogged from @augurofwinds at 6:33 PM. OP: @abraxas[/b]
+
+[Animated gif of a campfire burning]
+
+This post is a save point. You may save your progress here, so that if you happen to perish on your journey, you may restore from this post.
+
+Tags: #we all need this
+
+${nebu_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_1_4_notes + 1
+        *set sofia_blue %+ 1
+        *goto nebu_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set sofia_blue %+ 3
+        *set nebu_1_4_notes + 1
+        *set sympathy %+ 2
+        *set shitposting %+ 2
+        *goto nebu_1_4
+    #Next post.
+        *goto nebu_1_5
+    #Prev post.
+        *goto nebu_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label nebu_1_5
+*set nebu_prog 5
+*set sofia_ch3_seen 1
+[b]@nebulascribbler reblogged from @ahistoricallyqueer at 5:40 PM. OP: @starsandshadows[/b]
+
+Hello from the official Half Full, Half Empty team! Our fundraiser has REACHED its first goal in just a few days!!! Thank you so much to everyone for supporting us! As a gift, here's some concept art!
+
+[animated gif of the two main characters in Half Full, Half Empty]
+
+And don't forget about the stretch goals!
+
+Tags: #half full half empty
+
+${nebu_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_1_5_notes + 1
+        *goto nebu_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx shitposting
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set nebu_1_5_notes + 1
+        *set karla_green %+ 3
+        *set sofia_blue %+ 2
+        *set shitposting %+ 2
+        *set sympathy %+ 2
+        *goto nebu_1_5
+    #Prev post.
+        *goto nebu_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+*label apoc_1_1
+*set apoc_prog 1
+[b]${stella_bio}[/b]
+
+[b]@apocalypse-hoarder reblogged from @trappedinspace at 11:30 PM. OP: @lunan0va[/b]
+
+Okay one last post bc I'm about to die from reading all these fricking asks
+
+God fuck gtm. Just fuck her for posting that shit. So many fuckin fancy words just to say that you hate trans people. I hope all transphobes die and this includes GTM.
+
+[b]@shadow-protectrix:[/b]
+
+This is not an appropriate thing to say. No matter what you feel, it's horrible to wish harm on people.
+
+[b]@macmillan-gt:[/b]
+
+Thank you, Claire, for calling out violent threats against women. Courage is in short supply these days.
+
+[b]@redcapella:[/b]
+
+Are you happy now @shadow-protectrix? Are you happy that you directed a transphobic hate mob against a girl who happened to make an off-the-cuff post in response to her own harassment? Are you proud of yourself?
+
+[b]@trappedinspace:[/b]
+
+Luna literally tagged the post don't reblog. What the fuck are you doing.
+
+Tags: #discourse
+
+${shad_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_5_notes + 1
+        *goto apoc_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set shad_1_5_notes + 1
+        *set stella_blue %+ 3
+        *set discourse %+ 3
+        *goto apoc_1_1
+    #Next post.
+        *goto apoc_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label apoc_1_2
+*set apoc_prog 2
+[b]@apocalypse-hoarder reblogged from @capellasgf at 11:00 PM. OP: @riemannspace[/b]
+
+It really sucks that gtm is like this, but I feel like what sucks more is that it's almost like she failed to learn the main lesson from her own books. The books were all about challenging established narratives and authorities, about questioning what you've been told since you were born. Above all, it's about the possibility for change, about questioning if and how society can be changed for the better. And apparently gtm completely forgot about this when it came to trans people existing!
+
+Tags: #queueasimodo, #discourse
+
+${apoc_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_2_notes + 1
+        *goto apoc_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+            *gosub_scene rx meta
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set apoc_1_2_notes + 1
+        *set discourse %+ 3
+        *set meta %+ 2
+        *goto apoc_1_2
+    #Next post.
+        *goto apoc_1_3
+    #Prev post.
+        *goto apoc_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label apoc_1_3
+*set apoc_prog 3
+[b]@apocalypse-hoarder reblogged from @bigalileo at 10:30 PM. OP: @shadow-protectrix[/b]
+
+Please, everyone, let's take one big, deep, breath. Everything is going to be okay.
+
+GTM said some things that a lot of us disagree with, maybe even consider personally offensive. I'm not asking people to agree with her, or even stop thinking of what she said as offensive. I'm asking you to take a step back, and remember that G. T. Macmillan is a real person, just like you. She is a human being with feelings, and she has been a victim too.
+
+Just have a little empathy, please?
+
+[b]@gnosticore:[/b]
+
+You know what? No. Fuck this. Fuck you. This sucks. This really, really sucks.
+
+How can you put your own self-aggrandizement above the needs of some of the most vulnerable members of the fandom? Are you worried at all about promoting transphobia?
+
+Tags: #queueasimodo, #discourse
+
+${shad_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_4_notes + 1
+        *goto apoc_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set shad_1_4_notes + 1
+        *set stella_blue %+ 3
+        *set claire_green %+ 5
+        *set discourse %+ 3
+        *goto apoc_1_3
+    #Next post.
+        *goto apoc_1_4
+    #Prev post.
+        *goto apoc_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label apoc_1_4
+*set apoc_prog 4
+[b]@apocalypse-hoarder reblogged from @fyeahnebulaverse at 7:00 PM. OP: @fyeahnebulaverse[/b]
+
+[Screenshot of a tweet by the actor who plays Gali Nova in the films, saying "To all trans people out there, your lives and experiences are valued and cherished. #TransRightsAreHumanRights" The tweet was retweeted by the actresses who play Astra and Capella.]
+
+A reminder that the actors have actively rejected GTM's transphobia. Most of the fandom is on our side.
+
+Tags: #gentle reminder, #queueasimodo
+
+${brun_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_5_notes + 1
+        *goto apoc_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set brun_1_5_notes + 1
+        *set discourse %+ 3
+        *goto apoc_1_4
+    #Next post.
+        *goto apoc_1_5
+    #Prev post.
+        *goto apoc_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label apoc_1_5
+*set apoc_prog 5
+*set stella_ch3_seen 1
+[b]@apocalypse-hoarder reblogged from @nebulaverse-confessions at 8:00 PM. OP: @nebulaverse-confessions[/b]
+
+@arielnova asked: confession: i think all of the nebulaverse characters would agree with gtm. do you remember the kingdomite device subplot where they all thought the whole idea of a sex change is disgusting?
+
+You're wrong! All of the nebulaverse characters love and support trans people!
+
+Tags: #queueasimodo
+
+${apoc_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_5_notes + 1
+        *goto apoc_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 3
+        *set apoc_1_5_notes + 1
+        *set discourse %+ 3
+        *goto apoc_1_5
+    #Prev post.
+        *goto apoc_1_3
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label trap_1_1
+*set trap_prog 1
+[b]${karla_bio}[/b]
+
+[b]@trappedinspace reblogged from @luxemburgs at 11:48 PM. OP: @luxemburgs[/b]
+
+If you care about the feelings of billionaires then you're a chump. None of them gives a shit about you. Yes, this includes the ones who have blogs on this godforsaken website. Every single one of these motherfuckers would let you die for another fistful of cash.
+
+Tags: #how else are we supposed to cope with the crushing alienation of late capitalism if not by forming parasocial bonds with celebrities who hate us
+
+${trap_1_1_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_1_notes + 1
+        *goto trap_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *if claire_mutuals
+                *gosub_scene rx claire_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 5
+        *if claire_mutuals
+            *set claire_green %+ 3
+        *set trap_1_1_notes + 1
+        *set discourse %+ 3
+        *goto trap_1_1
+    #Next post.
+        *goto trap_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_2
+*set trap_prog 2
+[b]@trappedinspace reblogged from @noncanonical at 11:30 PM. OP: @noncanonical[/b]
+
+The reason I am boycotting GT*M's products is because she is using her resources to directly harm the lives of trans people in the UK. She is personally bankrolling multiple lawsuits aimed at excluding trans women from women's spaces, and legalizing the harassment of trans people anywhere. She is donating to politicians who want to do the same, and trying to defeat trans-inclusive politicians, even those in her party. Her foundation is giving grants to avowedly anti-trans organizations that spread reactionary conspiracy theories about trans people. Giving her money at this point is a vote in favor of these actions. I would in fact say that if you support trans rights in the UK, it is unethical to keep on funding her.
+
+[b]@shadow-protectrix:[/b]
+
+Do you think your boycott will actually work? How many people will agree? Will this actually do anything to help trans people?
+
+[b]@noncanonical:[/b]
+
+I don't know if it will work. But I have a conscience. Even if I am only doing this for myself, I cannot support her work.
+
+Tags: #yeah this, #im... really disinclined to partake in any nebula*verse content right now, #this fucking sucks
+
+${shad_1_2_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_2_notes + 1
+        *goto trap_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *if claire_mutuals
+                *gosub_scene rx claire_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 5
+        *if claire_mutuals
+            *set claire_green %+ 3
+        *set shad_1_2_notes + 1
+        *set discourse %+ 3
+        *goto trap_1_2
+    #Next post.
+        *goto trap_1_3
+    #Prev post.
+        *goto trap_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_3
+*set trap_prog 3
+[b]@trappedinspace reblogged from @redcapella at 11:24 PM. OP: @shadow-protectrix[/b]
+
+[b]@shadow-protectrix:[/b]
+
+Please, everyone, let's take one big, deep, breath. Everything is going to be okay.
+
+GTM said some things that a lot of us disagree with, maybe even consider personally offensive. I'm not asking people to agree with her, or even stop thinking of what she said as offensive. I'm asking you to take a step back, and remember that G. T. Macmillan is a real person, just like you. She is a human being with feelings, and she has been a victim too.
+
+Just have a little empathy, please?
+
+[b]@redcapella:[/b]
+
+Did you miss the part where she is bankrolling lawsuits to ban trans women from public spaces where we have historically been allowed? This isn't about "offense". None of us would care what she was saying if she were some rando. It's about a political war against our right to exist, which she is directly exacerbating.
+
+Also I thought you were nonbinary, which is something she literally calls a "social contagion"? Do you have no self respect?
+
+Tags: #sigh....
+
+${shad_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_4_notes + 1
+        *goto trap_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx luna_like
+            *if claire_mutuals
+                *gosub_scene rx claire_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 3
+        *set luna_blue %+ 3
+        *if claire_mutuals
+            *set claire_green %+ 5
+        *set shad_1_4_notes + 1
+        *set discourse %+ 3
+        *goto trap_1_3
+    #Next post.
+        *goto trap_1_4
+    #Prev post.
+        *goto trap_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label trap_1_4
+*set trap_prog 4
+[b]@trappedinspace reblogged from @noncanonical at 11:14PM. OP: @auguroflight6[/b]
+
+Hatsune Miku wrote the Chronicles of the Shadow Nebula.
+
+[b]noncanonical:[/b]
+
+No. GTM wrote Chronicles of the Shadow Nebula. She is a transphobe, she wrote a series of books we enjoyed, and she is still profiting from us and investing her financial resources and social capital into political efforts to curb trans rights no matter what bizarre rationalizations we use to justify our continued support of her.
+
+Tags: #discourse
+
+${trap_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_4_notes + 1
+        *set karla_blue %+ 1
+        *goto trap_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 3
+        *set trap_1_4_notes + 1
+        *set discourse %+ 3
+        *goto trap_1_3
+    #Next post.
+        *goto trap_1_5
+    #Prev post.
+        *goto trap_1_3
+    #Look at another blog.
+        *goto montage_1
+
+
+*label trap_1_5
+*set trap_prog 5
+*set karla_ch3_seen 1
+[b]@trappedinspace reblogged from @capellasgf at 10:59 PM. OP: @lunan0va[/b]
+
+Okay one last post bc I'm about to die from reading all these fricking asks
+
+God fuck gtm. Just fuck her for posting that shit. So many fuckin fancy words just to say that you hate trans people. I hope all transphobes die and this includes GTM.
+
+[b]@shadow-protectrix:[/b] 
+
+This is not an appropriate thing to say. No matter what you feel, it's horrible to wish harm on people.
+
+[b]@macmillan-gt:[/b]
+
+Thank you, Claire, for calling out violent threats against women.
+
+[b]@reaper-of-byblos:[/b] 
+
+Are you happy now @shadow-protectrix? Are you happy that you directed a transphobic hate mob against a girl who happened to make an off-the-cuff post in response to her own harassment? Are you proud of yourself?
+
+[b]@trappedinspace:[/b] 
+
+Luna literally tagged the post don't reblog. What the fuck are you doing. 
+
+Tags: #long post, #sorry for the ongoing stream of discourse...
+
+${shad_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_5_notes + 1
+        *set karla_blue %+ 5
+        *goto trap_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *if claire_mutuals
+                *gosub_scene rx claire_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 3
+        *if claire_mutuals
+            *set claire_green %+ 3
+        *set shad_1_5_notes + 1
+        *set discourse %+ 3
+        *goto trap_1_5
+    #Prev post.
+        *goto trap_1_4
+    #Look at another blog.
+        *goto montage_1
+
+*label annc_chat
+[b]Anti-Nebulaverse Nebulaverse Club[/b]
+
+@trappedinspace: Hey @lunan0va I'm really sorry about the messages you've been getting. Is there anything we can do to help?
+
+@lunan0va: i'm fine. really.
+
+@trappedinspace: Also should I delete that one reblog? Or any reblog for that matter? Sorry I got kinda carried away...
+
+@lunan0va: nah. it's already spread enough that it doesn't really make a difference lmao
+
+@lunan0va: i've deleted the op, not that anyone cares i guess. i shouldn't wish death on people. i get that.
+
+@apocalypse-hoarder: WOW the way Claire reblogged from Luna was so out of line. Want me to yell at them for you? I can write up a callout.
+
+@lunan0va: idk...
+
+@lunan0va: idk if that would help, you know? I don't really want to be like, the instigator of drama. More than I already am lol
+
+@trappedinspace: yeah Claire fucking sucks. But, like, Claire isn't the real target. GTM is still ultimately responsible for all this.
+
+@trappedinspace: Maybe to stem the tide it'd be better if you just closed all asks and deleted them instead of posting them. Make your blog private if need be. Delete and remake it even.
+
+@apocalypse-hoarder: wow this is patronizing as fuck. Luna don't let the haters get you down.
+
+@trappedinspace: I've been through this shit before. I've seen waves of harassment like this before, and I've been on the websites where they organize. The best way to deal with them is to deny them views.
+
+@apocalypse-hoarder: you are literally telling her what to do with her life. What kind of arrogance is that?
+
+@trappedinspace: posting the hate messages just gives them a bigger platform. Don't let them have that. Also you don't have to engage in anything that hurts you.
+
+@lunan0va: sorry but can you people stop talking like i'm not here
+
+*choice
+    #Agree with Karla @trappedinspace.
+        *set karla_blue %+ 5
+        *set luna_blue %+ 3
+        *set stella_green %+ 4
+        *set karla_trust 1
+        @you: um sorry for butting in but... I think @trappedinspace is right.
+
+        @you: we shouldn't give the trolls more attention.
+
+        @trappedinspace: Thank you!
+
+        @lunan0va: alright...
+
+        @lunan0va: i won't delete my blog but i'll close all asks and block as many of them as I can ¯\_(ツ)_/¯
+
+        @apocalypse-hoarder: i still think you should fight back more
+
+        @apocalypse-hoarder: it's not just this incident. claire has a pattern of really shitty behavior.
+
+        @lunan0va: ya i know but like... idc right now
+
+        @trappedinspace: 💜
+
+        @trappedinspace: Remember that we all care about you.
+
+        @lunan0va: thanks...
+    #Agree with Stella @apocalypse-hoarder.
+        *set stella_blue %+ 5
+        *set karla_green %+ 4
+        *set luna_blue %+ 2
+        *set stella_trust 1
+        @you: um sorry for butting in but... I agree with @apocalypse-hoarder.
+
+        @you: you shouldn't let the trolls dictate what you do.
+
+        @apocalypse-hoarder: thank you!!!
+
+        @trappedinspace: idk... I still feel like ducking out for a bit is the best course of action.
+
+        @trappedinspace: But, just whatever you do, please put your own mental health first.
+
+        @lunan0va: thanks guys...
+
+        @lunan0va: i'm going to just try to keep a low profile for now.
+
+        @apocalypse-hoarder: <3
+
+        @trappedinspace: 💜
+    #Don't say anything.
+        @lunan0va: i won't delete my blog...
+
+*label annc_chat_1
+@lunan0va: i don't want to delete my blog because... and i know this is probably kinda terrible but i kinda want to be recognized, y'know? i want to be somebody. i want to be well known. i want to be respected. i want to see my likeness set in stone, like lorde said.
+
+@lunan0va: but not like this.
+
+@trappedinspace: 💜
+
+@lunan0va: and @trappedinspace this is random but could i ask you some questions about trans stuff and hrt? how much of what they're telling me is correct?
+
+@trappedinspace: Don't worry about what that crowd says; they're just saying whatever they think will hurt. I know "be strong" means shit these days but... I'll DM you.
+
+@lunan0va: thanks!
+
+*choice
+    *if (luna_ch3_seen = 1) #Express sympathy to Luna.
+        *set luna_blue %+ 3
+        @you: i'm really sorry about what's happening Luna...
+
+        @lunan0va: thanks! but i'm fine. i'm really fine.
+
+        @you: are you sure? the posts were pretty nasty...
+
+        @lunan0va: my element is ice -_- i can deal with that sort of thing.
+        *goto montage_1
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label writers_chat
+[b]Nebulaverse Fandom Writer's Chat[/b]
+
+@nebulascribbler: Wow it's really a mess on the interwebs today, huh?
+
+@shadow-protectrix: It sure is!
+
+@brunova-official: hey claire, it's kinda messed up how you reblogged from luna
+
+@brunova-official: she tagged the post as don't reblog...
+
+@shadow-protectrix: Sorry? What am I supposed to say?
+
+@brunova-official: you could delete the reblog but i guess the damage is already done since the post is everywhere now
+
+@brunova-official: i guess you could apologize?
+
+@shadow-protectrix: Luna's already blocked me.
+
+@brunova-official: :/
+
+@brunova-official: do you want me to tell her you said sorry?
+
+@shadow-protectrix: Fine. I guess.
+
+@shadow-protectrix: Tell her I said sorry for putting her on blast like that.
+
+@brunova-official: okay :D
+
+@nebulascribbler: Hey Claire, how are things going with Nebulacon? I saw that a bunch of people are backing out?
+
+@shadow-protectrix: Not as many as you'd think, guessing from the discourse.
+
+@shadow-protectrix: But enough to put a dent in the schedule. Hari @noncanonical started the "movement". A bunch of artists are dropping out too or said they're thinking about it. @monadcore and @cyanstars said they'll probably cancel. Probably others too.
+
+@nebulascribbler: Well that's unfortunate. I hope the show can still go on.
+
+@shadow-protectrix: I'm glad you're standing with me :)
+
+@nebulascribbler: If you want, I can help with the planning and organization.
+
+@shadow-protectrix: Thank you so much! I could give you a huge hug right now :P
+
+@nebulascribbler: No problem. Always happy to be of assistance.
+
+*choice
+    #Comment: offer to help with NebulaCon?
+        *set claire_blue %+ 5
+        *set sofia_blue %+ 5
+        *set sofia_trust + 1
+        @you: um... i can help out with nebulacon?
+        
+        @shadow-protectrix: That is AWESOME! Heaven knows we need more help now that things are gone...
+        
+        @nebulascribbler: What should we have ${em} do :P
+        
+        @shadow-protectrix *shrug* I don't know... we'll figure something out.
+
+        @nebulascribbler: Yeah, thanks for the offer!
+
+        @nebulascribbler: I'll get back to you.
+        *goto montage_1
+    #Look at another blog.
+        *goto montage_1
+        
+
+*label karla_message
+
+Karla has sent you a private message:
+
+@trappedinspace: Hey is it just me or do you get weird vibes from @apocalypse-hoarder?
+
+@trappedinspace: Looking back at their blog archive, they literally did not make a single original post before the latest gtm incident. All of their posts had been queued.
+
+@trappedinspace: And they haven't posted or reblogged anything that's not about gtm/the incident since.
+
+@trappedinspace: And one more thing, I found an archive of the blog from over a year ago and they were still 17 then, so they're lying about their age probably. [link to wayback machine]
+
+@trappedinspace: Sorry if this is creepy but I really feel like they're some kind of deliberate shit-stirrer or fake account...
+
+@trappedinspace: ofc I could just be unreasonably paranoid... what do you think?
+
+*choice
+    #Agree: @apocalypse-hoarder is acting strangely.
+        *set karla_investigation 2
+        *set karla_blue %+ 5
+        @you: yeah, you're right. they're being kinda weird...
+
+        @trappedinspace: Thank you! I'm really glad you agree.
+
+        @trappedinspace: But we don't have enough information to confirm for sure.
+
+        @trappedinspace: I guess let's just... be on the lookout?
+
+        *choice
+            #I've never DM'ed them or spoken to them...
+                @you: i've never dm'ed them or spoken to them in any way...
+
+                @trappedinspace: Now in my mind i'm trying to concoct ideas to get them to reveal their secret.
+
+                @trappedinspace: Like feeding them a secret piece of information and seeing if any of the big accounts picks up on it.
+
+                @trappedinspace: Or using statcounter to get their IP and correlating it with a suspected puppetmaster.
+
+                @trappedinspace: You could talk to them if you want...
+
+                @trappedinspace: Don't just straight-up ask them though.
+
+                @you: okay...
+        *goto montage_1
+    #Disagree: Karla @trappedinspace is being unreasonably paranoid.
+        *set karla_investigation -1
+        *set karla_green %+ 1
+        @you: nah... we've been mutuals for a while and i feel like @apocalypse-hoarder is fine. i think you're being kinda paranoid.
+
+        @you: she seemed like a real person just now... and the tags from her posts are real.
+
+        @trappedinspace: Maybe so.
+
+        @trappedinspace: Sorry, I won't bother you with this anymore.
+        *goto montage_1
+    #Neutral: Ask for more information.
+        *set karla_investigation 1
+        @you: i'm not sure... i would need more information to decide.
+
+        @trappedinspace: Yeah, I would like more information too. I'll see what I can dig up. I'll talk to you later, if that's okay?
+
+        @you: okay...
+        *goto montage_1
+
+*label sofia_message
+
+Sofia has sent you some private messages:
+
+@nebulascribbler: hello ${handle}!
+
+@nebulascribbler: I saw that you were interested in helping with NebulaCon.
+
+@nebulascribbler: To be honest, given recent events it's not clear that the event will even take place. But I hope it does. And I hope that you want it to succeed as well.
+
+@nebulascribbler: But, with the controversy surrounding GTM, and the secondary controversy surrounding Claire, our task becomes more difficult.
+
+@nebulascribbler: Claire is a wonderful person and is the impetus behind this whole thing.
+
+@nebulascribbler: But at this juncture, we need changes.
+
+*choice
+    #So you want to take NebulaCon away from Claire?
+        @you: so... you want to take over nebulacon away from claire?
+
+        @nebulascribbler: That's a rather blunt way to put it.
+
+        *label sofia_explanation
+        @nebulascribbler: I've tried to convince them privately to take a step back, at the very least let other people be the figureheads behind NebulaCon. I could take the fall, even. But they won't relent. They really want to be the person at the head of this.
+        
+        @nebulascribbler: But there's a conflict between their interests and the interests of the Con, and really the fandom as a whole.
+
+        @nebulascribbler: I'm just wondering what would convince them to let their baby go.
+
+        @nebulascribbler: And this is where I need the help of someone who isn't me.
+
+        *choice
+            #Why me?
+                @you: why me?
+
+                @nebulascribbler: Because you're the only one who volunteered, of course!
+
+                *goto what_do
+            #What do you want me to do?
+                *set sofia_blue %+ 3
+                @you: what do you want me to do?
+
+                *label what_do
+                *set sofia_know_plan true
+                @nebulascribbler: I have some ideas for what we could do to save NebulaCon.
+
+                @nebulascribbler: It's not enough to talk to them one-on-one. I think we need to change the atmosphere.
+
+                @nebulascribbler: I hate to say this, but I believe that we need to put more pressure on them. 
+                
+                @nebulascribbler: But apply the pressure in a way that leaves an out. Don't send anon hate. And make sure it's about Claire, not the concept of NebulaCon or the Nebulaverse fandom in general.
+
+                @nebulascribbler: So instead of making a callout post, maybe we could make an appeal to the good of the fandom.
+                *choice
+                    #I'll help you (lie?).
+                        *goto ill_help_sofia
+                    #I'll help you (truth?).
+                        *label ill_help_sofia
+                        *set sofia_helped 2
+                        *set sofia_blue %+ 8
+                        @you: okay, i'll help you.
+
+                        @nebulascribbler: Great!!! I think @{(stella_trust=1) @apocalypse-hoarder|@greenrockmage} just made a callout post for Claire. Maybe you could give it a boost?
+
+                        @nebulascribbler: Thanks!
+                        *goto montage_1
+                    #I won't help you.
+                        *set sofia_helped -1
+                        *set sofia_green %+ 5
+                        @you: no, sorry, i don't wanna do this.
+
+                        @nebulascribbler: That's okay. Forget I ever said anything.
+                        *goto montage_1
+                    #I don't know if I'll help.
+                        *set sofia_helped 1
+                        *set sofia_green %+ 4
+                        @you: idk what i'm gonna do...
+
+                        @nebulascribbler: That's okay.
+
+                        @nebulascribbler: If you want to help, I think @{(stella_trust=1) @apocalypse-hoarder|@greenrockmage} just made a callout post for Claire. Maybe you could give it a boost?
+
+                        @nebulascribbler: Otherwise, forget I ever said anything.
+                        *goto montage_1
+                    #I'm going to tell Claire about this.
+                        *set sofia_helped -2
+                        *set sofia_green %+ 5
+                        @you: i'm gonna tell claire about this.
+
+                        @nebulascribbler: They already know what I think, and what I want to do. So it's not like you'll be telling them anything they don't already know.
+
+                        @nebulascribbler: It doesn't really matter though. It's not like some cloak-and-dagger plot.
+                        *goto montage_1
+            #NGL this is kind of weird...
+                @you: ngl this is kinda weird...
+
+                @nebulascribbler: I'm sorry.
+
+                @nebulascribbler: You don't have to do anything if you don't want to.
+
+                *choice
+                    #I do want to help, actually.
+                        @you: um, i do, actually.
+
+                        @nebulascribbler: That's great!
+
+                        *goto what_do
+                    #What do you want me to do?
+                        @you: what do you want me to do?
+
+                        *goto what_do
+                    #I don't want to help you.
+                        *set sofia_helped -1
+                        @you: sorry but i don't really want to do this...
+
+                        @nebulascribbler: Okay. I won't bother you anymore then. I'm sorry if I wasted your time.
+
+                        *goto montage_1
+    #This is too complicated for me.
+        @you: this is sort of too complicated for me lol
+
+        @nebulascribbler: Then allow me to explain.
+        *goto sofia_explanation
+
+
+*label claire_message
+*set claire_trust + 1
+*set claire_knows_sofia_plans true
+*set claire_blue %+ 8
+
+You've decided to contact Claire about Sofia's plan.
+
+@you: hey claire?
+
+@shadow-protectrix: Yes $!{handle}?
+
+@you: sofia told me something about you...
+
+@shadow-protectrix: Was it about NebulaCon? How she wants to take it over from me?
+
+@you: yeah...
+
+@shadow-protectrix: And she wanted to rope you into her plan to push me to stop being the public face of NebulaCon?
+
+@you: yeah...
+
+@shadow-protectrix: *sigh*
+
+@shadow-protectrix: Of course.
+
+@shadow-protectrix: Welp, thanks for telling me. I got the impression that she was recruiting other people into her little thingy but I didn't know who it would be.
+
+*choice
+    #Will you give Sofia NebulaCon?
+        *set claire_blue %+ 4
+        @you: so um... will you agree to what she wants?
+
+        @shadow-protectrix: No. Never.
+
+        @shadow-protectrix: Between you and me, I'm not her biggest fan.
+        
+        @shadow-protectrix: I think she just wants attention, the adoration of thousands of screaming fans and stuff like that.
+
+        @shadow-protectrix: I do too, of course. But at least I don't try to hide it. At least I don't make up weird schemes to backstab my ostensible friend.
+
+        @shadow-protectrix: Don't you want that, too? Doesn't everyone?
+        *fake_choice
+            #I do...
+                @you: yeah i guess.
+
+                @shadow-protectrix: I really understand that impulse.
+            #I don't know what I want...
+                @you: idk what i want...
+
+                @shadow-protectrix: That's okay.
+                
+                @shadow-protectrix: You will someday.
+            #I don't want fame at all.
+                @you: nah. i don't want fame at all.
+
+                @shadow-protectrix: So you're content to just slink about in the shadows? Creating content that only a handful of people would ever see and even fewer would care about?
+
+                @you: i guess?
+
+                @shadow-protectrix: Well, then you're more humble than I could ever be.
+
+                @shadow-protectrix: lol
+        *goto montage_1
+    #Go back.
+        *goto montage_1
+
+
+*label karla_message_1
+*set karla_trust 3
+
+You've decided to tell Karla about Sofia's plan. Because it might be useful for her investigation?
+
+@you: hey karla?
+
+@trappedinspace: yeah?
+
+@you: not sure if this is useful for your investigation into @apocalypse-hoarder, but sofia @nebulascribbler messaged me.
+
+@trappedinspace: lol why?
+
+@you: she told me that she's trying to get Claire @shadow-protectrix to give up nebulacon to her. and she wanted me to help her.
+
+@trappedinspace: How did she want you to help her?
+
+@you: by reblogging a callout post for Claire
+
+@trappedinspace: LMAO
+
+*comment amogus
+@trappedinspace: Okay, that just raises my suspicions of @nebulascribbler, but I don't think it's necessarily proof of anything. She's always kinda seemed sus to me. idk.
+
+@trappedinspace: tbh I feel like the entire fandom mom community that includes sofia and claire and all those people has incredibly weird vibes but maybe that's just me.
+
+@trappedinspace: Anyway just keep me updated...
+
+*choice
+    #Go back.
+        *goto montage_1
+
+
+*label reblog_callout
+
+*if (stella_trust >= 1)
+    [b]@apocalypse-hoarder posted 5 minutes ago.[/b]
+*else
+    [b]@greenrockmage posted 5 minutes ago.[/b]
+
+This is a callout post for C/l/a/i/r/e @/s/h/a/d/o/w-p/r/o/t/e/c/t/r/i/x. As an adult in the n*bul*v*rse fandom, they have a habit of apologizing for abusive relationships, forming inappropriately close ties to minors, and hostility towards trans women. CW: abuse apologia, transmisogyny
+*comment TODO: more detailed
+
+(Read more)
+
+*choice
+    *disable_reuse #Reblog it.
+        *set stella_blue %+ 3
+        *set sofia_blue %+ 3
+        *set claire_green %+ 20
+        *set sofia_trust 3
+        *set sofia_helped 3
+        *achieve callout
+    #Go back.
+        *goto montage_1
+
+
+
+*label montage1_end
+
+You're done with blogs for today. This website is no longer a place of honor, if it ever was. It is a dangerous and repulsive place, with nothing of value and no esteemed deeds to commemorate. The danger emanates forth like waves of energy, radiating through the field of blogs.
+
+Thus, you go to sleep for the night. 
+
+*page_break
+
+*gosub_scene fic_wind
+
+[b]IRL?[/b]
+
+*if fic_stopped_writing
+    The story is over, at least for now. You have nothing to publish.
+*else
+    The story is over. You post it online. Hope for the best, which is all you can do in these tumultuous times.
+
+    *comment TODO: calculate new followers
+
+
+*finish

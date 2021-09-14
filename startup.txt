@@ -1,0 +1,457 @@
+*title A Paradox Between Worlds
+*author Autumn Chen
+*scene_list
+  startup
+  mv1
+  mv2
+  mv3
+  mv4
+  mv5
+  check_internet
+  calc_new_followers
+  check_blocked
+  check_backstory
+  fic_stone
+  fic_ice
+  fic_wind
+  fic_metal
+  fic_light
+  hearts_choice
+  rx
+
+*create implicit_control_flow true
+
+*comment personal description********************
+*create first_name ""
+*create last_name ""
+*create handle ""
+*create username ""
+*create aesthetic ""
+*comment tagging style can be "organized", "chaotic", "none"
+*create tagging_style ""
+*comment location can be bedroom, living_room, bed
+*create location ""
+*comment your follower count
+*create followers 110
+
+*comment whether or not to display reactions (x liked this, x disliked this)
+*create rx true
+
+*comment why are you in this fandom?
+*create goal ""
+
+*comment pronouns, misc
+*create e "they"
+*create eir "their"
+*create eirs "theirs"
+*create em "them"
+*create emself "themself"
+*create plural false
+*create player_is "is"
+*create player_was "were"
+
+*comment this is unused
+*create is_amab false
+*create is_afab false
+*create is_trans false
+*create is_cis false
+*create is_trans_girl false
+*create is_trans_boy false
+*create is_nonbinary false
+*create is_genderfluid false
+*create is_agender false
+*create is_other_gender false
+*create is_questioning false
+
+*create heart_emoji ""
+
+*comment fav_ship is one of g/b, g/t, b/t, g/a, g/c, a/c
+*create fav_ship "g/b"
+
+*comment blog stats**************************
+
+*comment blog vibes
+*comment every reblogged post increases the relevant stat by %+ 3
+*comment (should we distinguish between "strong" posts and "weak" posts? shrug emoji)
+*create none 0
+*create gen 10
+*create shipping 10
+*create meta 10
+*create shitposting 10
+*create sympathy 10
+*create discourse 10
+*comment current blog alignment
+*comment OKAY the none is just to prevent a null reference error in quicktest lol
+*create old_alignment "none"
+*create current_alignment "none"
+*create alignment_consistent true
+
+*comment ship alignments
+*comment every post gets %+ 3
+*create astrapella 0
+*create brunova 0
+*create ellanova 0
+*create astranova 0
+*comment none of these ships actually occur in the game at any time
+*create brunastra 0
+*create tychonova 0
+*create brunotycho 0
+*create old_top_ship "none"
+*create top_ship "none"
+*create ship_consistent true
+
+*comment character alignments
+*comment characters alone get %+ 3. Character with 1 other gets %+ 2. Group gets %+ 1.
+*create gali 5
+*create bruno 5
+*create capella 5
+*create astra 5
+*comment just realizing that there's basically no content for tycho lol
+*create tycho 5
+*create top_character "none"
+*create old_top_character "none"
+*create character_consistent true
+
+*comment follower calculations
+*create followers_gained 0
+*create followers_lost 0
+
+*comment light, stone, metal, wind, ice, shadow
+*create persona ""
+*create role ""
+
+*create current_chapter 1
+*create current_story_element "stone"
+*create old_rb_count 0
+*create rb_count 0
+
+*comment achievement check stats
+*create nv_info 0
+*create nv_locations 0
+*create nv_elements 0
+*create nv_characters 0
+*create nv_magic 0
+*create nv_secrets 0
+*create nv_bible 0
+
+*comment relationships***************************
+*create luna_bio "luna | she/her | minor | asian | augur of ice, keeper of the forbidden transgirl!gali lore"
+*create luna_blocked false
+*create luna_interact 0
+*create luna_mutuals true
+*create luna_following true
+*create luna_red 0
+*create luna_green 5
+*create luna_blue 20
+*create luna_chat false
+*create luna_chat_invited false
+*create in_luna_chat false
+*create luna_message_2 false
+*create knows_luna_secret false
+*create luna_helped false
+*create has_luna_password false
+*create has_luna_new_blog false
+*create luna_contacted_bro false
+*create luna_shelter false
+*create luna_helped_by ""
+
+*comment these variables check if you've seen all of the blog posts.
+*create luna_ch1_seen 0
+*create luna_ch2_1_seen 0
+*create luna_ch2_2_seen 0
+*create luna_ch3_seen 0
+*create luna_ch4_seen 0
+*create luna_ch5_seen 0
+
+*create claire_bio "I'm Claire, your favorite nonbinary ace fandom mom. Weaver of Wind, they/them. I'm very much an adult, but I'll try to keep it kid-friendly here. All ships are welcome."
+*create claire_blocked false
+*create claire_interact 0
+*create claire_mutuals false
+*create claire_red 0
+*create claire_green 0
+*create claire_blue 5
+*comment claire_chat is if you've been invited, in_claire_chat is if you've accepted.
+*create claire_chat false
+*create in_claire_chat false
+*create claire_deactivated false
+*create claire_trust 0
+*create claire_knows_sofia_plans false
+
+*create claire_ch1_seen 0
+*create claire_ch2_1_seen 0
+*create claire_ch2_2_seen 0
+*create claire_ch3_seen 0
+*create claire_ch4_seen 0
+*create claire_ch5_seen 0
+
+*create sofia_bio "never apologize for being who you [i]are[/i]. (-Sofia. -latinx lesbian. -20-something. -she/they. -Nebulaverse fandom writer and unrepentent multishipper. -augur of stone.)"
+*create sofia_blocked false
+*create sofia_interact 0
+*create sofia_mutuals false
+*create sofia_red 0
+*create sofia_green 0
+*create sofia_blue 5
+*comment Sofia's messages to protag
+*create sofia_dm_ch2 false
+*create sofia_deactivated false
+*comment do you know sofia's secret plans?
+*create sofia_know_plan false
+*create sofia_secret false
+*create sofia_helped 0
+*create sofia_trust 0
+*create revealed_sofia_secret false
+
+*create sofia_ch1_seen 0
+*create sofia_ch2_1_seen 0
+*create sofia_ch2_2_seen 0
+*create sofia_ch3_seen 0
+*create sofia_ch4_seen 0
+*create sofia_ch5_seen 0
+
+
+*create karla_bio "yes this is a chronicles blog. yes i'm a loser. karla, she, 21. f*ck macmillan."
+*create karla_blocked false
+*create karla_interact 0
+*comment i'm not sure if karla should or shouldn't be a mutual at the start...
+*create karla_mutuals true
+*create karla_red 0
+*create karla_green 0
+*create karla_blue 10
+*comment trust is 1 if karla trusts you enough to relay her suspicion of stella
+*create karla_trust 0
+*comment investigation is 2 if you're helping her, 1 if you're just waiting, -1 if you disbelieve her
+*create karla_investigation 0
+
+*create karla_ch1_seen 0
+*create karla_ch2_1_seen 0
+*create karla_ch2_2_seen 0
+*create karla_ch3_seen 0
+*create karla_ch4_seen 0
+*create karla_ch5_seen 0
+
+
+*create lux_bio "follow the [i]light[/i] and find the [i]truth[/i] (Lux/Lucas, lvl 17, he/him, bi mlm, reaper of light)"
+*create lux_blocked false
+*create lux_interact 0
+*create lux_mutuals true
+*create lux_red 0
+*create lux_green 0
+*create lux_blue 10
+*create lux_deactivated false
+
+*create lux_ch1_seen 0
+*create lux_ch2_1_seen 0
+*create lux_ch2_2_seen 0
+*create lux_ch3_seen 0
+*create lux_ch4_seen 0
+*create lux_ch5_seen 0
+
+
+*create stella_bio "stella | they/she | reaper of metal | 17 | astrapella forever"
+*create stella_blocked false
+*create stella_interact 0
+*create stella_mutuals true
+*create stella_red 0
+*create stella_green 0
+*create stella_blue 5
+*create stella_deactivated false
+*comment if stella is willing to trust you...
+*create stella_trust 0
+
+*create stella_ch1_seen 0
+*create stella_ch2_1_seen 0
+*create stella_ch2_2_seen 0
+*create stella_ch3_seen 0
+*create stella_ch4_seen 0
+*create stella_ch5_seen 0
+
+*comment later characters...
+
+*create knows_hari false
+*create hari_bio "I'm Hari and I'm older than you. He/they, literal fandom dad. Always learning, always trying to improve."
+
+
+*create knows_laura false
+*create laura_bio "laura | she/they | 19 | 🇪🇹🇨🇦⚢"
+
+
+*comment story progression*************************************
+*create posted_ch2_annc1 false
+*create posted_ch2_annc2 false
+*create posted_ch2_annc_o1 false
+*create posted_ch2_annc_o2 false
+*create posted_ch2_annc_o3 false
+*create posted_ch2_annc_2_1 false
+
+*create posted_ch3_annc_1 false
+
+*create in_universe false
+
+*create ranted_end false
+
+*comment Universe state*****************************
+
+*create story_title ""
+*create story_title_short ""
+*create use_lyric_title false
+
+*comment The protagonist of your story... Galileo "Gali" Nova
+*create protag "Gali"
+*create protag_last_name "Nova"
+*create protag_e "they"
+*create protag_es "they're"
+*create protag_eir "their"
+*create protag_eirs "theirs"
+*create protag_em "them"
+*create protag_emself "themself"
+*create protag_plural false
+*create protag_cis_boy false
+*create protag_trans_boy false
+*create protag_nonbinary false
+*create protag_trans_girl false
+*create protag_cis_girl false
+*create protag_questioning false
+
+*comment Personae can be any element: light, stone, metal, wind, ice
+*create protag_persona "light"
+*create protag_role "keeper"
+*create fic_ship ""
+*create fic_stopped_writing false
+*create fic_brunova true
+*create fic_astrapella true
+
+*create protag_likes_bruno 0
+*create protag_bruno_red 0
+*create protag_bruno_green 50
+*create protag_bruno_blue 20
+*create bruno_trans false
+*comment did the protag and bruno implicitly f*** in ch2
+*create protag_bruno_ch2_ff 0
+
+*create protag_likes_tycho 0
+*create protag_tycho_red 0
+*create protag_tycho_green 10
+*create protag_tycho_blue 50
+
+*create protag_likes_astra 0
+*create protag_astra_red 0
+*create protag_astra_green 20
+*create protag_astra_blue 40
+
+*create protag_likes_capella 0
+*create protag_capella_red 0
+*create protag_capella_green 30
+*create protag_capella_blue 30
+*create capella_trans false
+
+*comment per-chapter fic fails/wins
+*create has_chekhovs_gun false
+*create ch1_wins 0
+*create ch1_fails 0
+*create ch2_wins 0
+*create ch2_fails 0
+*create ch3_wins 0
+*create ch3_fails 0
+*create ch4_wins 0
+*create ch4_fails 0
+
+*create ch3_finished 0
+*create ch4_finished 0
+*create ch5_finished 0
+
+*comment fic settings
+*comment ch1: city, town, mall. Lightbound world.
+*create ch1_setting "city"
+*comment ch2: ship, prison, fortress. Icebound world.
+*create ch2_setting "ship"
+*comment ch3: desert, plains, mountain. Windbound world.
+*create ch3_setting "desert"
+*comment ch4: academy (canon-divergence), school (modern AU), school (modern fantasy AU). Metalbound world.
+*create ch4_setting "academy"
+
+*comment popularity of your story... a linear scale?
+*create popularity 0
+
+*comment like/reblog counts
+*create ch1_likes 0
+*create ch1_rbs 0
+*create ch2_likes 0
+*create ch2_rbs 0
+*create ch3_likes 0
+*create ch3_rbs 0
+*create ch4_likes 0
+*create ch4_rbs 0
+
+*comment chapter romantic pairings?
+
+*comment number of ooc moments, where your interpretation of Gali differs from
+*comment Macmillan's.
+*create ooc 0
+
+*comment dramatic tension...
+*create tension 0
+
+*achievement ending_luna visible 10 Still Sane
+    Ending 1
+    Ending: Luna
+
+*achievement ending_neutral visible 10 A World Alone
+    Ending 2
+    Ending: Neutral
+
+*achievement ending_claire visible 10 Buzzcut Season
+    Ending 3
+    Ending: Claire
+
+*achievement ending_sofia visible 10 Glory and Gore
+    Ending 4
+    Ending: Sofia
+
+*achievement ending visible 5 It feels so scary, getting old
+    Finish the game.
+
+
+
+*achievement backstory visible 5 Heads inside a dream
+    Read all of the Nebulaverse info.
+
+*achievement internet visible 15 Maybe the internet raised us
+    Read all of the blog posts.
+
+*achievement hyperreal visible 5 Make-believe, it's hyperreal
+    Finish your fanfic.
+
+*achievement followers visible 25 Notes from your admirers fill the dashboard
+    Double your initial follower count.
+
+*achievement callout visible 5 Send the callout
+    Send a callout.
+
+*achievement blood visible 10 Double-edged people
+    Get blocked by someone.
+
+
+
+*achievement people visible 5 People are talking, people are talking
+    A secret.
+    Join two groupchats.
+
+*achievement home visible 10 Never think about death
+    A secret.
+    Help a friend in a key moment.
+
+*achievement love visible 10 A love they won't receive
+    A secret.
+    Get a crush on someone online.
+
+*achievement truth visible 15 Nothing's wrong...
+    A secret.
+    Expose a manipulation campaign.
+
+*achievement secret visible 15 ...when nothing's true
+    A secret.
+    Keep a manipulation campaign secret.
+
+*comment TODO: remove when local testing
+*comment *if (not (choice_quicktest))
+*comment     *sm_init a_paradox_between_worlds | 3

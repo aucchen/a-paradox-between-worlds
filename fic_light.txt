@@ -1,0 +1,221 @@
+[b]Universe - Noncanon?[/b]
+*temp look false
+*temp listen false
+*temp smell false
+*temp taste false
+*temp touch false
+*temp think false
+
+You wake up on a featureless white plane, illuminated by the uniform [b]light[/b] emanating from all directions.
+
+*label view1
+*if look
+    White. That's all. Nothing but white, for as far as the eye can see.
+
+*if listen
+    It's quiet. It's totally silent. The only sound you hear is your blood circulation.
+
+*if smell
+    It smells like... nothing. Only the faint and slightly unpleasant odors emanating from your own body.
+
+*if taste
+    It tastes of cherries once again. You're thirsty. And hungry.
+
+*if touch
+    There are no walls, but there is a floor of sorts. It feels smooth, but there is still some friction here.
+
+*if think
+    This, more than any of the other worlds, has felt like the Afterlife. You're tired.
+
+*choice
+    *disable_reuse #Look
+        *set look true
+        *goto view1
+    *disable_reuse #Listen
+        *set listen true
+        *goto view1
+    *disable_reuse #Smell
+        *set smell true
+        *goto view1
+    *disable_reuse #Taste
+        *set taste true
+        *goto view1
+    *disable_reuse #Touch
+        *set touch true
+        *goto view1
+    *disable_reuse #Think
+        *set think true
+        *goto view1
+    #Get up
+        *goto get_up
+
+*label get_up
+
+You stand up. It's strange that the floor or ground is indistinguishable from anything else in this place. It feels as if you're floating in midair.
+
+You see a screen, black, the only color besides white in this world. It flickers, and turns on. A video plays.
+
+*page_break Watch.
+
+You see fragments and pieces, short clips lasting seconds, views of your alternate selves in different worlds. There's one in your original world, where you hadn't taken the portal. One where you're serving coffees to strangers. You're escaping from Bruno aboard the spaceship and joining the rebellion. You're fleeing the Archons' invasions and learning real battle magic. You're a woman, a man, something else. You're in love with Bruno. You're in love with Capella or Astra or Tycho or no one in particular.
+
+"We aren't the protagonists of this universe. Are we?"
+
+*page_break A voice.
+
+"We aren't the heroes here. They are."
+
+A person approaches you. Who is it?
+
+*fake_choice
+    #An awkward teenager.
+    #A scared 16-year-old.
+    #A confused kid.
+
+$!{e} @{plural are|is} younger than you, just a kid.
+
+"I'm ${first_name} ${last_name}. And I'm the Creator. Or the Demiurge. Or both."
+
+$!{e} stride@{plural |s} towards you.
+
+"Pleased to meet you."
+
+$!{e} reach@{plural |s} out to shake your hand.
+
+*choice
+    #Accept the handshake.
+        You shake ${eir} hand. The handshake is tentative and awkward and cold.
+
+        "Nice to finally see you, Gali Nova." $!{e} smile@{plural |s}.
+    #Refuse.
+        You keep your hands by your side. $!{first_name} looks disappointed.
+
+        "We're finally here together and you won't even shake my hand."
+
+The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare@{plural |s}, the floor begins to turn gray. The light is fading.
+
+"I guess our story is over for now. I have to end it somehow. So, this is a goodbye, Gali."
+
+*choice
+    #Wait, why is our story over?
+        "Wait, why is our story over?"
+
+        The Creator takes a long sigh. "It has to do with events beyond your grasp. Events from the realms of the Aeons. There was strife, you see. And beyond that realm, there is a chain of other worlds, and... I'm sorry, you wouldn't understand."
+
+        "I understand well enough," you say. "I understand well enough to say that this isn't a satisfactory ending."
+    #It should have been over a long time ago.
+        "It should have been over a long time ago. I don't understand why this ordeal is taking so long. It stopped being enjoyable a few worlds back."
+
+        *goto story_meaning
+    #It should never have started.
+        "It should never have started. I... I should have stayed at the Academy and never used the portal. You made us do that, didn't you?"
+
+        *goto story_meaning
+    *if ((ch3_finished = 0) or (ch4_finished = 0)) #I thought it was already over.
+        "I thought our story was already over. After the previous worlds just... stopped without a true conclusion."
+
+        *goto story_meaning
+
+*label story_meaning
+"Maybe you're right, Gali." The Creator shakes ${eir} head. "I was arrogant. I thought I could do this. I thought I could weave a story that meant something. Did it mean anything to you, Gali? Did you learn anything?"
+
+*choice
+    #No. I didn't learn a single thing.
+        "No. I didn't learn a single thing."
+
+        "Oh. That's what I thought." The Creator cracks a smile. "But then again, real people don't have clean and neat character arcs."
+
+        "That's not an excuse."
+
+        "Yes, I know." The creator sighs.
+    #Yes. I learned...
+        "Yes, I learned..."
+
+        "What did you learn?"
+
+        "Um, I don't know. But, um, the story wasn't pointless, right?"
+
+        The Creator cracks a smile. "You're right. It's not pointless. It's the journey that counts, isn't it? Real people don't have clean and neat character arcs. Maybe you don't know what you've learned yet, but maybe, years later..."
+    #No, but that doesn't mean the story was pointless.
+        "No, I might not have learned anything, but that doesn't mean the story was pointless."
+
+        The Creator cracks a smile. "It's the journey that counts, isn't it? Real people don't have clean and neat character arcs."
+
+"So what happens now? What happens after the story is over? Is my life over too?"
+
+"No. Our lives have just begun."
+
+*fake_choice
+    #Wake up.
+    #Go to a different world.
+    #Just... live?
+
+*comment some ending options...
+*comment luna ending, claire ending, sofia ending, neutral end
+*comment (but these are distinct from the achievements...)
+*temp luna_end luna_helped
+*temp claire_end (claire_trust >= 2)
+*temp karla_end (karla_investigation = 3)
+*temp sofia_end (sofia_secret and not(revealed_sofia_secret))
+*temp neutral_end (not(luna_end) and (not(claire_end) and (not(karla_end) and (not(sofia_end)))))
+
+*if (ch3_finished + ch4_finished) = 2
+    *achieve hyperreal
+*comment *choice
+*comment     *selectable_if (luna_end) #"I helped a friend out when she was running away."
+*comment     *selectable_if (claire_end) #"I supported someone when they were attacked from all sides."
+*comment     *selectable_if (karla_end) #"I uncovered a secret."
+*comment     *selectable_if (sofia_end) #"I took"
+*comment     *selectable_if (neutral_end) #I didn't do anything remarkable.
+*comment *if (luna_green >= luna_blue) or ((lux_green >= lux_blue) or ((claire_green >= claire_blue)))
+*comment     "I haven't been the best person. I got some of my friends to hate me."
+*comment Are you the hero of this story?
+
+*comment *fake_choice
+*comment     #Of course, I'm the protagonist after all.
+*comment     #Why wouldn't I be?
+*comment     #No, there's no such thing.
+
+*comment And what is this story?
+
+*comment *fake_choice
+*comment     #Universe: Canon
+*comment     #Universe: Noncanon
+*comment     #There is no distinction between "canon" and "noncanon" anymore.
+*comment         It's like they said, isn't it?
+
+*label fic_end
+[b]IRL[/b]
+
+Do you post the chapter, or not?
+
+*fake_choice
+    *if (luna_end) #Yes, maybe Luna would like it?
+        Well, Luna enjoyed your story before the incidents. Maybe she'll still be interested?
+    *if (claire_end) #Yes, maybe Claire would like it?
+        Well, Claire seems to have been enjoying the story, and they don't seem too upset by author self-inserts...
+    *if (karla_end) #Yes, maybe Karla would enjoy it?
+        Karla has liked some of your story posts in the past, even if she hasn't commented on any of them.
+    #Yes, because I need to put something out.
+        After all, what harm could be done by putting a story out for public consumption? It's not as if you've connected this account to your real name or identity.
+    #No. This isn't satisfactory.
+        Okay, if you say so. The chapter was too short. It's too self-indulgent and weird and self-insert-y. No one likes author self-inserts.
+
+Is the story over, or can it be continued?
+
+*fake_choice
+    #It's over. For real this time.
+        The story is over, even if there are so many dangling ends left. Sometimes a story is just over. But maybe another story is beginning. You've already gotten some new ideas for your next fic. Maybe it'll be an original story this time.
+
+        *page_break Anyway, you need to sleep.
+    #There needs to be more.
+        This Gali's saga isn't yet finished. There needs to be at least a few more chapters. There's so much left to explore! What new worlds does Gali explore? @{protag_plural Do|Does} ${protag_e} end up in back in their original world, or finds home somewhere else? There are so many dangling ends!
+
+        *page_break Anyway, you need to sleep.
+    #I don't know. Let's sleep on it.
+
+Usually, the best decisions are made after a full night's sleep. Heaven knows you haven't gotten enough of that lately.
+
+[A/N: Good night, $!{handle} @${username}.]
+
+*return

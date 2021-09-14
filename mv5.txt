@@ -1,0 +1,1017 @@
+[b]Movement 5: Nocturne - La mort de l'auteur[/b]
+
+[i]If this is true, that stories about ourselves can be a type of spell, then maybe it's also true the stories others tell about us can become a type of curse. Stories are the boundaries of possibility, which means that they can also be the rules of reality, or the perceived rules, which are as strong as the laws of physics if you can’t imagine any other possibility. Who get to tell the story? Whose stories are celebrated? Whose are the most true?[/i]
+
+- Aevee Bee, "The Story is a Spell. The Story is a Curse."
+
+
+[i]TT: I am scared to not exist.[/i]
+
+[i]TT: Aren't you?[/i]
+
+- Andrew Hussie, Homestuck
+
+*page_break
+
+*comment not sure if i should do this (or if i even have time to do this)
+*comment [b]Universe[/b]
+*comment TODO: multiple potential segments
+*comment *if (luna_blue > claire_blue)
+*comment     *goto luna_fic
+*comment *label claire_fic
+*comment [b]Excerpt from "Are you the hero of this story?" by Claire @shadow-protectrix[/b]
+*comment TODO
+*comment *page_break
+*comment *goto online_1
+*comment *label luna_fic
+*comment [b]Excerpt from "Holding Hands Until the End of the World" by Luna @lunan0va[/b]
+*comment TODO
+*comment *page_break
+*comment *goto online_1
+
+*label online_1
+[b]Online - Montage[/b]
+*temp read_count 0
+*temp luna_unread 1
+*temp brun_unread 1
+*temp shad_unread 1
+*temp nebu_unread 1
+*temp apoc_unread 1
+*temp trap_unread 1
+
+*temp luna_1_1_notes 3
+*temp luna_1_2_notes 9987
+*temp luna_1_3_notes 6385
+*temp luna_1_4_notes 3
+*temp luna_1_5_notes 342
+
+*temp brun_1_1_notes 8
+*temp brun_1_2_notes 7411
+*temp brun_1_3_notes 11
+*temp brun_1_4_notes 8141
+*temp brun_1_5_notes 5
+
+*temp shad_1_1_notes 25
+*temp shad_1_2_notes 83212
+*temp shad_1_3_notes 77
+*temp shad_1_4_notes 32
+*temp shad_1_5_notes 101
+
+*temp nebu_1_1_notes 23
+*temp nebu_1_2_notes 26921
+*temp nebu_1_3_notes 120394
+*temp nebu_1_4_notes 238
+*temp nebu_1_5_notes 76291
+
+*temp apoc_1_1_notes 467
+*temp apoc_1_2_notes 16584
+*temp apoc_1_3_notes 102
+*temp apoc_1_4_notes 33
+*temp apoc_1_5_notes 25
+
+*temp trap_1_1_notes 2
+*temp trap_1_2_notes 4
+*temp trap_1_3_notes 0
+*temp trap_1_4_notes 7324
+*temp trap_1_5_notes 11
+
+
+*temp luna_prog 1
+*temp brun_prog 1
+*temp shad_prog 1
+*temp nebu_prog 1
+*temp apoc_prog 1
+*temp trap_prog 1
+
+*temp claire_blog_viewed false
+*temp karla_blog_viewed false
+*temp luna_message_ref "luna_chat"
+*temp karla_message_ref "karla_chat"
+*temp annc_chat_ref "annc_chat"
+*temp claire_message_ref "claire_chat"
+
+*gosub_scene calc_new_followers
+
+*gosub_scene check_blocked
+
+Online weather report: the devastation after the storm. The wreckage of a hurricane or an earthquake. Aftershocks are still coming. The storm surge hasn't quite gone away. The ground is still waterlogged. Boats and rooftops torn and twisted every which way. But through it all, you're still standing. You're still here.
+
+*if (luna_helped)
+    *set knows_luna_secret true
+    Luna has messaged you:
+
+    @redmoongirl: hey so this is my new url! thank you so much for your help 💙️
+
+*label montage_1
+
+Which blogs would you like to read?
+
+*choice
+    *selectable_if (luna_blocked = false) #@lunan0va
+        @lunan0va has been deactivated. There is no user with that URL.
+        *goto montage_1
+    *if ((luna_blocked = false) and (knows_luna_secret)) #@redmoongirl
+        *set read_count + 1
+        *gotoref "luna_1_${luna_prog}"
+    *selectable_if ((lux_blocked = false)) #@brunova-official
+        *set read_count + 1
+        *gotoref "brun_1_${brun_prog}"
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+        *set read_count + 1
+        *gotoref "shad_1_${shad_prog}"
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+        *set read_count + 1
+        *gotoref "nebu_1_${nebu_prog}"
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+        @apocalypse-hoarder has been deactivated. There is no user with that URL.
+        *goto montage_1
+    *selectable_if ((karla_blocked = false)) #@trappedinspace
+        *set read_count + 1
+        *gotoref "trap_1_${trap_prog}"
+    *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
+        *gotoref annc_chat_ref
+    *if ((sofia_secret)) #Message Sofia.
+        You message Sofia. There is no reply, as she is offline.
+        *goto montage_1
+    *if ((luna_helped)) #Message Luna to ask how she's doing.
+        *gotoref luna_message_ref
+    *if ((karla_investigation > 0)) #Message Karla to talk about the investigation.
+        *gotoref karla_message_ref
+    *if ((claire_blocked = false) and ((claire_trust >= 1) and (claire_blue >= 30))) #Message Claire.
+        *gotoref claire_message_ref
+    *if (read_count > 0) #Stop looking at blogs.
+        *goto montage1_end
+*comment TODO: message claire and luna
+
+*label luna_1_1
+*set luna_prog 1
+[b]${luna_bio}[/b]
+
+[b]@redmoongirl reblogged from @redmoongirl at 7:00 PM. OP: @redmoongirl[/b]
+
+Hey. It's Luna. I haven't posted in a while, but I just wanted to say that I'm doing alright. Well, for certain definitions of alright.
+
+I moved back with my parents last week. They acted as if nothing had changed. They didn't yell at me; neither did they do the stereotypical tearful reunion, saying they love me and whatnot. It'd honestly be a little creepy if they did. I think my siblings talked with them, convinced them to at the very least not murder me. For that, I'm thankful more than anything else.
+
+I ended up only missing a few days of school. It wasn't a big deal. I just took my AP tests. They were... Not good but at least over with. I'm looking at colleges out of state, cheap places or where I could get a scholarship that doesn't depend on my family.
+
+So basically, it's back to the status quo ante bellum in this household. Which is fine; it's what I had planned on all along. I'm a patient person. I can outlast them; I'm good at waiting and suffering in silence and pretending I don't exist IRL. After all, I'm an Augur of Ice.
+
+God, it's so strange that I still think in nebulaverse terms. That series left an indelible mark on me. Despite G*T*M's best efforts, I don't know if I would have realized my trans-ness without those books, and the community we built around them. Even the bad memories of the last month can't fully make me hate the stories. But, of course, I won't be engaging with the Nebulaverse anymore. I've orphaned all my fics at the archive. I don't know what if anything can replace it in my mind. But maybe I don't need it anymore. I hope I won't need it anymore.
+
+Thanks to Karla, Laura, Hari, @{luna_helped Lux, and especially $!{handle}|and Lux} for helping me through this mess. You're like family to me. I love y'all.
+
+[b]@redmoongirl:[/b]
+
+Sometimes it feels like all our heroes are dead and our enemies are in power. G*TM got a writing award from the BBC for that essay where she called me a slur. She went on to misgender me on prime time TV, and no one corrected her. Even to my ostensible supporters and allies I'm a boy now. They think I'm a trans boy, which is immeasurably funny to me.
+
+Things objectively aren't getting better for me. My transitioning has gone from "my parents don't want this" to "the state is literally banning this". And that doesn't even narrow down my state.
+
+But I'm fine, because I'm alive. I know there are people who would help me, who would care for me as I really am.
+
+Tags: #lunar specks, #d/ont r/eblog
+
+${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_interact + 1
+        *set luna_1_1_notes + 1
+        *set luna_blue %+ 5
+        *goto luna_1_1
+    *disable_reuse #Reblog the post.
+        *set luna_interact + 1
+        *set luna_green %+ 5
+        *set luna_1_1_notes + 1
+        *goto luna_1_1
+    #Next post.
+        *goto luna_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_2
+*set luna_ch5_seen 1
+*set luna_prog 2
+
+[b]@redmoongirl reblogged from @capellasgf at 6:40 PM. OP @summersnow[/b]
+
+[illustration of Capella and Astra laying on their backs on the top of a tall building. The building is surrounded by a field of stars. The two girls are holding hands and smiling. Astra has an arm raised, pointing out something in the sky.]
+
+[The lyrics to Ribs by Lorde are written out like constellations: "This dream isn't feeling sweet. We're reeling through the midnight streets."]
+
+"And I've never felt more alone / It feels so scary getting old" (stream Pure Heroine by @lordemusic and fuck ma*millan)
+
+Tags: #nebulaverse, #im sorry but i cant escape
+
+${luna_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_interact + 1
+        *set luna_1_2_notes + 1
+        *set luna_blue %+ 1
+        *goto luna_1_2
+    *disable_reuse #Reblog the post.
+        *set luna_interact + 1
+        *set luna_blue %+ 2
+        *set luna_1_2_notes + 1
+        *goto luna_1_2
+    #Prev post.
+        *goto luna_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_1
+*set brun_prog 1
+[b]${lux_bio}[/b]
+
+[b]@brunova-official posted at 7:00 PM[/b]
+
+My abuela is finally scheduled for the surgery. It's supposed to be in a few weeks. I don't even know what to say. I hope she stays. We have tens of thousands of dollars of loans we can't possibly repay. It's like an unending maw into which we throw our resources, our dreams, our futures...
+
+Anyway I'm still taking commissions I guess? It doesn't help but it can't hurt...
+
+Tags: #capitalism is the real demiurge
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_1_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_1
+    *disable_reuse #Reblog the post.
+        *set lux_interact + 1
+        *set lux_blue %+ 5
+        *set brun_1_1_notes + 1
+        *goto brun_1_1
+    #Next post.
+        *goto brun_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label brun_1_2
+*set brun_prog 2
+[b]@brunova-official reblogged from @fyeahnebulaverse at 6:22 PM. OP: @fyeahnebulaverse[/b]
+
+So here's the tally of where things are:
+
+- the actors for Gali, Astra, Tycho, and Capella have all directly called out gtm and supported trans rights. So has the Administrator.
+*line_break
+- the actors for Bruno, Lyra, and Yuri have made wishy-washy statements
+*line_break
+- the actor for Ariel is the only one who's openly supporting gtm for now
+*line_break
+- gtm claimed that everyone who's still buying her stuff all support her views (this is absolutely false btw, even if I disagree with people who are still buying that shit)
+*line_break
+- the BBC gave her a ton of airtime where she could uncritically proselytize transphobia. She also got some editorial space in a few different newspapers and a bunch of journalists defending her against "cancel culture" or whatever.
+*line_break
+- on the other hand, the outlets that aren't actively supporting gtm are doing this both sides thing where they're just calling it internet drama.
+
+All in all... it could be a lot better and it could be worse. We can't really do anything but keep on going, I guess. It's gonna be a long fight.
+
+Tags: #i have no fucking idea how to feel about this shit anymore
+
+${brun_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_2_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_2
+    *disable_reuse #Reblog the post.
+        *set lux_interact + 1
+        *set lux_blue %+ 2
+        *set brun_1_2_notes + 1
+        *goto brun_1_2
+    #Next post.
+        *goto brun_1_3
+    #Prev post.
+        *goto brun_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_3
+*set brun_prog 3
+*set lux_ch5_seen 1
+[b]@brunova-official posted at 6:17 PM[/b]
+
+I can't believe I'm actually 18 now. I'm graduating high school in a few months. God, I feel old.
+
+Tags: #adkl;jd;aslkjf;ljdsa;ljfsad;
+
+${brun_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_3_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_3
+    *disable_reuse #Reblog the post.
+        *set lux_interact + 1
+        *set lux_blue %+ 2
+        *set brun_1_3_notes + 1
+        *goto brun_1_3
+    #Prev post.
+        *goto brun_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label shad_1_1
+*set shad_prog 1
+[b]${claire_bio}[/b]
+
+[b]@shadow-protectrix posted at 9:11 PM.[/b]
+
+Hey y'all. I haven't been posting since NebulaCon was canceled, and you deserve to know why. It's a long story, so [i]bear[/i] with me.
+
+[gif of a brown bear cuddling with a man on the ground]
+
+It didn't take long for news of you-know-what to reach Hardin County, Kentucky. Somehow it reached my husband. He knew that I was into the Chronicles, so he talked to me about it. He said that the trans people who criticized you-know-who (he didn't say "trans people") were all crazy and he was glad that you-know-who came out so hard against trans people (again, he didn't say "trans people"). I tried to disagree politely as best as I could. But somehow the argument got more heated, and it got to a point where I mentioned that I was nonbinary. I shouldn't have mentioned it.
+
+When I told him I was nonbinary, he said that he didn't mind what I thought in my head, as long as I would continue to be a wife and a woman for him. Those words made me angry like I've never been before.
+
+[cartoon image of a dog in a burning room saying "This is fine"]
+
+It wasn't fine. I don't even know why that made me so angry. Maybe rationally, I shouldn't have been, because that's what I had been doing before; it was a bargain I made in my mind that I had long accepted. But it was a bargain that had never been vocalized. When finally it was spoken out loud, something changed in me. I started to understand why so many of y'all were so angry about you-know-who. I started to see why some of y'all were angry at me, even. It was like a dam within me broke.
+
+But anyway, I said some things that hurt him. Kiddos, look away, because what's coming up is NSFW.
+
+[gif of Bruno putting his hands over Gali's eyes]
+
+[gif of the gang of five running away from a burning building]
+
+[gif of Tycho looking away from something disgusting]
+
+Okay, are the kids gone yet? Good.
+
+I told him I never enjoyed the times we had sex.
+
+That sent him into a rage. I said it wasn't his fault, I wouldn't enjoy sex with anyone, but when you've only had sex with one person, that raises some implications and probably made it worse. What happened next, it doesn't need to be said.
+
+I'm not living in our house anymore. Don't worry, I have a place to stay. We're filing for divorce as I'm writing this. I'm worried about the kids, since they're staying with him for now. I'm worried what he's saying about me.
+
+Anyway, I'm sorry about what I said before. I'm sorry about happened to @ lunan0va, and how I was complicit in her harassment. I don't know what happened to her but I really, really wish she's doing okay. I feel like I didn't understand then, but now...
+
+Does anyone want to see my cringey character development haircut? No? Well, too bad! Here it is!
+
+[Image: selfie of a person with buzzed light brown hair, almost cut to the scalp. They have a crooked smile, almost like a grimace. They are wearing a purple t-shirt that says "Why frick-frack when you can snick-snack" with a picture of a donut, and a "they/them" pronoun pin.]
+
+Tags: #claire speaks
+
+${shad_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set claire_blue %+ 5
+        *set shad_1_1_notes + 1
+        *goto shad_1_1
+    *disable_reuse #Reblog the post.
+        *set claire_interact + 1
+        *set shad_1_1_notes + 1
+        *set claire_blue %+ 5
+        *set karla_green %+ 1
+        *goto shad_1_1
+    #Next post
+        *goto shad_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_2
+*set shad_prog 2
+*set claire_ch5_seen 1
+[b]@shadow-protectrix posted at 8:00 PM[/b]
+
+Since the nebulaverse fandom is kinda messed up now, I've gotten into this Korean band called the Bangtan Boys. They're really good!
+
+${shad_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_2_notes + 1
+        *set claire_blue %+ 2
+        *goto shad_1_2
+    *disable_reuse #Reblog the post.
+        *set claire_interact + 1
+        *set shad_1_2_notes + 1
+        *set claire_blue %+ 2
+        *goto shad_1_2
+    #Prev post.
+        *goto shad_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label nebu_1_1
+*set nebu_prog 1
+[b]${sofia_bio}[/b]
+
+[b]@nebulascribbler posted at 5:00 PM[/b]
+
+As of today I am officially a mom! My wife just gave birth to our baby.
+
+I'll probably be posting here and checking this blog a lot less, for what should be fairly obvious reasons. So I suppose this is kind of a goodbye?
+
+${nebu_1_1_notes} notes
+
+Tags: #sofia speaks
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_1_1_notes + 1
+        *goto nebu_1_1
+    *disable_reuse #Reblog the post.
+        *set sofia_interact + 1
+        *set nebu_1_1_notes + 1
+        *goto nebu_1_1
+    #Next post.
+        *goto nebu_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label nebu_1_2
+*set nebu_prog 2
+*set sofia_ch5_seen 1
+[b]@nebulascribbler reblogged from @auguroflight6 one day ago. OP: @writteninthestars[/b]
+
+Every story affects us a different way. Some stories are like salves for the soul, the kind of story I still read at night to go to bed feeling better. Others are like pinpricks to the heart, stories that hurt, stories that make me feel *something*, even if that something isn't exactly good. Nothing makes one kind of story inherently better than another. Maybe we need both kinds of stories to function.
+
+Anyway, not all stories will feel good to read. Some stories will hurt and that's okay.
+
+Tags: #i wonder what kind of story this is..., #;P
+
+${nebu_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_1_2_notes + 1
+        *set sofia_blue %+ 2
+        *goto nebu_1_2
+    *disable_reuse #Reblog the post.
+        *set sofia_blue %+ 2
+        *set sofia_interact + 1
+        *set nebu_1_2_notes + 1
+        *goto nebu_1_2
+    #Prev post.
+        *goto nebu_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_1
+*set trap_prog 1
+[b]${karla_bio}[/b]
+
+[b]@trappedinspace posted at 9:05 PM[/b]
+
+[another essay in tags]
+
+Tags: #so here's what happened in the past week:, #1. i got arrested and put into a men's jail and got sexually harassed., #2. my gf of a year broke up with me, #3. i got into med school, #4. literally everything with m/cm, #yeah. it's been... a roller coaster of sorts., #am i doing fine? no. probably not., #but i'm alive. and that's what matters right?, #is surviving enough of a victory?
+
+${trap_1_1_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_1_notes + 1
+        *set karla_blue %+ 5
+        *goto trap_1_1
+    *disable_reuse #Reblog the post.
+        *set karla_interact + 1
+        *set trap_1_1_notes + 1
+        *goto trap_1_1
+    #Next post.
+        *goto trap_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_2
+*set trap_prog 2
+*set karla_ch5_seen 1
+[b]@trappedinspace posted at 4:49 PM[/b]
+
+[essay in tags]
+
+Tags: #now that i'm out of jail..., #my gf broke up with me, #i'll spare you the details but it was basically entirely my fault, #im relapsing honestly, #i thought I had my life in order but it's all come tumbling down, #(tumbling down tumbling down tumbling down), #this was after getting arrested and thrown in a men's jail lol, #that certainly didn't help, #they saw the male id on my drivers license and were like behold a man!!!, #did i pass? it fucking didn't matter bc my drivers license was wrong, #they did a fucking genital check they fucking stripped me, #wish there were other tgirls at the protest so at least i wouldn't have been alone, #god I'm on here pretending I'm a functional human being and trying to help other people when I can't even help myself, #i'm not a good person. i never was. i'm obsessive and selfish and emotionally labile and prone to negative spirals., #i don't know what to do., #it's like i'm trapped in a decaying orbit around a black hole
+
+${trap_1_2_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_2_notes + 1
+        *set karla_blue %+ 5
+        *goto trap_1_2
+    *disable_reuse #Reblog the post.
+        *set karla_interact + 1
+        *set trap_1_2_notes + 1
+        *goto trap_1_2
+    #Prev post.
+        *goto trap_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label annc_chat
+*set annc_chat_ref "annc_chat"
+*set knows_luna_secret true
+*set knows_hari true
+[b]Anti-Nebulaverse Nebulaverse Club[/b]
+
+There have been a lot of messages since you were last here.
+
+@trappedinspace: So uh I'm out of jail what did I miss
+
+@trappedinspace: A lot I guess huh
+
+@trappedinspace: Luna I am so sorry about what happened I really really wish I could've been there to help
+
+@redmoongirl: lol it's fine!!!! you were in literally in jail???
+
+@trappedinspace: Yeah.
+
+@trappedinspace: also hi Luna. Congrats on the new url. It's great.
+
+@redmoongirl: Wow. Thank you!!!
+
+@redmoongirl: also say hi to lux @brunova-official and hari @noncanonical!
+
+@brunova-official: nice to meet you guys
+
+@noncanonical: Yeah, thanks Luna for inviting us to this chat!
+
+@capellasgf: hello new comrades :3
+*choice
+    #See the newer messages.
+        *label annc_chat_1
+        *set annc_chat_ref "annc_chat_1"
+        @redmoongirl: can i ask you something karla?
+
+        @trappedinspace: sure, I guess?
+
+        @redmoongirl: how do you do it? how do you manage to get up everyday and just... do what it takes to keep on living?
+
+        @trappedinspace: honestly I don't know myself sometimes. It's hard.
+
+        @trappedinspace: a lot of times I feel like there's no hope for trans women.
+
+        @redmoongirl: do you think it'll ever get better?
+
+        @trappedinspace: honestly idk
+
+        @trappedinspace: last month I would have said something different. Maybe even last week.
+
+        @trappedinspace: but now I just feel like... I'm going backwards. I'm sliding back to what I was like before. I thought I got better in the past year but it turns out I really haven't.
+
+        @trappedinspace: Maybe it'll never get better. Maybe it's just going to be like this forever. 
+
+        @trappedinspace: they say it's two steps forward, one step back, but how do you know that it's not one step forward, two steps back?
+        *choice
+            #See the newer messages.
+                *label annc_chat_2
+                *set annc_chat_ref "annc_chat_2"
+                @noncanonical: May I say something here?
+
+                @redmoongirl: sure?
+
+                @noncanonical: I'm probably old enough to be your parent. My oldest is in high school.
+
+                @noncanonical: My partner and I have been together for 20 years. We have 4 kids, and our kids went from having two moms to having two dads. We've been through all the letters in LGBT. It used to be illegal for us to have a family in the way we do.
+
+                @noncanonical: This isn't to tell you how hard we've had it. It's to tell you that things change. I could talk about the ordeals we've faced. Maybe you've faced some different things.
+
+                @noncanonical: I know sometimes it's hard. It's been hard. I've felt hopeless too. I can't tell you that things will get better, because I don't know you, and I can never know what it's like to be you. But I can tell you that things will be different. The world will be different. And you will be different.
+
+                @redmoongirl: wow, thanks dad.
+
+                @noncanonical: Please don't call me that. You don't know me that well.
+
+                @trappedinspace: I wish I could have avoided being sexually assaulted in jail.
+
+                @noncanonical: Things should be better. And they're not. And that fucking sucks. I know. I'm not telling you to accept the present state of things, just to tell you that things can change.
+
+                @trappedinspace: I don't know...
+
+                @noncanonical: None of us know anything.
+
+                *temp has_hearts false
+                *label annc_convo_options
+                *choice
+                    *if (not(has_hearts)) #Say something nice to Luna.
+                        *set has_hearts true
+                        @you: umm... i hope you're doing better, luna. good luck with everything.
+
+                        @redmoongirl: Thank you 💙️
+
+                        @trappedinspace: You know what? 💜
+                        *goto sending_hearts
+                    *if (not(has_hearts)) #Say something nice to Karla.
+                        *set has_hearts true
+                        @you: umm... sorry about what happened, karla. good luck with everything...
+
+                        @trappedinspace: Thanks...
+
+                        @trappedinspace: Don't worry, I'll be fine.
+
+                        @redmoongirl: 💙️💙️💙️💙️💙️💙️
+                        *label sending_hearts
+                        *set annc_chat_ref "sending_hearts"
+
+                        @redmoongirl: let's just keep on sending hearts to each other.
+
+                        @trappedinspace: 💜💜💜
+
+                        @brunova-official: <3
+
+                        @noncanonical: ❤️🧡︄💛︄💚︄💙︄💜︄
+
+                        @capellasgf: 😻︄
+                        *goto annc_convo_options
+                    *disable_reuse #Say happy birthday to Lux.
+                        *label lux_birthday
+                        *set annc_chat_ref "lux_birthday"
+                        @you: um... happy birthday lux.
+
+                        @brunova-official: thanks i guess?
+
+                        @lunan0va: happy bday! how does it feel being an adult?
+
+                        @brunova-official: lol it feels exactly the same
+
+                        @brunova-official: i don't know what i'm doing. we don't have enough money. same sht as usual.
+
+                        @lunan0va: 💙️
+                        *goto annc_convo_options
+                    *disable_reuse #Ask about what they think of Claire.
+                        *label annc_claire
+                        *set annc_chat_ref "annc_claire"
+                        @you: so uh did any of you see claire @shadow-protectrix's post?
+
+                        @brunova-offical: yeah... good for them i guess????
+
+                        @brunova-official: we were kinda... friends i guess? maybe? idk...
+
+                        @trappedinspace: Turns out I'm blocked lmao
+
+                        @redmoongirl: they haven't blocked my new account...
+
+                        @redmoongirl: wow i have no idea what to say :/
+
+                        @trappedinspace: Okay I just read it. And wow this story arc feels totally unearned. What did they do to deserve a catharsis?
+
+                        @noncanonical: I don't think anyone really "deserves" anything. People don't have story arcs in real life.
+
+                        @noncanonical: And besides, you don't really know them. Seeing someone through the interwebs isn't at all like seeing them in real life.
+
+                        @trappedinspace: I don't know...
+
+                        @capellasgf: i read the post (claire's blocked me too lol) and i really wish it's possible to, like, move on. for all of us.
+
+                        @trappedinspace: Don't you know the internet never forgives and never forgets?
+
+                        @trappedinspace: But yeah, that'd be nice...
+                        *goto annc_convo_options
+                    *disable_reuse #Ask about the nebulaverse.
+                        @you: so, um, is anyone still into the nebulaverse?
+
+                        @redmoongirl: jak;dfsjlk;dsajdfl;sa
+
+                        @brunova-official: akl;sjdl;sadj;lkdfajdk;lsjkl;df
+
+                        @capellasgf: kjds;lkjaepojfalkjfal;jfdslk;jfd
+
+                        @trappedinspace: Actual answer: unfortunately yes. Despite everything it still gives me positive emotions when I see a picture of Capella.
+
+                        @redmoongirl: same here :/
+
+                        @brunova-official: same but for bruno :/
+
+                        @trappedinspace: I think the nebulaverse has like, buried itself within us in an inextricable place.
+
+                        @trappedinspace: What about you, $!{handle}?
+
+                        *fake_choice
+                            #I'm still into the nebulaverse.
+                                @you: same for me i guess. i'm still into the nebulaverse...
+
+                                @redmoongirl: yeah it kinda sucks...
+                            #I'm trying to escape.
+                                @you: i'm trying to escape.
+
+                                @noncanonical: As are many of us, I suppose.
+                            #I hate the nebulaverse now.
+                                @you: i hate the nebulaverse now.
+
+                                @redmoongirl: see logically i think i should hate it now, but i can't. i just can't bring myself to hate it.
+
+                        @noncanonical: Maybe there are two Nebulaverses. The one created by GTM, and the one we constructed with our own art and fics and meta.
+
+                        @noncanonical: Maybe there are infinite Nebulaverses, one for each of us. There's a Shadow Nebula inside each of our hearts, and we never have to let that part of ourselves go, even if our relationship to the "canonical" Nebulaverse changes.
+
+                        @trappedinspace: But don't fucking give gtm any money.
+
+                        @noncanonical: Yes. This.
+                        *goto annc_convo_options
+                    #Look at something else.
+                        *goto montage_1
+            #Look at something else.
+                *goto montage_1
+    #Look at something else.
+        *goto montage_1
+
+*label claire_chat
+*set claire_message_ref "claire_chat"
+*comment TODO: one-on-one chat with claire
+
+@you: um... hi claire
+
+@you: how are you doing?
+
+@shadow-protectrix: Poorly, in fact! Very poorly!
+
+@shadow-protectrix: I don't really want to go into more detail than was posted on my blog though.
+
+@shadow-protectrix: If there's one thing the callouts weren't exactly wrong about, it's that I shouldn't be so personal around minors.
+
+@shadow-protectrix: Anyway, what's up?
+
+*label claire_questions
+*choice
+    *disable_reuse *if (sofia_secret) #Tell Claire about Sofia's actions.
+        *set claire_blue %+ 10
+        *set revealed_sofia_secret true
+        *label tell_claire_about_sofia
+        *set claire_message_ref "tell_claire_about_sofia"
+        @you: um, there's something i have to tell you about sofia...
+
+        @you: [screenshots of the chats with sofia]
+
+        @shadow-protectrix: TIL Sofia was a fucked up mess of a human being.
+
+        @shadow-protectrix: I had my suspicions but I didn't know it extended this far...
+
+        @shadow-protectrix: Thank you for letting me know. This isn't exactly actionable information right now but I'm glad to know of it.
+
+        @shadow-protectrix: I am surprised that she would just out and say that to someone random.
+
+        @shadow-protectrix: (no offense)
+
+        *if claire_trust > 0
+            @shadow-protectrix: Thank you for sticking by my side through all this.
+        *goto claire_questions
+    *disable_reuse #Ask about the nebulaverse.
+        *label claire_nebulaverse
+        *set claire_message_ref "claire_nebulaverse"
+        @you: um, what do you think of the nebulaverse right now?
+
+        @shadow-protectrix: What do I *think* of it? That's a complicated and difficult question! It's not one that I can easily answer right now.
+
+        @shadow-protectrix: I can't exactly show my face in the fandom right now, given what happened with NebulaCon.
+
+        @shadow-protectrix: Besides that extremely large caveat... I'm still writing, even if I'm not posting my stories on the archive. Who knows. Maybe I'll pivot to original fiction. That would be nice, wouldn't it?
+        *goto claire_questions
+    *disable_reuse #Say something nice and sympathetic.
+        *label claire_sympathy
+        *set claire_message_ref "claire_sympathy"
+        @you: um, i'm really sorry about what happened...
+
+        @shadow-protectrix: Don't worry about it. I'm fine.
+
+        @shadow-protectrix: Thank you for your sympathy, though.
+        *goto claire_questions
+    *comment TODO: ask about stuff?
+    #There's nothing to say.
+        *goto montage_1
+
+*label luna_chat
+*set luna_blue %+ 8
+
+@you: um... hi luna
+
+@you: how are you doing? are you okay?
+
+@redmoongirl: thanks for talking to me :D
+
+@redmoongirl: i'm doing a little better. i'm glad i can still use the internet lol. they haven't taken that away.
+
+@redmoongirl: don't worry about me too much lol. it's a little quieter here. the tension is still here but it's just subtext right now.
+
+@redmoongirl: you might have saved my life. literally.
+
+@redmoongirl: 💙️💙️💙️
+
+@redmoongirl: anyway, enough about me. how are you doing???
+
+*comment TODO: choices here... ask something?
+*choice
+    #I'm doing fine (truth).
+        *set luna_blue %+ 5
+        *label luna_chat_fine
+        *set luna_message_ref "luna_chat_fine"
+        @you: i'm doing fine...
+
+        @redmoongirl: that's great!
+
+        *label luna_conversation_died
+        The conversation has seemed to die down.
+        *choice
+            #I love you...
+                *goto luna_chat_red
+            #Go back.
+                *goto montage_1
+    #I'm doing fine (lie).
+        *set luna_blue %+ 5
+        *label luna_chat_lie
+        *set luna_message_ref "luna_chat_lie"
+        @you: i'm doing fine...
+
+        @redmoongirl: that's great!
+
+        *goto luna_conversation_died
+    #I'm doing... not well.
+        *label luna_chat_not_well
+        *set luna_message_ref "luna_chat_not_well"
+        @you: um... i'm not really doing well.
+
+        @redmoongirl: oh, i'm sorry! may i ask why?
+
+        @you: it's just... stuff. everything. life.
+
+        @redmoongirl: yeah i get that...
+
+        @redmoongirl: 💙️
+
+        *goto luna_conversation_died
+    #I love you...
+        *label luna_chat_red
+        *set luna_message_ref "luna_chat_red"
+        @you: i love you...
+
+        *if (heart_emoji = "")
+            *gosub_scene hearts_choice
+        @you: ${heart_emoji}${heart_emoji}${heart_emoji}
+
+        @redmoongirl: haha thanks 💙️
+
+        @redmoongirl: wait, like, do you mean that like..... yknow??????
+        *choice
+            #Yes, I mean that in a romantic way.
+                *if (luna_red = 0)
+                    *achieve love
+                *set luna_red + 1
+                *label luna_confess
+                *set luna_message_ref "luna_confess"
+                @you: yeah, i really really like you...
+
+                @redmoongirl: lgj;laksjdl;kahgjkhkjhlkahsd
+
+                @redmoongirl: l;kajopweinancovpniaweopfjwaepoijf'afd
+
+                @redmoongirl: um... i have no idea what to say d;sjlfldsjk;ldsfjak;l
+
+                @redmoongirl: wait... you *like* like me??? do you even know what i look like?
+
+                @you: yeah, i do...
+
+                @redmoongirl: ;jdlsk;lksdj;lfdsj;ldfkj;afd
+
+                @redmoongirl: (sorry just had to get that out of my system)
+
+                @redmoongirl: okay um. i'll get back to you.
+
+                @redmoongirl: wait like a day and maybe i'll be coherent
+
+                @redmoongirl: anyway uh see you later 💙️
+                *goto montage_1
+            #No, I just want to be friends.
+                *set luna_blue %+ 5
+                *label luna_just_friends
+                *set luna_message_ref "luna_just_friends"
+                @you: i just want to be better friends ${heart_emoji}
+
+                @redmoongirl: oh okay lol l;jadsl;fsdajl;
+
+                @redmoongirl: yeah let's be better friends
+
+                @redmoongirl: 💙️💙️💙️
+
+                @redmoongirl: anyway uh see you later 💙️
+                *goto montage_1
+
+*label karla_chat
+*set karla_message_ref "karla_chat"
+*set karla_blue %+ 8
+
+@you: um... hi karla
+
+@you: sorry if this is totally random but how's the investigation of stella/sofia?
+
+@trappedinspace: wow. I totally forgot. For what I hope are fairly obvious reasons lol.
+
+@trappedinspace: But, this is kind of interesting.
+
+@trappedinspace: It looks like Stella deleted their account. And looking at the archives, they were clearly involved in another attempt to call out Claire, which has apparently died out as all the participants just suddenly deactivated.
+
+@trappedinspace: Obviously this is suspicious but like, there's really no point anymore.
+
+@trappedinspace: Did you find out anything new?
+
+*choice
+    *if (sofia_secret) #Yes, I know Sofia's secret.
+        *set karla_investigation 3
+        *set revealed_sofia_secret true
+        *set karla_blue %+ 10
+        *achieve truth
+        *label karla_chat_secret
+        *set karla_message_ref "karla_chat_secret"
+
+        @you: yeah. stella @apocalypse-hoarder was sofia's sockpuppet.
+
+        @you: [screenshots of the chat]
+
+        @trappedinspace: Oh wow. This is incredible. She just... confessed to it.
+
+        @trappedinspace: Also what the fuck is wrong with Sofia.
+
+        @trappedinspace: Now I see that she's apparently taking a leave of absence from this website. How convenient.
+
+        @trappedinspace: Maybe we should make a callout post lmao.
+
+        @trappedinspace: Even if Sofia is already gone. It could be like, a historical artifact.
+
+        *choice
+            #Send the callout.
+                *achieve callout
+                *label karla_chat_callout
+                *set karla_message_ref "karla_chat_callout"
+                @you: yeah, let's make a callout.
+
+                @trappedinspace: Good idea. I'll write something up.
+
+                @trappedinspace: I wonder if this chat screenshot alone is enough evidence... but tbh I don't see how we can get more.
+
+                @trappedinspace: I don't remember anything in "Stella's" blog tying them back to Sofia, so it'll be hard...
+
+                @trappedinspace: Anyway I'll see what I can dig up.
+
+                @trappedinspace: bye for now 💜
+                *goto montage_1
+            #Don't send the callout.
+                *label karla_chat_no_callout
+                *set karla_message_ref "karla_chat_no_callout"
+                @you: um... i don't really want to make a callout.
+
+                @trappedinspace: yeah I get it. I'll keep this info to myself.
+
+                @trappedinspace: If you ever change your mind or want to go public with this, just let me know.
+                
+                @trappedinspace: This is history now so maybe it'll be a good idea to preserve it lol.
+
+                @trappedinspace: bye for now 💜
+                *goto montage_1
+    #No, I haven't found anything.
+        *if (sofia_secret)
+            *achieve secret
+        *label karla_chat_nothing
+        *set karla_message_ref "karla_chat_nothing"
+
+        @you: sorry, i haven't found anything new.
+
+        @trappedinspace: me neither obviously.
+
+        @trappedinspace: i guess the "investigation" is dead?
+
+        @you: yeah...
+
+        @trappedinspace: welp...
+        *goto montage_1
+
+*label montage1_end
+*gosub_scene check_internet
+
+You close your browser. It's getting late. You have school tomorrow.
+
+*page_break
+*label fanfiction
+
+*gosub_scene fic_light
+        
+*label ending
+*achieve ending
+*temp luna_end (luna_helped)
+*temp claire_end (claire_trust >= 2)
+*temp karla_end (karla_investigation = 3)
+*temp sofia_end (sofia_secret and not(revealed_sofia_secret))
+*temp neutral_end (not(luna_end) and (not(claire_end) and (not(sofia_end))))
+
+*if luna_end
+    *achieve ending_luna
+*if claire_end
+    *achieve ending_claire
+*if sofia_end
+    *achieve ending_sofia
+*if neutral_end
+    *achieve ending_neutral
+
+*ending

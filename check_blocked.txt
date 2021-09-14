@@ -1,0 +1,22 @@
+*comment check if any of the characters should block you...
+
+*if (luna_green > (luna_blue + 10))
+    Luna has blocked you.
+    *set luna_blocked true
+    *achieve blood
+*if claire_green > claire_blue
+    *if claire_green >= 20
+        Claire @shadow-protectrix has blocked you.
+        *set claire_blocked true
+        *achieve blood
+*if lux_green > lux_blue
+    *if lux_green >= 20
+        Lux @brunova-official has blocked you.
+        *set lux_blocked true
+        *achieve blood
+*if karla_green > karla_blue
+    *if karla_green > 15
+        Karla @trappedinspace has blocked you.
+        *set karla_blocked true
+        *achieve blood
+*return

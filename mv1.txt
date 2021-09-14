@@ -1,0 +1,3005 @@
+
+[i]Stories can bridge the gap between who we are and who we aren't yet. Narratives allow us to exist not just here and now and in this flesh but in that possibility space as well; it's the spell that can change us. You can't change if you don't know the magic; how can't exist if you don't know how. You can feel the need in your gut so strongly it hurts every minute of your life, but all you know is the absence until the story shows you the way. When the possibility is named, when the story is told, it becomes possible for it to one day be real.[/i]
+
+- Aevee Bee, "The Story is a Spell. The Story is a Curse."
+
+*page_break
+
+[b]A Paradox Between Worlds [/b]
+
+[b]Movement 1: Prelude - Allegro con brio[/b]
+
+[i]potterheads, grab your wands[/i]
+
+[i]whovians, hop in your TARDISes[/i]
+
+[i]supernatural fans, get the shotguns[/i]
+
+[i]sherlockians, hire your consulting criminals[/i]
+
+[i]tributes, knock an arrow[/i]
+
+[i]avengers fans, assemble[/i]
+
+[i]lotr fans, unsheath Sting[/i]
+
+[i]we’ve got a few people to track down[/i]
+
+- geekerypokery, tumblr
+
+*page_break
+
+[b]Universe - Canon[/b]
+
+[b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 1: The Academy of Magi[/i] by G. T. Macmillan[/b]
+
+"The principal purpose of a mage is to impose his vision upon the world."
+
+The Administrator's voice reverberated through the cavernous halls of the Academy Plaza. Metallic tables were arranged in neat rows, packed with 16 year old students sitting in uncomfortable chairs. Most were at least pretending to listen to the Administrator's speech.
+
+It was Galileo Nova's first night at the Pulsar Academy, and he was nowhere near ready for what would come.
+
+"This is all so trite," the blonde-haired boy next to him remarked. "They're nothing but platitudes. I'd much rather start learning our elements."
+
+"Be quiet!" the girl with glasses whispered. "We need to listen! This is important for our future!"
+
+The boy just laid his head on his arms. Galileo started to doze off as well; the speech truly was boring.
+
+*page_break "A mage will have absolute freedom, and out of it create absolute order."
+
+"A mage will have absolute freedom, and out of it create absolute order. With his command of the elements, the mage must protect the order that is at the heart of our Empire. That is all."
+
+A round of applause. The centers of the tables opened up, and platters of food and utensils rose.
+
+"Astra, did you really listen to all that?" the blonde boy asked.
+
+The girl, Astra, sighed. "Yes, Bruno. We have to understand the reasons why we're here."
+
+Another girl, this one with raven black hair, interjected. "Those were all lies. Propaganda promulgated by the powers-that-be to lull us into complacency. It's all such a horrid worldview." Meanwhile, Astra visibly rolled her eyes.
+
+"What about you?" Bruno turned to Galileo, who must have looked confused. "What do you think?"
+
+"Slow down! We haven't asked his name yet!" the raven-haired girl ejaculated. "I'm Capella, by the way."
+
+*page_break "I'm Galileo Nova. Or Gali for short."
+
+"I'm Galileo Nova. Or Gali for short."
+
+"Gali?" Bruno said quizzically. "Why not Leo? That makes more sense."
+
+Gali shrugged. "I don't know. It's always been that way."
+
+"And why were you sent here?" Capella asked.
+
+"Um, because I passed the entrance exam?" he replied.
+
+Astra smiled. "That's why we're all here, isn't it?"
+
+*page_break The Administrator's voice boomed again.
+
+The Administrator's voice boomed again.
+
+"And one more thing! Finally, you must realize that all your actions have consequences. You are but one small piece embedded in the fabric of the cosmos, connected to every other living being, and every move you make, every action you take, no matter how small, reverberates throughout the universe. From where you sit today to the words you speak, you have just set the foundation for your five years at our Academy. So take care, and be deliberate in what you do, and understand that you are not each a world unto yourself."
+
+Another roaring round of applause.
+
+"Well that was unnecessary," Bruno said, turning to his food again.
+
+"So we'll all be best friends, correct?" Astra asked the table. Capella simply shrugged. Gali glanced among the others.
+
+"Yeah. We'll be friends."
+
+*page_break
+
+[A/N: All of your actions and inactions will have consequences. You can check the "Show Stats" page to see the reverberations of your actions upon the cosmos.]
+
+[A/N: Would you like to be notified of the consequences of your actions?]
+
+*choice
+    #[Yes, turn on notifications.]
+        [A/N: okay. You might see messages that look kind of like this:]
+
+        [b]Autumn @canonautumnc liked this![/b]
+    #[No, leave them off.]
+        [A/N: okay.]
+
+*page_break
+
+[b]Universe - Noncanon[/b]
+
+[b]Excerpt from "Another Light", WIP by Luna @lunan0va[/b]
+
+The planet of New Antioch was in sight, its blue oceans and red continents visible to the naked eye. But there was no beauty contained within the atmosphere. It was a warzone, fought over for centuries as it bounced back and forth between Empire and Kingdom control. As they approached the surface, the scars grew ever more visible, remnants of magical storms and atomic fires that left the planet nearly devoid of all but the hardiest life.
+
+Gali, Astra, and Capella approached the planet in their battlepods, hulls still scorched from the previous battles. They knew that the transfigurator was here. The object of their long mission would finally be reached.
+
+"Are you okay, Gali?" asked Astra. "You haven't spoken this whole time."
+
+"Y-yeah," she replied. "I'm okay." But the secret weighed heavily on her mind. No one knew that Gali wasn't a boy anymore, but they would find out soon enough.
+
+*fake_choice
+    #They fought their way down to the surface...
+    #They negotiated with the Kingdomites for passage...
+    #They used stealth to avoid the Kingdomites...
+
+[note: insert detailed scene here - luna. sorry i haven't written this part yet!]
+
+"So, here we are. You wanted to see this, right?" Astra gestured to the device in front of them.
+
+The rules of the transfigurator were simple: once you had the power source, and they did, you just had to think about what you would like to change, and the machine would change you. No more, no less.
+
+Gali opened the chamber door and sat in the chair therein. She had thought for so long about this. She had gone on a long journey with her friends to extract the substance that would power the device, without telling them of her intentions. But they wouldn't mind, would they? If they cared about her, they definitely wouldn't mind.
+
+The power source was inserted. She pressed the trigger. 
+
+She emerged...
+
+*fake_choice
+  #...the same, somehow.
+  #...an entirely new person.
+  #...different on the outside, but still the same person on the inside.
+
+What is the "true nature" of a person, anyhow, Gali wondered. Was there some essence that made her, her? Were there alternate versions of her?
+
+No matter. She existed, right then and there.
+
+*page_break
+
+[b]Online[/b]
+
+@lunan0va: so
+
+@lunan0va: um...
+
+@lunan0va: what did you think abt my story
+
+@lunan0va: it was kinda rushed tbh i wrote it right before falling asleep
+
+@lunan0va: it's not finished obviously... i put notes where the additional content would be
+
+@lunan0va: but that should be the easy part right
+
+Luna @lunan0va has been your first and probably best friend in the Nebulaverse
+fandom. She's 16 years old, like you, and lives in the same time zone, or close enough anyway. Recently she has been working on her fanfic, "Another Light".
+
+*choice
+  #(honest) It was good!
+    *set luna_blue + 5
+    @lunan0va: oh, really? thanks!
+
+    @lunan0va: im glad you enjoyed it ^_^
+
+    @lunan0va: that emoji isn't cringe anymore right
+  #(lying) It was good!
+    *set luna_blue + 5
+    @lunan0va: oh, really? thanks!
+
+    @lunan0va: im glad you enjoyed it ^_^
+
+    @lunan0va: that emoji isn't cringe anymore right
+  #It was okay (insert shrug emoji here).
+    *set luna_green + 5
+    @lunan0va: oh :/
+
+    @lunan0va: i really wish i could make people feel things i guess
+
+    @lunan0va: a meh is like the worst thing for me lol
+
+    @lunan0va: sorry
+
+    @lunan0va: but thats okay
+    
+    @lunan0va: i need to get better at the whole writing thing lol
+  #(honest) It needed improvement.
+    *set luna_blue + 5
+    @lunan0va: thanks for the honesty :)
+
+    @lunan0va: ya i rly do need to improve things
+  #(lying) It was bad.
+    *set luna_green + 10
+    @lunan0va: oh :/
+
+    @lunan0va: so theres nothing i can do to improve it?
+
+@lunan0va: anyway
+
+@lunan0va: i have to go
+
+@lunan0va: homework and such
+
+@lunan0va: see you later...
+
+*label handle_choice
+
+Wait... by what name does she call you?
+
+*choice
+  #A relatively normal name
+      *choice
+          #Aiden
+            *set handle "aiden"
+          #Andy
+            *set handle "andy"
+          #Bella
+            *set handle "bella"
+          #Charlotte
+            *set handle "charlotte"
+          #Dirk
+            *set handle "dirk"
+          #Ebony
+            *set handle "ebony"
+          #Ethan
+            *set handle "ethan"
+          #Heidi
+            *set handle "heidi"
+          #Jake
+            *set handle "jake"
+          #Jane
+            *set handle "jane"
+          #Mina
+            *set handle "mina"
+          #Opal
+            *set handle "opal"
+          #Reshma
+            *set handle "reshma"
+          #Roxy
+            *set handle "roxy"
+          #Talia
+            *set handle "talia"
+          #Tara
+            *set handle "tara" 
+          #Tobias
+            *set handle "tobias"
+          #Zoe
+            *set handle "zoe"
+          #Go back
+            *goto handle_choice
+          #Enter your own
+            Enter your name:
+            *input_text handle
+  #A name based on an astronomical theme
+      *choice
+          #Altair
+              *set handle "altair"
+          #Celeste
+              *set handle "celeste"
+          #Chandra
+              *set handle "chandra"
+          #Hoshi
+              *set handle "hoshi"
+          #Jupiter
+              *set handle "jupiter"
+          #Rigel
+              *set handle "rigel"
+          #Sitara
+              *set handle "sitara"
+          #Sol
+              *set handle "sol"
+          #Star
+              *set handle "star"
+          #Vega
+              *set handle "vega"
+          #Xing
+              *set handle "xing"
+          #Yue
+              *set handle "yue"
+          #Go back
+            *goto handle_choice
+          #Enter your own
+            Enter your name:
+            *input_text handle
+  #A fictional character from the Nebulaverse
+      *choice
+          #Ariel
+              *set handle "ariel"
+          #Astra
+              *set handle "astra"
+          #Bruno
+              *set handle "bruno"
+          #Capella
+              *set handle "capella"
+          #Gali
+              *set handle "gali"
+          #Leo
+              *set handle "leo"
+          #Galileo
+              *set handle "galileo"
+          #Tycho
+              *set handle "tycho"
+          #Juno
+              *set handle "juno"
+          #Halley
+              *set handle "halley"
+          #Callisto
+              *set handle "callisto"
+          #Regulus
+              *set handle "regulus"
+          #Selene
+              *set handle "selene"
+          #Yuri
+              *set handle "yuri"
+          #Go back
+            *goto handle_choice
+  #A random object
+      *choice
+          #Atom
+              *set handle "atom"
+          #Bird
+              *set handle "bird"
+          #Book
+              *set handle "book"
+          #Chair
+              *set handle "chair"
+          #Paper
+              *set handle "paper"
+          #Phone
+              *set handle "phone"
+          #Rock
+              *set handle "rock"
+          #Scissors
+              *set handle "scissors"
+          #Go back
+            *goto handle_choice
+          #Enter your own
+            Enter your name:
+            *input_text handle
+
+
+@lunan0va: see you later ${handle}
+
+The dot next to her icon is still green, but she is no longer typing. You are alone once more, the Nebulaverse still bouncing in your mind as always.
+
+
+*page_break The Nebulaverse...
+
+The Nebulaverse is a vast and... nebulous place. Well, not exactly; it's actually quite well specified, with ample worldbuilding. It started with a series of young adult novels by author G. T. Macmillan, but it's taken a life of its own. The series was adapted into movies, which have become a cultural phenomenon even among people who haven't read the books.
+
+[A/N: For more information on the Nebulaverse, see the Stats page.]
+
+It is past midnight, far past your bedtime, and you find yourself...
+
+*fake_choice
+    #...in my room, alone, lights dim, sitting at my computer after everyone else has gone to bed.
+        *set location "bedroom"
+    #...in the family living room, on the only computer in the house, well after everyone else has gone to bed.
+        *set location "living_room"
+        This is the only private time you have, the only time of the day in which you can, well, be yourself or something like that.
+    #...on my phone, hiding under the covers of my bed. It's the only time I have to myself.
+        *set location "bed"
+        This is the only private time you have, the only time of the day in which you can, well, be yourself, or something like that.
+
+You scroll through your dashboard for a few minutes. Nightblogging has begun. People all over the country, all over the world, all connecting for a few brief moments to revel in their love for a certain media franchise.
+
+What is your blog's URL? This is basically your username on this website.
+
+*label username_choice
+*choice
+  #A slight variation on a character's name or a ship
+    *choice
+      #astra-van-a11en
+        *set username "astra-van-a11en"
+      #gal1l30
+        *set username "gal1l30"
+      #4astra5
+        *set username "4astra5"
+      #bruno-novva
+        *set username "bruno-novva"
+      #tych0planetos
+        *set username "tych0planetos"
+      #ella-capella
+        *set username "ella-capella"
+      #astrape11as
+          *set username "astrape11as"
+      #lyran0vas
+          *set username "lyran0vas"
+      #yuri-europa-unofficial
+          *set username "yuri-europa-unofficial"
+      #Go back
+        *goto username_choice
+      #Enter your own
+        Enter your username:
+        *input_text username
+  *if (is_cis = false) #A character's headcanon identity
+    *choice
+      #lesbian--astra
+        *set username "lesbian--astra"
+      #transgirlgali
+        *set username "transgirlgali"
+      #nonbinary-galileo
+        *set username "nonbinary-galileo"
+      #gaygalileonova
+        *set username "gaygalileonova"
+      #gayhelioses
+        *set username "gayhelioses"
+      #ace-capella
+        *set username "ace-capella"
+      #transboybruno
+        *set username "transboybruno"
+      #Go back
+        *goto username_choice
+      #Enter your own
+        Enter your username:
+        *input_text username
+  #A concept within the Nebulaverse
+    *choice
+      #augurofwind97
+        *set username "augurofwind97"
+      #the-weaver-of-light
+        *set username "the-weaver-of-light"
+      #bookofthebeyond
+        *set username "bookofthebeyond"
+      #pulsar-academy-literature-club
+        *set username "pulsar-academy-literature-club"
+      #cosmicdemiurge
+        *set username "cosmicdemiurge"
+      #archonofhope
+        *set username "archonofhope"
+      #tricoloroflove
+        *set username "tricoloroflove"
+      #sidonian-farewell
+        *set username "sidonian-farewell"
+      #antiochians
+        *set username "antiochians"
+      #aldrinfamilyguard
+        *set username "aldrinfamilyguard"
+      #Go back
+        *goto username_choice
+      #Enter your own
+        Enter your username:
+        *input_text username
+  #A poetic or meaningful expression
+    *choice
+      #not-in-our-stars
+        *set username "not-in-our-stars"
+      #as-above-so-below
+        *set username "as-above-so-below"
+      #reach-4-the-stars
+        *set username "reach-4-the-stars"
+      #tender-is-the-night
+        *set username "tender-is-the-night"
+      #madeofstarstuff
+        *set username "madeofstarstuff"
+      #shadows-of-your-heart
+        *set username "shadows-of-your-heart"
+      #beautyinthemoonlight
+        *set username "beautyinthemoonlight"
+      #pieces-of-a-broken-star
+        *set username "pieces-of-a-broken-star"
+      #carry-on-my-wayward-children
+        *set username "carry-on-my-wayward-children"
+      #heads-inside-a-dream
+        *set username "heads-inside-a-dream"
+      #Go back
+        *goto username_choice
+      #Enter your own
+        Enter your username:
+        *input_text username
+  #Something based on one of your other hobbies or interests
+    *choice
+      #nick-carraways
+        *set username "nick-carraways"
+      #defying-gravity
+        *set username "defying-gravity"
+      #eclair-de-lune
+        *set username "eclair-de-lune"
+      #faberryunofficial
+        *set username "faberryunofficial"
+      #plainsofelysium
+        *set username "plainsofelysium"
+      #brassica-oleracea
+        *set username "brassica-oleracea"
+      #moonlight-sonata
+        *set username "moonlight-sonata"
+      #apcalculusbc
+        *set username "apcalculusbc"
+      #gnusnotunix
+        *set username "gnusnotunix"
+      #threadsintime
+        *set username "threadsintime"
+      #stuckystan96
+        *set username "stuckystan96"
+      #destiel-johnlocked-in-the-tardis
+        *comment I thought this would be too ridiculous to be real but it's a real tmblr url that someone had in the superwholock era...
+        *set username "destiel-johnlocked-in-the-tardis"
+      #officialclassof2013
+        *comment yes this is a mitski reference
+        *set username "officialclassof2013"
+      #pureheroinebylorde
+        *set username "pureheroinebylorde"
+      #Go back
+        *goto username_choice
+      #Enter your own
+        Enter your username:
+        *input_text username
+  #A riff off an outdated meme
+    *choice
+      #wowsuchdoge
+        *set username "wowsuchdoge"
+      #perishedobama
+        *set username "perishedobama" 
+        *comment #this meme was from 2017... it's anachronistic but maybe we can still have it?
+      #longcat69
+        *set username "longcat69"
+      #problematicleftshark
+        *set username "problematicleftshark"
+      #takemetosnurch
+        *set username "takemetosnurch"
+      #none-pizza-with-left-geek
+        *set username "none-pizza-with-left-geek"
+      #powerhouseofthecell
+        *set username "powerhouseofthecell"
+      #paul-blart-mind-fart
+        *set username "paul-blart-mind-fart"
+      #olive-garden-endless-breadsticks
+        *set username "olive-garden-endless-breadsticks"
+      #countess-boochie-flagrante
+        *set username "countess-boochie-flagrante"
+      #Go back
+        *goto username_choice
+      #Enter your own
+        Enter your username:
+        *input_text username
+  #An immature joke
+    *choice
+      #6969696969
+        *set username "6969696969"
+      #pooplord420
+        *set username "pooplord420"
+      #xxxdemonslayer666xxx
+        *set username "xxdemonslayer666xx"
+      #mickeysdicksmasher
+        *comment actually a meme reference
+        *set username "mickeysdicksmasher"
+      #genderneutralurinal
+        *set username "genderneutralurinal"
+      #doctor-bofadeez
+        *set username "doctor-bofadeez"
+      #poopguzzler
+        *set username "poopguzzler"
+      #Go back
+        *goto username_choice
+      #Enter your own
+        Enter your username:
+        *input_text username
+
+*if (username = "transgirlgali")
+    *set luna_blue %+ 5
+*if ((username = "transboybruno") or (username = "bruno-novva"))
+    *set lux_blue %+ 5
+*if (username = "lesbian--astra")
+    *set stella_blue %+ 5
+    
+What are the pronouns that you use online?
+
+*fake_choice
+  #She/her
+    *set e "she"
+    *set em "her"
+    *set eir "her"
+    *set eirs "hers"
+    *set emself "herself"
+    *set plural false
+  #He/him
+    *set e "he"
+    *set em "him"
+    *set eir "his"
+    *set eirs "his"
+    *set emself "himself"
+    *set plural false
+  #They/them
+    *set player_is "are"
+    *set player_was "were"
+    *set plural true
+  #E/em (Spivak pronouns)
+    *set e "e"
+    *set em "em"
+    *set eir "eir"
+    *set eirs "eirs"
+    *set emself "emself"
+    *set plural false
+  #Ze/hir
+    *set e "ze"
+    *set em "hir"
+    *set eir "hir"
+    *set eirs "hirs"
+    *set emself "hirself"
+    *set plural false
+  #Xe/xem
+    *set e "xe"
+    *set em "xem"
+    *set eir "xyr"
+    *set eirs "xyrs"
+    *set emself "xemself"
+    *set plural false
+  #None (just use your name)
+    *set e handle
+    *set em handle
+    *set eir handle&"'s"
+    *set eirs handle&"'s"
+    *set emself handle
+    *set plural false
+    
+Cool!
+
+By the way, what's your blog aesthetic? What is the overall vibe that you want to convey to your readers?
+
+*fake_choice
+    #Pink cherry blossoms, pastel wallpaper, layer cakes, frilly dresses.
+        *set aesthetic "pink"
+    #Stars, the milky way, the blackness of night broken up by pinpricks of light.
+        *set aesthetic "space"
+    #The woods at night, a haunted house, shadows lurking.
+        *set aesthetic "shadow"
+    #Red roses, lipstick and black dresses, cherries, goblets of unidentifiable red liquid.
+        *set aesthetic "red"
+    #Green leaves and grass, sunlight streaming through the treetops, a path through the woods.
+        *set aesthetic "green"
+    #The ocean, mountain lakes, vast expanses of blue and white.
+        *set aesthetic "blue"
+    #A cityscape, brutalist architecture, drizzling rain amid neon lights.
+        *set aesthetic "city"
+    #A bunch of your favorite anime characters. Sketches and bold colors.
+        *set aesthetic "anime"
+    #Nothing consistent.
+        *set aesthetic "nothing"
+
+That's great! And by the way, what is the focus of your blog? What type of posts do you usually reblog?
+
+*fake_choice
+    #Gen - general fandom posts, fanart, and so on.
+        *set current_alignment "gen"
+        *set gen + 10
+    #Shipping - posts showing romance between your favorite pair of characters.
+        *set current_alignment "shipping"
+        *set shipping + 10
+    #Meta - in-depth analyses of the Nebulaverse.
+        *set current_alignment "meta"
+        *set meta + 10
+    #Discourse - arguments and conflicts.
+        *set current_alignment "discourse"
+        *set discourse + 10
+    #Sympathy - validations, friendly reminders, donation posts.
+        *set current_alignment "sympathy"
+        *set sympathy + 10
+    #Shitposting.
+        *set current_alignment "shitposting"
+        *set shitposting + 10
+
+*comment: I'm not sure if this is the correct place to have your fav char/ship bc you don't know much about them yet.
+That's awesome! Most Nebulaverse blogs have a favorite character, whom they reblog most often. Who's yours? [A/N: For more details on the characters, see the "Nebulaverse Background" on the Show Stats page.]
+
+*fake_choice
+    #Gali, the protagonist
+        *set top_character "gali"
+        *set gali +10
+    #Bruno, the rival
+        *set top_character "bruno"
+        *set bruno +10
+    #Astra, the smart girl
+        *set top_character "astra"
+        *set astra +10
+    #Capella, Gali's main love interest
+        *set top_character "capella"
+        *set capella +10
+    #Tycho, Gali's best friend
+        *comment Warning: no one cares about tycho
+        *set top_character "tycho"
+        *set tycho +10
+
+And one last fandom question: which pairing is your most preferred ship?
+
+*fake_choice
+    #BruNova - Bruno/Gali (the most popular ship in the fandom)
+        *set top_ship "brunova"
+        *set brunova + 10
+    #AstraPella - Astra/Capella
+        *set top_ship "astrapella"
+        *set astrapella + 10
+    #AstraNova - Astra/Gali
+        *set top_ship "astranova"
+        *set astranova + 10
+    #EllaNova - Capella/Gali (the closest there is to a "canon" ship)
+        *set top_ship "ellanova"
+        *set ellanova +10
+
+[b]IRL[/b]
+
+Unfortunately, you do not exist solely online. There exists a realm known as "IRL", "meatspace", whatever you'd
+like to call it. In that realm, you have entities known as "parents". 
+
+What is the name that you go by in real life?
+
+*fake_choice
+  #Aiden
+    *set first_name "Aiden"
+  #Andy
+    *set first_name "Andy"
+  #Bella
+    *set first_name "Bella"
+  #Charlotte
+    *set first_name "Charlotte"
+  #Dirk
+    *set first_name "Dirk"
+  #Ebony
+    *set first_name "Ebony"
+  #Ethan
+    *set first_name "Ethan"
+  #Heidi
+    *set first_name "Heidi"
+  #Jake
+    *set first_name "Jake"
+  #Jane
+    *set first_name "Jane"
+  #Mina
+    *set first_name "Mina"
+  #Opal
+    *set first_name "Opal"
+  #Reshma
+    *set first_name "Reshma"
+  #Roxy
+    *set first_name "Roxy"
+  #Talia
+    *set first_name "Talia"
+  #Tara
+    *set first_name "Tara"
+  #Tobias
+    *set first_name "Tobias"
+  #Zoe
+    *set first_name "Zoe"
+  #Something else
+    Enter your name:
+    *input_text first_name
+
+
+What is your last name in real life?
+
+*fake_choice
+  #Chen
+    *set last_name "Chen"
+  #Crocker
+    *set last_name "Crocker"
+  #Gao
+    *set last_name "Gao"
+  #Harley
+    *set last_name "Harley"
+  #Hussie
+    *set last_name "Hussie"
+  #Kapoor
+    *set last_name "Kapoor"
+  #Lalonde
+    *set last_name "Lalonde"
+  #Lennox
+    *set last_name "Lennox"
+  #Mehta
+    *set last_name "Mehta"
+  #Rao
+    *set last_name "Rao"
+  #Strider
+    *set last_name "Strider"
+  #Viswasnathan
+    *set last_name "Viswasnathan"
+  #Zhao
+    *set last_name "Zhao"
+
+Perhaps more important is your alignment within the Nebulaverse. Many of those in the Nebulaverse fandom classify themselves along Elements and Roles. There are five elements, which are both the five fundamental elements of the Nebulaverse as well as alignments associated with each person. A mage's element, called a persona, relates to their powers as well as their personality.
+
+This is kind of a big deal in some circles.
+
+*page_break In Canon...
+
+[b]Universe - Canon[/b]
+
+[b]Excerpt from Chronicles of the Shadow Nebula, Book 1: The Academy of Magi by G. T. Macmillan[/b]
+
+The camera stared into Galileo's exhausted eyes.
+
+"What are you?" it asked, its voice mechanical and monotone.
+
+"What do you mean?" the boy replied.
+
+"What is the nature of your soul?"
+
+Galileo glanced around the room. It was no larger than a closet, the walls barren, the floor unadorned, save the chair he sat in and the robotic camera protruding from a wall. It was only slightly terrifying.
+
+The robot continued speaking. "Why do you exist? What is the inalienable, unchangeable core that makes you, you?"
+
+*page_break "I, I haven't got a clue."
+
+"I, I haven't got a clue," the boy replied.
+
+"Hmm." The robotic voice became louder, more ominous. "None of you do. Not yet. But I already see the hue of your spark. Yes! It's there. Tell me, Gali, why aren't you more afraid of me? You know not every pupil makes it out of this room alive."
+
+He had no idea how to answer.
+
+"Why aren't you terrified that the remainder of your life is being decided at this very moment?"
+
+He really wasn't afraid; somehow he knew that he would survive. Just as well, the robot continued.
+
+"You know what you are, deep inside. You contain within you a seed, the germ of an entire story, the story of your life and the stories of your world. It will take root one day, and it will germinate, and it will change not only you but all those around you. You will become someone..."
+
+Suddenly the room began to glow. A white light grew brighter and brighter, until Galileo had to close his eyes.
+
+"So you see? Do you see now?"
+
+*page_break "No, not at all."
+
+"No, not at all," the boy muttered. "How am I supposed to see when it's so bright here?"
+
+The door opened.
+
+"A Keeper of Light, Galileo Nova!" The robotic voice reverberated. Claps from outside. How long had he been in there?
+
+*page_break
+*label persona_choice
+
+[b]Online[/b]
+
+What element do you think describes you best? If you don't know, consider taking a brief quiz at https://uquiz.com/GlFTZ6.
+
+*choice
+    #Light: stars, heat, nuclear forces; emotion, passion, offense
+        *set persona "light"
+        Light is the element of emotions and passion. Light is love. Light is struggle. Light is the fight for the sake of having a fight. It is a very popular element because the protagonist of the Chronicles has this element as his persona. Light magic in the Nebulaverse tends to be aggressive and destructive, a dance of fire and fusion.
+        *choice
+            #Yes, that's me!
+                *goto role_choice
+            #Go back
+                *goto persona_choice
+    #Stone: planets, asteroids, gravity; stability, order, defense
+        *set persona "stone"
+        Stone is a rather less popular element, because its adherents are seen as boring and staid traditionalists. But it is also associated with bonds between close friends, loyalty, and caring for others. There has recently been a surge of Stone-wielders in the fandom who project their own vision onto the element. Stone magic revolves around defense, construction, and applications of kinetic strength, in addition to the literal manipulation of stone.
+        *choice
+            #Yes, that's me!
+                *goto role_choice
+            #Go back
+                *goto persona_choice
+    #Metal: human ingenuity, the artificial; knowledge, logic, balance
+        *set persona "metal"
+        Metal is, in short, the nerd element. As such, it is quite popular. It is the negation of the animal passions in favor of rationality and thought. At its worst, metal can detach itself from reality and live in a logical palace of its own creation. Metal magic is deeply intertwined with technology; it is used in building magical-technological devices, as well as the manipulation of synthetic materials.
+        *choice
+            #Yes, that's me!
+                *goto role_choice
+            #Go back
+                *goto persona_choice
+    #Wind: gas giants, solar winds, electromagnetism; discovery, novelty, change
+        *set persona "wind"
+        Wind does not conform to the world around it. Instead it is associated with realizing one's own ideas for the world, with change and dynamicism and visionary thought. It is a rather popular element, as it is the element of Capella Taikong, the protagonist's canonical(?) love interest and most popular female character. Wind magic includes the literal manipulation of gases and plasmas, as well as control over phase changes, movement, and transformations.
+        *choice
+            #Yes, that's me!
+                *goto role_choice
+            #Go back
+                *goto persona_choice
+    #Ice: comets, water, entropy; flexibility, survival, life and death
+        *set persona "ice"
+        Ice is a less popular element because it is heavily associated with death, depression, pessimism, and all those negative things. However, ice is also the element most associated with survival amidst difficult circumstances. Ice is associated with a grudging acceptance of the world around oneself, of adaptation but not "fitting in". Ice magic is associated with life and death; it includes both healing and killing magic, as well as time manipulation and more literal applications of ice and water.
+        *choice
+            #Yes, that's me!
+                *goto role_choice
+            #Go back
+                *goto persona_choice
+
+*label role_choice
+
+In addition to elements, each mage is assigned a Role. Basically, it is a job, or rather a category of jobs. A role describes how a mage uses their element. Where the persona is internal, the role is external. Where the persona describes "what" and "why", the role describes "how".
+
+And what is your role? If you don't know, you can take a quiz at https://uquiz.com/ifqBq5.
+
+*choice
+    #Augur: the scientist
+        *set role "augur"
+        The Augur is always a popular role among the nerds who comprise the Nebulaverse fandom. Augurs are supposed to be the scientists and theorycrafters, the people who come up with ways of making sense of their element. Their role is only to interpret the world, not to change it.
+        
+        *if (persona = "metal")
+            As an Augur of Metal, you are essentially the "nerd of nerds". The Augur of Metal is often stereotyped as a mad scientist, a creature of pure intellect completely detached from physical reality, whose only rule is their own sense of rationality. You might be brilliant, or you might be something of a kook, or both.
+        *elseif (persona = "light")
+            The Augurs of Light are the poets and artists. Often ensconsed in bubbles of their own creation, they turn their complex inner worlds into works for external consumption. Augurs of Light are the most popular class in the fandom, according to at least one survey.
+        *elseif (persona = "stone")
+            Augurs of Stone are students of humanity. Their motivation is to try to understand the people around them, through either formal psychology or more informal study. They are deeply empathetic at best, but they can also use their skills for manipulation.
+        *elseif (persona = "wind")
+            Augurs of Wind, like Capella Taikong from the Chronicles, tend to be independent thinkers with a strong cynical streak. Often dilettantes who have no use for discipline, they jump from one special interest to another.
+        *elseif (persona = "ice")
+            Augurs of Ice can be summed up as the "sad nerds". Wracked by self-doubt and prone to constant introspection, they are often deep thinkers. In the sciences, they favor biology or mathematics. Alternatively, they might favor history and philosophy.
+        *choice
+            #Yes, that's me!
+                *goto persona_role_end
+            #Go back
+                *goto role_choice
+    #Keeper: the guardian
+        *set role "keeper"
+        Despite being the role of the protagonist, the Keeper is not a very popular role among the fandom; perhaps due to the misconception that Keepers are basically magical cops. According to most theories, however, Keepers of different elements can act very differently; most Keepers are not enforcers of rules, but rather preservers of values. 
+
+        *if (persona = "metal")
+            Keeper of Metal roughly means "preserver of knowledge". You are an encyclopedist, an archivist, a master of facts and trivia. You know everything there is about the magic of the Nebulaverse.
+        *elseif (persona = "light")
+            A Keeper of Light is someone who defends the values they hold dear. Like the protagonist Galileo Nova, they are often idealists who alternatively support and struggle with the established order. In other words, they are a protagonist archetype.
+        *elseif (persona = "stone")
+            A Keeper of Stone is a preserver of tradition, bonds, and the status quo. They are loyal friends and allies. Despite being stereotyped as the coppiest of cops, they usually value their small community more than the law.
+        *elseif (persona = "wind")
+            Keepers of Wind are individuals whose deepest value is their own freedom. They have a tendency to be loners, hermits, and wanderers, travelling wherever the wind takes them, with few attachments anywhere.
+        *elseif (persona = "ice")
+            A Keeper of Ice is a guardian of the domain of time, life, and death. They often see the outside world as a hostile place, and for good reason. They are survivors first and foremost, and are often deeply private and even secretive individuals.
+        *choice
+            #Yes, that's me!
+                *goto persona_role_end
+            #Go back
+                *goto role_choice
+    #Reaper: the fighter and rebel
+        *set role "reaper"
+        In the Nebulaverse, Reapers are magi who use their element for aggression. They comprise the Academy's militia and the Empire's armies, and are the largest component of rebels against the Empire. They often struggle against the values of their element, sometimes almost acting as its negation. This has lead to an amount of fandom drama about the true nature of the Reaper role.
+
+        *if (persona = "metal")
+            Reapers of Metal are strategists who utilize their knowledge to win battles, whether on the physical battlefield of war or a more metaphorical battlefield. Alternatively, they might be "destroyers" of Metal, people who destroy knowledge with disinformation.
+        *elseif (persona = "light")
+            Reapers of Light can be idealistic rebels or devoted soldiers for their chosen cause. But they can also rebel against their own sense of idealism, developing a cynical streak and becoming subservient to their superiors.
+        *elseif (persona = "stone")
+            Reapers of Stone might be devoted fighters for their friends and allies. Or else they might invert their Stone persona, becoming the kinds of people who purposefully try to destroy the relationships of others.
+        *elseif (persona = "wind")
+            Reapers of Wind are unpredictable and chaotic, jumping from one cause to another. They might be criminals or rogues. But they might also seek to destroy the freedom of others as spies and infiltrators.
+        *elseif (persona = "ice")
+            Reapers of Ice, such as Bruno Helios from canon, are one of the most destructively capable classes of magi. They tend to be attuned to the darker aspects of the Ice element, towards death and entropy. They struggle deeply with their own mortality and have a tendency to lash out.
+        *choice
+            #Yes, that's me!
+                *goto persona_role_end
+            #Go back
+                *goto role_choice
+    #Speaker: the communicator
+        *set role "speaker"
+        In the Nebulaverse, Speakers work as the teachers and teaching assistants of the Academy. Their hat is communicating the values of their element to others, leading others along their path. They are involved not just in literally "speaking", but also in writing, media, and art. In the fandom, Speaker is a somewhat popular role because of the preponderance of theater kids.
+
+        *if (persona = "metal")
+            Speakers of Metal are "teachers of knowledge". They are in some ways the archetypal university professor or academy teacher, knowledgeable and deeply interested in communicating their knowledge.
+        *elseif (persona = "light")
+            Speakers of Light are often people who put their ideals to practice as activists and politicians. They are charismatic communicators and eloquent speakers and writers who try to spread their values to others.
+        *elseif (persona = "stone")
+            A Speaker of Stone, like Tycho Planetes from the Nebulaverse, is often a leader of their circle of friends. They are often gregarious individuals and social butterflies who can gather a devoted following.
+        *elseif (persona = "wind")
+            Speakers of Wind are a class often associated with the theater kids in the fandom. They enjoy placing themselves into different roles, as actors or performers, often to the detriment of having a stable personal identity.
+        *elseif (persona = "ice")
+            Speakers of Ice are often healers and soothsayers, prophets and priests. They use their connection to time, life, and death like a gift of prophecy. In the Nebulaverse, they usually lead the equivalents of religious orders.
+        *choice
+            #Yes, that's me!
+                *goto persona_role_end
+            #Go back
+                *goto role_choice
+    #Weaver: the creator
+        *set role "weaver"
+        Weavers are often seen as a rather boring role by the fandom because they are often thought of as overly practical, straightforward types. But as with all of the other classes, weavers have a variety of interests and personalities. Their raison d'etre is to help people through the application of their element, by creating durable works.
+
+        *if (persona = "metal")
+            A Weaver of Metal, like Astra Van Allen from the Chronicles, is someone who applies knowledge for the betterment of others. They are often engineers, artisans, and builders, but can also be doctors, teachers, or scholars.
+        *elseif (persona = "light")
+            Weavers of Light are often writers and visual artists. Their goal is to illuminate peoples' hearts through art, to help people see the world in a new light. Alternatively, they use their creations to work through their own feelings and bring them out to the world.
+        *elseif (persona = "stone")
+            Weavers of Stone are the hearts of their circles of friends, the people who do the boring but necessary work of maintaining bonds between different people. They are mediators and peacekeepers.
+        *elseif (persona = "wind")
+            Weavers of Wind are highly creative artists, craftspeople, and entrepreneurs. Their goal is often to change the world through their works, whether that work happens to be in art or technology.
+        *elseif (persona = "ice")
+            Weavers of Ice most often work as doctors, medics, or healers; they use their understanding of life and death to save lives. In the Nebulaverse, healing magic is heavily associated with this class.
+        *choice
+            #Yes, that's me!
+                *goto persona_role_end
+            #Go back
+                *goto role_choice
+
+*label persona_role_end
+
+Finally, why are you here? Why are you online, participating in the Nebulaverse fandom, when presumably you could be doing anything else with your time?
+
+*fake_choice
+    #To make friends.
+        *comment Ice?
+        *set goal "friends"
+    #To be popular.
+        *comment Stone?
+        *set goal "popular"
+        It would be nice to have more followers than your current 110. It would be nice to be someone who is heard and respected, if only in a small online space such as this.
+    #To escape.
+        *comment Wind?
+        *set goal "escape"
+    #To entertain myself for a short time.
+        *comment Light?
+        *set goal "entertain"
+    #To partake in the intellectual exercise of media analysis.
+        *comment Metal?
+        *set goal "analyze"
+    #All of the above?
+        *set goal "all"
+    #Something else?
+        *set goal "other"
+
+Anyway, your parents are asleep, and you're probably done with homework. So what else is there to do but check out all the blog updates that you missed?
+
+[b]Online - Montage[/b]
+*temp read_count 0
+*temp luna_unread 1
+*temp brun_unread 1
+*temp shad_unread 1
+*temp nebu_unread 1
+*temp apoc_unread 1
+*temp trap_unread 1
+
+*temp luna_1_1_notes 0
+*temp luna_1_2_notes 487
+*temp luna_1_3_notes 6385
+*temp luna_1_4_notes 3
+*temp luna_1_5_notes 342
+
+*temp brun_1_1_notes 1287
+*temp brun_1_2_notes 1972
+*temp brun_1_3_notes 12325
+*temp brun_1_4_notes 8141
+*temp brun_1_5_notes 5
+
+*temp shad_1_1_notes 0
+*temp shad_1_2_notes 83212
+*temp shad_1_3_notes 77
+*temp shad_1_4_notes 32
+*temp shad_1_5_notes 101
+
+*temp nebu_1_1_notes 324874
+*temp nebu_1_2_notes 21
+*temp nebu_1_3_notes 120394
+*temp nebu_1_4_notes 238
+*temp nebu_1_5_notes 76291
+
+*temp apoc_1_1_notes 467
+*temp apoc_1_2_notes 16584
+*temp apoc_1_3_notes 102
+*temp apoc_1_4_notes 33
+*temp apoc_1_5_notes 25
+
+*temp trap_1_1_notes 821
+*temp trap_1_2_notes 108
+*temp trap_1_3_notes 0
+*temp trap_1_4_notes 7324
+*temp trap_1_5_notes 11
+
+*temp shad_1_4_theyre "they're"
+*temp shad_1_4_their "their"
+
+*temp luna_prog 1
+*temp brun_prog 1
+*temp shad_prog 1
+*temp nebu_prog 1
+*temp apoc_prog 1
+*temp trap_prog 1
+
+Online weather report: vibes steady. Chance of callouts: <1%. The blogging equivalent of a bright, cloudless summer day.
+
+*label montage_1
+
+Which blogs would you like to read?
+
+*choice
+    *selectable_if ((luna_blocked = false)) #@lunan0va
+        *set read_count + 1
+        *gotoref "luna_1_${luna_prog}"
+    *selectable_if ((lux_blocked = false)) #@brunova-official
+        *set read_count + 1
+        *gotoref "brun_1_${brun_prog}"
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+        *set read_count + 1
+        *gotoref "shad_1_${shad_prog}"
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+        *set read_count + 1
+        *gotoref "nebu_1_${nebu_prog}"
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+        *set read_count + 1
+        *gotoref "apoc_1_${apoc_prog}"
+    *selectable_if ((karla_blocked = false)) #@trappedinspace
+        *set read_count + 1
+        *gotoref "trap_1_${trap_prog}"
+    *if (read_count > 0) #Stop looking at blogs.
+        *goto montage1_end
+
+*label luna_1_1
+*set luna_prog 1
+[b]${luna_bio}[/b]
+
+Luna is one of your oldest mutuals on this site, and your closest companion here.
+
+[b]@lunan0va posted at 9:38 PM[/b]
+
+How am I supposed to have time to write while taking 4 ap classes? I really wish we could put fanfic experience on our college apps. But I guess I need to do well in, like, actual school if I want to get out of here for college.
+
+Tags: #moondust
+
+${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_interact + 1
+        *set luna_1_1_notes + 1
+        *set luna_blue %+ 5
+        *goto luna_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set luna_interact + 1
+        *set luna_1_1_notes + 1
+        *set sympathy %+ 2
+        How do you tag the post?
+        *choice
+            #hashtag-same.
+                *set luna_blue %+ 4
+            #Write a long essay in the tags about how you've had similar experiences at school.
+                *set luna_blue %+ 7
+            #No tags.
+                *set luna_blue %+ 2
+            #Just some basic categorization tags (#source: lunan0va, #text)
+                *set luna_blue %+ 4
+        *goto luna_1_1
+    #Next post.
+        *goto luna_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_2
+*set luna_prog 2
+[b]@lunan0va reblogged from @noncanonical at 9:21 PM. OP: @helioss[/b]
+
+[Fanart of Astra, a brown-haired girl alone in space, with shadow-like hands reaching towards her from every direction. She is gazing upward, face illuminated, hands clasped atop her heart.]
+
+"Why can't you leave me [i]alone[/i]?"
+
+(don't tag as #kin or #id. don't remove this caption.)
+
+Tags: #astra #art
+
+${luna_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_1_2_notes + 1
+        *goto luna_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set luna_1_2_notes + 1
+        *set luna_interact + 1
+        *set luna_blue %+ 2
+        *set gen %+ 3
+        *set astra %+ 3
+        *goto luna_1_2
+    #Next post.
+        *goto luna_1_3
+    #Prev post.
+        *goto luna_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_3
+*set luna_prog 3
+[b]@lunan0va reblogged from @capellasgf at 9:17 PM. OP: @summersnow[/b]
+
+[Fanart of Astra and Capella holding hands and smiling at each other. The two girls are lying on the grass on the surface of a sunny world. Splotches of light and shadow cover their forms.]
+
+I love astrapella so much. These girls deserve the world.
+
+Tags: #astrapella #art #:)
+
+${luna_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_1_3_notes + 1
+        *goto luna_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set luna_interact + 1
+        *set luna_1_3_notes + 1
+        *set luna_blue %+ 2
+        *set astra %+ 2
+        *set capella %+ 2
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *goto luna_1_3
+    #Next post.
+        *goto luna_1_4
+    #Prev post.
+        *goto luna_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_4
+*set luna_prog 4
+[b]@lunan0va posted at 8:20 PM[/b]
+
+How do I get my parents to stop making me get a haircut without letting them know why I don't want a haircut. They literally said that I would "look like a girl" if I let my hair grow any longer. Like, obviously that's the whole point but I can't just say that...
+
+Tags: #moondust, #d/ont r/eblog
+
+${luna_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_1_4_notes + 1
+        *set luna_interact + 1
+        *set luna_blue %+ 4
+        *goto luna_1_4
+    *disable_reuse #Comment on the post: "Sorry about your parents..."
+        Luna replies to you. "Thanks," she writes.
+
+        *set luna_1_4_notes + 1
+        *set luna_interact + 2
+        *set luna_blue %+ 7
+        *goto luna_1_4
+    *disable_reuse #Reblog the post (ignoring her message to not reblog).
+        *set rb_count + 1
+        You're gonna be a jerk by reblogging her post? Really?
+        *choice
+            #No, of course not.
+                *goto luna_1_4
+            #Yes, I'm a jerk.
+                *if rx
+                    *gosub_scene rx luna_st_dislike
+
+                *set luna_1_4_notes + 1
+                *set luna_green + 25
+                Luna messages you:
+
+                @lunan0va: hey can you delete the post you just reblogged?
+                *choice
+                    #Delete the post.
+                        *set luna_green - 24
+                        *set luna_1_4_notes - 1
+                        You delete the post and let Luna know.
+
+                        @lunan0va: thanks
+                        *goto luna_1_4
+                    #No. I'm a total asshole.
+                        @lunan0va: :(
+
+                        @lunan0va: why?
+
+                        @lunan0va: is it really that big of a deal?
+                        *choice
+                            #Just delete the post.
+                                *set luna_1_4_notes - 1
+                                *set luna_green - 15
+                                @lunan0va: thanks
+                                *goto luna_1_4
+                            #No.
+                                *set discourse %+ 3
+                                *set luna_green + 10
+                                @lunan0va: i really don't want to block you but. uh.
+
+                                @lunan0va: i can't really deal with this so consider it a warning i guess.
+                                *goto montage_1
+    #Next post.
+        *goto luna_1_5
+    #Prev post.
+        *goto luna_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_1_5
+*set luna_ch1_seen 1
+*set luna_prog 5
+[b]@lunan0va reblogged from @noncanonical at 8:00 PM. OP: @lunan0va[/b]
+
+So, I've spent a long time researching this theory... Please read it and tell me what you think!
+
+Title: Gali Nova is transfem-coded and here's why:
+
+Tl;dr: The name "Gali", being trapped in a literal closet and forced to confront your true feelings about yourself, being trapped in a closet again (on multiple occasions), feeling more at ease when around the girls up to the point of staying in their dorm (in like the most non-sexual way possible), "cross-dressing" in a way that's *not* portrayed as offensive or degrading, being naturally able to use both Light and Shadow magic, and yeah. And, of course, the Kingdomite Device subplot (yes I know it's problematic just bear with me).
+
+(Read more)
+
+[b]@noncanonical[/b]:
+
+Really interesting points OP! I don't agree with everything here but this would be a cool idea. Here are some comments:
+
+(Read more)
+
+[b]@lunan0va[/b]:
+
+Thank you! I have some responses:
+
+(Read more)
+
+Tags: #trans girl gali #reply #meta
+
+${luna_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_1_5_notes + 1
+        *set luna_blue %+ 3
+        *set luna_interact + 1
+        *goto luna_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx karla_like
+            *gosub_scene rx gen
+            *gosub_scene rx meta
+
+        *set rb_count + 1
+        *set luna_1_5_notes + 1
+        *set luna_interact + 1
+        *set karla_blue %+ 3
+        *set gen %+ 3
+        *set meta %+ 3
+        How do you want to tag the post?
+        *choice
+            # #yes! #this is really cool!
+                *set luna_blue %+ 4
+            # Categorization Tags: #theory #meta #trans girl gali #source: lunan0va
+                *set luna_blue %+ 3
+            # Write an essay in the tags about what you think of the theory and comment on key points.
+                *set luna_blue %+ 5
+            # No tags.
+                *set luna_blue %+ 3
+        *goto luna_1_5
+    #Prev post.
+        *goto luna_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_1
+*set brun_prog 1
+[b]${lux_bio}[/b]
+
+Lux is one of your mutuals, but it's not like you've ever talked. Maybe he just followed back whoever. As his name suggests, he's a big fan of the brunova ship, and probably kins Bruno or something like that.
+
+[b]@brunova-official reblogged from @shadow-protectrix at 9:34 PM. OP: @shadow-protectrix[/b]
+
+Y'all, who's all excited for the NebulaCon this year? We have so many amazing things planned for everyone, awesome events with great people. Everyone who can make it should come!
+
+Tags: #i am!!!!, #probably wont make it but i can hope
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_1_notes + 1
+        *set lux_blue %+ 1
+        *goto brun_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx claire_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 2
+        *set claire_blue %+ 3
+        *set karla_green %+ 1
+        *set brun_1_1_notes + 1
+        *set gen %+ 3
+        *goto brun_1_1
+    #Next post.
+        *goto brun_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label brun_1_2
+*set brun_prog 2
+[b]@brunova-official reblogged from @shadow-protectrix at 9:22 PM. OP: @cyanstars[/b]
+
+[Fanart of Galileo and Bruno hugging on a green field in a planet, half-body, with rays of light shining through clouds, illuminating the two of them. The image is a side profile, with Bruno's head closer to the audience resting on Gali's shoulder.]
+
+"You mean the [i]worlds[/i] to me"
+
+Tags: #me, #brunova
+
+${brun_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_2_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx shipping
+            
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 3
+        *set brun_1_2_notes + 1
+        *set shipping %+ 3
+        *set brunova %+ 3
+        *set bruno %+ 2
+        *set gali %+ 2
+        *goto brun_1_2
+    #Next post.
+        *goto brun_1_3
+    #Prev post.
+        *goto brun_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_3
+*set brun_prog 3
+[b]@brunova-official reblogged from @cyanstars at 9:17 PM. OP: @cyanstars[/b]
+
+[Fanart of Galileo and Bruno holding hands in the middle of space. Gali is glancing towards Bruno, smiling, while Bruno is frowning and gazing forward. Their bodies are framed by the purple and blue colors of the nebula.]
+
+I am genuinely incorrigibly afflicted by this ship.
+
+Tags: #me, #brunova
+
+${brun_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_3_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 3
+        *set brun_1_3_notes + 1
+        *set shipping %+ 3
+        *set brunova %+ 3
+        *set bruno %+ 2
+        *set gali %+ 2
+        *goto brun_1_3
+    #Next post.
+        *goto brun_1_4
+    #Prev post.
+        *goto brun_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label brun_1_4
+*set brun_prog 4
+[b]@brunova-official reblogged from @bruno-helios at 9:11 PM. OP: @bruno-helios[/b]
+
+[Black-and-white full-body sketch of Bruno Helios, a boy with white hair and a complex expression, brow slightly furrowed. His hands are in his jacket pocket, and he is glancing towards his left side.]
+
+I made this sketch at midnight last night. I'm more than a little in love with Bruno.
+
+Tags: #me, #kin
+
+${brun_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_4_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx lux_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 3
+        *set brun_1_4_notes + 1
+        *set gen %+ 3
+        *set bruno %+ 3
+        *goto brun_1_4
+    #Next post.
+        *goto brun_1_5
+    #Prev post.
+        *goto brun_1_3
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_5
+*set lux_ch1_seen 1
+*set brun_prog 5
+[b]@brunova-official posted at 9:08 PM[/b]
+
+if you think brunova is abusive then why the f are you following me
+
+Tags: #ajsdl;kfjadsl;jdafslkjasf
+
+${brun_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_5_notes + 1
+        *set lux_blue %+ 5
+        *goto brun_1_5
+    *disable_reuse #Reblog the post, despite the general etiquette being not to reblog posts like this.
+        *if rx
+            *gosub_scene rx lux_dislike
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set brun_1_5_notes + 1
+        *set lux_green %+ 10
+        *set luna_green %+ 5
+        *set discourse %+ 3
+        Well, he hasn't blocked you yet...
+        *goto brun_1_5
+    #Prev post.
+        *goto brun_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label shad_1_1
+*set shad_prog 1
+[b]${claire_bio}[/b]
+
+Claire @shadow-protectrix is probably the single most popular and polarizing figure in the Nebulaverse fandom. They're a highly prolific writer, mostly for brunova, and a bit of a pugnacious personality beneath their beneficent veneer.
+
+[b]@shadow-protectrix posted at 9:11 PM.[/b]
+
+Y'all, who's all excited for the NebulaCon this year? We have so many amazing things planned for everyone, awesome events with great people. Everyone who can make it should come!
+
+[gif of a man waving excitedly]
+
+[gif of a movie scene] 
+
+Tags: #nebulacon
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set brun_1_1_notes + 1
+        *set claire_blue %+ 2
+        *goto shad_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set brun_1_1_notes + 1
+        *set claire_blue %+ 3
+        *set karla_green %+ 1
+        *set gen %+ 3
+        *goto shad_1_1
+    #Next post
+        *goto shad_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_2
+*set shad_prog 2
+[b]@shadow-protectrix reblogged from @nebulaincolor at 8:50 PM. OP: @jizzwailer[/b]
+
+A reminder that all closeted queer people are valid! If you feel like you can't come out for whatever reason, that's okay! If you don't feel safe or comfortable coming out in real life, it doesn't make you any less of who you are.
+
+Tags: #signal boost, #important
+
+${shad_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_2_notes + 1
+        *set claire_blue %+ 2
+        *goto shad_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_2_notes + 1
+        *set claire_blue %+ 3
+        *set sympathy %+ 3
+        *goto shad_1_2
+    #Next post.
+        *goto shad_1_3
+    #Prev post.
+        *goto shad_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_3
+*set shad_prog 3
+[b]@shadow-protectrix posted at 8:40 PM[/b]
+
+Anonymous asked: hey Claire! just wanted to say I love your brunova stories! Just wondering, do you have any plans to continue the planets saga, after bringer of peace?
+
+Thank you! But no, I don't. I see it as a complete series, and I don't see how it can be expanded. Sorry if this is disappointing!
+
+Tags: #ask, #anonymous
+
+${shad_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_3_notes + 1
+        *set claire_blue %+ 2
+        *goto shad_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_3_notes + 1
+        *set karla_green %+ 2
+        *set claire_blue %+ 3
+        *set gen %+ 3
+        *goto shad_1_3
+    #Next post.
+        *goto shad_1_4
+    #Prev post.
+        *goto shad_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_4
+*set shad_prog 4
+[b]@shadow-protectrix posted at 8:30 PM[/b]
+
+Anonymous asked: just wondering, have you read lunanova's trans girl gali theory?
+
+No, I haven't. It's not really up my alley so to speak, and I have different thoughts about Gali anyway. But ${shad_1_4_theyre} perfectly entitled to ${shad_1_4_their} thoughts.
+
+Tags: #ask, #anonymous
+
+${shad_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_4_notes + 1
+        *set claire_blue %+ 2
+        *goto shad_1_4
+    *disable_reuse #Comment that they're misgendering Luna.
+        *set shad_1_4_theyre "she's"
+        *set shad_1_4_their "her"
+        *set shad_1_4_notes + 1
+        *set luna_blue %+ 4
+        *set claire_green %+ 5
+        You comment that Luna only uses she/her pronouns. Claire does not respond, but you see that they have changed the post.
+        *goto shad_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set luna_green %+ 5
+        *set claire_blue %+ 3
+        *set claire_interact + 1
+        *set shad_1_4_notes + 1
+        *set discourse %+ 3
+        *goto shad_1_4
+    #Next post.
+        *goto shad_1_5
+    #Prev post.
+        *goto shad_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_5
+*set claire_ch1_seen 1
+*set shad_prog 5
+[b]@shadow-protectrix posted at 8:20 PM[/b]
+
+@weaveroflight2 asked: As a fan from Brazil I'm so jealous that you're going to have a con! I wish we could have one in our country D:
+
+Aww, I hope you will soon! You can even try to organize one with your friends, if you have the time and resources! Feel free to contact me if you need help!
+
+Tags: #ask, #anonymous
+
+${shad_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set shad_1_5_notes + 1
+        *set claire_blue %+ 2
+        *goto shad_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx claire_like
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set claire_interact + 1
+        *set shad_1_5_notes + 1
+        *set claire_blue %+ 3
+        *set karla_green %+ 1
+        *set gen %+ 3
+        *goto shad_1_5
+    #Prev post.
+        *goto shad_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label nebu_1_1
+*set nebu_prog 1
+[b]${sofia_bio}[/b]
+
+Sofia @nebulascribbler is one of the more popular writers in the Nebulaverse fandom. She's written for a wide variety of ships, including brunova, astrapella, even ariastra. She's gotten some enemies for her profligacy in shipping, however.
+
+[b]@nebulascribbler reblogged from @nonbinarycatmom at 6:23 PM. OP: unknown[/b]
+
+[i]Do you love the color of the sky?[/i]
+
+[white image]
+
+[blue-ish gradient]
+
+[light to dark blue gradient]
+
+[blue to purple gradient]
+
+[purple gradient]
+
+[purple to red gradient]
+
+[red to yellow gradient]
+
+[yellow to black gradient]
+
+[10 more gradients]
+
+... which one?
+
+@stellarwinds:
+
+ALWAYS REBLOG
+
+@lovelyfandomgeek:
+
+IT'S THE LEGENDARY POST
+
+[10 more comments]
+
+[if you printed this post out, it would probably take up more than 20 pages]
+
+Tags: #legendary post
+
+${nebu_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_1_1_notes + 1
+        *goto nebu_1_1
+    *disable_reuse #Reblog the post (your followers will hate you).
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx lux_dislike
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set nebu_1_1_notes + 1
+        *set sofia_blue %+ 2
+        *set lux_green %+ 5
+        *set luna_green %+ 5
+        *set karla_green %+ 5
+        *set gen - 2
+        *set shipping - 2
+        *set meta - 2
+        *set sympathy - 2
+        *set discourse - 2
+        *set shitposting %+ 5
+        *goto nebu_1_1
+    #Next post.
+        *goto nebu_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label nebu_1_2
+*set nebu_prog 2
+[b]@nebulascribbler posted at 5:30 PM[/b]
+
+To all the astrapellas out there, I am writing a new fic and you will *so* look forward to it.
+
+[gif of a scene from the first film, of Astra and Capella holding hands.]
+
+Tags: #sofia speaks, #astrapella
+
+${nebu_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_blue %+ 2
+        *set nebu_1_2_notes + 1
+        *goto nebu_1_2
+    *disable_reuse #Reblog the post (tag it with something enthusiastic).
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set sofia_blue %+ 4
+        *set sofia_interact + 1
+        *set nebu_1_2_notes + 1
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto nebu_1_2
+    #Next post.
+        *goto nebu_1_3
+    #Prev post.
+        *goto nebu_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label nebu_1_3
+*set nebu_prog 3
+[b]@nebulascribbler reblogged from @shadow-protectrix at 5:10 PM. OP: unknown[/b]
+
+Reminder to everyone to take a drink of water! Look away from the screen if your eyes hurt. Take a nap if you're tired. Remember to take care of yourself and don't let what you see here get you down.
+
+Tags: #important
+
+${nebu_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_blue %+ 1
+        *set sofia_interact + 1
+        *set nebu_1_3_notes + 1
+        *goto nebu_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set sofia_blue %+ 3
+        *set sofia_interact + 1
+        *set nebu_1_3_notes + 1
+        *set sympathy %+ 3
+        *goto nebu_1_3
+    #Next post.
+        *goto nebu_1_4
+    #Prev post.
+        *goto nebu_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label nebu_1_4
+*set nebu_prog 4
+[b]@nebulascribbler reblogged from @shadow-protectrix at 4:33 PM. OP: @shadow-protectrix[/b]
+
+To all the moralists in the Nebulaverse fandom, I hope you know that you are misguided at best, actively malicious at worst. I hope you can realize that defining certain story types as "problematic" you are actively pushing people away from this community, and you are making people's experiences here worse.
+
+(Read more)
+
+Tags: #important
+
+${nebu_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set sofia_blue %+ 1
+        *set nebu_1_4_notes + 1
+        *goto nebu_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx claire_like
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx discourse
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set sofia_blue %+ 3
+        *set karla_green %+ 2
+        *set lux_blue %+ 2
+        *set luna_green %+ 2
+        *set claire_blue %+ 3
+        *set nebu_1_4_notes + 1
+        *set discourse %+ 3
+        *goto nebu_1_4
+    #Next post.
+        *goto nebu_1_5
+    #Prev post.
+        *goto nebu_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label nebu_1_5
+*set sofia_ch1_seen 1
+*set nebu_prog 5
+[b]@nebulascribbler reblogged from @nonbinarycatmom at 4:33 PM. OP: @ahistoricallyqueer[/b]
+
+Imagine this: a pansexual aromantic and asexual panromantic become roommates and have wacky adventures. But picture this: one of them is super outgoing and a huge flirt and the other is a socially awkward loner.
+
+The title is "Half full, half empty".
+
+[b]@undeadmage:[/b]
+
+OMG this is so cool! One of you had better make this a real show or something!
+
+[b]@starsandshadows:[/b]
+
+I'm an animation student and I really want to turn this into a cartoon. Here's a sample!
+
+[image of one person standing awkwardly and another person staring up, smiling, arms flailing]
+
+Tags: #so cool, #half full half empty
+
+${nebu_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set nebu_1_5_notes + 1
+        *goto nebu_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx luna_dislike
+            *gosub_scene rx lux_dislike
+            *gosub_scene rx karla_dislike
+            *gosub_scene rx shitposting
+
+        *set rb_count + 1
+        *set sofia_interact + 1
+        *set nebu_1_5_notes + 1
+        *set sofia_blue %+ 3
+        *set luna_green %+ 2
+        *set lux_green %+ 2
+        *set karla_green %+ 5
+        *set shitposting %+ 3
+        *goto nebu_1_5
+    #Prev post.
+        *goto nebu_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+*label apoc_1_1
+*set apoc_prog 1
+[b]${stella_bio}[/b]
+
+Stella is one of your mutuals whom you haven't had the opportunity to converse with. They're usually pretty quiet, mostly just reblogging fics and fanart. Right now, their blog consists mostly of astrapella fanart and aesthetic posts.
+
+[b]@apocalypse-hoarder reblogged from @bluemoonrising at 8:30 PM. OP: @nebula-moodboards[/b]
+
+Astrapella cottagecore lesbians moodboard for anon!
+
+[a 3-by-3 grid of images. Pictures of women in soft colors and flowing clothes holding hands. Moonlight shining through the treetop. Windswept vegetation. A cabin in the woods.]
+
+Tags: #queueasimodo, #moodboard
+
+${apoc_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_1_notes + 1
+        *goto apoc_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set apoc_1_1_notes + 1
+        *set stella_blue %+ 2
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto apoc_1_1
+    #Next post.
+        *goto apoc_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label apoc_1_2
+*set apoc_prog 2
+[b]@apocalypse-hoarder reblogged from @bluemoonrising at 8:00 PM. OP: @auguroflight6[/b]
+
+[b]@auguroflight6:[/b]
+
+Wish me luck I'm gonna submit my brunova meta essay for english class
+
+(Screenshot of a Word document titled "Galileo and Bruno: implications and misdirections")
+
+[b]@redlilymage:[/b]
+
+Did you do it? How did it turn out?
+
+[b]@meiling:[/b]
+
+God this is so obviously fake...
+
+[b]@auguroflight6[/b]
+
+Contrary to what user @meiling might believe, I really did submit the essay to my AP Lang class, and I got an A! Just look:
+
+[A photo of a printed out essay with same title, with "A" circled and "Interesting topic!" Handwritten in red.]
+
+And here's the link to the essay: [link]
+
+[b]@threadweaver[/b]
+
+Okay wow this is legit super cool
+
+Tags: #queueasimodo, #this is a good essay!
+
+${apoc_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_2_notes + 1
+        *goto apoc_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx gen
+            *gosub_scene rx meta
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set karla_green %+ 2
+        *set sofia_blue %+ 2
+        *set apoc_1_2_notes + 1
+        *set gen %+ 3
+        *set meta %+ 3
+        *goto apoc_1_2
+    #Next post.
+        *goto apoc_1_3
+    #Prev post.
+        *goto apoc_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label apoc_1_3
+*set apoc_prog 3
+[b]@apocalypse-hoarder reblogged from @nebulascribbler at 7:30 PM. OP: @nebulascribbler[/b]
+
+Hey, so, I wrote a astrapella oneshot. It's pretty much total fluff, in a no-shadow AU where the girls are just allowed to, you know, hang out and live.
+
+[Link to archive - "my lover's the sunlight" by @nebulascribbler. astrapella, alternate universe, soulmates]
+
+Tags: #queueasimodo, #fanfic, #!!!
+
+${apoc_1_3_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_3_notes + 1
+        *goto apoc_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx sofia_like
+            *gosub_scene rx shipping
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 3
+        *set sofia_blue %+ 2
+        *set apoc_1_3_notes + 1
+        *set shipping %+ 3
+        *set astrapella %+ 3
+        *set astra %+ 2
+        *set capella %+ 2
+        *goto apoc_1_3
+    #Next post.
+        *goto apoc_1_4
+    #Prev post.
+        *goto apoc_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label apoc_1_4
+*set apoc_prog 4
+[b]@apocalypse-hoarder reblogged from @capellasgf at 7:00 PM. OP: @capellasgf[/b]
+
+[Drawing of a Nebulaverse original character, a woman with dark skin and braided hair. She is wearing the girl's uniform of the Pulsar Academy.]
+
+Here's my magesona! Her name is Lyra and she's a speaker of ice.
+
+Tags: #this is cool!, #queueasimodo, #magesona
+
+${apoc_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_4_notes + 1
+        *goto apoc_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 2
+        *set luna_blue %+ 2
+        *set apoc_1_4_notes + 1
+        *set gen %+ 3
+        *goto apoc_1_4
+    #Next post.
+        *goto apoc_1_5
+    #Prev post.
+        *goto apoc_1_3
+    #Look at another blog.
+        *goto montage_1
+
+*label apoc_1_5
+*set stella_ch1_seen 1
+*set apoc_prog 5
+[b]@apocalypse-hoarder reblogged from @personae-and-roles at 6:30 PM. OP: @personae-and-roles[/b]
+
+Anonymous asked: Hey, I love your blog! Just wondering, since I'm a big fan of the Sherlock TV series, what's the mage class of Sherlock Holmes and John Watson?
+
+Thank you! For Sherlock, I would have to assign him as an [i]Augur of Wind[/i] (like Capella, you ask? Yes but no; obviously not all Augurs of Wind are the same).
+
+Perhaps it's an obvious stereotype, but the Augur is the role that's always about seeking out the truth, about learning, so it's kind of too obvious as a detective. Now, the persona is a bit harder. Metal would be the one that jumps out, because Metal is all about knowledge and logic, but I don't think that works for him, because Metal is more about the abstract, which Sherlock is not about at all; he's very much grounded in reality. I think Wind fits because Sherlock is kind of a polymath who knows a lot about everything.
+
+But that's just a surface-level analysis. With the persona, the real question is about [i]why[/i]: why is Sherlock? And I don't really know! I don't think we really get too much of a sense of his intrinsic motivations in the series yet?
+
+And as for Watson? [i]Keeper of Stone[/i], of course.
+
+What do you think? Feel free to leave suggestions in the comments!
+
+Tags: #mage classes, #queueasimodo, #sherlock
+
+${apoc_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set apoc_1_5_notes + 1
+        *goto apoc_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx meta
+
+        *set rb_count + 1
+        *set stella_interact + 1
+        *set stella_blue %+ 2
+        *set apoc_1_5_notes + 1
+        *set meta %+ 3
+        *goto apoc_1_5
+    #Prev post.
+        *goto apoc_1_3
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label trap_1_1
+*set trap_prog 1
+[b]${karla_bio}[/b]
+
+Karla @trappedinspace is a recent mutual. She seems unsympathetic to much of the fandom as it exists.
+
+[b]@trappedinspace reblogged from @luxemburgs at 8:50 PM. OP: @dingling[/b]
+
+Help a twoc out! Hey my name's Phoebe and I'm close to becoming homeless. I just got fired for not being a "culture fit" and my landlord's threatening to evict me if I don't pay up. Thank you! Any bit helps.
+
+$80/800
+
+[Link to fundraising site]
+
+[b]@luxemburgs:[/b]
+
+Help my gf out!
+
+Tags: #mutual aid, #rosa is my friend so I can vouch for this
+
+${trap_1_1_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_1_notes + 1
+        *set karla_blue %+ 1
+        *goto trap_1_1
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 3
+        *set trap_1_1_notes + 1
+        *set sympathy %+ 3
+        *goto trap_1_1
+    *disable_reuse #Donate something?
+        Unfortunately, you don't have a credit card or really any money that you control.
+        
+        *goto trap_1_1
+    #Next post.
+        *goto trap_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_2
+*set trap_prog 2
+[b]@trappedinspace reblogged from @luxemburgs at 8:43 PM. OP: @girlinprogress[/b]
+
+Hey can anyone help this uninsured trans girl pay her medical bills and maybe also groceries?
+
+[link to fundraising site]
+
+$0/300
+
+Tags: #mutual aid
+
+${trap_1_1_notes} Notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_2_notes + 1
+        *set karla_blue %+ 1
+        *goto trap_1_2
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx sympathy
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 3
+        *set trap_1_2_notes + 1
+        *set sympathy %+ 3
+        *goto trap_1_2
+    *disable_reuse #Donate something?
+        Unfortunately, you don't have a credit card or really any money that you control.
+        
+        *goto trap_1_2
+    #Next post.
+        *goto trap_1_3
+    #Prev post.
+        *goto trap_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_3
+*set trap_prog 3
+[b]@trappedinspace reblogged from @capellasgf one day ago. OP: @lunan0va[/b]
+
+So, I've spent a long time researching this theory... Please read it and tell me what you think!
+
+Title: Gali Nova is transfem-coded and here's why:
+
+Tl;dr: The name "Gali", being trapped in a literal closet and forced to confront your true feelings about yourself, being trapped in a closet again (on multiple occasions), feeling more at ease when around the girls up to the point of staying in their dorm (in like the most non-sexual way possible), "cross-dressing" in a way that's *not* portrayed as offensive or degrading, being naturally able to use both Light and Shadow magic, and yeah.
+
+(Read more)
+
+Tags: #tbh this is one of the few good bits of nebulaverse meta i've read recently, #thanks op
+
+${luna_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set luna_1_5_notes + 1
+        *set karla_blue %+ 2
+        *goto trap_1_3
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx luna_like
+            *gosub_scene rx karla_like
+            *gosub_scene rx meta
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 2
+        *set luna_blue %+ 2
+        *set luna_1_5_notes + 1
+        *set meta %+ 3
+        *goto trap_1_3
+    #Next post.
+        *goto trap_1_4
+    #Prev post.
+        *goto trap_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label trap_1_4
+*set trap_prog 4
+[b]@trappedinspace reblogged from @capellasgf one day ago. OP: @monadcore[/b]
+
+[The image is a tapestry of the main cast of the Chronicles. They are in space, wearing their Academy uniforms, holding hands in a chain. Gali is at the front, looking at Bruno. Then it's Tycho, Astra, Capella, and finally the Administrator.]
+
+Happy 10th anniversary to the Chronicles of the Shadow Nebula! Here's to 10 more years!
+
+Tags: #ugh this sort of stuff still gets to me
+
+${trap_1_4_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_4_notes + 1
+        *set karla_blue %+ 1
+        *goto trap_1_4
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+            *gosub_scene rx gen
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 2
+        *set trap_1_4_notes + 1
+        *set gen %+ 3
+        *goto trap_1_4
+    #Next post.
+        *goto trap_1_5
+    #Prev post.
+        *goto trap_1_3
+    #Look at another blog.
+        *goto montage_1
+
+
+*label trap_1_5
+*set karla_ch1_seen 1
+*set trap_prog 5
+[b]@trappedinspace posted 2 days ago[/b]
+
+[The image is a selfie taken at a mirror, of a young woman holding a phone in one hand and doing the peace sign with the other hand. She has long black hair partly covering the side of her face, and wears glasses with a rather severe expression. She wears a flannel jacket over a black dress and jeans.]
+
+so at the airport i said to press the blue button and they still pressed the pink button lol. this means i pass right? got genital groped but at least they were polite about it. 
+
+Tags: #gpoy, #girlslikeus, #yes sorry this is supposed to be a nebulaverse blog, #yes i am a slut for positive validation, #this is okay to reblog but, #for any p*rn blogs: go away
+
+${trap_1_5_notes} notes
+
+*choice
+    *disable_reuse #Like the post.
+        *set trap_1_5_notes + 1
+        *set karla_blue %+ 4
+        *goto trap_1_5
+    *disable_reuse #Reblog the post.
+        *if rx
+            *gosub_scene rx karla_like
+
+        *set rb_count + 1
+        *set karla_interact + 1
+        *set karla_blue %+ 5
+        *set trap_1_5_notes + 1
+        *comment i have no idea how rbing other peoples selfies messes with your vibes
+        *goto trap_1_5
+    #Prev post.
+        *goto trap_1_4
+    #Look at another blog.
+        *goto montage_1
+
+
+
+*label montage1_end
+
+It's past midnight. You should be going to bed by now. School is in seven hours.
+
+*page_break Another day...
+
+*label fanfiction
+
+[b]Universe - Noncanon?[/b]
+
+You wake up...
+
+*page_break
+
+"Someone certainly decided to take their time napping."
+
+You wake up from an uncomfortable position. A person is standing over you, a girl wearing the uniform of the Pulsar Academy, with its navy blazer and black skirt.
+
+"Anyway, the experiment with the new Kingdomite technology is underway," Astra says. Her soft voice brings you back to reality. "I've been studying it extensively, and I know how to activate it now."
+
+"Oh. That's great. Yeah." You rub your forehead as you finally remember who you are.
+
+You are...
+
+*fake_choice
+    #Galileo "Gali" Nova, third year student at Pulsar Academy.
+
+You pull yourself up. You are still in the Academy's starchy uniform; you must have fallen asleep in it. Which uniform are you wearing?
+
+*label uniform_choice
+*set protag_plural false
+*set protag_cis_boy false
+*set protag_trans_boy false
+*set protag_nonbinary false
+*set protag_trans_girl false
+*set protag_cis_girl false
+*set protag_questioning false
+*choice
+    #The girl's uniform, because I'm a girl.
+        *set protag_e "she"
+        *set protag_es "she's"
+        *set protag_em "her"
+        *set protag_eir "her"
+        *set protag_eirs "hers"
+        *set protag_emself "herself"
+        By the way, did they know that you were a girl when you were born?
+        *choice
+            #No, they didn't know I was going to be a girl...
+                *set protag_trans_girl true
+                *goto gali_pronoun_choice
+            #Yeah, I was a girl when I was born...
+                *set protag_cis_girl true
+                *goto gali_pronoun_choice
+            #Actually, I change my mind...
+                *goto uniform_choice
+    #The girl's uniform, but I'm not exactly a girl.
+        You wear the girl's uniform, but you're not exactly a girl. Actually...
+        *choice
+            #I'm a boy who just likes wearing the girl's uniform.
+                Sure, that's okay! By the way, did they know that you were a boy when you were born?
+                *choice
+                    #No, they didn't know I was going to be a boy...
+                        *set protag_trans_boy true
+                    #Yeah...
+                        *set protag_cis_boy true
+                    #Actually, I change my mind...
+                        *goto uniform_choice
+                *goto gali_pronoun_choice
+            #I'm not a boy or girl.
+                *set protag_nonbinary true
+                *goto gali_pronoun_choice
+            #I don't know what I am, yet.
+                *set protag_questioning true
+                *goto gali_pronoun_choice
+            #Actually, I change my mind...
+                *goto uniform_choice
+    #The boy's uniform, because I'm a boy.
+        *set protag_e "he"
+        *set protag_es "he's"
+        *set protag_em "him"
+        *set protag_eir "his"
+        *set protag_eirs "his"
+        *set protag_emself "himself"
+        By the way, did they know that you were a boy when you were born?
+        *choice
+            #No, they didn't know I was going to be a boy...
+                *set protag_trans_boy true
+                *goto gali_pronoun_choice
+            #Yeah...
+                *set protag_cis_boy true
+                *goto gali_pronoun_choice
+            #Actually, I change my mind...
+                *goto uniform_choice
+    #The boy's uniform, but I'm not exactly a boy.
+        You wear the boy's uniform, but you're not exactly a boy. Actually...
+        *choice
+            #I'm a girl who just likes wearing the boy's uniform.
+                Sure, that's okay! By the way, did they know that you were a girl when you were born?
+                *choice
+                    #No, I wasn't always a girl...
+                        *set protag_trans_girl true
+                    #Yeah...
+                        *set protag_cis_girl true
+                    #Actually, I change my mind...
+                        *goto uniform_choice
+                *goto gali_pronoun_choice
+            #I'm not a boy or girl.
+                *set protag_nonbinary true
+                *goto gali_pronoun_choice
+            #I don't know what I am, yet.
+                *set protag_questioning true
+                *goto gali_pronoun_choice
+            #Actually, I change my mind...
+                *goto uniform_choice
+    #I wish there were other options...
+        *set protag_nonbinary true
+        Sure. Let's say that there are. You're wearing whatever you would like.
+
+        *label gali_pronoun_choice
+        And what are the pronouns that people use for you?
+        *choice
+            #She/her/hers
+                *set protag_e "she"
+                *set protag_es "she's"
+                *set protag_em "her"
+                *set protag_eir "her"
+                *set protag_eirs "hers"
+                *set protag_emself "herself"
+            #He/him/his
+                *set protag_e "he"
+                *set protag_es "he's"
+                *set protag_em "him"
+                *set protag_eir "his"
+                *set protag_eirs "his"
+                *set protag_emself "himself"
+            #E/em (Spivak pronouns)
+                *set protag_e "e"
+                *set protag_es "e's"
+                *set protag_em "em"
+                *set protag_eir "eir"
+                *set protag_eirs "eirs"
+                *set protag_emself "emself"
+            #They/them
+                *set protag_plural true
+            #Actually, I change my mind...
+                *goto uniform_choice
+
+Now that you remember who you are, maybe you could go back to thinking about what Astra is saying.
+
+"You don't even know what I'm talking about, do you?" she says.
+
+"Um, sorry..."
+
+"Come on, we need you for the next part of this project." Astra pulls you by the arm, from the library you found yourself in, through the sunlit corridors of the academy, to the labs where she always seemed to make her home. Metal magic courses through labyrinthine machinery, illuminating the otherwise bleak surroundings in a dazzling prism of color.
+
+*fake_choice
+    #"Where are we going?"
+        "Where are we going?" you ask.
+
+        "To the Metalbound Special Projects Lab, of course! Haven't you been there for your labs?"
+
+        "Um, should I have been?"
+
+        Astra rolls her eyes. "I forgot that you had that special dispensation."
+    #"What is this project, exactly?"
+        "What is this project, exactly?" you ask.
+
+        "We are going to be one step closer to uncovering the secrets of the universe. Universes, rather. It's a new technology that lets us... well, you'll see. I don't know either."
+    #"How long was I asleep for?"
+        "How long was I asleep for?" you ask.
+
+        "Too long," Astra replies. "It's past midday."
+
+        "Oh. Sorry."
+
+        She just shrugs. "It's fine."
+
+"Anyway, we're here now."
+
+You finally see Astra's device with your own eyes. At first it appears to be nothing more than a door, with a simple frame detached from any walls, a handle, and hinges on one side. But then you see the wires and tubes snaking out, not looking like part of the door at all. They connect to another device, this one like a large metal barrel, topped by flashing lights and buttons and screens, a control panel of sorts.
+
+All your other friends are already here: Bruno, Tycho, and Capella. Bruno just glares at you, while Tycho gives you a small wave and sheepish smile. Capella is checking the device by herself.
+
+*temp seen_bruno false
+*temp seen_pamphlet false
+*temp seen_astra false
+*temp seen_capella false
+*temp seen_spells false
+
+*label fanfic_look_at_others
+
+*choice
+    *disable_reuse #Look at Bruno
+        Bruno is your suitemate, along with Tycho.
+        *if (protag_cis_girl or protag_trans_girl)
+            How you ended up getting assigned a suite with two boys remains a mystery.
+        
+        He is a tall and lanky boy with coiffed blond hair. He has at least half a head on you, and poses with the imperious look of someone who has never wanted for anything and has always had his way, either by birthright or by sheer force of will. You've never been on the best of terms before, but he probably has a soft spot... somewhere.
+        *fake_choice
+            #I have a crush on Bruno.
+                *set protag_likes_bruno 1
+                *set protag_bruno_red 5
+            #I want to be better friends with Bruno.
+                *set protag_bruno_blue + 10
+                *set protag_bruno_green - 10
+            #I don't really have any feelings about Bruno.
+            #I really dislike Bruno.
+                *set protag_bruno_blue - 10
+                *set protag_bruno_green + 10
+            #I really dislike Bruno, but I also kind of have a crush on him.
+                *set protag_likes_bruno 1
+                *set protag_bruno_red + 5
+                *set protag_bruno_blue - 10
+                *set protag_bruno_green + 10
+        *set seen_bruno true
+        "Why're you so late, Nova?" Bruno asks. "Enjoying your beauty sleep?"
+        
+        "Hey, knock it off," Astra says. "We've all been tired lately."
+        
+        "Sure, whatever." The boy shrugs. "I just want to know that ${protag_e}'ll be ready for what's coming." He glares at you.
+        *fake_choice
+            #"I'm ready, Bruno." Glare back.
+                *set protag_bruno_red %+ (protag_likes_bruno*5)
+                *set protag_bruno_green %+ 5
+                "I'm ready, Bruno," you say as you return his glare. It becomes a staring contest, neither of you breaking away until Astra sighs in an exasperated tone.
+            #Don't dignify him with a response.
+                You ignore his gaze as best as you can. He stops staring after a moment.
+
+        "Astra, let it be on the record that I am still opposed to this project," remarks Bruno, "despite what the Administrator might have said."
+
+        Astra sighs once more. "Look, the Kingdomites have multiverse traversal down to a spell. A few spells actually. Don't you remember them from class? Don't you remember anything from class?"
+
+        To be honest, you don't exactly remember the spells either...
+        *fake_choice
+            #"I don't remember the spells either..."
+                *set seen_spells true
+                "Um, I don't remember the spells either..."
+
+                "Okay, okay! I'll teach you all. We've adapted the Kingdomite methods onto the elemental system but it's not a perfect isomorphism so..."
+
+                She goes on and on, but you do eventually learn the formulae involved in multiversal travel. You don't understand exactly how the spells are supposed to be applied, but you don't think Astra does either.
+            #Just forget about it.
+                "You know what, forget about it," says Bruno. He folds his arms and turns away. "If you die, you die."
+
+                "We're not going to die!" shouts Astra, but neither of their hearts are in this argument.
+        *goto fanfic_look_at_others
+    *disable_reuse #Look at Tycho
+        Tycho is your suitemate, along with Bruno.
+        *if (protag_cis_girl or protag_trans_girl)
+            How you ended up getting assigned a suite with two boys remains a mystery.
+            
+        Unlike Bruno, Tycho comes from an average family, and is, well, average in a lot of ways. Average height, average build, medium brown complexion, and a handsome but nondescript face. He is a kind and understanding person to everyone around him. Especially to you, even when you don't deserve it.
+        *fake_choice
+            #I have a crush on Tycho.
+                *set protag_likes_tycho 1
+                *set protag_tycho_red 5
+            #I want to be better friends with Tycho.
+                *set protag_tycho_blue + 10
+            #I don't really have any feelings about Tycho.
+            #I really dislike Tycho.
+                *set protag_tycho_green + 10
+        "How's it going?" Tycho asks. "I didn't see you last night. What were you up to?"
+        *fake_choice
+            #"I was... studying?"
+                "I was, um, studying?"
+                
+                "Yeah? You sound uncertain."
+                
+                "Well, I was at the library so what else could I have been doing?"
+                
+                "Good point." He chuckles.
+            #"I have no idea what I was doing."
+                "I have no idea what I was doing."
+                
+                "Yeah, that happens." He chuckles.
+            #Just shrug and give an awkward smile.
+                You shrug, and smile awkwardly.
+                
+                "No idea? Well, I hope passing out in the library doesn't become a habit."
+        *goto fanfic_look_at_others
+    *disable_reuse #Look at Capella
+        Capella Taikong has always been one of the most renowned students in the academy, popular and appreciated if not loved by all. Yet she deigns to hang out with your motley group. She has long straight black hair partly covering the side of her face, and wears glasses even though she could afford a magical vision correction. Her expression is severe, always seeming a little disappointed.
+        *fake_choice
+            #I have a crush on Capella.
+                *set protag_likes_capella 1
+                *set protag_capella_red 5
+            #I want to be better friends with Capella.
+                *set protag_capella_blue + 10
+                *set protag_capella_green - 10
+            #I don't really have any feelings about Capella.
+            #I really dislike Capella.
+                *set protag_capella_blue - 10
+                *set protag_capella_green + 10
+            #I dislike Capella, but also have a crush on her.
+                *set protag_likes_capella 1
+                *set protag_capella_red + 5
+                *set protag_capella_blue - 10
+                *set protag_capella_green + 10
+        Capella is too busy checking the machine to pay you any attention.
+        *fake_choice
+            #Interrupt Capella.
+                "Um, Capella?" you say. "What are you..."
+
+                She turns to you, trying to look as un-annoyed as possible. "Yeah, Gali? What is it?"
+
+                "Um... What are you doing?"
+
+                "I'm making sure the device doesn't explode when we turn it on."
+                
+                "Oh, um... okay." She doesn't seem to be in the mood for conversation, and goes back to checking on the device.
+                *set seen_capella true
+            #Don't interrupt her.
+                You decide that it's better to let her do what she's doing. It seems important.
+        *goto fanfic_look_at_others
+    *disable_reuse #Look at Astra
+        Astra was one of the first people you met at the Academy, and is still one of your best friends. She's very talented in academics, but less so in athletics or the more social aspects of Academy life. She's quite a bit shorter than you and a little chubby.
+        *fake_choice
+            #I have a crush on Astra.
+                *set protag_likes_astra 1
+                *set protag_astra_red 5
+            #I want to be better friends with Astra.
+                *set protag_astra_blue + 10
+                *set protag_astra_green - 10
+            #I don't really have any feelings about Astra.
+            #I really dislike Astra.
+                *set protag_astra_blue - 10
+                *set protag_astra_green + 10
+        "So, do you know anything about parallel worlds?" Astra asks. You shake your head. "Well, our current hypothesis is that the machine will transport us into a parallel world, somewhere in the multiverse. It would be the first time for any Imperial citizen. Of course we don't have 100% certainty, but the Kingdomites apparently wrote a lot about that kind of thing. Anyway, here's a translation of one of their pamphlets." She hands you a tablet.
+        *fake_choice
+            #Read the pamphlet.
+                You read the translated Kingdomite pamphlet. It talks about some of the experiences of people who have visited parallel universes and returned. Like most Kingdomite writings, it's full of incomprehensibly poetic imagery. But you do get a sense that interacting with the parallel universe will be difficult once you're in it, unless you use a special spell. The pamphlet doesn't exactly describe the spell, however.
+                *set seen_pamphlet true
+            #Do something else.
+                You don't really have time to read the pamphlet right now.
+        *goto fanfic_look_at_others
+    #"So, um, what do we do now?"
+        *goto end_of_convo
+
+*label end_of_convo
+*if (seen_pamphlet and seen_spells)
+    *set has_chekhovs_gun true
+
+"We will be conducting our first test of this device," Astra says. "Is everybody ready?"
+
+"Ready as we'll ever be," Capella mutters. "All I know is that this probably won't kill us. What happens afterwards is anyone's guess."
+
+Astra smiles at the other girl. "Ella, would you do the honors?"
+
+Capella doesn't take a second glance, and presses the red button. Beeps and mechanical whines begin, and grow louder. The door swings open, revealing a swirling painting of colors. Nothing is visible beyond, but Capella reaches her hand through and pulls it back.
+
+"Well, my hand's fine," she says with a shrug. "What are we waiting for?" She steps through.
+
+*page_break You follow them through...
+
+[b]IRL[/b]
+
+You just had an incredible idea for a fanfiction.
+
+Maybe it's time to finally start writing, to put to paper (or silicon, rather) the words that just streamed through your mind.. Ah, yes. Your as-yet-theoretical magnum opus. The story that will become your 5th Symphony of Nebulaverse fanfiction, one that will stand out among the over one hundred thousand other stories for this fandom (almost two hundred more were published since yesterday). A metafictional masterpiece to rival Borges, more revelatory of the human condition than Le Guin, with a scope more epic than Tolkien.
+
+*label story_title_choice
+What will you title the story?
+
+*choice
+    #Fragments of the Multiverse
+        *set story_title "Fragments of the Multiverse"
+        *set story_title_short "Fragments"
+        That sounds familiar for some reason, as if it's a play off something you've read before and can't remember. But at least it isn't based on a song lyric. Or is it?
+    #Another Day, Another Time
+        *set story_title "Another Day, Another Time"
+        *set story_title_short "ADAT"
+        Huh. Interesting you thought of that just now. It's a rather generic phrase, but one that hasn't been used in the fandom thus far.
+    #A Paradox Between Worlds
+        *set story_title "A Paradox Between Worlds"
+        *set story_title_short "APBW"
+        The title sounds familiar for some reason, as if it's based on something you've read before and can't remember. Is it a song lyric or something? Well, a quick search shows that there aren't any other fics with that title, so you should be good.
+    #A Meander of Shadows
+        *set story_title "A Meander of Shadows"
+        *set story_title_short "Meander"
+        That's an interesting title. No results on Google, too. Kind of a word salad, because you have no idea what a "Meander of Shadows" would look like. But then again, the same can be said of your story.
+    #Quantum Interference
+        *set story_title "Quantum Interference"
+        *set story_title_short "QI"
+        This title is at least somewhat relevant to the whole "multiverse" idea. You feel like it would be common, but apparently it hasn't been used in this fandom so far. Great.
+    #The Metafictional Hypothesis
+        *set story_title "The Metafictional Hypothesis"
+        *set story_title_short "TMH"
+        This is a bit of a pretentious title, and it alludes to academic concepts that, to be honest, you don't really understand. But it's unique.
+    #Just pick a song lyric and get on with it.
+        *set use_lyric_title true
+        Okay. A song lyric. Let's go.
+        *label song_lyric_choice
+        *choice
+            #A secret chord
+                *set story_title "A secret chord"
+                *set story_title_short "ASC"
+            #The minor fall, the major lift
+                *set story_title "The minor fall, the major lift"
+                *set story_title_short "MFML"
+            #Beauty and the moonlight
+                *set story_title "Beauty and the moonlight"
+                *set story_title_short "BatM"
+            #Maybe there's a God above
+                *set story_title "Maybe there's a God above"
+                *set story_title_short "MTaGA"
+            #All I've ever learned from love
+                *set story_title "All I've ever learned from love"
+                *set story_title_short "Love"
+            #Your flag on the marble arch
+                *set story_title "Your flag on the marble arch"
+                *set story_title_short "FotMA"
+            #Love is not a victory march
+                *set story_title "Love is not a victory march"
+                *set story_title_short "March"
+            #I couldn't feel
+                *set story_title "I couldn't feel"
+                *set story_title_short "Feel"
+            #I tried to touch
+                *set story_title "I tried to touch"
+                *set story_title_short "Touch"
+            *disable_reuse #...Wait, why are all these from Hallelujah?
+                ...Because why not? Which other songs has such universal and timeless resonance? Also, you don't exactly have the greatest range of popular music consumption.
+                *goto song_lyric_choice
+            #None of these.
+                *goto story_title_choice
+        You have no idea what this has to do with the story, but sure, why not. It sounds nice. It works.
+    #Something else.
+        What is the title of your story?
+        *input_text story_title
+        What is a short version or abbreviation of your story's title?
+        *input_text story_title_short
+        
+Your story is titled "${story_title}". Is that what you're going with?
+
+*choice
+    #Yes, it is.
+    #Actually, I want to change it.
+        *goto story_title_choice
+
+You already know what the story is going to be about; you just spent an hour imagining yourself in its world. It's a story about stories. It's a story about the gang traversing through different worlds from fanfiction.
+
+*label fanfiction_about
+*choice
+    *disable_reuse #Wait, is that what'll happen after the portal?
+        *goto fanfiction_portal
+    #What ships will the story have?
+        *goto fanfiction_ships
+    #Just start writing.
+        *goto fanfiction_writing
+
+*label fanfiction_portal
+Wait, is that what's gonna happen after they step through the portal? That they'll just end up inside some coffeeshop AU?
+
+*choice
+    #Sure, why not?
+        The story would be a tour through different potential worlds the characters might end up in. A coffeeshop AU might just be the first AU. Next might be... say, a space opera AU? And then a post-apocalyptic AU?
+        *goto fanfiction_about
+
+*label fanfiction_ships
+Stories need ships; relationships between fictional characters (or non-fictional individuals, but we don't talk about that here) are the key driver behind fandom. There are some inklings of ships present already. Will you designate a primary ship for the story?
+
+*choice
+    #Brunova
+        Brunova is probably the most popular ship in the fandom, so it's a safe choice. There are hundreds if not thousands of blogs and fic authors devoted solely to this ship to the exclusion of anything else in the Nebulaverse. Of course it has its refractors, but they are mostly marginal. Claire is one of the biggest writers for this ship, and Lux is a writer and fan. Sofia has also written for Brunova.
+
+        *if (protag_cis_girl or protag_trans_girl)
+            Making Gali a girl in this story might be viewed somewhat negatively, as if she suddenly became a Mary Sue. Some people might uncharitably call it homophobic.
+        *if (protag_trans_girl)
+            But a trans girl Gali might add some interesting things to the dynamic, if only because trans girl Brunova hasn't been done before.
+
+        Are you going with Brunova as a ship?
+
+        *choice
+            #Yes!
+                *if (protag_cis_girl or protag_trans_girl)
+                    *set popularity - 3
+                *set lux_blue %+ 4
+                *set claire_blue %+ 4
+                *set sofia_blue %+ 2
+                *set popularity + 10
+                *set fic_ship "brunova"
+                *if (protag_trans_boy)    
+                    By the way, trans boy Bruno is a somewhat popular headcanon. Will that be part of your story?
+                    *choice
+                        #No.
+                        #I don't know; it won't play a role in the story either way.
+                        #Yes, trans boy Bruno it is!
+                            *set popularity - 1
+                            *set bruno_trans true
+                            *set lux_blue %+ 5
+            #No, I want a different ship.
+                *goto fanfiction_ships
+    #Tychonova
+        Tychonova is a rather popular ship, less so than the juggernaut that is Brunova, but respectable. Perhaps a cruiser-tier ship, or something like that. It's a rather uncontroversial ship that people enjoy even when they don't actively ship it.
+
+        Are you going with Tychonova as a ship?
+        *choice
+            #Yes!
+                *set claire_blue %+ 2
+                *set popularity + 3
+                *set fic_ship "tychonova"
+            #No, I want a different ship.
+                *goto fanfiction_ships
+    #Astranova
+        Readers of the Chronicles who care about things like "canon" often argue about whether Gali should end up with Astra or Capella. The consensus is that Ellanova is more of the direction GTM is going in, but Astranova remains a popular ship.
+
+        Are you going with Astranova as a ship?
+        *choice
+            #Yes!
+                *set fic_ship "astranova"
+                *set popularity + 2
+            #No, I want a different ship.
+                *goto fanfiction_ships
+    #Ellanova
+        Readers of the Chronicles who care about things like "canon" often argue about whether Gali should end up with Astra or Capella. The consensus is that Ellanova is more of the direction GTM is going. It is the most "canon" ship.
+
+        Are you going with Ellanova as a ship?
+        *choice
+            #Yes!
+                *set karla_blue %+ 2
+                *set popularity + 3
+                *set fic_ship "ellanova"
+            #No, I want a different ship.
+                *goto fanfiction_ships
+    #Astrapella
+       Astrapella is the most popular (well, only popular) F/F ship in the Nebulaverse fandom. It has a smaller fandom than the big m/m ships or the m/f ships, but its following is very devoted. Luna, Stella, and Sofia seem to be fans of this ship.
+
+       Are you going with Astrapella as a ship?
+       *choice
+           #Yes!
+               *set sofia_blue %+ 2
+               *set stella_blue %+ 5
+               *set luna_blue %+ 3
+               *set popularity + 2
+               *set fic_ship "astrapella"
+           #No, I want a different ship.
+               *goto fanfiction_ships
+    #Brunastra
+        Brunastra is a strange construct with little canonical narrative backing, but it is decently popular nevertheless, surpassing the more "canonical" Astranova and Ellanova. Its detractors sometimes say that Bruno is abusive towards Astra due to their oft-antagonistic relationship, while its proponents seem to enjoy a "bad boy" romance with change and redemption.
+
+        Are you going with Brunastra as a ship?
+        *choice
+            #Yes!
+                *set fic_ship "brunastra"
+                *set luna_green %+ 2
+                *set stella_green %+ 4
+                *set popularity + 4
+            #No, I want a different ship.
+                *goto fanfiction_ships
+    #Brunotycho
+        Brunotycho is not an unpopular ship, but it is well below the juggernaut that is Brunova. It does not generate much discourse because Tycho in general is a popular character to ship with anyone.
+
+        Are you going with Brunotycho as a ship?
+        *choice
+            #Yes!
+                *set claire_blue %+ 2
+                *set fic_ship "brunotycho"
+                *set popularity + 2
+            #No, I want a different ship.
+                *goto fanfiction_ships
+    #Just a messy tangle of drama
+        Everyone has crushes on each other. Everyone is having emotional affairs, maybe even frick-fracking behind everyone else's backs.
+
+        Are you going with just a messy tangle of drama??
+        *choice
+            #Yes!
+                *set claire_blue %+ 2
+                *set popularity + 2
+                *set fic_ship "drama"
+            #No, I want a different ship.
+                *goto fanfiction_ships
+    #A rare pair?
+        That's valid! There are plenty of "rarepairs" in the Nebulaverse fandom; you're bound to find some people who share your interests.
+
+        Are you going with a rare pair?
+        *choice
+            #Yes!
+                *set claire_blue %+ 2
+                *set fic_ship "rare"
+            #No, I want a different ship.
+                *goto fanfiction_ships
+    #No one - this isn't a romance story.
+        That's valid! There are plenty of gen stories in the Nebulaverse fandom, including some of the most popular ones.
+
+        Are you going with gen (no shipping)?
+        *choice
+            #Yes!
+                *set fic_ship "none"
+                *set claire_blue %+ 2
+            #No, I want a different ship.
+                *goto fanfiction_ships
+
+*goto fanfiction_about
+
+*label fanfiction_writing
+Okay, let's do this.
+*if protag_trans_girl
+    *set popularity - 1
+    *set luna_blue %+ 8
+    *set karla_blue %+ 3
+*if protag_trans_boy
+    *set popularity - 1
+    *set lux_blue %+ 5
+
+*page_break Universe - Noncanon
+
+[b]Universe - Noncanon[/b]
+
+[b]Excerpt from ${story_title}, chapter 1 by $!{handle} @${username}[/b]
+
+After Capella stepped through the portal, then followed Bruno, Tycho, and finally Astra. "Come on! It's okay!" said Astra, peeking her head back through the door. Gali is the last one to enter.
+
+*gosub_scene fic_stone
+
+*label mv1_end
+*if in_claire_chat and in_luna_chat
+    *achieve people
+*finish

@@ -1,0 +1,805 @@
+[b]Universe - Noncanon?[/b]
+*temp look false
+*temp listen false
+*temp smell false
+*temp taste false
+*temp touch false
+*temp think false
+
+You are falling...
+
+*page_break Until you hit the ground.
+
+Until you hit the ground. A ground.
+
+*label fic_1_scene_1
+
+You open your eyes to a cavernous place. No, not a cavern exactly, but an artificial space, a rectangular room with a floor cold as [b]ice[/b]. The flickering fluorescent lights in the ceiling make your headache worse.
+
+Where are you?
+*choice
+    #[An empty room aboard a spaceship. Canon divergence AU]
+        *set ch2_setting "ship"
+        *goto ship_feel
+*comment    #[A prison cell on a cold, desolate planet. Canon divergence AU]
+*comment        TODO
+
+*label ship_feel
+*if look
+    Your eyes begin to adjust to the dim surroundings. The room is featureless, with every surface covered by the same gray sheen. No furniture, just a thick door that has no visible way to open.
+
+*if listen
+    There is a soft humming reverberating through the air, punctuated by metallic clanging like footsteps.
+
+*if smell
+    There is a dank, musty odor. You do not notice any ventilation systems in the room; are you going to suffocate in here?
+
+*if taste
+    It's the second time you've had the taste of cherries in your mouth. Is the taste simply universally associated with multiversal travel?
+
+*if touch
+    The floor is freezing to the touch. When you move to your feet, you feel lighter than before, a sign of either artificial gravity or a different planet. You push at the door, to no avail.
+
+*if think
+    You are alone here. Where are your friends? Did they end up in the same universe?
+
+    So many questions. So few answers.
+
+*choice
+    *disable_reuse #Look.
+        *set look true
+        *goto ship_feel
+    *disable_reuse #Listen.
+        *set listen true
+        *goto ship_feel
+    *disable_reuse #Smell.
+        *set smell true
+        *goto ship_feel
+    *disable_reuse #Taste.
+        *set taste true
+        *goto ship_feel
+    *disable_reuse #Touch.
+        *set touch true
+        *goto ship_feel
+    *disable_reuse #Think.
+        *set think true
+        *goto ship_feel
+    #Continue.
+        *goto fic_1_scene_2
+
+*label fic_1_scene_2
+The door opens. A masked figure in full body armor steps through.
+
+"The captain wants to see you," they say. A gun is pointed in your direction.
+
+*page_break You have no choice but to follow.
+
+You follow the trooper through labyrinthine metal corridors, walking in a lonely silence. Sailors in uniform pass by, some staring and pointing, but no one speaks to you or your escort. Once in a while you glance upon a portrait of the Emperor Ariel, his gaze always following you, or a painting of a glorious space battle, red and green energy blasts firing in all directions and ships ripped apart.
+
+This continues until you reach what must be the bridge of the spaceship, a room surrounded by windows into the darkness of space. A strange yet familiar voice greets you..
+
+"Welcome aboard. I suspect this is a fortuitous occurrence."
+
+*page_break It's Bruno...
+
+The captain is... Bruno. He cuts a dashing figure as he strides towards you, in full Imperial Fleet uniform. He looks older, with a hint of a beard along with his closed cropped golden hair and hints of wrinkles along his chiseled face. @{(protag_likes_bruno>0) He appears more handsome than you've ever known.|}
+
+He gazes at you with an intense stare, until his face breaks into a simulacrum of a smile. "I remember you, Galileo Nova."
+
+"Me?" you say.
+
+"Yes, you. Who else would I be talking to? I was a wanderer like you once. I remember you from back at the Academy, when we entered into the portal. It's been ten years and you look exactly the same. No matter. Perhaps you might still serve a purpose in this world. We are at war, you see, and perhaps you can shorten it."
+
+*comment TODO: change this to better account for Bruno's stuff...
+
+*label bruno_question_1
+*choice
+    #Interject and ask a question.
+        *label bruno_ask_question
+        *choice
+            *disable_reuse #Why are you here?
+                "Why are you here?" you ask.
+
+                "Funny, I was planning on asking you that question. But it's all random, isn't it, where we end up? As for me, what else would I be doing? I am a tool of the Emperor. I am His servant, and I carry out his campaigns. I am here to combat the enemies of the Empire, and I hope that you may help me."
+
+                *goto bruno_ask_question
+            *disable_reuse #Who is your enemy?
+                "Who is your enemy?" you ask.
+
+                Bruno smirks. "It's you, the version of you that lives in this universe. But older@{(not(protag_cis_boy or protag_trans_boy)) , and a man|}. I hope that you can help me defeat his cause."
+
+                *goto bruno_ask_question
+            *disable_reuse #What did you do with the real Bruno?
+                "What did you do with the real Bruno Helios?" you ask.
+
+                The man laughs. "I [i]am[/i] the real Bruno Helios. I am the Bruno from your reality. I entered the Kingdomite portal with you, all those years ago. And I decided to stay here, because this became my home."
+
+                *goto bruno_ask_question
+            *disable_reuse #How do we get back to our world?
+                "How do we get back to our world?" you ask.
+
+                Bruno smiles in a crooked way. "You're implying that I [i]want[/i] to go back. No. That isn't right. This is my world."
+                *goto bruno_ask_question
+            #Don't say anything.
+                *label end_of_convo
+                When you don't say anything, Bruno continues.
+                *goto bruno_banquet
+    *disable_reuse #[A/N: Is this gonna be a Brunova thing?]
+        [A/N: So, will it be Brunova?]
+        *fake_choice
+            #[A/N: Yes, it's Brunova.]
+                [A/N: Yeah, sure, it's gonna be Brunova.]
+            #[A/N: It's gonna at least hint at Brunova. Maybe not go into depth.]
+                [A/N: Okay. The story will hint at Brunova but that's not the main focus of the story?]
+            #[A/N: No, of course it's not Brunova.]
+                [A/N: Brunova isn't happening here. They're just green here, just friend-rivals.]
+        *goto bruno_question_1
+    #Let him monologue.
+        *goto bruno_question
+
+*label bruno_question
+
+"I did not know that this world would be my home when I first arrived," says Bruno. "But after some years, I found that it was a world where I could finally realize my destiny, where I could narrate the climax of my story. And I hope that you will find the same. I hope that you will find your place in this world, with me."
+
+He continues, "How many worlds have you visited?"
+
+"Just this one."
+
+He looks as if he does not particularly care about what you have to say. When you stay silent, he continues.
+
+*label bruno_banquet
+"Let's have a nice chat. We'll bring out the tea sets and the banquet. Come with me."
+
+*page_break
+
+Bruno snaps his fingers and waves to the soldiers. They nod, mechanically, and escort the two of you through the corridors once more, until you arrive at what must be Bruno's private chamber. He makes another gesture, and the soldiers salute. The two of you are left alone.
+
+The room is cavernous for a locale inside a starship. Instead of the metal walls and flooring, there are faux-wood panels. There is a table already laid out with silverware and porcelain plates, the tea set assembled, with pastries and fresh fruits to the side.
+
+"Come. Sit." He gestures to a fancy carved wood chair. You do as he asks. @{(protag_likes_bruno>0) The air is taut with tension. He still has a slight smirk on his unbearably handsome face.|}
+
+"I truly desire to help you," he says, "but to do that, I must first know you. So let us talk."
+
+He makes a beckoning gesture. "Let's become reacquainted with each other."
+
+*label bruno_convo_choices
+*choice
+    *hide_reuse #Bruno puts his hand on your shoulder...
+        *set lux_blue %+ 5
+        *set protag_likes_bruno + 1
+        *set protag_bruno_red %+ 3
+        *set sofia_blue %+ 5
+        *set claire_blue %+ 5
+        *set ch2_wins + 1
+        Bruno walks behind your chair and puts his strong hand on your shoulder, gently stroking your back.
+
+        "You seem tense. Perhaps you would do well with some relaxation?"
+
+        [A/N: Okay, this is edging towards lemon territory. How far would you like to go?]
+
+        *choice
+            #[A/N: They're gonna do the frick-frack, or get close.]
+                *set protag_bruno_ch2_ff 2
+                *set popularity + 10
+                *set ch2_wins + 1
+                *set protag_bruno_red %+ 15
+
+                [A/N: That would be extremely OOC, and this is not a PWP. So maybe they'll just...]
+
+                You feel Bruno's hands on both of your shoulders, the gentle pressure of his hands moving up and down. The feeling is like nothing you've ever felt before. You feel every muscle in your body relax, as you melt into his caress.
+
+                Your head tilts back. You can't help but let out a low moan.
+
+                *goto enjoying_this
+            #[A/N: Obviously there are undertones, but they're not gonna do it.]
+                *set protag_bruno_ch2_ff 1
+                *set popularity + 5
+                *set ch2_wins + 1
+                *set protag_bruno_red %+ 5
+                [Okay.]
+
+                You feel Bruno's hands on both of your shoulders, the gentle pressure of his hands moving up and down. It's not a bad feeling.
+
+                *label enjoying_this
+                "Are you enjoying this?" Bruno smirks.
+
+                Before you can answer, he continues talking.
+
+                "I care about you. I really do. Not just you, the one sitting here with me right now, but all incarnations of you, the [i]you[/i] that exists in every universe."
+
+                He gazes off into the distance and finally lets go of you.
+
+                *choice
+                    #I wish he kept going.
+                        But he sits back down in his chair. Somehow his expression looks softer.
+                        *goto bruno_convo_choices
+                    #I'd rather he didn't.
+                        Bruno sits back down in his chair. Somehow his expression looks softer than before.
+                        *goto bruno_convo_choices
+                    #Take his hand.
+                        *set protag_bruno_red %+ 5
+                        *set protag_bruno_blue %+ 5
+                        You take his hand in yours. He looks surprised. "What are you doing?" he asks.
+
+                        *choice
+                            #"I love you."
+                                *set protag_bruno_red %+ 10
+                                [A/N: this is OOC, but who cares. Love is love.]
+                                
+                                "I... I love you," you manage say, trying as hard as you can to make your voice seem sincere. You don't know if it works.
+
+                                "Oh?" He smirks. "Do you really? For what reason would you bring this up at this moment?"
+
+                                "Because, well..."
+
+                                *label im_not
+                                "You know that I cannot be the Bruno you know and love, right? You understand that should you return to your world, he will not know of this, right?"
+
+                                "I..."
+
+                                "This isn't your story."
+
+                                *page_break This isn't your story.
+                                *goto sensation
+                            #"I care about you."
+                                *set protag_bruno_red %+ 5
+                                *set protag_bruno_blue %+ 5
+
+                                "I... I care about you," you say.
+
+                                "Oh? Thank you."
+
+                                "I mean..."
+
+                                *goto im_not
+                            #Let go.
+                                You let go of his hand. "Sorry, never mind," you say.
+
+                                "Oh. Okay then."
+                                *goto bruno_convo_choices
+            #[A/N: This is a purely platonic backrub, for the purpose of emotional manipulation on Bruno's part.]
+                *set popularity + 5
+                *set ch2_wins + 1
+                [Okay, if you say so, but perhaps your readers might disagree with your interpretation of these events.]
+
+                You feel Bruno's hands on both of your shoulders, the gentle pressure of his hands moving up and down. It's not a bad feeling. But he soon stops moving.
+
+                *goto enjoying_this
+    #Try to turn Bruno against the Emperor.
+        "You know the emperor is evil, right?"
+
+        There were many things you could have said. That was one of the worst choices. Bruno begins laughing. "Haha. Haha. Hahahahaha!!!" He pounds the table. "You really must be a child. Are you as young as you appear?"
+
+        "I'm 19. I'm an adult. It's you who's blind."
+
+        "Hahahahahaha!!!! You are hopeless. No wonder why your rebels have been so pathetic." 
+
+        "No, your Emperor..."
+
+        *choice
+            #The Emperor has been slaughtering innocents!
+                "The Emperor has been slaughtering innocents! My parents were killed by his servants!"
+
+                *goto innocent
+            #The Emperor has been serving the Demiurge!
+                "The Emperor has been serving the Demiurge! He is nothing more than a servant of evil!"
+
+                "How do you know the Demiurge is evil? The Binary Bible says so?" He laughs. "Do you know what 'propaganda' means, Gali? Because that's what the Binary Bible is and has always been. It has been a tool to justify every regime in the past and every regime that will come in the future."
+
+                *page_break "Then why are you serving the Emperor?"
+
+                "Then why are you serving the Emperor?" You try to turn his words against him.
+
+                "Because the Nebula requires stability. Your rebels threaten to turn a campaign into a conflagration. Your beloved Archon of Shadow is willing to destroy the Empire for his Succession. Whether he succeeds or fails, the rebel movement must be destroyed, for they threaten our very existence."
+
+                "Isn't that propaganda too?"
+
+                "You really don't understand, do you? This isn't your old world. This isn't your story."
+
+                *page_break This isn't your story.
+                *goto sensation
+            #The Emperor killed my loved ones!
+                "My parents... they were killed by the Emperor. I'm an orphan because of him."
+
+                *label innocent
+                "Hmm. And how did you know they were innocent?"
+
+                "I... They were my parents! What am I supposed to say?"
+
+                "Perhaps your parents were criminals who murdered innocents. Many rebels were."
+
+                "Those are Imperial lies!"
+
+                "How do you know what is the truth and what is a lie? If you cannot distinguish truth from lies, then how do you know that your cause is just?"
+
+                He continues. "All you have are your stories. And this isn't just your story."
+
+                *page_break This isn't your story.
+                *goto sensation
+            #Forget it. There is no hope with this one; just try to escape.
+                *goto try_to_escape
+    #[OOC?] Help Bruno with whatever he's doing.
+        *set ch2_fails + 1
+        *set protag_bruno_blue %+ 15
+        "I'll help you."
+
+        Bruno raises his eyebrows. "You will? I thought you would be more committed to the rebel cause."
+
+        "I'll help you anyway."
+
+        "Why?"
+        *label why_help
+        *choice
+            #Because I love you.
+                *if protag_bruno_red > 5
+                    *set ch2_wins + 1
+                    [A/N: love wins once more.]
+                *else
+                    *set ch2_fails + 1
+                    [A/N: love wins. However, this is pretty OOC.]
+                "Because I love you."
+
+                "Oh. I see. And what makes you say that?"
+
+                "I..."
+
+                "You know that I am not the Bruno you know and love, right? You understand that should you return to your old world, he will not know of this, right?"
+
+                "I..."
+
+                "This isn't your story."
+                *page_break This isn't your story.
+                *goto sensation
+            #Because I changed my mind about the Emperor.
+                "Because I've changed my mind about the Emperor."
+
+                "Oh? Why?"
+
+                "I... I don't know."
+
+                *page_break This isn't your story.
+                *goto sensation
+            #Because this isn't my world, and I don't care about it.
+                *set ch2_wins + 1
+                "This isn't the world I come from. I don't have any reason to care for it."
+
+                "Oh? Do you believe that this world has less ontological reality than the world you came from? That it has less moral weight solely because you do not originate from here?"
+
+                "No, I mean... this isn't my story."
+                *page_break This isn't your story.
+                *goto sensation
+            *hide_reuse #Because I'm just saying that to manipulate you (don't actually say this).
+                *set ch2_wins + 1
+                "Because..." You aren't sure what to say. You don't actually want to help him with the Emperor... 
+
+                "Because what?"
+                *goto why_help
+    *hide_reuse #Try to find a way out.
+        *label try_to_escape
+        You have to get out of here. Without moving, and while trying to escape notice, you glance around. There are no obvious places to go in this room.
+
+        "You seem nervous," Bruno says. "Uncertain. Indecisive. Is there something you would like to talk about, to take the strain off your mind??"
+
+        "Um..."
+
+        *choice
+            #Use magic to help escape.
+                You think through your options. You can hurt Bruno right now (disabling, not killing him) with a Light-based energy blast. But what happens next? You can't fight off all of the troops on this ship. Or, you can use Light plus Wind to diffract the light around yourself, making yourself invisible.
+
+                But then again, Bruno had always been better at magical dueling than you. He was always so quick to counter your spells. Maybe this Bruno is the same.
+
+                *choice
+                    #Attack Bruno with a blast of Light.
+                        You focus your mind on the phrases. The spell is simple enough, just a single-target spell with a subject, verb, and object. Pick the correct tokens. Your corporeal form is the subject. Bruno's body is the object. The action is simple; just a concentrated burst of highly energetic photons aimed at the target...
+                        *goto bruno_magic
+                    #Hide yourself with Light and Wind.
+                        You focus your mind on the phrases. The spell is simple enough, just a single-target spell with a subject, verb, and object. Pick the correct tokens. Your corporeal form is the subject and object. The action is a bit more complicated; willing the photons to ignore the object; for that you need Wind as well as Light...
+                        *label bruno_magic
+
+                        But Bruno notices you. The air in front of your eyes freeze. You can't see. Your mouth can't move. Why is he always so fast?
+
+                        "We're not in your world anymore," he says. "This is my home. The rules of your story no longer apply."
+                        *page_break This isn't your story.
+                        *goto sensation
+                    #Keep up the conversation; talk about something else.
+                        *goto talk_about_something_else
+            #Talk about something else.
+                *label talk_about_something_else
+                Maybe this is a process of stalling for time. Maybe you'll have to keep him distracted as you figure a way out of here.
+
+                *goto bruno_convo_choices
+
+*label sensation
+
+You feel a sensation that is almost familiar by now, even though you've only experienced it once. A pulsating headache. Anxiety that rises from your stomach to your brain.
+
+Bruno smirks. "Leaving so soon, Gali? Did the universe decide that you're no longer needed here?"
+
+You fall through your chair, through the bulkheads, out of the spaceship. You fall through empty space, as if you are not there, as if you were never there.
+
+*page_break You find yourself in a void...
+
+You find yourself in a void, an empty space of pure blackness devoid of light. Then, as if a lightbulb had turned on, a patch of illumination projects from the ceiling. You see Astra and Capella striding into the light, joining you. They are wearing the same school uniforms that they had on when you last met.
+
+"So where were you?" asks Astra.
+
+"Is this the Afterlife?" asks Capella. "Don't answer. I know it's not."
+
+*choice
+    #Respond to Astra: "I was on a spaceship..."
+        "I was on a spaceship that was part of the Imperial Fleet and Bruno was the Captain..."
+
+        You recount your story to the two of them@{(protag_bruno_ch2_ff=2) , glossing over the more salacious parts|}.
+
+        "Huh. That's interesting," says Capella. "I wonder if that was really our Bruno."
+
+        "I saw him," says Astra. "In the world I just came from, he was apparently married to the alternate version of you, Gali. He said that he remembered going through the portal with us, but the 'you' in that world didn't."
+
+        "Oh." You're not sure what to think.
+
+        "It was a peaceful world, on a rural farming planet where we were all happy farmers living in a tiny village. Where were you, Capella?"
+
+        *goto capella_describes_world
+    #Ask: "Where were you?"
+        "Where were you?" you ask.
+
+        "I was on a planet, I think," replies Astra. "It wasn't Byblos or Antioch or any place I'd known. I don't think it was even anyplace in the Shadow Nebula."
+
+        Capella nods. "Same for me."
+
+        "It was a rural farming planet and the alternate versions of us were living in a village," Astra continues. "There was another Bruno in my world. He was... married to the alternate version of you, Gali. And the alternate version of me was married to the alternate version of, uh, Ella here. Sorry. And they were all happy and they didn't need us. What about you, Ella?"
+
+        *label capella_describes_world
+        Capella shrugs. "It was a battlefield on a planet. There was a war. That universe's Bruno and Astra were on one side, and Gali and I were on the other."
+
+        "I wonder why the worlds all focus so much on versions of [i]us[/i]," comments Astra. "Are we really that special?"
+    #Where is Bruno? Or Tycho?
+        "Where's Bruno?" you ask. The two girls shrug.
+
+        "There was another Bruno in my world," says Astra. "He was... married to the alternate version of you, Gali."
+
+        "Oh." You're not sure what to think.
+
+        "There was a different Bruno where I was," says Capella. "He was trying to kill me. There was a war going on."
+
+        "I don't think my Bruno was trying to kill me... at least, not yet," you say.
+
+        "Where is Tycho?" The two girls shrug again.
+    #To Astra: It's all your fault...
+        "It's all your fault," you say to Astra. "Why did you make us go through the portal?"
+
+        Astra sighs. "Yeah. I'm sorry."
+        *comment TODO
+
+*choice
+    #Ask: How do we get back?
+        "So, how do we get back to our world?" you ask.
+    #Ask: Why were you kicked back here?
+        "So, why were you kicked out of your worlds?" you ask.
+
+But before anyone can answer, then you begin to taste cherries once more. You feel a falling sensation. The two girls disappear from view. It, whatever "it" is, begins again.
+
+*page_break
+
+[b]IRL?[/b]
+*temp roll 1
+*rand roll 1 6
+*set popularity + ch2_wins
+*set popularity - ch2_fails
+*if (popularity < 0)
+    *set popularity 0
+*set ch2_likes ((popularity+1)*(2*roll))
+*set ch2_rbs ((popularity+1)*(roll-1))
+
+*temp new_followers ((popularity + roll) - 6)
+*if (new_followers<0)
+    *set new_followers 0
+*set followers + new_followers
+
+*temp luna_message_seen false
+*temp claire_message_seen false
+*temp sofia_message_seen false
+*temp karla_message_seen false
+*temp lux_message_seen false
+*temp stella_message_seen false
+
+*temp ch2_claire_message false
+*temp ch2_luna_message false
+*temp ch2_sofia_message false
+*temp ch2_karla_message false
+*temp ch2_lux_message false
+*temp ch2_stella_message false
+
+*temp chat_count 0
+*if (ch2_wins > ch2_fails) and (((claire_blue > (claire_green*2)) and (claire_blue > 20)) or claire_chat)
+    *set ch2_claire_message true
+    *set chat_count + 1
+    *set claire_mutuals true
+*if (luna_blue > (luna_green*2)) and (luna_blue >= 30)
+    *set ch2_luna_message true
+    *set chat_count + 1
+*if ((lux_blue > (lux_green*2)) and (lux_blue >= 20))
+    *set ch2_lux_message true
+    *set chat_count + 1
+*if ((sofia_blue > (sofia_green*2)) and (sofia_blue >= 15))
+    *set ch2_sofia_message true
+    *set chat_count + 1
+    *set sofia_mutuals true
+*comment karla isn't the type of person to send messages unprompted to people
+*if ((karla_blue > (karla_green*2)) and (karla_blue >= 20))
+    *set karla_mutuals true
+ 
+Okay, how do you feel about this chapter of the story?
+
+*choice
+    #It sucks.
+        That's kind of harsh... [A/N: I'm thinking about the meme of the audience looking at one beautiful well-made cake and one poorly made but still edible cake, and instead of going "well this cake sucks", saying "yay! two cakes!" Maybe the cake is bad, but at least it's free.]
+    #It needs improvement.
+        Everything about the story feels kind of vague and generic. The personality of Gali is especially hard to pin down; ${protag_e} @{protag_plural feel|feels} like a self-insert. And there's not much of a hint of the overarching plot or character motivations...
+    *if (protag_bruno_ch2_ff>0) #That Brunova though...
+        How would Gali deal with the "primary" Bruno? Or is that even the primary Bruno still? Who is "Bruno Prime"? What would happen once they're able to interact again? Questions, questions...
+    #It's not *that* bad.
+        The story could have been better, but it also could have been worse. It can always be worse. Everything can be worse.
+
+Well, whatever, it's posted! Now to watch the likes and reblogs roll in (or not)...
+
+*page_break Another day, another time...
+
+*label community
+[b]Online - Community[/b]
+*if followers >= 220
+    *achieve followers
+
+The story has been posted for a while now. You see that you've gotten ${ch2_likes} likes and ${ch2_rbs} reblogs on your story. @{new_followers>0 You also got ${new_followers} new followers!|}
+*if (ch2_likes >= 100)
+    That's a very high number! Your story is somehow very popular!
+*elseif (ch2_likes >= 50)
+    That's a pretty decent number! Your story is somehow pretty popular!
+*elseif (ch2_likes >= 25)
+    That's not a bad number of likes!
+*elseif (ch2_likes >= 10)
+    Well, that's a decent number.
+*else
+    Less than 10 likes is... not a good sign. But you'll get over it.
+
+*if chat_count > 0
+    Also, you have some messages!
+
+*label fic_messages
+*choice
+    *if (ch2_luna_message and not(luna_message_seen)) #See Luna's message.
+        *goto luna_msg
+    *if (ch2_lux_message and not(lux_message_seen)) #See Lux's message.
+        *goto lux_msg
+    *if (ch2_claire_message and not(claire_message_seen)) #See Claire's message.
+        *goto claire_msg
+    *if (ch2_sofia_message and not(sofia_message_seen)) #See Sofia's message.
+        *goto sofia_msg
+    #Continue.
+        *if (chat_count > 0)
+            Are you sure? You still have unread messages.
+            *choice
+                #No, go back.
+                    *goto community
+                #Yes, continue.
+                    *goto mv2_pt2
+        *goto mv2_pt2
+
+*label luna_msg
+*set luna_message_seen true
+*set chat_count - 1
+
+@lunan0va: this chapter was... interesting i guess. in a good way!
+
+@lunan0va: i'm usually not really into bruno or brunova but i still enjoyed this i think
+
+*if fic_ship != "brunova"
+    @lunan0va: i thought it wasn't gonna be a brunova fic? lol
+
+*if protag_bruno_ch2_ff >= 1
+    @lunan0va: that part with bruno and gali was... wild lol. it's pretty nice how it all meshed together.
+
+*if protag_trans_girl
+    @lunan0va: i still really appreciate that you're writing gali as a trans girl.
+
+*if in_luna_chat = false
+    @lunan0va: btw i might have asked already but would you like to join a groupchat for nebulaverse stuff that i'm a part of?
+
+    *choice
+        #Sure, join the groupchat.
+            *set luna_blue %+ 5
+            *set in_luna_chat true
+            @you: sure...
+
+            @lunan0va: great! here's the invite link: [link]
+        #No, not for now.
+            *set luna_green %+ 3
+            @you: sorry, not right now...
+
+            @lunan0va: okay, that's fine.
+
+    @lunan0va: anyway... sorry but i have to log off for now
+
+*else
+    @lunan0va: anyway... sorry but i have to log off for now
+
+
+*goto fic_messages
+
+*label lux_msg
+*set lux_message_seen true
+*set chat_count - 1
+
+@brunova-official: hey ${handle}!
+
+@brunova-official: i just started reading and this is a super cool fic.
+
+*if not(protag_cis_girl or protag_trans_girl)
+    @brunova-official: also yay brunova!!! :D @{(fic_ship != "brunova") even if it's not tagged or mentioned in the desc!!! :D|}
+*else
+    @brunova-official: i liked the brunova hints but i kinda wish gali was still a boy here lol
+
+@brunova-official: anyway... it's good. thanks for writing.
+
+*choice
+    #Thanks...
+        *goto lux_msg_thanks
+    #Confess your love.
+        Wait. Really? Do you mean this? Are you sure you want to do this?
+        *if luna_red > 0
+            Also, didn't you already have a crush on Luna or something like that?
+        *choice
+            #Send a small message that could have the potential of starting a romance later on.
+                *set lux_red %+ 1
+                Okay, uh... you can send a heart emoji? That's how it works, right? You send people enough heart emojis and then they fall in love with you?
+
+                *if heart_emoji = ""
+                    First, you have to pick a signature heart emoji.
+                    *gosub_scene hearts_choice
+                    *achieve love
+
+                @you: ${heart_emoji} ${heart_emoji} ${heart_emoji}
+
+                @brunova-official: yeah yeah.
+                
+                *goto lux_msg_thanks
+            #On second thought... just say 'thanks' or something like that.
+                Okay. You have avoided the danger zone.
+
+                *goto lux_msg_thanks
+
+*label lux_msg_thanks
+*set lux_blue %+ 5
+@you: thanks...
+
+@brunova-official: np!
+
+*choice
+    #Talk about random stuff?
+        What can you even talk about?
+        *label lux_convo_1
+        *choice
+            *disable_reuse #Ask about his grandmother.
+                *set lux_blue %+ 5
+                @you: how's your grandmother doing?
+
+                @brunova-official: oh :/
+
+                @brunova-official: there's a bunch of consultations and stuff i guess before they can do the operation
+
+                @brunova-official: we're basically borrowing money however we can right now lol
+
+                @you: sorry about that...
+
+                @brunova-official: its okay
+                *goto lux_convo_1
+            *disable_reuse #Ask about life in general.
+                @you: so, um, how's life in general?
+
+                @brunova-official: it's okay
+
+                @brunova-official: it's my birthday in like a week so that's nice
+
+                @brunova-official: other than that it's my last semester of high school
+
+                @brunova-official: i wish i had more time for fanfic and art...
+
+                @brunova-official: what about you? what's up?
+
+                You tell Lux about your day.
+                *goto lux_convo_1
+            #Look at other messages.
+                *goto fic_messages
+    #Look at other messages.
+        *goto fic_messages
+
+*label lux_convo_ends
+
+The conversation dies down.
+
+*goto fic_messages
+
+*label claire_msg
+*set claire_message_seen true
+*set chat_count - 1
+
+*if not(claire_chat)
+    @shadow-protectrix: Hey $!{handle}! I just started reading your fic and I'm enjoying it quite a bit.
+
+@shadow-protectrix: Your latest chapter was really interesting!
+
+@shadow-protectrix: I get that this is a parody of fandom tropes but it still came together in a nice way.
+
+*if protag_bruno_ch2_ff >= 1
+    @shadow-protectrix: I loved the way you incorporated brunova in this! 
+
+*if in_claire_chat = false
+    @shadow-protectrix: Also, I'm running a group chat for nebulaverse fandom writers. Would you be interested in joining?
+    *choice
+        #Sure, join the groupchat.
+            *set claire_blue %+ 5
+            *set in_claire_chat true
+            @shadow-protectrix: Great! Here's the invite link: [link]
+        #No, not for now.
+            @shadow-protectrix: Okay, that's fine.
+
+    @shadow-protectrix: Anyway, signing off for now!
+    *goto fic_messages
+
+*if in_claire_chat
+    @shadow-protectrix: By the way, have you considered developing your writing talents beyond fanfic?
+
+    @shadow-protectrix: It's not *that* different from fanfic writing. Sometimes you can even just change the names and details and publish it.
+
+    @shadow-protectrix: If you want, feel free to message me!
+
+@shadow-protectrix: Anyway, signing off for now!
+
+*goto fic_messages
+
+*label sofia_msg
+*set sofia_message_seen true
+*set chat_count - 1
+
+@nebulascribbler: Hey $!{handle}!
+
+@nebulascribbler: I know we haven't really talked, but I just saw your fic, and it's really cool!
+
+@nebulascribbler: I get the feeling that this chapter is a parody of Shadows in Midnight by tempusspatium? With the whole Gali getting kidnapped by Bruno in a spaceship and the whole casual interrogation with subtext-bubbling-up-to-text.
+
+*if fic_ship != "brunova"
+    @nebulascribbler: I thought this wasn't tagged as a brunova fic.
+
+@nebulascribbler: But that's not a bad thing! It's interesting that you've cobbled together a story from disparate parts.
+
+@nebulascribbler: I would certainly be interested in reading more!
+
+*choice
+    #Talk to Sofia?
+        What do you want to talk about?
+
+        *label sofia_msg_choices
+        *choice
+            *disable_reuse #Just say thanks?
+                *set sofia_blue %+ 3
+                @you: thank you!!!
+
+                @nebulascribbler: No problem!
+                *goto sofia_msg_choices
+            *disable_reuse #Ask about writing and Nebulaverse stuff?
+                *set sofia_blue %+ 6
+                @you: um... how do you manage to write so much?
+
+                @nebulascribbler: It's not so hard once you get the hang of it!
+
+                @nebulascribbler: With fanfic you can write quickly by just putting down everything you think of, without filtering yourself.
+
+                @nebulascribbler: The key is to just put words down on paper. Or on the silicon, as it may be. Quantity comes first. Then you can edit it and make it actually good.
+                *goto sofia_msg_choices
+            #Just look at other messages.
+                *goto fic_messages
+    #Look at other messages.
+        *goto fic_messages
+
+*label mv2_pt2
+*return

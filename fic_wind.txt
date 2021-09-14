@@ -1,0 +1,389 @@
+*temp look false
+*temp listen false
+*temp smell false
+*temp taste false
+*temp feel false
+*temp think false
+*set popularity - 2
+*temp return_point "fanfic_1"
+
+[b]Universe - Noncanon?[/b]
+
+*label fanfic_1
+Once more you feel the ground beneath your body. The only other sensation is the harsh [b]wind[/b] scraping your cheeks. 
+
+You open your eyes. Where are you?
+*choice
+    #A sandy desert world, scorched by twin suns.
+        *set ch3_setting "desert"
+        *goto desert_feel
+
+*label desert_feel
+You open your eyes, and see your two shadows, cast by twin suns. The ground is coarse sand. As your eyes move up, you see an endless sea of sand and stones, broken only by what appears to be a small settlement in the distance.
+
+*if listen
+    The wind is blowing. Sounds of voices and human activity emanate from a village in the distance.
+
+*if smell
+    A burnt, acrid odor fills your nostrils.
+
+*if taste
+    The taste of cherries once more fills your mouth. It's the same thing each time. Why? Why would it be the same thing this time? The taste begins to dissipate, and finally you notice the dryness. Your throat is getting parched.
+
+*if feel
+    You are still in your school uniform, and it is much too hot to be wearing a sweater. Sand blows against your face.
+
+*if think
+    You're separated from your friends again. Your real friends, the ones from your world. Or are the ones in this world real as well?
+
+    Nothing from your past has prepared you for these journeys. Your magic has so far been mostly useless. The lessons from four years at the Academy have taught you nothing about multiversal travel or alternate worlds or whatever these experiences are.
+
+*choice
+    #Listen
+        *set listen true
+        *goto desert_feel
+    #Smell
+        *set smell true
+        *goto desert_feel
+    #Taste
+        *set smell true
+        *goto desert_feel
+    #Feel
+        *set feel true
+        *goto desert_feel
+    #Think
+        *set think true
+        *goto desert_feel
+    #Go to the village.
+        *goto village_1
+    #[A/N: You know what? No.]
+        [A/N: You know what? No.]
+
+        *goto f_this
+
+*label village_1
+*temp return_point "village_1"
+
+You walk towards the village, settlement, outpost, whatever it is. It is further than it looks. The walk is a slog, and by the time you are within a stone's throw of the village gates, your face is covered in sweat.
+
+The gate opens. Out emerges... Capella? Older, with creases in her face, but still her.
+
+*fake_choice
+    #[She looks exactly like Karla but older.]
+    #She still has her old long, straight jet black hair.
+    #She still has her signature thickly framed glasses.
+
+"Welcome, Galileo Nova. We've been expecting you."
+
+"Oh, um..."
+
+She rolls her eyes. "I was told to say that. Just follow me."
+
+*page_break Follow Capella.
+
+"Don't worry, I still remember you," she says. It's been 20 years now, but I still remember when we got into the portal and ended up in this world."
+
+You follow her through the gates and into the settlement. The people here are mostly idling, outfitted in muted grays and browns. They glance at you with despondent gazes. You try to not stare back.
+
+*label cap_questions
+*set return_point "cap_questions"
+
+*choice
+    *disable_reuse #Ask: so what is this world?
+        "So what is this world?" you ask.
+
+        "I don't know," said Capella. "I was bouncing back and forth from one world to another, just like you, and somehow, I ended up here and got stuck. And I met this world's Astra, and things happened and now... We're just trying to survive. I've met all of us, except for you. And now our little group is complete."
+        *goto cap_questions
+    *disable_reuse #Ask: what is the problem here?
+        Capella shrugs. "The Archons. Of course. The Archons and their armies of drones. Apparently the Archon of Metal got a lot better at AI since we last checked." A pause, and she continues. "They've been scouring this whole planet. Every planet. Maybe we're the last humans here. They're seeking to... I don't know, exterminate us all?"
+
+        "So why haven't they yet?"
+
+        "I don't know. It's like the Archons are letting us live as an experiment. Or they're waiting for something."
+
+        *goto cap_questions
+    *disable_reuse #Ask: can you still use magic?
+        "Can you still use magic?" You ask.
+
+        "Yeah. Of course we can. Without magic we'd have been eliminated by the Archons a long time ago."
+
+        A breeze swirls around you, a demonstration. Capella smiles.
+
+        "You can use magic too, you know. Just try it."
+
+        You take her at her word.
+        *goto cap_questions
+    *disable_reuse #Continue deeper into the village.
+        *goto village_2
+
+
+*label village_2
+*set return_point "village_2"
+
+A child walks up to the two of you. "Hey, mama! Who's this new person?" he asks.
+
+"Hey, Pollux, go find mom," says Capella. "Tell her that we've finally found ${protag_em}."
+
+She waves to you. "Follow me. We're going to meet some old friends."
+
+*choice
+    #Follow Capella to the village center.
+    #[A/N: Is this gonna be an Astrapella thing?]
+        [A/N: Should this be an Astrapella thing?]
+        *comment TODO: have some shoutouts to ellanova if that were pursued?
+        *fake_choice
+            #[A/N: Yeah. Astrapella all the way.]
+                [A/N: Astrapella all the way!]
+            #[A/N: No! Retcon that development. That is NOT the Astrapella child!]
+                [A/N: Okay. Forget all that. That was just some random child. Astrapella are ABSOLUTELY NOT together here.]
+                *set fic_astrapella false
+    #[A/N: You know what? No.]
+        [A/N: You know what? No.]
+
+        *goto f_this
+
+You are in the center of the settlement, in front of what must be the largest building here. It is a uniform dome the same color as the ever-present sand. Capella gestures for you to enter.
+
+The building feels larger on the inside than the outside. The ceiling is cavernous, painted with frescoes of scenes from the Binary Bible. Circles of benches surround the center of the room, where a table with five chairs resides. Two people who must be the older versions of Tycho and Astra are already here, standing by the table.
+
+Capella speaks first. "Well, ${protag_e}@{protag_plural 're|'s} here."
+
+*page_break
+*set return_point "village_center"
+*label village_center
+
+Astra and Tycho stare at you.
+
+"Is this your... friend from your old world?", remarks Tycho. "Is this the person we've been waiting for?"
+
+"Ella told us you were supposed to be our savior," says Astra. "The Archons are going to attack in... no more than a few weeks. We're woefully underprepared and could use a magic user."
+
+"Oh..."
+
+"Forget everything about being a savior or chosen one or whatever," says Capella. "You have to help us."
+
+*label help_choice
+*choice
+    *disable_reuse #"Why are the Archons attacking us?"
+        "They say the Archons used to be human." Astra begins. "Then they made a bargain with the Demiurge for power and magic, and that left them transformed. Their magic ate into their souls, corrupted them into thoughtless husks, beings of pure destruction. And that's why our world became... like this." She gestures around. "They've already destroyed the rest of the world. We've been fleeing them ever since."
+        
+        "That's just one story," says Capella. "It doesn't make sense. The Archons are clearly still intelligent to use magic and direct advanced tactics and so there must be some greater plan."
+        
+        Tycho shrugs. "Either way, they're trying to kill us and we're trying to live. Simple as that."
+        *goto help_choice
+    *disable_reuse #"But I thought..."
+        "But I thought..."
+
+        "That this isn't your story? Well, it's not. But that doesn't mean you don't have a role to play within it. Maybe it'll help you find a way back to where you are supposed to be. Who knows?"
+        *goto help_choice
+    #"I'll help."
+        "Okay. I'll help."
+
+        Capella smiles. "That's what I had hoped. Now maybe we'll actually survive this round."
+    #[A/N: You know what? No.]
+        [A/N: You know what? No. Fuck you. Fuck this.]
+
+        This plot development sucks. This character development sucks. Everything about this sucks. Macmillan sucks. The nebulaverse sucks. What's the point of writing this, even?
+
+        *goto f_this
+
+*page_break The plan for the battle begins.
+
+"We need every single magi we have to turn the tide," says Capella. "When the attack comes, we'll all have to be at the front lines, because the four of us now are the only magi in this town. That's how important each of us is." She glances around. "Are you ready, Gali?"
+
+You shrug. "As ready as I'll ever be, I suppose."
+
+"Great. Then we'll-"
+
+Booms. The floor shakes. Dust falls from the ceiling.
+
+"They're already here!" shouts Tycho. "They were always here! Get to the walls!"
+
+*page_break Run.
+
+Imperial tactics dictated that the first attack was always a probing attack from the air, just a few drone-launched bombs. Even with their corruption, the Archons still followed their old rule books. The effect is devastating. Pieces of stone and metal lie twisted about the streets.
+
+The next attack is always aimed at the responders.
+
+"Get down!" shouts Capella. They look like birds in the distance. By the time their weapons were distinguishable it would be too late. Capella pulls you down beneath a hastily cast Metal barrier. Astra crouches next to her, right as bullets bounce off the metal.
+
+"Okay, we'll hit them back with magic. Gali..."
+
+*temp spell ""
+
+*fake_choice
+    #Wind: Heavy gale
+      *set spell "wind"
+    #Light: energy blast
+        *set spell "blast"
+    #Light: dazzle
+        *set spell "dazzle"
+
+Magic lies within the realm of meditation and logic, hardly suitable for a chaotic battle. Only a few select magi are capable of being true battlemagi, with the presence of mind necessary to cast great spells that turn the tide of entire battles. Capella has been one among them.
+
+"Hey, are you ready?" she stares at you.
+
+"Um. Yeah."
+
+*if spell = "wind"
+    "Okay, I'll need your help for this," says Capella. "It's going to be a cooperative spell. I hope you've gotten better at Wind."
+    
+    "Um, I hope so..."
+*if spell = "blast"
+    "I'll help you with the energy blast," says Capella. "It'll be a cooperative spell. I've gotten better at Light since we last spoke."
+*if spell = "dazzle"
+    "The drones sensors are easily confused by varying patterns of light," says Astra. "I'll show you the patterns, and you'll help project them with magic in order to confuse them."
+
+*page_break You close your eyes.
+    
+You close your eyes to meditate. It's hard, when the bullets are flying past, but you manage anyhow, protected by your companions' mental projections. In your mind you construct sentences in the magical language, describing the effect that you need to unleash upon the targets.
+
+*if spell = "wind"
+    You open your eyes. The air shifts. All you feel is a slight breeze, but the effect of your magic is actualized. Howling gusts of wind blow the drones away, leaving only a whirlwind of dust.
+*if spell = "blast"
+    Light is your persona, the most natural element for you to wield. All it takes is a few simple phrases. You open your eyes. The explosions are bright. None of the drones are left.
+*if spell = "dazzle"
+    With a metal spell, Astra transfers the details of the drones' sensors to your mind, and the patterns that would confuse them. With your Light, all it takes is a few simple phrases.
+    
+    You open your eyes. The drones are shooting at each other. Soon none are left flying. 
+
+*page_break The first wave is over...
+
+The next wave is larger, coming from air and land. A flock of murderous birds and a herd of gun-mounted robotic pigs, animated by magical creativity. The thundering gets closer.
+
+Along with the other mages, you run to the wall overlooking the attackers. The horde is not yet within firing range. You have time to prepare.
+
+"We've almost won," says Capella. "Just the right spells, and we've won."
+
+*fake_choice
+    #Light: mass dazzle
+        *if spell = "dazzle"
+            *set ch3_wins + 1
+        *else
+            *set ch3_fails + 1
+        "Okay, this is a bit more complicated than with just the aerial drones," says Astra. "I'll help you."
+
+        With a Metal spell, Astra projects the patterns that you need to cast, while the remaining three of you cast the Light. It's blinding; you close your eyes. Immediately you hear explosions as the drones turn on each other, thinking the others are enemies. The crashes and booms continue as you finish casting the patterns. When you open your eyes the army is decimated; only a few stragglers are left, quickly dispatched by a few energy blasts.
+    #Stone: earthquake
+        Tycho nods at you. "Ready for this? I'll need all your help."
+
+        He takes your hand, and you close your eyes. With a powerful spell like this, both of you need all of your abilities of concentration. The four of you are all working on the spell, channeling the magical phrases in unison. The ground begins to shake.
+    #Ice + Wind: hailstorm
+        "You'd better have gotten better at Ice since we last met," says Capella. "It's a shame Bruno isn't here. He would have annihilated these things."
+
+        But you don't have the time to think about Bruno. With a powerful spell like this, you need all of your abilities of concentration. The four of you are all working on the spell, channeling different components of the magical sentence.
+        
+        You feel a cold breeze, and soon hear the howling of wind and crunching of ice as they impact the enemy drones. It can't have taken more than a few minutes until only stragglers are left, quickly dispatched by blasts of wind.
+    #Wind + Light: firestorm
+        *set ch3_wins +1
+        "This is going to be interesting," says Capella. She takes your hand.
+
+        With a powerful spell like this, you need all of your abilities of concentration. The four of you are all working on the spell, channeling different components of the magical sentence.
+    
+*page_break Nothing is left moving.
+
+"Well, we're done," says Capella. "We've won."
+
+"That's it?" you ask.
+
+"Like I said, I think they're testing us. For what purpose I don't know. They've never been serious threats, and this wave was greater than most. We'll have to move soon. Find another place to live on this planet."
+
+"But without you, we wouldn't have survived," says Astra.
+
+Astra and Capella look at each other, and then back at you.
+
+"I think we all know what happens next," says Capella.
+
+"Yeah, Capella told me about what happens with you wanderers when you find yourself in a world in which you're no longer needed, where you don't belong..."
+
+*fake_choice
+    #This isn't my story.
+        This isn't your story. "Well, goodbye?" you say.
+
+        "Goodbye," says Capella. "Maybe we'll see each other again."
+    #Wait! Why can't I stay here?
+        "Wait!" you shout. "Why can't I stay here?"
+
+        Capella stares at you. "Sometimes I wanted to stay too. Sometimes there was a place that seemed good. But it was always too good to be true. I don't know how I ended up here, but... something felt right. It's hard to describe. Maybe you'll find a story of your own."
+
+        Suddenly you start to shiver.
+    #Will I ever find a way back to my world?
+        "Will I ever find a way back to my own world?" you ask.
+
+        "I think what happens is that each of us is always bouncing around the metaverse until we finally find a story where we belong," Capella says. "There's a story for each of us out there, and once we find it, we'll be home. This is my home now. It's objectively kind of a terrible place, but it's the place for me. I hope you'll find a story of your own, Gali.
+
+*page_break This isn't your story, but...
+
+This isn't your story, but it's [i]a[/i] story.
+
+You feel the taste of cherries in your mouth as the ground opens up. You fall. Capella waves at you.
+
+You fall.
+
+*page_break
+*goto story_end
+
+*label f_this
+
+Are you going to continue the fic, or abandon it?
+
+*choice
+    #Never mind, keep writing.
+        [Okay. Let's keep going.]
+
+        *gotoref return_point
+    #No, I won't write anymore.
+        Are you sure you want to stop?
+        *choice
+            #Yes. Fuck this.
+                Alright...
+                *goto fic_end
+            #I don't know, but I want to take a break.
+                Alright...
+                *goto fic_end
+            #Never mind. The story must go on.
+                [Okay. Let's keep going.]
+
+                *gotoref return_point
+    #I want to stop writing, but the story must go on.
+        [Okay. Let's keep going.]
+
+        *gotoref return_point
+
+*label story_end
+*set ch3_finished 1 
+*comment TODO: calculate likes/reblogs
+*temp roll 1
+*rand roll 1 6
+*set popularity + ch3_wins
+*set popularity - ch3_fails
+*if (popularity < 0)
+    *set popularity 0
+*set ch3_likes ((popularity+1)*(2*roll))
+*set ch3_rbs ((popularity+1)*(roll-1))
+
+*temp new_followers ((popularity + roll) - 6)
+*if (new_followers<0)
+    *set new_followers 0
+*set followers + new_followers
+
+[b]IRL[/b]
+
+You post the story, whatever it's worth. Will anyone read this story, with all the drama flinging back and forth within the nebulaverse fandom? Who knows.
+
+Now you wait.
+
+*page_break Another day...
+[b]Online[/b]
+*if followers >= 220
+    *achieve followers
+
+Apparently the ongoing strife in the Nebulaverse fandom has not negatively affected your small slice too greatly. You have ${ch3_likes} likes and ${ch3_rbs} reblogs on the fic. 
+*if new_followers > 0
+    You have also gained ${new_followers} followers.
+
+Unfortunately, you do not have any new messages. The people who would normally comment are all caught up in their own problems. They don't have time for your silly stories at this moment.
+
+*label fic_end
+*page_break
+*return

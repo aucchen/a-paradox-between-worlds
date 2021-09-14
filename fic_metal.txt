@@ -1,0 +1,274 @@
+[b]Universe - Noncanon?[/b]
+*comment Astra/Metal fic
+*temp return_point ""
+
+You awaken in a room.
+*temp look false
+*temp listen false
+*temp smell false
+*temp taste false
+*temp touch false
+*temp think false
+
+*fake_choice
+    #Back at Pulsar Academy?
+*comment    #A school, mich like the one you attend.
+*comment    #A fancy British boarding school.
+
+*label view1
+*set return_point "view1"
+*if look
+    The surroundings are familiar. Intimately so. It's the Pulsar Academy's central library. You must've been asleep at the table again.
+
+*if listen
+    It's quiet. But as you listen more you hear the familiar sounds of the library: the shuffling of books, soft footsteps, whispers among the stacks.
+
+*if smell
+    Your nostrils are filled with the musty odor of old paper.
+
+*if taste
+    It tastes of cherries once again. You're thirsty. How long has it been since you last consumed a real meal?
+
+*if touch
+    The table is hard and cool. Your uniform is still starchy. Your body aches. How long has it been since you last slept?
+
+*if think
+    Are you finally back home? Will it be like you've never left? Will your old friends be here, and will they be the same? Or is this a time loop, where you've woken up before you ever entered the portal?
+
+*choice
+    *disable_reuse #Look
+        *set look true
+        *goto view1
+    *disable_reuse #Listen
+        *set listen true
+        *goto view1
+    *disable_reuse #Smell
+        *set smell true
+        *goto view1
+    *disable_reuse #Taste
+        *set taste true
+        *goto view1
+    *disable_reuse #Touch
+        *set touch true
+        *goto view1
+    *disable_reuse #Think
+        *set think true
+        *goto view1
+    #Get up.
+        *goto stand_up
+    #[A/N: You know what? No.]
+        [What's the point? What's the point of writing these stories and working on these fictional universes when... when the world is like this?]
+        *goto fic_continue 
+
+*label stand_up
+*set return_point "stand_up"
+
+You manage to stand up, despite your achy body. A familiar face soon approaches you. It's... Astra? She looks much the same as before, and wears the Pulsar Academy's uniform
+
+*comment *choice
+*comment     #A girl with dark brown skin and tightly coiled hair done in braids, wearing glasses.
+*comment     #A girl with wavy brown hair worn loose
+
+"Huh. It's about time you showed up. It's been a year already."
+
+*label astra_conv_1
+*choice
+    #Ask: Did you come from another world?
+        "Did you come from another world?"
+
+        "Yeah I guess. After going through the portal I ended up in a few different places. Sometimes better, sometimes worse. But I always left after no more than a day. Until I ended up back here. It's like I never left."
+    #Ask: What is this place?
+        "What is this place?"
+
+        "Back at the Pulsar Academy, of course!" She laughs. "After going through the portal I ended up in a few different places. Sometimes better, sometimes worse. But I always left after no more than a day. Until I ended up back here. It's like I never left."
+    #[A/N: You know what? No.]
+        [What's the point? What's the point of writing these stories and working on these fictional universes when... when the world is like this?]
+        *goto fic_continue 
+
+*label astra_conv_2
+*set return_point "astra_conv_2"
+*choice
+    *disable_reuse #Ask: Is everyone else here?
+        "Is everyone else here?"
+
+        "Everyone? I guess. Everyone I knew from the Academy is here. No one's missing, except you. They even remembered me somehow. Apparently I switched places with the Astra from this world."
+        *goto astra_conv_2
+    *disable_reuse #Ask: Is this the world we came from?
+        "Is this the world we came from? Is this our old world?"
+
+        Astra shakes her head. "No. There are some differences. This is a peaceful place. As far as I know, the Administrator is still alive. There's no civil war. The Emperor hasn't..." She pauses and looks at you. "It's a better world than the one we came from. But don't worry, there are still problems to solve, mysteries to interrogate."
+        *goto astra_conv_2
+    *disable_reuse #Ask: Can I stay here?
+        "Can I stay here?"
+
+        Astra shrugs. "I don't know. Maybe that's for you to decide. I don't know how I ended up staying here, but it was just... right, you know?"
+
+        "No, I don't know."
+        *goto astra_conv_2
+        *comment TODO: shoutouts to astranova if that route were pursued.
+    #Follow Astra.
+        *label follow_astra
+        *set return_point "follow_astra"
+        "We'll meet our other friends," says Astra. "They don't remember you, but don't worry, I told them all about you!"
+
+"Is everyone else here?"
+
+"Yeah. They're probably all in the club room!"
+
+You follow Astra through the labyrinthine corridors of the Academy, until you end up in the empty classroom that so often served as your meeting place. The rest of the gang is there: Bruno, Tycho, and Capella. They smile and wave towards you.
+
+"Welcome to the Mystery Club!" exclaims Tycho. "Astra's told us a great deal about you, about who you were back in your original world. There's a special mystery that we saved just for you!"
+
+Suddenly, you feel tired. It's as if all of the strength has drained out of your body, or perhaps you've just caught up on all the exhaustion of the previous worlds. You have no energy left for this, nothing within you to help the Mystery Club or anything...
+
+[A/N: you're feeling tired...]
+
+*comment sorry but i just got tired of writing. it has to end.
+*choice
+    #You know what? No.
+        "Um, no. I don't want to do whatever it is you'll have me do."
+
+        Astra frowns. "Oh? Why?"
+
+        *choice
+            #I'm tired.
+                "I'm tired," you say. "I just... want to rest, I guess."
+
+                "Oh. So, what do you want to do? Do you want to find a place to sleep?"
+
+                "Um, maybe? I just want to..."
+
+                *choice
+                    #Take a nap.
+                        "Yeah, I just want to take a nap..."
+
+                        Astra laughs. "Right! Yeah, taking care of your physiological needs! You must be tired from all the universe hopping. We'll find a room for you."
+
+                        She leaves the classroom, and you follow her to the dorms.
+
+                        *goto peaceful_world
+                    #Exit this world. Just move on from this place.
+                        "I just want to move on. If this isn't my home, then I don't want to stay here any longer than I have to."
+
+                        "Oh." Astra sighs. "That isn't how it works. You should know that yet. You can only leave when something has been achieved, when you've done something in this world."
+
+                        "Then can I at least rest?"
+
+                        "Sure, you can."
+
+                        She leaves the classroom, and you follow.
+
+                        *goto peaceful_world
+                    #Actually, let's hear about the magical mysteries!
+                        "Actually, let's hear about the mysteries."
+
+                        "Great! This is the mystery of the..."
+
+                        You can't do this. Your eyes cannot stay open.
+
+                        *goto sleep
+            #[A/N: I'm tired.]
+                [Is there any point in writing this anymore? When the universe is like this, is there any point to writing these stories? Was this story ever worth anything?]
+
+                *goto fic_continue
+    #[A/N: You know what? No.]
+        [What's the point? What's the point of writing these stories and working on these fictional universes when... when the world is like this?]
+
+        *goto fic_continue
+
+*label peaceful_world
+*page_break The dorm room...
+
+"Feel free to sleep here," says Astra. It's a bunk bed, just like the one you used to have back in your world.
+
+You lay down on the bottom bed. You're tired enough to fall asleep right away...
+
+*label sleep
+*page_break Sleep?
+
+You dream of falling, of a cavity opening up beneath your bed and sucking you in. Or perhaps it's not a dream. Perhaps it's reality, and you're finally leaving this world...
+
+*page_break [A/N: Sorry about the short chapter! Life's been happening so much right now.]
+*goto story_end
+
+*label fic_continue
+[A/N: You know what? No. Fuck this. Fuck you.]
+
+Are you going to continue this fic, or abandon it?
+
+*choice
+    #Never mind, keep writing.
+        [Okay. Let's keep going.]
+
+        *gotoref return_point
+    #No, I won't write anymore.
+        Are you sure you want to stop writing?
+        *choice
+            #Yes. Fuck this.
+                Alright. The fic is over. You're done writing.
+                
+                This world, these worlds and characters, are no more, at least for now.
+                *goto fic_end
+            #I don't know, but I want to take a break.
+                Alright. The fic is over, for now. Temporarily, maybe?
+                *goto fic_end
+            #Never mind. The story must go on.
+                [Okay. Let's keep going.]
+
+                *gotoref return_point
+    #I want to stop writing, but the story must go on.
+        [Okay. Let's keep going.]
+
+        *gotoref return_point
+
+*label story_end
+*set ch4_finished 1
+*set popularity - 1
+*temp roll 1
+*rand roll 1 6
+*set popularity + ch4_wins
+*set popularity - ch4_fails
+*if (popularity < 0)
+    *set popularity 0
+*set ch4_likes ((popularity+1)*(2*roll))
+*set ch4_rbs ((popularity+1)*(roll-1))
+
+*temp new_followers ((popularity + roll) - 6)
+*if (new_followers<0)
+    *set new_followers 0
+*set followers + new_followers
+[b]IRL[/b]
+
+The story is over, for what it's worth.
+
+*choice
+    #Well this sucked.
+        *goto shrug
+    #It isn't even complete!
+        *goto shrug
+    #What even happened?
+        *label shrug
+
+        [shrug emoji]
+
+        Anyway, given the discord in the nebulaverse fandom at this moment, perhaps it wouldn't hurt to just post an incomplete and kind of bad chapter of the story? 
+
+        Sure. It's better to have a story out there than locked up in your head, right? Right?
+    #Just shut up and post it already.
+        Okay. It's posted. Now to watch the notes roll in... eventually.
+
+*page_break A new day...
+[b]Online[/b]
+
+*if followers >= 220
+    *achieve followers
+
+Apparently the ongoing strife in the Nebulaverse fandom has not negatively affected your small slice too greatly. You have ${ch4_likes} likes and ${ch4_rbs} reblogs on the fic.
+*if new_followers > 0
+    You have also gained ${new_followers} followers.
+
+Still no messages regarding the story, of course. You didn't expect any.
+
+*label fic_end
+*page_break
+*return

@@ -1,0 +1,475 @@
+*if in_universe
+    *goto universe
+*else
+    *goto personal
+
+*label personal
+[b]Personal[/b]
+
+
+Online Name: ${handle} 
+*if username != ""
+    @${username}
+
+Follower count: ${followers}
+
+Mage class:
+*if (persona != "") and (role != "")
+    $!{role} of $!{persona}
+
+Blog aesthetic:
+*if aesthetic = "pink"
+    Pink cherry blossoms, pastel wallpaper, layer cakes, frilly dresses.
+*elseif aesthetic = "space"
+    Stars, the milky way, the blackness of night broken up by pinpricks of light.
+*elseif aesthetic = "shadow"
+    The woods at night, a haunted house, shadows lurking.
+*elseif aesthetic = "red"
+    Red roses, lipstick and black dresses, goblets of unidentifiable red liquid.
+*elseif aesthetic = "green"
+    Green leaves and grass, sunlight streaming through the treetops, a path through the woods.
+*elseif aesthetic = "blue"
+    The ocean, mountain lakes, vast expanses of blue and white.
+*elseif aesthetic = "city"
+    A cityscape, brutalist architecture, drizzling rain amid neon lights.
+*elseif aesthetic = "anime"
+    A bunch of your favorite anime characters. Sketches and bold colors.
+*elseif aesthetic = ""
+    Unknown
+*else
+    Nothing consistent.
+
+Blog alignment:
+*stat_chart
+    percent gen Gen
+    percent shipping Shipping
+    percent meta Meta
+    percent sympathy Sympathy
+    percent discourse Discourse
+    percent shitposting Shitposting
+
+Top characters:
+*stat_chart
+    percent gali Gali
+    percent bruno Bruno
+    percent astra Astra
+    percent capella Capella
+    percent tycho Tycho
+
+Top ships:
+*stat_chart
+    percent astrapella AstraPella
+    percent brunova BruNova
+    percent ellanova EllaNova
+    percent astranova AstraNova
+    percent brunastra BrunAstra
+    percent tychonova TychoNova
+    percent brunotycho BrunoTycho
+
+*label stat_choice
+*choice
+  #Personal
+    *goto personal
+  #IRL
+    *goto irl
+  #Relationships
+    *goto relationships
+  #Your Fanfiction
+    *goto universe
+  #Nebulaverse Background
+    *goto nebulaverse
+  #Online Background
+    *goto people
+  *if (rx) #Disable notifications
+    *set rx false
+    Relationship/stat change notifications disabled.
+    *goto stat_choice
+  *if (not(rx)) #Enable notifications
+    *set rx true
+    Relationship/stat change notifications enabled.
+    *goto stat_choice
+
+
+*label irl
+
+IRL Name: ${first_name} ${last_name}
+
+*goto stat_choice
+
+
+*label relationships
+
+Many Nebulaverse fans have adopted a relationship framing from within the story, called the [b]Shipping Triangle[/b]. Using a technological device called the Shipficator, all relationships are associated with a position in the RGB color space. Red, Green, and Blue represent "pure sexuality", "pure opposition", and "pure companionship". Magenta RGB(255, 0, 255) is traditional romance, Yellow RGB(255, 255, 0) is a sexualized rivalry, and Cyan RGB(0, 255, 255) represents a friendly rivalry. White RGB(255, 255, 255) has presumably never been seen before.
+
+Luna
+*stat_chart
+  percent luna_red Red
+  percent luna_green Green
+  percent luna_blue Blue
+
+Claire
+*stat_chart
+  percent claire_red Red
+  percent claire_green Green
+  percent claire_blue Blue
+
+Sofia
+*stat_chart
+  percent sofia_red Red
+  percent sofia_green Green
+  percent sofia_blue Blue
+
+
+Karla
+*stat_chart
+  percent karla_red Red
+  percent karla_green Green
+  percent karla_blue Blue
+
+Lux
+*stat_chart
+  percent lux_red Red
+  percent lux_green Green
+  percent lux_blue Blue
+
+Stella
+*stat_chart
+  percent stella_red Red
+  percent stella_green Green
+  percent stella_blue Blue
+
+*goto stat_choice
+
+*label universe
+[b]Fanfic[/b]
+
+Name: $!{protag} $!{protag_last_name}
+
+Pronouns: ${protag_e}/${protag_em}
+
+Main ship: ${fic_ship}
+
+*goto stat_choice
+
+*label nebulaverse_wiki
+*choice
+  #Back to personal stats
+    *goto personal
+  #Nebulaverse info
+    *goto nebulaverse
+  #Planets and Locations
+    *goto nebulaverse_locations
+  #Elements and Roles
+    *goto elements
+  #Characters
+    *goto nebulaverse_characters
+  #Magic and Technology
+    *goto nebulaverse_magic
+  #Secrets
+    *goto nebulaverse_secrets
+  #The Binary Bible
+    *goto nebulaverse_bible
+
+
+*label nebulaverse
+*set nv_info 1
+*gosub_scene check_backstory
+[b]The Nebulaverse in Canon[/b]
+
+The [i]Chronicles of the Shadow Nebula[/i] is a series of novels by author [b]G. T. Macmillan[/b], later adapted into a series of films. These novels follow the story of [b]Galileo "Gali" Nova[/b], an orphan boy from a backwater planet in the eponymous [b]Shadow Nebula[/b]. He is invited to join the [b]Pulsar Academy[/b], which is the premier educational institution in the Nebula, for training the [b]Magi[/b], the future elites and governing officials of the [b]Nebula Empire[/b].
+
+*label nebulaverse_meta
+
+[b]Books[/b]
+
+[i]Chronicles of the Shadow Nebula, Book 1: The Academy of Magi[/i]
+
+[i]Book 2: Planetary Dreams[/i]
+
+[i]Book 3, Part 1: Peace Between Heaven and Earth[/i]
+
+[i]Book 3, Part 2: War Between Heaven and Earth[/i] (Note: the two parts were adapted as one film, simply titled [i]Heaven and Earth[/i].)
+
+[i]Book 4, Part 1: The Binary Bible[/i] (Note: this book was written as an in-universe religious text, with intertextual commentary. It will not be included in the film adaptation.)
+
+[i]Book 4, Part 2: The Book of Birth[/i]
+
+[i]Book 4, Part 3: The Book of Blood[/i]
+
+[i]Book 4, Part 4: The Book of Boundaries[/i] (Note: this book has a highly convoluted narrative, and the consensus is that it takes place entirely as interior monologues within the minds of the protagonists. It includes, among other things, several pages filled entirely with the words "I'm alive." Among literature enthusiasts it has been compared to [i]Ulysses[/i]; among anime fans it has been compared to the last two episodes of [i]Neon Genesis Evangelion[/i]. It will not be included in the film adaptation except as vague allusions.)
+
+Upcoming books:
+
+[i]Book 5, Part 1: Guide to the Shadow Nebula[/i] (Note: this book will be written as an in-universe tourists' guide to the various planets and locales of the Shadow Nebula.) 
+
+[i]Book 5, Part 3: End of the Shadow Nebula (Tentative Title)[/i] (Note: GTM has stated that this will be the final book of the entire series, barring any spinoffs.)
+
+*label nebulaverse_nebula
+[b]Nebula[/b]
+
+The Shadow Nebula is a cluster of several dozen star systems with inhabitable planets. It is governed by the [b]Nebula Empire[/b], an absolute monarchy ruled by the immortal [b]Emperor[/b].
+
+The [b]Kingdom[/b] is the only external rival power to the Nebula Empire. It is inhabited by blue-skinned humanoid aliens only known as [b]Kingdomites[/b]. Unlike the Empire, its magic and technology focuses on internal self-cultivation rather than external control, but they are generally technological equals. The Kingdom has been at peace with the Empire for the past few centuries, but there are rising tensions because of the Emperor's policies.
+
+*goto nebulaverse_wiki
+
+*label nebulaverse_locations
+*set nv_locations 1
+*gosub_scene check_backstory
+[b]Planets and Locations[/b]
+
+[b]Byblos[/b] is the planet that houses the [b]Pulsar Academy[/b], the primary setting of the Nebulaverse. It is a temperate-to-cold planet of scholars and wilderness, with few large settlements. Jagged ice-capped mountains and rainforest-covered hills span the continents. Its coastlines are dotted with fjords, where mountains meet the sea.
+
+[b]Antioch[/b] is the capital planet of the Empire, with a wide range of different climates and terrains. The capital city, [b]Antioch City[/b], is located in a highland equatorial area with a year-round temperate climate, a place considered paradise for the inhabitants of the Empire. Therein are the [b]Imperial Palace[/b], the [b]Homes of the Archons[/b], and the [b]Court of Magi[/b]. Astra Van Allen was born to a family of bureaucrats here.
+
+[b]Galilee[/b] is Gali's homeworld, where he was born and spent his life until age 16. It is a remote backwater of the Empire, a primarily rural and agricultural planet with vast temperate plains.
+
+[b]Sidon[/b] is the commercial heart of the empire, home to a number of prominent mercantile families, such as the Helios family (Bruno's). It is a heavily industrialized and often polluted world, but also has nature preserves of great beauty.
+
+[b]Cappadocia[/b] is the home base of the [b]rebel movement[/b] against the Emperor. It is a rugged planet with vast mountainous plateaus, concealing continent-spanning underground tunnel networks. Capella Taikong was born here, but left at a young age.
+
+[b]Ephesus[/b] is a world in strife, site to multiple struggles between Imperial forces and the rebels. Tycho was born to a peasant family here, who tried to stay neutral in the various conflicts.
+
+Other planets that are mentioned: [b]Samaria[/b], [b]Tripoli[/b], [b]Ilium[/b], [b]Galatia[/b]
+
+*goto nebulaverse_wiki
+
+*label elements
+*set nv_elements 1
+*gosub_scene check_backstory
+[b]Elements[/b]
+
+The Nebula is governed by five (or maybe six) elements, which describe the physical world, the human world of society, and the inner world of the mind. Every human in the Nebula has a [b]persona[/b], an element that is most resonant to them. Students in the Pulsar Academy are assigned to houses based on their personae, where they will be taught to use their element to its maximum potential.
+
+[b]Light[/b]: stars, heat, nuclear forces; emotion, passion, offense 
+
+*if persona != ""
+    Light is the element of emotions and passion. Light is love. Light is struggle. Light is the fight for the sake of having a fight. It is a very popular element because the protagonist of the Chronicles has this element as his persona.
+
+[b]Stone[/b]: planets, asteroids, gravity; stability, order, defense
+
+*if persona != ""
+    Stone is a rather less popular element, because its adherents are seen as boring and staid traditionalists. But it is also associated with bonds between close friends, loyalty, and caring for others. There has recently been a surge of Stone-wielders who project their own vision onto the element.
+
+[b]Metal[/b]: human ingenuity, the artificial; knowledge, logic, balance
+
+*if persona != ""
+    Metal is, in short, the nerd element. As such, it is quite popular. It is the negation of the animal passions in favor of rationality and thought. At its worst, metal can detach itself from reality and live in a logical palace of its own creation.
+
+[b]Wind[/b]: gas giants, stellar winds, electromagnetism; discovery, novelty, change
+
+*if persona != ""
+    Wind does not conform to the world around it. Instead it is associated with realizing one's own ideas for the world, with change and dynamicism and visionary thought. It is a rather popular element, as it is the element of Capella Taikong, the protagonist's canonical(?) love interest and most popular female character.
+
+[b]Ice[/b]: comets, water, entropy; flexibility, survival, life and death
+
+*if persona != ""
+    Ice is a less popular element because it is heavily associated with death, depression, pessimism, and all those negative things. However, ice is also the element most associated with survival amidst difficult circumstances. Ice is associated with a grudging acceptance of the world around oneself, of adaptation but not "fitting in".
+
+And finally, there is [b]Shadow[/b], a secret element. It represents dark energy and matter, as well as the inner self, psychology, and the struggle against the established order.
+
+*label roles
+[b]Roles[/b]
+
+Each mage is assigned a role, starting within the Academy and proceeding to the hierarchy of the Empire. Roles are assigned based on the skills and proclivities of the mage, and describe the job that the mage is to perform. Unlike personae, roles are not assigned for life, and might change.
+
+[b]Augur[/b]: the scientist; the discoverer of new knowledge related to the element. They are research assistants in the Academy.
+
+[b]Keeper[/b]: the guard; the defender of values intrinsic to the element. They act as prefects in the Academy.
+
+[b]Reaper[/b]: the fighter and rebel; often opposed to the values of the element. They form the Academy's militia.
+
+[b]Speaker[/b]: the communicator; proselytizes the element. They are teaching assistants in the Academy.
+
+[b]Weaver[/b]: the creator; uses the element to aid civilization. In the Academy they are nurses' assistants, custodians, and engineers.
+
+*goto nebulaverse_wiki
+
+*label nebulaverse_characters
+*set nv_characters 1
+*gosub_scene check_backstory
+[b]Main Characters[/b]
+
+[b]Galileo "Gali" Nova[/b]: the protagonist, an orphan boy who is invited to the Pulsar Academy on his 16th birthday. Keeper of Light.
+
+[b]Bruno Helios[/b]: a scion of the elite Helios family, a student at the Pulsar Academy, and a rival-turned-grudging-friend to Gali. Many people believe there is romantic subtext in their relationship, but of course Macmillan disagrees. Reaper of Ice.
+
+[b]Tycho Planetes[/b]: an ordinary but talented boy who is a student at the Pulsar Academy. Gali's roommate and loyal best friend, and often shipped with him (Macmillan does not approve). Speaker of Stone.
+
+[b]Astra Van Allen[/b]: a highly studious girl who has the highest grades at the Pulsar Academy, and close friends with Gali and Tycho. Canonically supposed to be Tycho's love interest, but also has moments with Gali (and fandom-subtexted moments with Capella). Weaver of Metal.
+
+[b]Capella Taikong[/b]: a somewhat flighty girl. A student at the Pulsar Academy who has her own agenda, and is morally questionable at times. Canonical love interest of Gali (and fan favorite partner of Astra, Macmillan be damned). Augur of Wind.
+
+*label nebulaverse_antagonists
+[b]Antagonists[/b]
+
+The [b]Archons[/b] are the most powerful humans in the Nebula. They are the chief administrators of the Empire and advisors to the Emperor, appointed by the Emperor himself, and embued with magical powers via their [b]mantles[/b]. There are five Archons, corresponding to the five elements (light, stone, metal, wind, ice). Their powers effectively make them immortal, impervious to attack except in a way that inverts their element.
+
+The [b]Emperor Ariel[/b] is leading the Empire down a ruinous path, according to the Administrator. He has been using his armies and police to violently suppress dissent and enforce conformity across the Empire; Gali's parents were the victims of one of these purges. The Emperor is in possession of the [b]Emperor's mantle[/b], a magical item that prevents all harm to the Emperor except by one specific person.
+
+[b]Sirius Aldrin[/b] was the villain of Book 1. He was a criminal mastermind and assassin who was contacted by the Emperor (unknown at the time) to remove possible dissidents at the Academy, where he infiltrated undercover as a teacher. The Aldrin family is a very prominent family so he was easily accepted into the Academy. Speaker of Wind.
+
+[b]Eridanus Sputnik[/b] was the villain of Book 2. He was a long-term teacher at the Academy who secretly worked to incite strife and rebellion, acting as an agent provocateur among the opposition to the Emperor. Weaver of Ice.
+
+[b]Teachers[/b]
+
+[b]The Administrator[/b]: real name unknown, he is the principal of Pulsar Academy. He is somewhat of a mysterious figure who has taken an interest in Gali and his friends, and might have been the person who invited him. Persona: ???
+
+[b]Professor Vera[/b]: housemistress of the House of Light
+
+[b]Professor Edwin[/b]: housemaster of the House of Stone
+
+[b]Professor Nicholas[/b]: housemaster of the House of Wind
+
+[b]Professor Herschel[/b]: housemaster of the House of Ice
+
+[b]Professor Bell[/b]: housemistress of the House of Metal
+
+[b]Other Students[/b]
+
+[b]Halley Cygnus[/b]: Augur of Ice. She was the first named character to die in the Chronicles, when she was murdered by Sirius Aldrin in Book 1. She predicted her own death early on but was not believed.
+
+[b]Callisto Armstrong[/b]: Keeper of Stone. He is a talented student-athlete and a prefect of the House of Stone. He is desired by many girls, but is oblivious to their advances.
+
+[b]Lyra[/b] and [b]Juno Cosmos[/b]: Speaker and Weaver of Wind. The Cosmos twins are popular throughout the academy for their charm and beauty. In Book 2, Lyra went with Gali to the Solstice Ball as part of some complex arrangement. It did not turn out well.
+
+[b]Yuri Europa[/b]: Augur of Metal. He is a head-in-the-clouds thinker prone to random philosophizing. He had a crush on Astra and asked her out, going with her to the Solstice Ball in Book 2. It did not turn out well.
+
+[b]Regulus Aldrin[/b]: Reaper of Stone. Nephew of Sirius Aldrin, he died at the end of Book 1 in the battle against Sirius. He was not well-loved in life, but became a hero in death.
+
+[b]Selene Dione[/b]: Speaker of Light. She has a double life as one of the most popular singers in the Empire, named "Aurora", and tried to keep this a secret from her classmates. Her secret was unceremoniously revealed during the evacuation in Book 3, Part 2. There were bigger problems to worry about, so it was mostly ignored.
+
+*goto nebulaverse_wiki
+
+*label nebulaverse_magic
+*set nv_magic 1
+*gosub_scene check_backstory
+[b]Magic and Technology[/b]
+
+Magic in the Nebulaverse is based on the five elements. Anyone can be trained to use all types of magic to some extent, but they will be best attuned to magic that utilizes their persona. Magical abilities are described by sentences in some kind of formal language. The basic unit of the magical language is a [b]token[/b], which are then combined into an [b]expression[/b], a single command that calls upon one of the elements. Expressions can be combined into [b]phrases[/b] and longer units. Magic is used by reciting and mentally parsing the phrase while clearing out all other thoughts. It requires training to have the mental focus necessary; just memorizing the phrases is not enough except for the most basic of spells. Also, phrases often have to be adapted on the fly. The target and environmental conditions often must be encoded into the magic language.
+
+The domain of magic is the physical world, as governed by the five elements. The physical world and the human world are distinct; it is very difficult to create magic that specifically affects another human, especially their minds. Using magic too much makes the user feel fatigued and unable to focus. The more complex and powerful the spell, the more fatigue one feels after using it. It is not possible to use multiple casters to cast one spell, but many spells can be broken up into smaller components that different people can cast. Theoretically it is possible to cast a spell that, say, crashes an asteroid onto a planet, but one would pass out before getting started. Slightly nudging an asteroid's orbit over the course of months, however...
+
+The difference between magic and technology is that magic requires the caster's presence, while technology can function autonomously (magic-embued items do exist, however, which can sometimes straddle the line, but they cannot be mass-produced due to the effort required). Magic can be used to help develop technology, especially the Metal school. The Nebula has all sorts of fancy technology, like spaceships, laser guns, and so on, but healthcare and especially maternity care is apparently still poor. Psychology and social sciences are nonexistent. This is a society that focuses on the external world, not the internal one (except for the House of Shadow but no one knows they exist). Also no teleportation.
+
+*label nebulaverse_relationships
+[b]Relationships[/b]
+
+The Shipping Triangle: Using a technological device called the [b]Shipficator[/b], all relationships are associated with a position in the RGB color space. Red, Green, and Blue represent "pure sexuality", "pure opposition", and "pure companionship". Magenta RGB(255, 0, 255) is traditional romance, Yellow RGB(255, 255, 0) is a sexualized rivalry, and Cyan RGB(0, 255, 255) represents a friendly rivalry. White RGB(255, 255, 255) has presumably never been seen before.
+
+*goto nebulaverse_wiki
+
+*label nebulaverse_secrets
+*set nv_secrets 1
+*gosub_scene check_backstory
+[b]Secrets[/b]
+
+The Emperor is an usurper. He only got his position by killing the previous Emperor.
+
+However, all emperors have been usurpers. The emperor's appointed successor is the [b]Archon of Shadow[/b], a hidden sixth Archon who is unknown to almost all in the Empire. His job is to watch over the emperor, and kill him if the emperor is turning unjust. After he kills the emperor, the Archon of Shadow becomes the new emperor. This is the only method of succession in the Empire.
+
+It turns out that the Administrator is the Archon of Shadow. The [b]House of Shadow[/b] is a secret house in the Academy that recruits students for secret tasks against the Emperor. Astra is eventually recruited by the House of Shadow and is sent to infiltrate the Emperor at his court. However, the Emperor discovered the infiltration, and captured Astra, imprisoning and possibly torturing her. This is a topic heavily covered and sometimes romanticized in fanfiction, to the extent where Ariastra is the third most popular ship on AO3, although many view it as problematic. In the next book, presumably the last book of the series, the heroes are going to rescue Astra from the Emperor.
+
+There might be greater forces of evil than the Emperor. Ariel serves the Demiurge, or Yaldabaoth, a deity generally considered to be pure evil. The Demiurge is locked in eternal conflict with the Monad, a deity generally considered to be pure good. The Archon of Shadow serves the Monad. In fact, every emperor has served one of the two deities, alternating the roles of ruler and rebel. The realm of humanity is nothing more than the playground of the Gods.
+
+In the most recent novel, the Administrator is killed, and after the battle Gali has somehow become the Archon of Shadow. He is going to kill the Emperor... or is he?
+
+*goto nebulaverse_wiki
+
+
+*label nebulaverse_bible
+*set nv_bible 1
+*gosub_scene check_backstory
+[b]The Binary Bible (Book 4 Part 1 of the Chronicles of the Shadow Nebula)[/b]
+
+In this Book lies Knowledge. In Knowledge lies Truth. In Truth lies Creation.
+
+In the beginning was Nothing, save the Creator.
+
+[there are handwritten notes in the margins of the text, as commentary by an unknown author, presumed to be one of the predecessor Archons of Shadow]
+
+[Commentary: and herein you have the first lie.]
+
+The Creator contained within him the realm of souls, the realm of knowledge, the realm of truth. He had within Him all the knowledge that could ever be known. There was only Him, the Creator, alone, in all of existence. So there was nothing He could not know.
+
+[Commentary: Lies piled upon lies. At least it approximates the true history of the origin, I suppose.]
+
+And thus the creator found Himself lonely. And thus did the Creator partition his soul, infinitely as it were. And each fragment of soul contained a fragment of knowledge. And thus came to be the First World.
+
+[Commentary: nice story, if it were true.]
+
+The First World was in peace, for all the souls were in harmony. Every soul touched every other soul. Every soul understood every other soul. There was no strife, for there was universal understanding. There was no sickness, for there was no matter. There was no death, for there was no time.
+
+[Commentary: from what I understand... This isn't as wrong as it could have been, barring all the logical contradictions.]
+
+But within the Creator's heart was a flawed soul. It was a soul that refused to bare itself. It was a soul that cloaked its knowledge in a veil of shadow. And its taint spread to other souls, and thus, it poisoned the First World.
+
+[Commentary: didn't you say that there was no time? Isn't this a basic contradiction? Did Abraxas really write this or was it edited in by one of the previous emperors.]
+
+[Commentary in different handwriting, less faded: or, maybe "time" meant something like entropy or change?]
+
+And thus the souls fractured. They each  cloaked their knowledge from others, so that their true existences would be hidden. And the Creator knew this, and was sad. Once again He would be alone. And in His despair arose the physical world. Water out of His tears. Wind out of His breath. Stone out of His skin. Light out of His eyes. And Metal embodied in the shards. And to these worlds He scattered the souls, and gave them physical manifestations.
+
+And within these physical manifestations, these bodies, the soul was more lonely than it ever could have been.
+
+[Commentary: can we say that this makes zero logical sense? From a historical point of view this seems to imply that humans were created on all the planets simultaneously, which cannot be true. It would also presume that space travel existed before the discovery of magic (Abraxas is supposed to have been shown magic by the creator but we haven't gotten there yet), but as we all know space travel is impossible without magic.]
+
+[Second commentary: how are you so certain humanity originated on a single world? There's really no evidence either way...]
+
+***
+
+Excerpt from a much later chapter:
+
+And ABRAXAS stood on the top of the Mountain, and looked up, and beheld the face of the Creator.
+
+[Commentary: not that this happened, but if it did, that was probably the demiurge.]
+
+[Second commentary. It's obvious that the creator and the demiurge are the faces of the same Godhead. So in a sense it was the creator.]
+
+And ABRAXAS beheld the symbols painted in the stars, the language of the cosmos, the language of creation and destruction. And he wrote the symbols on his tablet. And he heard the chants of the Creator and repeated them. And the Creator said, "This is the language in which the universe was written. Understand and you will become closer to eternity."
+
+And ABRAXAS chanted, and he understood. He saw the forces acting upon the matter around him, the molecules of wind and stone and ice, over and under him, the waves of light from the distant pinprick stars, all painted by the words of the universal language. And he muttered words in the Creator's tongue, and felt the wind around him swirl, the ice melt, the stones gently shake.
+
+And ABRAXAS felt a shard of knowledge awaken in his soul.
+
+[Commentary: It's interesting that this understanding of magic-as-tool-for-devotion has almost completely disappeared today, even within the church. These days all magic is about power and control. But, is that really such a shame? It's a more honest appraisal, I think.]
+
+[Second commentary: It's not often that I agree with my predecessor. It feels even more right as I write this. What do my students care for the eternal and the sublime? Only time can tell what this means for our empire.]
+
+*goto nebulaverse_wiki
+
+
+
+
+*label nebulaverse_plot
+[b]Plot[/b]
+
+Book 1:
+
+
+Book 2:
+
+
+
+*label people
+[b]Online People[/b]
+
+[b]@lunan0va[/b]: ${luna_bio}
+
+[b]@shadow-protectrix[/b]: ${claire_bio}
+
+[b]@brunova-official[/b]: ${lux_bio}
+
+[b]@nebulascribbler[/b]: ${sofia_bio}
+
+[b]@apocalypsehoarder[/b]: ${stella_bio}
+
+[b]@trappedinspace[/b]: ${karla_bio}
+
+*if knows_hari
+    [b]@noncanonical[/b]: ${hari_bio}
+
+*if knows_laura
+    [b]@capellasgf[/b]: ${laura_bio}
+
+*goto stat_choice

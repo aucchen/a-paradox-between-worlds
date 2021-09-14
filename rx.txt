@@ -1,0 +1,62 @@
+*comment reactions to you reblogging posts
+*label luna_like
+[b]Luna @lunan0va liked this![/b]
+*return
+*label luna_dislike
+[b]Luna @lunan0va disliked this![/b]
+*return
+*label luna_st_dislike
+[b]Luna @lunan0va strongly disliked this![/b]
+*return
+*label lux_like
+[b]Lux @brunova-official liked this![/b]
+*return
+*label lux_dislike
+[b]Lux @brunova-official disliked this![/b]
+*return
+*label claire_like
+[b]Claire @shadow-protectrix liked this![/b]
+*return
+*label claire_dislike
+[b]Claire @shadow-protectrix disliked this![/b]
+*return
+*label claire_st_dislike
+[b]Claire @shadow-protectrix strongly disliked this![/b]
+*return
+*label sofia_like
+[b]Sofia @nebulascribbler liked this![/b]
+*return
+*label sofia_dislike
+[b]Sofia @nebulascribbler disliked this![/b]
+*return
+*label karla_like
+[b]Karla @trappedinspace liked this![/b]
+*return
+*label karla_dislike
+[b]Karla @trappedinspace disliked this![/b]
+*return
+*label karla_st_dislike
+[b]Karla @trappedinspace strongly disliked this![/b]
+*return
+
+*comment alignment
+*label gen
+Gained alignment: [b]gen[/b]!
+*return
+*label shipping
+Gained alignment: [b]shipping[/b]!
+*return
+*label discourse
+Gained alignment: [b]discourse[/b]!
+*return
+*label meta
+Gained alignment: [b]meta[/b]!
+*return
+*label sympathy
+Gained alignment: [b]sympathy[/b]!
+*return
+*label shitposting
+Gained alignment: [b]shitposting[/b]!
+*return
+
+*comment characters? Nah, they're self-explanatory.

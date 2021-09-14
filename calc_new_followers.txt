@@ -1,0 +1,207 @@
+*comment this calculates how many new followers you get. run at the end of each montage.
+*set followers_gained 0
+*set followers_lost 0
+
+*temp follower_gain_bonus 0
+*temp follower_loss_bonus 0
+
+*temp char_penalty false
+*temp alignment_penalty false
+*temp ship_penalty false
+
+*comment calculate the highest stat
+*label align_check
+*set old_alignment current_alignment
+*if (old_alignment = "") or (current_alignment = "")
+    *set follower_loss_bonus + 1
+    *goto char_check
+*if (gen >= shipping) and ((gen >= meta) and ((gen >= shitposting) and ((gen >= discourse) and (gen >= sympathy))))
+    *set current_alignment "gen"
+*if (shipping >= gen) and ((shipping >= meta) and ((shipping >= shitposting) and ((shipping >= discourse) and (shipping >= sympathy))))
+    *set current_alignment "shipping"
+*if (meta >= gen) and ((meta >= shipping) and ((meta >= shitposting) and ((meta >= discourse) and (meta >= sympathy))))
+    *set current_alignment "meta"
+*if (shitposting >= gen) and ((shitposting >= shipping) and ((shitposting >= meta) and ((shitposting >= discourse) and (shitposting >= sympathy))))
+    *set current_alignment "shitposting"
+*if (sympathy >= gen) and ((sympathy >= shipping) and ((sympathy >= meta) and ((sympathy >= discourse) and (sympathy >= shitposting))))
+    *set current_alignment "sympathy"
+*if (discourse >= gen) and ((discourse >= shipping) and ((discourse >= meta) and ((discourse >= sympathy) and (discourse >= shitposting))))
+    *set current_alignment "discourse"
+
+*comment get alignment strength
+*temp alignment_val {current_alignment}
+*temp alignment_strength 0
+*if alignment_val <= 10
+    *set alignment_penalty true
+    *set alignment_strength -1
+*elseif alignment_val <= 20
+    *set alignment_strength 0
+*elseif alignment_val <= 35
+    *set alignment_strength 1
+*elseif alignment_val <= 50
+    *set alignment_strength 2
+*elseif alignment_val <= 70
+    *set alignment_strength 3
+*else
+    *set alignment_strength 4
+
+*set follower_gain_bonus + alignment_strength
+
+*comment if your alignment has changed, have a follower penalty.
+*set alignment_consistent true
+*if (old_alignment != current_alignment) and ((alignment_val - {old_alignment}) >= 10)
+    *set alignment_consistent false
+    *set follower_loss_bonus + 1
+
+*comment TODO: ship/character bonuses
+*comment TODO: get fav ship, get fav character
+*label char_check
+*set old_top_character top_character
+*if (old_top_character = "") or (top_character = "")
+    *set follower_gain_bonus - 1
+    *set follower_loss_bonus + 1
+    *goto char_check
+*if (gali >= astra) and ((gali >= bruno) and ((gali >= capella) and (gali >= tycho)))
+    *set top_character "gali"
+*if (astra >= gali) and ((astra >= bruno) and ((astra >= capella) and (astra >= tycho)))
+    *set top_character "astra"
+*if (bruno >= gali) and ((bruno >= astra) and ((bruno >= capella) and (bruno >= tycho)))
+    *set top_character "bruno"
+*if (capella >= gali) and ((capella >= astra) and ((capella >= bruno) and (capella >= tycho)))
+    *set top_character "capella"
+*comment in truth... there are like no posts about tycho lol
+*if (tycho >= gali) and ((tycho >= astra) and ((tycho >= bruno) and (tycho >= capella)))
+    *set top_character "tycho"
+
+
+*temp char_val {top_character}
+*temp char_strength 0
+*if char_val <= 10
+    *set char_penalty true
+    *set char_strength -1
+*elseif char_val <= 20
+    *set char_strength 0
+*elseif char_val <= 35
+    *set char_strength 1
+*elseif char_val <= 50
+    *set char_strength 2
+*elseif char_val <= 70
+    *set char_strength 3
+*else
+    *set char_strength 4
+
+*set follower_gain_bonus + char_strength
+
+*comment TODO: two characters who are often associated together shouldn't lose points
+*comment e.g. going from astra to capella shouldn't lose points
+*set character_consistent true
+*if (top_character != old_top_character) and ((char_val - {old_top_character}) >= 10)
+    *if (top_character != "astra") and (old_top_character != "capella")
+        *if (top_character != "capella") and (old_top_character != "astra")
+            *set character_consistent false
+            *set follower_loss_bonus + 1
+
+*comment calculate top ships
+*label ship_check
+*set old_top_ship top_ship
+*if (old_top_ship = "") or (top_ship = "")
+    *set follower_loss_bonus + 1
+    *goto bonus_check
+*if (brunova >= astrapella) and ((brunova >= ellanova) and (brunova >= astranova))
+    *set top_ship brunova
+*if (astrapella >= brunova) and ((astrapella >= ellanova) and (astrapella >= astranova))
+    *set top_ship astrapella
+*if (ellanova >= brunova) and ((ellanova >= astrapella) and (ellanova >= astranova))
+    *set top_ship ellanova
+*if (astranova >= brunova) and ((astranova >= astrapella) and (astranova >= ellanova))
+    *set top_ship astranova
+
+*set ship_consistent true
+*if (top_ship != old_top_ship)
+    *set ship_consistent false
+    *set follower_loss_bonus + 1
+
+
+*comment alignment-specific bonuses
+*comment ch3+ discourse bonus (lol)
+*label bonus_check
+*if (current_alignment = "discourse") and ((current_chapter = 3) or (current_chapter = 4))
+    *set follower_gain_bonus + 3
+    *set follower_loss_bonus + 2
+
+*comment bonus for shipping if your top char matches the ship
+*if (current_alignment = "shipping")
+    *comment brunova automatically gains you more followers bc that's just how it is
+    *if (top_ship = "brunova")
+        *set follower_gain_bonus + 2
+        *if (top_character = "bruno") or (top_character = "gali")
+            *set follower_gain_bonus + 1
+
+*comment reblog count - having more posts leads to more followers
+*temp current_rbs (rb_count - old_rb_count)
+*comment the sweet spot...
+*if (current_rbs >= 10) and (current_rbs <= 15)
+    *set follower_gain_bonus + 1
+*if (current_rbs < 5)
+    *set follower_loss_bonus + 1
+*comment but... rbing too much loses you followers bc it spams peoples dash
+*if (current_rbs > 20)
+    *set follower_loss_bonus + 1
+*set old_rb_count rb_count
+
+*comment gain bonus is lower for latter chapters
+*if (current_chapter = 3) or (current_chapter = 4)
+    *set follower_gain_bonus - 1
+*if (current_chapter = 5)
+    *set follower_gain_bonus - 2
+
+*comment roll for followers!
+*if follower_gain_bonus < 0
+    *set follower_gain_bonus 0
+*temp gain_roll follower_gain_bonus + 1
+*temp loss_roll 0
+*temp roll 0
+*comment okay i want to do d6 rolls but choicescript is bad at loops so.
+
+*comment LOOP FOR FOLLOWER GAIN ROLLS
+*label gr
+*if follower_gain_bonus <= 0
+    *goto gr_end
+*rand roll 1 6
+*set gain_roll + roll
+*set follower_gain_bonus - 1
+*goto gr
+*label gr_end
+
+*comment LOOP FOR FOLLOWER LOSS ROLLS
+*label lr
+*if follower_loss_bonus <= 0
+    *goto lr_end
+*rand roll 1 6
+*set loss_roll + roll
+*set follower_loss_bonus - 1
+*goto lr
+*label lr_end
+
+*set followers_gained gain_roll
+*set followers_lost loss_roll
+
+*set followers + followers_gained
+*set followers - followers_lost
+
+*if (followers >= 200)
+    *achieve followers
+
+You've gained ${followers_gained} follower@{(followers_gained = 1) |s} and lost ${followers_lost} follower@{(followers_gained = 1) |s}, for a current total of ${followers} followers.
+*if (not(alignment_consistent))
+    Your blog has changed its focus, which might have lost followers.
+*if (not(character_consistent))
+    Your top character has been inconsistent, which might have lost followers.
+*if (not(ship_consistent))
+    Your top ship has been inconsistent, which might have lost followers.
+*if (current_rbs < 5)
+    You haven't been reblogging enough posts, which might have lost followers.
+*if (current_rbs > 20)
+    You've been reblogging too many posts, which might have lost followers for spamming people's dashboards.
+
+*return
