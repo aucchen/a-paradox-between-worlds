@@ -358,7 +358,7 @@ Anyway, I'm sorry about what I said before. I'm sorry about happened to @ lunan0
 
 Does anyone want to see my cringey character development haircut? No? Well, too bad! Here it is!
 
-[Image: selfie of a person with buzzed light brown hair, almost cut to the scalp. They have a crooked smile, almost like a grimace. They are wearing a purple t-shirt that says "Why frick-frack when you can snick-snack" with a picture of a donut, and a "they/them" pronoun pin.]
+[Image: selfie of a person with buzzed light brown hair, almost cut to the scalp. They have a crooked smile, almost like a grimace. They are wearing a purple tank top that says "Why frick-frack when you can snick-snack" with a picture of a donut, and a "they/them" pronoun pin.]
 
 Tags: #claire speaks
 
@@ -587,14 +587,6 @@ There have been a lot of messages since you were last here.
 
                 @noncanonical: Please don't call me that. You don't know me that well.
 
-                @trappedinspace: I wish I could have avoided being sexually assaulted in jail.
-
-                @noncanonical: Things should be better. And they're not. And that fucking sucks. I know. I'm not telling you to accept the present state of things, just to tell you that things can change.
-
-                @trappedinspace: I don't know...
-
-                @noncanonical: None of us know anything.
-
                 *temp has_hearts false
                 *label annc_convo_options
                 *choice
@@ -635,13 +627,17 @@ There have been a lot of messages since you were last here.
 
                         @brunova-official: thanks i guess?
 
-                        @lunan0va: happy bday! how does it feel being an adult?
+                        @lunan0va: omg happy bday! how does it feel being an adult?
 
                         @brunova-official: lol it feels exactly the same
 
-                        @brunova-official: i don't know what i'm doing. we don't have enough money. same sht as usual.
+                        @brunova-official: i don't know what i'm doing. we don't have enough money. same shit as usual.
+
+                        @brunova-official: sometimes it feels like we don't even have a future.
 
                         @lunan0va: 💙️
+
+                        @brunova-official: thanks...
                         *goto annc_convo_options
                     *disable_reuse #Ask about what they think of Claire.
                         *label annc_claire
@@ -670,7 +666,7 @@ There have been a lot of messages since you were last here.
 
                         @trappedinspace: Don't you know the internet never forgives and never forgets?
 
-                        @trappedinspace: But yeah, that'd be nice...
+                        @trappedinspace: But yeah, maybe it'd be nice if we al just moved on...
                         *goto annc_convo_options
                     *disable_reuse #Ask about the nebulaverse.
                         @you: so, um, is anyone still into the nebulaverse?
@@ -709,9 +705,9 @@ There have been a lot of messages since you were last here.
 
                         @noncanonical: Maybe there are infinite Nebulaverses, one for each of us. There's a Shadow Nebula inside each of our hearts, and we never have to let that part of ourselves go, even if our relationship to the "canonical" Nebulaverse changes.
 
-                        @trappedinspace: But don't fucking give gtm any money.
+                        @trappedinspace: I still think it's a good idea to move on. Every bit of fandom activity we engage in just gives gtm more exposure and more social capital. There is literally nothing we can do as fans to fight against her transphobia except stop engaging.
 
-                        @noncanonical: Yes. This.
+                        @noncanonical: Maybe you're right. But I don't think this is a fight we can win. All we can do is follow our conscience. I'm still not going to engage with the Nebulaverse, btw.
                         *goto annc_convo_options
                     #Look at something else.
                         *goto montage_1
@@ -728,7 +724,7 @@ There have been a lot of messages since you were last here.
 
 @you: how are you doing?
 
-@shadow-protectrix: Poorly, in fact! Very poorly!
+@shadow-protectrix: Thank you for asking! I'm doing poorly, in fact! Very poorly!
 
 @shadow-protectrix: I don't really want to go into more detail than was posted on my blog though.
 
@@ -769,7 +765,28 @@ There have been a lot of messages since you were last here.
 
         @shadow-protectrix: I can't exactly show my face in the fandom right now, given what happened with NebulaCon.
 
-        @shadow-protectrix: Besides that extremely large caveat... I'm still writing, even if I'm not posting my stories on the archive. Who knows. Maybe I'll pivot to original fiction. That would be nice, wouldn't it?
+        @shadow-protectrix: Besides that extremely large caveat... I'm still writing, even if I'm not posting my stories on the archive. Who knows. 
+        
+        @shadow-protectrix: I think I'll write my own stories, outside of the confines of the nebulaverse. That would be nice, wouldn't it?
+
+        @shadow-protectrix: What about you, $!{handle}? How are you feeling about the fandom these days?
+        *fake_choice
+            #I'm still into the nebulaverse.
+                @you: i'm still into the nebulaverse i guess...
+
+                @shadow-protectrix: Yeah? I suppose I am too! I will NEVER stop shipping Brunova.
+                
+                @shadow-protectrix: But...
+            #I'm trying to escape.
+                @you: i'm trying to escape.
+
+                @shadow-protectrix: Yeah! Me too!
+            #I hate the nebulaverse now.
+                @you: i hate the nebulaverse now.
+
+                @shadow-protectrix: Well, I think that's unfortunate, but I certainly won't blame you.
+
+        @shadow-protectrix: These days I'm having more fun working on my own stories. Turns out that creating your own worlds is so much more fun than living in the worlds created by others, don't you think? ;)
         *goto claire_questions
     *disable_reuse #Say something nice and sympathetic.
         *label claire_sympathy

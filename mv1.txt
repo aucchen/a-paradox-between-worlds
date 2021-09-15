@@ -989,6 +989,7 @@ Finally, why are you here? Why are you online, participating in the Nebulaverse 
     #To make friends.
         *comment Ice?
         *set goal "friends"
+        *set sympathy %+ 5
     #To be popular.
         *comment Stone?
         *set goal "popular"
@@ -1002,6 +1003,7 @@ Finally, why are you here? Why are you online, participating in the Nebulaverse 
     #To partake in the intellectual exercise of media analysis.
         *comment Metal?
         *set goal "analyze"
+        *set meta %+ 5
     #All of the above?
         *set goal "all"
     #Something else?

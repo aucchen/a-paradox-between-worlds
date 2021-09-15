@@ -74,7 +74,7 @@ A person approaches you. Who is it?
 
 $!{e} @{plural are|is} younger than you, just a kid.
 
-"I'm ${first_name} ${last_name}. And I'm the Creator. Or the Demiurge. Or both."
+"I'm ${first_name} ${last_name}. And I'm the Creator. Or the Demiurge. Or both. At least, in this subset of worlds."
 
 $!{e} stride@{plural |s} towards you.
 
@@ -143,7 +143,7 @@ The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare
 
 "So what happens now? What happens after the story is over? Is my life over too?"
 
-"No. Our lives have just begun."
+"No. Our lives have just begun. What do you want to do, Gali?"
 
 *fake_choice
     #Wake up.
@@ -204,8 +204,8 @@ Do you post the chapter, or not?
 Is the story over, or can it be continued?
 
 *fake_choice
-    #It's over. For real this time.
-        The story is over, even if there are so many dangling ends left. Sometimes a story is just over. But maybe another story is beginning. You've already gotten some new ideas for your next fic. Maybe it'll be an original story this time.
+    #It's over. It's time to move on.
+        The story is over, even if there are so many dangling ends left. Sometimes a story simply cannot continue. But maybe another story is beginning. You've already gotten some new ideas for your next fic. Maybe it'll be an original story this time.
 
         *page_break Anyway, you need to sleep.
     #There needs to be more.

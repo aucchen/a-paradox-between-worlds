@@ -436,6 +436,10 @@
     A secret.
     Join two groupchats.
 
+*achievement alone visible 10 I've never felt more alone
+    A secret.
+    Don't join any chats after the first movement.
+
 *achievement home visible 10 Never think about death
     A secret.
     Help a friend in a key moment.
