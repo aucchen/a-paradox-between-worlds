@@ -1482,6 +1482,7 @@ ${luna_1_3_notes} notes
         *goto montage_1
 
 *label writers_chat_1
+*set has_chatted true
 
 Right, you've been invited to Claire's Nebulaverse writers groupchat. It doesn't seem too busy right now. There are some messages from yesterday and earlier today.
 
@@ -1503,7 +1504,7 @@ Right, you've been invited to Claire's Nebulaverse writers groupchat. It doesn't
 
 @nonbinarycatmom: yeah i can read it!
 
-@nebulascribber: Thank you! I'll dm the link.
+[sofia]@nebulascribbler: Thank you! I'll dm the link.[/sofia]
 
 ...
 
@@ -1549,6 +1550,7 @@ Right, you've been invited to Claire's Nebulaverse writers groupchat. It doesn't
 This is the chat group that Luna invited you into.
 
 *label annc_chat_1_1
+*set has_chatted true
 
 [b]Anti-Nebulaverse Nebulaverse Club[/b]
 
@@ -3014,6 +3016,7 @@ A post has recently been brought to my attention that describes Gali Nova as a "
         *goto montage_2
 
 *label annc_chat_2
+*set has_chatted true
 [b]Anti-Nebulaverse Nebulaverse Club[/b]
 
 [karla]@trappedinspace: Hey @lunan0va, I just saw your blog. I'm really sorry about what's happening. Are you doing okay?[/karla]
@@ -3049,6 +3052,7 @@ A post has recently been brought to my attention that describes Gali Nova as a "
 
 
 *label writers_chat_2
+*set has_chatted true
 [b]Nebulaverse Fandom Writer's Chat[/b]
 
 [claire]@shadow-protectrix: Hey I've got a few updates for Nebulacon! Check out my blog![/claire]
@@ -3057,7 +3061,9 @@ A post has recently been brought to my attention that describes Gali Nova as a "
 
 [lux]@brunova-official: i wish i could go :/[/lux]
 
-[claire]@shadow-protectrix: Don't worry about it! We'll be streaming everything online and also recording video![/claire]
+[claire]@shadow-protectrix: Don't worry about it! We'll stream everything online and also record video![/claire]
+
+...
 
 [sofia]@nebulascribbler: Whatever you do, don't check GTM's blog.[/sofia]
 
@@ -3071,9 +3077,9 @@ A post has recently been brought to my attention that describes Gali Nova as a "
 
 [lux]@brunova-official: yeah it's really bad. i'm logging off.[/lux]
 
-[sofia]@nebulascribbler: probably a wise decision.[/sofia]
+[sofia]@nebulascribbler: Probably a wise decision.[/sofia]
 
-[claire]@shadow-protectrix: yeah... I'll have to think about what we're supposed to do.[/claire]
+[claire]@shadow-protectrix: Yeah... We're gonna have to react somehow, right? I'll have to think about what we're supposed to do.[/claire]
 
 Everyone appears to be offline right now.
 

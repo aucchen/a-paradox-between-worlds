@@ -1,42 +1,42 @@
 *comment reactions to you reblogging posts
 *label luna_like
-[b]Luna @lunan0va liked this![/b]
+Luna @lunan0va [b]liked[/b] this!
 *return
 *label luna_dislike
-[b]Luna @lunan0va disliked this![/b]
+Luna @lunan0va [b]disliked[/b] this!
 *return
 *label luna_st_dislike
-[b]Luna @lunan0va strongly disliked this![/b]
+Luna @lunan0va [b]strongly disliked[/b] this!
 *return
 *label lux_like
-[b]Lux @brunova-official liked this![/b]
+Lux @brunova-official [b]liked[/b] this!
 *return
 *label lux_dislike
-[b]Lux @brunova-official disliked this![/b]
+Lux @brunova-official [b]disliked[/b] this!
 *return
 *label claire_like
-[b]Claire @shadow-protectrix liked this![/b]
+Claire @shadow-protectrix [b]liked[/b] this!
 *return
 *label claire_dislike
-[b]Claire @shadow-protectrix disliked this![/b]
+Claire @shadow-protectrix [b]disliked[/b] this!
 *return
 *label claire_st_dislike
-[b]Claire @shadow-protectrix strongly disliked this![/b]
+Claire @shadow-protectrix [b]strongly disliked[/b] this!
 *return
 *label sofia_like
-[b]Sofia @nebulascribbler liked this![/b]
+Sofia @nebulascribbler [b]liked[/b] this!
 *return
 *label sofia_dislike
-[b]Sofia @nebulascribbler disliked this![/b]
+Sofia @nebulascribbler [b]disliked[/b] this!
 *return
 *label karla_like
-[b]Karla @trappedinspace liked this![/b]
+Karla @trappedinspace [b]liked[/b] this!
 *return
 *label karla_dislike
-[b]Karla @trappedinspace disliked this![/b]
+Karla @trappedinspace [b]disliked[/b] this!
 *return
 *label karla_st_dislike
-[b]Karla @trappedinspace strongly disliked this![/b]
+Karla @trappedinspace [b]strongly disliked[/b] this!
 *return
 
 *comment alignment

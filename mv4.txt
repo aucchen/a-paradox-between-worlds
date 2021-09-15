@@ -120,6 +120,7 @@ Capella was sobbing. The tension in her muscles dissipated, leaving her entire w
 *temp trap_prog 1
 
 *temp sofia_message_ref "sofia_message"
+*temp writers_chat_ref "writers_chat"
 
 *gosub_scene calc_new_followers
 
@@ -155,11 +156,17 @@ Which blogs would you like to read?
     *selectable_if ((karla_blocked = false)) #@trappedinspace
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
-    *selectable_if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
+    *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
+        *set has_chatted true
         *goto annc_chat
+    *if ((luna_blocked = false) and (in_luna_chat)) #See Claire's groupchat.
+        *set has_chatted true
+        *gotoref writers_chat_ref
     *disable_reuse *if (luna_ch4_message) #See Luna's message.
+        *set has_chatted true
         *goto luna_msg
     *disable_reuse *if (has_luna_password and (luna_ch4_seen = 1)) #See Luna's newer messages.
+        *set has_chatted true
         *goto luna_msg_2
     *if ((sofia_helped > 0)) #Send Sofia a message.
         *gotoref sofia_message_ref
@@ -897,6 +904,7 @@ ${apoc_1_3_notes} notes
             *gosub_scene rx discourse
 
         *set rb_count + 1
+        *achieve callout
         *set stella_interact + 1
         *set apoc_1_3_notes + 1
         *set claire_green %+ 10
@@ -1150,6 +1158,7 @@ ${trap_1_5_notes} notes
 
 
 *label writers_chat
+*set writers_chat_ref "writers_chat"
 [b]Nebulaverse Fandom Writer's Chat[/b]
 
 [sofia]@nebulascribbler: Hey Claire...[/sofia]
@@ -1192,6 +1201,8 @@ ${trap_1_5_notes} notes
 *choice
     #Tell Claire that Sofia was right.
         *set claire_green %+ 10
+        *label writers_chat_sofia
+        *set writers_chat_ref "writers_chat_sofia"
         @you: um claire? i don't see what's wrong with what sofia said...
 
         [claire]@shadow-protectrix: Not you too?? Et tu, $!{handle}?![/claire]
@@ -1203,6 +1214,8 @@ ${trap_1_5_notes} notes
     #Defend Claire; say that Sofia was wrong.
         *set claire_blue %+ 10
         *set claire_trust + 1
+        *label writers_chat_claire
+        *set writers_chat_ref "writers_chat_claire"
         @you: um... I don't think claire is really in the wrong here
 
         @you: it's been a messy few weeks and claire's gotten a lot of flak they maybe shouldn't have
@@ -1555,6 +1568,7 @@ You message Sofia @nebulascribbler.
 
 *choice
     *disable_reuse #Ask about why she's doing this.
+        *set sofia_secret true
         @you: why are you doing this?
 
         [sofia]@nebulascribbler: Why am I doing what? Creating sockpuppets to attack Claire while simultaneously defending them with my main blog?[/sofia]
@@ -1601,7 +1615,7 @@ You message Sofia @nebulascribbler.
 
         [sofia]@nebulascribbler: You see what I did just now?[/sofia]
         *set sofia_blue 69
-        *set sofia_green 420
+        *set sofia_green 69
 
         [sofia]@nebulascribbler: All of your actions have repercussions. You just need to understand how to see.[/sofia]
 

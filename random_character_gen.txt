@@ -1,0 +1,152 @@
+*comment TODO: random character generator...
+*comment I forgot that arrays existed in choicescript lol
+*label handle_choice
+*temp handle_id 1
+*rand handle_id 1 13
+*temp h_1 "aiden"
+*temp h_2 "altair"
+*temp h_3 "celeste"
+*temp h_4 "chandra"
+*temp h_5 "dirk"
+*temp h_6 "ebony"
+*temp h_7 "jake"
+*temp h_8 "jane"
+*temp h_9 "roxy"
+*temp h_10 "zoe"
+*temp h_11 "sol"
+*temp h_12 "rigel"
+*temp h_13 "jupiter"
+*set handle h[handle_id]
+
+*label irl_choice
+*set first_name "$!{handle}"
+*temp irl_id 1
+*rand irl_id 1 10
+*temp i_1 "Chen"
+*temp i_2 "Crocker"
+*temp i_3 "Gao"
+*temp i_4 "Harley"
+*temp i_5 "Lennox"
+*temp i_6 "Kapoor"
+*temp i_7 "Mehta"
+*temp i_8 "Rao"
+*temp i_9 "Strider"
+*temp i_10 "Zhao"
+*set last_name i[irl_id]
+
+*label url_choice
+*temp url_id 1
+*rand url_id 1 12
+*temp u_1 "augurofwind97"
+*temp u_2 "astra-van-a11en"
+*temp u_3 "bookofthebeyond"
+*temp u_4 "madeofstarstuff"
+*temp u_5 "pieces-of-a-broken-star"
+*temp u_6 "archonofhope"
+*temp u_7 "eclaire-de-lune"
+*temp u_8 "destiel-johnlocked-in-the-tardis"
+*temp u_9 "takemetosnurch"
+*temp u_10 "paul-blart-mind-fart"
+*temp u_11 "xxdemonslayer666xx"
+*temp u_12 "genderneutralurinal"
+*set username u[url_id]
+
+
+*label pronoun_choice
+*temp pronoun_id 1
+*rand pronoun_id 1 3
+*temp pronoun_link "p"&pronoun_id
+*gotoref pronoun_link
+*label p1
+*set e "she"
+*set em "her"
+*set eir "her"
+*set eirs "hers"
+*set emself "herself"
+*set plural false
+*goto location_choice
+*label p2
+*set e "he"
+*set em "him"
+*set eir "his"
+*set eirs "his"
+*set emself "himself"
+*set plural false
+*goto location_choice
+*label p3
+*set player_is "are"
+*set player_was "were"
+*set plural true
+*goto location_choice
+
+*comment i don't care about these
+*label location_choice
+*set location "bedroom"
+
+*label aesthetic_choice
+*set aesthetic "nothing"
+
+*label alignment_choice
+*set current_alignment "gen"
+*set gen + 10
+
+*label character_choice
+*set top_character "gali"
+*set gali + 10
+
+*label ship_choice
+*set top_ship "brunova"
+*set brunova + 10
+
+*label persona_choice
+*temp persona_id 1
+*rand persona_id 1 5
+*temp p_1 "light"
+*temp p_2 "wind"
+*temp p_3 "metal"
+*temp p_4 "stone"
+*temp p_5 "ice"
+*set persona p[persona_id]
+
+*label role_choice
+*temp role_id 1
+*rand role_id 1 5
+*temp r_1 "augur"
+*temp r_2 "keeper"
+*temp r_3 "reaper"
+*temp r_4 "weaver"
+*temp r_5 "speaker"
+*set role r[role_id]
+
+*label goal_choice
+*set goal "all"
+
+*label end
+Online name and URL: ${handle} @${username}
+
+IRL name: ${first_name} ${last_name}
+
+Pronouns: ${e}/${em}
+
+Mage class: ${role} of ${persona}
+
+Is this you?
+*choice
+    #Yes!
+        *return
+    #No, re-roll.
+        *set gen - 10
+        *set gali - 10
+        *set brunova - 10
+        *goto handle_choice
+    #Actually, go back to manual character creation.
+        *set username ""
+        *set first_name ""
+        *set last_name ""
+        *set handle ""
+        *set role ""
+        *set persona ""
+        *set gen - 10
+        *set gali - 10
+        *set brunova - 10
+        *return

@@ -174,16 +174,22 @@ Which blogs would you like to read?
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *disable_reuse *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
+        *set has_chatted true
         *goto annc_chat
     *disable_reuse *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
+        *set has_chatted true
         *goto writers_chat
     *disable_reuse *if (karla_sent_message) #See Karla's message.
+        *set has_chatted true
         *goto karla_message
     *disable_reuse *if (sofia_sent_message) #See Sofia's message.
+        *set has_chatted true
         *goto sofia_message
     *disable_reuse *if ((sofia_helped != 0) and (claire_blue > 25)) #Tell Claire about Sofia's plans.
+        *set has_chatted true
         *goto claire_message
     *disable_reuse *if ((sofia_helped != 0) and (karla_investigation > 0)) #Tell Karla about Sofia's plans.
+        *set has_chatted true
         *goto karla_message_1
     *disable_reuse *if ((sofia_helped > 0)) #Reblog the callout.
         *goto reblog_callout

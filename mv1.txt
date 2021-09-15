@@ -27,8 +27,13 @@
 
 - geekerypokery, tumblr
 
-*page_break
+*choice
+    #Continue.
+        *goto universe0
+    #[Skip intro.]
+        *goto universe1
 
+*label universe0
 [b]Universe - Canon[/b]
 
 [b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 1: The Academy of Magi[/i] by G. T. Macmillan[/b]
@@ -90,6 +95,7 @@ Another roaring round of applause.
 "Yeah. We'll be friends."
 
 *page_break
+*label universe1
 
 [A/N: All of your actions and inactions will have consequences. You can check the "Show Stats" page to see the reverberations of your actions upon the cosmos.]
 
@@ -99,7 +105,7 @@ Another roaring round of applause.
     #[Yes, turn on notifications.]
         [A/N: okay. You might see messages that look kind of like this:]
 
-        [b]Autumn @canonautumnc liked this![/b]
+        Autumn @canonautumnc [b]liked[/b] this!
     #[No, leave them off.]
         [A/N: okay.]
 
@@ -344,12 +350,18 @@ Wait... by what name does she call you?
           #Enter your own
             Enter your name:
             *input_text handle
-
+  #[A/N: Skip all character creation steps and randomly generate a character.]
+    *gosub_scene random_character_gen
+    *if handle = ""
+        *goto handle_choice
 
 [luna]@lunan0va: see you later ${handle}[/luna]
 
 The dot next to her icon is still green, but she is no longer typing. You are alone once more, the Nebulaverse still bouncing in your mind as always.
 
+*if username != ""
+    *page_break
+    *goto montage_1_start
 
 *page_break The Nebulaverse...
 
@@ -371,7 +383,7 @@ It is past midnight, far past your bedtime, and you find yourself...
 
 You scroll through your dashboard for a few minutes. Nightblogging has begun. People all over the country, all over the world, all connecting for a few brief moments to revel in their love for a certain media franchise.
 
-What is your blog's URL? This is basically your username on this website.
+What is your blog's URL? This is also your username on this website.
 
 *label username_choice
 *choice
@@ -692,18 +704,19 @@ That's awesome! Most Nebulaverse blogs have a favorite character, whom they rebl
 And one last fandom question: which pairing is your most preferred ship?
 
 *fake_choice
-    #BruNova - Bruno/Gali (the most popular ship in the fandom)
+    #Brunova - Bruno/Gali (the most popular ship in the fandom)
         *set top_ship "brunova"
         *set brunova + 10
-    #AstraPella - Astra/Capella
+    #Astrapella - Astra/Capella
         *set top_ship "astrapella"
         *set astrapella + 10
-    #AstraNova - Astra/Gali
+    #Astranova - Astra/Gali
         *set top_ship "astranova"
         *set astranova + 10
-    #EllaNova - Capella/Gali (the closest there is to a "canon" ship)
+    #Ellanova - Capella/Gali (the closest there is to a "canon" ship)
         *set top_ship "ellanova"
         *set ellanova +10
+    #Something else?
 
 [b]IRL[/b]
 
@@ -892,7 +905,6 @@ And what is your role? If you don't know, you can take a quiz at https://uquiz.c
         *set role "augur"
         The Augur is always a popular role among the nerds who comprise the Nebulaverse fandom. Augurs are supposed to be the scientists and theorycrafters, the people who come up with ways of making sense of their element. Their role is only to interpret the world, not to change it.
         
-        
         *if (persona = "metal")
             As an Augur of Metal, you are essentially the "nerd of nerds". The Augur of Metal is often stereotyped as a mad scientist, a creature of pure intellect completely detached from physical reality, whose only rule is their own sense of rationality. You might be brilliant, or you might be something of a kook, or both.
         *elseif (persona = "light")
@@ -997,22 +1009,29 @@ Finally, why are you here? Why are you online, participating in the Nebulaverse 
     #To be popular.
         *comment Stone?
         *set goal "popular"
+        *set sympathy %+ 5
         It would be nice to have more followers than your current 110. It would be nice to be someone who is heard and respected, if only in a small online space such as this.
     #To escape.
         *comment Wind?
         *set goal "escape"
+        *set gen %+ 3
+        *set shipping %+ 3
     #To entertain myself for a short time.
         *comment Light?
         *set goal "entertain"
+        *set gen %+ 3
+        *set shipping %+ 3
     #To partake in the intellectual exercise of media analysis.
         *comment Metal?
         *set goal "analyze"
         *set meta %+ 5
     #All of the above?
         *set goal "all"
+        *set gen %+ 5
     #Something else?
         *set goal "other"
 
+*label montage_1_start
 Anyway, your parents are asleep, and you're probably done with homework. So what else is there to do but check out all the blog updates that you missed?
 
 [b]Online - Montage[/b]
@@ -2441,11 +2460,11 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
         *set protag_emself "herself"
         By the way, did they know that you were a girl when you were born?
         *choice
-            #No, they didn't know I was going to be a girl...
-                *set protag_trans_girl true
-                *goto gali_pronoun_choice
             #Yeah, I was a girl when I was born...
                 *set protag_cis_girl true
+                *goto gali_pronoun_choice
+            #No, they didn't know I was going to be a girl...
+                *set protag_trans_girl true
                 *goto gali_pronoun_choice
             #Actually, I change my mind...
                 *goto uniform_choice
@@ -2455,10 +2474,10 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
             #I'm a boy who just likes wearing the girl's uniform.
                 Sure, that's okay! By the way, did they know that you were a boy when you were born?
                 *choice
-                    #No, they didn't know I was going to be a boy...
-                        *set protag_trans_boy true
                     #Yeah...
                         *set protag_cis_boy true
+                    #No, they didn't know I was going to be a boy...
+                        *set protag_trans_boy true
                     #Actually, I change my mind...
                         *goto uniform_choice
                 *goto gali_pronoun_choice
@@ -2479,11 +2498,11 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
         *set protag_emself "himself"
         By the way, did they know that you were a boy when you were born?
         *choice
-            #No, they didn't know I was going to be a boy...
-                *set protag_trans_boy true
-                *goto gali_pronoun_choice
             #Yeah...
                 *set protag_cis_boy true
+                *goto gali_pronoun_choice
+            #No, they didn't know I was going to be a boy...
+                *set protag_trans_boy true
                 *goto gali_pronoun_choice
             #Actually, I change my mind...
                 *goto uniform_choice
@@ -2493,10 +2512,10 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
             #I'm a girl who just likes wearing the boy's uniform.
                 Sure, that's okay! By the way, did they know that you were a girl when you were born?
                 *choice
-                    #No, I wasn't always a girl...
-                        *set protag_trans_girl true
                     #Yeah...
                         *set protag_cis_girl true
+                    #No, I wasn't always a girl...
+                        *set protag_trans_girl true
                     #Actually, I change my mind...
                         *goto uniform_choice
                 *goto gali_pronoun_choice

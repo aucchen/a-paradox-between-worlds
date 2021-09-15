@@ -18,6 +18,7 @@
   fic_light
   hearts_choice
   rx
+  random_character_gen
 
 *create implicit_control_flow true
 
@@ -133,6 +134,8 @@
 *create nv_magic 0
 *create nv_secrets 0
 *create nv_bible 0
+
+*create has_chatted false
 
 *comment relationships***************************
 *create luna_bio "luna | she/her | minor | asian | augur of ice, keeper of the forbidden transgirl!gali lore"
@@ -448,7 +451,7 @@
     A secret.
     Get a crush on someone online.
 
-*achievement truth visible 15 Nothing's wrong...
+*achievement truth visible 25 Nothing's wrong...
     A secret.
     Expose a manipulation campaign.
 
