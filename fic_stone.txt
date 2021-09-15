@@ -230,6 +230,7 @@ Capella is already moving. She points at a person, and you all freeze.
     #It's... you?
         Somehow, it appears to be another you. Yes, the person in question is your mirror image, down to the hairstyle, save for the clothes ${protag_e} wear@{protag_plural |s}. But soon ${protag_e} disappear@{protag_plural |s} inside a building.
     
+    
 Capella is already in pursuit. She follows the doppelganger into the building, and you join the rest of the group.
 
 Inside, however, the doppelganger is nowhere to be seen. It's a busy place, an alien food dispensary of sorts, filled with tables and lined with customers. None of them take any notice of you. They act as if you don't even exist.
@@ -248,7 +249,9 @@ Inside, however, the doppelganger is nowhere to be seen. It's a busy place, an a
     #Try using magic.
         You recall a basic illumination formula. It works; the light shines in the center of the room, but no one notices, even though it should be almost blinding.
         
+        
         Capella casts a wind spell, and while you feel the breeze, again, it has no impact on the world.
+    
     
 Astra is closing her eyes and taking deep breaths. "Okay, I'm trying to think through this. When we came through the Kingdomite portal, we ended up at... a different universe. I've read about this."
 
@@ -261,6 +264,7 @@ Astra is closing her eyes and taking deep breaths. "Okay, I'm trying to think th
 "So, is there any way we can go back?" Tycho asks.
 
 Capella has her arms folded, pacing, not caring that she's phasing through the passersby. "Why are we still here? We should be exploring this whole world."
+    
     
 *choice
     #[META: Deus Ex Machina]
@@ -299,19 +303,25 @@ A feeling emerges from within you. It's a strange and unintelligible feeling, As
     #Tell your friends.
         "I know what to do," you say.
         
+        
         "What do you mean?" asks Astra.
+        
         
         "It's... I have a feeling. There's a barrier here, and I can break through."
         
+        
         "How? How do you know?"
         
+        
         "I don't. It's just... a feeling, I guess?"
+        
         
         Capella and Bruno are looking at you skeptically. But you know what to do. You walk up, until you see your mirror image standing behind the food dispensary counter wearing some kind of uniform. You focus. You feel a shimmering all around you. And then...
         *goto talk_to_dp
     #Focus. Just focus.
         "Gali? What are you doing?" asks Astra as you walk up to the counter. You don't reply. You walk up, until you see your mirror image standing behind the counter in some sort of uniform. You focus. You feel a shimmering all around you. And then...
         *goto talk_to_dp
+        
         
 *label talk_to_dp
 *page_break You break through.
@@ -434,6 +444,7 @@ The story has been posted for a while now. You see that you've gotten ${ch1_like
 *elseif chat_count = 0
     Unfortunately, you haven't gotten any new messages regarding your fanfic. It's only to be expected, given how hard it is to get any attention these days.
     
+    
 *label messages
 *choice
     *if (not (luna_message_seen)) #See Luna's message.
@@ -446,60 +457,67 @@ The story has been posted for a while now. You see that you've gotten ${ch1_like
 *label luna_message
 *temp luna_friends false
 *set luna_message_seen true
-@lunan0va: hey ${handle}!
+[luna]@lunan0va: hey ${handle}![/luna]
 
-@lunan0va: i've read your story and it's really cool! i love the concept!
+[luna]@lunan0va: i've read your story and it's really cool! i love the concept![/luna]
 
 *if protag_trans_girl
-    @lunan0va: also sorry if this is weird but it's kinda cool that you made gali a trans girl here. just another bonus :)
+    [luna]@lunan0va: also sorry if this is weird but it's kinda cool that you made gali a trans girl here. just another bonus :)[/luna]
 
 *if ((luna_blue - luna_green) >= 20)
     *set luna_friends true
-    @lunan0va: anyway i'm glad we can be friends.
+    [luna]@lunan0va: anyway i'm glad we can be friends.[/luna]
+    
     
     *if protag_trans_girl
-        @lunan0va: you make me feel a little less lonely 💙︄
+        [luna]@lunan0va: you make me feel a little less lonely 💙︄[/luna]
+        
         
 *choice
     #"Thanks!"
         @you: thanks!
         
-        @lunan0va: np!!! i should thank you for writing it!
+        
+        [luna]@lunan0va: np!!! i should thank you for writing it![/luna]
     *if (protag_trans_girl) #"I love your headcanon!"
         @you: i really love your headcanon!
         
-        @lunan0va: thank you!!!
+        
+        [luna]@lunan0va: thank you!!![/luna]
     *if (luna_friends) #"I'm glad we can be friends, too..."
         *set luna_blue %+ 3
         @you: i'm glad we can be friends, too...
         
-        @lunan0va: 💙︄
         
-        @lunan0va: yea...
+        [luna]@lunan0va: 💙︄[/luna]
+        
+        
+        [luna]@lunan0va: yea...[/luna]
 
 *if luna_friends
     *set luna_chat_invited true
-    @lunan0va: btw, if you're interested!!!
+    [luna]@lunan0va: btw, if you're interested!!![/luna]
 
-    @lunan0va: i'm in a group chat for just talking about the nebulaverse and stuff.
+    [luna]@lunan0va: i'm in a group chat for just talking about the nebulaverse and stuff.[/luna]
 
-    @lunan0va: i can send you a link to join if you want?
+    [luna]@lunan0va: i can send you a link to join if you want?[/luna]
+    
     
     *choice
         #Sure, join!
             *set in_luna_chat true
             @you: Sure...
 
-            @lunan0va: great!!! here's the link: [link]
+            [luna]@lunan0va: great!!! here's the link: [link][/luna]
 
-            @lunan0va: anyway it's great! feel free to drop in!
+            [luna]@lunan0va: anyway it's great! feel free to drop in![/luna]
         #Nah.
             *set luna_green %+ 3
             @you: Um, not really...
 
-            @lunan0va: alright that's fine!
+            [luna]@lunan0va: alright that's fine![/luna]
 
-            @lunan0va: but feel free to message me later if you want...
+            [luna]@lunan0va: but feel free to message me later if you want...[/luna]
 
 Luna doesn't seem to have much more to say for now, but maybe you do?
 
@@ -508,11 +526,15 @@ Luna doesn't seem to have much more to say for now, but maybe you do?
         *label luna_random_talk
         *set luna_blue %+ 6
         
+        
         @you: so um... hows life?
         
-        @lunan0va: its okay... mostly the same as usual.
         
-        @lunan0va: school is destroying me :/
+        [luna]@lunan0va: its okay... mostly the same as usual.[/luna]
+        
+        
+        [luna]@lunan0va: school is destroying me :/[/luna]
+        
         
         And so on and so on.
         *goto luna_message_end
@@ -522,13 +544,17 @@ Luna doesn't seem to have much more to say for now, but maybe you do?
             #Send a small message that could have the potential of starting a romance later on.
                 Okay, uh... you can send a heart emoji? That's how it works, right? You send people enough heart emojis and then they fall in love with you?
                 
+                
                 You have to pick a signature heart emoji.
                 *gosub_scene hearts_choice
                 *achieve love
                         
+                        
                 @you: ${heart_emoji}${heart_emoji}${heart_emoji}
                 
-                @lunan0va: thanks! 💙︄${heart_emoji} to you too...
+                
+                [luna]@lunan0va: thanks! 💙︄${heart_emoji} to you too...[/luna]
+                
                 
                 Unfortunately, you do not know what to say after that.
                 *set luna_red %+ 1
@@ -552,11 +578,11 @@ Luna doesn't seem to have much more to say for now, but maybe you do?
 
 You also see that Claire has followed you. They're probably by far your most popular follower right now. So that's pretty cool.
 
-@shadow-protectrix: I just saw your new fanfic, ${story_title}, and it looks pretty interesting so far! I'd love to see more from you!
+[claire]@shadow-protectrix: I just saw your new fanfic, ${story_title}, and it looks pretty interesting so far! I'd love to see more from you![/claire]
 
-@shadow-protectrix: By the way, would you be interested in joining my groupchat for Nebulaverse fandom writers? We're a pretty small group of writers who're interested in improving our craft and just hanging out and talking about stories.
+[claire]@shadow-protectrix: By the way, would you be interested in joining my groupchat for Nebulaverse fandom writers? We're a pretty small group of writers who're interested in improving our craft and just hanging out and talking about stories.[/claire]
 
-@shadow-protectrix: No pressure! Just something I felt like you could be interested in!
+[claire]@shadow-protectrix: No pressure! Just something I felt like you could be interested in![/claire]
 
 *fake_choice
     #Of course I'd like to join!
@@ -564,16 +590,20 @@ You also see that Claire has followed you. They're probably by far your most pop
         *set claire_blue %+ 5
         @you: Of course I'd like to join!
         
-        @shadow-protectrix: Great! [Here's the link!]
+        
+        [claire]@shadow-protectrix: Great! [Here's the link!][/claire]
     #Nah, I'd rather not.
         *set claire_green %+ 5
         @you: Sorry, I'd rather not...
         
-        @shadow-protectrix: Well, that's okay. If you ever want to, just message me here!
+        
+        [claire]@shadow-protectrix: Well, that's okay. If you ever want to, just message me here![/claire]
     #Can I decide later?
         @you: Sorry, can I decide later?
         
-        @shadow-protectrix: Sure! Just let me know here if you ever want to join.
+        
+        [claire]@shadow-protectrix: Sure! Just let me know here if you ever want to join.[/claire]
+        
         
 Do you want to talk more to Claire about anything?
 
@@ -582,7 +612,8 @@ Do you want to talk more to Claire about anything?
         *set claire_blue %+ 3
         @you: I really enjoy your stories...
         
-        @shadow-protectrix: Thank you!!!
+        
+        [claire]@shadow-protectrix: Thank you!!![/claire]
 
         *label claire_nebulaverse
         *choice
@@ -590,57 +621,58 @@ Do you want to talk more to Claire about anything?
                 *set claire_blue %+ 3
                 @you: um, can I ask you something about the nebulaverse?
 
-                @shadow-protectrix: Sure, go ahead!
+                [claire]@shadow-protectrix: Sure, go ahead![/claire]
 
                 You wrack your brain for a topic...
                 *fake_choice
                     #Do you think Brunova will be canon?
                         @you: um, do you think Brunova will be canon?
 
-                        @shadow-protectrix: haha
+                        [claire]@shadow-protectrix: haha[/claire]
 
-                        @shadow-protectrix: I really doubt it! But isn't the whole point of writing fanfiction to get around what's canon?
+                        [claire]@shadow-protectrix: I really doubt it! But isn't the whole point of writing fanfiction to get around what's canon?[/claire]
 
-                        @shadow-protectrix: It would be really boring if we had to rely on what the author says rather than creating our own interpretations!
+                        [claire]@shadow-protectrix: It would be really boring if we had to rely on what the author says rather than creating our own interpretations![/claire]
 
                         @you: yeah...
 
                     #What do you think about Astranova or Ellanova?
                         @you: um, what do you think about astranova or ellanova?
 
-                        @shadow-protectrix: haha
+                        [claire]@shadow-protectrix: haha[/claire]
 
-                        @shadow-protectrix: It's pretty obvious Ellanova is gonna be canon.
+                        [claire]@shadow-protectrix: It's pretty obvious Ellanova is gonna be canon.[/claire]
 
-                        @shadow-protectrix: But that doesn't matter for fanworks, does it? I enjoy both a lot!
+                        [claire]@shadow-protectrix: But that doesn't matter for fanworks, does it? I enjoy both a lot![/claire]
                     #What do you think about Astrapella?
                         @you: um, what do you think about astrapella?
 
-                        @shadow-protectrix: haha
+                        [claire]@shadow-protectrix: haha[/claire]
 
-                        @shadow-protectrix: It's great! It's my favorite femslash ship!
+                        [claire]@shadow-protectrix: It's great! It's my favorite femslash ship![/claire]
 
-                        @shadow-protectrix: I haven't written for it because I don't have any ideas, but I do enjoy it!
+                        [claire]@shadow-protectrix: I haven't written for it because I don't have any ideas, but I do enjoy it![/claire]
                     #What do you think will happen in Book 5 Part 2?
                         @you: um, what do you think will happen in Book 5 Part 2?
 
-                        @shadow-protectrix: lol
+                        [claire]@shadow-protectrix: lol[/claire]
 
-                        @shadow-protectrix: Well, of course I don't have any real idea. But if I had to guess, I'd guess that there will definitely be more Chronicles coming up later. There's no way that all the plot threads will be wrapped up.
+                        [claire]@shadow-protectrix: Well, of course I don't have any real idea. But if I had to guess, I'd guess that there will definitely be more Chronicles coming up later. There's no way that all the plot threads will be wrapped up.[/claire]
 
-                        @shadow-protectrix: Maybe that's unsatisfying but that's what I think will happen.
+                        [claire]@shadow-protectrix: Maybe that's unsatisfying but that's what I think will happen.[/claire]
                     #What do you think happened in Book 4 Part 4?
                         @you: um, what do you think happened in Book 4 Part 4?
 
-                        @shadow-protectrix: lol
+                        [claire]@shadow-protectrix: lol[/claire]
 
-                        @shadow-protectrix: Well, obviously it was all in the gang's heads.
+                        [claire]@shadow-protectrix: Well, obviously it was all in the gang's heads.[/claire]
 
-                        @shadow-protectrix: It's basically giving us the raw feeds to their brains, all the images and thoughts, all represented totally literally.
+                        [claire]@shadow-protectrix: It's basically giving us the raw feeds to their brains, all the images and thoughts, all represented totally literally.[/claire]
 
-                        @shadow-protectrix: It's kind of weird but I liked it!
+                        [claire]@shadow-protectrix: It's kind of weird but I liked it![/claire]
 
                         @you: yeah...
+                 
                  
 
                 Claire seems to have gone offline.
@@ -653,9 +685,9 @@ Do you want to talk more to Claire about anything?
 
         @you: So, um, how do you think of what to write?
 
-        @shadow-protectrix: It's hard sometimes! I guess I just read a lot? And get inspirations from reading other books and stories!
+        [claire]@shadow-protectrix: It's hard sometimes! I guess I just read a lot? And get inspirations from reading other books and stories![/claire]
 
-        @shadow-protectrix: Not just Nebulaverse stuff, actual novels too...
+        [claire]@shadow-protectrix: Not just Nebulaverse stuff, actual novels too...[/claire]
         *goto claire_nebulaverse
     #No, let the conversation end.
         Sometimes, when you don't have anything to say, you don't have anything to say.

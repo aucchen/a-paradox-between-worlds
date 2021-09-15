@@ -226,7 +226,7 @@ ${luna_1_2_notes} notes
 *set brun_prog 1
 [b]${lux_bio}[/b]
 
-[b]@brunova-official posted at 7:00 PM[/b]
+[b][lux]@brunova-official[/lux] posted at 7:00 PM[/b]
 
 My abuela is finally scheduled for the surgery. It's supposed to be in a few weeks. I don't even know what to say. I hope she stays. We have tens of thousands of dollars of loans we can't possibly repay. It's like an unending maw into which we throw our resources, our dreams, our futures...
 
@@ -253,7 +253,7 @@ ${brun_1_1_notes} notes
 
 *label brun_1_2
 *set brun_prog 2
-[b]@brunova-official reblogged from @fyeahnebulaverse at 6:22 PM. OP: @fyeahnebulaverse[/b]
+[b][lux]@brunova-official[/lux] reblogged from @fyeahnebulaverse at 6:22 PM. OP: @fyeahnebulaverse[/b]
 
 So here's the tally of where things are:
 
@@ -296,7 +296,7 @@ ${brun_1_2_notes} notes
 *label brun_1_3
 *set brun_prog 3
 *set lux_ch5_seen 1
-[b]@brunova-official posted at 6:17 PM[/b]
+[b][lux]@brunova-official[/lux] posted at 6:17 PM[/b]
 
 I can't believe I'm actually 18 now. I'm graduating high school in a few months. God, I feel old.
 
@@ -324,7 +324,7 @@ ${brun_1_3_notes} notes
 *set shad_prog 1
 [b]${claire_bio}[/b]
 
-[b]@shadow-protectrix posted at 9:11 PM.[/b]
+[b][claire]@shadow-protectrix[/claire] posted at 9:11 PM.[/b]
 
 Hey y'all. I haven't been posting since NebulaCon was canceled, and you deserve to know why. It's a long story, so [i]bear[/i] with me.
 
@@ -383,7 +383,7 @@ ${shad_1_1_notes} notes
 *label shad_1_2
 *set shad_prog 2
 *set claire_ch5_seen 1
-[b]@shadow-protectrix posted at 8:00 PM[/b]
+[b][claire]@shadow-protectrix[/claire] posted at 8:00 PM[/b]
 
 Since the nebulaverse fandom is kinda messed up now, I've gotten into this Korean band called the Bangtan Boys. They're really good!
 
@@ -409,7 +409,7 @@ ${shad_1_2_notes} notes
 *set nebu_prog 1
 [b]${sofia_bio}[/b]
 
-[b]@nebulascribbler posted at 5:00 PM[/b]
+[b][sofia]@nebulascribbler[/sofia] posted at 5:00 PM[/b]
 
 As of today I am officially a mom! My wife just gave birth to our baby.
 
@@ -436,7 +436,7 @@ Tags: #sofia speaks
 *label nebu_1_2
 *set nebu_prog 2
 *set sofia_ch5_seen 1
-[b]@nebulascribbler reblogged from @auguroflight6 one day ago. OP: @writteninthestars[/b]
+[b][sofia]@nebulascribbler[/sofia] reblogged from @auguroflight6 one day ago. OP: @writteninthestars[/b]
 
 Every story affects us a different way. Some stories are like salves for the soul, the kind of story I still read at night to go to bed feeling better. Others are like pinpricks to the heart, stories that hurt, stories that make me feel *something*, even if that something isn't exactly good. Nothing makes one kind of story inherently better than another. Maybe we need both kinds of stories to function.
 
@@ -465,7 +465,7 @@ ${nebu_1_2_notes} notes
 *set trap_prog 1
 [b]${karla_bio}[/b]
 
-[b]@trappedinspace posted at 9:05 PM[/b]
+[b][karla]@trappedinspace[/karla] posted at 9:05 PM[/b]
 
 [another essay in tags]
 
@@ -490,7 +490,7 @@ ${trap_1_1_notes} Notes
 *label trap_1_2
 *set trap_prog 2
 *set karla_ch5_seen 1
-[b]@trappedinspace posted at 4:49 PM[/b]
+[b][karla]@trappedinspace[/karla] posted at 4:49 PM[/b]
 
 [essay in tags]
 
@@ -521,23 +521,23 @@ ${trap_1_2_notes} Notes
 
 There have been a lot of messages since you were last here.
 
-@trappedinspace: So uh I'm out of jail what did I miss
+[karla]@trappedinspace: So uh I'm out of jail what did I miss[/karla]
 
-@trappedinspace: A lot I guess huh
+[karla]@trappedinspace: A lot I guess huh[/karla]
 
-@trappedinspace: Luna I am so sorry about what happened I really really wish I could've been there to help
+[karla]@trappedinspace: Luna I am so sorry about what happened I really really wish I could've been there to help[/karla]
 
 @redmoongirl: lol it's fine!!!! you were in literally in jail???
 
-@trappedinspace: Yeah.
+[karla]@trappedinspace: Yeah.[/karla]
 
-@trappedinspace: also hi Luna. Congrats on the new url. It's great.
+[karla]@trappedinspace: also hi Luna. Congrats on the new url. It's great.[/karla]
 
 @redmoongirl: Wow. Thank you!!!
 
 @redmoongirl: also say hi to lux @brunova-official and hari @noncanonical!
 
-@brunova-official: nice to meet you guys
+[lux]@brunova-official: nice to meet you guys[/lux]
 
 @noncanonical: Yeah, thanks Luna for inviting us to this chat!
 
@@ -548,25 +548,25 @@ There have been a lot of messages since you were last here.
         *set annc_chat_ref "annc_chat_1"
         @redmoongirl: can i ask you something karla?
 
-        @trappedinspace: sure, I guess?
+        [karla]@trappedinspace: sure, I guess?[/karla]
 
         @redmoongirl: how do you do it? how do you manage to get up everyday and just... do what it takes to keep on living?
 
-        @trappedinspace: honestly I don't know myself sometimes. It's hard.
+        [karla]@trappedinspace: honestly I don't know myself sometimes. It's hard.[/karla]
 
-        @trappedinspace: a lot of times I feel like there's no hope for trans women.
+        [karla]@trappedinspace: a lot of times I feel like there's no hope for trans women.[/karla]
 
         @redmoongirl: do you think it'll ever get better?
 
-        @trappedinspace: honestly idk
+        [karla]@trappedinspace: honestly idk[/karla]
 
-        @trappedinspace: last month I would have said something different. Maybe even last week.
+        [karla]@trappedinspace: last month I would have said something different. Maybe even last week.[/karla]
 
-        @trappedinspace: but now I just feel like... I'm going backwards. I'm sliding back to what I was like before. I thought I got better in the past year but it turns out I really haven't.
+        [karla]@trappedinspace: but now I just feel like... I'm going backwards. I'm sliding back to what I was like before. I thought I got better in the past year but it turns out I really haven't.[/karla]
 
-        @trappedinspace: Maybe it'll never get better. Maybe it's just going to be like this forever. 
+        [karla]@trappedinspace: Maybe it'll never get better. Maybe it's just going to be like this forever.[/karla] 
 
-        @trappedinspace: they say it's two steps forward, one step back, but how do you know that it's not one step forward, two steps back?
+        [karla]@trappedinspace: they say it's two steps forward, one step back, but how do you know that it's not one step forward, two steps back?[/karla]
         *choice
             #See the newer messages.
                 *label annc_chat_2
@@ -596,15 +596,15 @@ There have been a lot of messages since you were last here.
 
                         @redmoongirl: Thank you 💙️
 
-                        @trappedinspace: You know what? 💜
+                        [karla]@trappedinspace: You know what? 💜[/karla]
                         *goto sending_hearts
                     *if (not(has_hearts)) #Say something nice to Karla.
                         *set has_hearts true
                         @you: umm... sorry about what happened, karla. good luck with everything...
 
-                        @trappedinspace: Thanks...
+                        [karla]@trappedinspace: Thanks...[/karla]
 
-                        @trappedinspace: Don't worry, I'll be fine.
+                        [karla]@trappedinspace: Don't worry, I'll be fine.[/karla]
 
                         @redmoongirl: 💙️💙️💙️💙️💙️💙️
                         *label sending_hearts
@@ -612,9 +612,9 @@ There have been a lot of messages since you were last here.
 
                         @redmoongirl: let's just keep on sending hearts to each other.
 
-                        @trappedinspace: 💜💜💜
+                        [karla]@trappedinspace: 💜💜💜[/karla]
 
-                        @brunova-official: <3
+                        [lux]@brunova-official: <3[/lux]
 
                         @noncanonical: ❤️🧡︄💛︄💚︄💙︄💜︄
 
@@ -625,19 +625,19 @@ There have been a lot of messages since you were last here.
                         *set annc_chat_ref "lux_birthday"
                         @you: um... happy birthday lux.
 
-                        @brunova-official: thanks i guess?
+                        [lux]@brunova-official: thanks i guess?[/lux]
 
-                        @lunan0va: omg happy bday! how does it feel being an adult?
+                        [luna]@lunan0va: omg happy bday! how does it feel being an adult?[/luna]
 
-                        @brunova-official: lol it feels exactly the same
+                        [lux]@brunova-official: lol it feels exactly the same[/lux]
 
-                        @brunova-official: i don't know what i'm doing. we don't have enough money. same shit as usual.
+                        [lux]@brunova-official: i don't know what i'm doing. we don't have enough money. same shit as usual.[/lux]
 
-                        @brunova-official: sometimes it feels like we don't even have a future.
+                        [lux]@brunova-official: sometimes it feels like we don't even have a future.[/lux]
 
-                        @lunan0va: 💙️
+                        [luna]@lunan0va: 💙️[/luna]
 
-                        @brunova-official: thanks...
+                        [lux]@brunova-official: thanks...[/lux]
                         *goto annc_convo_options
                     *disable_reuse #Ask about what they think of Claire.
                         *label annc_claire
@@ -646,46 +646,46 @@ There have been a lot of messages since you were last here.
 
                         @brunova-offical: yeah... good for them i guess????
 
-                        @brunova-official: we were kinda... friends i guess? maybe? idk...
+                        [lux]@brunova-official: we were kinda... friends i guess? maybe? idk...[/lux]
 
-                        @trappedinspace: Turns out I'm blocked lmao
+                        [karla]@trappedinspace: Turns out I'm blocked lmao[/karla]
 
                         @redmoongirl: they haven't blocked my new account...
 
                         @redmoongirl: wow i have no idea what to say :/
 
-                        @trappedinspace: Okay I just read it. And wow this story arc feels totally unearned. What did they do to deserve a catharsis?
+                        [karla]@trappedinspace: Okay I just read it. And wow this story arc feels totally unearned. What did they do to deserve a catharsis?[/karla]
 
                         @noncanonical: I don't think anyone really "deserves" anything. People don't have story arcs in real life.
 
                         @noncanonical: And besides, you don't really know them. Seeing someone through the interwebs isn't at all like seeing them in real life.
 
-                        @trappedinspace: I don't know...
+                        [karla]@trappedinspace: I don't know...[/karla]
 
                         @capellasgf: i read the post (claire's blocked me too lol) and i really wish it's possible to, like, move on. for all of us.
 
-                        @trappedinspace: Don't you know the internet never forgives and never forgets?
+                        [karla]@trappedinspace: Don't you know the internet never forgives and never forgets?[/karla]
 
-                        @trappedinspace: But yeah, maybe it'd be nice if we al just moved on...
+                        [karla]@trappedinspace: But yeah, maybe it'd be nice if we al just moved on...[/karla]
                         *goto annc_convo_options
                     *disable_reuse #Ask about the nebulaverse.
                         @you: so, um, is anyone still into the nebulaverse?
 
                         @redmoongirl: jak;dfsjlk;dsajdfl;sa
 
-                        @brunova-official: akl;sjdl;sadj;lkdfajdk;lsjkl;df
+                        [lux]@brunova-official: akl;sjdl;sadj;lkdfajdk;lsjkl;df[/lux]
 
                         @capellasgf: kjds;lkjaepojfalkjfal;jfdslk;jfd
 
-                        @trappedinspace: Actual answer: unfortunately yes. Despite everything it still gives me positive emotions when I see a picture of Capella.
+                        [karla]@trappedinspace: Actual answer: unfortunately yes. Despite everything it still gives me positive emotions when I see a picture of Capella.[/karla]
 
                         @redmoongirl: same here :/
 
-                        @brunova-official: same but for bruno :/
+                        [lux]@brunova-official: same but for bruno :/[/lux]
 
-                        @trappedinspace: I think the nebulaverse has like, buried itself within us in an inextricable place.
+                        [karla]@trappedinspace: I think the nebulaverse has like, buried itself within us in an inextricable place.[/karla]
 
-                        @trappedinspace: What about you, $!{handle}?
+                        [karla]@trappedinspace: What about you, $!{handle}?[/karla]
 
                         *fake_choice
                             #I'm still into the nebulaverse.
@@ -705,7 +705,7 @@ There have been a lot of messages since you were last here.
 
                         @noncanonical: Maybe there are infinite Nebulaverses, one for each of us. There's a Shadow Nebula inside each of our hearts, and we never have to let that part of ourselves go, even if our relationship to the "canonical" Nebulaverse changes.
 
-                        @trappedinspace: I still think it's a good idea to move on. Every bit of fandom activity we engage in just gives gtm more exposure and more social capital. There is literally nothing we can do as fans to fight against her transphobia except stop engaging.
+                        [karla]@trappedinspace: I still think it's a good idea to move on. Every bit of fandom activity we engage in just gives gtm more exposure and more social capital. There is literally nothing we can do as fans to fight against her transphobia except stop engaging.[/karla]
 
                         @noncanonical: Maybe you're right. But I don't think this is a fight we can win. All we can do is follow our conscience. I'm still not going to engage with the Nebulaverse, btw.
                         *goto annc_convo_options
@@ -724,13 +724,13 @@ There have been a lot of messages since you were last here.
 
 @you: how are you doing?
 
-@shadow-protectrix: Thank you for asking! I'm doing poorly, in fact! Very poorly!
+[claire]@shadow-protectrix: Thank you for asking! I'm doing poorly, in fact! Very poorly![/claire]
 
-@shadow-protectrix: I don't really want to go into more detail than was posted on my blog though.
+[claire]@shadow-protectrix: I don't really want to go into more detail than was posted on my blog though.[/claire]
 
-@shadow-protectrix: If there's one thing the callouts weren't exactly wrong about, it's that I shouldn't be so personal around minors.
+[claire]@shadow-protectrix: If there's one thing the callouts weren't exactly wrong about, it's that I shouldn't be so personal around minors.[/claire]
 
-@shadow-protectrix: Anyway, what's up?
+[claire]@shadow-protectrix: Anyway, what's up?[/claire]
 
 *label claire_questions
 *choice
@@ -743,59 +743,61 @@ There have been a lot of messages since you were last here.
 
         @you: [screenshots of the chats with sofia]
 
-        @shadow-protectrix: TIL Sofia was a fucked up mess of a human being.
+        [claire]@shadow-protectrix: TIL Sofia was a fucked up mess of a human being.[/claire]
 
-        @shadow-protectrix: I had my suspicions but I didn't know it extended this far...
+        [claire]@shadow-protectrix: I had my suspicions but I didn't know it extended this far...[/claire]
 
-        @shadow-protectrix: Thank you for letting me know. This isn't exactly actionable information right now but I'm glad to know of it.
+        [claire]@shadow-protectrix: Thank you for letting me know. This isn't exactly actionable information right now but I'm glad to know of it.[/claire]
 
-        @shadow-protectrix: I am surprised that she would just out and say that to someone random.
+        [claire]@shadow-protectrix: I am surprised that she would just out and say that to someone random.[/claire]
 
-        @shadow-protectrix: (no offense)
+        [claire]@shadow-protectrix: (no offense)[/claire]
 
         *if claire_trust > 0
-            @shadow-protectrix: Thank you for sticking by my side through all this.
+            [claire]@shadow-protectrix: Thank you for sticking by my side through all this.[/claire]
         *goto claire_questions
     *disable_reuse #Ask about the nebulaverse.
         *label claire_nebulaverse
         *set claire_message_ref "claire_nebulaverse"
         @you: um, what do you think of the nebulaverse right now?
 
-        @shadow-protectrix: What do I *think* of it? That's a complicated and difficult question! It's not one that I can easily answer right now.
+        [claire]@shadow-protectrix: What do I *think* of it? That's a complicated and difficult question! It's not one that I can easily answer right now.[/claire]
 
-        @shadow-protectrix: I can't exactly show my face in the fandom right now, given what happened with NebulaCon.
+        [claire]@shadow-protectrix: I can't exactly show my face in the fandom right now, given what happened with NebulaCon.[/claire]
 
-        @shadow-protectrix: Besides that extremely large caveat... I'm still writing, even if I'm not posting my stories on the archive. Who knows. 
+        [claire]@shadow-protectrix: Besides that extremely large caveat... I'm still writing, even if I'm not posting my stories on the archive. Who knows.[/claire] 
         
-        @shadow-protectrix: I think I'll write my own stories, outside of the confines of the nebulaverse. That would be nice, wouldn't it?
+        
+        [claire]@shadow-protectrix: I think I'll write my own stories, outside of the confines of the nebulaverse. That would be nice, wouldn't it?[/claire]
 
-        @shadow-protectrix: What about you, $!{handle}? How are you feeling about the fandom these days?
+        [claire]@shadow-protectrix: What about you, $!{handle}? How are you feeling about the fandom these days?[/claire]
         *fake_choice
             #I'm still into the nebulaverse.
                 @you: i'm still into the nebulaverse i guess...
 
-                @shadow-protectrix: Yeah? I suppose I am too! I will NEVER stop shipping Brunova.
+                [claire]@shadow-protectrix: Yeah? I suppose I am too! I will NEVER stop shipping Brunova.[/claire]
                 
-                @shadow-protectrix: But...
+                
+                [claire]@shadow-protectrix: But...[/claire]
             #I'm trying to escape.
                 @you: i'm trying to escape.
 
-                @shadow-protectrix: Yeah! Me too!
+                [claire]@shadow-protectrix: Yeah! Me too![/claire]
             #I hate the nebulaverse now.
                 @you: i hate the nebulaverse now.
 
-                @shadow-protectrix: Well, I think that's unfortunate, but I certainly won't blame you.
+                [claire]@shadow-protectrix: Well, I think that's unfortunate, but I certainly won't blame you.[/claire]
 
-        @shadow-protectrix: These days I'm having more fun working on my own stories. Turns out that creating your own worlds is so much more fun than living in the worlds created by others, don't you think? ;)
+        [claire]@shadow-protectrix: These days I'm having more fun working on my own stories. Turns out that creating your own worlds is so much more fun than living in the worlds created by others, don't you think? ;)[/claire]
         *goto claire_questions
     *disable_reuse #Say something nice and sympathetic.
         *label claire_sympathy
         *set claire_message_ref "claire_sympathy"
         @you: um, i'm really sorry about what happened...
 
-        @shadow-protectrix: Don't worry about it. I'm fine.
+        [claire]@shadow-protectrix: Don't worry about it. I'm fine.[/claire]
 
-        @shadow-protectrix: Thank you for your sympathy, though.
+        [claire]@shadow-protectrix: Thank you for your sympathy, though.[/claire]
         *goto claire_questions
     *comment TODO: ask about stuff?
     #There's nothing to say.
@@ -924,15 +926,15 @@ There have been a lot of messages since you were last here.
 
 @you: sorry if this is totally random but how's the investigation of stella/sofia?
 
-@trappedinspace: wow. I totally forgot. For what I hope are fairly obvious reasons lol.
+[karla]@trappedinspace: wow. I totally forgot. For what I hope are fairly obvious reasons lol.[/karla]
 
-@trappedinspace: But, this is kind of interesting.
+[karla]@trappedinspace: But, this is kind of interesting.[/karla]
 
-@trappedinspace: It looks like Stella deleted their account. And looking at the archives, they were clearly involved in another attempt to call out Claire, which has apparently died out as all the participants just suddenly deactivated.
+[karla]@trappedinspace: It looks like Stella deleted their account. And looking at the archives, they were clearly involved in another attempt to call out Claire, which has apparently died out as all the participants just suddenly deactivated.[/karla]
 
-@trappedinspace: Obviously this is suspicious but like, there's really no point anymore.
+[karla]@trappedinspace: Obviously this is suspicious but like, there's really no point anymore.[/karla]
 
-@trappedinspace: Did you find out anything new?
+[karla]@trappedinspace: Did you find out anything new?[/karla]
 
 *choice
     *if (sofia_secret) #Yes, I know Sofia's secret.
@@ -947,15 +949,15 @@ There have been a lot of messages since you were last here.
 
         @you: [screenshots of the chat]
 
-        @trappedinspace: Oh wow. This is incredible. She just... confessed to it.
+        [karla]@trappedinspace: Oh wow. This is incredible. She just... confessed to it.[/karla]
 
-        @trappedinspace: Also what the fuck is wrong with Sofia.
+        [karla]@trappedinspace: Also what the fuck is wrong with Sofia.[/karla]
 
-        @trappedinspace: Now I see that she's apparently taking a leave of absence from this website. How convenient.
+        [karla]@trappedinspace: Now I see that she's apparently taking a leave of absence from this website. How convenient.[/karla]
 
-        @trappedinspace: Maybe we should make a callout post lmao.
+        [karla]@trappedinspace: Maybe we should make a callout post lmao.[/karla]
 
-        @trappedinspace: Even if Sofia is already gone. It could be like, a historical artifact.
+        [karla]@trappedinspace: Even if Sofia is already gone. It could be like, a historical artifact.[/karla]
 
         *choice
             #Send the callout.
@@ -964,28 +966,29 @@ There have been a lot of messages since you were last here.
                 *set karla_message_ref "karla_chat_callout"
                 @you: yeah, let's make a callout.
 
-                @trappedinspace: Good idea. I'll write something up.
+                [karla]@trappedinspace: Good idea. I'll write something up.[/karla]
 
-                @trappedinspace: I wonder if this chat screenshot alone is enough evidence... but tbh I don't see how we can get more.
+                [karla]@trappedinspace: I wonder if this chat screenshot alone is enough evidence... but tbh I don't see how we can get more.[/karla]
 
-                @trappedinspace: I don't remember anything in "Stella's" blog tying them back to Sofia, so it'll be hard...
+                [karla]@trappedinspace: I don't remember anything in "Stella's" blog tying them back to Sofia, so it'll be hard...[/karla]
 
-                @trappedinspace: Anyway I'll see what I can dig up.
+                [karla]@trappedinspace: Anyway I'll see what I can dig up.[/karla]
 
-                @trappedinspace: bye for now 💜
+                [karla]@trappedinspace: bye for now 💜[/karla]
                 *goto montage_1
             #Don't send the callout.
                 *label karla_chat_no_callout
                 *set karla_message_ref "karla_chat_no_callout"
                 @you: um... i don't really want to make a callout.
 
-                @trappedinspace: yeah I get it. I'll keep this info to myself.
+                [karla]@trappedinspace: yeah I get it. I'll keep this info to myself.[/karla]
 
-                @trappedinspace: If you ever change your mind or want to go public with this, just let me know.
+                [karla]@trappedinspace: If you ever change your mind or want to go public with this, just let me know.[/karla]
                 
-                @trappedinspace: This is history now so maybe it'll be a good idea to preserve it lol.
+                
+                [karla]@trappedinspace: This is history now so maybe it'll be a good idea to preserve it lol.[/karla]
 
-                @trappedinspace: bye for now 💜
+                [karla]@trappedinspace: bye for now 💜[/karla]
                 *goto montage_1
     #No, I haven't found anything.
         *if (sofia_secret)
@@ -995,13 +998,13 @@ There have been a lot of messages since you were last here.
 
         @you: sorry, i haven't found anything new.
 
-        @trappedinspace: me neither obviously.
+        [karla]@trappedinspace: me neither obviously.[/karla]
 
-        @trappedinspace: i guess the "investigation" is dead?
+        [karla]@trappedinspace: i guess the "investigation" is dead?[/karla]
 
         @you: yeah...
 
-        @trappedinspace: welp...
+        [karla]@trappedinspace: welp...[/karla]
         *goto montage_1
 
 *label montage1_end
@@ -1013,6 +1016,7 @@ You close your browser. It's getting late. You have school tomorrow.
 *label fanfiction
 
 *gosub_scene fic_light
+        
         
 *label ending
 *achieve ending

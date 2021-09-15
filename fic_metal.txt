@@ -207,6 +207,7 @@ Are you going to continue this fic, or abandon it?
             #Yes. Fuck this.
                 Alright. The fic is over. You're done writing.
                 
+                
                 This world, these worlds and characters, are no more, at least for now.
                 *goto fic_end
             #I don't know, but I want to take a break.

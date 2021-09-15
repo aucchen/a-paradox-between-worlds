@@ -167,7 +167,9 @@ Astra and Tycho stare at you.
     *disable_reuse #"Why are the Archons attacking us?"
         "They say the Archons used to be human." Astra begins. "Then they made a bargain with the Demiurge for power and magic, and that left them transformed. Their magic ate into their souls, corrupted them into thoughtless husks, beings of pure destruction. And that's why our world became... like this." She gestures around. "They've already destroyed the rest of the world. We've been fleeing them ever since."
         
+        
         "That's just one story," says Capella. "It doesn't make sense. The Archons are clearly still intelligent to use magic and direct advanced tactics and so there must be some greater plan."
+        
         
         Tycho shrugs. "Either way, they're trying to kill us and we're trying to live. Simple as that."
         *goto help_choice
@@ -228,6 +230,7 @@ Magic lies within the realm of meditation and logic, hardly suitable for a chaot
 *if spell = "wind"
     "Okay, I'll need your help for this," says Capella. "It's going to be a cooperative spell. I hope you've gotten better at Wind."
     
+    
     "Um, I hope so..."
 *if spell = "blast"
     "I'll help you with the energy blast," says Capella. "It'll be a cooperative spell. I've gotten better at Light since we last spoke."
@@ -235,6 +238,7 @@ Magic lies within the realm of meditation and logic, hardly suitable for a chaot
     "The drones sensors are easily confused by varying patterns of light," says Astra. "I'll show you the patterns, and you'll help project them with magic in order to confuse them."
 
 *page_break You close your eyes.
+    
     
 You close your eyes to meditate. It's hard, when the bullets are flying past, but you manage anyhow, protected by your companions' mental projections. In your mind you construct sentences in the magical language, describing the effect that you need to unleash upon the targets.
 
@@ -244,6 +248,7 @@ You close your eyes to meditate. It's hard, when the bullets are flying past, bu
     Light is your persona, the most natural element for you to wield. All it takes is a few simple phrases. You open your eyes. The explosions are bright. None of the drones are left.
 *if spell = "dazzle"
     With a metal spell, Astra transfers the details of the drones' sensors to your mind, and the patterns that would confuse them. With your Light, all it takes is a few simple phrases.
+    
     
     You open your eyes. The drones are shooting at each other. Soon none are left flying. 
 
@@ -273,12 +278,14 @@ Along with the other mages, you run to the wall overlooking the attackers. The h
 
         But you don't have the time to think about Bruno. With a powerful spell like this, you need all of your abilities of concentration. The four of you are all working on the spell, channeling different components of the magical sentence.
         
+        
         You feel a cold breeze, and soon hear the howling of wind and crunching of ice as they impact the enemy drones. It can't have taken more than a few minutes until only stragglers are left, quickly dispatched by blasts of wind.
     #Wind + Light: firestorm
         *set ch3_wins +1
         "This is going to be interesting," says Capella. She takes your hand.
 
         With a powerful spell like this, you need all of your abilities of concentration. The four of you are all working on the spell, channeling different components of the magical sentence.
+    
     
 *page_break Nothing is left moving.
 

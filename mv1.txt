@@ -147,17 +147,17 @@ No matter. She existed, right then and there.
 
 [b]Online[/b]
 
-@lunan0va: so
+[luna]@lunan0va: so[/luna]
 
-@lunan0va: um...
+[luna]@lunan0va: um...[/luna]
 
-@lunan0va: what did you think abt my story
+[luna]@lunan0va: what did you think abt my story[/luna]
 
-@lunan0va: it was kinda rushed tbh i wrote it right before falling asleep
+[luna]@lunan0va: it was kinda rushed tbh i wrote it right before falling asleep[/luna]
 
-@lunan0va: it's not finished obviously... i put notes where the additional content would be
+[luna]@lunan0va: it's not finished obviously... i put notes where the additional content would be[/luna]
 
-@lunan0va: but that should be the easy part right
+[luna]@lunan0va: but that should be the easy part right[/luna]
 
 Luna @lunan0va has been your first and probably best friend in the Nebulaverse
 fandom. She's 16 years old, like you, and lives in the same time zone, or close enough anyway. Recently she has been working on her fanfic, "Another Light".
@@ -165,49 +165,50 @@ fandom. She's 16 years old, like you, and lives in the same time zone, or close 
 *choice
   #(honest) It was good!
     *set luna_blue + 5
-    @lunan0va: oh, really? thanks!
+    [luna]@lunan0va: oh, really? thanks![/luna]
 
-    @lunan0va: im glad you enjoyed it ^_^
+    [luna]@lunan0va: im glad you enjoyed it ^_^[/luna]
 
-    @lunan0va: that emoji isn't cringe anymore right
+    [luna]@lunan0va: that emoji isn't cringe anymore right[/luna]
   #(lying) It was good!
     *set luna_blue + 5
-    @lunan0va: oh, really? thanks!
+    [luna]@lunan0va: oh, really? thanks![/luna]
 
-    @lunan0va: im glad you enjoyed it ^_^
+    [luna]@lunan0va: im glad you enjoyed it ^_^[/luna]
 
-    @lunan0va: that emoji isn't cringe anymore right
+    [luna]@lunan0va: that emoji isn't cringe anymore right[/luna]
   #It was okay (insert shrug emoji here).
     *set luna_green + 5
-    @lunan0va: oh :/
+    [luna]@lunan0va: oh :/[/luna]
 
-    @lunan0va: i really wish i could make people feel things i guess
+    [luna]@lunan0va: i really wish i could make people feel things i guess[/luna]
 
-    @lunan0va: a meh is like the worst thing for me lol
+    [luna]@lunan0va: a meh is like the worst thing for me lol[/luna]
 
-    @lunan0va: sorry
+    [luna]@lunan0va: sorry[/luna]
 
-    @lunan0va: but thats okay
+    [luna]@lunan0va: but thats okay[/luna]
     
-    @lunan0va: i need to get better at the whole writing thing lol
+    
+    [luna]@lunan0va: i need to get better at the whole writing thing lol[/luna]
   #(honest) It needed improvement.
     *set luna_blue + 5
-    @lunan0va: thanks for the honesty :)
+    [luna]@lunan0va: thanks for the honesty :)[/luna]
 
-    @lunan0va: ya i rly do need to improve things
+    [luna]@lunan0va: ya i rly do need to improve things[/luna]
   #(lying) It was bad.
     *set luna_green + 10
-    @lunan0va: oh :/
+    [luna]@lunan0va: oh :/[/luna]
 
-    @lunan0va: so theres nothing i can do to improve it?
+    [luna]@lunan0va: so theres nothing i can do to improve it?[/luna]
 
-@lunan0va: anyway
+[luna]@lunan0va: anyway[/luna]
 
-@lunan0va: i have to go
+[luna]@lunan0va: i have to go[/luna]
 
-@lunan0va: homework and such
+[luna]@lunan0va: homework and such[/luna]
 
-@lunan0va: see you later...
+[luna]@lunan0va: see you later...[/luna]
 
 *label handle_choice
 
@@ -345,7 +346,7 @@ Wait... by what name does she call you?
             *input_text handle
 
 
-@lunan0va: see you later ${handle}
+[luna]@lunan0va: see you later ${handle}[/luna]
 
 The dot next to her icon is still green, but she is no longer typing. You are alone once more, the Nebulaverse still bouncing in your mind as always.
 
@@ -569,6 +570,7 @@ What is your blog's URL? This is basically your username on this website.
 *if (username = "lesbian--astra")
     *set stella_blue %+ 5
     
+    
 What are the pronouns that you use online?
 
 *fake_choice
@@ -618,6 +620,7 @@ What are the pronouns that you use online?
     *set eirs handle&"'s"
     *set emself handle
     *set plural false
+    
     
 Cool!
 
@@ -889,6 +892,7 @@ And what is your role? If you don't know, you can take a quiz at https://uquiz.c
         *set role "augur"
         The Augur is always a popular role among the nerds who comprise the Nebulaverse fandom. Augurs are supposed to be the scientists and theorycrafters, the people who come up with ways of making sense of their element. Their role is only to interpret the world, not to change it.
         
+        
         *if (persona = "metal")
             As an Augur of Metal, you are essentially the "nerd of nerds". The Augur of Metal is often stereotyped as a mad scientist, a creature of pure intellect completely detached from physical reality, whose only rule is their own sense of rationality. You might be brilliant, or you might be something of a kook, or both.
         *elseif (persona = "light")
@@ -1100,7 +1104,7 @@ Which blogs would you like to read?
 
 Luna is one of your oldest mutuals on this site, and your closest companion here.
 
-[b]@lunan0va posted at 9:38 PM[/b]
+[b][luna]@lunan0va[/luna] posted at 9:38 PM[/b]
 
 How am I supposed to have time to write while taking 4 ap classes? I really wish we could put fanfic experience on our college apps. But I guess I need to do well in, like, actual school if I want to get out of here for college.
 
@@ -1141,7 +1145,7 @@ ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 
 *label luna_1_2
 *set luna_prog 2
-[b]@lunan0va reblogged from @noncanonical at 9:21 PM. OP: @helioss[/b]
+[b][luna]@lunan0va[/luna] reblogged from @noncanonical at 9:21 PM. OP: @helioss[/b]
 
 [Fanart of Astra, a brown-haired girl alone in space, with shadow-like hands reaching towards her from every direction. She is gazing upward, face illuminated, hands clasped atop her heart.]
 
@@ -1178,7 +1182,7 @@ ${luna_1_2_notes} notes
 
 *label luna_1_3
 *set luna_prog 3
-[b]@lunan0va reblogged from @capellasgf at 9:17 PM. OP: @summersnow[/b]
+[b][luna]@lunan0va[/luna] reblogged from @capellasgf at 9:17 PM. OP: @summersnow[/b]
 
 [Fanart of Astra and Capella holding hands and smiling at each other. The two girls are lying on the grass on the surface of a sunny world. Splotches of light and shadow cover their forms.]
 
@@ -1215,7 +1219,7 @@ ${luna_1_3_notes} notes
 
 *label luna_1_4
 *set luna_prog 4
-[b]@lunan0va posted at 8:20 PM[/b]
+[b][luna]@lunan0va[/luna] posted at 8:20 PM[/b]
 
 How do I get my parents to stop making me get a haircut without letting them know why I don't want a haircut. They literally said that I would "look like a girl" if I let my hair grow any longer. Like, obviously that's the whole point but I can't just say that...
 
@@ -1250,33 +1254,33 @@ ${luna_1_4_notes} notes
                 *set luna_green + 25
                 Luna messages you:
 
-                @lunan0va: hey can you delete the post you just reblogged?
+                [luna]@lunan0va: hey can you delete the post you just reblogged?[/luna]
                 *choice
                     #Delete the post.
                         *set luna_green - 24
                         *set luna_1_4_notes - 1
                         You delete the post and let Luna know.
 
-                        @lunan0va: thanks
+                        [luna]@lunan0va: thanks[/luna]
                         *goto luna_1_4
                     #No. I'm a total asshole.
-                        @lunan0va: :(
+                        [luna]@lunan0va: :([/luna]
 
-                        @lunan0va: why?
+                        [luna]@lunan0va: why?[/luna]
 
-                        @lunan0va: is it really that big of a deal?
+                        [luna]@lunan0va: is it really that big of a deal?[/luna]
                         *choice
                             #Just delete the post.
                                 *set luna_1_4_notes - 1
                                 *set luna_green - 15
-                                @lunan0va: thanks
+                                [luna]@lunan0va: thanks[/luna]
                                 *goto luna_1_4
                             #No.
                                 *set discourse %+ 3
                                 *set luna_green + 10
-                                @lunan0va: i really don't want to block you but. uh.
+                                [luna]@lunan0va: i really don't want to block you but. uh.[/luna]
 
-                                @lunan0va: i can't really deal with this so consider it a warning i guess.
+                                [luna]@lunan0va: i can't really deal with this so consider it a warning i guess.[/luna]
                                 *goto montage_1
     #Next post.
         *goto luna_1_5
@@ -1288,7 +1292,7 @@ ${luna_1_4_notes} notes
 *label luna_1_5
 *set luna_ch1_seen 1
 *set luna_prog 5
-[b]@lunan0va reblogged from @noncanonical at 8:00 PM. OP: @lunan0va[/b]
+[b][luna]@lunan0va[/luna] reblogged from @noncanonical at 8:00 PM. OP: [luna]@lunan0va[/luna][/b]
 
 So, I've spent a long time researching this theory... Please read it and tell me what you think!
 
@@ -1304,7 +1308,7 @@ Really interesting points OP! I don't agree with everything here but this would 
 
 (Read more)
 
-[b]@lunan0va[/b]:
+[b][luna]@lunan0va[/luna][/b]:
 
 Thank you! I have some responses:
 
@@ -1356,7 +1360,7 @@ ${luna_1_5_notes} notes
 
 Lux is one of your mutuals, but it's not like you've ever talked. Maybe he just followed back whoever. As his name suggests, he's a big fan of the brunova ship, and probably kins Bruno or something like that.
 
-[b]@brunova-official reblogged from @shadow-protectrix at 9:34 PM. OP: @shadow-protectrix[/b]
+[b][lux]@brunova-official[/lux] reblogged from @shadow-protectrix at 9:34 PM. OP: @shadow-protectrix[/b]
 
 Y'all, who's all excited for the NebulaCon this year? We have so many amazing things planned for everyone, awesome events with great people. Everyone who can make it should come!
 
@@ -1390,7 +1394,7 @@ ${brun_1_1_notes} notes
 
 *label brun_1_2
 *set brun_prog 2
-[b]@brunova-official reblogged from @shadow-protectrix at 9:22 PM. OP: @cyanstars[/b]
+[b][lux]@brunova-official[/lux] reblogged from @shadow-protectrix at 9:22 PM. OP: @cyanstars[/b]
 
 [Fanart of Galileo and Bruno hugging on a green field in a planet, half-body, with rays of light shining through clouds, illuminating the two of them. The image is a side profile, with Bruno's head closer to the audience resting on Gali's shoulder.]
 
@@ -1409,6 +1413,7 @@ ${brun_1_2_notes} notes
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx shipping
+            
             
         *set rb_count + 1
         *set lux_interact + 1
@@ -1429,7 +1434,7 @@ ${brun_1_2_notes} notes
 
 *label brun_1_3
 *set brun_prog 3
-[b]@brunova-official reblogged from @cyanstars at 9:17 PM. OP: @cyanstars[/b]
+[b][lux]@brunova-official[/lux] reblogged from @cyanstars at 9:17 PM. OP: @cyanstars[/b]
 
 [Fanart of Galileo and Bruno holding hands in the middle of space. Gali is glancing towards Bruno, smiling, while Bruno is frowning and gazing forward. Their bodies are framed by the purple and blue colors of the nebula.]
 
@@ -1467,7 +1472,7 @@ ${brun_1_3_notes} notes
 
 *label brun_1_4
 *set brun_prog 4
-[b]@brunova-official reblogged from @bruno-helios at 9:11 PM. OP: @bruno-helios[/b]
+[b][lux]@brunova-official[/lux] reblogged from @bruno-helios at 9:11 PM. OP: @bruno-helios[/b]
 
 [Black-and-white full-body sketch of Bruno Helios, a boy with white hair and a complex expression, brow slightly furrowed. His hands are in his jacket pocket, and he is glancing towards his left side.]
 
@@ -1505,7 +1510,7 @@ ${brun_1_4_notes} notes
 *label brun_1_5
 *set lux_ch1_seen 1
 *set brun_prog 5
-[b]@brunova-official posted at 9:08 PM[/b]
+[b][lux]@brunova-official[/lux] posted at 9:08 PM[/b]
 
 if you think brunova is abusive then why the f are you following me
 
@@ -1544,7 +1549,7 @@ ${brun_1_5_notes} notes
 
 Claire @shadow-protectrix is probably the single most popular and polarizing figure in the Nebulaverse fandom. They're a highly prolific writer, mostly for brunova, and a bit of a pugnacious personality beneath their beneficent veneer.
 
-[b]@shadow-protectrix posted at 9:11 PM.[/b]
+[b][claire]@shadow-protectrix[/claire] posted at 9:11 PM.[/b]
 
 Y'all, who's all excited for the NebulaCon this year? We have so many amazing things planned for everyone, awesome events with great people. Everyone who can make it should come!
 
@@ -1581,7 +1586,7 @@ ${brun_1_1_notes} notes
 
 *label shad_1_2
 *set shad_prog 2
-[b]@shadow-protectrix reblogged from @nebulaincolor at 8:50 PM. OP: @jizzwailer[/b]
+[b][claire]@shadow-protectrix[/claire] reblogged from @nebulaincolor at 8:50 PM. OP: @jizzwailer[/b]
 
 A reminder that all closeted queer people are valid! If you feel like you can't come out for whatever reason, that's okay! If you don't feel safe or comfortable coming out in real life, it doesn't make you any less of who you are.
 
@@ -1614,7 +1619,7 @@ ${shad_1_2_notes} notes
 
 *label shad_1_3
 *set shad_prog 3
-[b]@shadow-protectrix posted at 8:40 PM[/b]
+[b][claire]@shadow-protectrix[/claire] posted at 8:40 PM[/b]
 
 Anonymous asked: hey Claire! just wanted to say I love your brunova stories! Just wondering, do you have any plans to continue the planets saga, after bringer of peace?
 
@@ -1651,7 +1656,7 @@ ${shad_1_3_notes} notes
 
 *label shad_1_4
 *set shad_prog 4
-[b]@shadow-protectrix posted at 8:30 PM[/b]
+[b][claire]@shadow-protectrix[/claire] posted at 8:30 PM[/b]
 
 Anonymous asked: just wondering, have you read lunanova's trans girl gali theory?
 
@@ -1697,7 +1702,7 @@ ${shad_1_4_notes} notes
 *label shad_1_5
 *set claire_ch1_seen 1
 *set shad_prog 5
-[b]@shadow-protectrix posted at 8:20 PM[/b]
+[b][claire]@shadow-protectrix[/claire] posted at 8:20 PM[/b]
 
 @weaveroflight2 asked: As a fan from Brazil I'm so jealous that you're going to have a con! I wish we could have one in our country D:
 
@@ -1738,7 +1743,7 @@ ${shad_1_5_notes} notes
 
 Sofia @nebulascribbler is one of the more popular writers in the Nebulaverse fandom. She's written for a wide variety of ships, including brunova, astrapella, even ariastra. She's gotten some enemies for her profligacy in shipping, however.
 
-[b]@nebulascribbler reblogged from @nonbinarycatmom at 6:23 PM. OP: unknown[/b]
+[b][sofia]@nebulascribbler[/sofia] reblogged from @nonbinarycatmom at 6:23 PM. OP: unknown[/b]
 
 [i]Do you love the color of the sky?[/i]
 
@@ -1812,7 +1817,7 @@ ${nebu_1_1_notes} notes
 
 *label nebu_1_2
 *set nebu_prog 2
-[b]@nebulascribbler posted at 5:30 PM[/b]
+[b][sofia]@nebulascribbler[/sofia] posted at 5:30 PM[/b]
 
 To all the astrapellas out there, I am writing a new fic and you will *so* look forward to it.
 
@@ -1850,7 +1855,7 @@ ${nebu_1_2_notes} notes
 
 *label nebu_1_3
 *set nebu_prog 3
-[b]@nebulascribbler reblogged from @shadow-protectrix at 5:10 PM. OP: unknown[/b]
+[b][sofia]@nebulascribbler[/sofia] reblogged from @shadow-protectrix at 5:10 PM. OP: unknown[/b]
 
 Reminder to everyone to take a drink of water! Look away from the screen if your eyes hurt. Take a nap if you're tired. Remember to take care of yourself and don't let what you see here get you down.
 
@@ -1884,7 +1889,7 @@ ${nebu_1_3_notes} notes
 
 *label nebu_1_4
 *set nebu_prog 4
-[b]@nebulascribbler reblogged from @shadow-protectrix at 4:33 PM. OP: @shadow-protectrix[/b]
+[b][sofia]@nebulascribbler[/sofia] reblogged from @shadow-protectrix at 4:33 PM. OP: @shadow-protectrix[/b]
 
 To all the moralists in the Nebulaverse fandom, I hope you know that you are misguided at best, actively malicious at worst. I hope you can realize that defining certain story types as "problematic" you are actively pushing people away from this community, and you are making people's experiences here worse.
 
@@ -1927,7 +1932,7 @@ ${nebu_1_4_notes} notes
 *label nebu_1_5
 *set sofia_ch1_seen 1
 *set nebu_prog 5
-[b]@nebulascribbler reblogged from @nonbinarycatmom at 4:33 PM. OP: @ahistoricallyqueer[/b]
+[b][sofia]@nebulascribbler[/sofia] reblogged from @nonbinarycatmom at 4:33 PM. OP: @ahistoricallyqueer[/b]
 
 Imagine this: a pansexual aromantic and asexual panromantic become roommates and have wacky adventures. But picture this: one of them is super outgoing and a huge flirt and the other is a socially awkward loner.
 
@@ -1980,7 +1985,7 @@ ${nebu_1_5_notes} notes
 
 Stella is one of your mutuals whom you haven't had the opportunity to converse with. They're usually pretty quiet, mostly just reblogging fics and fanart. Right now, their blog consists mostly of astrapella fanart and aesthetic posts.
 
-[b]@apocalypse-hoarder reblogged from @bluemoonrising at 8:30 PM. OP: @nebula-moodboards[/b]
+[b][stella]@apocalypse-hoarder[/stella] reblogged from @bluemoonrising at 8:30 PM. OP: @nebula-moodboards[/b]
 
 Astrapella cottagecore lesbians moodboard for anon!
 
@@ -2015,7 +2020,7 @@ ${apoc_1_1_notes} notes
 
 *label apoc_1_2
 *set apoc_prog 2
-[b]@apocalypse-hoarder reblogged from @bluemoonrising at 8:00 PM. OP: @auguroflight6[/b]
+[b][stella]@apocalypse-hoarder[/stella] reblogged from @bluemoonrising at 8:00 PM. OP: @auguroflight6[/b]
 
 [b]@auguroflight6:[/b]
 
@@ -2073,7 +2078,7 @@ ${apoc_1_2_notes} notes
 
 *label apoc_1_3
 *set apoc_prog 3
-[b]@apocalypse-hoarder reblogged from @nebulascribbler at 7:30 PM. OP: @nebulascribbler[/b]
+[b][stella]@apocalypse-hoarder[/stella] reblogged from @nebulascribbler at 7:30 PM. OP: @nebulascribbler[/b]
 
 Hey, so, I wrote a astrapella oneshot. It's pretty much total fluff, in a no-shadow AU where the girls are just allowed to, you know, hang out and live.
 
@@ -2111,7 +2116,7 @@ ${apoc_1_3_notes} notes
 
 *label apoc_1_4
 *set apoc_prog 4
-[b]@apocalypse-hoarder reblogged from @capellasgf at 7:00 PM. OP: @capellasgf[/b]
+[b][stella]@apocalypse-hoarder[/stella] reblogged from @capellasgf at 7:00 PM. OP: @capellasgf[/b]
 
 [Drawing of a Nebulaverse original character, a woman with dark skin and braided hair. She is wearing the girl's uniform of the Pulsar Academy.]
 
@@ -2147,7 +2152,7 @@ ${apoc_1_4_notes} notes
 *label apoc_1_5
 *set stella_ch1_seen 1
 *set apoc_prog 5
-[b]@apocalypse-hoarder reblogged from @personae-and-roles at 6:30 PM. OP: @personae-and-roles[/b]
+[b][stella]@apocalypse-hoarder[/stella] reblogged from @personae-and-roles at 6:30 PM. OP: @personae-and-roles[/b]
 
 Anonymous asked: Hey, I love your blog! Just wondering, since I'm a big fan of the Sherlock TV series, what's the mage class of Sherlock Holmes and John Watson?
 
@@ -2192,7 +2197,7 @@ ${apoc_1_5_notes} notes
 
 Karla @trappedinspace is a recent mutual. She seems unsympathetic to much of the fandom as it exists.
 
-[b]@trappedinspace reblogged from @luxemburgs at 8:50 PM. OP: @dingling[/b]
+[b][karla]@trappedinspace[/karla] reblogged from @luxemburgs at 8:50 PM. OP: @dingling[/b]
 
 Help a twoc out! Hey my name's Phoebe and I'm close to becoming homeless. I just got fired for not being a "culture fit" and my landlord's threatening to evict me if I don't pay up. Thank you! Any bit helps.
 
@@ -2227,6 +2232,7 @@ ${trap_1_1_notes} Notes
     *disable_reuse #Donate something?
         Unfortunately, you don't have a credit card or really any money that you control.
         
+        
         *goto trap_1_1
     #Next post.
         *goto trap_1_2
@@ -2235,7 +2241,7 @@ ${trap_1_1_notes} Notes
 
 *label trap_1_2
 *set trap_prog 2
-[b]@trappedinspace reblogged from @luxemburgs at 8:43 PM. OP: @girlinprogress[/b]
+[b][karla]@trappedinspace[/karla] reblogged from @luxemburgs at 8:43 PM. OP: @girlinprogress[/b]
 
 Hey can anyone help this uninsured trans girl pay her medical bills and maybe also groceries?
 
@@ -2266,6 +2272,7 @@ ${trap_1_1_notes} Notes
     *disable_reuse #Donate something?
         Unfortunately, you don't have a credit card or really any money that you control.
         
+        
         *goto trap_1_2
     #Next post.
         *goto trap_1_3
@@ -2276,7 +2283,7 @@ ${trap_1_1_notes} Notes
 
 *label trap_1_3
 *set trap_prog 3
-[b]@trappedinspace reblogged from @capellasgf one day ago. OP: @lunan0va[/b]
+[b][karla]@trappedinspace[/karla] reblogged from @capellasgf one day ago. OP: @lunan0va[/b]
 
 So, I've spent a long time researching this theory... Please read it and tell me what you think!
 
@@ -2318,7 +2325,7 @@ ${luna_1_5_notes} notes
 
 *label trap_1_4
 *set trap_prog 4
-[b]@trappedinspace reblogged from @capellasgf one day ago. OP: @monadcore[/b]
+[b][karla]@trappedinspace[/karla] reblogged from @capellasgf one day ago. OP: @monadcore[/b]
 
 [The image is a tapestry of the main cast of the Chronicles. They are in space, wearing their Academy uniforms, holding hands in a chain. Gali is at the front, looking at Bruno. Then it's Tycho, Astra, Capella, and finally the Administrator.]
 
@@ -2355,7 +2362,7 @@ ${trap_1_4_notes} notes
 *label trap_1_5
 *set karla_ch1_seen 1
 *set trap_prog 5
-[b]@trappedinspace posted 2 days ago[/b]
+[b][karla]@trappedinspace[/karla] posted 2 days ago[/b]
 
 [The image is a selfie taken at a mirror, of a young woman holding a phone in one hand and doing the peace sign with the other hand. She has long black hair partly covering the side of her face, and wears glasses with a rather severe expression. She wears a flannel jacket over a black dress and jeans.]
 
@@ -2584,6 +2591,7 @@ All your other friends are already here: Bruno, Tycho, and Capella. Bruno just g
         *if (protag_cis_girl or protag_trans_girl)
             How you ended up getting assigned a suite with two boys remains a mystery.
         
+        
         He is a tall and lanky boy with coiffed blond hair. He has at least half a head on you, and poses with the imperious look of someone who has never wanted for anything and has always had his way, either by birthright or by sheer force of will. You've never been on the best of terms before, but he probably has a soft spot... somewhere.
         *fake_choice
             #I have a crush on Bruno.
@@ -2604,7 +2612,9 @@ All your other friends are already here: Bruno, Tycho, and Capella. Bruno just g
         *set seen_bruno true
         "Why're you so late, Nova?" Bruno asks. "Enjoying your beauty sleep?"
         
+        
         "Hey, knock it off," Astra says. "We've all been tired lately."
+        
         
         "Sure, whatever." The boy shrugs. "I just want to know that ${protag_e}'ll be ready for what's coming." He glares at you.
         *fake_choice
@@ -2638,6 +2648,7 @@ All your other friends are already here: Bruno, Tycho, and Capella. Bruno just g
         *if (protag_cis_girl or protag_trans_girl)
             How you ended up getting assigned a suite with two boys remains a mystery.
             
+            
         Unlike Bruno, Tycho comes from an average family, and is, well, average in a lot of ways. Average height, average build, medium brown complexion, and a handsome but nondescript face. He is a kind and understanding person to everyone around him. Especially to you, even when you don't deserve it.
         *fake_choice
             #I have a crush on Tycho.
@@ -2653,17 +2664,22 @@ All your other friends are already here: Bruno, Tycho, and Capella. Bruno just g
             #"I was... studying?"
                 "I was, um, studying?"
                 
+                
                 "Yeah? You sound uncertain."
                 
+                
                 "Well, I was at the library so what else could I have been doing?"
+                
                 
                 "Good point." He chuckles.
             #"I have no idea what I was doing."
                 "I have no idea what I was doing."
                 
+                
                 "Yeah, that happens." He chuckles.
             #Just shrug and give an awkward smile.
                 You shrug, and smile awkwardly.
+                
                 
                 "No idea? Well, I hope passing out in the library doesn't become a habit."
         *goto fanfic_look_at_others
@@ -2695,6 +2711,7 @@ All your other friends are already here: Bruno, Tycho, and Capella. Bruno just g
                 "Um... What are you doing?"
 
                 "I'm making sure the device doesn't explode when we turn it on."
+                
                 
                 "Oh, um... okay." She doesn't seem to be in the mood for conversation, and goes back to checking on the device.
                 *set seen_capella true
@@ -2818,6 +2835,7 @@ What will you title the story?
         *input_text story_title
         What is a short version or abbreviation of your story's title?
         *input_text story_title_short
+        
         
 Your story is titled "${story_title}". Is that what you're going with?
 

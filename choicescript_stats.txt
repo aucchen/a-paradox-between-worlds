@@ -454,17 +454,17 @@ Book 2:
 *label people
 [b]Online People[/b]
 
-[b]@lunan0va[/b]: ${luna_bio}
+[b][luna]@lunan0va[/luna][/b]: ${luna_bio}
 
-[b]@shadow-protectrix[/b]: ${claire_bio}
+[b][claire]@shadow-protectrix[/claire][/b]: ${claire_bio}
 
-[b]@brunova-official[/b]: ${lux_bio}
+[b][lux]@brunova-official[/lux][/b]: ${lux_bio}
 
-[b]@nebulascribbler[/b]: ${sofia_bio}
+[b][sofia]@nebulascribbler[/sofia][/b]: ${sofia_bio}
 
 [b]@apocalypsehoarder[/b]: ${stella_bio}
 
-[b]@trappedinspace[/b]: ${karla_bio}
+[b][karla]@trappedinspace[/karla][/b]: ${karla_bio}
 
 *if knows_hari
     [b]@noncanonical[/b]: ${hari_bio}
