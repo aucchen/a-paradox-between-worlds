@@ -591,21 +591,21 @@ The story has been posted for a while now. You see that you've gotten ${ch2_like
 *set luna_message_seen true
 *set chat_count - 1
 
-[luna]@lunan0va: this chapter was... interesting i guess. in a good way![/luna]
+@lunan0va: this chapter was... interesting i guess. in a good way!
 
-[luna]@lunan0va: i'm usually not really into bruno or brunova but i still enjoyed this i think[/luna]
+@lunan0va: i'm usually not really into bruno or brunova but i still enjoyed this i think
 
 *if fic_ship != "brunova"
-    [luna]@lunan0va: i thought it wasn't gonna be a brunova fic? lol[/luna]
+    @lunan0va: i thought it wasn't gonna be a brunova fic? lol
 
 *if protag_bruno_ch2_ff >= 1
-    [luna]@lunan0va: that part with bruno and gali was... wild lol. it's pretty nice how it all meshed together.[/luna]
+    @lunan0va: that part with bruno and gali was... wild lol. it's pretty nice how it all meshed together.
 
 *if protag_trans_girl
-    [luna]@lunan0va: i still really appreciate that you're writing gali as a trans girl.[/luna]
+    @lunan0va: i still really appreciate that you're writing gali as a trans girl.
 
 *if in_luna_chat = false
-    [luna]@lunan0va: btw i might have asked already but would you like to join a groupchat for nebulaverse stuff that i'm a part of?[/luna]
+    @lunan0va: btw i might have asked already but would you like to join a groupchat for nebulaverse stuff that i'm a part of?
 
     *choice
         #Sure, join the groupchat.
@@ -613,17 +613,17 @@ The story has been posted for a while now. You see that you've gotten ${ch2_like
             *set in_luna_chat true
             @you: sure...
 
-            [luna]@lunan0va: great! here's the invite link: [link][/luna]
+            @lunan0va: great! here's the invite link: [link]
         #No, not for now.
             *set luna_green %+ 3
             @you: sorry, not right now...
 
-            [luna]@lunan0va: okay, that's fine.[/luna]
+            @lunan0va: okay, that's fine.
 
-    [luna]@lunan0va: anyway... sorry but i have to log off for now[/luna]
+    @lunan0va: anyway... sorry but i have to log off for now
 
 *else
-    [luna]@lunan0va: anyway... sorry but i have to log off for now[/luna]
+    @lunan0va: anyway... sorry but i have to log off for now
 
 
 *goto fic_messages
@@ -632,16 +632,16 @@ The story has been posted for a while now. You see that you've gotten ${ch2_like
 *set lux_message_seen true
 *set chat_count - 1
 
-[lux]@brunova-official: hey ${handle}![/lux]
+@brunova-official: hey ${handle}!
 
-[lux]@brunova-official: i just started reading and this is a super cool fic.[/lux]
+@brunova-official: i just started reading and this is a super cool fic.
 
 *if not(protag_cis_girl or protag_trans_girl)
-    [lux]@brunova-official: also yay brunova!!! :D @{(fic_ship != "brunova") even if it's not tagged or mentioned in the desc!!! :D|}[/lux]
+    @brunova-official: also yay brunova!!! :D @{(fic_ship != "brunova") even if it's not tagged or mentioned in the desc!!! :D|}
 *else
-    [lux]@brunova-official: i liked the brunova hints but i kinda wish gali was still a boy here lol[/lux]
+    @brunova-official: i liked the brunova hints but i kinda wish gali was still a boy here lol
 
-[lux]@brunova-official: anyway... it's good. thanks for writing.[/lux]
+@brunova-official: anyway... it's good. thanks for writing.
 
 *choice
     #Thanks...
@@ -662,7 +662,7 @@ The story has been posted for a while now. You see that you've gotten ${ch2_like
 
                 @you: ${heart_emoji} ${heart_emoji} ${heart_emoji}
 
-                [lux]@brunova-official: yeah yeah.[/lux]
+                @brunova-official: yeah yeah.
                 
                 
                 *goto lux_msg_thanks
@@ -675,7 +675,7 @@ The story has been posted for a while now. You see that you've gotten ${ch2_like
 *set lux_blue %+ 5
 @you: thanks...
 
-[lux]@brunova-official: np![/lux]
+@brunova-official: np!
 
 *choice
     #Talk about random stuff?
@@ -686,28 +686,28 @@ The story has been posted for a while now. You see that you've gotten ${ch2_like
                 *set lux_blue %+ 5
                 @you: how's your grandmother doing?
 
-                [lux]@brunova-official: oh :/[/lux]
+                @brunova-official: oh :/
 
-                [lux]@brunova-official: there's a bunch of consultations and stuff i guess before they can do the operation[/lux]
+                @brunova-official: there's a bunch of consultations and stuff i guess before they can do the operation
 
-                [lux]@brunova-official: we're basically borrowing money however we can right now lol[/lux]
+                @brunova-official: we're basically borrowing money however we can right now lol
 
                 @you: sorry about that...
 
-                [lux]@brunova-official: its okay[/lux]
+                @brunova-official: its okay
                 *goto lux_convo_1
             *disable_reuse #Ask about life in general.
                 @you: so, um, how's life in general?
 
-                [lux]@brunova-official: it's okay[/lux]
+                @brunova-official: it's okay
 
-                [lux]@brunova-official: it's my birthday in like a week so that's nice[/lux]
+                @brunova-official: it's my birthday in like a week so that's nice
 
-                [lux]@brunova-official: other than that it's my last semester of high school[/lux]
+                @brunova-official: other than that it's my last semester of high school
 
-                [lux]@brunova-official: i wish i had more time for fanfic and art...[/lux]
+                @brunova-official: i wish i had more time for fanfic and art...
 
-                [lux]@brunova-official: what about you? what's up?[/lux]
+                @brunova-official: what about you? what's up?
 
                 You tell Lux about your day.
                 *goto lux_convo_1
@@ -727,36 +727,36 @@ The conversation dies down.
 *set chat_count - 1
 
 *if not(claire_chat)
-    [claire]@shadow-protectrix: Hey $!{handle}! I just started reading your fic and I'm enjoying it quite a bit.[/claire]
+    @shadow-protectrix: Hey $!{handle}! I just started reading your fic and I'm enjoying it quite a bit.
 
-[claire]@shadow-protectrix: Your latest chapter was really interesting![/claire]
+@shadow-protectrix: Your latest chapter was really interesting!
 
-[claire]@shadow-protectrix: I get that this is a parody of fandom tropes but it still came together in a nice way.[/claire]
+@shadow-protectrix: I get that this is a parody of fandom tropes but it still came together in a nice way.
 
 *if protag_bruno_ch2_ff >= 1
-    [claire]@shadow-protectrix: I loved the way you incorporated brunova in this![/claire] 
+    @shadow-protectrix: I loved the way you incorporated brunova in this! 
 
 *if in_claire_chat = false
-    [claire]@shadow-protectrix: Also, I'm running a group chat for nebulaverse fandom writers. Would you be interested in joining?[/claire]
+    @shadow-protectrix: Also, I'm running a group chat for nebulaverse fandom writers. Would you be interested in joining?
     *choice
         #Sure, join the groupchat.
             *set claire_blue %+ 5
             *set in_claire_chat true
-            [claire]@shadow-protectrix: Great! Here's the invite link: [link][/claire]
+            @shadow-protectrix: Great! Here's the invite link: [link]
         #No, not for now.
-            [claire]@shadow-protectrix: Okay, that's fine.[/claire]
+            @shadow-protectrix: Okay, that's fine.
 
-    [claire]@shadow-protectrix: Anyway, signing off for now![/claire]
+    @shadow-protectrix: Anyway, signing off for now!
     *goto fic_messages
 
 *if in_claire_chat
-    [claire]@shadow-protectrix: By the way, have you considered developing your writing talents beyond fanfic?[/claire]
+    @shadow-protectrix: By the way, have you considered developing your writing talents beyond fanfic?
 
-    [claire]@shadow-protectrix: It's not *that* different from fanfic writing. Sometimes you can even just change the names and details and publish it.[/claire]
+    @shadow-protectrix: It's not *that* different from fanfic writing. Sometimes you can even just change the names and details and publish it.
 
-    [claire]@shadow-protectrix: If you want, feel free to message me![/claire]
+    @shadow-protectrix: If you want, feel free to message me!
 
-[claire]@shadow-protectrix: Anyway, signing off for now![/claire]
+@shadow-protectrix: Anyway, signing off for now!
 
 *goto fic_messages
 
@@ -764,18 +764,18 @@ The conversation dies down.
 *set sofia_message_seen true
 *set chat_count - 1
 
-[sofia]@nebulascribbler: Hey $!{handle}![/sofia]
+@nebulascribbler: Hey $!{handle}!
 
-[sofia]@nebulascribbler: I know we haven't really talked, but I just saw your fic, and it's really cool![/sofia]
+@nebulascribbler: I know we haven't really talked, but I just saw your fic, and it's really cool!
 
-[sofia]@nebulascribbler: I get the feeling that this chapter is a parody of Shadows in Midnight by tempusspatium? With the whole Gali getting kidnapped by Bruno in a spaceship and the whole casual interrogation with subtext-bubbling-up-to-text.[/sofia]
+@nebulascribbler: I get the feeling that this chapter is a parody of Shadows in Midnight by tempusspatium? With the whole Gali getting kidnapped by Bruno in a spaceship and the whole casual interrogation with subtext-bubbling-up-to-text.
 
 *if fic_ship != "brunova"
-    [sofia]@nebulascribbler: I thought this wasn't tagged as a brunova fic.[/sofia]
+    @nebulascribbler: I thought this wasn't tagged as a brunova fic.
 
-[sofia]@nebulascribbler: But that's not a bad thing! It's interesting that you've cobbled together a story from disparate parts.[/sofia]
+@nebulascribbler: But that's not a bad thing! It's interesting that you've cobbled together a story from disparate parts.
 
-[sofia]@nebulascribbler: I would certainly be interested in reading more![/sofia]
+@nebulascribbler: I would certainly be interested in reading more!
 
 *choice
     #Talk to Sofia?
@@ -787,17 +787,17 @@ The conversation dies down.
                 *set sofia_blue %+ 3
                 @you: thank you!!!
 
-                [sofia]@nebulascribbler: No problem![/sofia]
+                @nebulascribbler: No problem!
                 *goto sofia_msg_choices
             *disable_reuse #Ask about writing and Nebulaverse stuff?
                 *set sofia_blue %+ 6
                 @you: um... how do you manage to write so much?
 
-                [sofia]@nebulascribbler: It's not so hard once you get the hang of it![/sofia]
+                @nebulascribbler: It's not so hard once you get the hang of it!
 
-                [sofia]@nebulascribbler: With fanfic you can write quickly by just putting down everything you think of, without filtering yourself.[/sofia]
+                @nebulascribbler: With fanfic you can write quickly by just putting down everything you think of, without filtering yourself.
 
-                [sofia]@nebulascribbler: The key is to just put words down on paper. Or on the silicon, as it may be. Quantity comes first. Then you can edit it and make it actually good.[/sofia]
+                @nebulascribbler: The key is to just put words down on paper. Or on the silicon, as it may be. Quantity comes first. Then you can edit it and make it actually good.
                 *goto sofia_msg_choices
             #Just look at other messages.
                 *goto fic_messages

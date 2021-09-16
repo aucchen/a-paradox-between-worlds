@@ -74,8 +74,11 @@
 *set plural false
 *goto location_choice
 *label p3
-*set player_is "are"
-*set player_was "were"
+*set e "they"
+*set em "them"
+*set eir "their"
+*set eirs "theirs"
+*set emself "themself"
 *set plural true
 *goto location_choice
 

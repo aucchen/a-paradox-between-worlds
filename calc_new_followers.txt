@@ -34,8 +34,8 @@
 *if alignment_val <= 10
     *set alignment_penalty true
     *set alignment_strength -1
-*elseif alignment_val <= 20
-    *set alignment_strength 1
+*elseif alignment_val <= 23
+    *set alignment_strength 0
 *elseif alignment_val <= 35
     *set alignment_strength 2
 *elseif alignment_val <= 50
@@ -80,15 +80,15 @@
     *set char_penalty true
     *set char_strength -1
 *elseif char_val <= 20
-    *set char_strength 1
+    *set char_strength 0
 *elseif char_val <= 35
-    *set char_strength 2
+    *set char_strength 1
 *elseif char_val <= 50
-    *set char_strength 3
+    *set char_strength 2
 *elseif char_val <= 70
-    *set char_strength 4
+    *set char_strength 3
 *else
-    *set char_strength 5
+    *set char_strength 4
 
 *set follower_gain_bonus + char_strength
 
@@ -121,15 +121,15 @@
 *if ship_val <= 10
     *set ship_strength 0
 *elseif ship_val <= 20
-    *set ship_strength 1
+    *set ship_strength 0
 *elseif ship_val <= 35
-    *set ship_strength 2
+    *set ship_strength 1
 *elseif ship_val <= 50
-    *set ship_strength 3
+    *set ship_strength 2
 *elseif ship_val <= 70
-    *set ship_strength 4
+    *set ship_strength 3
 *else
-    *set ship_strength 5
+    *set ship_strength 4
 
 *set follower_gain_bonus + ship_strength
 
@@ -159,8 +159,11 @@
 *comment the sweet spot...
 *if (current_rbs >= 11) and (current_rbs <= 19)
     *set follower_gain_bonus + 1
-*if (current_rbs < 5)
+*if (current_rbs <= 5)
     *set follower_loss_bonus + 1
+*if (current_rbs <= 1)
+    *set follower_loss_bonus + 1
+    *set follower_gain_bonus - 1
 *comment but... rbing too much loses you followers bc it spams peoples dash
 *if (current_rbs > 20)
     *set follower_loss_bonus + 1

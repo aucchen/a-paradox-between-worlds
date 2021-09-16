@@ -17,28 +17,6 @@ Mage class:
 *if (persona != "") and (role != "")
     $!{role} of $!{persona}
 
-Blog aesthetic:
-*if aesthetic = "pink"
-    Pink cherry blossoms, pastel wallpaper, layer cakes, frilly dresses.
-*elseif aesthetic = "space"
-    Stars, the milky way, the blackness of night broken up by pinpricks of light.
-*elseif aesthetic = "shadow"
-    The woods at night, a haunted house, shadows lurking.
-*elseif aesthetic = "red"
-    Red roses, lipstick and black dresses, goblets of unidentifiable red liquid.
-*elseif aesthetic = "green"
-    Green leaves and grass, sunlight streaming through the treetops, a path through the woods.
-*elseif aesthetic = "blue"
-    The ocean, mountain lakes, vast expanses of blue and white.
-*elseif aesthetic = "city"
-    A cityscape, brutalist architecture, drizzling rain amid neon lights.
-*elseif aesthetic = "anime"
-    A bunch of your favorite anime characters. Sketches and bold colors.
-*elseif aesthetic = ""
-    Unknown
-*else
-    Nothing consistent.
-
 Blog alignment:
 *stat_chart
     percent gen Gen
@@ -58,13 +36,13 @@ Top characters:
 
 Top ships:
 *stat_chart
-    percent astrapella AstraPella
-    percent brunova BruNova
-    percent ellanova EllaNova
-    percent astranova AstraNova
-    percent brunastra BrunAstra
-    percent tychonova TychoNova
-    percent brunotycho BrunoTycho
+    percent astrapella Astrapella
+    percent brunova Brunova
+    percent ellanova Ellanova
+    percent astranova Astranova
+    percent brunastra Brunastra
+    percent tychonova Tychonova
+    percent brunotycho Brunotycho
 
 *label stat_choice
 *choice
@@ -454,17 +432,17 @@ Book 2:
 *label people
 [b]Online People[/b]
 
-[b][luna]@lunan0va[/luna][/b]: ${luna_bio}
+[b]@lunan0va[/b]: ${luna_bio}
 
-[b][claire]@shadow-protectrix[/claire][/b]: ${claire_bio}
+[b]@shadow-protectrix[/b]: ${claire_bio}
 
-[b][lux]@brunova-official[/lux][/b]: ${lux_bio}
+[b]@brunova-official[/b]: ${lux_bio}
 
-[b][sofia]@nebulascribbler[/sofia][/b]: ${sofia_bio}
+[b]@nebulascribbler[/b]: ${sofia_bio}
 
 [b]@apocalypsehoarder[/b]: ${stella_bio}
 
-[b][karla]@trappedinspace[/karla][/b]: ${karla_bio}
+[b]@trappedinspace[/b]: ${karla_bio}
 
 *if knows_hari
     [b]@noncanonical[/b]: ${hari_bio}

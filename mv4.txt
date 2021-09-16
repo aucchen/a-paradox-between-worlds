@@ -198,7 +198,7 @@ Luna's blog is password-protected.
 *label luna_1_1_pre_post
 [b]${luna_bio}[/b]
 
-[b][luna]@lunan0va[/luna] posted at 5:53 PM[/b]
+[b]@lunan0va posted at 5:53 PM[/b]
 
 Content warnings: death, suicide
 
@@ -211,7 +211,7 @@ Content warnings: death, suicide
 *label luna_1_1_post
 *set luna_ch4_seen 1
 
-[b][luna]@lunan0va[/luna] posted at 5:53 PM[/b]
+[b]@lunan0va posted at 5:53 PM[/b]
 
 So I've been thinking a lot about death lately.
 
@@ -236,12 +236,12 @@ Tags: #death cw, #suicide cw
 ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set luna_interact + 1
         *set luna_1_1_notes + 1
         *set luna_blue %+ 5
         *goto luna_1_1_post
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx luna_dislike
 
@@ -272,7 +272,7 @@ There don't seem to be any other posts; everything on the blog seems to have bee
 *set brun_prog 1
 [b]${lux_bio}[/b]
 
-[b][lux]@brunova-official[/lux] reblogged from @blueiceweaver at 4:34 PM. OP: @cenozoic-seraph[/b]
+[b]@brunova-official reblogged from @blueiceweaver at 4:34 PM. OP: @cenozoic-seraph[/b]
 
 Have you ever wondered how you ended up with the friends you have? There was one mutual I whom I followed on here because I saw their tags on a post and thought they were funny. We became roommates a few years later. Another of my best friends I met while waiting in line at the grocery store. My current partner sat next to me in a class in college. That class was a last minute registration after the classes I wanted to get into were full.
 
@@ -283,10 +283,10 @@ Tags: #for some reason this makes me want to cry...
 ${brun_1_1_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_1_notes + 1
         *goto brun_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx sympathy
@@ -304,7 +304,7 @@ ${brun_1_1_notes} notes
 
 *label brun_1_2
 *set brun_prog 2
-[b][lux]@brunova-official[/lux] posted at 4:25 PM[/b]
+[b]@brunova-official posted at 4:25 PM[/b]
 
 idk what to say. you guys have contributed so much to us and we're still nowhere near covering all the medical costs. it doesn't even feel right asking for more because it just feels so overwhelming...
 
@@ -315,10 +315,10 @@ Tags: #a;kljdf;alkdjl;kadsjfdlkfj;kl;dafj
 ${brun_1_2_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_2_notes + 1
         *goto brun_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx sympathy
@@ -339,7 +339,7 @@ ${brun_1_2_notes} notes
 
 *label brun_1_3
 *set brun_prog 3
-[b][lux]@brunova-official[/lux] reblogged from [lux]@brunova-official[/lux] at 4:17 PM. OP: [lux]@brunova-official[/lux][/b]
+[b]@brunova-official reblogged from @brunova-official at 4:17 PM. OP: @brunova-official[/b]
 
 Help my grandmother stay alive!
 
@@ -355,7 +355,7 @@ Can anyone help us out?
 
 Thank you so much!
 
-[b][lux]@brunova-official[/lux]:[/b]
+[b]@brunova-official:[/b]
 
 As a reminder i'm open to fic/art commissions to pay for my abuela's cancer treatment! We can negotiate rates! For examples of my art, see below! No nsf/w or gore, and I can't do furry or detailed machinery.
 
@@ -363,7 +363,7 @@ As a reminder i'm open to fic/art commissions to pay for my abuela's cancer trea
 
 Also here's my fanfics: [link to archive]
 
-[b][lux]@brunova-official[/lux]:[/b]
+[b]@brunova-official:[/b]
 
 Donations have slowed recently, but we're not nearly achieving our goals. I still have three slots open for art/fic commissions, nebulaverse or otherwise!!
 
@@ -372,10 +372,10 @@ Tags: #help me pls pls pls
 ${brun_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_3_notes + 1
         *goto brun_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx sympathy
@@ -396,7 +396,7 @@ ${brun_1_3_notes} notes
 
 *label brun_1_4
 *set brun_prog 4
-[b][lux]@brunova-official[/lux] posted at 4:11 PM.[/b]
+[b]@brunova-official posted at 4:11 PM.[/b]
 
 [Colored art of Bruno Helios, alone, topless with visible top surgery scars, surrounded by shards of ice.]
 
@@ -407,10 +407,10 @@ Tags: #fanart, #bruno helios, #bruno, #nebulaverse, #chronicles of the shadow ne
 ${brun_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_4_notes + 1
         *goto brun_1_4
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx gen
@@ -433,7 +433,7 @@ ${brun_1_4_notes} notes
 *label brun_1_5
 *set brun_prog 5
 *set lux_ch4_seen 1
-[b][lux]@brunova-official[/lux] reblogged from @apocalypse-hoarder at 4:08 PM. OP: @timaeus[/b]
+[b]@brunova-official reblogged from @apocalypse-hoarder at 4:08 PM. OP: @timaeus[/b]
 
 I hate the people who are like, oh no, gtm is suddenly transphobic, what are we gonna do. Because the hints were there in the books from the start. Not even subtle hints. Does literally no one remember the kingdomite device subplot? Or were we too busy trying to "reclaim" it by refusing to see what was right in front of our eyes?
 
@@ -442,11 +442,11 @@ Tags: #:/, #shit we were all trying to forget that huh
 ${brun_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_5_notes + 1
         *set lux_blue %+ 2
         *goto brun_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx discourse
@@ -467,15 +467,15 @@ ${brun_1_5_notes} notes
 *set shad_prog 1
 [b]${claire_bio}[/b]
 
-[b][claire]@shadow-protectrix[/claire] reblogged from [claire]@shadow-protectrix[/claire] at 4:11 PM. OP: @fyeahnebulaverse[/b]
+[b]@shadow-protectrix reblogged from @shadow-protectrix at 4:11 PM. OP: @fyeahnebulaverse[/b]
 
 A notice: as of today, we will no longer be updating this blog. Many of us running this blog are trans, and the author's comments and behaviors have led to a hostile environment towards trans members of the fandom. After a discussion with the mods, we have come to the understanding that we can no longer participate in Nebulaverse fandom in good conscience. 
 
-[b][claire]@shadow-protectrix[/claire]:[/b]
+[b]@shadow-protectrix:[/b]
 
 Guys, come on. Do you really think a boycott would work? Is this the best use of our time and effort as a fandom?
 
-[b][claire]@shadow-protectrix[/claire]:[/b]
+[b]@shadow-protectrix:[/b]
 
 Fine. Y'all won. Nebulacon is canceled. You happy now?
 
@@ -484,10 +484,10 @@ Tags: #nebulacon
 ${shad_1_1_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set shad_1_1_notes + 1
         *goto shad_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_like
             *gosub_scene rx discourse
@@ -506,7 +506,7 @@ ${shad_1_1_notes} notes
 
 *label shad_1_2
 *set shad_prog 2
-[b][claire]@shadow-protectrix[/claire] posted at 3:33 PM.[/b]
+[b]@shadow-protectrix posted at 3:33 PM.[/b]
 
 Not that anyone's gonna care but here's a brunova oneshot. Call it vent fic if you must. The title is obviously from a lyric, but everything else is mine. Entirely mine. Take everything I have from me but you will never take away my words.
 
@@ -517,10 +517,10 @@ Tags: #whatever idk about tagging anymore
 ${shad_1_2_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set shad_1_2_notes + 1
         *goto shad_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_like
             *gosub_scene rx shipping
@@ -545,7 +545,7 @@ ${shad_1_2_notes} notes
 
 *label shad_1_3
 *set shad_prog 3
-[b][claire]@shadow-protectrix[/claire] posted at 3:22 PM[/b]
+[b]@shadow-protectrix posted at 3:22 PM[/b]
 
 You want a response? You want a response to what people have been saying about me? Well, here it is.
 
@@ -560,11 +560,11 @@ Tags: #you know what. fuck this.
 ${shad_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set shad_1_3_notes + 1
         *set claire_blue %+ 4
         *goto shad_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_like
             *gosub_scene rx discourse
@@ -584,7 +584,7 @@ ${shad_1_3_notes} notes
 
 *label shad_1_4
 *set shad_prog 4
-[b][claire]@shadow-protectrix[/claire] posted at 2:30 PM[/b]
+[b]@shadow-protectrix posted at 2:30 PM[/b]
 
 Anonymous asked: noooooooooo im so sorry to see it goooooooo
 
@@ -595,10 +595,10 @@ Tags: #ask, #anonymous
 ${shad_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set shad_1_4_notes + 1
         *goto shad_1_4
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *set rb_count + 1
         *set claire_interact + 1
         *set shad_1_4_notes + 1
@@ -613,7 +613,7 @@ ${shad_1_4_notes} notes
 *label shad_1_5
 *set shad_prog 5
 *set claire_ch4_seen 1
-[b][claire]@shadow-protectrix[/claire] posted at 2:00 PM[/b]
+[b]@shadow-protectrix posted at 2:00 PM[/b]
 
 As you might have realized, NebulaCon will be canceled. Too many participants have dropped out, too many reservations canceled, so it will no longer be possible for us to provide everyone with the experiences that they deserve. I'm sorry for anyone who was still looking forward to it.
 
@@ -622,10 +622,10 @@ Tags: #nebulacon
 ${shad_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set shad_1_5_notes + 1
         *goto shad_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_like
             *gosub_scene rx discourse
@@ -648,7 +648,7 @@ ${shad_1_5_notes} notes
 *set nebu_prog 1
 [b]${sofia_bio}[/b]
 
-[b][sofia]@nebulascribbler[/sofia] reblogged from @noncanonical at 4:23 PM. OP: @noncanonical[/b]
+[b]@nebulascribbler reblogged from @noncanonical at 4:23 PM. OP: @noncanonical[/b]
 
 Anonymous asked: what do you make of the latest plagiarism allegations against @shadow-protectrix?
 
@@ -659,10 +659,10 @@ Tags: #discourse, #if you don't wanna take it from me take it from hari
 ${nebu_1_1_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set nebu_1_1_notes + 1
         *goto nebu_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx discourse
 
@@ -679,7 +679,7 @@ ${nebu_1_1_notes} notes
 
 *label nebu_1_2
 *set nebu_prog 2
-[b][sofia]@nebulascribbler[/sofia] posted at 4:20 PM[/b]
+[b]@nebulascribbler posted at 4:20 PM[/b]
 
 Regarding Claire's "plagiarism" allegations: the evidence just isn't there! There are obviously a ton of people who have it out for Claire for various reasons but this latest accusation feels like at best a reach, at worst just deliberate provocation, just throwing scattershot accusations against them in the hopes that something sticks.
 
@@ -688,10 +688,10 @@ Tags: #discourse, #sofia speaks
 ${nebu_1_2_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set nebu_1_2_notes + 1
         *goto nebu_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx sofia_like
             *gosub_scene rx discourse
@@ -711,7 +711,7 @@ ${nebu_1_2_notes} notes
 
 *label nebu_1_3
 *set nebu_prog 3
-[b][sofia]@nebulascribbler[/sofia] reblogged from @nonbinarycatmom at 3:10 PM. OP: @monadcore[/b]
+[b]@nebulascribbler reblogged from @nonbinarycatmom at 3:10 PM. OP: @monadcore[/b]
 
 [Fanart of all the main characters from the Nebulaverse lined up on a blank background, with a variety of body types and styles.]
 
@@ -724,11 +724,11 @@ Tags: #love this
 ${nebu_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set sofia_interact + 1
         *set nebu_1_3_notes + 1
         *goto nebu_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx gen
 
@@ -746,7 +746,7 @@ ${nebu_1_3_notes} notes
 
 *label nebu_1_4
 *set nebu_prog 4
-[b][sofia]@nebulascribbler[/sofia] reblogged from @acruelmistress at 3:04 PM. OP: @temporal-aeons[/b]
+[b]@nebulascribbler reblogged from @acruelmistress at 3:04 PM. OP: @temporal-aeons[/b]
 
 I know this is probably an old take, but social media is like having our own shipficator goggles, except we can set our own colors to show to others. We can see what other people are thinking at any time. Is that really good for us, I wonder?
 
@@ -755,10 +755,10 @@ Tags: #important
 ${nebu_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set nebu_1_4_notes + 1
         *goto nebu_1_4
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx sofia_like
             *gosub_scene rx meta
@@ -779,7 +779,7 @@ ${nebu_1_4_notes} notes
 *label nebu_1_5
 *set nebu_prog 5
 *set sofia_ch4_seen 1
-[b][sofia]@nebulascribbler[/sofia] reblogged from @ahistoricallyqueer at 1:23 PM. OP: @starsandshadows[/b]
+[b]@nebulascribbler reblogged from @ahistoricallyqueer at 1:23 PM. OP: @starsandshadows[/b]
 
 I'm sure you've heard about all the allegations about our project that have been flying around. That we're scammers, that we've been stealing all your money, and so on.
 
@@ -794,10 +794,10 @@ Tags: #half full half empty, #you can do this guys!!!
 ${nebu_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set nebu_1_5_notes + 1
         *goto nebu_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx sofia_like
             *gosub_scene rx shitposting
@@ -818,7 +818,7 @@ ${nebu_1_5_notes} notes
 *set apoc_prog 1
 [b]${stella_bio}[/b]
 
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @deadlymagi at 5:30 PM. OP: @everlastingmagic[/b]
+[b]@apocalypse-hoarder reblogged from @deadlymagi at 5:30 PM. OP: @everlastingmagic[/b]
 
 Everything is magic to those who don't know how to wield the gift.
 
@@ -827,10 +827,10 @@ Tags: #queueasimodo
 ${apoc_1_1_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set apoc_1_1_notes + 1
         *goto apoc_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx meta
 
@@ -848,7 +848,7 @@ ${apoc_1_1_notes} notes
 
 *label apoc_1_2
 *set apoc_prog 2
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @clairecallout at 4:40 PM. OP: @clairecallout[/b]
+[b]@apocalypse-hoarder reblogged from @clairecallout at 4:40 PM. OP: @clairecallout[/b]
 
 Anonymous asked: did you see Claire's response? They said that they didn't even read any of the books...
 
@@ -859,10 +859,10 @@ Tags: #discourse
 ${apoc_1_2_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set apoc_1_2_notes + 1
         *goto apoc_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_st_dislike
             *gosub_scene rx discourse
@@ -882,7 +882,7 @@ ${apoc_1_2_notes} notes
 
 *label apoc_1_3
 *set apoc_prog 3
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @clairecallout at 2:55 PM. OP: @clairecallout[/b]
+[b]@apocalypse-hoarder reblogged from @clairecallout at 2:55 PM. OP: @clairecallout[/b]
 
 This is a compilation post of the evidence that Claire @shadow-protectrix has plagiarized their fics. There is substantial evidence that portions of Mars, Bringer of War are lifted wholesale from various novels as well as a number of prior works of fanfiction.
 
@@ -895,10 +895,10 @@ Tags: #discourse, #of course...
 ${apoc_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set apoc_1_3_notes + 1
         *goto apoc_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_st_dislike
             *gosub_scene rx discourse
@@ -919,7 +919,7 @@ ${apoc_1_3_notes} notes
 
 *label apoc_1_4
 *set apoc_prog 4
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @capellasgf at 2:00 PM. OP: @timaeus[/b]
+[b]@apocalypse-hoarder reblogged from @capellasgf at 2:00 PM. OP: @timaeus[/b]
 
 I hate the people who are like, oh no, gtm is suddenly transphobic, what are we gonna do. Because the hints were there in the books from the start. Not even subtle hints. Does literally no one remember the kingdomite device subplot? Or were we too busy trying to "reclaim" it by refusing to see what was right in front of our eyes?
 
@@ -928,10 +928,10 @@ Tags: #queueasimodo
 ${brun_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_5_notes + 1
         *goto apoc_1_4
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx discourse
 
@@ -950,7 +950,7 @@ ${brun_1_5_notes} notes
 *label apoc_1_5
 *set apoc_prog 5
 *set stella_ch4_seen 1
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @clairecallout at 1:00 PM. OP: @clairecallout[/b]
+[b]@apocalypse-hoarder reblogged from @clairecallout at 1:00 PM. OP: @clairecallout[/b]
 
 So, since the recent debacle I've been reading C/l/a/i/r/e @/sh/adow/-pr/otec/trix's blog and fics, and I've found some interesting things that I don't think they want to come to light. I'll keep y'all updated...
 
@@ -959,10 +959,10 @@ Tags: #(is eagerly awaiting the findings)
 ${apoc_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set apoc_1_5_notes + 1
         *goto apoc_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_dislike
             *gosub_scene rx discourse
@@ -984,7 +984,7 @@ ${apoc_1_5_notes} notes
 *set trap_prog 1
 [b]${karla_bio}[/b]
 
-[b][karla]@trappedinspace[/karla] posted one day ago[/b]
+[b]@trappedinspace posted one day ago[/b]
 
 Sometimes we have to remember that we aren't the protagonists of life's story. People like GTM are the protagonists. We're just a rotating ensemble cast of side characters. Maybe not even that. Just the unnamed extras.
 
@@ -993,11 +993,11 @@ Tags: #idk how to deal with this...
 ${trap_1_1_notes} Notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set trap_1_1_notes + 1
         *set karla_blue %+ 5
         *goto trap_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *set rb_count + 1
         *set karla_interact + 1
         *set trap_1_1_notes + 1
@@ -1009,7 +1009,7 @@ ${trap_1_1_notes} Notes
 
 *label trap_1_2
 *set trap_prog 2
-[b][karla]@trappedinspace[/karla] posted one day ago[/b]
+[b]@trappedinspace posted one day ago[/b]
 
 The boycott's failed. There's no sign of any larger commercial reaction against gtm. We lost. They won.
 
@@ -1018,10 +1018,10 @@ Tags: #idk how to deal with this...
 ${trap_1_2_notes} Notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set trap_1_2_notes + 1
         *goto trap_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *set rb_count + 1
         *set karla_interact + 1
         *set trap_1_2_notes + 1
@@ -1035,7 +1035,7 @@ ${trap_1_2_notes} Notes
 
 *label trap_1_3
 *set trap_prog 3
-[b][karla]@trappedinspace[/karla] reblogged from @capellasgf one day ago. OP: @cybermonad64[/b]
+[b]@trappedinspace reblogged from @capellasgf one day ago. OP: @cybermonad64[/b]
 
 Anyway, in lieu of buying anything n*bulav*rse which will directly aid gtm, here are trans people and organizations you could donate to:
 
@@ -1046,11 +1046,11 @@ Tags: #mutual aid, #i guess?
 ${trap_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set trap_1_3_notes + 1
         *set karla_blue %+ 1
         *goto trap_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx sympathy
 
@@ -1070,7 +1070,7 @@ ${trap_1_3_notes} notes
 
 *label trap_1_4
 *set trap_prog 4
-[b][karla]@trappedinspace[/karla] reblogged from @redcapella one day ago. OP: @lordesgothgf[/b]
+[b]@trappedinspace reblogged from @redcapella one day ago. OP: @lordesgothgf[/b]
 
 lorde was right. everything really is hyperreal. so won't you come live in a hologram with me? and we really aren't gonna be royals, aren't we? that kind of life just isn't for us.
 
@@ -1079,11 +1079,11 @@ Tags: #it's all so fucking hyperreal
 ${trap_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set trap_1_4_notes + 1
         *set karla_blue %+ 1
         *goto trap_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx shitposting
 
@@ -1103,7 +1103,7 @@ ${trap_1_4_notes} notes
 
 *label trap_1_5
 *set trap_prog 5
-[b][karla]@trappedinspace[/karla] reblogged from @kshamas one day ago. OP: @dingling[/b]
+[b]@trappedinspace reblogged from @kshamas one day ago. OP: @dingling[/b]
 
 Hey I still need money to pay for this month's rent. I don't want to live in my car again.
 
@@ -1116,11 +1116,11 @@ Tags: #mutual aid
 ${trap_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set trap_1_5_notes + 1
         *set karla_blue %+ 5
         *goto trap_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx sympathy
 
@@ -1139,17 +1139,17 @@ ${trap_1_5_notes} notes
 *set has_luna_password true
 [b]Anti-Nebulaverse Nebulaverse Club[/b]
 
-[luna]@lunan0va: hey karla? @trappedinspace?[/luna]
+@lunan0va: hey karla? @trappedinspace?
 
-[luna]@lunan0va: hey @capellasgf?[/luna]
+@lunan0va: hey @capellasgf?
 
-[luna]@lunan0va: hey @${username}?[/luna]
+@lunan0va: hey @${username}?
 
-[luna]@lunan0va: is anyone here?[/luna]
+@lunan0va: is anyone here?
 
-[luna]@lunan0va: whatever. i've password-protected my blog and the password is iceaugury831.[/luna]
+@lunan0va: whatever. i've password-protected my blog and the password is iceaugury831.
 
-[luna]@lunan0va: if you see this and read my blog post, dm me if you can? please? i need some help...[/luna]
+@lunan0va: if you see this and read my blog post, dm me if you can? please? i need some help...
 
 *choice
     #Go back.
@@ -1161,42 +1161,42 @@ ${trap_1_5_notes} notes
 *set writers_chat_ref "writers_chat"
 [b]Nebulaverse Fandom Writer's Chat[/b]
 
-[sofia]@nebulascribbler: Hey Claire...[/sofia]
+@nebulascribbler: Hey Claire...
 
-[claire]@shadow-protectrix: Don't you fuckin ask me about NebulaCon.[/claire]
+@shadow-protectrix: Don't you fuckin ask me about NebulaCon.
 
-[sofia]@nebulascribbler: I don't think it has to be cancelled. I think we can still bring it back.[/sofia]
+@nebulascribbler: I don't think it has to be cancelled. I think we can still bring it back.
 
-[claire]@shadow-protectrix: Yes, I'm swearing now because it's gotten that bad.[/claire]
+@shadow-protectrix: Yes, I'm swearing now because it's gotten that bad.
 
 *comment TODO: did you tell claire about sofia's plans??
-[claire]@shadow-protectrix: I AM NOT GIVING YOU NEBULACON. YOU CAN TAKE ITS ROTTEN CORPSE FROM MINE.[/claire]
+@shadow-protectrix: I AM NOT GIVING YOU NEBULACON. YOU CAN TAKE ITS ROTTEN CORPSE FROM MINE.
 
-[sofia]@nebulascribbler: ...I'm not asking for it.[/sofia]
+@nebulascribbler: ...I'm not asking for it.
 
-[claire]@shadow-protectrix: FUCK NO YOU ARE NOT GOING TO BE THE SPOKESPERSON FOR NEBULACON[/claire]
+@shadow-protectrix: FUCK NO YOU ARE NOT GOING TO BE THE SPOKESPERSON FOR NEBULACON
 
-[sofia]@nebulascribbler: All I'm asking is for a different public face to it. You can still do whatever you want[/sofia]
+@nebulascribbler: All I'm asking is for a different public face to it. You can still do whatever you want
 
 @nonbinarycatmom: um friendos? did I miss something???
 
-[claire]@shadow-protectrix: SOFIA NEBULASCRIBBLER IS A MANIPULATIVE SORCERESS WHO ATTEMPTED TO STEAL NEBULACON FROM ME[/claire]
+@shadow-protectrix: SOFIA NEBULASCRIBBLER IS A MANIPULATIVE SORCERESS WHO ATTEMPTED TO STEAL NEBULACON FROM ME
 
-[lux]@brunova-official: what[/lux]
+@brunova-official: what
 
-[sofia]@nebulascribbler: ...a sorceress. Not as cool as a mage, but I can live with that :)[/sofia]
+@nebulascribbler: ...a sorceress. Not as cool as a mage, but I can live with that :)
 
 *if claire_knows_sofia_plans
     *set sofia_green %+ 5
-    [claire]@shadow-protectrix: She tried to MANIPULATE @${username} into her plans.[/claire]
+    @shadow-protectrix: She tried to MANIPULATE @${username} into her plans.
 
 @nonbinarycatmom: idk i thought sofia's plans weren't that bad, yknow? taking some heat off claire for a moment?
 
-[claire]@shadow-protectrix: You know what? Fine. I'm irrational. I'm unreasonable. I know that already.[/claire]
+@shadow-protectrix: You know what? Fine. I'm irrational. I'm unreasonable. I know that already.
 
 @nonbinarycatmom: claire honey...
 
-[claire]@shadow-protectrix: DON'T YOU DARE PRETEND TO BE AFFECTIONATE WITH ME[/claire]
+@shadow-protectrix: DON'T YOU DARE PRETEND TO BE AFFECTIONATE WITH ME
 
 *choice
     #Tell Claire that Sofia was right.
@@ -1205,9 +1205,9 @@ ${trap_1_5_notes} notes
         *set writers_chat_ref "writers_chat_sofia"
         @you: um claire? i don't see what's wrong with what sofia said...
 
-        [claire]@shadow-protectrix: Not you too?? Et tu, $!{handle}?![/claire]
+        @shadow-protectrix: Not you too?? Et tu, $!{handle}?!
 
-        [claire]@shadow-protectrix: Fuck this. Fuck everything. God damn it all. I'm closing down this chat.[/claire]
+        @shadow-protectrix: Fuck this. Fuck everything. God damn it all. I'm closing down this chat.
 
         [You have been kicked out of the chat.]
         *goto montage_1
@@ -1220,11 +1220,11 @@ ${trap_1_5_notes} notes
 
         @you: it's been a messy few weeks and claire's gotten a lot of flak they maybe shouldn't have
 
-        [claire]@shadow-protectrix: Thank you so much, thank you $!{handle} for saving my life.[/claire]
+        @shadow-protectrix: Thank you so much, thank you $!{handle} for saving my life.
 
-        [claire]@shadow-protectrix: I'm leaving this channel. I need to take a break from this site. Don't bother trying to talk to me, any of you. Even to say nice things. I don't need it right now.[/claire]
+        @shadow-protectrix: I'm leaving this channel. I need to take a break from this site. Don't bother trying to talk to me, any of you. Even to say nice things. I don't need it right now.
 
-        [claire]@shadow-protectrix: Bye.[/claire]
+        @shadow-protectrix: Bye.
         *goto montage_1
     #Go back.
         *goto montage_1
@@ -1233,26 +1233,26 @@ ${trap_1_5_notes} notes
 *label luna_msg
 *set has_luna_password true
 
-[luna]@lunan0va: hey ${handle}[/luna]
+@lunan0va: hey ${handle}
 
-[luna]@lunan0va: i made my blog password protected. the passwd is iceaugury831.[/luna]
+@lunan0va: i made my blog password protected. the passwd is iceaugury831.
 
-[luna]@lunan0va: could you read the post and talk to me? i need some help...[/luna]
+@lunan0va: could you read the post and talk to me? i need some help...
 
-[luna]@lunan0va: also do you know where karla @trappedinspace is?[/luna]
+@lunan0va: also do you know where karla @trappedinspace is?
 
 *choice
     #I don't know where Karla @trappedinspace is...
         @you: no, sorry, i don't know where she is...
 
-        [luna]@lunan0va: oh. that's okay. it's probably no big deal.[/luna]
+        @lunan0va: oh. that's okay. it's probably no big deal.
 
-        [luna]@lunan0va: but, um, can you read my blog post? thanks! i kind of need some help...[/luna]
+        @lunan0va: but, um, can you read my blog post? thanks! i kind of need some help...
         *goto montage_1
     #Alright, I'll look at your blog now.
         @you: okay, i'll read your blog now.
 
-        [luna]@lunan0va: great! thanks![/luna]
+        @lunan0va: great! thanks!
         *goto montage_1
 
 *label luna_msg_2
@@ -1261,11 +1261,11 @@ ${trap_1_5_notes} notes
 *temp luna_know_librarians false
 *temp luna_know_sorry false
 
-[luna]@lunan0va: did you read the post yet?[/luna]
+@lunan0va: did you read the post yet?
 
 @you: yeah...
 
-[luna]@lunan0va: do you know what i should do?[/luna]
+@lunan0va: do you know what i should do?
 
 *label luna_choices_1
 *choice
@@ -1273,79 +1273,79 @@ ${trap_1_5_notes} notes
         *set luna_know_sorry true
         @you: I don't really know what to do...
 
-        [luna]@lunan0va: that's what i was afraid of.[/luna]
+        @lunan0va: that's what i was afraid of.
         *choice
             #Can you ask someone else?
-                [luna]@lunan0va: who? i don't know where anyone is right now.[/luna]
+                @lunan0va: who? i don't know where anyone is right now.
                 *label luna_choices_people
                 *choice
                     *disable_reuse #Can you contact Karla @trappedinspace?
                         @you: can you contact karla @trappedinspace?
 
-                        [luna]@lunan0va: no, she's been offline all of today i think. i have no idea why. she seemed kinda messed up yesterday and like... i hope she's alright.[/luna]
+                        @lunan0va: no, she's been offline all of today i think. i have no idea why. she seemed kinda messed up yesterday and like... i hope she's alright.
                         *goto luna_choices_people
                     *disable_reuse #Lux @brunova-official?
                         @you: can you contact lux @brunova-official?
 
-                        [luna]@lunan0va: um... we haven't really talked much (or like... at all) and i feel like i don't really know him?[/luna]
+                        @lunan0va: um... we haven't really talked much (or like... at all) and i feel like i don't really know him?
 
                         *choice
                             #I think he's nice?
                                 *set luna_helped_by "lux"
                                 @you: i think he's nice?
 
-                                [luna]@lunan0va: okay... if you say so...[/luna]
+                                @lunan0va: okay... if you say so...
 
-                                [luna]@lunan0va: alright im talking to him now. thanks.[/luna]
+                                @lunan0va: alright im talking to him now. thanks.
 
                                 *page_break Wait...
                                 *label luna_called_friend
 
-                                [luna]@lunan0va: okay. we've been talking now. i'm doing a bit better now.[/luna]
+                                @lunan0va: okay. we've been talking now. i'm doing a bit better now.
 
-                                [luna]@lunan0va: ${luna_helped_by} just said to call my brother and that's what i did lol[/luna]
+                                @lunan0va: ${luna_helped_by} just said to call my brother and that's what i did lol
 
-                                [luna]@lunan0va: i just called my brother and he's gonna pick me up soon.[/luna]
+                                @lunan0va: i just called my brother and he's gonna pick me up soon.
 
-                                [luna]@lunan0va: i told him i was tr*ns and he was... fine with it i guess? idk[/luna]
+                                @lunan0va: i told him i was tr*ns and he was... fine with it i guess? idk
 
-                                [luna]@lunan0va: anyway everything's fine now...[/luna]
+                                @lunan0va: anyway everything's fine now...
 
-                                [luna]@lunan0va: thank you for your help.[/luna]
+                                @lunan0va: thank you for your help.
                                 *goto luna_final_hearts
                             #Alright, how about someone else...
                                 *goto luna_choices_people
                     *disable_reuse #Claire @shadow-protectrix?
                         @you: can you talk to claire @shadow-protectrix?
 
-                        [luna]@lunan0va: lol no[/luna]
+                        @lunan0va: lol no
 
-                        [luna]@lunan0va: sorry but i do not trust them at all[/luna]
+                        @lunan0va: sorry but i do not trust them at all
                         *goto luna_choices_people
                     *disable_reuse #Stella @apocalypse-hoarder?
                         @you: can you talk to stella @apocalypse-hoarder?
 
-                        [luna]@lunan0va: um.[/luna]
+                        @lunan0va: um.
 
-                        [luna]@lunan0va: karla told me that she didn't really trust them? that they might be a troll or sockpuppet or something like that?[/luna]
+                        @lunan0va: karla told me that she didn't really trust them? that they might be a troll or sockpuppet or something like that?
                         
                         
-                        [luna]@lunan0va: and i'm inclined to go with what karla says on this one.[/luna]
+                        @lunan0va: and i'm inclined to go with what karla says on this one.
                         *goto luna_choices_people
                     *disable_reuse #Laura @capellasgf?
                         @you: can you talk to laura @capellasgf?
 
-                        [luna]@lunan0va: sorry but no... i tried to contact her and she's been offline. idk.[/luna]
+                        @lunan0va: sorry but no... i tried to contact her and she's been offline. idk.
                         *goto luna_choices_people
                     *disable_reuse #Hari @noncanonical?
                         *set luna_helped_by "hari"
                         @you: can you talk to hari @noncanonical?
 
-                        [luna]@lunan0va: um...[/luna]
+                        @lunan0va: um...
 
-                        [luna]@lunan0va: maybe? i think they're online...[/luna]
+                        @lunan0va: maybe? i think they're online...
 
-                        [luna]@lunan0va: okay i'll talk to them[/luna]
+                        @lunan0va: okay i'll talk to them
 
                         *page_break Wait...
                         *goto luna_called_friend
@@ -1358,20 +1358,20 @@ ${trap_1_5_notes} notes
                 *set luna_green %+ 8
                 @you: sorry but i can't really help you here
 
-                [luna]@lunan0va: that's okay. i'll talk to someone else then.[/luna]
+                @lunan0va: that's okay. i'll talk to someone else then.
 
-                [luna]@lunan0va: goodbye, ${handle}.[/luna]
+                @lunan0va: goodbye, ${handle}.
                 *goto montage_1
     *disable_reuse #Do you know any responsible adults?
         @you: do you know any responsible adults? like teachers or something?
 
-        [luna]@lunan0va: i don't really talk to my teachers much...[/luna]
+        @lunan0va: i don't really talk to my teachers much...
 
-        [luna]@lunan0va: well my siblings are technically adults now...[/luna]
+        @lunan0va: well my siblings are technically adults now...
 
-        [luna]@lunan0va: my older brother lives in dallas...[/luna]
+        @lunan0va: my older brother lives in dallas...
 
-        [luna]@lunan0va: he just graduated from college... maybe I could contact him? we haven't spoken in a while and I know he never got along with our parents...[/luna]
+        @lunan0va: he just graduated from college... maybe I could contact him? we haven't spoken in a while and I know he never got along with our parents...
 
         *label luna_contact_bro_choice
         *set luna_know_librarians true
@@ -1383,104 +1383,104 @@ ${trap_1_5_notes} notes
                 *label luna_librarians
                 @you: what about the librarians?
 
-                [luna]@lunan0va: huh that's a good idea...[/luna]
+                @lunan0va: huh that's a good idea...
 
-                [luna]@lunan0va: but what would i even say to them? am i supposed to just come out and tell them i'm trans?[/luna]
+                @lunan0va: but what would i even say to them? am i supposed to just come out and tell them i'm trans?
 
                 *choice
                     #I don't know what you should say...
                         @you: i don't know what you should say...
 
-                        [luna]@lunan0va: like, do i just tell them that i was kicked out of my house?[/luna]
+                        @lunan0va: like, do i just tell them that i was kicked out of my house?
 
                         @you: maybe?
                         *goto talk_to_librarian
                     #Just talk to them; it'll be fine.
                         @you: just talk to them; it'll be fine.
 
-                        [luna]@lunan0va: the problem is i have literally no idea how to talk to people.[/luna]
+                        @lunan0va: the problem is i have literally no idea how to talk to people.
 
                         @you: just show them your blog post?
 
-                        [luna]@lunan0va: what if they're transphobic[/luna]
+                        @lunan0va: what if they're transphobic
 
                         @you: maybe you could just say that you were kicked out? without giving more details?
 
                         *label talk_to_librarian
-                        [luna]@lunan0va: okay... i'll try...[/luna]
+                        @lunan0va: okay... i'll try...
 
-                        [luna]@lunan0va: can you stay online for a while?[/luna]
+                        @lunan0va: can you stay online for a while?
 
                         *page_break Wait...
-                        [luna]@lunan0va: okay i'm back. i told them what was going on without much details and they called my dad.[/luna]
+                        @lunan0va: okay i'm back. i told them what was going on without much details and they called my dad.
 
-                        [luna]@lunan0va: now he's picking me up again. i think he was almost ashamed lol (idk if that's even something he can feel.)[/luna]
+                        @lunan0va: now he's picking me up again. i think he was almost ashamed lol (idk if that's even something he can feel.)
 
-                        [luna]@lunan0va: no one said anything about transness or gender at all. they just said something like, your son is here at the library, can you pick him up.[/luna]
+                        @lunan0va: no one said anything about transness or gender at all. they just said something like, your son is here at the library, can you pick him up.
 
-                        [luna]@lunan0va: which is very much for the better i guess[/luna]
+                        @lunan0va: which is very much for the better i guess
 
-                        [luna]@lunan0va: anyway uh... thanks for being here with me. sorry i was kind of an idiot.[/luna]
+                        @lunan0va: anyway uh... thanks for being here with me. sorry i was kind of an idiot.
 
-                        [luna]@lunan0va: 💙︄💙︄💙︄[/luna]
+                        @lunan0va: 💙︄💙︄💙︄
                         *goto luna_final_hearts
                     #Maybe we should do something else...
                         @you: maybe we should do something else?
 
-                        [luna]@lunan0va: idk...[/luna]
+                        @lunan0va: idk...
                         *goto luna_choices_1
             #Maybe we should do something else...
                 @you: maybe we should do something else?
 
-                [luna]@lunan0va: idk...[/luna]
+                @lunan0va: idk...
                 *goto luna_choices_1
     *disable_reuse #Do you have any friends in the area?
         @you: do you have any friends in the area?
 
-        [luna]@lunan0va: not really...[/luna]
+        @lunan0va: not really...
 
-        [luna]@lunan0va: unless you live in the dallas area?[/luna]
+        @lunan0va: unless you live in the dallas area?
 
         @you: i don't...
         *goto luna_choices_1
     *disable_reuse #Do you have any other family?
         @you: do you have any other family?
 
-        [luna]@lunan0va: well my older brother lives in dallas...[/luna]
+        @lunan0va: well my older brother lives in dallas...
 
-        [luna]@lunan0va: he just graduated from college... maybe I could contact him? we haven't spoken in a while and I know he never got along with our parents...[/luna]
+        @lunan0va: he just graduated from college... maybe I could contact him? we haven't spoken in a while and I know he never got along with our parents...
         *goto luna_contact_bro_choice
     *disable_reuse #Are there other places you can go?
         @you: are there other places you can go?
 
-        [luna]@lunan0va: what, like shelters and stuff like that?[/luna]
+        @lunan0va: what, like shelters and stuff like that?
 
-        [luna]@lunan0va: i know there are shelters for lgbt kids but i don't know any near my area. wow i really shouldve studied this huh. i knew this was coming someday.[/luna]
+        @lunan0va: i know there are shelters for lgbt kids but i don't know any near my area. wow i really shouldve studied this huh. i knew this was coming someday.
         *choice
             #You should look for some places to go.
                 @you should look for some places like that...
 
-                [luna]@lunan0va: okay i'll look.[/luna]
+                @lunan0va: okay i'll look.
 
-                [luna]@lunan0va: god am i literally homeless now[/luna]
+                @lunan0va: god am i literally homeless now
 
                 *page_break Wait.
                 *set luna_shelter true
                 *set luna_know_librarians true
 
-                [luna]@lunan0va: okay i've found a few places in dallas[/luna]
+                @lunan0va: okay i've found a few places in dallas
 
-                [luna]@lunan0va: there are homeless shelters for youth but they're probably gonna treat trans girls like shit (like, no way they'll let me in if i told them i was a girl or anything like that)[/luna]
+                @lunan0va: there are homeless shelters for youth but they're probably gonna treat trans girls like shit (like, no way they'll let me in if i told them i was a girl or anything like that)
 
-                [luna]@lunan0va: the one place that *might* not be shit towards trans girls isn't really someplace i can stay overnight[/luna]
+                @lunan0va: the one place that *might* not be shit towards trans girls isn't really someplace i can stay overnight
 
-                [luna]@lunan0va: i can't do this[/luna]
+                @lunan0va: i can't do this
 
-                [luna]@lunan0va: first of all i have no way of getting anywhere right now. i don't have a car and there aren't any buses coming here and i can't walk 10 miles.[/luna]
+                @lunan0va: first of all i have no way of getting anywhere right now. i don't have a car and there aren't any buses coming here and i can't walk 10 miles.
 
-                [luna]@lunan0va: and second of all dealing with this is just... too much for me.[/luna]
+                @lunan0va: and second of all dealing with this is just... too much for me.
 
-                [luna]@lunan0va: sorry but i don't actually want to be homeless[/luna]
+                @lunan0va: sorry but i don't actually want to be homeless
 
                 *goto luna_choices_1
             #Do something else
@@ -1497,28 +1497,28 @@ ${trap_1_5_notes} notes
 *set luna_contacted_bro true
 @you: maybe contacting him is a good idea...
 
-[luna]@lunan0va: thanks...[/luna]
+@lunan0va: thanks...
 
-[luna]@lunan0va: I'm sorry to ask this but could you stay online while I'm calling him[/luna]
+@lunan0va: I'm sorry to ask this but could you stay online while I'm calling him
 
 *label luna_calls
 *choice
     #Wait while Luna finishes the call.
-        [luna]@lunan0va: okay. he says he can pick me up soon. and my sister's nearby too and we've all just had a long and awkward family chat.[/luna]
+        @lunan0va: okay. he says he can pick me up soon. and my sister's nearby too and we've all just had a long and awkward family chat.
 
-        [luna]@lunan0va: he can pick me up right now and stay at his apartment while he and my sister talk to our parents.[/luna]
+        @lunan0va: he can pick me up right now and stay at his apartment while he and my sister talk to our parents.
 
-        [luna]@lunan0va: i told him i was a tr*ns g*rl and he was... fine with it i guess? idk[/luna]
+        @lunan0va: i told him i was a tr*ns g*rl and he was... fine with it i guess? idk
 
-        [luna]@lunan0va: he and my sister were the second and third person i came out to irl. and it was fine. it was better than i expected even.[/luna]
+        @lunan0va: he and my sister were the second and third person i came out to irl. and it was fine. it was better than i expected even.
 
-        [luna]@lunan0va: this worked. this really worked. it was so simple. i'm an idiot lol.[/luna]
+        @lunan0va: this worked. this really worked. it was so simple. i'm an idiot lol.
 
-        [luna]@lunan0va: now that the adrenaline's worn off it's really obvious i've been a dumbass this whole time[/luna]
+        @lunan0va: now that the adrenaline's worn off it's really obvious i've been a dumbass this whole time
 
-        [luna]@lunan0va: i'm fine now. thank you so much. thanks for being here.[/luna]
+        @lunan0va: i'm fine now. thank you so much. thanks for being here.
 
-        [luna]@lunan0va: 💙︄💙︄💙︄💙︄💙︄💙︄[/luna]
+        @lunan0va: 💙︄💙︄💙︄💙︄💙︄💙︄
         *goto luna_final_hearts
 
 *label luna_final_hearts
@@ -1532,24 +1532,24 @@ ${trap_1_5_notes} notes
         *set luna_red %+ 1
         @you: ${heart_emoji}${heart_emoji}${heart_emoji}
 
-        [luna]@lunan0va: 💙︄💙︄💙︄[/luna]
+        @lunan0va: 💙︄💙︄💙︄
     *if (heart_emoji="") #Send heart emoji?
         *set luna_red %+ 1
         Which heart emoji will you use?
         *gosub_scene hearts_choice
         @you: ${heart_emoji}${heart_emoji}${heart_emoji}
 
-        [luna]@lunan0va: 💙︄💙︄💙︄[/luna]
+        @lunan0va: 💙︄💙︄💙︄
     #No problem...
         @you: it was no big deal...
 
-        [luna]@lunan0va: still...[/luna]
+        @lunan0va: still...
 
-[luna]@lunan0va: anyway i'm logging off now. gotta have that awkward in-person conversation that i'm woefully unprepared for :/[/luna]
+@lunan0va: anyway i'm logging off now. gotta have that awkward in-person conversation that i'm woefully unprepared for :/
 
-[luna]@lunan0va: btw i'm probably gonna delete this blog... i might move to a new url (i've saved @redmoongirl as a backup so uh. yeah.)[/luna]
+@lunan0va: btw i'm probably gonna delete this blog... i might move to a new url (i've saved @redmoongirl as a backup so uh. yeah.)
 
-[luna]@lunan0va: 💙︄[/luna]
+@lunan0va: 💙︄
 
 Luna is offline.
 
@@ -1562,18 +1562,18 @@ You message Sofia @nebulascribbler.
 
 @you: so much for your plan huh
 
-[sofia]@nebulascribbler: tbh it was always a low chance that it would succeed. I didn't expect to be able to take over NebulaCon. It was always likely that it would be cancelled.[/sofia]
+@nebulascribbler: tbh it was always a low chance that it would succeed. I didn't expect to be able to take over NebulaCon. It was always likely that it would be cancelled.
 
-[sofia]@nebulascribbler: Such a shame, alas.[/sofia]
+@nebulascribbler: Such a shame, alas.
 
 *choice
     *disable_reuse #Ask about why she's doing this.
         *set sofia_secret true
         @you: why are you doing this?
 
-        [sofia]@nebulascribbler: Why am I doing what? Creating sockpuppets to attack Claire while simultaneously defending them with my main blog?[/sofia]
+        @nebulascribbler: Why am I doing what? Creating sockpuppets to attack Claire while simultaneously defending them with my main blog?
 
-        [sofia]@nebulascribbler: Yeah. I'm a vile monster. A cyberbully, or even a cyberterrorist. There, I said it.[/sofia]
+        @nebulascribbler: Yeah. I'm a vile monster. A cyberbully, or even a cyberterrorist. There, I said it.
 
         *page_break "Um..."
         @you: um... yeah, why?
@@ -1585,53 +1585,53 @@ You message Sofia @nebulascribbler.
         *label sofia_message_2
         @you: what's going on with the claire plagiarism stuff?
 
-        [sofia]@nebulascribbler: I made them up.[/sofia]
+        @nebulascribbler: I made them up.
 
-        [sofia]@nebulascribbler: I ran their entire ouevre through turnitin.com to find passages that were similar to other works. They're not particularly strong matches, but I wondered if people would believe them.[/sofia]
+        @nebulascribbler: I ran their entire ouevre through turnitin.com to find passages that were similar to other works. They're not particularly strong matches, but I wondered if people would believe them.
 
         *fake_choice
             #Why???
                 @you: why?????
 
-                [sofia]@nebulascribbler: It was a social experiment, I suppose.[/sofia]
+                @nebulascribbler: It was a social experiment, I suppose.
 
-                [sofia]@nebulascribbler: it wasn't entirely a success because I don't think most people bought it. But a lot did.[/sofia]
+                @nebulascribbler: it wasn't entirely a success because I don't think most people bought it. But a lot did.
             #Cool. Good job.
                 @you: cool. good job.
 
-                [sofia]@nebulascribbler: I'll be honest, that's not the response I expected.[/sofia]
+                @nebulascribbler: I'll be honest, that's not the response I expected.
 
-                [sofia]@nebulascribbler: I like that.[/sofia]
+                @nebulascribbler: I like that.
 
         *label sofia_message_3
         *set sofia_message_ref "sofia_message_3"
-        [sofia]@nebulascribbler: Once you realize how the world works, it becomes a much more fluid place. A place of possibilities and even of magic. Everything seems like magic to those who don't know how to wield the power.[/sofia]
+        @nebulascribbler: Once you realize how the world works, it becomes a much more fluid place. A place of possibilities and even of magic. Everything seems like magic to those who don't know how to wield the power.
 
-        [sofia]@nebulascribbler: You start to see the world as a system. It's like having the shipficator: you see the lines connecting people, the numbers and patterns, the stage magic behind everything.[/sofia]
+        @nebulascribbler: You start to see the world as a system. It's like having the shipficator: you see the lines connecting people, the numbers and patterns, the stage magic behind everything.
 
-        [sofia]@nebulascribbler: As they say, knowledge is power, and what good is power if it is left unused? If you can see the knobs and buttons that govern the world, won't you want to touch them, to fiddle with the dials and see what breaks?[/sofia]
+        @nebulascribbler: As they say, knowledge is power, and what good is power if it is left unused? If you can see the knobs and buttons that govern the world, won't you want to touch them, to fiddle with the dials and see what breaks?
 
-        [sofia]@nebulascribbler: Don't you just want to fuck shit up sometimes?[/sofia]
+        @nebulascribbler: Don't you just want to fuck shit up sometimes?
 
-        [sofia]@nebulascribbler: You see what I did just now?[/sofia]
+        @nebulascribbler: You see what I did just now?
         *set sofia_blue 69
         *set sofia_green 69
 
-        [sofia]@nebulascribbler: All of your actions have repercussions. You just need to understand how to see.[/sofia]
+        @nebulascribbler: All of your actions have repercussions. You just need to understand how to see.
 
-        [sofia]@nebulascribbler: If I may ask, what are you planning to do with this information?[/sofia]
+        @nebulascribbler: If I may ask, what are you planning to do with this information?
         *choice
             #I'll tell Claire...
                 @you: i'll tell claire.
 
                 *label sofia_tell
                 *set sofia_message_ref "sofia_tell"
-                [sofia]@nebulascribbler: go ahead. There's no evidence anyway; it's remarkably easy to fake a chat like this. Anyone can fake the screenshots. Who would believe you?[/sofia]
+                @nebulascribbler: go ahead. There's no evidence anyway; it's remarkably easy to fake a chat like this. Anyone can fake the screenshots. Who would believe you?
 
                 *label sofia_world
-                [sofia]@nebulascribbler: This world's coming to a close soon. I have a different life out there in meatspace. I have a wife. And soon, a child. I have loved ones in my reality, not just within the bounds of this virtual simulacrum.[/sofia]
+                @nebulascribbler: This world's coming to a close soon. I have a different life out there in meatspace. I have a wife. And soon, a child. I have loved ones in my reality, not just within the bounds of this virtual simulacrum.
 
-                [sofia]@nebulascribbler: Let the callouts come. I'll be fine. Will you?[/sofia]
+                @nebulascribbler: Let the callouts come. I'll be fine. Will you?
                 *goto sofia_final_choice
             #I'll make a callout post...
                 @you: i'll make a callout post.
@@ -1640,17 +1640,17 @@ You message Sofia @nebulascribbler.
             #I won't tell anyone.
                 @you: i won't tell anyone.
 
-                [sofia]@nebulascribbler: What do you expect me to say? Do you expect me to praise you for your loyalty to me?[/sofia]
+                @nebulascribbler: What do you expect me to say? Do you expect me to praise you for your loyalty to me?
 
-                [sofia]@nebulascribbler: Your loyalty is severely misplaced. This is not my world. Nor is it yours.[/sofia]
+                @nebulascribbler: Your loyalty is severely misplaced. This is not my world. Nor is it yours.
 
-                [sofia]@nebulascribbler: Do whatever you wish. I ultimately don't care. I will not be affected either way, as I have a different life out there in meatspace.[/sofia]
+                @nebulascribbler: Do whatever you wish. I ultimately don't care. I will not be affected either way, as I have a different life out there in meatspace.
             #I don't know what I'll do.
                 @you: idk what i'll do...
 
-                [sofia]@nebulascribbler: Keeping your options open. Smart. I knew I saw something of interest in you.[/sofia]
+                @nebulascribbler: Keeping your options open. Smart. I knew I saw something of interest in you.
 
-                [sofia]@nebulascribbler: But ultimately, I don't care what you do.[/sofia]
+                @nebulascribbler: But ultimately, I don't care what you do.
 
                 *goto sofia_world
         *label sofia_final_choice
@@ -1659,21 +1659,21 @@ You message Sofia @nebulascribbler.
             *disable_reuse #Why do you talk like this?
                 @you: why do you talk like this?
 
-                [sofia]@nebulascribbler: Why don't you?[/sofia]
+                @nebulascribbler: Why don't you?
 
                 *goto sofia_final_choice
             *disable_reuse #What's the deal with Half Full, Half Empty?
                 @you: what's the deal with half full half empty?
 
-                [sofia]@nebulascribbler: As the children say these days, LMAO.[/sofia]
+                @nebulascribbler: As the children say these days, LMAO.
 
-                [sofia]@nebulascribbler: I sensed a certain kinship with them.[/sofia]
+                @nebulascribbler: I sensed a certain kinship with them.
 
                 *goto sofia_final_choice
             #Cease this conversation.
                 *label sofia_goodbye
                 *set sofia_message_ref "sofia_goodbye"
-                [sofia]@nebulascribbler: Goodbye, $!{handle}. I hope you have a good life.[/sofia]
+                @nebulascribbler: Goodbye, $!{handle}. I hope you have a good life.
                 *goto montage_1
     #Go back.
         *goto montage_1

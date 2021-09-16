@@ -153,17 +153,17 @@ No matter. She existed, right then and there.
 
 [b]Online[/b]
 
-[luna]@lunan0va: so[/luna]
+@lunan0va: so
 
-[luna]@lunan0va: um...[/luna]
+@lunan0va: um...
 
-[luna]@lunan0va: what did you think abt my story[/luna]
+@lunan0va: what did you think abt my story
 
-[luna]@lunan0va: it was kinda rushed tbh i wrote it right before falling asleep[/luna]
+@lunan0va: it was kinda rushed tbh i wrote it right before falling asleep
 
-[luna]@lunan0va: it's not finished obviously... i put notes where the additional content would be[/luna]
+@lunan0va: it's not finished obviously... i put notes where the additional content would be
 
-[luna]@lunan0va: but that should be the easy part right[/luna]
+@lunan0va: but that should be the easy part right
 
 Luna @lunan0va has been your first and probably best friend in the Nebulaverse
 fandom. She's 16 years old, like you, and lives in the same time zone, or close enough anyway. Recently she has been working on her fanfic, "Another Light".
@@ -171,50 +171,50 @@ fandom. She's 16 years old, like you, and lives in the same time zone, or close 
 *choice
   #(honest) It was good!
     *set luna_blue + 5
-    [luna]@lunan0va: oh, really? thanks![/luna]
+    @lunan0va: oh, really? thanks!
 
-    [luna]@lunan0va: im glad you enjoyed it ^_^[/luna]
+    @lunan0va: im glad you enjoyed it ^_^
 
-    [luna]@lunan0va: that emoji isn't cringe anymore right[/luna]
+    @lunan0va: that emoji isn't cringe anymore right
   #(lying) It was good!
     *set luna_blue + 5
-    [luna]@lunan0va: oh, really? thanks![/luna]
+    @lunan0va: oh, really? thanks!
 
-    [luna]@lunan0va: im glad you enjoyed it ^_^[/luna]
+    @lunan0va: im glad you enjoyed it ^_^
 
-    [luna]@lunan0va: that emoji isn't cringe anymore right[/luna]
+    @lunan0va: that emoji isn't cringe anymore right
   #It was okay (insert shrug emoji here).
     *set luna_green + 5
-    [luna]@lunan0va: oh :/[/luna]
+    @lunan0va: oh :/
 
-    [luna]@lunan0va: i really wish i could make people feel things i guess[/luna]
+    @lunan0va: i really wish i could make people feel things i guess
 
-    [luna]@lunan0va: a meh is like the worst thing for me lol[/luna]
+    @lunan0va: a meh is like the worst thing for me lol
 
-    [luna]@lunan0va: sorry[/luna]
+    @lunan0va: sorry
 
-    [luna]@lunan0va: but thats okay[/luna]
+    @lunan0va: but thats okay
     
     
-    [luna]@lunan0va: i need to get better at the whole writing thing lol[/luna]
+    @lunan0va: i need to get better at the whole writing thing lol
   #(honest) It needed improvement.
     *set luna_blue + 5
-    [luna]@lunan0va: thanks for the honesty :)[/luna]
+    @lunan0va: thanks for the honesty :)
 
-    [luna]@lunan0va: ya i rly do need to improve things[/luna]
+    @lunan0va: ya i rly do need to improve things
   #(lying) It was bad.
     *set luna_green + 10
-    [luna]@lunan0va: oh :/[/luna]
+    @lunan0va: oh :/
 
-    [luna]@lunan0va: so theres nothing i can do to improve it?[/luna]
+    @lunan0va: so theres nothing i can do to improve it?
 
-[luna]@lunan0va: anyway[/luna]
+@lunan0va: anyway
 
-[luna]@lunan0va: i have to go[/luna]
+@lunan0va: i have to go
 
-[luna]@lunan0va: homework and such[/luna]
+@lunan0va: homework and such
 
-[luna]@lunan0va: see you later...[/luna]
+@lunan0va: see you later...
 
 *label handle_choice
 
@@ -355,7 +355,7 @@ Wait... by what name does she call you?
     *if handle = ""
         *goto handle_choice
 
-[luna]@lunan0va: see you later ${handle}[/luna]
+@lunan0va: see you later ${handle}
 
 The dot next to her icon is still green, but she is no longer typing. You are alone once more, the Nebulaverse still bouncing in your mind as always.
 
@@ -601,8 +601,11 @@ What are the pronouns that you use online?
     *set emself "himself"
     *set plural false
   #They/them
-    *set player_is "are"
-    *set player_was "were"
+    *set e "they"
+    *set em "them"
+    *set eir "their"
+    *set eirs "theirs"
+    *set emself "themself"
     *set plural true
   #E/em (Spivak pronouns)
     *set e "e"
@@ -636,29 +639,7 @@ What are the pronouns that you use online?
     
 Cool!
 
-By the way, what's your blog aesthetic? What is the overall vibe that you want to convey to your readers?
-
-*fake_choice
-    #Pink cherry blossoms, pastel wallpaper, layer cakes, frilly dresses.
-        *set aesthetic "pink"
-    #Stars, the milky way, the blackness of night broken up by pinpricks of light.
-        *set aesthetic "space"
-    #The woods at night, a haunted house, shadows lurking.
-        *set aesthetic "shadow"
-    #Red roses, lipstick and black dresses, cherries, goblets of unidentifiable red liquid.
-        *set aesthetic "red"
-    #Green leaves and grass, sunlight streaming through the treetops, a path through the woods.
-        *set aesthetic "green"
-    #The ocean, mountain lakes, vast expanses of blue and white.
-        *set aesthetic "blue"
-    #A cityscape, brutalist architecture, drizzling rain amid neon lights.
-        *set aesthetic "city"
-    #A bunch of your favorite anime characters. Sketches and bold colors.
-        *set aesthetic "anime"
-    #Nothing consistent.
-        *set aesthetic "nothing"
-
-That's great! And by the way, what is the focus of your blog? What type of posts do you usually reblog?
+By the way, what is the focus of your blog? What type of posts do you usually reblog?
 
 *fake_choice
     #Gen - general fandom posts, fanart, and so on.
@@ -1123,7 +1104,7 @@ Which blogs would you like to read?
 
 Luna is one of your oldest mutuals on this site, and your closest companion here.
 
-[b][luna]@lunan0va[/luna] posted at 9:38 PM[/b]
+[b]@lunan0va posted at 9:38 PM[/b]
 
 How am I supposed to have time to write while taking 4 ap classes? I really wish we could put fanfic experience on our college apps. But I guess I need to do well in, like, actual school if I want to get out of here for college.
 
@@ -1132,12 +1113,12 @@ Tags: #moondust
 ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set luna_interact + 1
         *set luna_1_1_notes + 1
         *set luna_blue %+ 5
         *goto luna_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx luna_like
             *gosub_scene rx sympathy
@@ -1164,7 +1145,7 @@ ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 
 *label luna_1_2
 *set luna_prog 2
-[b][luna]@lunan0va[/luna] reblogged from @noncanonical at 9:21 PM. OP: @helioss[/b]
+[b]@lunan0va reblogged from @noncanonical at 9:21 PM. OP: @helioss[/b]
 
 [Fanart of Astra, a brown-haired girl alone in space, with shadow-like hands reaching towards her from every direction. She is gazing upward, face illuminated, hands clasped atop her heart.]
 
@@ -1177,10 +1158,10 @@ Tags: #astra #art
 ${luna_1_2_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set luna_1_2_notes + 1
         *goto luna_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx luna_like
             *gosub_scene rx gen
@@ -1201,7 +1182,7 @@ ${luna_1_2_notes} notes
 
 *label luna_1_3
 *set luna_prog 3
-[b][luna]@lunan0va[/luna] reblogged from @capellasgf at 9:17 PM. OP: @summersnow[/b]
+[b]@lunan0va reblogged from @capellasgf at 9:17 PM. OP: @summersnow[/b]
 
 [Fanart of Astra and Capella holding hands and smiling at each other. The two girls are lying on the grass on the surface of a sunny world. Splotches of light and shadow cover their forms.]
 
@@ -1212,10 +1193,10 @@ Tags: #astrapella #art #:)
 ${luna_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set luna_1_3_notes + 1
         *goto luna_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx luna_like
             *gosub_scene rx shipping
@@ -1238,7 +1219,7 @@ ${luna_1_3_notes} notes
 
 *label luna_1_4
 *set luna_prog 4
-[b][luna]@lunan0va[/luna] posted at 8:20 PM[/b]
+[b]@lunan0va posted at 8:20 PM[/b]
 
 How do I get my parents to stop making me get a haircut without letting them know why I don't want a haircut. They literally said that I would "look like a girl" if I let my hair grow any longer. Like, obviously that's the whole point but I can't just say that...
 
@@ -1247,7 +1228,7 @@ Tags: #moondust, #d/ont r/eblog
 ${luna_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set luna_1_4_notes + 1
         *set luna_interact + 1
         *set luna_blue %+ 4
@@ -1259,7 +1240,7 @@ ${luna_1_4_notes} notes
         *set luna_interact + 2
         *set luna_blue %+ 7
         *goto luna_1_4
-    *disable_reuse #Reblog the post (ignoring her message to not reblog).
+    *disable_reuse #Reblog 🔁(ignoring her message to not reblog).
         *set rb_count + 1
         You're gonna be a jerk by reblogging her post? Really?
         *choice
@@ -1273,33 +1254,33 @@ ${luna_1_4_notes} notes
                 *set luna_green + 25
                 Luna messages you:
 
-                [luna]@lunan0va: hey can you delete the post you just reblogged?[/luna]
+                @lunan0va: hey can you delete the post you just reblogged?
                 *choice
                     #Delete the post.
                         *set luna_green - 24
                         *set luna_1_4_notes - 1
                         You delete the post and let Luna know.
 
-                        [luna]@lunan0va: thanks[/luna]
+                        @lunan0va: thanks
                         *goto luna_1_4
                     #No. I'm a total asshole.
-                        [luna]@lunan0va: :([/luna]
+                        @lunan0va: :(
 
-                        [luna]@lunan0va: why?[/luna]
+                        @lunan0va: why?
 
-                        [luna]@lunan0va: is it really that big of a deal?[/luna]
+                        @lunan0va: is it really that big of a deal?
                         *choice
                             #Just delete the post.
                                 *set luna_1_4_notes - 1
                                 *set luna_green - 15
-                                [luna]@lunan0va: thanks[/luna]
+                                @lunan0va: thanks
                                 *goto luna_1_4
                             #No.
                                 *set discourse %+ 3
                                 *set luna_green + 10
-                                [luna]@lunan0va: i really don't want to block you but. uh.[/luna]
+                                @lunan0va: i really don't want to block you but. uh.
 
-                                [luna]@lunan0va: i can't really deal with this so consider it a warning i guess.[/luna]
+                                @lunan0va: i can't really deal with this so consider it a warning i guess.
                                 *goto montage_1
     #Next post.
         *goto luna_1_5
@@ -1311,7 +1292,7 @@ ${luna_1_4_notes} notes
 *label luna_1_5
 *set luna_ch1_seen 1
 *set luna_prog 5
-[b][luna]@lunan0va[/luna] reblogged from @noncanonical at 8:00 PM. OP: [luna]@lunan0va[/luna][/b]
+[b]@lunan0va reblogged from @noncanonical at 8:00 PM. OP: @lunan0va[/b]
 
 So, I've spent a long time researching this theory... Please read it and tell me what you think!
 
@@ -1327,7 +1308,7 @@ Really interesting points OP! I don't agree with everything here but this would 
 
 (Read more)
 
-[b][luna]@lunan0va[/luna][/b]:
+[b]@lunan0va[/b]:
 
 Thank you! I have some responses:
 
@@ -1338,12 +1319,12 @@ Tags: #trans girl gali #reply #meta
 ${luna_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set luna_1_5_notes + 1
         *set luna_blue %+ 3
         *set luna_interact + 1
         *goto luna_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx luna_like
             *gosub_scene rx karla_like
@@ -1379,7 +1360,7 @@ ${luna_1_5_notes} notes
 
 Lux is one of your mutuals, but it's not like you've ever talked. Maybe he just followed back whoever. As his name suggests, he's a big fan of the brunova ship, and probably kins Bruno or something like that.
 
-[b][lux]@brunova-official[/lux] reblogged from @shadow-protectrix at 9:34 PM. OP: @shadow-protectrix[/b]
+[b]@brunova-official reblogged from @shadow-protectrix at 9:34 PM. OP: @shadow-protectrix[/b]
 
 Y'all, who's all excited for the NebulaCon this year? We have so many amazing things planned for everyone, awesome events with great people. Everyone who can make it should come!
 
@@ -1388,11 +1369,11 @@ Tags: #i am!!!!, #probably wont make it but i can hope
 ${brun_1_1_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_1_notes + 1
         *set lux_blue %+ 1
         *goto brun_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx claire_like
@@ -1413,7 +1394,7 @@ ${brun_1_1_notes} notes
 
 *label brun_1_2
 *set brun_prog 2
-[b][lux]@brunova-official[/lux] reblogged from @shadow-protectrix at 9:22 PM. OP: @cyanstars[/b]
+[b]@brunova-official reblogged from @shadow-protectrix at 9:22 PM. OP: @cyanstars[/b]
 
 [Fanart of Galileo and Bruno hugging on a green field in a planet, half-body, with rays of light shining through clouds, illuminating the two of them. The image is a side profile, with Bruno's head closer to the audience resting on Gali's shoulder.]
 
@@ -1424,11 +1405,11 @@ Tags: #me, #brunova
 ${brun_1_2_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_2_notes + 1
         *set lux_blue %+ 2
         *goto brun_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx shipping
@@ -1453,7 +1434,7 @@ ${brun_1_2_notes} notes
 
 *label brun_1_3
 *set brun_prog 3
-[b][lux]@brunova-official[/lux] reblogged from @cyanstars at 9:17 PM. OP: @cyanstars[/b]
+[b]@brunova-official reblogged from @cyanstars at 9:17 PM. OP: @cyanstars[/b]
 
 [Fanart of Galileo and Bruno holding hands in the middle of space. Gali is glancing towards Bruno, smiling, while Bruno is frowning and gazing forward. Their bodies are framed by the purple and blue colors of the nebula.]
 
@@ -1464,11 +1445,11 @@ Tags: #me, #brunova
 ${brun_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_3_notes + 1
         *set lux_blue %+ 2
         *goto brun_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx shipping
@@ -1491,7 +1472,7 @@ ${brun_1_3_notes} notes
 
 *label brun_1_4
 *set brun_prog 4
-[b][lux]@brunova-official[/lux] reblogged from @bruno-helios at 9:11 PM. OP: @bruno-helios[/b]
+[b]@brunova-official reblogged from @bruno-helios at 9:11 PM. OP: @bruno-helios[/b]
 
 [Black-and-white full-body sketch of Bruno Helios, a boy with white hair and a complex expression, brow slightly furrowed. His hands are in his jacket pocket, and he is glancing towards his left side.]
 
@@ -1502,11 +1483,11 @@ Tags: #me, #kin
 ${brun_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_4_notes + 1
         *set lux_blue %+ 2
         *goto brun_1_4
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx lux_like
             *gosub_scene rx gen
@@ -1529,7 +1510,7 @@ ${brun_1_4_notes} notes
 *label brun_1_5
 *set lux_ch1_seen 1
 *set brun_prog 5
-[b][lux]@brunova-official[/lux] posted at 9:08 PM[/b]
+[b]@brunova-official posted at 9:08 PM[/b]
 
 if you think brunova is abusive then why the f are you following me
 
@@ -1538,11 +1519,11 @@ Tags: #ajsdl;kfjadsl;jdafslkjasf
 ${brun_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_5_notes + 1
         *set lux_blue %+ 5
         *goto brun_1_5
-    *disable_reuse #Reblog the post, despite the general etiquette being not to reblog posts like this.
+    *disable_reuse #Reblog 🔁 despite the general etiquette being not to reblog posts like this.
         *if rx
             *gosub_scene rx lux_dislike
             *gosub_scene rx luna_dislike
@@ -1568,7 +1549,7 @@ ${brun_1_5_notes} notes
 
 Claire @shadow-protectrix is probably the single most popular and polarizing figure in the Nebulaverse fandom. They're a highly prolific writer, mostly for brunova, and a bit of a pugnacious personality beneath their beneficent veneer.
 
-[b][claire]@shadow-protectrix[/claire] posted at 9:11 PM.[/b]
+[b]@shadow-protectrix posted at 9:11 PM.[/b]
 
 Y'all, who's all excited for the NebulaCon this year? We have so many amazing things planned for everyone, awesome events with great people. Everyone who can make it should come!
 
@@ -1581,11 +1562,11 @@ Tags: #nebulacon
 ${brun_1_1_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set brun_1_1_notes + 1
         *set claire_blue %+ 2
         *goto shad_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_like
             *gosub_scene rx karla_dislike
@@ -1605,7 +1586,7 @@ ${brun_1_1_notes} notes
 
 *label shad_1_2
 *set shad_prog 2
-[b][claire]@shadow-protectrix[/claire] reblogged from @nebulaincolor at 8:50 PM. OP: @jizzwailer[/b]
+[b]@shadow-protectrix reblogged from @nebulaincolor at 8:50 PM. OP: @jizzwailer[/b]
 
 A reminder that all closeted queer people are valid! If you feel like you can't come out for whatever reason, that's okay! If you don't feel safe or comfortable coming out in real life, it doesn't make you any less of who you are.
 
@@ -1614,11 +1595,11 @@ Tags: #signal boost, #important
 ${shad_1_2_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set shad_1_2_notes + 1
         *set claire_blue %+ 2
         *goto shad_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_like
             *gosub_scene rx sympathy
@@ -1638,7 +1619,7 @@ ${shad_1_2_notes} notes
 
 *label shad_1_3
 *set shad_prog 3
-[b][claire]@shadow-protectrix[/claire] posted at 8:40 PM[/b]
+[b]@shadow-protectrix posted at 8:40 PM[/b]
 
 Anonymous asked: hey Claire! just wanted to say I love your brunova stories! Just wondering, do you have any plans to continue the planets saga, after bringer of peace?
 
@@ -1649,11 +1630,11 @@ Tags: #ask, #anonymous
 ${shad_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set shad_1_3_notes + 1
         *set claire_blue %+ 2
         *goto shad_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_like
             *gosub_scene rx karla_dislike
@@ -1675,7 +1656,7 @@ ${shad_1_3_notes} notes
 
 *label shad_1_4
 *set shad_prog 4
-[b][claire]@shadow-protectrix[/claire] posted at 8:30 PM[/b]
+[b]@shadow-protectrix posted at 8:30 PM[/b]
 
 Anonymous asked: just wondering, have you read lunanova's trans girl gali theory?
 
@@ -1686,7 +1667,7 @@ Tags: #ask, #anonymous
 ${shad_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set shad_1_4_notes + 1
         *set claire_blue %+ 2
         *goto shad_1_4
@@ -1698,7 +1679,7 @@ ${shad_1_4_notes} notes
         *set claire_green %+ 5
         You comment that Luna only uses she/her pronouns. Claire does not respond, but you see that they have changed the post.
         *goto shad_1_4
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_like
             *gosub_scene rx luna_dislike
@@ -1721,7 +1702,7 @@ ${shad_1_4_notes} notes
 *label shad_1_5
 *set claire_ch1_seen 1
 *set shad_prog 5
-[b][claire]@shadow-protectrix[/claire] posted at 8:20 PM[/b]
+[b]@shadow-protectrix posted at 8:20 PM[/b]
 
 @weaveroflight2 asked: As a fan from Brazil I'm so jealous that you're going to have a con! I wish we could have one in our country D:
 
@@ -1732,11 +1713,11 @@ Tags: #ask, #anonymous
 ${shad_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set shad_1_5_notes + 1
         *set claire_blue %+ 2
         *goto shad_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx claire_like
             *gosub_scene rx karla_dislike
@@ -1762,7 +1743,7 @@ ${shad_1_5_notes} notes
 
 Sofia @nebulascribbler is one of the more popular writers in the Nebulaverse fandom. She's written for a wide variety of ships, including brunova, astrapella, even ariastra. She's gotten some enemies for her profligacy in shipping, however.
 
-[b][sofia]@nebulascribbler[/sofia] reblogged from @nonbinarycatmom at 6:23 PM. OP: unknown[/b]
+[b]@nebulascribbler reblogged from @nonbinarycatmom at 6:23 PM. OP: unknown[/b]
 
 [i]Do you love the color of the sky?[/i]
 
@@ -1803,10 +1784,10 @@ Tags: #legendary post
 ${nebu_1_1_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set nebu_1_1_notes + 1
         *goto nebu_1_1
-    *disable_reuse #Reblog the post (your followers will hate you).
+    *disable_reuse #Reblog 🔁(your followers will hate you).
         *if rx
             *gosub_scene rx sofia_like
             *gosub_scene rx luna_dislike
@@ -1836,7 +1817,7 @@ ${nebu_1_1_notes} notes
 
 *label nebu_1_2
 *set nebu_prog 2
-[b][sofia]@nebulascribbler[/sofia] posted at 5:30 PM[/b]
+[b]@nebulascribbler posted at 5:30 PM[/b]
 
 To all the astrapellas out there, I am writing a new fic and you will *so* look forward to it.
 
@@ -1847,11 +1828,11 @@ Tags: #sofia speaks, #astrapella
 ${nebu_1_2_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set sofia_blue %+ 2
         *set nebu_1_2_notes + 1
         *goto nebu_1_2
-    *disable_reuse #Reblog the post (tag it with something enthusiastic).
+    *disable_reuse #Reblog 🔁(tag it with something enthusiastic).
         *if rx
             *gosub_scene rx sofia_like
             *gosub_scene rx shipping
@@ -1874,7 +1855,7 @@ ${nebu_1_2_notes} notes
 
 *label nebu_1_3
 *set nebu_prog 3
-[b][sofia]@nebulascribbler[/sofia] reblogged from @shadow-protectrix at 5:10 PM. OP: unknown[/b]
+[b]@nebulascribbler reblogged from @shadow-protectrix at 5:10 PM. OP: unknown[/b]
 
 Reminder to everyone to take a drink of water! Look away from the screen if your eyes hurt. Take a nap if you're tired. Remember to take care of yourself and don't let what you see here get you down.
 
@@ -1883,12 +1864,12 @@ Tags: #important
 ${nebu_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set sofia_blue %+ 1
         *set sofia_interact + 1
         *set nebu_1_3_notes + 1
         *goto nebu_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx sofia_like
             *gosub_scene rx sympathy
@@ -1908,7 +1889,7 @@ ${nebu_1_3_notes} notes
 
 *label nebu_1_4
 *set nebu_prog 4
-[b][sofia]@nebulascribbler[/sofia] reblogged from @shadow-protectrix at 4:33 PM. OP: @shadow-protectrix[/b]
+[b]@nebulascribbler reblogged from @shadow-protectrix at 4:33 PM. OP: @shadow-protectrix[/b]
 
 To all the moralists in the Nebulaverse fandom, I hope you know that you are misguided at best, actively malicious at worst. I hope you can realize that defining certain story types as "problematic" you are actively pushing people away from this community, and you are making people's experiences here worse.
 
@@ -1919,11 +1900,11 @@ Tags: #important
 ${nebu_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set sofia_blue %+ 1
         *set nebu_1_4_notes + 1
         *goto nebu_1_4
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx sofia_like
             *gosub_scene rx claire_like
@@ -1951,7 +1932,7 @@ ${nebu_1_4_notes} notes
 *label nebu_1_5
 *set sofia_ch1_seen 1
 *set nebu_prog 5
-[b][sofia]@nebulascribbler[/sofia] reblogged from @nonbinarycatmom at 4:33 PM. OP: @ahistoricallyqueer[/b]
+[b]@nebulascribbler reblogged from @nonbinarycatmom at 4:33 PM. OP: @ahistoricallyqueer[/b]
 
 Imagine this: a pansexual aromantic and asexual panromantic become roommates and have wacky adventures. But picture this: one of them is super outgoing and a huge flirt and the other is a socially awkward loner.
 
@@ -1972,10 +1953,10 @@ Tags: #so cool, #half full half empty
 ${nebu_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set nebu_1_5_notes + 1
         *goto nebu_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx sofia_like
             *gosub_scene rx luna_dislike
@@ -2004,7 +1985,7 @@ ${nebu_1_5_notes} notes
 
 Stella is one of your mutuals whom you haven't had the opportunity to converse with. They're usually pretty quiet, mostly just reblogging fics and fanart. Right now, their blog consists mostly of astrapella fanart and aesthetic posts.
 
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @bluemoonrising at 8:30 PM. OP: @nebula-moodboards[/b]
+[b]@apocalypse-hoarder reblogged from @bluemoonrising at 8:30 PM. OP: @nebula-moodboards[/b]
 
 Astrapella cottagecore lesbians moodboard for anon!
 
@@ -2015,10 +1996,10 @@ Tags: #queueasimodo, #moodboard
 ${apoc_1_1_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set apoc_1_1_notes + 1
         *goto apoc_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx shipping
 
@@ -2039,7 +2020,7 @@ ${apoc_1_1_notes} notes
 
 *label apoc_1_2
 *set apoc_prog 2
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @bluemoonrising at 8:00 PM. OP: @auguroflight6[/b]
+[b]@apocalypse-hoarder reblogged from @bluemoonrising at 8:00 PM. OP: @auguroflight6[/b]
 
 [b]@auguroflight6:[/b]
 
@@ -2072,10 +2053,10 @@ Tags: #queueasimodo, #this is a good essay!
 ${apoc_1_2_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set apoc_1_2_notes + 1
         *goto apoc_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx gen
             *gosub_scene rx meta
@@ -2097,7 +2078,7 @@ ${apoc_1_2_notes} notes
 
 *label apoc_1_3
 *set apoc_prog 3
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @nebulascribbler at 7:30 PM. OP: @nebulascribbler[/b]
+[b]@apocalypse-hoarder reblogged from @nebulascribbler at 7:30 PM. OP: @nebulascribbler[/b]
 
 Hey, so, I wrote a astrapella oneshot. It's pretty much total fluff, in a no-shadow AU where the girls are just allowed to, you know, hang out and live.
 
@@ -2108,10 +2089,10 @@ Tags: #queueasimodo, #fanfic, #!!!
 ${apoc_1_3_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set apoc_1_3_notes + 1
         *goto apoc_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx sofia_like
             *gosub_scene rx shipping
@@ -2135,7 +2116,7 @@ ${apoc_1_3_notes} notes
 
 *label apoc_1_4
 *set apoc_prog 4
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @capellasgf at 7:00 PM. OP: @capellasgf[/b]
+[b]@apocalypse-hoarder reblogged from @capellasgf at 7:00 PM. OP: @capellasgf[/b]
 
 [Drawing of a Nebulaverse original character, a woman with dark skin and braided hair. She is wearing the girl's uniform of the Pulsar Academy.]
 
@@ -2146,10 +2127,10 @@ Tags: #this is cool!, #queueasimodo, #magesona
 ${apoc_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set apoc_1_4_notes + 1
         *goto apoc_1_4
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx luna_like
             *gosub_scene rx gen
@@ -2171,7 +2152,7 @@ ${apoc_1_4_notes} notes
 *label apoc_1_5
 *set stella_ch1_seen 1
 *set apoc_prog 5
-[b][stella]@apocalypse-hoarder[/stella] reblogged from @personae-and-roles at 6:30 PM. OP: @personae-and-roles[/b]
+[b]@apocalypse-hoarder reblogged from @personae-and-roles at 6:30 PM. OP: @personae-and-roles[/b]
 
 Anonymous asked: Hey, I love your blog! Just wondering, since I'm a big fan of the Sherlock TV series, what's the mage class of Sherlock Holmes and John Watson?
 
@@ -2190,10 +2171,10 @@ Tags: #mage classes, #queueasimodo, #sherlock
 ${apoc_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set apoc_1_5_notes + 1
         *goto apoc_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx meta
 
@@ -2216,7 +2197,7 @@ ${apoc_1_5_notes} notes
 
 Karla @trappedinspace is a recent mutual. She seems unsympathetic to much of the fandom as it exists.
 
-[b][karla]@trappedinspace[/karla] reblogged from @luxemburgs at 8:50 PM. OP: @dingling[/b]
+[b]@trappedinspace reblogged from @luxemburgs at 8:50 PM. OP: @dingling[/b]
 
 Help a twoc out! Hey my name's Phoebe and I'm close to becoming homeless. I just got fired for not being a "culture fit" and my landlord's threatening to evict me if I don't pay up. Thank you! Any bit helps.
 
@@ -2233,11 +2214,11 @@ Tags: #mutual aid, #rosa is my friend so I can vouch for this
 ${trap_1_1_notes} Notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set trap_1_1_notes + 1
         *set karla_blue %+ 1
         *goto trap_1_1
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx karla_like
             *gosub_scene rx sympathy
@@ -2260,7 +2241,7 @@ ${trap_1_1_notes} Notes
 
 *label trap_1_2
 *set trap_prog 2
-[b][karla]@trappedinspace[/karla] reblogged from @luxemburgs at 8:43 PM. OP: @girlinprogress[/b]
+[b]@trappedinspace reblogged from @luxemburgs at 8:43 PM. OP: @girlinprogress[/b]
 
 Hey can anyone help this uninsured trans girl pay her medical bills and maybe also groceries?
 
@@ -2270,14 +2251,14 @@ $0/300
 
 Tags: #mutual aid
 
-${trap_1_1_notes} Notes
+${trap_1_2_notes} Notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set trap_1_2_notes + 1
         *set karla_blue %+ 1
         *goto trap_1_2
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx karla_like
             *gosub_scene rx sympathy
@@ -2302,7 +2283,7 @@ ${trap_1_1_notes} Notes
 
 *label trap_1_3
 *set trap_prog 3
-[b][karla]@trappedinspace[/karla] reblogged from @capellasgf one day ago. OP: @lunan0va[/b]
+[b]@trappedinspace reblogged from @capellasgf one day ago. OP: @lunan0va[/b]
 
 So, I've spent a long time researching this theory... Please read it and tell me what you think!
 
@@ -2317,11 +2298,11 @@ Tags: #tbh this is one of the few good bits of nebulaverse meta i've read recent
 ${luna_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set luna_1_5_notes + 1
         *set karla_blue %+ 2
         *goto trap_1_3
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx luna_like
             *gosub_scene rx karla_like
@@ -2344,7 +2325,7 @@ ${luna_1_5_notes} notes
 
 *label trap_1_4
 *set trap_prog 4
-[b][karla]@trappedinspace[/karla] reblogged from @capellasgf one day ago. OP: @monadcore[/b]
+[b]@trappedinspace reblogged from @capellasgf one day ago. OP: @monadcore[/b]
 
 [The image is a tapestry of the main cast of the Chronicles. They are in space, wearing their Academy uniforms, holding hands in a chain. Gali is at the front, looking at Bruno. Then it's Tycho, Astra, Capella, and finally the Administrator.]
 
@@ -2355,11 +2336,11 @@ Tags: #ugh this sort of stuff still gets to me
 ${trap_1_4_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set trap_1_4_notes + 1
         *set karla_blue %+ 1
         *goto trap_1_4
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx karla_like
             *gosub_scene rx gen
@@ -2381,7 +2362,7 @@ ${trap_1_4_notes} notes
 *label trap_1_5
 *set karla_ch1_seen 1
 *set trap_prog 5
-[b][karla]@trappedinspace[/karla] posted 2 days ago[/b]
+[b]@trappedinspace posted 2 days ago[/b]
 
 [The image is a selfie taken at a mirror, of a young woman holding a phone in one hand and doing the peace sign with the other hand. She has long black hair partly covering the side of her face, and wears glasses with a rather severe expression. She wears a flannel jacket over a black dress and jeans.]
 
@@ -2392,11 +2373,11 @@ Tags: #gpoy, #girlslikeus, #yes sorry this is supposed to be a nebulaverse blog,
 ${trap_1_5_notes} notes
 
 *choice
-    *disable_reuse #Like the post.
+    *disable_reuse #Like ❤️
         *set trap_1_5_notes + 1
         *set karla_blue %+ 4
         *goto trap_1_5
-    *disable_reuse #Reblog the post.
+    *disable_reuse #Reblog 🔁
         *if rx
             *gosub_scene rx karla_like
 
