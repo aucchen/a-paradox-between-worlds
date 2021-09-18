@@ -139,7 +139,7 @@ Is there hope for the future? Is there hope for humanity in the age of the onlin
     *set karla_mutuals true
     *set karla_sent_message true
 
-*if ((sofia_trust = 1) and ((sofia_blue > sofia_green) and (sofia_mutuals or ((sofia_blue >= 15) or (stella_blue >= 20)))))
+*if ((sofia_trust = 1) and ((sofia_blue > (sofia_green + 10)) and (sofia_mutuals or (stella_blue >= 20))))
     *set sofia_mutuals true
     *set sofia_sent_message true
 
@@ -147,10 +147,10 @@ Is there hope for the future? Is there hope for humanity in the age of the onlin
     Sofia @nebulascribbler has sent you a DM.
 
 *if karla_sent_message and (karla_investigation = 0)
-    Karla @trappedinspace has just sent you a DM.
+    Karla @trappedinspace has sent you a DM.
 
 *if (sofia_helped != 0)
-    You can tell Claire about Sofia's plans, if you'd like.
+    You can message Claire about Sofia's plans, if you'd like.
 
 Which blogs would you like to read?
 
@@ -191,7 +191,7 @@ Which blogs would you like to read?
     *disable_reuse *if ((sofia_helped != 0) and (karla_investigation > 0)) #Tell Karla about Sofia's plans.
         *set has_chatted true
         *goto karla_message_1
-    *disable_reuse *if ((sofia_helped > 0)) #Reblog the callout.
+    *if ((sofia_helped > 0)) #See the callout that Sofia talked about.
         *goto reblog_callout
     *if (read_count > 0) #Stop looking at blogs.
         *goto montage1_end
@@ -1076,7 +1076,7 @@ ${shad_1_4_notes} notes
         *set stella_interact + 1
         *set shad_1_4_notes + 1
         *set stella_blue %+ 3
-        *set claire_green %+ 5
+        *set claire_green %+ 10
         *set discourse %+ 3
         *goto apoc_1_3
     #Next post.
@@ -1179,7 +1179,7 @@ ${trap_1_1_notes} Notes
         *set karla_interact + 1
         *set karla_blue %+ 5
         *if claire_mutuals
-            *set claire_green %+ 3
+            *set claire_green %+ 4
         *set trap_1_1_notes + 1
         *set discourse %+ 3
         *goto trap_1_1
@@ -1221,7 +1221,7 @@ ${shad_1_2_notes} Notes
         *set karla_interact + 1
         *set karla_blue %+ 5
         *if claire_mutuals
-            *set claire_green %+ 3
+            *set claire_green %+ 4
         *set shad_1_2_notes + 1
         *set discourse %+ 3
         *goto trap_1_2
@@ -1271,7 +1271,7 @@ ${shad_1_4_notes} notes
         *set karla_blue %+ 3
         *set luna_blue %+ 3
         *if claire_mutuals
-            *set claire_green %+ 5
+            *set claire_green %+ 10
         *set shad_1_4_notes + 1
         *set discourse %+ 3
         *goto trap_1_3
@@ -1366,7 +1366,7 @@ ${shad_1_5_notes} notes
         *set karla_interact + 1
         *set karla_blue %+ 3
         *if claire_mutuals
-            *set claire_green %+ 3
+            *set claire_green %+ 10
         *set shad_1_5_notes + 1
         *set discourse %+ 3
         *goto trap_1_5
@@ -1484,7 +1484,7 @@ ${shad_1_5_notes} notes
 
         @lunan0va: my element is ice -_- i can deal with that sort of thing.
         *goto montage_1
-    #Look at another blog.
+    #Look at something else.
         *goto montage_1
 
 
@@ -1517,6 +1517,8 @@ ${shad_1_5_notes} notes
 @shadow-protectrix: Tell her I said sorry for putting her on blast like that.
 
 @brunova-official: okay :D
+
+...
 
 @nebulascribbler: Hey Claire, how are things going with Nebulacon? I saw that a bunch of people are backing out?
 
@@ -1554,7 +1556,7 @@ ${shad_1_5_notes} notes
 
         @nebulascribbler: I'll get back to you.
         *goto montage_1
-    #Look at another blog.
+    #Look at something else.
         *goto montage_1
         
         
@@ -1786,7 +1788,6 @@ You've decided to contact Claire about Sofia's plan.
 
         @shadow-protectrix: Between you and me, I'm not her biggest fan.
         
-        
         @shadow-protectrix: I think she just wants attention, the adoration of thousands of screaming fans and stuff like that.
 
         @shadow-protectrix: I do too, of course. But at least I don't try to hide it. At least I don't make up weird schemes to backstab my ostensible friend.
@@ -1813,7 +1814,7 @@ You've decided to contact Claire about Sofia's plan.
 
                 @shadow-protectrix: Well, then you're more humble than I could ever be.
 
-                @shadow-protectrix: lol
+                @shadow-protectrix: LOL
         *goto montage_1
     #Go back.
         *goto montage_1
@@ -1822,7 +1823,7 @@ You've decided to contact Claire about Sofia's plan.
 *label karla_message_1
 *set karla_trust 3
 
-You've decided to tell Karla about Sofia's plan. Because it might be useful for her investigation?
+You've decided to tell Karla about Sofia's plan, because it might be useful for her investigation.
 
 @you: hey karla?
 
@@ -1845,7 +1846,7 @@ You've decided to tell Karla about Sofia's plan. Because it might be useful for 
 
 @trappedinspace: tbh I feel like the entire fandom mom community that includes sofia and claire and all those people has incredibly weird vibes but maybe that's just me.
 
-@trappedinspace: Anyway just keep me updated...
+@trappedinspace: Anyway, thanks for telling me; just keep me updated...
 
 *choice
     #Go back.
@@ -1860,18 +1861,21 @@ You've decided to tell Karla about Sofia's plan. Because it might be useful for 
     [b]@greenrockmage posted 5 minutes ago.[/b]
 
 This is a callout post for C/l/a/i/r/e @/s/h/a/d/o/w-p/r/o/t/e/c/t/r/i/x. As an adult in the n*bul*v*rse fandom, they have a habit of apologizing for abusive relationships, forming inappropriately close ties to minors, and hostility towards trans women. CW: abuse apologia, transmisogyny
-*comment TODO: more detailed
 
 (Read more)
 
 *choice
     *disable_reuse #Reblog it.
+        *if rx
+            *gosub_scene rx claire_st_dislike
+
         *set stella_blue %+ 3
         *set sofia_blue %+ 3
-        *set claire_green %+ 20
+        *set claire_green %+ 25
         *set sofia_trust 3
         *set sofia_helped 3
         *achieve callout
+        *goto reblog_callout
     #Go back.
         *goto montage_1
 
@@ -1893,8 +1897,6 @@ Thus, you go to sleep for the night.
     The story is over, at least for now. You have nothing to publish.
 *else
     The story is over. You post it online. Hope for the best, which is all you can do in these tumultuous times.
-
-    *comment TODO: calculate new followers
 
 
 *finish

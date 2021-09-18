@@ -150,6 +150,7 @@ What is the "true nature" of a person, anyhow, Gali wondered. Was there some ess
 No matter. She existed, right then and there.
 
 *page_break
+*script setMbmMode(true);
 
 [b]Online[/b]
 
@@ -662,7 +663,9 @@ By the way, what is the focus of your blog? What type of posts do you usually re
         *set shitposting + 10
 
 *comment: I'm not sure if this is the correct place to have your fav char/ship bc you don't know much about them yet.
-That's awesome! Most Nebulaverse blogs have a favorite character, whom they reblog most often. Who's yours? [A/N: For more details on the characters, see the "Nebulaverse Background" on the Show Stats page.]
+That's awesome! Most Nebulaverse blogs have a favorite character, whom they reblog most often. Who's yours?
+
+[A/N: For more details on the characters, see the "Nebulaverse Background" on the Show Stats page.]
 
 *fake_choice
     #Gali, the protagonist
@@ -2120,7 +2123,7 @@ ${apoc_1_3_notes} notes
 
 [Drawing of a Nebulaverse original character, a woman with dark skin and braided hair. She is wearing the girl's uniform of the Pulsar Academy.]
 
-Here's my magesona! Her name is Lyra and she's a speaker of ice.
+Here's my magesona! Her name is Lyra (no relation to Cosmos) and she's a speaker of ice.
 
 Tags: #this is cool!, #queueasimodo, #magesona
 
@@ -2423,6 +2426,7 @@ You are...
 
 You pull yourself up. You are still in the Academy's starchy uniform; you must have fallen asleep in it. Which uniform are you wearing?
 
+*comment TODO: do we REALLY need a cis/trans choice? is it alienating to potential players? do they even get what it means? I get that it's kinda necessary for some of Lux/Luna's relationships...
 *label uniform_choice
 *set protag_plural false
 *set protag_cis_boy false
@@ -2433,35 +2437,33 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
 *set protag_questioning false
 *choice
     #The girl's uniform, because I'm a girl.
+        You're wearing a navy blazer and black pleated skirt, same as Astra.
+        *label protag_girl
         *set protag_e "she"
         *set protag_es "she's"
         *set protag_em "her"
         *set protag_eir "her"
         *set protag_eirs "hers"
         *set protag_emself "herself"
-        By the way, did they know that you were a girl when you were born?
+
+        [A/N: is Gali a cis girl or a trans girl?]
         *choice
-            #Yeah, I was a girl when I was born...
+            #Gali is a cis girl.
                 *set protag_cis_girl true
                 *goto gali_pronoun_choice
-            #No, they didn't know I was going to be a girl...
+            #Gali is a trans girl.
                 *set protag_trans_girl true
+                *goto gali_pronoun_choice
+            #Why do I have to pick?
                 *goto gali_pronoun_choice
             #Actually, I change my mind...
                 *goto uniform_choice
     #The girl's uniform, but I'm not exactly a girl.
-        You wear the girl's uniform, but you're not exactly a girl. Actually...
+        You wear the girl's uniform of a navy blazer and black pleated skirt, but you're not exactly a girl. Actually...
         *choice
             #I'm a boy who just likes wearing the girl's uniform.
-                Sure, that's okay! By the way, did they know that you were a boy when you were born?
-                *choice
-                    #Yeah...
-                        *set protag_cis_boy true
-                    #No, they didn't know I was going to be a boy...
-                        *set protag_trans_boy true
-                    #Actually, I change my mind...
-                        *goto uniform_choice
-                *goto gali_pronoun_choice
+                Sure, that's okay!
+                *goto protag_boy
             #I'm not a boy or girl.
                 *set protag_nonbinary true
                 *goto gali_pronoun_choice
@@ -2471,19 +2473,24 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
             #Actually, I change my mind...
                 *goto uniform_choice
     #The boy's uniform, because I'm a boy.
+        You're wearing a navy blazer and black pants.
+        *label protag_boy
         *set protag_e "he"
         *set protag_es "he's"
         *set protag_em "him"
         *set protag_eir "his"
         *set protag_eirs "his"
         *set protag_emself "himself"
-        By the way, did they know that you were a boy when you were born?
+
+        [A/N: is Gali a cis boy or a trans boy?]
         *choice
-            #Yeah...
+            #Gali is a cis boy.
                 *set protag_cis_boy true
                 *goto gali_pronoun_choice
-            #No, they didn't know I was going to be a boy...
+            #Gali is a trans boy.
                 *set protag_trans_boy true
+                *goto gali_pronoun_choice
+            #Why do I have to pick?
                 *goto gali_pronoun_choice
             #Actually, I change my mind...
                 *goto uniform_choice
@@ -2491,15 +2498,8 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
         You wear the boy's uniform, but you're not exactly a boy. Actually...
         *choice
             #I'm a girl who just likes wearing the boy's uniform.
-                Sure, that's okay! By the way, did they know that you were a girl when you were born?
-                *choice
-                    #Yeah...
-                        *set protag_cis_girl true
-                    #No, I wasn't always a girl...
-                        *set protag_trans_girl true
-                    #Actually, I change my mind...
-                        *goto uniform_choice
-                *goto gali_pronoun_choice
+                Sure, that's okay!
+                *goto protag_girl
             #I'm not a boy or girl.
                 *set protag_nonbinary true
                 *goto gali_pronoun_choice
@@ -2513,7 +2513,9 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
         Sure. Let's say that there are. You're wearing whatever you would like.
 
         *label gali_pronoun_choice
-        And what are the pronouns that people use for you?
+        [A/N: since this is your world, you can be whomever you want.]
+
+        What are the pronouns that people use for you?
         *choice
             #She/her/hers
                 *set protag_e "she"
@@ -2591,7 +2593,6 @@ All your other friends are already here: Bruno, Tycho, and Capella. Bruno just g
         *if (protag_cis_girl or protag_trans_girl)
             How you ended up getting assigned a suite with two boys remains a mystery.
         
-        
         He is a tall and lanky boy with coiffed blond hair. He has at least half a head on you, and poses with the imperious look of someone who has never wanted for anything and has always had his way, either by birthright or by sheer force of will. You've never been on the best of terms before, but he probably has a soft spot... somewhere.
         *fake_choice
             #I have a crush on Bruno.
@@ -2664,22 +2665,17 @@ All your other friends are already here: Bruno, Tycho, and Capella. Bruno just g
             #"I was... studying?"
                 "I was, um, studying?"
                 
-                
                 "Yeah? You sound uncertain."
                 
-                
                 "Well, I was at the library so what else could I have been doing?"
-                
                 
                 "Good point." He chuckles.
             #"I have no idea what I was doing."
                 "I have no idea what I was doing."
                 
-                
                 "Yeah, that happens." He chuckles.
             #Just shrug and give an awkward smile.
                 You shrug, and smile awkwardly.
-                
                 
                 "No idea? Well, I hope passing out in the library doesn't become a habit."
         *goto fanfic_look_at_others
@@ -2711,7 +2707,6 @@ All your other friends are already here: Bruno, Tycho, and Capella. Bruno just g
                 "Um... What are you doing?"
 
                 "I'm making sure the device doesn't explode when we turn it on."
-                
                 
                 "Oh, um... okay." She doesn't seem to be in the mood for conversation, and goes back to checking on the device.
                 *set seen_capella true
@@ -2800,15 +2795,15 @@ What will you title the story?
             #A secret chord
                 *set story_title "A secret chord"
                 *set story_title_short "ASC"
-            #The minor fall, the major lift
-                *set story_title "The minor fall, the major lift"
+            #Minor fall, major lift
+                *set story_title "Minor fall, major lift"
                 *set story_title_short "MFML"
             #Beauty and the moonlight
                 *set story_title "Beauty and the moonlight"
                 *set story_title_short "BatM"
-            #Maybe there's a God above
-                *set story_title "Maybe there's a God above"
-                *set story_title_short "MTaGA"
+            #A God above
+                *set story_title "A God above"
+                *set story_title_short "AGA"
             #All I've ever learned from love
                 *set story_title "All I've ever learned from love"
                 *set story_title_short "Love"

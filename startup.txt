@@ -459,6 +459,9 @@
     A secret.
     Keep a manipulation campaign secret.
 
+*achievement imposter hidden 15 When the imposter is sus
+    Discover the imposter.
+
 *comment TODO: remove when local testing
 *comment *if (not (choice_quicktest))
 *comment     *sm_init a_paradox_between_worlds | 3

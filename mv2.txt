@@ -140,9 +140,9 @@ Which blogs would you like to read?
     *selectable_if ((karla_blocked = false)) #@trappedinspace
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
-    *disable_reuse *if ((in_claire_chat)) #See Claire's groupchat.
+    *if ((in_claire_chat)) #See Claire's groupchat.
         *gotoref writers_chat_ref
-    *disable_reuse *if ((in_luna_chat)) #See Luna's groupchat.
+    *if ((in_luna_chat)) #See Luna's groupchat.
         *gotoref annc_chat_ref
     *if (read_count > 0) #Stop looking at blogs.
         *goto montage1_end
@@ -1573,7 +1573,7 @@ This is the chat group that Luna invited you into.
         *set posted_ch2_annc1 true
         *set luna_blue %+ 3
         *goto annc_chat_1_2
-    #Look at another blog
+    #Look at something else.
         *goto montage_1
 
 
@@ -1604,7 +1604,7 @@ This is the chat group that Luna invited you into.
         *label annc_chat_1_3_3
         @you: it's actually about quantum mechanics and how that relates to narratives...
         *goto annc_chat_1_3
-    #Look at another blog
+    #Look at something else.
         *goto montage_1
 
 *label annc_chat_1_3
@@ -1766,9 +1766,9 @@ Which blogs would you like to read?
         *gotoref "trap_2_${trap_prog}"
     *if (read_count > 1) #See GTM's post that everyone's talking about.
         *goto gtm_post
-    *disable_reuse *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
+    *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
         *goto annc_chat_2
-    *disable_reuse *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
+    *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
         *goto writers_chat_2
     *if (read_count > 0) #Stop looking at blogs.
         *goto montage2_end
@@ -2983,7 +2983,6 @@ ${trap_2_5_notes} notes
 
 *choice
     *disable_reuse #Like ❤️
-
         *set trap_2_5_notes + 1
         *set karla_blue %+ 3
         *goto trap_2_5
@@ -3047,7 +3046,7 @@ A post has recently been brought to my attention that describes Gali Nova as a "
         *set posted_ch2_annc_2_1 true
         *set luna_blue %+ 5
         *goto annc_chat_2
-    #Look at another blog.
+    #Look at something else.
         *goto montage_2
 
 
@@ -3084,7 +3083,7 @@ A post has recently been brought to my attention that describes Gali Nova as a "
 Everyone appears to be offline right now.
 
 *choice
-    #Look at another blog.
+    #Look at something else.
         *goto montage_2
 
 

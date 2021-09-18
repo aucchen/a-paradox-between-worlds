@@ -53,8 +53,8 @@
     *set alignment_consistent false
     *set follower_loss_bonus + 1
 
-*comment TODO: ship/character bonuses
-*comment TODO: get fav ship, get fav character
+*comment ship/character bonuses
+*comment get fav ship, get fav character
 *label char_check
 *set old_top_character top_character
 *if (old_top_character = "") or (top_character = "")
@@ -92,7 +92,7 @@
 
 *set follower_gain_bonus + char_strength
 
-*comment TODO: two characters who are often associated together shouldn't lose points
+*comment two characters who are often associated together shouldn't lose points
 *comment e.g. going from astra to capella shouldn't lose points
 *set character_consistent true
 *if (top_character != old_top_character) and ((char_val - {old_top_character}) >= 10)

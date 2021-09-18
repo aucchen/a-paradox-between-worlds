@@ -1,6 +1,6 @@
 [b]Movement 5: Nocturne - La mort de l'auteur[/b]
 
-[i]If this is true, that stories about ourselves can be a type of spell, then maybe it's also true the stories others tell about us can become a type of curse. Stories are the boundaries of possibility, which means that they can also be the rules of reality, or the perceived rules, which are as strong as the laws of physics if you can’t imagine any other possibility. Who get to tell the story? Whose stories are celebrated? Whose are the most true?[/i]
+[i]Stories are the boundaries of possibility, which means that they can also be the rules of reality, or the perceived rules, which are as strong as the laws of physics if you can’t imagine any other possibility. Who get to tell the story? Whose stories are celebrated? Whose are the most true?[/i]
 
 - Aevee Bee, "The Story is a Spell. The Story is a Curse."
 
@@ -582,7 +582,7 @@ There have been a lot of messages since you were last here.
 
                 @noncanonical: I'm probably old enough to be your parent. My oldest is in high school.
 
-                @noncanonical: My partner and I have been together for 20 years. We have 4 kids, and our kids went from having two moms to having two dads. We've been through all the letters in LGBT. It used to be illegal for us to have a family in the way we do.
+                @noncanonical: My partner and I have been together for 20 years. We have 4 kids, and our kids went from having two moms to having two dads. We've literally been through all the letters in LGBT. It used to be illegal for us to have a family in the way we do.
 
                 @noncanonical: This isn't to tell you how hard we've had it. It's to tell you that things change. I could talk about the ordeals we've faced. Maybe you've faced some different things.
 
@@ -723,7 +723,6 @@ There have been a lot of messages since you were last here.
 
 *label claire_chat
 *set claire_message_ref "claire_chat"
-*comment TODO: one-on-one chat with claire
 
 @you: um... hi claire
 
@@ -770,10 +769,9 @@ There have been a lot of messages since you were last here.
 
         @shadow-protectrix: I can't exactly show my face in the fandom right now, given what happened with NebulaCon.
 
-        @shadow-protectrix: Besides that extremely large caveat... I'm still writing, even if I'm not posting my stories on the archive. Who knows. 
-        
-        
-        @shadow-protectrix: I think I'll write my own stories, outside of the confines of the nebulaverse. That would be nice, wouldn't it?
+        @shadow-protectrix: Besides that extremely large caveat... I'm still writing, even if I'm not posting my stories on the archive. Writing was and kind of still is my reason to live. The Nebulaverse was just where I ended up. 
+
+        @shadow-protectrix: I think from now on I'll write my own stories, outside of the confines of the nebulaverse. That would be nice, wouldn't it?
 
         @shadow-protectrix: What about you, $!{handle}? How are you feeling about the fandom these days?
         *fake_choice
@@ -781,7 +779,6 @@ There have been a lot of messages since you were last here.
                 @you: i'm still into the nebulaverse i guess...
 
                 @shadow-protectrix: Yeah? I suppose I am too! I will NEVER stop shipping Brunova.
-                
                 
                 @shadow-protectrix: But...
             #I'm trying to escape.
@@ -804,7 +801,6 @@ There have been a lot of messages since you were last here.
 
         @shadow-protectrix: Thank you for your sympathy, though.
         *goto claire_questions
-    *comment TODO: ask about stuff?
     #There's nothing to say.
         *goto montage_1
 
@@ -840,6 +836,14 @@ There have been a lot of messages since you were last here.
         *label luna_conversation_died
         The conversation has seemed to die down.
         *choice
+            #I want to be better friends...
+                *set luna_blue %+ 8
+                *label luna_better_friends
+                *set luna_message_ref "luna_better_friends"
+                @you: we should talk more!
+
+                @you: i want to be better friends...
+                *goto better_friends
             #I love you...
                 *goto luna_chat_red
             #Go back.
@@ -914,13 +918,64 @@ There have been a lot of messages since you were last here.
                 *set luna_message_ref "luna_just_friends"
                 @you: i just want to be better friends ${heart_emoji}
 
+                @you: we should talk more!
+
                 @redmoongirl: oh okay lol l;jadsl;fsdajl;
 
-                @redmoongirl: yeah let's be better friends
+                *label better_friends
+                @redmoongirl: yeah let's be better friends!
+
+                @redmoongirl: sometimes it's hard to know what to talk about without the n*bulaverse fandom stuff like, providing a guide.
+
+                *fake_choice
+                    #We can talk about life?
+                        *label luna_talk_about_life
+                        *set luna_message_ref "luna_talk_about_life"
+                        @you: maybe we can just talk about life?
+
+                        @redmoongirl: that'd be nice
+
+                        @redmoongirl: not that my life has been going swimmingly lately, but it is what it is -_-
+
+                        @redmoongirl: maybe it'd feel better to talk about it more, i guess?
+
+                        @you: yeah, sometimes it's nice to just talk.
+
+                        @redmoongirl: thank you again for everything 💙️
+
+                        @redmoongirl: the universe is kind of a shitty and lonely place but you make it better :)
+                    #We can try to find a new fandom?
+                        *label luna_new_fandom
+                        *set luna_message_ref "luna_new_fandom"
+                        @you: maybe we can find a new fandom :)
+
+                        @redmoongirl: yeah... but it'll be hard to capture the feeling of the n*bulaverse again.
+
+                        @redmoongirl: something about it just... i don't even know.
+
+                        @you: i'm sure there's something out there! if not, maybe we'll make our own universe...
+
+                        @redmoongirl: yeah!
+
+                        @redmoongirl: this universe is kind of a shitty and lonely place but we'll make it better :)
+                    #We can just keep on liking each other's posts without commentary, as if we're hanging out next to each other in a companionable silence.
+                        *label luna_silence
+                        *set luna_message_ref "luna_silence"
+                        @you: maybe we can just keep on liking each other's posts
+
+                        @you: as if we're sitting next to each other just hanging out in silence.
+
+                        @redmoongirl: j;lkadfj;lksdajfl;ajdl;asjfl;a
+
+                        @redmoongirl: parallel play like 5 year olds...
+
+                        @redmoongirl: but that doesn't sound so bad honestly.
+
+                        @redmoongirl: the universe is kind of a shitty and lonely place but you make it better :)
 
                 @redmoongirl: 💙️💙️💙️
 
-                @redmoongirl: anyway uh see you later 💙️
+                @redmoongirl: so uh i've gotta go now. see you later ${handle} 💙️
                 *goto montage_1
 
 *label karla_chat
@@ -933,11 +988,11 @@ There have been a lot of messages since you were last here.
 
 @trappedinspace: wow. I totally forgot. For what I hope are fairly obvious reasons lol.
 
-@trappedinspace: But, this is kind of interesting.
+@trappedinspace: Okay, I just checked Stella's account and it's rather interesting.
 
-@trappedinspace: It looks like Stella deleted their account. And looking at the archives, they were clearly involved in another attempt to call out Claire, which has apparently died out as all the participants just suddenly deactivated.
+@trappedinspace: It looks like Stella deleted. And looking at the archives, they were clearly involved in another attempt to call out Claire, which has apparently died out. The notes for the Claire plagiarism callout are a graveyard of deleted users.
 
-@trappedinspace: Obviously this is suspicious but like, there's really no point anymore.
+@trappedinspace: Obviously this is suspicious but like, there's really no point anymore. They're all the virtual equivalent of corpses now.
 
 @trappedinspace: Did you find out anything new?
 
@@ -950,7 +1005,7 @@ There have been a lot of messages since you were last here.
         *label karla_chat_secret
         *set karla_message_ref "karla_chat_secret"
 
-        @you: yeah. stella @apocalypse-hoarder was sofia's sockpuppet.
+        @you: yeah. stella @apocalypse-hoarder was sofia @nebulascribbler's sockpuppet.
 
         @you: [screenshots of the chat]
 

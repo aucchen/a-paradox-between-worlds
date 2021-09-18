@@ -469,8 +469,9 @@ You find yourself in a void, an empty space of pure blackness devoid of light. T
     #To Astra: It's all your fault...
         "It's all your fault," you say to Astra. "Why did you make us go through the portal?"
 
-        Astra sighs. "Yeah. I'm sorry."
-        *comment TODO
+        Astra sighs. "Yeah. I'm sorry. I just wanted to do something new and interesting for once. I wanted to become someone who mattered."
+
+        Capella gazes at her with more kindness than usual. "It's fine. We all agreed to do this. We all knew the risks."
 
 *choice
     #Ask: How do we get back?
@@ -535,11 +536,13 @@ Okay, how do you feel about this chapter of the story?
 
 *choice
     #It sucks.
-        That's kind of harsh... [A/N: I'm thinking about the meme of the audience looking at one beautiful well-made cake and one poorly made but still edible cake, and instead of going "well this cake sucks", saying "yay! two cakes!" Maybe the cake is bad, but at least it's free.]
+        That's kind of harsh...
+        
+        [A/N: Think about the meme of the audience looking at one beautiful well-made cake and one poorly made but still edible cake, and instead of going "well this cake sucks", saying "yay! two cakes!" Maybe the cake is bad, but at least it's free.]
     #It needs improvement.
         Everything about the story feels kind of vague and generic. The personality of Gali is especially hard to pin down; ${protag_e} @{protag_plural feel|feels} like a self-insert. And there's not much of a hint of the overarching plot or character motivations...
     *if (protag_bruno_ch2_ff>0) #That Brunova though...
-        How would Gali deal with the "primary" Bruno? Or is that even the primary Bruno still? Who is "Bruno Prime"? What would happen once they're able to interact again? Questions, questions...
+        Is the Bruno that Gali met really the same Bruno that entered the portal with ${protag_em}, just aged up? Is there a different "Bruno Prime"? Will they interact again? What would happen once they're able to interact again? Questions, questions...
     #It's not *that* bad.
         The story could have been better, but it also could have been worse. It can always be worse. Everything can be worse.
 

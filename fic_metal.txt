@@ -164,7 +164,7 @@ Suddenly, you feel tired. It's as if all of the strength has drained out of your
 
                         "Great! This is the mystery of the..."
 
-                        You can't do this. Your eyes cannot stay open.
+                        You can't do this. Your eyes cannot stay open. Your body is too tired.
 
                         *goto sleep
             #[A/N: I'm tired.]
@@ -188,7 +188,7 @@ You lay down on the bottom bed. You're tired enough to fall asleep right away...
 
 You dream of falling, of a cavity opening up beneath your bed and sucking you in. Or perhaps it's not a dream. Perhaps it's reality, and you're finally leaving this world...
 
-*page_break [A/N: Sorry about the short chapter! Life's been happening so much right now.]
+*page_break [A/N: Sorry about the short chapter! Life's been happening so much lately.]
 *goto story_end
 
 *label fic_continue

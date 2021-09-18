@@ -103,6 +103,8 @@ The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare
         The Creator takes a long sigh. "It has to do with events beyond your grasp. Events from the realms of the Aeons. There was strife, you see. And beyond that realm, there is a chain of other worlds, and... I'm sorry, you wouldn't understand."
 
         "I understand well enough," you say. "I understand well enough to say that this isn't a satisfactory ending."
+
+        *goto story_meaning
     #It should have been over a long time ago.
         "It should have been over a long time ago. I don't understand why this ordeal is taking so long. It stopped being enjoyable a few worlds back."
 
@@ -123,33 +125,52 @@ The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare
     #No. I didn't learn a single thing.
         "No. I didn't learn a single thing."
 
-        "Oh. That's what I thought." The Creator cracks a smile. "But then again, real people don't have clean and neat character arcs."
+        "Oh. That's what I thought." The Creator cracks a smile. "But then again, real people don't have clean and neat character arcs. Maybe you won't realize what you've learned on this journey until years later."
 
         "That's not an excuse."
 
         "Yes, I know." The creator sighs.
     #Yes. I learned...
-        "Yes, I learned..."
+        "Yes, I learned a lot..."
 
-        "What did you learn?"
+        $!{e} crook@{plural |s} ${eir} head at you. "Really? What did you learn from this whole ordeal?"
+        *fake_choice
+            #To not enter strange portals?
+                "Um, to not enter strange portals? I'm sure there are other lessons but the story wasn't pointless, right?"
+            #I don't know.
+                "Um, I don't know. But, um, the story wasn't pointless, right?"
 
-        "Um, I don't know. But, um, the story wasn't pointless, right?"
-
-        The Creator cracks a smile. "You're right. It's not pointless. It's the journey that counts, isn't it? Real people don't have clean and neat character arcs. Maybe you don't know what you've learned yet, but maybe, years later..."
+        The Creator cracks a smile. "You're right. It's not pointless. It's the journey that counts, isn't it? Real people don't have clean and neat character arcs. Maybe you don't know what you've learned yet, but maybe, you'll finally realize how you've changed."
     #No, but that doesn't mean the story was pointless.
         "No, I might not have learned anything, but that doesn't mean the story was pointless."
 
-        The Creator cracks a smile. "It's the journey that counts, isn't it? Real people don't have clean and neat character arcs."
+        The Creator cracks a smile. "It's the journey that counts, isn't it? Real people don't have clean and neat character arcs. It's messy and it takes time and sometimes, you change without realizing it."
+    #Turn it around: Did you learn anything from me?
+        "Did you learn anything from me?" you ask.
 
-"So what happens now? What happens after the story is over? Is my life over too?"
+        [A/N: What does the creator say?]
+        *fake_choice
+            #[No, I didn't.]
+                "No, I didn't," says the Creator. "But that doesn't mean I regret creating your story. Your story's helped me a lot!"
+            #[I learned to treasure my friends.]
+                "I think I learned to treasure my friends," says the Creator. "The way you loved all of them so much, even Dark Bruno, that was really admirable. I'm alone enough in my world that I thought I wanted to be like you..."
 
-"No. Our lives have just begun. What do you want to do, Gali?"
+                $!{e} trail@{plural |s} off.
+            #[I learned that home might not be where you think it is.]
+                "I keep seeing you look for home," says the Creator, "but maybe home isn't where you think it is. Maybe any place can be home. Maybe home isn't even a place, but an idea..."
+
+                $!{e} trail@{plural |s} off.
+
+"So what happens now?" you ask. "What happens after the story is over? Is my life over too?"
+
+"No. Our lives have just begun. You're finally free. What do you want to do, Gali?"
 
 *fake_choice
     #Wake up.
     #Go to a different world.
-    #Just... live?
+    #Just live?
 
+*page_break It's over... or is it?
 *comment some ending options...
 *comment luna ending, claire ending, sofia ending, neutral end
 *comment (but these are distinct from the achievements...)
@@ -191,21 +212,21 @@ Do you post the chapter, or not?
 
 *fake_choice
     *if (luna_end) #Yes, maybe Luna would like it?
-        Well, Luna enjoyed your story before the incidents. Maybe she'll still be interested?
+        Well, Luna enjoyed your story before the incidents. Maybe she'll still be interested? Maybe your story, basic as it is, can cheer her up?
     *if (claire_end) #Yes, maybe Claire would like it?
-        Well, Claire seems to have been enjoying the story, and they don't seem too upset by author self-inserts...
+        Well, Claire seems to have been enjoying the story, and they don't seem too upset by author self-inserts. Maybe they'll appreciate your story, basic as it is?
     *if (karla_end) #Yes, maybe Karla would enjoy it?
-        Karla has liked some of your story posts in the past, even if she hasn't commented on any of them.
+        Karla has liked some of your story posts in the past, even if she hasn't commented on any of them. Maybe she'll appreciate this story, basic as it is?
     #Yes, because I need to put something out.
-        After all, what harm could be done by putting a story out for public consumption? It's not as if you've connected this account to your real name or identity.
+        After all, what harm could be done by putting a story out for public consumption? It's not as if you've connected this account to your real name or identity. Maybe this will be what your throngs of loyal readers are looking for.
     #No. This isn't satisfactory.
-        Okay, if you say so. The chapter was too short. It's too self-indulgent and weird and self-insert-y. No one likes author self-inserts.
+        Okay, if you say so. The chapter was too short. It's too self-indulgent and weird and self-insert-y. No one likes author self-inserts. It's too filled with pseudo-philosophical ramblings that probably don't even make sense.
 
 Is the story over, or can it be continued?
 
 *fake_choice
     #It's over. It's time to move on.
-        The story is over, even if there are so many dangling ends left. Sometimes a story simply cannot continue. But maybe another story is beginning. You've already gotten some new ideas for your next fic. Maybe it'll be an original story this time.
+        The story is over, even if there are so many dangling ends left. It cannot continue, but perhaps another story is beginning. You already have some ideas. Who knows, maybe it will be an original story this time.
 
         *page_break Anyway, you need to sleep.
     #There needs to be more.

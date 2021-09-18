@@ -39,19 +39,19 @@ You open your eyes, and see your two shadows, cast by twin suns. The ground is c
     Nothing from your past has prepared you for these journeys. Your magic has so far been mostly useless. The lessons from four years at the Academy have taught you nothing about multiversal travel or alternate worlds or whatever these experiences are.
 
 *choice
-    #Listen
+    *disable_reuse #Listen
         *set listen true
         *goto desert_feel
-    #Smell
+    *disable_reuse #Smell
         *set smell true
         *goto desert_feel
-    #Taste
-        *set smell true
+    *disable_reuse #Taste
+        *set taste true
         *goto desert_feel
-    #Feel
+    *disable_reuse #Feel
         *set feel true
         *goto desert_feel
-    #Think
+    *disable_reuse #Think
         *set think true
         *goto desert_feel
     #Go to the village.
@@ -69,9 +69,10 @@ You walk towards the village, settlement, outpost, whatever it is. It is further
 The gate opens. Out emerges... Capella? Older, with creases in her face, but still her.
 
 *fake_choice
-    #[She looks exactly like Karla but older.]
+    *if (karla_ch1_seen = 1) #[She looks exactly like Karla but older.]
     #She still has her old long, straight jet black hair.
     #She still has her signature thickly framed glasses.
+    *if ((fic_ship = "ellanova") or (protag_likes_capella > 0)) #She looks more beautiful than ever.
 
 "Welcome, Galileo Nova. We've been expecting you."
 
@@ -81,7 +82,7 @@ She rolls her eyes. "I was told to say that. Just follow me."
 
 *page_break Follow Capella.
 
-"Don't worry, I still remember you," she says. "It's been 20 years now, but I still remember when we got into the portal and ended up in this world."
+"Don't worry, I still remember you," she says. "It's been 20 years now, but I still remember when we stepped into that portal."
 
 You follow her through the gates and into the settlement. The people here are mostly idling, outfitted in muted grays and browns. They glance at you with despondent gazes. You try to not stare back.
 
@@ -116,7 +117,6 @@ You follow her through the gates and into the settlement. The people here are mo
     *disable_reuse #Continue deeper into the village.
         *goto village_2
 
-
 *label village_2
 *set return_point "village_2"
 
@@ -132,11 +132,18 @@ She waves to you. "Follow me. We're going to meet some old friends."
         [A/N: Should this be an Astrapella thing?]
         *comment TODO: have some shoutouts to ellanova if that were pursued?
         *fake_choice
-            #[A/N: Yeah. Astrapella all the way.]
+            #[A/N: Yeah. Astrapella all the way!]
+                *if (fic_ship = "astrapella")
+                    *set ch3_wins + 1
                 [A/N: Astrapella all the way!]
             #[A/N: No! Retcon that development. That is NOT the Astrapella child!]
-                [A/N: Okay. Forget all that. That was just some random child. Astrapella are ABSOLUTELY NOT together here.]
+                [A/N: Okay. Forget all that. Capella is a single mother and Astrapella are ABSOLUTELY NOT together here.]
                 *set fic_astrapella false
+            *if (protag_likes_capella > 0) #[A/N: Actually, this will be an Ellanova story.]
+                [A/N: Okay. Retcon. Capella is a single mother and eventually maybe she falls in love with Gali and... yeah. Let's move on.]
+            *if (protag_likes_capella > 0) #[A/N: Actually, what if this is a AstraPellaNova OT3?]
+                [A/N: Okay.]
+
     #[A/N: You know what? No.]
         [A/N: You know what? No.]
 
@@ -167,9 +174,7 @@ Astra and Tycho stare at you.
     *disable_reuse #"Why are the Archons attacking us?"
         "They say the Archons used to be human." Astra begins. "Then they made a bargain with the Demiurge for power and magic, and that left them transformed. Their magic ate into their souls, corrupted them into thoughtless husks, beings of pure destruction. And that's why our world became... like this." She gestures around. "They've already destroyed the rest of the world. We've been fleeing them ever since."
         
-        
         "That's just one story," says Capella. "It doesn't make sense. The Archons are clearly still intelligent to use magic and direct advanced tactics and so there must be some greater plan."
-        
         
         Tycho shrugs. "Either way, they're trying to kill us and we're trying to live. Simple as that."
         *goto help_choice
@@ -233,13 +238,15 @@ Magic lies within the realm of meditation and logic, hardly suitable for a chaot
     
     "Um, I hope so..."
 *if spell = "blast"
+    *if (fic_ship = "ellanova") or (protag_likes_capella > 0)
+        *set protag_capella_red + 1
+        *set ch3_wins + 1
     "I'll help you with the energy blast," says Capella. "It'll be a cooperative spell. I've gotten better at Light since we last spoke."
 *if spell = "dazzle"
     "The drones sensors are easily confused by varying patterns of light," says Astra. "I'll show you the patterns, and you'll help project them with magic in order to confuse them."
 
 *page_break You close your eyes.
-    
-    
+
 You close your eyes to meditate. It's hard, when the bullets are flying past, but you manage anyhow, protected by your companions' mental projections. In your mind you construct sentences in the magical language, describing the effect that you need to unleash upon the targets.
 
 *if spell = "wind"
@@ -248,7 +255,6 @@ You close your eyes to meditate. It's hard, when the bullets are flying past, bu
     Light is your persona, the most natural element for you to wield. All it takes is a few simple phrases. You open your eyes. The explosions are bright. None of the drones are left.
 *if spell = "dazzle"
     With a metal spell, Astra transfers the details of the drones' sensors to your mind, and the patterns that would confuse them. With your Light, all it takes is a few simple phrases.
-    
     
     You open your eyes. The drones are shooting at each other. Soon none are left flying. 
 
@@ -272,7 +278,9 @@ Along with the other mages, you run to the wall overlooking the attackers. The h
     #Stone: earthquake
         Tycho nods at you. "Ready for this? I'll need all your help."
 
-        He takes your hand, and you close your eyes. With a powerful spell like this, both of you need all of your abilities of concentration. The four of you are all working on the spell, channeling the magical phrases in unison. The ground begins to shake.
+        He takes your hand, and you close your eyes. With a powerful spell like this, both of you need all of your abilities of concentration. The four of you are all working on the spell, channeling the magical phrases in unison.
+        
+        The ground begins to shake. A fissure opens, and drones fall into the earth. More fissures. The ground buckles as pieces of rock fly towards the flying drones.
     #Ice + Wind: hailstorm
         "You'd better have gotten better at Ice since we last met," says Capella. "It's a shame Bruno isn't here. He would have annihilated these things."
 
@@ -281,12 +289,16 @@ Along with the other mages, you run to the wall overlooking the attackers. The h
         
         You feel a cold breeze, and soon hear the howling of wind and crunching of ice as they impact the enemy drones. It can't have taken more than a few minutes until only stragglers are left, quickly dispatched by blasts of wind.
     #Wind + Light: firestorm
+        *if (fic_ship = "ellanova") or (protag_likes_capella > 0)
+            *set protag_capella_red + 1
+            *set ch3_wins + 1
         *set ch3_wins +1
         "This is going to be interesting," says Capella. She takes your hand.
 
-        With a powerful spell like this, you need all of your abilities of concentration. The four of you are all working on the spell, channeling different components of the magical sentence.
-    
-    
+        With a powerful spell like this, you need all of your abilities of concentration. The four of you are all working on the spell, channeling different components of the magical sentence. You are the Light that sets the sky on fire. Capella is the Wind that blows it upon the enemy. Astra and Tycho provide support, amplifying your energies across the entire field.
+        
+        Streaks of red and orange scorch the drones, the fires joined by electrical explosions and the smoke of burning metal. You feel the heat and smell the bitter odor, but still you concentrate on completing the spell.
+
 *page_break Nothing is left moving.
 
 "Well, we're done," says Capella. "We've won."
@@ -311,21 +323,29 @@ Astra and Capella look at each other, and then back at you.
     #Wait! Why can't I stay here?
         "Wait!" you shout. "Why can't I stay here?"
 
-        Capella stares at you. "Sometimes I wanted to stay too. Sometimes there was a place that seemed good. But it was always too good to be true. I don't know how I ended up here, but... something felt right. It's hard to describe. Maybe you'll find a story of your own."
+        Capella stares at you. "Sometimes I wanted to stay too. Sometimes there was a place that seemed good. But it was always too good to be true. I don't know how I ended up here, but... something felt right about this place. Maybe you'll find a story of your own one day."
 
         Suddenly you start to shiver.
     #Will I ever find a way back to my world?
         "Will I ever find a way back to my own world?" you ask.
 
         "I think what happens is that each of us is always bouncing around the metaverse until we finally find a story where we belong," Capella says. "There's a story for each of us out there, and once we find it, we'll be home. This is my home now. It's objectively kind of a terrible place, but it's the place for me. I hope you'll find a story of your own, Gali.
+    *if ((fic_ship = "ellanova") or (protag_likes_capella > 0)) #Wait! I love you Capella!
+        "Wait! I love you Capella!" you shout.
+
+        She shakes her head. "Couldn't this have come at a better time?"
+
+        "I... sorry..."
+
+        "Look, there's another Capella waiting for you in another world. An infinite number of versions of her. Me, rather. You'll find someone, someday, in one of these worlds."
 
 *page_break This isn't your story, but...
 
 This isn't your story, but it's [i]a[/i] story.
 
-You feel the taste of cherries in your mouth as the ground opens up. You fall. Capella waves at you.
+You feel the taste of cherries in your mouth as the ground opens up. Capella waves at you.
 
-You fall.
+You fall, and all turns black.
 
 *page_break
 *goto story_end

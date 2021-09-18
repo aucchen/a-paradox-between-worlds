@@ -159,7 +159,7 @@ Which blogs would you like to read?
     *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
         *set has_chatted true
         *goto annc_chat
-    *if ((luna_blocked = false) and (in_luna_chat)) #See Claire's groupchat.
+    *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
         *set has_chatted true
         *gotoref writers_chat_ref
     *disable_reuse *if (luna_ch4_message) #See Luna's message.
@@ -168,7 +168,7 @@ Which blogs would you like to read?
     *disable_reuse *if (has_luna_password and (luna_ch4_seen = 1)) #See Luna's newer messages.
         *set has_chatted true
         *goto luna_msg_2
-    *if ((sofia_helped > 0)) #Send Sofia a message.
+    *if ((sofia_helped > 0) and (sofia_blue >= 20)) #Message Sofia about NebulaCon.
         *gotoref sofia_message_ref
     *if (read_count > 0) #Stop looking at blogs.
         *goto montage1_end
@@ -818,7 +818,7 @@ ${nebu_1_5_notes} notes
 *set apoc_prog 1
 [b]${stella_bio}[/b]
 
-[b]@apocalypse-hoarder reblogged from @deadlymagi at 5:30 PM. OP: @everlastingmagic[/b]
+[b]@apocalypse-hoarder reblogged from @deadlymagi at 3:30 PM. OP: @everlastingmagic[/b]
 
 Everything is magic to those who don't know how to wield the gift.
 
@@ -848,7 +848,7 @@ ${apoc_1_1_notes} notes
 
 *label apoc_1_2
 *set apoc_prog 2
-[b]@apocalypse-hoarder reblogged from @clairecallout at 4:40 PM. OP: @clairecallout[/b]
+[b]@apocalypse-hoarder reblogged from @clairecallout at 3:00 PM. OP: @clairecallout[/b]
 
 Anonymous asked: did you see Claire's response? They said that they didn't even read any of the books...
 
@@ -882,7 +882,7 @@ ${apoc_1_2_notes} notes
 
 *label apoc_1_3
 *set apoc_prog 3
-[b]@apocalypse-hoarder reblogged from @clairecallout at 2:55 PM. OP: @clairecallout[/b]
+[b]@apocalypse-hoarder reblogged from @clairecallout at 2:30 PM. OP: @clairecallout[/b]
 
 This is a compilation post of the evidence that Claire @shadow-protectrix has plagiarized their fics. There is substantial evidence that portions of Mars, Bringer of War are lifted wholesale from various novels as well as a number of prior works of fanfiction.
 
@@ -907,7 +907,7 @@ ${apoc_1_3_notes} notes
         *achieve callout
         *set stella_interact + 1
         *set apoc_1_3_notes + 1
-        *set claire_green %+ 10
+        *set claire_green %+ 20
         *set discourse %+ 5
         *goto apoc_1_3
     #Next post.
@@ -950,7 +950,7 @@ ${brun_1_5_notes} notes
 *label apoc_1_5
 *set apoc_prog 5
 *set stella_ch4_seen 1
-[b]@apocalypse-hoarder reblogged from @clairecallout at 1:00 PM. OP: @clairecallout[/b]
+[b]@apocalypse-hoarder reblogged from @clairecallout one day ago. OP: @clairecallout[/b]
 
 So, since the recent debacle I've been reading C/l/a/i/r/e @/sh/adow/-pr/otec/trix's blog and fics, and I've found some interesting things that I don't think they want to come to light. I'll keep y'all updated...
 
@@ -964,14 +964,16 @@ ${apoc_1_5_notes} notes
         *goto apoc_1_5
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx claire_dislike
+            *if claire_mutuals
+                *gosub_scene rx claire_dislike
             *gosub_scene rx discourse
 
         *set rb_count + 1
         *set stella_interact + 1
         *set apoc_1_5_notes + 1
         *set discourse %+ 3
-        *set claire_green %+ 3
+        *if claire_mutuals
+            *set claire_green %+ 10
         *goto apoc_1_5
     #Prev post.
         *goto apoc_1_3
@@ -1169,7 +1171,6 @@ ${trap_1_5_notes} notes
 
 @shadow-protectrix: Yes, I'm swearing now because it's gotten that bad.
 
-*comment TODO: did you tell claire about sofia's plans??
 @shadow-protectrix: I AM NOT GIVING YOU NEBULACON. YOU CAN TAKE ITS ROTTEN CORPSE FROM MINE.
 
 @nebulascribbler: ...I'm not asking for it.
@@ -1186,6 +1187,7 @@ ${trap_1_5_notes} notes
 
 @nebulascribbler: ...a sorceress. Not as cool as a mage, but I can live with that :)
 
+*comment did you tell claire about sofia's plans??
 *if claire_knows_sofia_plans
     *set sofia_green %+ 5
     @shadow-protectrix: She tried to MANIPULATE @${username} into her plans.
@@ -1331,6 +1333,7 @@ ${trap_1_5_notes} notes
                         
                         
                         @lunan0va: and i'm inclined to go with what karla says on this one.
+                        *comment I think Stella (via Sofia) would actually have been fine. She would've helped Luna. Sofia is evil but not that evil, and it would've given stella more karma. maybe she wouldn't have deleted.
                         *goto luna_choices_people
                     *disable_reuse #Laura @capellasgf?
                         @you: can you talk to laura @capellasgf?
@@ -1562,13 +1565,14 @@ You message Sofia @nebulascribbler.
 
 @you: so much for your plan huh
 
-@nebulascribbler: tbh it was always a low chance that it would succeed. I didn't expect to be able to take over NebulaCon. It was always likely that it would be cancelled.
+@nebulascribbler: To be honest, it was always a low chance that it would succeed. I didn't expect to be able to take over NebulaCon. It was always likely that it would be cancelled.
 
 @nebulascribbler: Such a shame, alas.
 
 *choice
     *disable_reuse #Ask about why she's doing this.
         *set sofia_secret true
+        *achieve imposter
         @you: why are you doing this?
 
         @nebulascribbler: Why am I doing what? Creating sockpuppets to attack Claire while simultaneously defending them with my main blog?
@@ -1587,7 +1591,7 @@ You message Sofia @nebulascribbler.
 
         @nebulascribbler: I made them up.
 
-        @nebulascribbler: I ran their entire ouevre through turnitin.com to find passages that were similar to other works. They're not particularly strong matches, but I wondered if people would believe them.
+        @nebulascribbler: I ran their entire oeuvre through turnitin.com to find passages that were similar to other works. They're not particularly strong matches, but I wondered if people would believe them.
 
         *fake_choice
             #Why???
@@ -1619,7 +1623,7 @@ You message Sofia @nebulascribbler.
 
         @nebulascribbler: All of your actions have repercussions. You just need to understand how to see.
 
-        @nebulascribbler: If I may ask, what are you planning to do with this information?
+        @nebulascribbler: Now, back to our original topic. If I may ask, what are you planning to do with this information?
         *choice
             #I'll tell Claire...
                 @you: i'll tell claire.
@@ -1691,6 +1695,8 @@ There is nothing more to do here.
 
 *set lux_bio "follow the [i]light[/i] and find the [i]truth[/i] (Lux/Lucas, lvl 18, he/him, bi mlm, reaper of light)"
 
-*set claire_bio "I'm Claire, recovering fandom mom. Trying to become a better person."
+*set claire_bio "I'm Claire, recovering fandom mom who's trying to become a better person. Weaver of wind, they/them."
+
+*set karla_bio "karla/21. no longer a chr*nicles blog; idk what this blog is now."
 
 *finish
