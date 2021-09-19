@@ -523,7 +523,7 @@ But before anyone can answer, then you begin to taste cherries once more. You fe
 *if ((lux_blue > (lux_green*2)) and (lux_blue >= 20))
     *set ch2_lux_message true
     *set chat_count + 1
-*if ((sofia_blue > (sofia_green*2)) and (sofia_blue >= 15))
+*if ((sofia_blue > (sofia_green*2)) and (sofia_blue >= 20))
     *set ch2_sofia_message true
     *set chat_count + 1
     *set sofia_mutuals true

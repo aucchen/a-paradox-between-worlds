@@ -94,7 +94,7 @@ He takes a deep breath. "And the man leading the shadow movement... is standing 
 *temp shad_1_2_notes 1781
 *temp shad_1_3_notes 4910
 *temp shad_1_4_notes 1391
-*temp shad_1_5_notes 101
+*temp shad_1_5_notes 1401
 
 *temp nebu_1_1_notes 324874
 *temp nebu_1_2_notes 101
@@ -336,8 +336,8 @@ ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
         *goto luna_1_1
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx luna_dislike
-            *gosub_scene rx discourse
+            *gosub luna_dislike
+            *gosub discourse
 
         *set luna_interact + 1
         *set luna_green %+ 5
@@ -379,7 +379,7 @@ ${brun_1_1_notes} notes
         *goto brun_1_1
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx lux_dislike
+            *gosub lux_dislike
 
         *set rb_count + 1
         *set lux_interact + 1
@@ -431,8 +431,8 @@ ${brun_1_2_notes} notes
         *goto brun_1_2
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx lux_like
-            *gosub_scene rx sympathy
+            *gosub lux_like
+            *gosub sympathy
 
         *set rb_count + 1
         *set lux_interact + 1
@@ -468,8 +468,8 @@ ${brun_1_3_notes} notes
         *goto brun_1_3
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx lux_like
-            *gosub_scene rx shipping
+            *gosub lux_like
+            *gosub shipping
 
         *set rb_count + 1
         *set lux_interact + 1
@@ -503,8 +503,8 @@ ${brun_1_4_notes} notes
         *goto brun_1_4
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx lux_like
-            *gosub_scene rx shipping
+            *gosub lux_like
+            *gosub shipping
 
         *set rb_count + 1
         *set lux_interact + 1
@@ -543,8 +543,8 @@ ${brun_1_5_notes} notes
         *goto brun_1_5
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx lux_like
-            *gosub_scene rx discourse
+            *gosub lux_like
+            *gosub discourse
 
         *set rb_count + 1
         *set brun_1_5_notes + 1
@@ -578,10 +578,10 @@ ${shad_1_1_notes} notes
         *goto shad_1_1
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx claire_like
-            *gosub_scene rx karla_dislike
-            *gosub_scene rx luna_dislike
-            *gosub_scene rx discourse
+            *gosub claire_like
+            *gosub karla_dislike
+            *gosub luna_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set claire_interact + 1
@@ -616,10 +616,10 @@ ${shad_1_2_notes} notes
         *goto shad_1_2
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx claire_like
-            *gosub_scene rx karla_dislike
-            *gosub_scene rx luna_dislike
-            *gosub_scene rx discourse
+            *gosub claire_like
+            *gosub karla_dislike
+            *gosub luna_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set claire_interact + 1
@@ -654,10 +654,10 @@ ${shad_1_3_notes} notes
         *goto shad_1_3
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx claire_like
-            *gosub_scene rx karla_dislike
-            *gosub_scene rx luna_dislike
-            *gosub_scene rx discourse
+            *gosub claire_like
+            *gosub karla_dislike
+            *gosub luna_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set claire_interact + 1
@@ -694,10 +694,10 @@ ${shad_1_4_notes} notes
         *goto shad_1_4
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx claire_like
-            *gosub_scene rx karla_dislike
-            *gosub_scene rx luna_dislike
-            *gosub_scene rx discourse
+            *gosub claire_like
+            *gosub karla_dislike
+            *gosub luna_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set claire_interact + 1
@@ -736,10 +736,10 @@ ${shad_1_5_notes} notes
         *goto shad_1_5
     *disable_reuse #Reblog 🔁(Luna will likely hate you).
         *if rx
-            *gosub_scene rx claire_like
-            *gosub_scene rx luna_st_dislike
-            *gosub_scene rx karla_dislike
-            *gosub_scene rx discourse
+            *gosub claire_like
+            *gosub luna_st_dislike
+            *gosub karla_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set claire_interact + 1
@@ -776,8 +776,8 @@ ${brun_1_4_notes} notes
         *goto nebu_1_1
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx sofia_like
-            *gosub_scene rx shipping
+            *gosub sofia_like
+            *gosub shipping
 
         *set rb_count + 1
         *set sofia_interact + 1
@@ -814,8 +814,8 @@ ${nebu_1_2_notes} notes
         *goto nebu_1_2
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx sofia_like
-            *gosub_scene rx shipping
+            *gosub sofia_like
+            *gosub shipping
 
         *set rb_count + 1
         *set sofia_blue %+ 5
@@ -869,8 +869,8 @@ ${nebu_1_3_notes} notes
         *goto nebu_1_3
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx sofia_like
-            *gosub_scene rx shitposting
+            *gosub sofia_like
+            *gosub shitposting
 
         *set rb_count + 1
         *set sofia_interact + 1
@@ -904,8 +904,8 @@ ${nebu_1_4_notes} notes
         *goto nebu_1_4
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx sofia_like
-            *gosub_scene rx sympathy
+            *gosub sofia_like
+            *gosub sympathy
 
         *set rb_count + 1
         *set sofia_interact + 1
@@ -942,10 +942,10 @@ ${nebu_1_5_notes} notes
         *goto nebu_1_5
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx sofia_like
-            *gosub_scene rx karla_dislike
-            *gosub_scene rx shitposting
-            *gosub_scene rx sympathy
+            *gosub sofia_like
+            *gosub karla_dislike
+            *gosub shitposting
+            *gosub sympathy
 
         *set rb_count + 1
         *set sofia_interact + 1
@@ -997,7 +997,7 @@ ${shad_1_5_notes} notes
         *goto apoc_1_1
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx discourse
+            *gosub discourse
 
         *set rb_count + 1
         *set stella_interact + 1
@@ -1027,8 +1027,8 @@ ${apoc_1_2_notes} notes
         *goto apoc_1_2
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx discourse
-            *gosub_scene rx meta
+            *gosub discourse
+            *gosub meta
 
         *set rb_count + 1
         *set stella_interact + 1
@@ -1069,8 +1069,8 @@ ${shad_1_4_notes} notes
         *goto apoc_1_3
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx claire_dislike
-            *gosub_scene rx discourse
+            *gosub claire_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set stella_interact + 1
@@ -1104,7 +1104,7 @@ ${brun_1_5_notes} notes
         *goto apoc_1_4
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx discourse
+            *gosub discourse
 
         *set rb_count + 1
         *set stella_interact + 1
@@ -1137,7 +1137,7 @@ ${apoc_1_5_notes} notes
         *goto apoc_1_5
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx discourse
+            *gosub discourse
 
         *set rb_count + 1
         *set stella_interact + 1
@@ -1170,10 +1170,10 @@ ${trap_1_1_notes} Notes
         *goto trap_1_1
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx karla_like
+            *gosub karla_like
             *if claire_mutuals
-                *gosub_scene rx claire_dislike
-            *gosub_scene rx discourse
+                *gosub claire_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set karla_interact + 1
@@ -1212,10 +1212,10 @@ ${shad_1_2_notes} Notes
         *goto trap_1_2
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx karla_like
+            *gosub karla_like
             *if claire_mutuals
-                *gosub_scene rx claire_dislike
-            *gosub_scene rx discourse
+                *gosub claire_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set karla_interact + 1
@@ -1260,11 +1260,11 @@ ${shad_1_4_notes} notes
         *goto trap_1_3
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx karla_like
-            *gosub_scene rx luna_like
+            *gosub karla_like
+            *gosub luna_like
             *if claire_mutuals
-                *gosub_scene rx claire_dislike
-            *gosub_scene rx discourse
+                *gosub claire_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set karla_interact + 1
@@ -1301,18 +1301,18 @@ ${trap_1_4_notes} notes
     *disable_reuse #Like ❤️
         *set trap_1_4_notes + 1
         *set karla_blue %+ 1
-        *goto trap_1_3
+        *goto trap_1_4
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx karla_like
-            *gosub_scene rx discourse
+            *gosub karla_like
+            *gosub discourse
 
         *set rb_count + 1
         *set karla_interact + 1
         *set karla_blue %+ 3
         *set trap_1_4_notes + 1
         *set discourse %+ 3
-        *goto trap_1_3
+        *goto trap_1_4
     #Next post.
         *goto trap_1_5
     #Prev post.
@@ -1357,10 +1357,10 @@ ${shad_1_5_notes} notes
         *goto trap_1_5
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub_scene rx karla_like
+            *gosub karla_like
             *if claire_mutuals
-                *gosub_scene rx claire_dislike
-            *gosub_scene rx discourse
+                *gosub claire_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set karla_interact + 1
@@ -1605,7 +1605,7 @@ Karla has sent you a private message:
 
                 @you: okay...
         *goto montage_1
-    #Disagree: Karla @trappedinspace is being unreasonably paranoid.
+    #Disagree: Karla is being unreasonably paranoid.
         *set karla_investigation -1
         *set karla_green %+ 1
         @you: nah... we've been mutuals for a while and i feel like @apocalypse-hoarder is fine. i think you're being kinda paranoid.
@@ -1678,8 +1678,6 @@ Sofia has sent you some private messages:
                 
                 
                 @nebulascribbler: But apply the pressure in a way that leaves an out. Don't send anon hate. And make sure it's about Claire, not the concept of NebulaCon or the Nebulaverse fandom in general.
-
-                @nebulascribbler: So instead of making a callout post, maybe we could make an appeal to the good of the fandom.
                 *choice
                     #I'll help you (lie?).
                         *goto ill_help_sofia
@@ -1842,9 +1840,11 @@ You've decided to tell Karla about Sofia's plan, because it might be useful for 
 @trappedinspace: LMAO
 
 *comment amogus
-@trappedinspace: Okay, that just raises my suspicions of @nebulascribbler, but I don't think it's necessarily proof of anything. She's always kinda seemed sus to me. idk.
+@trappedinspace: Okay, that just raises my suspicions of @nebulascribbler, but I don't think it's proof of anything. She's always kinda seemed sus to me. idk.
 
-@trappedinspace: tbh I feel like the entire fandom mom community that includes sofia and claire and all those people has incredibly weird vibes but maybe that's just me.
+@trappedinspace: Looking at their blogs, Stella's been reblogging quite a bit from Sofia, but that's not proof that @apocalypse-hoarder is a sock puppet.
+
+@trappedinspace: tbh I feel like the entire fandom mom community that includes Sofia and Claire and all those people has incredibly weird vibes but maybe that's just me.
 
 @trappedinspace: Anyway, thanks for telling me; just keep me updated...
 
@@ -1867,7 +1867,7 @@ This is a callout post for C/l/a/i/r/e @/s/h/a/d/o/w-p/r/o/t/e/c/t/r/i/x. As an 
 *choice
     *disable_reuse #Reblog it.
         *if rx
-            *gosub_scene rx claire_st_dislike
+            *gosub claire_st_dislike
 
         *set stella_blue %+ 3
         *set sofia_blue %+ 3
@@ -1890,13 +1890,66 @@ Thus, you go to sleep for the night.
 *page_break
 
 *gosub_scene fic_wind
-
-[b]IRL?[/b]
-
-*if fic_stopped_writing
-    The story is over, at least for now. You have nothing to publish.
-*else
-    The story is over. You post it online. Hope for the best, which is all you can do in these tumultuous times.
-
-
 *finish
+
+*label rx
+*comment reactions to you reblogging posts
+*label luna_like
+Luna @lunan0va [b]liked[/b] this!
+*return
+*label luna_dislike
+Luna @lunan0va [b]disliked[/b] this!
+*return
+*label luna_st_dislike
+Luna @lunan0va [b]strongly disliked[/b] this!
+*return
+*label lux_like
+Lux @brunova-official [b]liked[/b] this!
+*return
+*label lux_dislike
+Lux @brunova-official [b]disliked[/b] this!
+*return
+*label claire_like
+Claire @shadow-protectrix [b]liked[/b] this!
+*return
+*label claire_dislike
+Claire @shadow-protectrix [b]disliked[/b] this!
+*return
+*label claire_st_dislike
+Claire @shadow-protectrix [b]strongly disliked[/b] this!
+*return
+*label sofia_like
+Sofia @nebulascribbler [b]liked[/b] this!
+*return
+*label sofia_dislike
+Sofia @nebulascribbler [b]disliked[/b] this!
+*return
+*label karla_like
+Karla @trappedinspace [b]liked[/b] this!
+*return
+*label karla_dislike
+Karla @trappedinspace [b]disliked[/b] this!
+*return
+*label karla_st_dislike
+Karla @trappedinspace [b]strongly disliked[/b] this!
+*return
+
+*comment alignment
+*label gen
+Gained alignment: [b]gen[/b]!
+*return
+*label shipping
+Gained alignment: [b]shipping[/b]!
+*return
+*label discourse
+Gained alignment: [b]discourse[/b]!
+*return
+*label meta
+Gained alignment: [b]meta[/b]!
+*return
+*label sympathy
+Gained alignment: [b]sympathy[/b]!
+*return
+*label shitposting
+Gained alignment: [b]shitposting[/b]!
+*return

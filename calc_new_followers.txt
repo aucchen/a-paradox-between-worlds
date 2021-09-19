@@ -209,7 +209,7 @@
 *set followers + followers_gained
 *set followers - followers_lost
 
-*if (followers >= 200)
+*if (followers >= 210)
     *achieve followers
 
 You've [b]gained ${followers_gained}[/b] follower@{(followers_gained = 1) |s} and [b]lost ${followers_lost}[/b] follower@{(followers_gained = 1) |s}, for a current total of [b]${followers} followers[/b].

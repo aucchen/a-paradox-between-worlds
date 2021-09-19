@@ -363,10 +363,10 @@ Are you going to continue the fic, or abandon it?
         Are you sure you want to stop?
         *choice
             #Yes. Fuck this.
-                Alright...
+                There's no point to writing this anymore. The fic is over, at least for now.
                 *goto fic_end
             #I don't know, but I want to take a break.
-                Alright...
+                Alright. The fic is over, for now. Maybe you'll come back to it, or not.
                 *goto fic_end
             #Never mind. The story must go on.
                 [Okay. Let's keep going.]
@@ -405,12 +405,19 @@ Now you wait.
 *if followers >= 220
     *achieve followers
 
-Apparently the ongoing strife in the Nebulaverse fandom has not negatively affected your small slice too greatly. You have ${ch3_likes} likes and ${ch3_rbs} reblogs on the fic. 
+*if (ch3_likes >= 50)
+    Despite the ongoing strife in the Nebulaverse fandom, your fic is still very popular.
+*elseif (ch3_likes >= 25)
+    Despite the ongoing strife in the Nebulaverse fandom, your fic is still well-liked.
+*elseif (ch3_likes >= 10)
+    The ongoing strife in the Nebulaverse fandom has not hurt your fic's popularity.
+*else
+    Maybe the ongoing strife in the Nebulaverse fandom has hurt your popularity.
+You have ${ch3_likes} likes and ${ch3_rbs} reblogs on the fic. 
 *if new_followers > 0
     You have also gained ${new_followers} followers.
 
 Unfortunately, you do not have any new messages. The people who would normally comment are all caught up in their own problems. They don't have time for your silly stories at this moment.
 
 *label fic_end
-*page_break
 *return

@@ -100,7 +100,7 @@ Online weather report: the devastation after the storm. The wreckage of a hurric
     *set knows_luna_secret true
     Luna has messaged you:
 
-    @redmoongirl: hey so this is my new url! thank you so much for your help 💙️
+    @icemoongirl: hey so this is my new url! thank you so much for your help 💙️
 
 *label montage_1
 
@@ -110,7 +110,7 @@ Which blogs would you like to read?
     *selectable_if (luna_blocked = false) #@lunan0va
         @lunan0va has been deactivated. There is no user with that URL.
         *goto montage_1
-    *if ((luna_blocked = false) and (knows_luna_secret)) #@redmoongirl
+    *if ((luna_blocked = false) and (knows_luna_secret)) #@icemoongirl
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
     *selectable_if ((lux_blocked = false)) #@brunova-official
@@ -152,7 +152,7 @@ Which blogs would you like to read?
 *set luna_prog 1
 [b]${luna_bio}[/b]
 
-[b]@redmoongirl reblogged from @redmoongirl at 7:00 PM. OP: @redmoongirl[/b]
+[b]@icemoongirl reblogged from @icemoongirl at 7:00 PM. OP: @icemoongirl[/b]
 
 Hey. It's Luna. I haven't posted in a while, but I just wanted to say that I'm doing alright. Well, for certain definitions of alright.
 
@@ -166,7 +166,7 @@ God, it's so strange that I still think in nebulaverse terms. That series left a
 
 Thanks to Karla, Laura, Hari, @{luna_helped Lux, and especially $!{handle}|and Lux} for helping me through this mess. You're like family to me. I love y'all.
 
-[b]@redmoongirl:[/b]
+[b]@icemoongirl:[/b]
 
 Sometimes it feels like all our heroes are dead and our enemies are in power. G*TM got a writing award from the BBC for that essay where she called me a slur. She went on to misgender me on prime time TV, and no one corrected her. Even to my ostensible supporters and allies I'm a boy now. They think I'm a trans boy, which is immeasurably funny to me.
 
@@ -198,13 +198,13 @@ ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 *set luna_ch5_seen 1
 *set luna_prog 2
 
-[b]@redmoongirl reblogged from @capellasgf at 6:40 PM. OP @summersnow[/b]
+[b]@icemoongirl reblogged from @capellasgf at 6:40 PM. OP @summersnow[/b]
 
 [illustration of Capella and Astra laying on their backs on the top of a tall building. The building is surrounded by a field of stars. The two girls are holding hands and smiling. Astra has an arm raised, pointing out something in the sky.]
 
-[The lyrics to Ribs by Lorde are written out like constellations: "This dream isn't feeling sweet. We're reeling through the midnight streets."]
+[The lyrics to Ribs by Lorde are written out in the sky with stars, like constellations.]
 
-"And I've never felt more alone / It feels so scary getting old" (stream Pure Heroine by @lordemusic and fuck ma*millan)
+"This dream isn't feeling sweet / We're reeling through the midnight streets" (stream Pure Heroine by @lordemusic and fuck ma*millan)
 
 Tags: #nebulaverse, #im sorry but i cant escape
 
@@ -532,15 +532,15 @@ There have been a lot of messages since you were last here.
 
 @trappedinspace: Luna I am so sorry about what happened I really really wish I could've been there to help
 
-@redmoongirl: lol it's fine!!!! you were in literally in jail???
+@icemoongirl: lol it's fine!!!! you were in literally in jail???
 
 @trappedinspace: Yeah.
 
 @trappedinspace: also hi Luna. Congrats on the new url. It's great.
 
-@redmoongirl: Wow. Thank you!!!
+@icemoongirl: Wow. Thank you!!!
 
-@redmoongirl: also say hi to lux @brunova-official and hari @noncanonical!
+@icemoongirl: also say hi to lux @brunova-official and hari @noncanonical!
 
 @brunova-official: nice to meet you guys
 
@@ -551,17 +551,17 @@ There have been a lot of messages since you were last here.
     #See the newer messages.
         *label annc_chat_1
         *set annc_chat_ref "annc_chat_1"
-        @redmoongirl: can i ask you something karla?
+        @icemoongirl: can i ask you something karla?
 
         @trappedinspace: sure, I guess?
 
-        @redmoongirl: how do you do it? how do you manage to get up everyday and just... do what it takes to keep on living?
+        @icemoongirl: how do you do it? how do you manage to get up everyday and just... do what it takes to keep on living?
 
         @trappedinspace: honestly I don't know myself sometimes. It's hard.
 
         @trappedinspace: a lot of times I feel like there's no hope for trans women.
 
-        @redmoongirl: do you think it'll ever get better?
+        @icemoongirl: do you think it'll ever get better?
 
         @trappedinspace: honestly idk
 
@@ -578,7 +578,7 @@ There have been a lot of messages since you were last here.
                 *set annc_chat_ref "annc_chat_2"
                 @noncanonical: May I say something here?
 
-                @redmoongirl: sure?
+                @icemoongirl: sure?
 
                 @noncanonical: I'm probably old enough to be your parent. My oldest is in high school.
 
@@ -588,7 +588,7 @@ There have been a lot of messages since you were last here.
 
                 @noncanonical: I know sometimes it's hard. It's been hard. I've felt hopeless too. I can't tell you that things will get better, because I don't know you, and I can never know what it's like to be you. But I can tell you that things will be different. The world will be different. And you will be different.
 
-                @redmoongirl: wow, thanks dad.
+                @icemoongirl: wow, thanks dad.
 
                 @noncanonical: Please don't call me that. You don't know me that well.
 
@@ -599,7 +599,7 @@ There have been a lot of messages since you were last here.
                         *set has_hearts true
                         @you: umm... i hope you're doing better, luna. good luck with everything.
 
-                        @redmoongirl: Thank you 💙️
+                        @icemoongirl: Thank you 💙️
 
                         @trappedinspace: You know what? 💜
                         *goto sending_hearts
@@ -611,11 +611,11 @@ There have been a lot of messages since you were last here.
 
                         @trappedinspace: Don't worry, I'll be fine.
 
-                        @redmoongirl: 💙️💙️💙️💙️💙️💙️
+                        @icemoongirl: 💙️💙️💙️💙️💙️💙️
                         *label sending_hearts
                         *set annc_chat_ref "sending_hearts"
 
-                        @redmoongirl: let's just keep on sending hearts to each other.
+                        @icemoongirl: let's just keep on sending hearts to each other.
 
                         @trappedinspace: 💜💜💜
 
@@ -655,11 +655,11 @@ There have been a lot of messages since you were last here.
 
                         @trappedinspace: Turns out I'm blocked lmao
 
-                        @redmoongirl: they haven't blocked my new account...
+                        @icemoongirl: they haven't blocked my new account...
 
-                        @redmoongirl: wow i have no idea what to say :/
+                        @icemoongirl: wow i have no idea what to say :/
 
-                        @trappedinspace: Okay I just read it. And wow this story arc feels totally unearned. What did they do to deserve a catharsis?
+                        @trappedinspace: Okay I just read it. And wow this story arc feels totally unearned. They did not deserve a catharsis.
 
                         @noncanonical: I don't think anyone really "deserves" anything. People don't have story arcs in real life.
 
@@ -676,7 +676,7 @@ There have been a lot of messages since you were last here.
                     *disable_reuse #Ask about the nebulaverse.
                         @you: so, um, is anyone still into the nebulaverse?
 
-                        @redmoongirl: jak;dfsjlk;dsajdfl;sa
+                        @icemoongirl: jak;dfsjlk;dsajdfl;sa
 
                         @brunova-official: akl;sjdl;sadj;lkdfajdk;lsjkl;df
 
@@ -684,7 +684,7 @@ There have been a lot of messages since you were last here.
 
                         @trappedinspace: Actual answer: unfortunately yes. Despite everything it still gives me positive emotions when I see a picture of Capella.
 
-                        @redmoongirl: same here :/
+                        @icemoongirl: same here :/
 
                         @brunova-official: same but for bruno :/
 
@@ -696,7 +696,7 @@ There have been a lot of messages since you were last here.
                             #I'm still into the nebulaverse.
                                 @you: same for me i guess. i'm still into the nebulaverse...
 
-                                @redmoongirl: yeah it kinda sucks...
+                                @icemoongirl: yeah it kinda sucks...
                             #I'm trying to escape.
                                 @you: i'm trying to escape.
 
@@ -704,7 +704,7 @@ There have been a lot of messages since you were last here.
                             #I hate the nebulaverse now.
                                 @you: i hate the nebulaverse now.
 
-                                @redmoongirl: see logically i think i should hate it now, but i can't. i just can't bring myself to hate it.
+                                @icemoongirl: see logically i think i should hate it now, but i can't. i just can't bring myself to hate it.
 
                         @noncanonical: Maybe there are two Nebulaverses. The one created by GTM, and the one we constructed with our own art and fics and meta.
 
@@ -747,7 +747,7 @@ There have been a lot of messages since you were last here.
 
         @you: [screenshots of the chats with sofia]
 
-        @shadow-protectrix: TIL Sofia was a fucked up mess of a human being.
+        @shadow-protectrix: TIL Sofia was a mess of a human being.
 
         @shadow-protectrix: I had my suspicions but I didn't know it extended this far...
 
@@ -811,17 +811,17 @@ There have been a lot of messages since you were last here.
 
 @you: how are you doing? are you okay?
 
-@redmoongirl: thanks for talking to me :D
+@icemoongirl: thanks for talking to me :D
 
-@redmoongirl: i'm doing a little better. i'm glad i can still use the internet lol. they haven't taken that away.
+@icemoongirl: i'm doing a little better. i'm glad i can still use the internet lol. they haven't taken that away.
 
-@redmoongirl: don't worry about me too much lol. it's a little quieter here. the tension is still here but it's just subtext right now.
+@icemoongirl: don't worry about me too much lol. it's a little quieter here. the tension is still here but it's just subtext right now.
 
-@redmoongirl: you might have saved my life. literally.
+@icemoongirl: you might have saved my life. literally.
 
-@redmoongirl: 💙️💙️💙️
+@icemoongirl: 💙️💙️💙️
 
-@redmoongirl: anyway, enough about me. how are you doing???
+@icemoongirl: anyway, enough about me. how are you doing???
 
 *comment TODO: choices here... ask something?
 *choice
@@ -831,7 +831,7 @@ There have been a lot of messages since you were last here.
         *set luna_message_ref "luna_chat_fine"
         @you: i'm doing fine...
 
-        @redmoongirl: that's great!
+        @icemoongirl: that's great!
 
         *label luna_conversation_died
         The conversation has seemed to die down.
@@ -854,7 +854,7 @@ There have been a lot of messages since you were last here.
         *set luna_message_ref "luna_chat_lie"
         @you: i'm doing fine...
 
-        @redmoongirl: that's great!
+        @icemoongirl: that's great!
 
         *goto luna_conversation_died
     #I'm doing... not well.
@@ -862,13 +862,13 @@ There have been a lot of messages since you were last here.
         *set luna_message_ref "luna_chat_not_well"
         @you: um... i'm not really doing well.
 
-        @redmoongirl: oh, i'm sorry! may i ask why?
+        @icemoongirl: oh, i'm sorry! may i ask why?
 
         @you: it's just... stuff. everything. life.
 
-        @redmoongirl: yeah i get that...
+        @icemoongirl: yeah i get that...
 
-        @redmoongirl: 💙️
+        @icemoongirl: 💙️
 
         *goto luna_conversation_died
     #I love you...
@@ -880,9 +880,9 @@ There have been a lot of messages since you were last here.
             *gosub_scene hearts_choice
         @you: ${heart_emoji}${heart_emoji}${heart_emoji}
 
-        @redmoongirl: haha thanks 💙️
+        @icemoongirl: haha thanks 💙️
 
-        @redmoongirl: wait, like, do you mean that like..... yknow??????
+        @icemoongirl: wait, like, do you mean that like..... yknow??????
         *choice
             #Yes, I mean that in a romantic way.
                 *if (luna_red = 0)
@@ -892,25 +892,25 @@ There have been a lot of messages since you were last here.
                 *set luna_message_ref "luna_confess"
                 @you: yeah, i really really like you...
 
-                @redmoongirl: lgj;laksjdl;kahgjkhkjhlkahsd
+                @icemoongirl: lgj;laksjdl;kahgjkhkjhlkahsd
 
-                @redmoongirl: l;kajopweinancovpniaweopfjwaepoijf'afd
+                @icemoongirl: l;kajopweinancovpniaweopfjwaepoijf'afd
 
-                @redmoongirl: um... i have no idea what to say d;sjlfldsjk;ldsfjak;l
+                @icemoongirl: um... i have no idea what to say d;sjlfldsjk;ldsfjak;l
 
-                @redmoongirl: wait... you *like* like me??? do you even know what i look like?
+                @icemoongirl: wait... you *like* like me??? do you even know what i look like?
 
                 @you: yeah, i do...
 
-                @redmoongirl: ;jdlsk;lksdj;lfdsj;ldfkj;afd
+                @icemoongirl: ;jdlsk;lksdj;lfdsj;ldfkj;afd
 
-                @redmoongirl: (sorry just had to get that out of my system)
+                @icemoongirl: (sorry just had to get that out of my system)
 
-                @redmoongirl: okay um. i'll get back to you.
+                @icemoongirl: okay um. i'll get back to you.
 
-                @redmoongirl: wait like a day and maybe i'll be coherent
+                @icemoongirl: wait like a day and maybe i'll be coherent
 
-                @redmoongirl: anyway uh see you later 💙️
+                @icemoongirl: anyway uh see you later 💙️
                 *goto montage_1
             #No, I just want to be friends.
                 *set luna_blue %+ 5
@@ -920,12 +920,12 @@ There have been a lot of messages since you were last here.
 
                 @you: we should talk more!
 
-                @redmoongirl: oh okay lol l;jadsl;fsdajl;
+                @icemoongirl: oh okay lol l;jadsl;fsdajl;
 
                 *label better_friends
-                @redmoongirl: yeah let's be better friends!
+                @icemoongirl: yeah let's be better friends!
 
-                @redmoongirl: sometimes it's hard to know what to talk about without the n*bulaverse fandom stuff like, providing a guide.
+                @icemoongirl: sometimes it's hard to know what to talk about without the n*bulaverse fandom stuff like, providing a guide.
 
                 *fake_choice
                     #We can talk about life?
@@ -933,31 +933,31 @@ There have been a lot of messages since you were last here.
                         *set luna_message_ref "luna_talk_about_life"
                         @you: maybe we can just talk about life?
 
-                        @redmoongirl: that'd be nice
+                        @icemoongirl: that'd be nice
 
-                        @redmoongirl: not that my life has been going swimmingly lately, but it is what it is -_-
+                        @icemoongirl: not that my life has been going swimmingly lately, but it is what it is -_-
 
-                        @redmoongirl: maybe it'd feel better to talk about it more, i guess?
+                        @icemoongirl: maybe it'd feel better to talk about it more, i guess?
 
                         @you: yeah, sometimes it's nice to just talk.
 
-                        @redmoongirl: thank you again for everything 💙️
+                        @icemoongirl: thank you again for everything 💙️
 
-                        @redmoongirl: the universe is kind of a shitty and lonely place but you make it better :)
+                        @icemoongirl: the universe is kind of a shitty and lonely place but you make it better :)
                     #We can try to find a new fandom?
                         *label luna_new_fandom
                         *set luna_message_ref "luna_new_fandom"
                         @you: maybe we can find a new fandom :)
 
-                        @redmoongirl: yeah... but it'll be hard to capture the feeling of the n*bulaverse again.
+                        @icemoongirl: yeah... but it'll be hard to capture the feeling of the n*bulaverse again.
 
-                        @redmoongirl: something about it just... i don't even know.
+                        @icemoongirl: something about it just... i don't even know.
 
                         @you: i'm sure there's something out there! if not, maybe we'll make our own universe...
 
-                        @redmoongirl: yeah!
+                        @icemoongirl: yeah!
 
-                        @redmoongirl: this universe is kind of a shitty and lonely place but we'll make it better :)
+                        @icemoongirl: this universe is kind of a shitty and lonely place but we'll make it better :)
                     #We can just keep on liking each other's posts without commentary, as if we're hanging out next to each other in a companionable silence.
                         *label luna_silence
                         *set luna_message_ref "luna_silence"
@@ -965,17 +965,17 @@ There have been a lot of messages since you were last here.
 
                         @you: as if we're sitting next to each other just hanging out in silence.
 
-                        @redmoongirl: j;lkadfj;lksdajfl;ajdl;asjfl;a
+                        @icemoongirl: j;lkadfj;lksdajfl;ajdl;asjfl;a
 
-                        @redmoongirl: parallel play like 5 year olds...
+                        @icemoongirl: parallel play like 5 year olds...
 
-                        @redmoongirl: but that doesn't sound so bad honestly.
+                        @icemoongirl: but that doesn't sound so bad honestly.
 
-                        @redmoongirl: the universe is kind of a shitty and lonely place but you make it better :)
+                        @icemoongirl: the universe is kind of a shitty and lonely place but you make it better :)
 
-                @redmoongirl: 💙️💙️💙️
+                @icemoongirl: 💙️💙️💙️
 
-                @redmoongirl: so uh i've gotta go now. see you later ${handle} 💙️
+                @icemoongirl: so uh i've gotta go now. see you later ${handle} 💙️
                 *goto montage_1
 
 *label karla_chat
@@ -997,7 +997,7 @@ There have been a lot of messages since you were last here.
 @trappedinspace: Did you find out anything new?
 
 *choice
-    *if (sofia_secret) #Yes, I know Sofia's secret.
+    *if (stella_secret) #Yes, I know who Stella @apocalypse_hoarder really was.
         *set karla_investigation 3
         *set revealed_sofia_secret true
         *set karla_blue %+ 10
@@ -1013,12 +1013,14 @@ There have been a lot of messages since you were last here.
 
         @trappedinspace: Also what the fuck is wrong with Sofia.
 
-        @trappedinspace: Now I see that she's apparently taking a leave of absence from this website. How convenient.
+        @trappedinspace: Now I see that she's apparently taking a hiatus. How convenient.
 
         @trappedinspace: Maybe we should make a callout post lmao.
 
         @trappedinspace: Even if Sofia is already gone. It could be like, a historical artifact.
 
+        *label karla_question
+        *set karla_message_ref "karla_question"
         *choice
             #Send the callout.
                 *achieve callout
@@ -1030,7 +1032,10 @@ There have been a lot of messages since you were last here.
 
                 @trappedinspace: I wonder if this chat screenshot alone is enough evidence... but tbh I don't see how we can get more.
 
-                @trappedinspace: I don't remember anything in "Stella's" blog tying them back to Sofia, so it'll be hard...
+                *if (stella_secret)
+                    @trappedinspace: I don't remember anything in "Stella's" blog tying them back to Sofia, so it'll be hard...
+                *else
+                    @trappedinspace: There is so much weird shit that Sofia just confessed to, but I don't know if we have evidence besides your chat log.
 
                 @trappedinspace: Anyway I'll see what I can dig up.
 
@@ -1050,6 +1055,23 @@ There have been a lot of messages since you were last here.
 
                 @trappedinspace: bye for now 💜
                 *goto montage_1
+    *if (sofia_secret and not(stella_secret)) #I know that Sofia @nebulascribbler was up to something.
+        *set karla_investigation 3
+        *set revealed_sofia_secret true
+        *set karla_blue %+ 10
+        *achieve truth
+        @you: i know that sofia @nebulascribbler was up to something.
+
+        @you: [screenshots of the chat]
+
+        @trappedinspace: Oh wow. This is incredible.
+
+        @trappedinspace: What the fuck is wrong with Sofia.
+
+        @trappedinspace: This isn't direct evidence that @apocalypse-hoarder was Sofia, but it's extremely suggestive, especially seeing as how Sofia is on hiatus and @apocalypse-hoarder is deactivated.
+
+        @trappedinspace: Maybe we should make a callout post lmao.
+        *goto karla_question
     #No, I haven't found anything.
         *if (sofia_secret)
             *achieve secret
@@ -1099,3 +1121,65 @@ You close your browser. It's getting late. You have school tomorrow.
 *if not(has_chatted)
     *achieve alone
 *ending
+
+*label rx
+*comment reactions to you reblogging posts
+*label luna_like
+Luna @lunan0va [b]liked[/b] this!
+*return
+*label luna_dislike
+Luna @lunan0va [b]disliked[/b] this!
+*return
+*label luna_st_dislike
+Luna @lunan0va [b]strongly disliked[/b] this!
+*return
+*label lux_like
+Lux @brunova-official [b]liked[/b] this!
+*return
+*label lux_dislike
+Lux @brunova-official [b]disliked[/b] this!
+*return
+*label claire_like
+Claire @shadow-protectrix [b]liked[/b] this!
+*return
+*label claire_dislike
+Claire @shadow-protectrix [b]disliked[/b] this!
+*return
+*label claire_st_dislike
+Claire @shadow-protectrix [b]strongly disliked[/b] this!
+*return
+*label sofia_like
+Sofia @nebulascribbler [b]liked[/b] this!
+*return
+*label sofia_dislike
+Sofia @nebulascribbler [b]disliked[/b] this!
+*return
+*label karla_like
+Karla @trappedinspace [b]liked[/b] this!
+*return
+*label karla_dislike
+Karla @trappedinspace [b]disliked[/b] this!
+*return
+*label karla_st_dislike
+Karla @trappedinspace [b]strongly disliked[/b] this!
+*return
+
+*comment alignment
+*label gen
+Gained alignment: [b]gen[/b]!
+*return
+*label shipping
+Gained alignment: [b]shipping[/b]!
+*return
+*label discourse
+Gained alignment: [b]discourse[/b]!
+*return
+*label meta
+Gained alignment: [b]meta[/b]!
+*return
+*label sympathy
+Gained alignment: [b]sympathy[/b]!
+*return
+*label shitposting
+Gained alignment: [b]shitposting[/b]!
+*return

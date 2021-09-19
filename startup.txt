@@ -260,6 +260,8 @@
 *create stella_deactivated false
 *comment if stella is willing to trust you...
 *create stella_trust 0
+*comment if you know stella's secret
+*create stella_secret false
 
 *create stella_ch1_seen 0
 *create stella_ch2_1_seen 0
@@ -319,7 +321,6 @@
 *create protag_persona "light"
 *create protag_role "keeper"
 *create fic_ship ""
-*create fic_stopped_writing false
 *create fic_brunova true
 *create fic_astrapella true
 
@@ -460,6 +461,7 @@
     Keep a manipulation campaign secret.
 
 *achievement imposter hidden 15 When the imposter is sus
+    hidden
     Discover the imposter.
 
 *comment TODO: remove when local testing
