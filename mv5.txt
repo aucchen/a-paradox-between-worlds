@@ -2,14 +2,16 @@
 
 [i]Stories are the boundaries of possibility, which means that they can also be the rules of reality, or the perceived rules, which are as strong as the laws of physics if you can’t imagine any other possibility. Who get to tell the story? Whose stories are celebrated? Whose are the most true?[/i]
 
-- Aevee Bee, "The Story is a Spell. The Story is a Curse."
+-
+*link http://www.mammonmachine.com/mammon-machine-central-routing/2015/2/27/who-writes-us Aevee Bee, "The Story is a Spell. The Story is a Curse."
 
 
 [i]TT: I am scared to not exist.[/i]
 
 [i]TT: Aren't you?[/i]
 
-- Andrew Hussie, Homestuck
+-
+*link https://www.homestuck.com/story/5642 Andrew Hussie, Homestuck
 
 *page_break
 
@@ -83,8 +85,8 @@
 *temp apoc_prog 1
 *temp trap_prog 1
 
-*temp claire_blog_viewed false
-*temp karla_blog_viewed false
+*temp claire_seen false
+*temp karla_seen false
 *temp luna_message_ref "luna_chat"
 *temp karla_message_ref "karla_chat"
 *temp annc_chat_ref "annc_chat"
@@ -326,6 +328,7 @@ ${brun_1_3_notes} notes
 
 
 *label shad_1_1
+*set claire_seen true
 *set shad_prog 1
 [b]${claire_bio}[/b]
 
@@ -359,7 +362,7 @@ That sent him into a rage. I said it wasn't his fault, I wouldn't enjoy sex with
 
 I'm not living in our house anymore. Don't worry, I have a place to stay. We're filing for divorce as I'm writing this. I'm worried about the kids, since they're staying with him for now. I'm worried what he's saying about me.
 
-Anyway, I'm sorry about what I said before. I'm sorry about happened to @ lunan0va, and how I was complicit in her harassment. I don't know what happened to her but I really, really wish she's doing okay. I feel like I didn't understand then, but now...
+Anyway, I'm sorry about what I said before. I'm sorry about happened to @/lunan0va, and how I was complicit in her harassment. I don't know what happened to her but I really, really wish she's doing okay. I feel like I didn't understand then, but now...
 
 Does anyone want to see my cringey character development haircut? No? Well, too bad! Here it is!
 
@@ -632,7 +635,7 @@ There have been a lot of messages since you were last here.
 
                         @brunova-official: thanks i guess?
 
-                        @lunan0va: omg happy bday! how does it feel being an adult?
+                        @icemoongirl: omg happy bday! how does it feel being an adult?
 
                         @brunova-official: lol it feels exactly the same
 
@@ -640,16 +643,16 @@ There have been a lot of messages since you were last here.
 
                         @brunova-official: sometimes it feels like we don't even have a future.
 
-                        @lunan0va: 💙️
+                        @icemoongirl: 💙️
 
                         @brunova-official: thanks...
                         *goto annc_convo_options
-                    *disable_reuse #Ask about what they think of Claire.
+                    *disable_reuse *if (claire_seen) #Ask about what they think of Claire.
                         *label annc_claire
                         *set annc_chat_ref "annc_claire"
                         @you: so uh did any of you see claire @shadow-protectrix's post?
 
-                        @brunova-offical: yeah... good for them i guess????
+                        @brunova-official: yeah... good for them i guess????
 
                         @brunova-official: we were kinda... friends i guess? maybe? idk...
 

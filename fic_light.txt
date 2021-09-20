@@ -161,6 +161,9 @@ The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare
 
                 $!{e} trail@{plural |s} off.
 
+*comment TODO: author reflects on their life...
+*comment TODO: author can call out having friends/lack of friends?
+
 "So what happens now?" you ask. "What happens after the story is over? Is my life over too?"
 
 "No. Our lives have just begun. You're finally free. What do you want to do, Gali?"
@@ -221,6 +224,8 @@ Do you post the chapter, or not?
         After all, what harm could be done by putting a story out for public consumption? It's not as if you've connected this account to your real name or identity. Maybe this will be what your throngs of loyal readers are looking for.
     #No. This isn't satisfactory.
         Okay, if you say so. The chapter was too short. It's too self-indulgent and weird and self-insert-y. No one likes author self-inserts. It's too filled with pseudo-philosophical ramblings that probably don't even make sense.
+    #No. My engagement with the Nebulaverse is over.
+        Okay, if you say so. With everything that happened, maybe you won't ever partake in the Nebulaverse fandom again.
 
 Is the story over, or can it be continued?
 

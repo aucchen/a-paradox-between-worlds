@@ -1,7 +1,8 @@
 
 [i]Stories can bridge the gap between who we are and who we aren't yet. Narratives allow us to exist not just here and now and in this flesh but in that possibility space as well; it's the spell that can change us. You can't change if you don't know the magic; how can't exist if you don't know how. You can feel the need in your gut so strongly it hurts every minute of your life, but all you know is the absence until the story shows you the way. When the possibility is named, when the story is told, it becomes possible for it to one day be real.[/i]
 
-- Aevee Bee, "The Story is a Spell. The Story is a Curse."
+-
+*link http://www.mammonmachine.com/mammon-machine-central-routing/2015/2/27/who-writes-us Aevee Bee, "The Story is a Spell. The Story is a Curse."
 
 *page_break
 
@@ -25,7 +26,8 @@
 
 [i]we’ve got a few people to track down[/i]
 
-- geekerypokery, tumblr
+- 
+*link https://bowiebowiebowiebowiebowie.tumblr.com/post/148785867465/spirit-money-lexxiechan-samfuckingb3ttl3y geekerypokery, tumblr
 
 *choice
     #Continue.
@@ -836,7 +838,9 @@ The door opened.
 
 [b]Online[/b]
 
-What element do you think describes you best? If you don't know, consider taking a brief quiz at https://uquiz.com/GlFTZ6.
+What element do you think describes you best? If you don't know, consider taking a brief quiz at 
+*link https://uquiz.com/Cm8elj
+.
 
 *choice
     #Light: stars, heat, nuclear forces; emotion, passion, offense
@@ -884,7 +888,9 @@ What element do you think describes you best? If you don't know, consider taking
 
 In addition to elements, each mage is assigned a Role. Basically, it is a job, or rather a category of jobs. A role describes how a mage uses their element. Where the persona is internal, the role is external. Where the persona describes "what" and "why", the role describes "how".
 
-And what is your role? If you don't know, you can take a quiz at https://uquiz.com/ifqBq5.
+And what is your role? If you don't know, you can take a quiz at
+*link https://uquiz.com/ifqBq5
+.
 
 *choice
     #Augur: the scientist
@@ -1772,11 +1778,11 @@ Sofia @nebulascribbler is one of the more popular writers in the Nebulaverse fan
 
 ... which one?
 
-@stellarwinds:
+[b]@stellarwinds:[/b]
 
 ALWAYS REBLOG
 
-@lovelyfandomgeek:
+[b]@lovelyfandomgeek:[/b]
 
 IT'S THE LEGENDARY POST
 

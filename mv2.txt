@@ -3,7 +3,8 @@
 
 [i]We all know that there are many "trolls" online -- people who get pleasure from going into enemy territory, being as obnoxious as possible, and then taking on all comers with all the aggressiveness and rudeness they can command.[/i]
 
-- Charlotte Lennox, The Ms. Scribe Story
+- 
+*link https://charlottelennox.livejournal.com/5187.html Charlotte Lennox, The Ms. Scribe Story
 
 *page_break
 
@@ -962,7 +963,8 @@ ${nebu_1_3_notes} notes
 *set nebu_prog 4
 [b]@nebulascribbler reblogged from @metacapella at 6:20 PM. OP: @canonautumnc[/b]
 
-I've made a nebulaverse OC generator! Check this out: https://perchance.org/xbvdqjmp77
+I've made a nebulaverse OC generator! Check this out: 
+*link https://perchance.org/xbvdqjmp77
 
 It's pretty basic right now, just character names and personae and stuff.
 
@@ -1723,7 +1725,7 @@ Gali was silent throughout this discourse. He did not know what to think. He won
 
 *temp trap_2_1_notes 821
 *temp trap_2_2_notes 108
-*temp trap_2_3_notes 11
+*temp trap_2_3_notes 141
 *temp trap_2_4_notes 232
 *temp trap_2_5_notes 7
 
@@ -2892,37 +2894,57 @@ ${trap_2_2_notes} Notes
 
 *label trap_2_3
 *set trap_prog 3
-[b]@trappedinspace reblogged from @lunan0va 1 day ago. OP: @lunan0va[/b]
+[b]@trappedinspace reblogged from @capellesbian one day ago. OP: @redcapella[/b]
 
-This is an astrapella story I wrote... sorry if it's kind of angsty. It's exactly as the title says. I hope you can enjoy it.
+Content warning: NSFW
 
-[Link to archive - "Holding hands until the end of the world" by @lunan0va. astrapella, hurt/comfort]
+*choice
+    #See post.
+        *goto trap_2_3_post
+    #Prev post.
+        *goto trap_2_2
+    #Next post.
+        *goto trap_2_4
 
-Tags: #fanfic, #i love this
+*label trap_2_3_post
+[b]@trappedinspace reblogged from @capellesbian one day ago. OP: @redcapella[/b]
+
+Reason #823 why Capella is a trans girl: ejaculates
+
+[Several screenshots of the phrase "Capella ejaculated" from various books in the Chronicles of the Shadow Nebula series, in different contexts but with context cropped out.]
+
+Tags: #nsfw, #iofjasdhfkjadljasdfkljaslkfjlkdsjafkldsfaj, #the nebulaverse made me trans part n, #though let's be honest here... this is not exclusive to tr*ns women
 
 ${trap_2_3_notes} notes
 
 *choice
     *disable_reuse #Like ❤️
-        *set karla_blue %+ 1
-        *set luna_blue %+ 2
         *set trap_2_3_notes + 1
         *goto trap_2_3
     *disable_reuse #Reblog 🔁
         *if rx
             *gosub karla_like
-            *gosub luna_like
-            *gosub shipping
-
-        *set rb_count + 1
+            *gosub karla_dislike
+            *gosub luna_dislike
+            *gosub lux_dislike
+            *if claire_mutuals
+                *gosub claire_dislike
+            *if sofia_mutuals
+                *gosub sofia_dislike
+            *gosub shitposting
+             
         *set karla_interact + 1
-        *set karla_blue %+ 2
-        *set luna_blue %+ 3
+        *set karla_blue %+ 3
+        *set karla_green %+ 3
+        *set luna_green %+ 3
+        *set lux_green %+ 3
+        *if claire_mutuals
+            *set claire_green %+ 4
+        *if sofia_mutuals
+            *set sofia_green %+ 5
+        *set shitposting %+ 5
+        *set capella %+ 3
         *set trap_2_3_notes + 1
-        *set shipping %+ 3
-        *set astrapella %+ 3
-        *set astra %+ 2
-        *set capella %+ 2
         *goto trap_2_3
     #Next post.
         *goto trap_2_4
@@ -2930,7 +2952,6 @@ ${trap_2_3_notes} notes
         *goto trap_2_2
     #Look at another blog.
         *goto montage_2
-
 
 *label trap_2_4
 *set trap_prog 4
