@@ -470,8 +470,7 @@ The story has been posted for a while now. You see that you've gotten ${ch1_like
     
     
     *if protag_trans_girl
-        @lunan0va: you make me feel a little less lonely 💙︄
-        
+        @lunan0va: you make me feel a little less lonely 💙️
         
 *choice
     #"Thanks!"
@@ -489,7 +488,7 @@ The story has been posted for a while now. You see that you've gotten ${ch1_like
         @you: i'm glad we can be friends, too...
         
         
-        @lunan0va: 💙︄
+        @lunan0va: 💙️
         
         
         @lunan0va: yea...
@@ -524,19 +523,62 @@ Luna doesn't seem to have much more to say for now, but maybe you do?
 *choice
     #Just talk about stuff?
         *label luna_random_talk
-        *set luna_blue %+ 6
-        
+        *set luna_blue %+ 8
         
         @you: so um... hows life?
         
-        
         @lunan0va: its okay... mostly the same as usual.
-        
         
         @lunan0va: school is destroying me :/
         
+        @lunan0va: what about you? how are things irl?
+
+        *comment TODO
+        *fake_choice
+            #I don't really want to talk about IRL stuff.
+                @you: um... i don't really want to talk about irl stuff.
+
+                @lunan0va: that's okay!
+
+                @lunan0va: do you want to talk about nebulaverse stuff instead?
+                *choice
+                    #Sure! (ask about Luna's fic)
+                        @you: sure! how are things with your fic?
+
+                        @lunan0va: i've been working on my fic again...
+                        *goto luna_fic_talk
+                    #Nah, I don't really have anything to talk about...
+                        @you: nah, i don't really have anything to talk about
+
+                        @lunan0va: lol i get that.
+                        *goto luna_message_end
+            #There's not much going on.
+                @you: um... there's not really much going on.
+
+                @you: life is... pretty much the same as usual.
+
+                @lunan0va: haha yeah... it really feels that way.
+
+                @lunan0va: between parents and school it's like... idk, everything is exactly the same all the time.
+
+                @lunan0va: it's like reading fics and looking at art and posts on here are the only things keeping me sane right now.
+
+                @you: yeah...
+            #Let's talk about nebulaverse stuff instead!
+                @you: let's talk about nebulaverse stuff instead!
+
+                @you: how's your new fic going?
+                *label luna_fic_talk
+
+                @lunan0va: i have no idea what to do with it lol.
+
+                @lunan0va: i'm pretty sure it just sucks :/
+
+                *if luna_ch1_fic_good
+                    @lunan0va: i know you said it was good but like... idk
+                *else
+                    @lunan0va: i'm trying to change and improve it like you said but idk how. it's just like... a total mess.
         
-        And so on and so on.
         *goto luna_message_end
     #Confess your love.
         Wait... What? You are not ready for that conversation, not even close.
@@ -544,17 +586,13 @@ Luna doesn't seem to have much more to say for now, but maybe you do?
             #Send a small message that could have the potential of starting a romance later on.
                 Okay, uh... you can send a heart emoji? That's how it works, right? You send people enough heart emojis and then they fall in love with you?
                 
-                
                 You have to pick a signature heart emoji.
                 *gosub_scene hearts_choice
                 *achieve love
                         
-                        
                 @you: ${heart_emoji}${heart_emoji}${heart_emoji}
                 
-                
-                @lunan0va: thanks! 💙︄${heart_emoji} to you too...
-                
+                @lunan0va: thanks! 💙️${heart_emoji} to you too...
                 
                 Unfortunately, you do not know what to say after that.
                 *set luna_red %+ 1

@@ -1,8 +1,7 @@
 
 [i]Stories can bridge the gap between who we are and who we aren't yet. Narratives allow us to exist not just here and now and in this flesh but in that possibility space as well; it's the spell that can change us. You can't change if you don't know the magic; how can't exist if you don't know how. You can feel the need in your gut so strongly it hurts every minute of your life, but all you know is the absence until the story shows you the way. When the possibility is named, when the story is told, it becomes possible for it to one day be real.[/i]
 
--
-*link http://www.mammonmachine.com/mammon-machine-central-routing/2015/2/27/who-writes-us Aevee Bee, "The Story is a Spell. The Story is a Curse."
+- Aevee Bee, "The Story is a Spell. The Story is a Curse."
 
 *page_break
 
@@ -26,8 +25,7 @@
 
 [i]we’ve got a few people to track down[/i]
 
-- 
-*link https://bowiebowiebowiebowiebowie.tumblr.com/post/148785867465/spirit-money-lexxiechan-samfuckingb3ttl3y geekerypokery, tumblr
+- geekerypokery, tumblr
 
 *choice
     #Continue.
@@ -175,6 +173,7 @@ fandom. She's 16 years old, like you, and lives in the same time zone, or close 
 
 *choice
   #(honest) It was good!
+    *set luna_ch1_fic_good true
     *set luna_blue + 5
     @lunan0va: oh, really? thanks!
 
@@ -182,6 +181,7 @@ fandom. She's 16 years old, like you, and lives in the same time zone, or close 
 
     @lunan0va: that emoji isn't cringe anymore right
   #(lying) It was good!
+    *set luna_ch1_fic_good true
     *set luna_blue + 5
     @lunan0va: oh, really? thanks!
 
@@ -643,6 +643,11 @@ What are the pronouns that you use online?
     
     
 Cool!
+
+*comment TODO: revamp character setup: make this quicker
+*comment TODO: have a central hub for character setup choices?
+*comment TODO: maybe we can avoid the blog focus/character/ship choices entirely. In the first check_followers, just find the highest attribute in each and give it a +10.
+*comment TODO: maybe we can move this universe segment out to mv2 part 1, because it's long enough...
 
 By the way, what is the focus of your blog? What type of posts do you usually reblog?
 
@@ -2765,7 +2770,7 @@ Capella doesn't take a second glance, and presses the red button. Beeps and mech
 
 You just had an incredible idea for a fanfiction.
 
-Maybe it's time to finally start writing, to put to paper (or silicon, rather) the words that just streamed through your mind.. Ah, yes. Your as-yet-theoretical magnum opus. The story that will become your 5th Symphony of Nebulaverse fanfiction, one that will stand out among the over one hundred thousand other stories for this fandom (almost two hundred more were published since yesterday). A metafictional masterpiece to rival Borges, more revelatory of the human condition than Le Guin, with a scope more epic than Tolkien.
+Maybe it's time to finally start writing, to put to paper (or silicon, rather) the words that just streamed through your mind. Ah, yes. Your as-yet-theoretical magnum opus. The story that will become your 5th Symphony of Nebulaverse fanfiction, one that will stand out among the over one hundred thousand other stories for this fandom (almost two hundred more were published since yesterday). A metafictional masterpiece to rival Borges, more revelatory of the human condition than Le Guin, with a scope more epic than Tolkien.
 
 *label story_title_choice
 What will you title the story?
@@ -3018,7 +3023,7 @@ Okay, let's do this.
 
 [b]Excerpt from ${story_title}, chapter 1 by $!{handle} @${username}[/b]
 
-After Capella stepped through the portal, then followed Bruno, Tycho, and finally Astra. "Come on! It's okay!" said Astra, peeking her head back through the door. Gali is the last one to enter.
+Capella stepped through the portal, followed Bruno, Tycho, and finally Astra. "Come on! It's okay!" said Astra, peeking her head back through the door. Gali is the last one to enter.
 
 *gosub_scene fic_stone
 

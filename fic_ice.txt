@@ -82,7 +82,7 @@ This continues until you reach what must be the bridge of the spaceship, a room 
 
 *page_break It's Bruno...
 
-The captain is... Bruno. He cuts a dashing figure as he strides towards you, in full Imperial Fleet uniform. He looks older, with a hint of a beard along with his closed cropped golden hair and hints of wrinkles along his chiseled face. @{(protag_likes_bruno>0) He appears more handsome than you've ever known.|}
+The captain is... Bruno. He cuts a dashing figure as he strides towards you, in full Imperial Fleet uniform. He looks older, with a hint of a beard along with his close-cropped golden hair and hints of wrinkles along his chiseled face. @{(protag_likes_bruno>0) He appears more handsome than you've ever known.|}
 
 He gazes at you with an intense stare, until his face breaks into a simulacrum of a smile. "I remember you, Galileo Nova."
 

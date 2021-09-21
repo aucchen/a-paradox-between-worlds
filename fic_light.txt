@@ -74,7 +74,7 @@ A person approaches you. Who is it?
 
 $!{e} @{plural are|is} younger than you, just a kid.
 
-"I'm ${first_name} ${last_name}. And I'm the Creator. Or the Demiurge. Or both. At least, in this subset of worlds."
+"I'm $!{handle}. And I'm the Creator. Or the Demiurge. Or both. At least, in this subset of worlds."
 
 $!{e} stride@{plural |s} towards you.
 
@@ -88,7 +88,7 @@ $!{e} reach@{plural |s} out to shake your hand.
 
         "Nice to finally see you, Gali Nova." $!{e} smile@{plural |s}.
     #Refuse.
-        You keep your hands by your side. $!{first_name} looks disappointed.
+        You keep your hands by your side. $!{handle} looks disappointed.
 
         "We're finally here together and you won't even shake my hand."
 
@@ -163,6 +163,11 @@ The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare
 
 *comment TODO: author reflects on their life...
 *comment TODO: author can call out having friends/lack of friends?
+*comment "Can I tell you something?", the creator asks. It's not as if you can say no to the Creator.
+*comment *if luna_end
+*comment *if claire_end
+*comment *if neutral_end
+*comment *if 
 
 "So what happens now?" you ask. "What happens after the story is over? Is my life over too?"
 

@@ -158,6 +158,10 @@
 *create luna_shelter false
 *create luna_helped_by ""
 
+*create luna_ch1_fic_good false
+*create luna_ch1_fic_bad false
+*create luna_ch1_fic_neutral false
+
 *comment these variables check if you've seen all of the blog posts.
 *create luna_ch1_seen 0
 *create luna_ch2_1_seen 0
@@ -396,19 +400,15 @@
 *create tension 0
 
 *achievement ending_luna visible 10 Still Sane
-    Ending 1
     Ending: Luna
 
 *achievement ending_neutral visible 10 A World Alone
-    Ending 2
     Ending: Neutral
 
 *achievement ending_claire visible 10 Buzzcut Season
-    Ending 3
     Ending: Claire
 
 *achievement ending_sofia visible 10 Glory and Gore
-    Ending 4
     Ending: Sofia
 
 *achievement ending visible 5 It feels so scary, getting old

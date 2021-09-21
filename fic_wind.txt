@@ -363,9 +363,15 @@ Are you going to continue the fic, or abandon it?
         Are you sure you want to stop?
         *choice
             #Yes. Fuck this.
+                *set popularity - 3
+                *if popularity < 0
+                    *set popularity 0
                 There's no point to writing this anymore. The fic is over, at least for now.
                 *goto fic_end
             #I don't know, but I want to take a break.
+                *set popularity - 3
+                *if popularity < 0
+                    *set popularity 0
                 Alright. The fic is over, for now. Maybe you'll come back to it, or not.
                 *goto fic_end
             #Never mind. The story must go on.
