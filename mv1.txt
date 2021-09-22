@@ -697,24 +697,28 @@ That's awesome! Most Nebulaverse blogs have a favorite character, whom they rebl
         *set tycho +10
 
 *label ship_choice
-And one last fandom question: which pairing is your most preferred ship?
+And which pairing is your favorite ship?
 
 *fake_choice
     #Brunova - Bruno/Gali (the most popular ship in the fandom)
+        Brunova is probably the most popular ship in the fandom, so it's a safe choice. There are hundreds if not thousands of blogs and fic authors devoted solely to this ship to the exclusion of anything else in the Nebulaverse. Of course it has its refractors, but they are mostly marginal.
         *set top_ship "brunova"
         *set brunova + 10
     #Astrapella - Astra/Capella
+        Astrapella is the most popular (well, only popular) F/F ship in the Nebulaverse fandom. It has a smaller fandom than the big m/m ships or the m/f ships, but its following is very devoted.
         *set top_ship "astrapella"
         *set astrapella + 10
     #Astranova - Astra/Gali
+        Readers of the Chronicles who care about things like "canon" often argue about whether Gali should end up with Astra or Capella. The consensus is that Ellanova is more of the direction GTM is going in, but Astranova remains a popular ship.
         *set top_ship "astranova"
         *set astranova + 10
     #Ellanova - Capella/Gali (the closest there is to a "canon" ship)
+        Readers of the Chronicles who care about things like "canon" often argue about whether Gali should end up with Astra or Capella. The consensus is that Ellanova is more of the direction GTM is going. It is the most "canon" ship.
         *set top_ship "ellanova"
         *set ellanova +10
     #Something else?
-
-
+        There are plenty of ships that pass in the night, smaller ships with fewer fans. Given the size of the fandom, however, almost every possible pairing has copious amounts of content. 
+        *comment this is a lie. if you don't pick brunova or astrapella you're screwed if you want to grow followers.
 
 Perhaps more important is your alignment within the Nebulaverse. Many of those in the Nebulaverse fandom classify themselves along Elements and Roles. There are five fundamental elements in the Nebulaverse, which also correspond to alignments associated with each person. A mage's element, called a persona, relates to their powers as well as their personality.
 

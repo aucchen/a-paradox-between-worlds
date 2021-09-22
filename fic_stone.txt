@@ -13,20 +13,20 @@ You are in what appears to be another place. It is a bright world, gleaming unde
 What is this place?
 
 *choice
-    #A city [A/N: Modern AU, urban].
+    #A city [Modern AU].
         *set ch1_setting "city"
         *goto investigate_city
-*comment    #A small town or village [A/N: Medieval/Fantasy AU].
+*comment    *selectable_if (1 = 0) #A small town or village [Medieval/Fantasy AU].
 *comment        *set ch1_setting "town"
 *comment        *goto investigate_village
-*comment    #A strip mall [A/N: Modern AU, suburban].
+*comment    *selectable_if (1 = 0) #A strip mall [Modern AU, suburban].
 *comment        *set ch1_setting "mall"
 *comment        *goto investigate_mall
 *comment    #It doesn't matter.
 *comment        *set ch1_setting "city"
 *comment        *goto investigate_city
 
-*comment TODO: mall
+*comment i'm not gonna implement the alternate settings.
 
 *label investigate_city
 

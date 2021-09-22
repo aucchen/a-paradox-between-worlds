@@ -6,6 +6,12 @@
 *temp touch false
 *temp think false
 
+*temp luna_end luna_helped
+*temp claire_end (claire_trust >= 2)
+*temp karla_end (karla_investigation = 3)
+*temp sofia_end (sofia_secret and not(revealed_sofia_secret))
+*temp neutral_end (not(luna_end) and (not(claire_end) and (not(karla_end) and (not(sofia_end)))))
+
 You wake up on a featureless white plane, illuminated by the uniform [b]light[/b] emanating from all directions.
 
 *label view1
@@ -145,25 +151,35 @@ The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare
         "No, I might not have learned anything, but that doesn't mean the story was pointless."
 
         The Creator cracks a smile. "It's the journey that counts, isn't it? Real people don't have clean and neat character arcs. It's messy and it takes time and sometimes, you change without realizing it."
-    #Turn it around: Did you learn anything from me?
-        "Did you learn anything from me?" you ask.
+    #Ask the Creator: Did you learn anything from me?
+        "Did you learn anything from me?" you ask. "You must have learned something, following my story all this time."
 
         [A/N: What does the creator say?]
         *fake_choice
             #[No, I didn't.]
-                "No, I didn't," says the Creator. "But that doesn't mean I regret creating your story. Your story's helped me a lot!"
-            #[I learned to treasure my friends.]
-                "I think I learned to treasure my friends," says the Creator. "The way you loved all of them so much, even Dark Bruno, that was really admirable. I'm alone enough in my world that I thought I wanted to be like you..."
+                "No, I didn't," says the Creator. "But that doesn't mean I regret this story, following it or creating the branch that I did."
 
-                $!{e} trail@{plural |s} off.
+            *if (luna_end) #[I learned to treasure my friends.]
+                "I think I learned to treasure my friends," says the Creator. "In my world, I had a friend who was in trouble, and I hope that I helped her, just like you helped Capella back in canon..."
+
+            *if (neutral_end) #[I learned how to cope with loneliness.]
+                "I was always alone," says the Creator. "In my world I felt so alone all the time, without any friends or anyone to talk to, and you helped me get through all those times. Just like you were trapped in the prison back in canon..."
+
+            *if (sofia_end) #[I realized the world wasn't always what it seemed.]
+                "I realized that the world wasn't what it seemed," says the Creator. "I realized that people aren't always who they say they are, and that's okay. Maybe the Demiurge and the Creator are the same. Maybe the Administrator was a villain. Maybe Sofia was really the hero of this whole story..."
+
+            *if (claire_end) #[I realized that everyone has their own stories.]
+                "I realized that everyone has their own stories," says the Creator. "Everyone feels like they're the hero of their own story, but really, we're all part of one tangle of threads, you, Bruno, Astra, Claire..."
+
             #[I learned that home might not be where you think it is.]
                 "I keep seeing you look for home," says the Creator, "but maybe home isn't where you think it is. Maybe any place can be home. Maybe home isn't even a place, but an idea..."
 
-                $!{e} trail@{plural |s} off.
+        $!{e} trail@{plural |s} off.
 
 *comment TODO: author reflects on their life...
 *comment TODO: author can call out having friends/lack of friends?
 *comment "Can I tell you something?", the creator asks. It's not as if you can say no to the Creator.
+*comment 
 *comment *if luna_end
 *comment *if claire_end
 *comment *if neutral_end
@@ -182,12 +198,6 @@ The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare
 *comment some ending options...
 *comment luna ending, claire ending, sofia ending, neutral end
 *comment (but these are distinct from the achievements...)
-*temp luna_end luna_helped
-*temp claire_end (claire_trust >= 2)
-*temp karla_end (karla_investigation = 3)
-*temp sofia_end (sofia_secret and not(revealed_sofia_secret))
-*temp neutral_end (not(luna_end) and (not(claire_end) and (not(karla_end) and (not(sofia_end)))))
-
 *if (ch3_finished + ch4_finished) = 2
     *achieve hyperreal
 *comment *choice

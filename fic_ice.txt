@@ -21,7 +21,7 @@ Where are you?
     #[An empty room aboard a spaceship. Canon divergence AU]
         *set ch2_setting "ship"
         *goto ship_feel
-*comment    #[A prison cell on a cold, desolate planet. Canon divergence AU]
+*comment   *selectable_if (1 = 0) #[A prison cell on a cold, desolate planet. Canon divergence AU]
 *comment        TODO
 
 *label ship_feel
