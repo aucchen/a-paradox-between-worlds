@@ -131,22 +131,22 @@ Internet weather report: fair so far. Storms lurk on the horizon; who knows wher
 Which blogs would you like to read?
 
 *choice
-    *selectable_if ((luna_blocked = false)) #@lunan0va
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch2_1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch2_1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "brun_1_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch2_1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "shad_1_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch2_1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch2_1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "apoc_1_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch2_1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *if ((in_claire_chat)) #See Claire's groupchat.
@@ -1749,22 +1749,22 @@ Which blogs would you like to read?
 
 
 *choice
-    *selectable_if ((luna_blocked = false) and (luna_following)) #@lunan0va
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch2_2_seen=1) (read)|}
         *set read_count + 1
         *gotoref "luna_2_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch2_2_seen=1) (read)|}
         *set read_count + 1
         *gotoref "brun_2_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch2_2_seen=1) (read)|}
         *set read_count + 1
         *gotoref "shad_2_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch2_2_seen=1) (read)|}
         *set read_count + 1
         *gotoref "nebu_2_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch2_2_seen=1) (read)|}
         *set read_count + 1
         *gotoref "apoc_2_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch2_2_seen=1) (read)|}
         *set read_count + 1
         *gotoref "trap_2_${trap_prog}"
     *if (read_count > 1) #See GTM's post that everyone's talking about.

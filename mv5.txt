@@ -164,22 +164,22 @@ Which blogs would you like to read?
     *selectable_if (luna_blocked = false) #@lunan0va
         @lunan0va has been deactivated. There is no user with that URL.
         *goto montage_1
-    *if ((luna_blocked = false) and (knows_luna_secret)) #@icemoongirl
+    *if ((luna_blocked = false) and (knows_luna_secret)) #@icemoongirl @{(luna_ch5_seen=1) (read)|}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch5_seen=1) (read)|}
         *set read_count + 1
         *gotoref "brun_1_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch5_seen=1) (read)|}
         *set read_count + 1
         *gotoref "shad_1_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch5_seen=1) (read)|}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch5_seen=1) (read)|}
         @apocalypse-hoarder has been deactivated. There is no user with that URL.
         *goto montage_1
-    *selectable_if ((karla_blocked = false)) #@trappedinspace
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch5_seen=1) (read)|}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.

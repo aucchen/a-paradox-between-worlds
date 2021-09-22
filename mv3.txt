@@ -139,22 +139,22 @@ Is there hope for the future? Is there hope for humanity in the age of the onlin
 Which blogs would you like to read?
 
 *choice
-    *selectable_if ((luna_blocked = false)) #@lunan0va
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch3_seen=1) (read)|}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch3_seen=1) (read)|}
         *set read_count + 1
         *gotoref "brun_1_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch3_seen=1) (read)|}
         *set read_count + 1
         *gotoref "shad_1_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch3_seen=1) (read)|}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch3_seen=1) (read)|}
         *set read_count + 1
         *gotoref "apoc_1_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch3_seen=1) (read)|}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *disable_reuse *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.

@@ -972,22 +972,22 @@ Online weather report: vibes steady. Chance of callouts: <1%. The blogging equiv
 Which blogs would you like to read?
 
 *choice
-    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_prog=5) (read)|}
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official @{(brun_prog=5) (read)|}
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "brun_1_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(shad_prog=5) (read)|}
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "shad_1_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(nebu_prog=5) (read)|}
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(apoc_prog=5) (read)|}
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "apoc_1_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(trap_prog=5) (read)|}
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *if (read_count > 0) #Stop looking at blogs.
