@@ -103,12 +103,14 @@ Another roaring round of applause.
 
 *choice
     #[Yes, turn on notifications.]
+        *set rx true
         [A/N: okay. You might see messages that look kind of like this:]
 
         Autumn @canonautumnc [b]liked[/b] this!
 
         [You can always change this in the Stats page.]
     #[No, leave them off.]
+        *set rx false
         [A/N: okay.]
 
 *page_break
@@ -694,6 +696,7 @@ That's awesome! Most Nebulaverse blogs have a favorite character, whom they rebl
         *set top_character "tycho"
         *set tycho +10
 
+*label ship_choice
 And one last fandom question: which pairing is your most preferred ship?
 
 *fake_choice
@@ -711,137 +714,13 @@ And one last fandom question: which pairing is your most preferred ship?
         *set ellanova +10
     #Something else?
 
-[b]IRL[/b]
-
-Unfortunately, you do not exist solely online. There exists a realm known as "IRL", "meatspace", whatever you'd
-like to call it. In that realm, you have entities known as "parents". 
-
-What is the name that you go by in real life?
-
-*fake_choice
-  #Aiden
-    *set first_name "Aiden"
-  #Andy
-    *set first_name "Andy"
-  #Bella
-    *set first_name "Bella"
-  #Charlotte
-    *set first_name "Charlotte"
-  #Dirk
-    *set first_name "Dirk"
-  #Ebony
-    *set first_name "Ebony"
-  #Ethan
-    *set first_name "Ethan"
-  #Heidi
-    *set first_name "Heidi"
-  #Jake
-    *set first_name "Jake"
-  #Jane
-    *set first_name "Jane"
-  #Mina
-    *set first_name "Mina"
-  #Opal
-    *set first_name "Opal"
-  #Reshma
-    *set first_name "Reshma"
-  #Roxy
-    *set first_name "Roxy"
-  #Talia
-    *set first_name "Talia"
-  #Tara
-    *set first_name "Tara"
-  #Tobias
-    *set first_name "Tobias"
-  #Zoe
-    *set first_name "Zoe"
-  #Something else
-    Enter your name:
-    *input_text first_name
 
 
-What is your last name in real life?
-
-*fake_choice
-  #Chen
-    *set last_name "Chen"
-  #Crocker
-    *set last_name "Crocker"
-  #Gao
-    *set last_name "Gao"
-  #Harley
-    *set last_name "Harley"
-  #Hussie
-    *set last_name "Hussie"
-  #Kapoor
-    *set last_name "Kapoor"
-  #Lalonde
-    *set last_name "Lalonde"
-  #Lennox
-    *set last_name "Lennox"
-  #Mehta
-    *set last_name "Mehta"
-  #Rao
-    *set last_name "Rao"
-  #Strider
-    *set last_name "Strider"
-  #Viswasnathan
-    *set last_name "Viswasnathan"
-  #Zhao
-    *set last_name "Zhao"
-
-Perhaps more important is your alignment within the Nebulaverse. Many of those in the Nebulaverse fandom classify themselves along Elements and Roles. There are five elements, which are both the five fundamental elements of the Nebulaverse as well as alignments associated with each person. A mage's element, called a persona, relates to their powers as well as their personality.
+Perhaps more important is your alignment within the Nebulaverse. Many of those in the Nebulaverse fandom classify themselves along Elements and Roles. There are five fundamental elements in the Nebulaverse, which also correspond to alignments associated with each person. A mage's element, called a persona, relates to their powers as well as their personality.
 
 This is kind of a big deal in some circles.
 
-*page_break In Canon...
-
-[b]Universe - Canon[/b]
-
-[b]Excerpt from Chronicles of the Shadow Nebula, Book 1: The Academy of Magi by G. T. Macmillan[/b]
-
-The camera stared into Galileo's exhausted eyes.
-
-"What are you?" it asked, its voice mechanical and monotone.
-
-"What do you mean?" the boy replied.
-
-"What is the nature of your soul?"
-
-Galileo glanced around the room. It was no larger than a closet, the walls barren, the floor unadorned, save the chair he sat in and the robotic camera protruding from a wall. It was only slightly terrifying.
-
-The robot continued speaking. "Why do you exist? What is the inalienable, unchangeable core that makes you, you?"
-
-*page_break "I, I haven't got a clue."
-
-"I, I haven't got a clue," the boy replied.
-
-"Hmm." The robotic voice became louder, more ominous. "None of you do. Not yet. But I already see the hue of your spark. Yes! It's there. Tell me, Gali, why aren't you more afraid of me? You know not every pupil makes it out of this room alive."
-
-He had no idea how to answer.
-
-"Why aren't you terrified that the remainder of your life is being decided at this very moment?"
-
-He really wasn't afraid; somehow he knew that he would survive. Just as well, the robot continued.
-
-"You know what you are, deep inside. You contain within you a seed, the germ of an entire story, the story of your life and the stories of your world. It will take root one day, and it will germinate, and it will change not only you but all those around you. You will become someone..."
-
-Suddenly the room began to glow. A white light grew brighter and brighter, until Galileo had to close his eyes.
-
-"So you see? Do you see now?"
-
-*page_break "No, not at all."
-
-"No, not at all," the boy muttered. "How am I supposed to see when it's so bright here?"
-
-The door opened.
-
-"A Keeper of Light, Galileo Nova!" The robotic voice reverberated. Claps from outside. How long had he been in there?
-
-*page_break
 *label persona_choice
-
-[b]Online[/b]
 
 What element do you think describes you best? If you don't know, consider taking a brief quiz at 
 *link https://uquiz.com/Cm8elj
@@ -1093,22 +972,22 @@ Online weather report: vibes steady. Chance of callouts: <1%. The blogging equiv
 Which blogs would you like to read?
 
 *choice
-    *selectable_if ((luna_blocked = false)) #@lunan0va
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_prog=5) (read)|}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(brun_prog=5) (read)|}
         *set read_count + 1
         *gotoref "brun_1_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(shad_prog=5) (read)|}
         *set read_count + 1
         *gotoref "shad_1_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(nebu_prog=5) (read)|}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(apoc_prog=5) (read)|}
         *set read_count + 1
         *gotoref "apoc_1_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(trap_prog=5) (read)|}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *if (read_count > 0) #Stop looking at blogs.

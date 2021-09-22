@@ -11,59 +11,65 @@
 
 [b]Universe - Canon[/b]
 
-[b]Excerpt from Chronicles of the Shadow Nebula, Book 3, Part 2: War Between Heaven and Earth by G. T. Macmillan[/b]
+[b]Excerpt from Chronicles of the Shadow Nebula, Book 3, Part 1: Peace Between Heaven and Earth by G. T. Macmillan[/b]
 
-"In this book lies knowledge. In knowledge lies truth. In this book lies knowledge. In knowledge lies truth. In this book lies knowledge. In knowledge lies truth..."
+The planet of Samaria was supposed to have been undefended. They were supposed to have been greeted as liberators. It was supposed to be a combination training and humanitarian mission.
 
-"Capella? What are you doing?" Gali noticed the girl pacing about the empty classroom, a copy of the Binary Bible clung near her chest, muttering under her breath.
+Gali could not forget what he saw. The rebel troopers with their pellet guns were no match for Imperial Magi, even magi-in-training. He remembered the glee with which Bruno had hollowed out their bodies, his spells turning their forms to shriveled up husks. He remembered the rebel emerging from the house, no older than a boy, shouldering a gun, frightened expression on his unmasked face, the bullets deflected by Gali's energy shield, his stiff body when the lightning had struck him. But Gali couldn't remember casting the spell.
 
-"Somewhere in this book, there's truth. There's got to be."
+The Administrator strode forth. Gali confronted him.
 
-"What do you mean?"
+*page_break "Why did you lie to us?"
 
-"Why this is all happening. Why we're at war. Why does the Emperor want to kill us."
+"Why did you lie to us?" asked Gali. "You told us this would be a training mission."
 
-"What if there isn't a reason?" asked Gali, almost rhetorically.
+"We had faulty intelligence," the Administrator answered, and Gali could almost believe him. But then the man sighed.
 
-"Everything has a cause. Some motive force. Unless our entire theory of magic is a lie..."
+"I needed to show you something. Show all of you." The Administrator continued. "I needed to show you the costs of the Empire's rule. See this? This is what the Emperor has decreed. This is how it always ends."
 
-*page_break "Is there such a thing as truth?"
+Gali didn't understand what the man was saying. "What do you mean?" he asked in an accusing voice.
 
-"Is there such a thing as truth?" asked Capella rhetorically, as if speaking to an empty room. "Is there truth in the Binary Bible? Is there truth in our magic? Can our magic really bring us closer to divinity?"
+"I mean that..." The Administrator took a long pause, stroking his beard and gazing about the ruins. "I mean that this will never stop. It will only worsen."
 
-The wind around her swirled, picking up scattered pages. It was like a whirlwind surrounding her. When Gali failed to speak, she continued rambling.
+*page_break "Traitor."
 
-"What are the Creator and the Demiurge? Are they one or two? Are they really distinct? Is one good and the other evil or are they aspects of the same? And what are [i]we[/i]? Are we fragments of creation? Or are we just the puppets of the Cosmos who play-act our predestined parts for their entertainment?"
+"Traitor." Bruno suddenly materialized, as if out of nowhere. "I know your game. You're a traitor to the Empire, that's what you are." The blond boy tossed a chunk of ice from one hand to the other, all the while glaring at the Administrator.
 
-*page_break Gali didn't know what to say.
+The administrator only smiled, returning Bruno's gaze. Bruno's hand flicked. A blue bolt shot forth, only to be met with a red beam from the Administrator's fingers. The magical projectiles collided, exploding in midair, the resulting fireball scorching the grass.
 
-Gali didn't know what to say. Was he supposed to comfort the girl, to tell her that everything would be fine one day? That would be lying.
+"I could have you executed, Mr. Helios," said the Administrator, not breaking his smile.
 
-Then, suddenly, the door of the classroom opened again, and in strode Astra.
+"You would kill the scion of the Helios family?" Bruno smirked. "I could end you right now if I expose your plots."
 
-"What are you two doing here?" she asked.
+"The nebula is more complicated than you believe, my child. Come. I'll show you." The Administrator beckoned to the two boys.
 
-"Are we just puppets of the Aeons?" ejaculated Capella, suddenly glaring daggers at the other girl.
+*page_break Gali followed...
 
-"What? Why would we be?" asked Astra, befuddled.
+Gail followed the Administrator. Bruno walked in tow, arms folded across his chest. It was not a long walk to the field headquarters, situated in a green tent. Inside, Astra, Capella, and Tycho were already waiting.
 
-"The deities, the Creator, the Demiurge, all of them, they never cared about us. They just... see us as toys. Playthings to use for their enjoyment."
+"A storm is afoot," said the Administrator in a dark voice. "Forces beyond our mortal comprehension are gathering, and I fear we may be powerless to stop them."
 
-*page_break Astra sighed.
+Surprisingly, it was Tycho who stepped in. "So what do you expect us to do? Lay down and die? Let the Demiurge claim us?"
 
-Astra sighed, and strolled to the agitated girl. She held her arms out, and enveloped the other girl within her gentle hold.
+"No," said the Administrator. He paced about his cramped headquarters, stroking his beard. "You do not understand. Perhaps you will never understand."
 
-"I'm here. I'm with you. You'll be fine."
+"So tell us what going on! So at least we can try!" shouted Capella, who had previously been standing on the sidelines.
 
-"I... won't be..."
+The Administrator sighed. "Fine, if you so desire."
 
-Capella was sobbing. The tension in her muscles dissipated, leaving her entire weight supported by Astra's body.
+*page_break Gali watched...
 
-"We'll all be fine," said Astra. "The Cosmos doesn't matter right now. Only you do."
+Gail watched intently as the Administrator activated the holographic display on his table. A blue hologram projected upward, showing a map of the Empire's myriad worlds.
+
+The Administrator pointed at the Capitol world of Antioch.
+
+"We are at war with ourselves," he proclaimed. "A shadow movement is brewing against the Emperor, gathering more adherents daily. The Emperor has gone mad in trying to root it out. He has turned our armies against entire worlds. We see not just Samaria, but also Cappadocia, Ephesus, and countless other worlds all burning. This is the world you will enter. This is the lord you will serve."
+
+He takes a deep breath. "And the man leading the shadow movement... is standing before you."
 
 *page_break
 *temp luna_ch4_message false
-*if (luna_blue >= 30) and (luna_blue > (luna_green - 10))
+*if (luna_blue >= 35) and (luna_blue > (luna_green - 20))
     *set luna_ch4_message true
 
 [b]Online - Montage[/b]
@@ -201,6 +207,24 @@ Luna's blog is password-protected.
         *else
             No, that's incorrect.
             *goto luna_1_1
+    *disable_reuse *if (not(luna_ch4_message) and (not(has_luna_password))) #Message Luna to ask for the password.
+        *comment TODO
+        @you: hi luna, can you give me the password for your blog?
+
+        *if (luna_blue >= 26) and ((luna_blue - luna_green) >= 15)
+            *set has_luna_password true
+            @lunan0va: um... okay.
+
+            @lunan0va: the password is iceaugury831.
+
+            @lunan0va: i'm kinda in trouble right now. can you read my blog and help me?
+
+            @lunan0va: thanks
+        *else
+            @lunan0va: um...
+
+            @lunan0va: sorry but it's kinda private...
+        *goto luna_1_1
     #Look at another blog.
         *goto montage_1
 

@@ -13,6 +13,60 @@
 
 *page_break
 
+[b]Universe - Canon?[/b]
+
+[b]Excerpt from Chronicles of the Shadow Nebula, Book 3, Part 2: War Between Heaven and Earth by G. T. Macmillan[/b]
+
+"In this book lies knowledge. In knowledge lies truth. In this book lies knowledge. In knowledge lies truth. In this book lies knowledge. In knowledge lies truth..."
+
+"Capella? What are you doing?" Gali noticed the girl pacing about the empty classroom, a copy of the Binary Bible clung near her chest, muttering under her breath.
+
+"Somewhere in this book, there's truth. There's got to be."
+
+"What do you mean?"
+
+"Why this is all happening. Why we're at war. Why does the Emperor want to kill us."
+
+"What if there isn't a reason?" asked Gali, almost rhetorically.
+
+"Everything has a cause. Some motive force. Unless our entire theory of magic is a lie..."
+
+*page_break "Is there such a thing as truth?"
+
+"Is there such a thing as truth?" asked Capella rhetorically, as if speaking to an empty room. "Is there truth in the Binary Bible? Is there truth in our magic? Can our magic really bring us closer to divinity?"
+
+The wind around her swirled, picking up scattered pages. It was like a whirlwind surrounding her. When Gali failed to speak, she continued rambling.
+
+"What are the Creator and the Demiurge? Are they one or two? Are they really distinct? Is one good and the other evil or are they aspects of the same? And what are [i]we[/i]? Are we fragments of creation? Or are we just the puppets of the Cosmos who play-act our predestined parts for their entertainment?"
+
+*page_break Gali didn't know what to say.
+
+Gali didn't know what to say. Was he supposed to comfort the girl, to tell her that everything would be fine one day? That would be lying.
+
+Then, suddenly, the door of the classroom opened again, and in strode Astra.
+
+"What are you two doing here?" she asked.
+
+"Are we just puppets of the Aeons?" ejaculated Capella, suddenly glaring daggers at the other girl.
+
+"What? Why would we be?" asked Astra, befuddled.
+
+"The deities, the Creator, the Demiurge, all of them, they never cared about us. They just... see us as toys. Playthings to use for their enjoyment."
+
+*page_break Astra sighed.
+
+Astra sighed, and strolled to the agitated girl. She held her arms out, and enveloped the other girl within her gentle hold.
+
+"I'm here. I'm with you. You'll be fine."
+
+"I... won't be..."
+
+Capella was sobbing. The tension in her muscles dissipated, leaving her entire weight supported by Astra's body.
+
+"We'll all be fine," said Astra. "The Cosmos doesn't matter right now. Only you do."
+
+*page_break
+
 *comment not sure if i should do this (or if i even have time to do this)
 *comment [b]Universe[/b]
 *comment TODO: multiple potential segments
@@ -644,6 +698,8 @@ There have been a lot of messages since you were last here.
                         @icemoongirl: 💙️
 
                         @brunova-official: thanks...
+
+                        @capellasgf: happy birthday lux!
                         *goto annc_convo_options
                     *disable_reuse *if (claire_seen) #Ask about what they think of Claire.
                         *label annc_claire

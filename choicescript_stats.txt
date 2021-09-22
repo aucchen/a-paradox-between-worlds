@@ -48,8 +48,6 @@ Top ships:
 *choice
   #Personal
     *goto personal
-  #IRL
-    *goto irl
   #Relationships
     *goto relationships
   #Your Fanfiction
@@ -66,13 +64,6 @@ Top ships:
     *set rx true
     Relationship/stat change notifications enabled.
     *goto stat_choice
-
-
-*label irl
-
-IRL Name: ${first_name} ${last_name}
-
-*goto stat_choice
 
 
 *label relationships

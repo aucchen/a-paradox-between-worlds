@@ -547,10 +547,12 @@ Luna doesn't seem to have much more to say for now, but maybe you do?
 
                         @lunan0va: i've been working on my fic again...
                         *goto luna_fic_talk
-                    #Nah, I don't really have anything to talk about...
+                    #Nah, I don't really want to talk...
                         @you: nah, i don't really have anything to talk about
 
                         @lunan0va: lol i get that.
+
+                        Luna is offline.
                         *goto luna_message_end
             #There's not much going on.
                 @you: um... there's not really much going on.
@@ -578,7 +580,22 @@ Luna doesn't seem to have much more to say for now, but maybe you do?
                     @lunan0va: i know you said it was good but like... idk
                 *else
                     @lunan0va: i'm trying to change and improve it like you said but idk how. it's just like... a total mess.
+
+                *fake_choice
+                    #It's okay!
+                        @you: it's okay!
+
+                        @lunan0va: thanks 💙️
+                    #It can't be that bad!
+                        @you: it can't be that bad!
+
+                        @lunan0va: thanks 💙️
+                    #Maybe you can write about something else?
+                        @you: maybe you could try to write about something else?
+
+                        @lunan0va: maybe, i guess...
         
+        Luna is offline.
         *goto luna_message_end
     #Confess your love.
         Wait... What? You are not ready for that conversation, not even close.
@@ -594,7 +611,7 @@ Luna doesn't seem to have much more to say for now, but maybe you do?
                 
                 @lunan0va: thanks! 💙️${heart_emoji} to you too...
                 
-                Unfortunately, you do not know what to say after that.
+                Unfortunately, you do not know what to say after that. Soon, Luna is offline.
                 *set luna_red %+ 1
                 *set luna_blue %+ 2
                 *goto luna_message_end
