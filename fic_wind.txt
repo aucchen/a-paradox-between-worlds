@@ -363,7 +363,7 @@ Are you going to continue the fic, or abandon it?
     #No, I won't write anymore.
         Are you sure you want to stop?
         *choice
-            #Yes. Fuck this.
+            #Yes. Stop writing.
                 *set popularity - 3
                 *if popularity < 0
                     *set popularity 0
