@@ -1120,7 +1120,7 @@ ${trap_1_4_notes} notes
     *disable_reuse #Like ❤️
         *set trap_1_4_notes + 1
         *set karla_blue %+ 1
-        *goto trap_1_3
+        *goto trap_1_4
     *disable_reuse #Reblog 🔁
         *if rx
             *gosub shitposting
@@ -1130,7 +1130,7 @@ ${trap_1_4_notes} notes
         *set karla_blue %+ 3
         *set shitposting %+ 3
         *set trap_1_4_notes + 1
-        *goto trap_1_3
+        *goto trap_1_4
     #Next post.
         *goto trap_1_5
     #Prev post.
