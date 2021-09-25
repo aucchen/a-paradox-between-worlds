@@ -1,3 +1,4 @@
+*script setMbmMode(false);
 *temp look false
 *temp listen false
 *temp smell false
@@ -399,6 +400,7 @@ Are you going to continue the fic, or abandon it?
 *if (new_followers<0)
     *set new_followers 0
 *set followers + new_followers
+*script setMbmMode(true);
 
 [b]IRL[/b]
 
@@ -426,4 +428,5 @@ You have ${ch3_likes} likes and ${ch3_rbs} reblogs on the fic.
 Unfortunately, you do not have any new messages. The people who would normally comment are all caught up in their own problems. They don't have time for your silly stories at this moment.
 
 *label fic_end
+*script setMbmMode(true);
 *return

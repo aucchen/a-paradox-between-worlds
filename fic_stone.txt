@@ -368,6 +368,7 @@ You feel a sudden anxiety rising through your body, and a pulsating headache. Yo
 It's as if an invisible force is dragging you out, onto the street, phasing through the walls. The ground trembles, and opens up with a horrible creaking noise. You fall into the fissure. You see your friends rush towards you, until the earth opens up to swallow them too.
 
 *page_break Falling. Endless falling.
+*script setMbmMode(true);
 
 [b]IRL?[/b]
 *comment random roll for popularity

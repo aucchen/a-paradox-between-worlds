@@ -339,7 +339,7 @@ However, all emperors have been usurpers. The emperor's appointed successor is t
 
 It turns out that the Administrator is the Archon of Shadow. The [b]House of Shadow[/b] is a secret house in the Academy that recruits students for secret tasks against the Emperor. Astra is eventually recruited by the House of Shadow and is sent to infiltrate the Emperor at his court. However, the Emperor discovered the infiltration, and captured Astra, imprisoning and possibly torturing her. This is a topic heavily covered and sometimes romanticized in fanfiction, to the extent where Ariastra is the third most popular ship on AO3, although many view it as problematic. In the next book, presumably the last book of the series, the heroes are going to rescue Astra from the Emperor.
 
-There might be greater forces of evil than the Emperor. Ariel serves the Demiurge, or Yaldabaoth, a deity generally considered to be pure evil. The Demiurge is locked in eternal conflict with the Monad, a deity generally considered to be pure good. The Archon of Shadow serves the Monad. In fact, every emperor has served one of the two deities, alternating the roles of ruler and rebel. The realm of humanity is nothing more than the playground of the Gods.
+There might be greater forces of evil than the Emperor. Ariel serves the Demiurge, or Yaldabaoth, a deity generally considered to be pure evil. The Demiurge is locked in eternal conflict with the Creator, a deity generally considered to be pure good. The Archon of Shadow serves the Creator. In fact, every emperor has served one of the two deities, alternating the roles of ruler and rebel. The realm of humanity is nothing more than the playground of the Gods. Some say that the Creator and the Demiurge are in fact the same deity, and there are other deities preceding the Creator/Demiurge, but those views are considered heterodox at best, heretical at worst.
 
 In the most recent novel, the Administrator is killed, and after the battle Gali has somehow become the Archon of Shadow. He is going to kill the Emperor... or is he?
 
@@ -423,7 +423,10 @@ Book 2:
 *label people
 [b]Online People[/b]
 
-[b]@lunan0va[/b]: ${luna_bio}
+*if knows_luna_secret
+    [b]@icemoongirl[/b]: ${luna_bio}
+*else
+    [b]@lunan0va[/b]: ${luna_bio}
 
 [b]@shadow-protectrix[/b]: ${claire_bio}
 
@@ -442,3 +445,13 @@ Book 2:
     [b]@capellasgf[/b]: ${laura_bio}
 
 *goto stat_choice
+
+
+*label fandom
+[b]Fandom Glossary[/b]
+
+Fanfiction, fic - 
+
+Reblog - taking another user's blog post and posting it on your own blog. This is usually seen as approval of the person you're reblogging from, as well as the content of the post.
+
+Ship - a fictional relationship. "Shipping" is the act of wanting two fictional characters to be together in a romantic relationship.

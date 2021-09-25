@@ -1,3 +1,4 @@
+*script setMbmMode(false);
 [b]Universe - Noncanon?[/b]
 *temp look false
 *temp listen false
@@ -482,6 +483,7 @@ You find yourself in a void, an empty space of pure blackness devoid of light. T
 But before anyone can answer, then you begin to taste cherries once more. You feel a falling sensation. The two girls disappear from view. It, whatever "it" is, begins again.
 
 *page_break
+*script setMbmMode(true);
 
 [b]IRL?[/b]
 *temp roll 1

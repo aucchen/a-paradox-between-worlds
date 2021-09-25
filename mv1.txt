@@ -679,22 +679,30 @@ That's awesome! Most Nebulaverse blogs have a favorite character, whom they rebl
 [A/N: For more details on the characters, see the "Nebulaverse Background" on the Show Stats page.]
 
 *fake_choice
-    #Gali, the protagonist
+    #Galileo "Gali" Nova, the protagonist.
         *set top_character "gali"
         *set gali +10
-    #Bruno, the rival
+    #Bruno Helios, the rival who's kind of a jerk.
         *set top_character "bruno"
         *set bruno +10
-    #Astra, the smart girl
+    #Astra Van Allen, the smart girl.
         *set top_character "astra"
         *set astra +10
-    #Capella, Gali's main love interest
+    #Capella Taikong, a complicated and secretive girl.
         *set top_character "capella"
         *set capella +10
-    #Tycho, Gali's best friend
+    #Tycho Planetes, Gali's best friend and a nice, normal boy.
         *comment Warning: no one cares about tycho
         *set top_character "tycho"
         *set tycho +10
+    #I like all of them equally!
+        *comment warning: sets top character to gali
+        *set top_character "gali"
+        *set gali + 4
+        *set bruno + 3
+        *set astra + 3
+        *set capella + 3
+        *set tycho + 3
 
 *label ship_choice
 And which pairing is your favorite ship?
@@ -2302,6 +2310,7 @@ It's past midnight. You should be going to bed by now. School is in seven hours.
 *label fanfiction
 
 [b]Universe - Noncanon?[/b]
+*script setMbmMode(false);
 
 You wake up...
 
@@ -2352,7 +2361,7 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
                 *goto gali_pronoun_choice
             #Why do I have to pick?
                 *goto gali_pronoun_choice
-            #Actually, I change my mind...
+            #Actually, I changed my mind...
                 *goto uniform_choice
     #The girl's uniform, but I'm not exactly a girl.
         You wear the girl's uniform of a navy blazer and black pleated skirt, but you're not exactly a girl. Actually...
@@ -2366,7 +2375,7 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
             #I don't know what I am, yet.
                 *set protag_questioning true
                 *goto gali_pronoun_choice
-            #Actually, I change my mind...
+            #Actually, I changed my mind...
                 *goto uniform_choice
     #The boy's uniform, because I'm a boy.
         You're wearing a navy blazer and black pants.
@@ -2388,7 +2397,7 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
                 *goto gali_pronoun_choice
             #Why do I have to pick?
                 *goto gali_pronoun_choice
-            #Actually, I change my mind...
+            #Actually, I changed my mind...
                 *goto uniform_choice
     #The boy's uniform, but I'm not exactly a boy.
         You wear the boy's uniform, but you're not exactly a boy. Actually...
@@ -2402,7 +2411,7 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
             #I don't know what I am, yet.
                 *set protag_questioning true
                 *goto gali_pronoun_choice
-            #Actually, I change my mind...
+            #Actually, I changed my mind...
                 *goto uniform_choice
     #I wish there were other options...
         *set protag_nonbinary true
@@ -2436,7 +2445,7 @@ You pull yourself up. You are still in the Academy's starchy uniform; you must h
                 *set protag_emself "emself"
             #They/them
                 *set protag_plural true
-            #Actually, I change my mind...
+            #Actually, I changed my mind...
                 *goto uniform_choice
 
 Now that you remember who you are, maybe you could go back to thinking about what Astra is saying.
@@ -2648,6 +2657,7 @@ Capella doesn't take a second glance, and presses the red button. Beeps and mech
 "Well, my hand's fine," she says with a shrug. "What are we waiting for?" She steps through.
 
 *page_break You follow them through...
+*script setMbmMode(true);
 
 [b]IRL[/b]
 
@@ -2901,6 +2911,7 @@ Okay, let's do this.
     *set lux_blue %+ 5
 
 *page_break Universe - Noncanon
+*script setMbmMode(false);
 
 [b]Universe - Noncanon[/b]
 

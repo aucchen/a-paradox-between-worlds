@@ -1,4 +1,6 @@
 *set current_chapter 2
+*script setMbmMode(false);
+
 [b]Movement 2: Fantasia-Impromptu[/b]
 
 [i]We all know that there are many "trolls" online -- people who get pleasure from going into enemy territory, being as obnoxious as possible, and then taking on all comers with all the aggressiveness and rudeness they can command.[/i]
@@ -53,6 +55,7 @@ The door opened.
 
 "A Keeper of Light, Galileo Nova!" The robotic voice reverberated. Claps from outside. How long had he been in there?
 *page_break Online
+*script setMbmMode(true);
 
 [b]Online - Montage[/b]
 
@@ -1646,6 +1649,8 @@ You're done reading blogs for tonight. You should probably go to bed.
 *if in_claire_chat and in_luna_chat
     *achieve people
 
+*script setMbmMode(false);
+
 [b]Universe - Canon[/b]
 
 [b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 1: The Academy of Magi[/i] by G. T. Macmillan[/b]
@@ -1684,6 +1689,7 @@ Bruno gave a salute and a wry smile as he got back on his feet. "I knew you had 
 
 *page_break
 
+*script setMbmMode(true);
 
 [b]Online - Montage[/b]
 *temp read_count 0

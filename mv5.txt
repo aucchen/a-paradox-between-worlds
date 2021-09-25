@@ -1,3 +1,6 @@
+*set current_chapter 5
+*script setMbmMode(false);
+
 [b]Movement 5: Nocturne - La mort de l'auteur[/b]
 
 [i]Stories are the boundaries of possibility, which means that they can also be the rules of reality, or the perceived rules, which are as strong as the laws of physics if you can’t imagine any other possibility. Who get to tell the story? Whose stories are celebrated? Whose are the most true?[/i]
@@ -83,6 +86,7 @@ Capella was sobbing. The tension in her muscles dissipated, leaving her entire w
 *comment *page_break
 *comment *goto online_1
 
+*script setMbmMode(true);
 *label online_1
 [b]Online - Montage[/b]
 *temp read_count 0
@@ -1155,7 +1159,7 @@ You close your browser. It's getting late. You have school tomorrow.
 *label fanfiction
 
 *gosub_scene fic_light
-        
+*comment TODO: epilogue?
         
 *label ending
 *achieve ending
@@ -1177,6 +1181,8 @@ You close your browser. It's getting late. You have school tomorrow.
 
 *if not(has_chatted)
     *achieve alone
+
+*page_break Fin.
 *ending
 
 *label rx

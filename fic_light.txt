@@ -1,3 +1,4 @@
+*script setMbmMode(false);
 [b]Universe - Noncanon?[/b]
 *temp look false
 *temp listen false
@@ -187,7 +188,7 @@ The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare
 
 "So what happens now?" you ask. "What happens after the story is over? Is my life over too?"
 
-"No. Our lives have just begun. You're finally free. What do you want to do, Gali?"
+"No. Our lives have just begun." $!{e} smile@{plural |s}. "We're not so different after all. You're finally free, Gali. What do you want to do now?"
 
 *fake_choice
     #Wake up.
@@ -224,17 +225,18 @@ The kid, who calls ${emself} the Creator, is staring at the floor. As ${e} stare
 *comment         It's like they said, isn't it?
 
 *label fic_end
+*script setMbmMode(true);
 [b]IRL[/b]
 
 Do you post the chapter, or not?
 
 *fake_choice
     *if (luna_end) #Yes, maybe Luna would like it?
-        Well, Luna enjoyed your story before the incidents. Maybe she'll still be interested? Maybe your story, basic as it is, can cheer her up?
+        Well, Luna enjoyed your story before the incidents. Maybe she'll still be interested? Maybe your story, basic as it is, can cheer her up? She seems to be at least a little open to Nebulaverse content...
     *if (claire_end) #Yes, maybe Claire would like it?
-        Well, Claire seems to have been enjoying the story, and they don't seem too upset by author self-inserts. Maybe they'll appreciate your story, basic as it is?
+        Well, Claire seems to have been enjoying the story, and they don't seem too upset by author self-inserts. Maybe they'll appreciate your story, basic as it is? They seem to be still open to Nebulaverse content...
     *if (karla_end) #Yes, maybe Karla would enjoy it?
-        Karla has liked some of your story posts in the past, even if she hasn't commented on any of them. Maybe she'll appreciate this story, basic as it is?
+        Karla has liked some of your story posts in the past, even if she hasn't commented on any of them. Maybe she'll appreciate this story, basic as it is? She seems to be at least a little open to Nebulaverse content...
     #Yes, because I need to put something out.
         After all, what harm could be done by putting a story out for public consumption? It's not as if you've connected this account to your real name or identity. Maybe this will be what your throngs of loyal readers are looking for.
     #No. This isn't satisfactory.

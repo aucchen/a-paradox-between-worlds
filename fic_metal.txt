@@ -1,3 +1,4 @@
+*script setMbmMode(false);
 [b]Universe - Noncanon?[/b]
 *comment Astra/Metal fic
 *temp return_point ""
@@ -243,6 +244,7 @@ Are you going to continue this fic, or abandon it?
 *if (new_followers<0)
     *set new_followers 0
 *set followers + new_followers
+*script setMbmMode(true);
 [b]IRL[/b]
 
 The story is over, for what it's worth.
@@ -282,5 +284,6 @@ You have ${ch4_likes} likes and ${ch4_rbs} reblogs on the fic.
 Still no messages regarding the story, of course. You didn't expect any.
 
 *label fic_end
+*script setMbmMode(true);
 *page_break
 *return

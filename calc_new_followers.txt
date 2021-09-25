@@ -212,7 +212,7 @@
 *if (followers >= 210)
     *achieve followers
 
-You've [b]gained ${followers_gained}[/b] follower@{(followers_gained = 1) |s} and [b]lost ${followers_lost}[/b] follower@{(followers_gained = 1) |s}, for a current total of [b]${followers} followers[/b].
+You've [b]gained ${followers_gained}[/b] follower@{(followers_gained = 1) |s} and [b]lost ${followers_lost}[/b] follower@{(followers_lost = 1) |s}, for a current total of [b]${followers} followers[/b].
 *if (not(alignment_consistent))
     Your blog has changed its focus, which might have lost followers.
 *if (not(character_consistent))

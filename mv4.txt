@@ -1,4 +1,5 @@
 *set current_chapter 4
+*script setMbmMode(false);
 [b]Movement 4: Andante - Clair de Lune[/b]
 
 [i]Violence for violence is the rule of beasts.[/i]
@@ -72,6 +73,7 @@ He takes a deep breath. "And the man leading the shadow movement... is standing 
 *if (luna_blue >= 35) and (luna_blue > (luna_green - 20))
     *set luna_ch4_message true
 
+*script setMbmMode(true);
 [b]Online - Montage[/b]
 *temp read_count 0
 *temp luna_unread 1

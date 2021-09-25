@@ -1,4 +1,6 @@
 *set current_chapter 3
+*script setMbmMode(false);
+
 [b]Movement 3: Rondo - Vivace[/b]
 
 [i]DIRK 4: You monster. He barely got a character arc.[/i]
@@ -52,6 +54,7 @@ Gali was silent throughout this discourse. He did not know what to think. He won
 What if they saw through his hard exterior, and discovered the parts of him that he could never admit, even to himself?
 
 *page_break
+*script setMbmMode(true);
 
 [b]Online - Montage[/b]
 *temp read_count 0
