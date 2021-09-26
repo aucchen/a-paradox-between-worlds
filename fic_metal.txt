@@ -193,12 +193,14 @@ You dream of falling, of a cavity opening up beneath your bed and sucking you in
 *goto story_end
 
 *label fic_continue
+*script setMbmMode(true);
 [A/N: You know what? No. Fuck this. Fuck you.]
 
 Are you going to continue this fic, or abandon it?
 
 *choice
     #Never mind, keep writing.
+        *script setMbmMode(false);
         [Okay. Let's keep going.]
 
         *gotoref return_point
@@ -220,6 +222,7 @@ Are you going to continue this fic, or abandon it?
                 Alright. The fic is over, for now. Temporarily, maybe?
                 *goto fic_end
             #Never mind. The story must go on.
+                *script setMbmMode(false);
                 [Okay. Let's keep going.]
 
                 *gotoref return_point
@@ -284,6 +287,5 @@ You have ${ch4_likes} likes and ${ch4_rbs} reblogs on the fic.
 Still no messages regarding the story, of course. You didn't expect any.
 
 *label fic_end
-*script setMbmMode(true);
 *page_break
 *return

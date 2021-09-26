@@ -682,16 +682,16 @@ That's awesome! Most Nebulaverse blogs have a favorite character, whom they rebl
     #Galileo "Gali" Nova, the protagonist.
         *set top_character "gali"
         *set gali +10
-    #Bruno Helios, the rival who's kind of a jerk.
+    #Bruno Helios, the rich rival who's kind of a jerk.
         *set top_character "bruno"
         *set bruno +10
-    #Astra Van Allen, the smart girl.
+    #Astra Van Allen, the smart girl who becomes Gali's good friend.
         *set top_character "astra"
         *set astra +10
-    #Capella Taikong, a complicated and secretive girl.
+    #Capella Taikong, a complicated and secretive girl who is Gali's canonical love interest.
         *set top_character "capella"
         *set capella +10
-    #Tycho Planetes, Gali's best friend and a nice, normal boy.
+    #Tycho Planetes, Gali's roommate and a nice, normal boy.
         *comment Warning: no one cares about tycho
         *set top_character "tycho"
         *set tycho +10

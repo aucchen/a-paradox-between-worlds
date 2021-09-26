@@ -352,11 +352,13 @@ You fall, and all turns black.
 *goto story_end
 
 *label f_this
+*script setMbmMode(true);
 
 Are you going to continue the fic, or abandon it?
 
 *choice
     #Never mind, keep writing.
+        *script setMbmMode(false);
         [Okay. Let's keep going.]
 
         *gotoref return_point
@@ -376,6 +378,7 @@ Are you going to continue the fic, or abandon it?
                 Alright. The fic is over, for now. Maybe you'll come back to it, or not.
                 *goto fic_end
             #Never mind. The story must go on.
+                *script setMbmMode(false);
                 [Okay. Let's keep going.]
 
                 *gotoref return_point
@@ -428,5 +431,4 @@ You have ${ch3_likes} likes and ${ch3_rbs} reblogs on the fic.
 Unfortunately, you do not have any new messages. The people who would normally comment are all caught up in their own problems. They don't have time for your silly stories at this moment.
 
 *label fic_end
-*script setMbmMode(true);
 *return
