@@ -1650,7 +1650,8 @@ You're done reading blogs for tonight. You should probably go to bed.
 *page_break
 *if in_claire_chat and in_luna_chat
     *achieve people
-
+*if skip_all_canon_excerpts
+    *goto online_2
 *script setMbmMode(false);
 
 [b]Universe - Canon[/b]
@@ -1690,7 +1691,7 @@ Bruno gave a salute and a wry smile as he got back on his feet. "I knew you had 
 "Now, can you repeat that performance?" she asked.
 
 *page_break
-
+*label online_2
 *script setMbmMode(true);
 
 [b]Online - Montage[/b]
