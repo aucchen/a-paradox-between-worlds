@@ -2793,6 +2793,7 @@ Stories need ships; relationships between fictional characters (or non-fictional
                 *set claire_blue %+ 4
                 *set sofia_blue %+ 2
                 *set popularity + 10
+                *set brunova %+ 4
                 *set fic_ship "brunova"
                 *if (protag_trans_boy)    
                     By the way, trans boy Bruno is a somewhat popular headcanon. Will that be part of your story?
@@ -2824,6 +2825,7 @@ Stories need ships; relationships between fictional characters (or non-fictional
             #Yes!
                 *set fic_ship "astranova"
                 *set popularity + 2
+                *set astranova %+ 4
             #No, I want a different ship.
                 *goto fanfiction_ships
     #Ellanova
@@ -2835,6 +2837,7 @@ Stories need ships; relationships between fictional characters (or non-fictional
                 *set karla_blue %+ 2
                 *set popularity + 3
                 *set fic_ship "ellanova"
+                *set ellanova %+ 4
             #No, I want a different ship.
                 *goto fanfiction_ships
     #Astrapella
@@ -2843,10 +2846,11 @@ Stories need ships; relationships between fictional characters (or non-fictional
        Are you going with Astrapella as a ship?
        *choice
            #Yes!
-               *set sofia_blue %+ 2
+               *set sofia_blue %+ 3
                *set stella_blue %+ 5
                *set luna_blue %+ 3
                *set popularity + 2
+               *set astrapella %+ 4
                *set fic_ship "astrapella"
            #No, I want a different ship.
                *goto fanfiction_ships

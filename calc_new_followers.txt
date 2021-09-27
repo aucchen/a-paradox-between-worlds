@@ -163,7 +163,10 @@
     *set follower_loss_bonus + 1
 *if (current_rbs <= 1)
     *set follower_loss_bonus + 1
-    *set follower_gain_bonus - 1
+    *set follower_gain_bonus - 2
+*if (current_rbs = 0)
+    *set follower_loss_bonus + 1
+    *set follower_gain_bonus - 2
 *comment but... rbing too much loses you followers bc it spams peoples dash
 *if (current_rbs > 20)
     *set follower_loss_bonus + 1

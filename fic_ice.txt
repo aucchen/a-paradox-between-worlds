@@ -129,8 +129,10 @@ He gazes at you with an intense stare, until his face breaks into a simulacrum o
         [A/N: So, will it be Brunova?]
         *fake_choice
             #[A/N: Yes, it's Brunova.]
+                *set brunova %+ 5
                 [A/N: Yeah, sure, it's gonna be Brunova.]
             #[A/N: It's gonna at least hint at Brunova. Maybe not go into depth.]
+                *set brunova %+ 3
                 [A/N: Okay. The story will hint at Brunova but that's not the main focus of the story?]
             #[A/N: No, of course it's not Brunova.]
                 [A/N: Brunova isn't happening here. They're just green here, just friend-rivals.]
@@ -180,6 +182,7 @@ He makes a beckoning gesture. "Let's become reacquainted with each other."
 
         *choice
             #[A/N: They're gonna do the frick-frack, or get close.]
+                *set brunova %+ 5
                 *set protag_bruno_ch2_ff 2
                 *set popularity + 10
                 *set ch2_wins + 1
@@ -193,6 +196,7 @@ He makes a beckoning gesture. "Let's become reacquainted with each other."
 
                 *goto enjoying_this
             #[A/N: Obviously there are undertones, but they're not gonna do it.]
+                *set brunova %+ 3
                 *set protag_bruno_ch2_ff 1
                 *set popularity + 5
                 *set ch2_wins + 1

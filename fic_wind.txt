@@ -134,6 +134,7 @@ She waves to you. "Follow me. We're going to meet some old friends."
         *comment TODO: have some shoutouts to ellanova if that were pursued?
         *fake_choice
             #[A/N: Yeah. Astrapella all the way!]
+                *set astrapella %+ 4
                 *if (fic_ship = "astrapella")
                     *set ch3_wins + 1
                 [A/N: Astrapella all the way!]
