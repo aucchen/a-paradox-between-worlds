@@ -15,6 +15,8 @@
 - Andrew Hussie, Homestuck
 
 *page_break
+*if skip_all_canon_excerpts
+    *goto online
 
 [b]Universe - Canon?[/b]
 
@@ -69,7 +71,7 @@ Capella was sobbing. The tension in her muscles dissipated, leaving her entire w
 "We'll all be fine," said Astra. "The Cosmos doesn't matter right now. Only you do."
 
 *page_break
-
+*label online
 *comment not sure if i should do this (or if i even have time to do this)
 *comment [b]Universe[/b]
 *comment TODO: multiple potential segments
@@ -165,7 +167,7 @@ Online weather report: the devastation after the storm. The wreckage of a hurric
 Which blogs would you like to read?
 
 *choice
-    *selectable_if (luna_blocked = false) #@lunan0va
+    *disable_reuse *selectable_if (luna_blocked = false) #@lunan0va
         @lunan0va has been deactivated. There is no user with that URL.
         *goto montage_1
     *if ((luna_blocked = false) and (knows_luna_secret)) #@icemoongirl @{(luna_ch5_seen=1) (read)|}
@@ -180,7 +182,7 @@ Which blogs would you like to read?
     *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch5_seen=1) (read)|}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch5_seen=1) (read)|}
+    *disable_reuse *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch5_seen=1) (read)|}
         @apocalypse-hoarder has been deactivated. There is no user with that URL.
         *goto montage_1
     *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch5_seen=1) (read)|}
@@ -189,7 +191,7 @@ Which blogs would you like to read?
     *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
         *set has_chatted true
         *gotoref annc_chat_ref
-    *if ((sofia_secret)) #Message Sofia.
+    *disable_reuse *if ((sofia_secret)) #Message Sofia.
         *set has_chatted true
         You message Sofia. There is no reply, as she is offline.
         *goto montage_1

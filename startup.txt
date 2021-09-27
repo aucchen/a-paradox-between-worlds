@@ -22,6 +22,8 @@
 
 *create implicit_control_flow true
 
+*create skip_all_canon_excerpts false
+
 *comment personal description********************
 *create first_name ""
 *create last_name ""

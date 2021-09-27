@@ -8,6 +8,8 @@
 - Charlotte Lennox, The Ms. Scribe Story
 
 *page_break
+*if skip_all_canon_excerpts
+    *goto online
 
 [b]Universe - Canon[/b]
 
@@ -52,7 +54,9 @@ Suddenly the room began to glow. A white light grew brighter and brighter, until
 The door opened.
 
 "A Keeper of Light, Galileo Nova!" The robotic voice reverberated. Claps from outside. How long had he been in there?
-*page_break Online
+
+*page_break
+*label online
 *script setMbmMode(true);
 
 [b]Online - Montage[/b]
@@ -1728,7 +1732,7 @@ Bruno gave a salute and a wry smile as he got back on his feet. "I knew you had 
 *temp apoc_2_4_notes 110213
 *temp apoc_2_5_notes 25
 
-*temp trap_2_1_notes 821
+*temp trap_2_1_notes 13
 *temp trap_2_2_notes 108
 *temp trap_2_3_notes 141
 *temp trap_2_4_notes 232
@@ -2874,7 +2878,7 @@ ${trap_2_1_notes} Notes
 
 The only thing I will say about the whole chronicles deal is that billionaires shouldn't exist.
 
-Tags: #ugh i just became aware of the post...
+Tags: #ugh i just became aware of the post..., #(technically g/t/m is a hundred-millionaire but w/e)
 
 ${trap_2_2_notes} Notes
 

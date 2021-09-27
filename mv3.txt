@@ -10,6 +10,8 @@
 - Duckface, THEATRE OF COOLTY
 
 *page_break
+*if skip_all_canon_excerpts
+    *goto online
 
 [b]Universe - Canon[/b]
 
@@ -54,6 +56,7 @@ Gali was silent throughout this discourse. He did not know what to think. He won
 What if they saw through his hard exterior, and discovered the parts of him that he could never admit, even to himself?
 
 *page_break
+*label online
 *script setMbmMode(true);
 
 [b]Online - Montage[/b]
@@ -111,6 +114,9 @@ What if they saw through his hard exterior, and discovered the parts of him that
 *temp karla_sent_message false
 *temp sofia_sent_message false
 
+*temp annc_chat_ref "annc_chat"
+*temp writers_chat_ref "writers_chat"
+
 *gosub_scene calc_new_followers
 
 *gosub_scene check_blocked
@@ -136,7 +142,7 @@ Is there hope for the future? Is there hope for humanity in the age of the onlin
 *if karla_sent_message and (karla_investigation = 0)
     Karla @trappedinspace has sent you a DM.
 
-*if (sofia_helped != 0)
+*if (sofia_helped != 0) and (claire_trust = 0)
     You can message Claire about Sofia's plans, if you'd like.
 
 Which blogs would you like to read?
@@ -160,12 +166,12 @@ Which blogs would you like to read?
     *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch3_seen=1) (read)|}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
-    *disable_reuse *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
+    *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
         *set has_chatted true
-        *goto annc_chat
-    *disable_reuse *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
+        *gotoref annc_chat_ref
+    *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
         *set has_chatted true
-        *goto writers_chat
+        *gotoref writers_chat_ref
     *disable_reuse *if (karla_sent_message) #See Karla's message.
         *set has_chatted true
         *goto karla_message
@@ -1444,6 +1450,7 @@ ${shad_1_5_notes} notes
         @lunan0va: i won't delete my blog...
 
 *label annc_chat_1
+*set annc_chat_ref "annc_chat_1"
 @lunan0va: i don't want to delete my blog because... and i know this is probably kinda terrible but i kinda want to be recognized, y'know? i want to be somebody. i want to be well known. i want to be respected. i want to see my likeness set in stone, like lorde said.
 
 @lunan0va: but not like this.
@@ -1459,6 +1466,8 @@ ${shad_1_5_notes} notes
 *choice
     *if (luna_ch3_seen = 1) #Express sympathy to Luna.
         *set luna_blue %+ 3
+        *label annc_chat_2
+        *set annc_chat_ref "annc_chat_2"
         @you: i'm really sorry about what's happening Luna...
 
         @lunan0va: thanks! but i'm fine. i'm really fine.
@@ -1524,6 +1533,8 @@ ${shad_1_5_notes} notes
         *set claire_blue %+ 5
         *set sofia_blue %+ 5
         *set sofia_trust + 1
+        *label writers_chat_2
+        *set writers_chat_ref "writers_chat_2"
         @you: um... i can help out with nebulacon?
         
         

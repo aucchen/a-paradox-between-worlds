@@ -32,6 +32,9 @@
         *goto universe0
     #[Skip intro.]
         *goto universe1
+    #[Skip all chapter intros.]
+        *set skip_all_canon_excerpts true
+        *goto universe1
 
 *label universe0
 [b]Universe - Canon[/b]

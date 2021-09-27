@@ -5,10 +5,11 @@
 [i]Violence for violence is the rule of beasts.[/i]
 
 - Barack Obama (via kumagawa), tumblr
-
-
-
 *page_break
+
+*if skip_all_canon_excerpts
+    *goto online
+
 
 [b]Universe - Canon[/b]
 
@@ -69,6 +70,7 @@ The Administrator pointed at the Capitol world of Antioch.
 He takes a deep breath. "And the man leading the shadow movement... is standing before you."
 
 *page_break
+*label online
 *temp luna_ch4_message false
 *if (luna_blue >= 35) and (luna_blue > (luna_green - 20))
     *set luna_ch4_message true
@@ -490,7 +492,7 @@ ${brun_1_5_notes} notes
         *set brun_1_5_notes + 1
         *set lux_blue %+ 3
         *set discourse %+ 4
-        *goto montage_1
+        *goto brun_1_5
     #Prev post.
         *goto brun_1_4
     #Look at another blog.
@@ -1141,6 +1143,7 @@ ${trap_1_4_notes} notes
 
 *label trap_1_5
 *set trap_prog 5
+*set karla_ch4_seen 1
 [b]@trappedinspace reblogged from @kshamas one day ago. OP: @dingling[/b]
 
 Hey I still need money to pay for this month's rent. I don't want to live in my car again.
