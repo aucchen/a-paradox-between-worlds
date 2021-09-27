@@ -186,7 +186,14 @@ Which blogs would you like to read?
         *goto karla_message_1
     *if ((sofia_helped > 0)) #See the callout that Sofia talked about.
         *goto reblog_callout
-    *if (read_count > 0) #Stop looking at blogs.
+    *if (read_count > 1) #Stop looking at blogs.
+        *if (sofia_sent_message and (sofia_helped = 0)) or (karla_sent_message and (karla_investigation = 0))
+            Are you sure? You still have unread messages.
+            *choice
+                #Yes, don't read the messages.
+                    *goto montage1_end
+                #No, go back.
+                    *goto montage_1
         *goto montage1_end
 
 *label luna_1_1

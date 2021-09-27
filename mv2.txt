@@ -158,7 +158,7 @@ Which blogs would you like to read?
         *gotoref writers_chat_ref
     *if ((in_luna_chat)) #See Luna's groupchat.
         *gotoref annc_chat_ref
-    *if (read_count > 0) #Stop looking at blogs.
+    *if (read_count > 1) #Stop looking at blogs.
         *goto montage1_end
 
 *label luna_1_1
@@ -1782,7 +1782,7 @@ Which blogs would you like to read?
         *goto annc_chat_2
     *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
         *goto writers_chat_2
-    *if (read_count > 0) #Stop looking at blogs.
+    *if (read_count > 1) #Stop looking at blogs.
         *goto montage2_end
 
 *label luna_2_1

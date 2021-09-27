@@ -897,11 +897,13 @@ Finally, why are you here? Why are you online, participating in the Nebulaverse 
         *comment Ice?
         *set goal "friends"
         *set sympathy %+ 5
+        How are you supposed to make friends in the vast realm of the Nebulaverse fandom? Well, you'll have to interact with people.
     #To be popular.
         *comment Stone?
         *set goal "popular"
         *set sympathy %+ 5
         It would be nice to have more followers than your current 110. It would be nice to be someone who is heard and respected, if only in a small online space such as this.
+        How do you become popular in this space? Well, you'll have to interact with other people.
     #To escape.
         *comment Wind?
         *set goal "escape"
@@ -921,6 +923,8 @@ Finally, why are you here? Why are you online, participating in the Nebulaverse 
         *set gen %+ 5
     #Something else?
         *set goal "other"
+
+Remember that there are humans behind each of these blogs. If you don't interact with them via likes and reblogs, they won't even know you exist. A like can represent a shared interest, acknowledgement, or even commiseration. So can a reblog, but be careful of what you reblog, because there are limits to your followers' and mutuals' tolerance for bad posts.
 
 *label montage_1_start
 Anyway, your parents are asleep, and you're probably done with homework. So what else is there to do but check out all the blog updates that you missed?
@@ -1005,7 +1009,7 @@ Which blogs would you like to read?
     *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
-    *if (read_count > 0) #Stop looking at blogs.
+    *if (read_count > 1) #Stop looking at blogs.
         *goto montage1_end
 
 *label luna_1_1

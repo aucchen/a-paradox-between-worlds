@@ -189,7 +189,14 @@ Which blogs would you like to read?
         *goto luna_msg_2
     *disable_reuse *if (knows_nebulacon and ((sofia_helped > 0) and (sofia_blue >= 25))) #Message Sofia about NebulaCon.
         *gotoref sofia_message_ref
-    *if (read_count > 0) #Stop looking at blogs.
+    *if (read_count > 1) #Stop looking at blogs.
+        *if (has_luna_password and ((luna_ch4_seen = 1) and not(luna_message_seen))) 
+            Are you sure? There are unread messages from Luna @lunan0va.
+            *choice
+                #Yes, don't read the messages.
+                    *goto montage1_end
+                #No, go back.
+                    *goto montage_1
         *goto montage1_end
 
 *label luna_1_1

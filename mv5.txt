@@ -169,6 +169,7 @@ Which blogs would you like to read?
 *choice
     *disable_reuse *selectable_if (luna_blocked = false) #@lunan0va
         @lunan0va has been deactivated. There is no user with that URL.
+        *set read_count + 1
         *goto montage_1
     *if ((luna_blocked = false) and (knows_luna_secret)) #@icemoongirl @{(luna_ch5_seen=1) (read)|}
         *set read_count + 1
@@ -184,6 +185,7 @@ Which blogs would you like to read?
         *gotoref "nebu_1_${nebu_prog}"
     *disable_reuse *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch5_seen=1) (read)|}
         @apocalypse-hoarder has been deactivated. There is no user with that URL.
+        *set read_count + 1
         *goto montage_1
     *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch5_seen=1) (read)|}
         *set read_count + 1
@@ -204,9 +206,8 @@ Which blogs would you like to read?
     *if ((claire_blocked = false) and ((claire_trust >= 1) and (claire_blue >= 30))) #Message Claire.
         *set has_chatted true
         *gotoref claire_message_ref
-    *if (read_count > 0) #Stop looking at blogs.
+    *if (read_count > 1) #Stop looking at blogs.
         *goto montage1_end
-*comment TODO: message claire and luna
 
 *label luna_1_1
 *set luna_prog 1
