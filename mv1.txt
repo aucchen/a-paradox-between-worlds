@@ -2758,7 +2758,7 @@ You already know what the story is going to be about; you just spent an hour ima
 *choice
     *disable_reuse #Wait, is that what'll happen after the portal?
         *goto fanfiction_portal
-    #What ships will the story have?
+    *disable_reuse #What ships will the story have?
         *goto fanfiction_ships
     #Just start writing.
         *goto fanfiction_writing
