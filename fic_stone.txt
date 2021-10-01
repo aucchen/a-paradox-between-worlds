@@ -664,7 +664,7 @@ You also see that Claire has followed you. They're probably by far your most pop
 Do you want to talk more to Claire about anything?
 
 *choice
-    #Talk about Nebulaverse stuff? Compliment her fics?
+    #Talk about Nebulaverse stuff? Compliment their fics?
         *set claire_blue %+ 3
         @you: I really enjoy your stories...
         

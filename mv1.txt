@@ -360,6 +360,9 @@ Wait... by what name does she call you?
           #Enter your own
             Enter your name:
             *input_text handle
+  #Just call me y/n.
+      [Okay, y/n.]
+      *set handle "y/n"
   #[A/N: Skip all character creation steps and randomly generate a character.]
     *gosub_scene random_character_gen
     *if handle = ""
@@ -712,7 +715,7 @@ And which pairing is your favorite ship?
 
 *fake_choice
     #Brunova - Bruno/Gali (the most popular ship in the fandom)
-        Brunova is probably the most popular ship in the fandom, so it's a safe choice. There are hundreds if not thousands of blogs and fic authors devoted solely to this ship to the exclusion of anything else in the Nebulaverse. Of course it has its refractors, but they are mostly marginal.
+        Brunova is probably the most popular ship in the fandom, so it's a safe choice. There are hundreds if not thousands of blogs and fic authors devoted solely to this ship to the exclusion of anything else in the Nebulaverse. Of course it has its detractors, but they are mostly marginal.
         *set top_ship "brunova"
         *set brunova + 10
     #Astrapella - Astra/Capella
@@ -2776,7 +2779,7 @@ Stories need ships; relationships between fictional characters (or non-fictional
 
 *choice
     #Brunova
-        Brunova is probably the most popular ship in the fandom, so it's a safe choice. There are hundreds if not thousands of blogs and fic authors devoted solely to this ship to the exclusion of anything else in the Nebulaverse. Of course it has its refractors, but they are mostly marginal. Claire is one of the biggest writers for this ship, and Lux is a writer and fan. Sofia has also written for Brunova.
+        Brunova is probably the most popular ship in the fandom, so it's a safe choice. There are hundreds if not thousands of blogs and fic authors devoted solely to this ship to the exclusion of anything else in the Nebulaverse. Of course it has its detractors, but they are mostly marginal. Claire is one of the biggest writers for this ship, and Lux is a writer and fan. Sofia has also written for Brunova.
 
         *if (protag_cis_girl or protag_trans_girl)
             Making Gali a girl in this story might be viewed somewhat negatively, as if she suddenly became a Mary Sue. Some people might uncharitably call it homophobic.

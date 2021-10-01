@@ -646,14 +646,21 @@ There have been a lot of messages since you were last here.
 
                 @noncanonical: My partner and I have been together for 20 years. We have 4 kids, and our kids went from having two moms to having two dads. We've literally been through all the letters in LGBT. It used to be illegal for us to have a family in the way we do.
 
-                @noncanonical: This isn't to tell you how hard we've had it. It's to tell you that things change. I could talk about the ordeals we've faced. Maybe you've faced some different things.
+                @noncanonical: This isn't to tell you how hard we've had it. It's to tell you that things change.
 
-                @noncanonical: I know sometimes it's hard. It's been hard. I've felt hopeless too. I can't tell you that things will get better, because I don't know you, and I can never know what it's like to be you. But I can tell you that things will be different. The world will be different. And you will be different.
+                @noncanonical: Most of the time, our battles don't have clean, satisfying endings. The news cycle just moves on, and those of us who were affected are just left picking up the pieces.
+
+                @noncanonical: There isn't usually a clean-cut victory or a clean-cut defeat. It's pretty rare that we ever see a climax or catharsis in our struggles, not just LGBT-related but with politics or even life in general.
+
+                @noncanonical: Things happen, and we move on. Life goes on. We eventually have more important things to do and to think about. 
+
+                @noncanonical: But even if we don't realize it, things are changing. Things are slowly and imperceptibly changing. It's not until we look back that we finally notice how much we've changed, how much the world around us have changed.
+
+                @noncanonical: I believe that a better world is coming, and I hope that we'll all live to see it.
 
                 @icemoongirl: wow, thanks dad.
 
                 @noncanonical: Please don't call me that. You don't know me that well.
-
                 *temp has_hearts false
                 *label annc_convo_options
                 *choice
