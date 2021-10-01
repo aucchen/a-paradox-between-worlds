@@ -36,7 +36,7 @@ Where are you?
     There is a dank, musty odor. You do not notice any ventilation systems in the room; are you going to suffocate in here?
 
 *if taste
-    It's the second time you've had the taste of cherries in your mouth. Is the taste simply universally associated with multiversal travel?
+    It's the second time you've had the taste of cherries in your mouth. Is the taste always associated with multiversal travel?
 
 *if touch
     The floor is freezing to the touch. When you move to your feet, you feel lighter than before, a sign of either artificial gravity or a different planet. You push at the door, to no avail.
@@ -425,7 +425,7 @@ You fall through your chair, through the bulkheads, out of the spaceship. You fa
 
 *page_break You find yourself in a void...
 
-You find yourself in a void, an empty space of pure blackness devoid of light. Then, as if a lightbulb had turned on, a patch of illumination projects from the ceiling. You see Astra and Capella striding into the light, joining you. They are wearing the same school uniforms that they had on when you last met.
+You find yourself in a void, an empty space of pure blackness devoid of light. Then, as if a lightbulb had turned on, a patch of illumination projects from above. You see Astra and Capella striding into the light, joining you. They are wearing the same school uniforms that they had on when you last met.
 
 "So where were you?" asks Astra.
 
@@ -806,9 +806,9 @@ The conversation dies down.
 
                 @nebulascribbler: With fanfic you can write quickly by just putting down everything you think of, without filtering yourself.
 
-                @nebulascribbler: The key is to just put words down on paper. Or on the silicon, as it may be. Quantity comes first. Then you can edit it and make it actually good.
+                @nebulascribbler: The key is to just put words down on paper. Or on the keyboard, as it may be. Quantity comes first. You can worry about quality when you edit.
                 *goto sofia_msg_choices
-            #Just look at other messages.
+            #Look at other messages.
                 *goto fic_messages
     #Look at other messages.
         *goto fic_messages
