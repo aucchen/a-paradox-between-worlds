@@ -560,7 +560,7 @@ ${brun_1_5_notes} notes
 
 [b]@shadow-protectrix posted at 9:11 PM.[/b]
 
-I won't lie, this has been a difficult time for us. There's been a number of cancellations for Nebulacon. At this point I'm not sure if we will be able to bring the full show that we promised. I truly apologize if that's something you've been looking forward to.
+I won't lie, this has been a difficult time for us. There've been a number of cancellations for Nebulacon. At this point I'm not sure if we will be able to bring the full show that we promised. I truly apologize if that's something you've been looking forward to.
 
 Anyway, in totally unrelated news, I'm working on the next chapter of Mars, Bringer of War. It should be out soon.
 
@@ -1551,7 +1551,7 @@ ${shad_1_5_notes} notes
         @nebulascribbler: What should we have ${em} do :P
         
         
-        @shadow-protectrix *shrug* I don't know... we'll figure something out.
+        @shadow-protectrix: *shrug* I don't know... we'll figure something out.
 
         @nebulascribbler: Yeah, thanks for the offer!
 
@@ -1643,13 +1643,19 @@ Sofia has sent you some private messages:
 @nebulascribbler: But at this juncture, we need changes.
 
 *choice
+    #What kind of changes?
+        @you: what knd of changes?
+
+        @nebulascribbler: Allow me to explain.
+
+        *goto sofia_explanation
     #So you want to take NebulaCon away from Claire?
         @you: so... you want to take over nebulacon away from claire?
 
         @nebulascribbler: That's a rather blunt way to put it.
 
         *label sofia_explanation
-        @nebulascribbler: I've tried to convince them privately to take a step back, at the very least let other people be the figureheads behind NebulaCon. I could take the fall, even. But they won't relent. They really want to be the person at the head of this.
+        @nebulascribbler: I've tried to convince Claire privately to take a step back, or at the very least let other people be the figureheads behind NebulaCon. I could take the fall, even. But they won't relent. They really want to be the person at the head of this.
         
         
         @nebulascribbler: But there's a conflict between their interests and the interests of the Con, and really the fandom as a whole.
@@ -1748,6 +1754,7 @@ Sofia has sent you some private messages:
         @you: this is sort of too complicated for me lol
 
         @nebulascribbler: Then allow me to explain.
+
         *goto sofia_explanation
 
 

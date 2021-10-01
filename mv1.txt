@@ -360,9 +360,9 @@ Wait... by what name does she call you?
           #Enter your own
             Enter your name:
             *input_text handle
-  #Just call me y/n.
-      [Okay, y/n.]
-      *set handle "y/n"
+            *comment  #Just call me y/n.
+            *comment      [Okay, y/n.]
+            *comment      *set handle "y/n"
   #[A/N: Skip all character creation steps and randomly generate a character.]
     *gosub_scene random_character_gen
     *if handle = ""
@@ -378,9 +378,9 @@ The dot next to her icon is still green, but she is no longer typing. You are al
 
 *page_break The Nebulaverse...
 
-The Nebulaverse is a vast and... nebulous place. Well, not exactly; it's actually quite well specified, with ample worldbuilding. It started with a series of young adult novels by author G. T. Macmillan, but it's taken a life of its own. The series was adapted into movies, which have become a cultural phenomenon even among people who haven't read the books.
+The Nebulaverse is a vast and... nebulous place. Well, not exactly; it's actually a well-specified science-fantasy world, a crystalline edifice of worldbuilding crafted by the almighty author known as G. T. Macmillan. It started with a series of young adult novels and snowballed in popularity with the film adaptations, until it has become an omnipresent cultural phenomenon. But not many people ever delve beyond the bounds of Macmillan's canon, like you or Luna have done.
 
-[A/N: For more information on the Nebulaverse, see the Stats page.]
+[A/N: For more information on the Nebulaverse, see "Nebulaverse Background" on the Stats page.]
 
 It is past midnight, far past your bedtime, and you find yourself...
 
@@ -711,7 +711,7 @@ That's awesome! Most Nebulaverse blogs have a favorite character, whom they rebl
         *set tycho + 3
 
 *label ship_choice
-And which pairing is your favorite ship?
+And which romantic pairing is your favorite ship?
 
 *fake_choice
     #Brunova - Bruno/Gali (the most popular ship in the fandom)
@@ -733,6 +733,8 @@ And which pairing is your favorite ship?
     #Something else?
         There are plenty of ships that pass in the night, smaller ships with fewer fans. Given the size of the fandom, however, almost every possible pairing has copious amounts of content. 
         *comment this is a lie. if you don't pick brunova or astrapella you're screwed if you want to grow followers.
+    #None (I'm not into shipping at all).
+        It's okay if you're not into shipping, but shipping comprises a great deal of fandom engagement, so there's a chance you'll be missing out. But you're not alone; there are all kinds of people in the Nebulaverse fandom.
 
 Perhaps more important is your alignment within the Nebulaverse. Many of those in the Nebulaverse fandom classify themselves along Elements and Roles. There are five fundamental elements in the Nebulaverse, which also correspond to alignments associated with each person. A mage's element, called a persona, relates to their powers as well as their personality.
 
@@ -771,7 +773,7 @@ What element do you think describes you best? If you don't know, consider taking
                 *goto persona_choice
     #Wind: gas giants, solar winds, electromagnetism; discovery, novelty, change
         *set persona "wind"
-        Wind does not conform to the world around it. Instead it is associated with realizing one's own ideas for the world, with change and dynamicism and visionary thought. It is a rather popular element, as it is the element of Capella Taikong, the protagonist's canonical(?) love interest and most popular female character. Wind magic includes the literal manipulation of gases and plasmas, as well as control over phase changes, movement, and transformations.
+        Wind does not conform to the world around it. Instead it is associated with realizing one's own ideas for the world, with change and dynamism and visionary thought. It is a rather popular element, as it is the element of Capella Taikong, the protagonist's canonical(?) love interest and most popular female character. Wind magic includes the literal manipulation of gases and plasmas, as well as control over phase changes, movement, and transformations.
         *choice
             #Yes, that's me!
                 *goto role_choice
@@ -797,12 +799,12 @@ And what is your role? If you don't know, you can take a quiz at
 *choice
     #Augur: the scientist
         *set role "augur"
-        The Augur is always a popular role among the nerds who comprise the Nebulaverse fandom. Augurs are supposed to be the scientists and theorycrafters, the people who come up with ways of making sense of their element. Their role is only to interpret the world, not to change it.
+        The Augur is always a popular role among the nerds who comprise the Nebulaverse fandom. Augurs are supposed to be the scientists and theorists, the people who come up with ways of making sense of their element. Their role is only to interpret the world, not to change it.
         
         *if (persona = "metal")
             As an Augur of Metal, you are essentially the "nerd of nerds". The Augur of Metal is often stereotyped as a mad scientist, a creature of pure intellect completely detached from physical reality, whose only rule is their own sense of rationality. You might be brilliant, or you might be something of a kook, or both.
         *elseif (persona = "light")
-            The Augurs of Light are the poets and artists. Often ensconsed in bubbles of their own creation, they turn their complex inner worlds into works for external consumption. Augurs of Light are the most popular class in the fandom, according to at least one survey.
+            The Augurs of Light are the poets and artists. Often ensconced in bubbles of their own creation, they turn their complex inner worlds into works for external consumption. Augurs of Light are the most popular class in the fandom, according to at least one survey.
         *elseif (persona = "stone")
             Augurs of Stone are students of humanity. Their motivation is to try to understand the people around them, through either formal psychology or more informal study. They are deeply empathetic at best, but they can also use their skills for manipulation.
         *elseif (persona = "wind")
