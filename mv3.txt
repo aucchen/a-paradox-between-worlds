@@ -546,7 +546,7 @@ ${brun_1_5_notes} notes
         *set brun_1_5_notes + 1
         *set discourse %+ 3
         *set lux_blue %+ 3
-        *goto montage_1
+        *goto brun_1_5
     #Prev post.
         *goto brun_1_4
     #Look at another blog.
