@@ -1593,7 +1593,7 @@ ${shad_1_3_notes} notes
 
 Anonymous asked: just wondering, have you read lunanova's trans girl gali theory?
 
-No, I haven't. It's not really up my alley so to speak, and I have different thoughts about Gali anyway. But ${shad_1_4_theyre} perfectly entitled to ${shad_1_4_their} thoughts.
+No, I haven't. It's not really up my alley so to speak, and I have different thoughts about Gali anyway. But they're perfectly entitled to their thoughts.
 
 Tags: #ask, #anonymous
 
@@ -1610,7 +1610,7 @@ ${shad_1_4_notes} notes
         *set shad_1_4_notes + 1
         *set luna_blue %+ 4
         *set claire_green %+ 5
-        You comment that Luna only uses she/her pronouns. Claire does not respond, but you see that they have changed the post.
+        You comment that Luna only uses she/her pronouns. Claire does not respond for now.
         *goto shad_1_4
     *disable_reuse #Reblog 🔁
         *if rx
