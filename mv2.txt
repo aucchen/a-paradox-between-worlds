@@ -224,6 +224,8 @@ Content warning: transphobia
         *goto luna_1_1
 
 *label luna_1_2_post
+[b]@lunan0va reblogged from @radical-astra at 7:55 PM. OP: @lunan0va[/b]
+
 So, I've spent a long time researching this theory... Please read it and tell me what you think!
 
 Title: Gali Nova is transfem-coded and here's why:
@@ -1631,6 +1633,8 @@ This is the chat group that Luna invited you into.
 
 @you: hi laura...
 
+*comment TODO: expand the chat
+
 The chat seems to have died down.
 
 *choice
@@ -1738,6 +1742,8 @@ Bruno gave a salute and a wry smile as he got back on his feet. "I knew you had 
 *temp trap_2_3_notes 141
 *temp trap_2_4_notes 232
 *temp trap_2_5_notes 7
+
+*temp mcm_1_notes 8932
 
 *temp luna_prog 1
 *temp brun_prog 1
@@ -3042,6 +3048,8 @@ A number of individuals have asked me about a post on this website. Normally the
 A post has recently been brought to my attention that describes Gali Nova as a "transwoman". First of all, the theory that he was somehow intended to be a transwoman is preposterous. I think any rational individual can see that. However, the presence of posts such as these indicates a deeper layer of pathological thinking among some of the young people on this site. It is exemplary of a certain postmodern, degenerated conception of "gender" that has gained a horrifying foothold among the populace on this website, and young people at large. Without exaggeration, this ideology will, if left unchecked, lead to the destruction of all that feminism has achieved over the past century.
 
 (Read more)
+
+${mcm_1_notes}
 
 *choice
     #Look at another blog.

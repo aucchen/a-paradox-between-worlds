@@ -360,9 +360,8 @@ Wait... by what name does she call you?
           #Enter your own
             Enter your name:
             *input_text handle
-            *comment  #Just call me y/n.
-            *comment      [Okay, y/n.]
-            *comment      *set handle "y/n"
+  #Just call me y/n.
+    *set handle "y/n"
   #[A/N: Skip all character creation steps and randomly generate a character.]
     *gosub_scene random_character_gen
     *if handle = ""
@@ -989,9 +988,20 @@ Anyway, your parents are asleep, and you're probably done with homework. So what
 *temp apoc_prog 1
 *temp trap_prog 1
 
+*temp luna_message_read false
+*temp luna_sent_message (luna_blue >= 20)
+*temp luna_message_ref "luna_message_1"
+*temp annc_chat_ref "annc_chat_1"
+
+*comment only track posts that have callbacks?
+*temp luna_hc_interacted false
+
 Online weather report: vibes steady. Chance of callouts: <1%. The blogging equivalent of a bright, cloudless summer day.
 
 *label montage_1
+
+*if (luna_sent_message and not(luna_message_read))
+    Luna @lunan0va has sent you a message.
 
 Which blogs would you like to read?
 
@@ -1014,6 +1024,10 @@ Which blogs would you like to read?
     *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch1_seen=1) (read)|}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
+    *disable_reuse *if (luna_sent_message) #See Luna's message.
+        *gotoref luna_message_ref
+    *if (in_luna_chat) #See Luna's groupchat.
+        *gotoref annc_chat_ref
     *if (read_count > 1) #Stop looking at blogs.
         *goto montage1_end
 
@@ -2285,7 +2299,7 @@ ${trap_1_4_notes} notes
 
 [The image is a selfie taken at a mirror, of a young woman holding a phone in one hand and doing the peace sign with the other hand. She has long black hair partly covering the side of her face, and wears glasses with a rather severe expression. She wears a flannel jacket over a black dress and jeans.]
 
-so at the airport i said to press the blue button and they still pressed the pink button lol. this means i pass right? got genital groped but at least they were polite about it. 
+so at the airport i said to press the blue button and they still pressed the pink button lol. this means i pass right? ofc i got genital groped but at least they were polite about it. 
 
 Tags: #gpoy, #girlslikeus, #yes sorry this is supposed to be a nebulaverse blog, #yes i am a slut for positive validation, #this is okay to reblog but, #for any p*rn blogs: go away
 
@@ -2311,6 +2325,90 @@ ${trap_1_5_notes} notes
     #Look at another blog.
         *goto montage_1
 
+*label luna_message_1
+@lunan0va: hey ${handle}! i'm making a new groupchat to talk about nebulaverse stuff... do you wanna join?
+
+*choice
+    #Sure, I'll join!
+        *set luna_message_ref "luna_message_2"
+        *set in_luna_chat true
+        *set luna_blue %+ 6
+        *label luna_message_2
+        @you: okay, i'll join.
+
+        @lunan0va: great! thank you so much!!! here's the link: [link]
+        *choice
+            #Go back.
+                *goto montage_1
+    #Nah, I'd rather not join.
+        *set luna_message_ref "luna_message_3"
+        *set luna_green %+ 3
+        *label luna_message_3
+        @you: sorry, i'd rather not...
+
+        @lunan0va: that's okay! you don't have to!
+        *choice
+            #Go back.
+                *goto montage_1
+    #Ignore the message for now. Look at something else.
+        *goto montage_1
+
+*label annc_chat_1
+
+[b]Anti-Nebulaverse Nebulaverse Club[/b]
+
+@lunan0va: hey karla!! welcome to the anti-nebulaverse nebulaverse club!
+
+@trappedinspace: Thanks for inviting me. But like, I'm an old lady, so, I'm not sure if I belong here.
+
+@lunan0va: no, why tf wouldnt you belong here?? you're awesome!
+
+@trappedinspace: Sorry if this sounds weird, but a lot of times there are boundary issues when adults interact in spaces with minors.
+
+@lunan0va: come on, you're literally just 5 years older than me. it's fine. you're fine!
+
+@trappedinspace: Okay, thanks, but like, you should be careful of strangers on the internet.
+
+@lunan0va: dude. please. i've seen you dump all your personal trauma in the tags. on your public blog.
+
+@trappedinspace: :/
+
+@trappedinspace: Okay I feel bad now because, like, kids shouldn't be exposed to that stuff. Maybe no one should.
+
+@lunan0va: oh hey @${username}! welcome!
+
+*choice
+    #I'm glad to be here!
+        @you: i'm glad to be here!
+
+        @lunan0va: i'm glad you're here too!
+
+        *goto annc_chat_2
+    #Hi Luna!
+        @you: hi luna!
+
+        @lunan0va: hi ${handle}!
+
+        *label annc_chat_2
+        *set annc_chat_ref "annc_chat_2"
+        @trappedinspace: Hi @${username}.
+        
+        *comment lmao this is certainly a hack
+        *if luna_1_5_notes = 342
+            @lunan0va: btw ${handle} have you seen my trans girl gali hc?
+
+            @lunan0va: if not, it'd be nice if you looked at it...
+        *else
+            @lunan0va: also ${handle} i saw that you liked my trans girl gali hc...
+
+            @lunan0va: thanks i guess?
+
+            *comment TODO: ??? how to deal with this...
+        *choice
+            #Look at something else.
+                *goto montage_1
+    #Look at something else for now.
+        *goto montage_1
 
 
 *label montage1_end

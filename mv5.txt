@@ -259,7 +259,7 @@ ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 *set luna_ch5_seen 1
 *set luna_prog 2
 
-[b]@icemoongirl reblogged from @capellasgf at 6:40 PM. OP @summersnow[/b]
+[b]@icemoongirl reblogged from @capellasgf at 6:40 PM. OP: @summersnow[/b]
 
 [illustration of Capella and Astra laying on their backs on the top of a tall building. The building is surrounded by a field of stars. The two girls are holding hands and smiling. Astra has an arm raised, pointing out something in the sky.]
 
