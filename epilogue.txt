@@ -1,0 +1,482 @@
+[b]Coda: 6 months later[/b]
+
+[i]"I think we deserve a soft epilogue, my love. We are good people and we've suffered enough."[/i]
+
+- Seventy Years of Sleep, nikka ursula
+
+*page_break
+
+*temp luna_1_prog 1
+*temp brun_1_prog 1
+*temp shad_1_prog 1
+*temp nebu_1_prog 1
+*temp apoc_1_prog 1
+*temp trap_1_prog 1
+
+*temp luna_1_1_notes 1
+*temp luna_1_2_notes 1
+
+*temp brun_1_1_notes 1
+*temp brun_1_2_notes 1
+
+*temp shad_1_1_notes 1
+*temp shad_1_2_notes 1
+
+*temp nebu_1_1_notes 1
+*temp nebu_1_2_notes 1
+
+*temp trap_1_1_notes 1
+*temp trap_1_2_notes 1
+
+*temp luna_message_ref "luna_message_1"
+*temp lux_message_ref "lux_message_1"
+*temp claire_message_ref "claire_message_1"
+*temp sofia_message_ref "sofia_message_1"
+*temp karla_message_ref "karla_message_1"
+
+*temp has_luna_message luna_end
+*temp has_lux_message lux_end
+*temp has_claire_message claire_end
+*temp has_sofia_message sofia_end
+*temp has_karla_message karla_end
+
+*temp luna_message_read false
+*temp lux_message_read false
+*temp claire_message_read false
+*temp sofia_message_read false
+*temp karla_message_read false
+
+[b]Online - Montage[/b]
+
+Online weather report: calm skies and empty blogs. The Nebulaverse fandom as it had existed is no more. Dead blogs lay like skeletal carcasses, and broken links litter the scene like wreckages. Many people have simply moved on, either to other fandoms beyond the Nebulaverse, or away from this website altogether. The tide of art and fic have continued, but with a more somber, less triumphant tenor. There are still blogs posting new and ever more outrageous discourses, but you do not follow them.
+
+*comment TODO: set up stuff
+
+*label montage_1
+
+*if (has_luna_message and not(luna_message_read))
+    There's a message from Luna @icemoongirl.
+
+*if (has_lux_message and not(lux_message_read))
+    There's a message from Lux @brunova-official.
+
+*if (has_claire_message and not(claire_message_read))
+    There's a message from Claire @shadow-protectrix.
+
+*if (has_sofia_message and not(sofia_message_read))
+    There's a message from a user named @pistis--sofia. Could it be Sofia @nebulascribbler, back from the dead?
+
+*if (has_karla_message and not(karla_message_read))
+    There's a message from Karla @trappedinspace.
+
+Which blogs would you like to read?
+
+*choice
+    *selectable_if (luna_end) #@icemoongirl
+        *set read_count + 1
+        *gotoref "luna_1_${luna_prog}"
+    *selectable_if (lux_end) #@brunova-official
+        *set read_count + 1
+        *gotoref "brun_1_${brun_prog}"
+    *selectable_if (claire_end) #@shadow-protectrix
+        *set read_count + 1
+        *gotoref "shad_1_${shad_prog}"
+    *if (sofia_message_read) #@pistis--sofia
+        *set read_count + 1
+        *gotoref "nebu_1_${nebu_prog}"
+    *selectable_if (karla_end) #@trappedinspace
+        *set read_count + 1
+        *gotoref "trap_1_${trap_prog}"
+    *if (has_claire_message) #See Claire's groupchat.
+        *gotoref claire_message_ref
+    *if (has_luna_message) #See Luna's message.
+        *gotoref luna_message_ref
+    *if (has_karla_message) #See Karla's message.
+        *gotoref karla_message_ref
+    *if (has_sofia_message) #See Sofia's message.
+        *gotoref sofia_message_ref
+    *if (read_count > 0) #Stop looking at blogs.
+        *goto montage1_end
+
+*label luna_1_1
+*set luna_prog 1
+[b]${luna_bio}[/b]
+
+[b]@icemoongirl posted[/b]
+
+SAT is done and my scores kind of suck! Anyway, I'm applying to colleges now! The place i'm looking at is at least 100 miles away and has in-state tuition and isn't *that* selective lol
+
+Tags: #lunar specks
+
+${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
+
+*choice
+    *disable_reuse #Like ❤️
+        *set luna_interact + 1
+        *set luna_1_1_notes + 1
+        *set luna_blue %+ 5
+        *goto luna_1_1
+    *disable_reuse #Reblog 🔁
+        *set luna_interact + 1
+        *set luna_green %+ 5
+        *set luna_1_1_notes + 1
+        *goto luna_1_1
+    #Next post.
+        *goto luna_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label luna_1_2
+*set luna_ch5_seen 1
+*set luna_prog 2
+
+[b]@icemoongirl posted[/b]
+
+Idk why but I feel like my parents are more... careful? around me? Like they're avoiding me or something. Especially my dad. It's honestly kind of creepy. We used to have conversations! Sure some of them degenerated into yelling sessions but at least I could tell how they felt! Of course maybe dad had an actual change of heart but nothing in my experience makes me believe he can change.
+
+Is this because of what my siblings said to them? Did they threaten my parents? Is my dad living in fear of CPS right now? Lmao, as if CPS in Texas would ever help a trans kid instead of stealing them from accepting parents.
+
+Anyway, I can't wait to turn 18 and get out of this place.
+
+Tags: #lunar specks
+
+${luna_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like ❤️
+        *set luna_interact + 1
+        *set luna_1_2_notes + 1
+        *set luna_blue %+ 1
+        *goto luna_1_2
+    *disable_reuse #Reblog 🔁
+        *set luna_interact + 1
+        *set luna_blue %+ 2
+        *set luna_1_2_notes + 1
+        *goto luna_1_2
+    #Prev post.
+        *goto luna_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label brun_1_1
+*set brun_prog 1
+[b]${lux_bio}[/b]
+
+[b]@brunova-official posted at 7:00 PM[/b]
+
+
+Tags: #capitalism is the real demiurge
+
+${brun_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like ❤️
+        *set brun_1_1_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_1
+    *disable_reuse #Reblog 🔁
+        *set lux_interact + 1
+        *set lux_blue %+ 5
+        *set brun_1_1_notes + 1
+        *goto brun_1_1
+    #Next post.
+        *goto brun_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label brun_1_2
+*set brun_prog 2
+[b]@brunova-official posted[/b]
+
+Tags:
+
+${brun_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like ❤️
+        *set brun_1_2_notes + 1
+        *set lux_blue %+ 2
+        *goto brun_1_2
+    *disable_reuse #Reblog 🔁
+        *set lux_interact + 1
+        *set lux_blue %+ 2
+        *set brun_1_2_notes + 1
+        *goto brun_1_2
+    #Next post.
+        *goto brun_1_3
+    #Prev post.
+        *goto brun_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label shad_1_1
+*set claire_seen true
+*set shad_prog 1
+[b]${claire_bio}[/b]
+
+[b]@shadow-protectrix posted at 9:11 PM.[/b]
+
+Tags: #claire speaks
+
+${shad_1_1_notes} notes
+
+*choice
+    *disable_reuse #Like ❤️
+        *set claire_blue %+ 5
+        *set shad_1_1_notes + 1
+        *goto shad_1_1
+    *disable_reuse #Reblog 🔁
+        *set claire_interact + 1
+        *set shad_1_1_notes + 1
+        *set claire_blue %+ 5
+        *set karla_green %+ 1
+        *goto shad_1_1
+    #Next post
+        *goto shad_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label shad_1_2
+*set shad_prog 2
+*set claire_ch5_seen 1
+[b]@shadow-protectrix posted at 8:00 PM[/b]
+
+${shad_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like ❤️
+        *set shad_1_2_notes + 1
+        *set claire_blue %+ 2
+        *goto shad_1_2
+    *disable_reuse #Reblog 🔁
+        *set claire_interact + 1
+        *set shad_1_2_notes + 1
+        *set claire_blue %+ 2
+        *goto shad_1_2
+    #Prev post.
+        *goto shad_1_1
+    #Look at another blog.
+        *goto montage_1
+
+
+*label nebu_1_1
+*set nebu_prog 1
+[b]${sofia_bio}[/b]
+
+[b]@pistis--sofia posted at 5:00 PM[/b]
+
+
+${nebu_1_1_notes} notes
+
+Tags: #sofia speaks
+
+*choice
+    *disable_reuse #Like ❤️
+        *set nebu_1_1_notes + 1
+        *goto nebu_1_1
+    *disable_reuse #Reblog 🔁
+        *set sofia_interact + 1
+        *set nebu_1_1_notes + 1
+        *goto nebu_1_1
+    #Next post.
+        *goto nebu_1_2
+    #Look at another blog.
+        *goto montage_1
+
+
+*label nebu_1_2
+*set nebu_prog 2
+*set sofia_ch5_seen 1
+[b]@pistis--sofia posted[/b]
+
+
+
+${nebu_1_2_notes} notes
+
+*choice
+    *disable_reuse #Like ❤️
+        *set nebu_1_2_notes + 1
+        *set sofia_blue %+ 2
+        *goto nebu_1_2
+    *disable_reuse #Reblog 🔁
+        *set sofia_blue %+ 2
+        *set sofia_interact + 1
+        *set nebu_1_2_notes + 1
+        *goto nebu_1_2
+    #Prev post.
+        *goto nebu_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_1
+*set trap_prog 1
+[b]${karla_bio}[/b]
+
+[b]@trappedinspace posted[/b]
+
+
+${trap_1_1_notes} Notes
+
+*choice
+    *disable_reuse #Like ❤️
+        *set trap_1_1_notes + 1
+        *set karla_blue %+ 5
+        *goto trap_1_1
+    *disable_reuse #Reblog 🔁
+        *set karla_interact + 1
+        *set trap_1_1_notes + 1
+        *goto trap_1_1
+    #Next post.
+        *goto trap_1_2
+    #Look at another blog.
+        *goto montage_1
+
+*label trap_1_2
+*set trap_prog 2
+[b]@trappedinspace posted[/b]
+
+
+
+${trap_1_2_notes} Notes
+
+*choice
+    *disable_reuse #Like ❤️
+        *set trap_1_2_notes + 1
+        *set karla_blue %+ 5
+        *goto trap_1_2
+    *disable_reuse #Reblog 🔁
+        *set karla_interact + 1
+        *set trap_1_2_notes + 1
+        *goto trap_1_2
+    #Prev post.
+        *goto trap_1_1
+    #Look at another blog.
+        *goto montage_1
+
+*label luna_message_1
+
+@icemoongirl: hey ${handle}
+
+@icemoongirl: personal question: you're an incoming senior too, right? What are you doing for college apps?
+
+*choice
+    #I'm not going to college.
+        @you: i'm probably not going to college.
+
+        @icemoongirl: okay, that's cool!
+
+        @icemoongirl: but i need some help with my college apps and i was wondering if you could still help?
+
+        *goto luna_college_help
+    #I'm going to a community college.
+        @you: i'm probably going to community college.
+
+        @icemoongirl: okay, cool!
+
+        @icemoongirl: i'm applying to 4-year colleges and i was wondering if you could help...
+
+        *goto luna_college_help
+    #Yes, I'm applying mostly to local schools.
+        @you: i'm applying to mostly local schools.
+
+        @icemoongirl: okay, cool! me too, sort of.
+
+        @icemoongirl: so i was wondering if you could help me out...
+
+        *goto luna_college_help
+    #Yes, I'm applying to the top schools.
+        @you: i'm applying to all the top schools.
+
+        @icemoongirl: cool! then you must be really good at school...
+
+        @you: i don't know... maybe, i guess?
+
+        @icemoongirl: i hope this isn't too much to ask, but i need some help...
+
+        *label luna_college_help
+        *set luna_message_ref "luna_college_help"
+
+        @icemoongirl: i have to write an essay for a scholarship, and i've decided, what better topic to write about than the nebulaverse?
+
+        @icemoongirl: cursed, i know.
+
+        @icemoongirl: the topic is the same as one of the common app topics, asking about your background or interests.
+
+        @icemoongirl: so, i've written an essay about how the nebulaverse fandom affected me, and how i ended up disconnecting from the fandom but not from the friends i made.
+
+        @icemoongirl: i was wondering if you'd be willing to look through it?
+
+        @icemoongirl: ofc you don't have to, but i'd be really glad if you read it and tell me what you think!
+
+        *label luna_essay_will_read
+        *choice
+            *disable_reuse #Are you sure you should write about something so personal?
+                @you: are you sure you should write about something so personal?
+
+                @icemoongirl: haha i'm not mentioning that my headcanon essay was kind of the whole impetus for the whole thing, or anything about my place in the drama.
+
+                @icemoongirl: i'm not even mentioning that i'm trans, not explicitly at least. a college essay isn't a coming out essay lol
+
+                @icemoongirl: maybe i will write a detailed history of the gtm/nebulaverse affair one day. i have the notes already.
+                *goto luna_essay_will_read
+            *disable_reuse #Am I mentioned in it?
+                @you: am i mentioned in that essay? :p
+
+                @icemoongirl: um... not by name or anything like that
+
+                @icemoongirl: you're... alluded to, i guess.
+                *goto luna_essay_will_read
+            *disable_reuse #Sure, I'll read it!
+                *set luna_message_ref "luna_essay_read"
+                *label luna_essay_read
+                @you: sure, i'll read it!
+
+                @icemoongirl: thank you so much!!! here's the link: [link to doc]
+
+                @icemoongirl: tell me if it's terrible!
+                *goto montage_1
+            *disable_reuse #I don't have time right now, get back to me on that.
+                *set luna_message_ref "luna_essay_not_read"
+                *label luna_essay_not_read
+                @you: sorry, i don't have time right now. maybe later?
+
+                @icemoongirl: that's okay! it's not due for a month. I'm just getting an early start for once lol
+
+                @icemoongirl: anyway uh... see you soon 💙️
+                *goto montage_1
+
+*comment TODO
+
+*goto montage_1
+
+
+
+*label sofia_message_1
+
+@pistis--sofia: Hey $!{handle}.
+
+@pistis--sofia: This is Sofia - formerly @nebulascribbler, if it isn't obvious enough already.
+
+@pistis--sofia: Do you still remember me?
+
+*choice
+    #Of course I remember you.
+        @you: of course
+
+        @pistis--sofia: Good.
+
+*comment TODO
+
+*goto montage_1
+
+
+
+*label montage1_end
+
+The story of the Shadow Nebula is over.
+
+*page_break End.
+*ending

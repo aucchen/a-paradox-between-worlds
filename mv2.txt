@@ -1587,10 +1587,9 @@ This is the chat group that Luna invited you into.
 
 *choice
     *hide_reuse #yeah...
-        *set posted_ch2_annc1 true
         *set luna_blue %+ 3
         *goto annc_chat_1_2
-    #Look at something else.
+    #Look at something else for now.
         *goto montage_1
 
 
@@ -1621,19 +1620,88 @@ This is the chat group that Luna invited you into.
         *label annc_chat_1_3_3
         @you: it's actually about quantum mechanics and how that relates to narratives...
         *goto annc_chat_1_3
-    #Look at something else.
-        *goto montage_1
 
 *label annc_chat_1_3
 *set knows_laura true
 
-@capellasgf: that sounds super cool! i'm gonna have to start reading it
+@capellasgf: that sounds super cool! I'm gonna have to start reading it
 
-@capellasgf: by the way, i'm laura! nice to meet you!
+@capellasgf: by the way, I'm Laura! Nice to meet you!
+
+*choice
+    #Hi Laura...
+        *goto annc_chat_1_4
+
+*label annc_chat_1_4
+*set annc_chat_ref "annc_chat_1_4"
 
 @you: hi laura...
 
-*comment TODO: expand the chat
+@capellasgf: okay so, I've started to read your fabric and it seems... kinda short, I guess?
+
+@capellasgf: also *fanfic why does my phone always autocorrect to fabric lol
+
+@lunan0va: actually fabric kinda makes sense! writing is like weaving together threads in order to make a story, like a fabric...
+
+@apocalypse-hoarder: woah.
+
+@capellasgf: what if universe we live in is a story, like we're living in God's fabrication...
+
+@capellasgf: *fanfiction. that was autocorrect but it really fits! As a weaver of light that just makes so much sense.
+
+@apocalypse-hoarder: maybe the universe is just god's fabric/fanfic...
+
+@lunan0va: man that just reminds me. i used to pray to god that i would one day wake up as a girl. and when that never happened i kinda didn't know if i believed in god anymore.
+
+@lunan0va: wow why did i say that. that was unnecessarily dark lmao
+
+*choice
+    #That's okay.
+        *set luna_blue %+ 4
+        *label annc_thats_okay
+        *set annc_chat_ref "annc_thats_okay"
+        @you: that's okay...
+
+        *goto luna_thanks
+    #I don't mind hearing about your life.
+        *set luna_blue %+ 4
+        *label annc_dont_mind
+        *set annc_chat_ref "annc_dont_mind"
+        @you: i don't mind hearing about your life...
+
+        *label luna_thanks
+
+        @lunan0va: thanks...
+
+        @apocalypse-hoarder: I don't mind hearing your stories either!
+    #Yeah that is pretty dark.
+        *set luna_blue %+ 3
+        *label annc_dark
+        *set annc_chat_ref "annc_dark"
+        @you: yeah that is pretty dark.
+
+        @lunan0va: yeah. sorry.
+
+        *goto annc_apoc
+    #Wait for someone else to respond.
+        *set annc_chat_ref "annc_apoc"
+        *label annc_apoc
+
+        @apocalypse-hoarder: that's okay! I don't mind hearing your stories!
+
+        @capellasgf: yeah I don't really mind either.
+
+        @lunan0va: thanks i guess...
+
+@lunan0va: sorry but i've been in a weird mood lately. not that i've never not been in a weird mood. but like, this is extra weird.
+
+@lunan0va: sorry i shouldn't talk about myself so much. i promise this isn't the luna vent channel.
+
+@lunan0va: anyway uh. i'm logging off. good night.
+
+@apocalypse-hoarder: <3
+
+@capellasgf: me too. bye.
 
 The chat seems to have died down.
 
@@ -1643,7 +1711,7 @@ The chat seems to have died down.
 
 *label montage1_end
 
-You're done reading blogs for tonight. You should probably go to bed.
+You're done reading blogs for tonight. It's time to fall back behind the Veil once more.
 
 *page_break Another day, another night...
 
@@ -1660,39 +1728,13 @@ You're done reading blogs for tonight. You should probably go to bed.
 
 [b]Universe - Canon[/b]
 
-[b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 1: The Academy of Magi[/i] by G. T. Macmillan[/b]
+[b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 4: The Complete Collection[/i], Afterword, by G. T. Macmillan[/b]
 
-"It's not so hard," Astra said. "All you have to do is concentrate."
+The Chronicles of the Shadow Nebula is not a story of heroism or hope. From the very beginning, it never was. It is a story of war and death and betrayal. It is a story of suffering and inevitability and the immutability of the laws of the universe. But more than that, it is a story of failure. Our society fails to teach young people about the inevitability and necessity of failure, and thus I have made it central to the Chronicles.
 
-But try as he might, Gali could not get the hang of wind magic. It wasn't like light magic, which was comparatively easy for him. Wind was a whole other beast. He memorized the formulae, recited them in his mind, focused on the target, and... Nothing.
+I believe that children must learn about failure, because life is inevitably a sequence of failures. They must learn what it means to live in a world that does not cater to their whims and expectations. They must learn that almost nothing will go the way of their dreams.
 
-"You can't just memorize the formulae," Capella said. She was an Augur of Wind, so this was all natural to her. "You need to understand. You need to hold the semantics in your mind, not just the syntax."
-
-It was not the first time the two girls had tried to help Gali learn the principles of using magic outside of his light-bound range. But each time, it was hopeless. He was hopeless.
-
-Gali remembered the principles of magic, passed down so assiduously from teacher to student. Magic had two ingredients: the formula, and willpower. By holding the formula in his head while concentrating, a mage can channel his inner essence to the outside world. Formulae themselves were written in their own language, but it was a language of logic. He was fine at inscribing the formulae, but the concentration part, the toll of mental energy...
-
-*page_break A breeze stirred his hair...
-
-A breeze stirred his hair, brushing a few strands past his eyes. He tried to hold the same thoughts in his mind again, repeat the mental state, but it would not come.
-
-Capella stared at him with her piercing gaze. She must have thought him a failure, he thought. What if he simply could not do it? What if he failed out of the academy and had to go back to Galilee and become a farmer?
-
-At that moment, Tycho and Bruno walked through the door of the practice room. "What are you ladies doing here?" Bruno asked.
-
-*page_break "We're practicing windbound magic"
-
-"We're practicing windbound magic," Astra replied. "Wanna join?"
-
-"Nah, it's all so basic," Bruno said.
-
-But Tycho gazed at Gali, and must have recognized the frustration in the latter's eyes. That cursed stonebound instinct. "You can do it. I know it," he said.
-
-Gali was doing all he could to avoid exploding in frustration. He was taking deep breaths and reciting the equations when suddenly, Bruno rushed towards him. Fist raised. Gali let out a deep breath. The wind hit Bruno in the chest. It knocked him off balance, and he fell on his back.
-
-Bruno gave a salute and a wry smile as he got back on his feet. "I knew you had it in you," he said. Astra looked aghast, while Capella remained expressionless.
-
-"Now, can you repeat that performance?" she asked.
+When you fall, will you learn how to pick yourself up again? Or will you keep on waiting for a savior, some miracle that sets you right?
 
 *page_break
 *label online_2
@@ -1752,6 +1794,9 @@ Bruno gave a salute and a wry smile as he got back on his feet. "I knew you had 
 *temp apoc_prog 1
 *temp trap_prog 1
 
+*temp annc_chat_ref "annc_chat_2"
+*temp writers_chat_ref "writers_chat_2"
+
 *gosub_scene calc_new_followers
 
 *gosub_scene check_blocked
@@ -1785,9 +1830,9 @@ Which blogs would you like to read?
     *if (read_count > 1) #See GTM's post that everyone's talking about.
         *goto gtm_post
     *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
-        *goto annc_chat_2
+        *gotoref annc_chat_ref
     *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
-        *goto writers_chat_2
+        *gotoref writers_chat_ref
     *if (read_count > 1) #Stop looking at blogs.
         *goto montage2_end
 
@@ -2931,7 +2976,7 @@ Reason #823 why Capella is a trans girl: ejaculates
 
 [Several screenshots of the phrase "Capella ejaculated" from various books in the Chronicles of the Shadow Nebula series, in different contexts but with context cropped out.]
 
-Tags: #nsfw, #iofjasdhfkjadljasdfkljaslkfjlkdsjafkldsfaj, #the nebulaverse made me trans part n, #though let's be honest here... this is not exclusive to tr*ns women
+Tags: #nsfw, #iofjasdhfkjadljasdfkljaslkfjlkdsjafkldsfaj, #the nebulaverse made me trans part n, #though let's be honest here... this is not exclusive to tr*ns women, #anyway ell*n*va is a t4t couple between two transfems
 
 ${trap_2_3_notes} notes
 
@@ -3061,32 +3106,63 @@ ${mcm_1_notes}
 
 @trappedinspace: Hey @lunan0va, I just saw your blog. I'm really sorry about what's happening. Are you doing okay?
 
+@apocalypse-hoarder: This shit sucks so much, huh.
+
 @lunan0va: yeah i'm fine lol
 
 @trappedinspace: If the comments are getting bad, you might want to turn off anon or turn off all asks and comments. 
 
 @lunan0va: don't worry, i'm not getting any more of the nasty asks. and it doesn't really bother me that much anyway. or at least, i'm trying to not be bothered by it.
 
-@trappedinspace: Are you sure it's okay? feel free to just go offline and take a break from this website if the harrassment is getting to you...
+@trappedinspace: Are you sure it's okay? Feel free to just go offline and take a break from this website if the harassment is getting serious.
 
-@lunan0va: lmao i don't really have any other places to go
+@lunan0va: lmao i don't have any other places to go. like, the messages are literally just shit my parents say and all the people in my church say. they can't hurt me more than irl already has lmao.
 
-@trappedinspace: Sorry, yeah I kinda get that.
+@trappedinspace: I'm so sorry 💜
 
-*if posted_ch2_annc_2_1
-    @you: sorry about what's going on...
+@trappedinspace: If there's anything I can do to help, or if you just need to talk... 
 
-    @lunan0va: thanks ${handle}...
-
-    @lunan0va: i'm fine. i really am.
-
-    Everyone is offline now.
+@lunan0va: it's fine 💙️
 
 *choice
     *disable_reuse #Post: sympathize with Luna's current plight.
-        *set posted_ch2_annc_2_1 true
         *set luna_blue %+ 5
-        *goto annc_chat_2
+        *label annc_chat_2_1
+        *set annc_chat_ref "annc_chat_2_1"
+        @you: sorry about what's going on...
+
+        @lunan0va: thanks ${handle}...
+
+        @lunan0va: i'm fine. nothing's wrong.
+
+        @lunan0va: i have to do homework right now.
+
+        *label luna_color
+        @lunan0va: wait this is totally random but what's your element @trappedinspace?
+
+        @trappedinspace: Oh god... it's metal, I guess? Last I checked I was a weaver of metal, even though I identified a lot more with Capella than Astra.
+
+        @lunan0va: haha that makes sense.
+
+        @trappedinspace: why? Is it just because I'm a nerd?
+
+        @lunan0va: well you are a nerd, but it's more the vibes i guess?
+
+        @trappedinspace: what vibes?
+
+        @lunan0va: the fact that you're asking about your vibes is a huge metal vibe :p
+
+        @lunan0va: anyway uh... i'm heading out. i actually have to do homework now.
+
+        @trappedinspace: Take care.
+
+        Everyone is offline now.
+        *choice
+            #Go back.
+                *goto montage_2
+    *disable_reuse #Wait for someone else to post.
+        *set annc_chat_ref "luna_color"
+        *goto luna_color
     #Look at something else.
         *goto montage_2
 
@@ -3119,9 +3195,13 @@ ${mcm_1_notes}
 
 @nebulascribbler: Probably a wise decision.
 
-@shadow-protectrix: Yeah... We're gonna have to react somehow, right? I'll have to think about what we're supposed to do.
+@shadow-protectrix: Yeah. I hope NebulaCon doesn't need to do a message on this.
 
-Everyone appears to be offline right now.
+@nebulascribbler: I think it's better right now if we all just sleep on it. It'll be better tomorrow, right?
+
+@brunova-official: it better be
+
+Everyone here is offline right now.
 
 *choice
     #Look at something else.

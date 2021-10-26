@@ -145,6 +145,8 @@ What remains are only ruins, and the hardy survivors who fight within them.
 *if (luna_ch4_message)
     Luna has sent you a private message.
 
+*comment TODO: Lux sends a message asking about what's wrong with Luna.
+
 *label montage_1
 
 *if (knows_nebulacon and ((sofia_helped > 0) and ((sofia_blue >= 25) and not(sofia_secret))))

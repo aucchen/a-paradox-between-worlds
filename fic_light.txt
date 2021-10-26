@@ -7,12 +7,6 @@
 *temp touch false
 *temp think false
 
-*temp luna_end luna_helped
-*temp claire_end (claire_trust >= 2)
-*temp karla_end (karla_investigation = 3)
-*temp sofia_end (sofia_secret and not(revealed_sofia_secret))
-*temp neutral_end (not(luna_end) and (not(claire_end) and (not(karla_end) and (not(sofia_end)))))
-
 You wake up on a featureless white plane, illuminated by the uniform [b]light[/b] emanating from all directions.
 
 *label view1

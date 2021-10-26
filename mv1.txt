@@ -39,6 +39,8 @@
 *label universe0
 [b]Universe - Canon[/b]
 
+*comment TODO: change the excerpt to be a book 4 quote
+
 [b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 1: The Academy of Magi[/i] by G. T. Macmillan[/b]
 
 "The principal purpose of a mage is to impose his vision upon the world."
@@ -651,11 +653,6 @@ What are the pronouns that you use online?
     
 Cool!
 
-*comment TODO: revamp character setup: make this quicker
-*comment TODO: have a central hub for character setup choices?
-*comment TODO: maybe we can avoid the blog focus/character/ship choices entirely. In the first check_followers, just find the highest attribute in each and give it a +10.
-*comment TODO: maybe we can move this universe segment out to mv2 part 1, because it's long enough...
-
 By the way, what is the focus of your blog? What type of posts do you usually reblog?
 
 *fake_choice
@@ -948,13 +945,13 @@ Anyway, your parents are asleep, and you're probably done with homework. So what
 *temp luna_1_4_notes 3
 *temp luna_1_5_notes 342
 
-*temp brun_1_1_notes 1287
-*temp brun_1_2_notes 1972
-*temp brun_1_3_notes 12325
-*temp brun_1_4_notes 8141
-*temp brun_1_5_notes 5
+*temp brun_1_1_notes 1972
+*temp brun_1_2_notes 12325
+*temp brun_1_3_notes 8141
+*temp brun_1_4_notes 5
+*temp brun_1_5_notes 73264
 
-*temp shad_1_1_notes 0
+*temp shad_1_1_notes 1287
 *temp shad_1_2_notes 83212
 *temp shad_1_3_notes 77
 *temp shad_1_4_notes 32
@@ -999,6 +996,12 @@ Anyway, your parents are asleep, and you're probably done with homework. So what
 Online weather report: vibes steady. Chance of callouts: <1%. The blogging equivalent of a bright, cloudless summer day.
 
 *label montage_1
+*temp luna_rem (5 - luna_prog)
+*temp brun_rem (5 - brun_prog)
+*temp shad_rem (5 - shad_prog)
+*temp nebu_rem (5 - nebu_prog)
+*temp apoc_rem (5 - apoc_prog)
+*temp trap_rem (5 - trap_prog)
 
 *if (luna_sent_message and not(luna_message_read))
     Luna @lunan0va has sent you a message.
@@ -1006,22 +1009,22 @@ Online weather report: vibes steady. Chance of callouts: <1%. The blogging equiv
 Which blogs would you like to read?
 
 *choice
-    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch1_seen=1) (read)|}
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch1_seen=1) (read)|(${luna_rem}}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch1_seen=1) (read)|}
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch1_seen=1) (read)|(${brun_rem})}
         *set read_count + 1
         *gotoref "brun_1_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch1_seen=1) (read)|}
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch1_seen=1) (read)|(${shad_rem})}
         *set read_count + 1
         *gotoref "shad_1_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch1_seen=1) (read)|}
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch1_seen=1) (read)|(${nebu_rem})}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch1_seen=1) (read)|}
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch1_seen=1) (read)|(${apoc_rem})}
         *set read_count + 1
         *gotoref "apoc_1_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch1_seen=1) (read)|}
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch1_seen=1) (read)|(${trap_rem})}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *disable_reuse *if (luna_sent_message) #See Luna's message.
@@ -1029,6 +1032,13 @@ Which blogs would you like to read?
     *if (in_luna_chat) #See Luna's groupchat.
         *gotoref annc_chat_ref
     *if (read_count > 1) #Stop looking at blogs.
+        *if (luna_sent_message and not(luna_message_read))
+            You haven't responded to Luna's message. Do you still want to move on?
+            *choice
+                #Yes, move on.
+                    *goto montage1_end
+                #No, go back.
+                    *goto montage_1
         *goto montage1_end
 
 *label luna_1_1
@@ -1293,11 +1303,13 @@ ${luna_1_5_notes} notes
 
 Lux is one of your mutuals, but it's not like you've ever talked. Maybe he just followed back whoever. As his name suggests, he's a big fan of the brunova ship, and probably kins Bruno or something like that.
 
-[b]@brunova-official reblogged from @shadow-protectrix at 9:34 PM. OP: @shadow-protectrix[/b]
+[b]@brunova-official reblogged from @shadow-protectrix at 9:22 PM. OP: @cyanstars[/b]
 
-Y'all, who's all excited for the NebulaCon this year? We have so many amazing things planned for everyone, awesome events with great people. Everyone who can make it should come!
+[Fanart of Galileo and Bruno hugging on a green field in a planet, half-body, with rays of light shining through clouds, illuminating the two of them. The image is a side profile, with Bruno's head closer to the audience resting on Gali's shoulder.]
 
-Tags: #i am!!!!, #probably wont make it but i can hope
+"You mean the [i]worlds[/i] to me"
+
+Tags: #me, #brunova
 
 ${brun_1_1_notes} notes
 
@@ -1309,16 +1321,16 @@ ${brun_1_1_notes} notes
     *disable_reuse #Reblog 🔁
         *if rx
             *gosub lux_like
-            *gosub claire_like
-            *gosub gen
+            *gosub shipping
 
         *set rb_count + 1
         *set lux_interact + 1
-        *set lux_blue %+ 2
-        *set claire_blue %+ 3
-        *set karla_green %+ 1
+        *set lux_blue %+ 3
         *set brun_1_1_notes + 1
-        *set gen %+ 3
+        *set shipping %+ 3
+        *set brunova %+ 3
+        *set bruno %+ 2
+        *set gali %+ 2
         *goto brun_1_1
     #Next post.
         *goto brun_1_2
@@ -1327,11 +1339,11 @@ ${brun_1_1_notes} notes
 
 *label brun_1_2
 *set brun_prog 2
-[b]@brunova-official reblogged from @shadow-protectrix at 9:22 PM. OP: @cyanstars[/b]
+[b]@brunova-official reblogged from @cyanstars at 9:17 PM. OP: @cyanstars[/b]
 
-[Fanart of Galileo and Bruno hugging on a green field in a planet, half-body, with rays of light shining through clouds, illuminating the two of them. The image is a side profile, with Bruno's head closer to the audience resting on Gali's shoulder.]
+[Fanart of Galileo and Bruno holding hands in the middle of space. Gali is glancing towards Bruno, smiling, while Bruno is frowning and gazing forward. Their bodies are framed by the purple and blue colors of the nebula.]
 
-"You mean the [i]worlds[/i] to me"
+I am genuinely incorrigibly afflicted by this ship.
 
 Tags: #me, #brunova
 
@@ -1346,7 +1358,6 @@ ${brun_1_2_notes} notes
         *if rx
             *gosub lux_like
             *gosub shipping
-            
             
         *set rb_count + 1
         *set lux_interact + 1
@@ -1367,13 +1378,13 @@ ${brun_1_2_notes} notes
 
 *label brun_1_3
 *set brun_prog 3
-[b]@brunova-official reblogged from @cyanstars at 9:17 PM. OP: @cyanstars[/b]
+[b]@brunova-official reblogged from @bruno-helios at 9:11 PM. OP: @bruno-helios[/b]
 
-[Fanart of Galileo and Bruno holding hands in the middle of space. Gali is glancing towards Bruno, smiling, while Bruno is frowning and gazing forward. Their bodies are framed by the purple and blue colors of the nebula.]
+[Black-and-white full-body sketch of Bruno Helios, a boy with white hair and a complex expression, brow slightly furrowed. His hands are in his jacket pocket, and he is glancing towards his left side.]
 
-I am genuinely incorrigibly afflicted by this ship.
+I made this sketch at midnight last night. I'm more than a little in love with Bruno.
 
-Tags: #me, #brunova
+Tags: #me, #kin
 
 ${brun_1_3_notes} notes
 
@@ -1385,16 +1396,14 @@ ${brun_1_3_notes} notes
     *disable_reuse #Reblog 🔁
         *if rx
             *gosub lux_like
-            *gosub shipping
+            *gosub gen
 
         *set rb_count + 1
         *set lux_interact + 1
         *set lux_blue %+ 3
+        *set gen %+ 3
+        *set bruno %+ 3
         *set brun_1_3_notes + 1
-        *set shipping %+ 3
-        *set brunova %+ 3
-        *set bruno %+ 2
-        *set gali %+ 2
         *goto brun_1_3
     #Next post.
         *goto brun_1_4
@@ -1405,13 +1414,11 @@ ${brun_1_3_notes} notes
 
 *label brun_1_4
 *set brun_prog 4
-[b]@brunova-official reblogged from @bruno-helios at 9:11 PM. OP: @bruno-helios[/b]
+[b]@brunova-official posted at 9:08 PM[/b]
 
-[Black-and-white full-body sketch of Bruno Helios, a boy with white hair and a complex expression, brow slightly furrowed. His hands are in his jacket pocket, and he is glancing towards his left side.]
+if you think brunova is abusive then why the f are you following me
 
-I made this sketch at midnight last night. I'm more than a little in love with Bruno.
-
-Tags: #me, #kin
+Tags: #ajsdl;kfjadsl;jdafslkjasf
 
 ${brun_1_4_notes} notes
 
@@ -1420,17 +1427,16 @@ ${brun_1_4_notes} notes
         *set brun_1_4_notes + 1
         *set lux_blue %+ 2
         *goto brun_1_4
-    *disable_reuse #Reblog 🔁
+    *disable_reuse #Reblog 🔁 despite the general etiquette being not to reblog posts like this.
         *if rx
-            *gosub lux_like
-            *gosub gen
+            *gosub lux_dislike
+            *gosub discourse
 
         *set rb_count + 1
         *set lux_interact + 1
-        *set lux_blue %+ 3
+        *set lux_green %+ 8
         *set brun_1_4_notes + 1
-        *set gen %+ 3
-        *set bruno %+ 3
+        *set discourse %+ 3
         *goto brun_1_4
     #Next post.
         *goto brun_1_5
@@ -1439,35 +1445,32 @@ ${brun_1_4_notes} notes
     #Look at another blog.
         *goto montage_1
 
-
 *label brun_1_5
-*set lux_ch1_seen 1
 *set brun_prog 5
-[b]@brunova-official posted at 9:08 PM[/b]
+[b]@brunova-official reblogged from @gnosticore at 9:00 PM. OP: @fangirlingforever[/b]
 
-if you think brunova is abusive then why the f are you following me
+Remember that while likes are nice, reblogs are the yarn that knit this website together. Reblogs are necessary for artists, especially small artists on this platform, because they're what brings in the eyeballs and attention and everything that comes with that. We live off reblogs, so if you reblog a post, that's an act of caring.
 
-Tags: #ajsdl;kfjadsl;jdafslkjasf
+So if you care about the people you follow, go ahead and slam that mf reblog button!
+
+Tags: #yeah this, #as a small artist im dying for reblogs squirtle
 
 ${brun_1_5_notes} notes
 
 *choice
     *disable_reuse #Like ❤️
         *set brun_1_5_notes + 1
-        *set lux_blue %+ 5
         *goto brun_1_5
-    *disable_reuse #Reblog 🔁 despite the general etiquette being not to reblog posts like this.
+    *disable_reuse #Reblog 🔁
         *if rx
-            *gosub lux_dislike
-            *gosub luna_dislike
-            *gosub discourse
+            *gosub lux_like
+            *gosub sympathy
 
         *set rb_count + 1
+        *set lux_interact + 1
+        *set lux_blue %+ 4
         *set brun_1_5_notes + 1
-        *set lux_green %+ 10
-        *set luna_green %+ 5
-        *set discourse %+ 3
-        Well, he hasn't blocked you yet...
+        *set sympathy %+ 3
         *goto brun_1_5
     #Prev post.
         *goto brun_1_4
@@ -1492,11 +1495,15 @@ Y'all, who's all excited for the NebulaCon this year? We have so many amazing th
 
 Tags: #nebulacon
 
-${brun_1_1_notes} notes
+@brunova-official reblogged this.
+*line_break
+Tags: #i am!!!!, #probably wont make it but i can hope
+
+${shad_1_1_notes} notes
 
 *choice
     *disable_reuse #Like ❤️
-        *set brun_1_1_notes + 1
+        *set shad_1_1_notes + 1
         *set claire_blue %+ 2
         *goto shad_1_1
     *disable_reuse #Reblog 🔁
@@ -1507,7 +1514,7 @@ ${brun_1_1_notes} notes
 
         *set rb_count + 1
         *set claire_interact + 1
-        *set brun_1_1_notes + 1
+        *set shad_1_1_notes + 1
         *set claire_blue %+ 3
         *set karla_green %+ 1
         *set gen %+ 3
@@ -2326,28 +2333,49 @@ ${trap_1_5_notes} notes
         *goto montage_1
 
 *label luna_message_1
-@lunan0va: hey ${handle}! i'm making a new groupchat to talk about nebulaverse stuff... do you wanna join?
+@lunan0va: hey ${handle}! i've made a new groupchat to talk about nebulaverse stuff.
+
+@lunan0va: i kinda want it to be like... a place free from the forced positivity of the fandom mom clique lol
+
+@lunan0va: a place where we can be openly critical of canon and a lot of the other stuff going on in the fandom. that's why i call it the anti-nebulaverse nebulaverse club lol.
+
+@lunan0va: do you wanna join?
 
 *choice
     #Sure, I'll join!
+        *set luna_message_read true
         *set luna_message_ref "luna_message_2"
         *set in_luna_chat true
         *set luna_blue %+ 6
         *label luna_message_2
-        @you: okay, i'll join.
+        @you: sure, i'll join!
 
         @lunan0va: great! thank you so much!!! here's the link: [link]
         *choice
             #Go back.
                 *goto montage_1
     #Nah, I'd rather not join.
+        *set luna_message_read true
         *set luna_message_ref "luna_message_3"
         *set luna_green %+ 3
         *label luna_message_3
         @you: sorry, i'd rather not...
 
-        @lunan0va: that's okay! you don't have to!
+        @lunan0va: oh, are you sure? why?
+
         *choice
+            #Alright, I'll join.
+                *set luna_message_ref "luna_message_4"
+                *set in_luna_chat true
+                *label luna_message_4
+                @you: alright, i'll join.
+
+                @lunan0va: thank you!
+
+                @lunan0va: here's the link: [link]
+                *choice
+                    #Go back.
+                        *goto montage_1
             #Go back.
                 *goto montage_1
     #Ignore the message for now. Look at something else.
@@ -2359,7 +2387,13 @@ ${trap_1_5_notes} notes
 
 @lunan0va: hey karla!! welcome to the anti-nebulaverse nebulaverse club!
 
-@trappedinspace: Thanks for inviting me. But like, I'm an old lady, so, I'm not sure if I belong here.
+@apocalypse-hoarder: Hi Karla!!!
+
+@trappedinspace: Thank you! Also thank you for writing that trans girl gali meta. That was great.
+
+@lunan0va: np! im glad you liked it!
+
+@trappedinspace: But like, I'm an old lady, so, I'm not sure if I belong here.
 
 @lunan0va: no, why tf wouldnt you belong here?? you're awesome!
 
@@ -2367,24 +2401,26 @@ ${trap_1_5_notes} notes
 
 @lunan0va: come on, you're literally just 5 years older than me. it's fine. you're fine!
 
-@trappedinspace: Okay, thanks, but like, you should be careful of strangers on the internet.
+@trappedinspace: Thanks, but, you should be careful of strangers on the internet.
 
-@lunan0va: dude. please. i've seen you dump all your personal trauma in the tags. on your public blog.
+@lunan0va: dude. please. *you* should be careful. i've seen you dump all your personal trauma in the tags. on your public blog.
 
 @trappedinspace: :/
 
-@trappedinspace: Okay I feel bad now because, like, kids shouldn't be exposed to that stuff. Maybe no one should.
+@trappedinspace: Now I feel bad because kids shouldn't be exposed to that stuff. Maybe no one should.
 
 @lunan0va: oh hey @${username}! welcome!
 
 *choice
     #I'm glad to be here!
+        *set luna_blue %+ 3
         @you: i'm glad to be here!
 
         @lunan0va: i'm glad you're here too!
 
         *goto annc_chat_2
     #Hi Luna!
+        *set luna_blue %+ 3
         @you: hi luna!
 
         @lunan0va: hi ${handle}!
@@ -2392,37 +2428,104 @@ ${trap_1_5_notes} notes
         *label annc_chat_2
         *set annc_chat_ref "annc_chat_2"
         @trappedinspace: Hi @${username}.
-        
-        *comment lmao this is certainly a hack
-        *if luna_1_5_notes = 342
-            @lunan0va: btw ${handle} have you seen my trans girl gali hc?
 
-            @lunan0va: if not, it'd be nice if you looked at it...
-        *else
-            @lunan0va: also ${handle} i saw that you liked my trans girl gali hc...
+        @apocalypse-hoarder: Hi $!{handle}!!!
 
-            @lunan0va: thanks i guess?
+        @apocalypse-hoarder: @lunan0va mind if I open the discussion?
 
-            *comment TODO: ??? how to deal with this...
+        @lunan0va: sure, go ahead!
+
+        @apocalypse-hoarder: so. Astrapella. Best ship or greatest ship?
+
+        @lunan0va: it's the best ship obvs!
+
+        @apocalypse-hoarder: have you read the fix that I reblogged?
+
+        @apocalypse-hoarder: *fic ugh autocorrect
+
+        @lunan0va: the nebulascribbler one? no I haven't. tbh I don't really like the way she writes stuff...
+
+        @lunan0va: also she's written ariastra, which is like... eh... :/
+
+        @apocalypse-hoarder: I get that! Well, I thought it was good.
+
+        There is a lull in the chat. You could say something, or just wait.
+        *comment TODO: ??? how to deal with this...
         *choice
-            #Look at something else.
+            #I love Astrapella too!
+                *set astrapella %+ 2
+                *set luna_blue %+ 2
+                *set stella_blue %+ 2
+                @you: i love astrapella too!
+
+                @apocalypse-hoarder: Yay!
+
+                *goto annc_chat_wait
+            #So, how about Brunova?
+                *set brunova %+ 2
+                *set luna_blue %+ 2
+                @you: um... so, how about that brunova?
+
+                @lunan0va: nothing against it, but like... i wish it wasn't so dominant in the fandom, yknow?
+
+                @apocalypse-hoarder: agreed, but it has a lot of potential!
+
+                *goto annc_chat_wait
+            #What about Ellanova or Astranova?
+                *set ellanova %+ 2
+                *set karla_blue %+ 3
+                *label annc_chat_ellanova_1
+                *set annc_chat_ref "annc_chat_ellanova_1"
+                @you: um... what about ellanova or astranova?
+
+                @trappedinspace: Unfortunately I still have a soft spot for ellanova...
+
+                @apocalypse-hoarder: $!{handle} and Karla have been canceled for heteronormativity crimes :P
+
+                *goto annc_chat_ellanova
+            #Wait for someone else to respond.
+                *label annc_chat_wait
+                *set annc_chat_ref "annc_chat_wait"
+                @trappedinspace: Unfortunately I still have a soft spot for ellanova lol.
+
+                @apocalypse-hoarder: Karla has been canceled for heteronormativity crimes :P
+
+                *label annc_chat_ellanova
+
+                @trappedinspace: tbf... I don't think either of them are cis or het in my headcanon lol.
+
+                @trappedinspace: In my fic Capella was basically forcefemming Gali (before I even knew what that meant).
+
+                @trappedinspace: I self-inserted as Capella in all my fics lol, back when I still thought I was interested in boys.
+
+                @lunan0va: do you still have those fics up? that sounds very interesting!
+
+                @trappedinspace: Yes, but it's probably not the time or place for that...
+
+                The conversation has died off.
+                *choice
+                    #Go back.
+                        *goto montage_1
+            #Look at something else for now.
                 *goto montage_1
-    #Look at something else for now.
-        *goto montage_1
 
 
 *label montage1_end
 
 It's past midnight. You should be going to bed by now. School is in seven hours.
 
+You have to return to reality. It's like receding behind the Veil of Illusion, back to a place where you have to hide everything that matters to you.
+
 *page_break Another day...
 
 *label fanfiction
 
+[i]The stage of the world shifts. Gears lock into place. The curtain rises.[/i]
+
 [b]Universe - Noncanon?[/b]
 *script setMbmMode(false);
 
-You wake up...
+You open your eyes...
 
 *page_break
 

@@ -8,6 +8,7 @@
 - Aevee Bee, "The Story is a Spell. The Story is a Curse."
 
 
+
 [i]TT: I am scared to not exist.[/i]
 
 [i]TT: Aren't you?[/i]
@@ -231,9 +232,11 @@ Thanks to everybody for helping me through this mess. You're like the family I w
 
 Sometimes it feels like all our heroes are dead and our enemies are in power. G*TM got a writing award from the BBC for that essay where she called me a slur. She went on to misgender me on prime time TV, and no one corrected her. Even to my ostensible supporters and allies I'm a boy now. They think I'm a trans boy, which is immeasurably funny to me.
 
-Things objectively aren't getting better for me. My transitioning has gone from "my parents don't want this" to "the state is literally banning this". And that doesn't even narrow down my state.
+I think I've finally made my peace with disappearing from the narrative. If I really became a figurehead out of this, this incident would define my life forever, and that would suck. I wish we could move on, but maybe that's never gonna happen.
 
-But I'm fine, because I'm alive. I know there are people who would help me, who would care for me as I really am.
+By the way, things objectively aren't getting better for me. My transitioning has gone from "my parents don't want this" to "the state is literally banning this". And that doesn't even narrow down my state.
+
+But I'm fine, because I'm alive, and I want to keep on being alive. I know there are people who would help me, who would care for me as I really am. What else do I need?
 
 Tags: #lunar specks, #d/ont r/eblog
 
@@ -482,9 +485,9 @@ As of today I am officially a mom! My wife just gave birth to our baby, and they
 
 I'll probably be posting here and checking this blog a lot less, for what should be fairly obvious reasons. So I suppose this is kind of a goodbye?
 
-${nebu_1_1_notes} notes
-
 Tags: #sofia speaks
+
+${nebu_1_1_notes} notes
 
 *choice
     *disable_reuse #Like ❤️
@@ -507,7 +510,7 @@ Tags: #sofia speaks
 
 Every story affects us a different way. Some stories are like salves for the soul, the kind of story I still read at night to go to bed feeling better. Others are like pinpricks to the heart, stories that hurt, stories that make me feel *something*, even if that something isn't exactly good. Nothing makes one kind of story inherently better than another. Maybe we need both kinds of stories to function.
 
-Anyway, not all stories will feel good to read. Some stories will hurt and that's okay.
+Anyway, not all stories will feel good to read. Some stories will hurt. Some will be difficult. Some you might not even understand at a first glance, and that's okay. Not every story is for everyone.
 
 Tags: #i wonder what kind of story this is..., #;P
 
@@ -600,7 +603,7 @@ There have been a lot of messages since you were last here.
 
 @trappedinspace: also hi Luna. Congrats on the new url. It's great.
 
-@icemoongirl: Wow. Thank you!!!
+@icemoongirl: Wow. Thank you!!! you were in jail that's way harder than anything i've been through!!!
 
 @icemoongirl: also say hi to lux @brunova-official and hari @noncanonical!
 
@@ -619,19 +622,19 @@ There have been a lot of messages since you were last here.
 
         @icemoongirl: how do you do it? how do you manage to get up everyday and just... do what it takes to keep on living?
 
-        @trappedinspace: honestly I don't know myself sometimes. It's hard.
+        @trappedinspace: Honestly I don't know myself sometimes. It's hard.
 
-        @trappedinspace: a lot of times I feel like there's no hope for trans women.
+        @trappedinspace: A lot of times I feel like there's no hope for trans women.
 
         @icemoongirl: do you think it'll ever get better?
 
-        @trappedinspace: honestly idk
+        @trappedinspace: I have no idea.
 
-        @trappedinspace: last month I would have said something different. Maybe even last week.
+        @trappedinspace: Last month I would have said something different. Maybe even last week.
 
         @trappedinspace: but now I just feel like... I'm going backwards. I'm sliding back to what I was like before. I thought I got better in the past year but it turns out I really haven't.
 
-        @trappedinspace: Maybe it'll never get better. Maybe it's just going to be like this forever. 
+        @trappedinspace: Maybe it'll never get better. Maybe it's just going to be like this forever.
 
         @trappedinspace: they say it's two steps forward, one step back, but how do you know that it's not one step forward, two steps back?
         *choice
@@ -759,9 +762,11 @@ There have been a lot of messages since you were last here.
 
                         @brunova-official: same but for bruno :/
 
-                        @trappedinspace: I think the nebulaverse has like, buried itself within us in an inextricable place.
+                        @trappedinspace: For what it's worth, the nebulaverse is literally the reason I'm alive today. That sounds fucking pathetic I know.
 
-                        @trappedinspace: What about you, $!{handle}?
+                        @icemoongirl: then let's all be pathetic together :P
+
+                        @icemoongirl: what about you, ${handle}?
 
                         *fake_choice
                             #I'm still into the nebulaverse.
@@ -1088,7 +1093,7 @@ There have been a lot of messages since you were last here.
 
         @trappedinspace: Maybe we should make a callout post lmao.
 
-        @trappedinspace: Even if Sofia is already gone. It could be like, a historical artifact.
+        @trappedinspace: Even if Sofia is already gone, it could be like, an artifact for future internet historians to uncover.
 
         *label karla_question
         *set karla_message_ref "karla_question"
@@ -1167,17 +1172,17 @@ You close your browser. It's getting late. You have school tomorrow.
 
 *page_break
 *label fanfiction
+*set luna_end (luna_helped)
+*set claire_end (claire_trust >= 2)
+*set karla_end (karla_investigation = 3)
+*set sofia_end (sofia_secret and not(revealed_sofia_secret))
+*set neutral_end (not(luna_end) and (not(claire_end) and (not(karla_end) and (not(sofia_end)))))
 
 *gosub_scene fic_light
 *comment TODO: epilogue?
         
 *label ending
 *achieve ending
-*temp luna_end (luna_helped)
-*temp claire_end (claire_trust >= 2)
-*temp karla_end (karla_investigation = 3)
-*temp sofia_end (sofia_secret and not(revealed_sofia_secret))
-*temp neutral_end (not(luna_end) and (not(claire_end) and (not(sofia_end))))
 
 *if luna_end
     *achieve ending_luna
@@ -1188,7 +1193,8 @@ You close your browser. It's getting late. You have school tomorrow.
     *achieve secret
 *if neutral_end
     *achieve ending_neutral
-
+*if karla_end
+    *achieve ending_karla
 *if not(has_chatted)
     *achieve alone
 

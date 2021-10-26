@@ -146,8 +146,8 @@
 *create luna_mutuals true
 *create luna_following true
 *create luna_red 0
-*create luna_green 5
-*create luna_blue 20
+*create luna_green 4
+*create luna_blue 24
 *create luna_chat false
 *create luna_chat_invited false
 *create in_luna_chat false
@@ -177,8 +177,8 @@
 *create claire_interact 0
 *create claire_mutuals false
 *create claire_red 0
-*create claire_green 0
-*create claire_blue 5
+*create claire_green 2
+*create claire_blue 10
 *comment claire_chat is if you've been invited, in_claire_chat is if you've accepted.
 *create claire_chat false
 *create in_claire_chat false
@@ -198,8 +198,8 @@
 *create sofia_interact 0
 *create sofia_mutuals false
 *create sofia_red 0
-*create sofia_green 0
-*create sofia_blue 5
+*create sofia_green 2
+*create sofia_blue 10
 *comment Sofia's messages to protag
 *create sofia_dm_ch2 false
 *create sofia_deactivated false
@@ -224,8 +224,8 @@
 *comment i'm not sure if karla should or shouldn't be a mutual at the start...
 *create karla_mutuals true
 *create karla_red 0
-*create karla_green 0
-*create karla_blue 10
+*create karla_green 2
+*create karla_blue 12
 *comment trust is 1 if karla trusts you enough to relay her suspicion of stella
 *create karla_trust 0
 *comment investigation is 2 if you're helping her, 1 if you're just waiting, -1 if you disbelieve her
@@ -244,8 +244,8 @@
 *create lux_interact 0
 *create lux_mutuals true
 *create lux_red 0
-*create lux_green 0
-*create lux_blue 10
+*create lux_green 2
+*create lux_blue 15
 *create lux_deactivated false
 
 *create lux_ch1_seen 0
@@ -261,8 +261,8 @@
 *create stella_interact 0
 *create stella_mutuals true
 *create stella_red 0
-*create stella_green 0
-*create stella_blue 5
+*create stella_green 2
+*create stella_blue 15
 *create stella_deactivated false
 *comment if stella is willing to trust you...
 *create stella_trust 0
@@ -287,15 +287,6 @@
 
 
 *comment story progression*************************************
-*create posted_ch2_annc1 false
-*create posted_ch2_annc2 false
-*create posted_ch2_annc_o1 false
-*create posted_ch2_annc_o2 false
-*create posted_ch2_annc_o3 false
-*create posted_ch2_annc_2_1 false
-
-*create posted_ch3_annc_1 false
-
 *create in_universe false
 
 *create ranted_end false
@@ -401,8 +392,20 @@
 *comment dramatic tension...
 *create tension 0
 
+*comment endings
+
+*create luna_end false
+*create lux_end false
+*create claire_end false
+*create sofia_end false
+*create neutral_end false
+*create karla_end false
+
 *achievement ending_luna visible 10 Still Sane
     Ending: Luna
+
+*achievement ending_lux visible 10 400 Lux
+    Ending: Lux
 
 *achievement ending_neutral visible 10 A World Alone
     Ending: Neutral
@@ -412,6 +415,10 @@
 
 *achievement ending_sofia visible 10 Glory and Gore
     Ending: Sofia
+
+*comment Karla's ending is exactly the same as the exposing the manipulation campaign
+*achievement ending_karla visible 10 Team
+    Ending: Karla
 
 *achievement ending visible 5 It feels so scary, getting old
     Finish the game.
@@ -446,7 +453,7 @@
     A secret.
     Don't join any chats after the first movement.
 
-*achievement home visible 10 Never think about death
+*achievement home visible 10 You're the only friend I need
     A secret.
     Help a friend in a key moment.
 
@@ -465,6 +472,7 @@
 *achievement imposter hidden 15 When the imposter is sus
     hidden
     Discover the imposter.
+
 
 *comment TODO: remove when local testing
 *comment *if (not (choice_quicktest))

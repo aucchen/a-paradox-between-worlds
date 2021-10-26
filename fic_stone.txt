@@ -494,15 +494,12 @@ The story has been posted for a while now. You see that you've gotten ${ch1_like
         
         @lunan0va: yea...
 
-*if luna_friends
+*if luna_friends and not(in_luna_chat)
     *set luna_chat_invited true
-    @lunan0va: btw, if you're interested!!!
+    @lunan0va: btw, if you're interested...
 
-    @lunan0va: i'm in a group chat for just talking about the nebulaverse and stuff.
+    @lunan0va: do you want to join my groupchat for just talking about the nebulaverse and stuff.
 
-    @lunan0va: i can send you a link to join if you want?
-    
-    
     *choice
         #Sure, join!
             *set in_luna_chat true
@@ -661,7 +658,7 @@ You also see that Claire has followed you. They're probably by far your most pop
         @shadow-protectrix: Sure! Just let me know here if you ever want to join.
         
         
-Do you want to talk more to Claire about anything?
+Do you want to talk to Claire about anything else?
 
 *choice
     #Talk about Nebulaverse stuff? Compliment their fics?

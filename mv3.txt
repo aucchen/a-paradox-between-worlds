@@ -15,6 +15,8 @@
 
 [b]Universe - Canon[/b]
 
+*comment TODO: change this scene into a different one...
+
 [b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 2: Planetary Dreams[/i] by G. T. Macmillan[/b]
 
 Gali slipped on the goggles. Just as Astra had described, he saw his friends as silhouettes of different colors. Tycho was a deep navy blue. Bruno was lime green. Astra was violet. And Capella was gray with a purple tinge.
@@ -113,6 +115,8 @@ What if they saw through his hard exterior, and discovered the parts of him that
 
 *temp karla_sent_message false
 *temp sofia_sent_message false
+
+*comment TODO: lux message?
 
 *temp annc_chat_ref "annc_chat"
 *temp writers_chat_ref "writers_chat"
@@ -1388,7 +1392,7 @@ ${shad_1_5_notes} notes
 
 @lunan0va: idk...
 
-@lunan0va: idk if that would help, you know? I don't really want to be like, the instigator of drama. More than I already am lol
+@lunan0va: idk if that would help, you know? I don't really want to be like, the instigator of drama. more than I already am lol
 
 @trappedinspace: yeah Claire fucking sucks. But, like, Claire isn't the real target. GTM is still ultimately responsible for all this.
 
@@ -1422,7 +1426,7 @@ ${shad_1_5_notes} notes
 
         @apocalypse-hoarder: i still think you should fight back more
 
-        @apocalypse-hoarder: it's not just this incident. claire has a pattern of really shitty behavior.
+        @apocalypse-hoarder: it's not just this incident. Claire has a pattern of really shitty behavior.
 
         @lunan0va: ya i know but like... idc right now
 
@@ -1431,6 +1435,7 @@ ${shad_1_5_notes} notes
         @trappedinspace: Remember that we all care about you.
 
         @lunan0va: thanks...
+        *page_break
     #Agree with Stella @apocalypse-hoarder.
         *set stella_blue %+ 5
         *set karla_green %+ 4
@@ -1453,6 +1458,7 @@ ${shad_1_5_notes} notes
         @apocalypse-hoarder: <3
 
         @trappedinspace: 💜
+        *page_break
     #Don't say anything.
         @lunan0va: i won't delete my blog...
 
@@ -1460,7 +1466,13 @@ ${shad_1_5_notes} notes
 *set annc_chat_ref "annc_chat_1"
 @lunan0va: i don't want to delete my blog because... and i know this is probably kinda terrible but i kinda want to be recognized, y'know? i want to be somebody. i want to be well known. i want to be respected. i want to see my likeness set in stone, like lorde said.
 
-@lunan0va: but not like this.
+@lunan0va: and you know what's the worst thing? i've gotten a few hundred new followers since the incident. my follower count has more than doubled.
+
+@lunan0va: and i hate that even with everything going on, watching the followers and notes pile up makes me feel good.
+
+@lunan0va: maybe i'm a just another clout chaser. maybe i'm just asking for it like they said.
+
+@trappedinspace: You're not. Absolutely none of this is your fault.
 
 @trappedinspace: 💜
 
@@ -1472,7 +1484,7 @@ ${shad_1_5_notes} notes
 
 *choice
     *if (luna_ch3_seen = 1) #Express sympathy to Luna.
-        *set luna_blue %+ 3
+        *set luna_blue %+ 5
         *label annc_chat_2
         *set annc_chat_ref "annc_chat_2"
         @you: i'm really sorry about what's happening Luna...
@@ -1481,8 +1493,36 @@ ${shad_1_5_notes} notes
 
         @you: are you sure? the posts were pretty nasty...
 
-        @lunan0va: my element is ice -_- i can deal with that sort of thing.
-        *goto montage_1
+        @lunan0va: my element is ice -_-
+        
+        @lunan0va: i can deal with this sort of thing. you shouldn't worry about me too much.
+        *choice
+            #Also, there's nothing wrong with wanting attention...
+                *goto annc_chat_3
+            #Go back.
+                *goto montage_1
+    #There's nothing wrong with wanting attention...
+        *set luna_blue %+ 4
+        *label annc_chat_3
+        *set annc_chat_ref "annc_chat_3"
+        @you: there's nothing wrong with wanting attention...
+
+        @lunan0va: are you sure???
+
+        @you: maybe everyone wants to be recognized. everybody wants to be famous.
+
+        @apocalypse-hoarder: yeah, doesn't everybody yearn for our 15 minutes of fame?
+
+        @apocalypse-hoarder: Sorry that yours is at such a shitty time though. Wish it could be better :(
+
+        @lunan0va: now that you put it like that...
+
+        @lunan0va: honestly i don't know what i want anymore.
+
+        @lunan0va: part of me wants to be literally invisible right now and another part of me wants to be like a figurehead of trans activism or smth lol. the dichotomy...
+        *choice
+            #Go back
+                *goto montage_1
     #Look at something else.
         *goto montage_1
 
