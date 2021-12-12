@@ -961,6 +961,7 @@ There have been a lot of messages since you were last here.
         @icemoongirl: wait, like, do you mean that like..... yknow??????
         *choice
             #Yes, I mean that in a romantic way.
+                *set luna_confessed true
                 *if (luna_red = 0)
                     *achieve love
                 *set luna_red + 1
@@ -1099,6 +1100,7 @@ There have been a lot of messages since you were last here.
         *set karla_message_ref "karla_question"
         *choice
             #Send the callout.
+                *set karla_send_callout true
                 *achieve callout
                 *label karla_chat_callout
                 *set karla_message_ref "karla_chat_callout"
@@ -1106,6 +1108,8 @@ There have been a lot of messages since you were last here.
 
                 @trappedinspace: Good idea. I'll write something up.
 
+                *label karla_send_callout_2
+                *set karla_send_callout true
                 @trappedinspace: I wonder if this chat screenshot alone is enough evidence... but tbh I don't see how we can get more.
 
                 *if (stella_secret)
@@ -1122,15 +1126,33 @@ There have been a lot of messages since you were last here.
                 *set karla_message_ref "karla_chat_no_callout"
                 @you: um... i don't really want to make a callout.
 
-                @trappedinspace: yeah I get it. I'll keep this info to myself.
+                @trappedinspace: Are you sure? I mean, at this point I'm not sure if it's still a callout rather than a historical document.
 
-                @trappedinspace: If you ever change your mind or want to go public with this, just let me know.
-                
-                
-                @trappedinspace: This is history now so maybe it'll be a good idea to preserve it lol.
+                @trappedinspace: It feels like concealing an important piece of history.
+                *choice
+                    #I'm sure. Don't send the callout.
+                        *label karla_chat_no_callout_2
+                        *set karla_message_ref "karla_chat_no_callout_2"
+                        @you: i'm sure. don't send the callout.
 
-                @trappedinspace: bye for now 💜
-                *goto montage_1
+                        @trappedinspace: Yeah I get it. I'll keep this info to myself.
+
+                        @trappedinspace: If you ever change your mind or want to go public with this, just let me know.
+                        
+                        
+                        @trappedinspace: This is history now so maybe it'll be a good idea to preserve it lol.
+
+                        @trappedinspace: bye for now 💜
+
+                        *goto montage_1
+                    #On second thought, let's send the callout.
+                        *label karla_chat_send_callout_actual
+                        *set karla_message_ref "karla_chat_send_callout_actual"
+                        @you: on second thought, maybe we should send the callout...
+
+                        @trappedinspace: Thanks! I'll try to write something up.
+
+                        *goto karla_send_callout_2
     *if (sofia_secret and not(stella_secret)) #I know that Sofia @nebulascribbler was up to something.
         *set karla_investigation 3
         *set revealed_sofia_secret true
@@ -1174,11 +1196,12 @@ You close your browser. It's getting late. You have school tomorrow.
 *label fanfiction
 *set luna_end (luna_helped)
 *set claire_end (claire_trust >= 2)
-*set karla_end (karla_investigation = 3)
+*set karla_end ((karla_investigation = 3) and karla_send_callout)
 *set sofia_end (sofia_secret and not(revealed_sofia_secret))
 *set neutral_end (not(luna_end) and (not(claire_end) and (not(karla_end) and (not(sofia_end)))))
 
-*gosub_scene fic_light
+*if writing_fic
+    *gosub_scene fic_light
 *comment TODO: epilogue?
         
 *label ending

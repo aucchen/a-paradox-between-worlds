@@ -132,6 +132,12 @@ Vibes forecast for today: truly rancid, like the water after a sewage overflow. 
 Is there hope for the future? Is there hope for humanity in the age of the online?
 
 *label montage_1
+*temp luna_rem (2 - luna_prog)
+*temp brun_rem (6 - brun_prog)
+*temp shad_rem (6 - shad_prog)
+*temp nebu_rem (6 - nebu_prog)
+*temp apoc_rem (6 - apoc_prog)
+*temp trap_rem (6 - trap_prog)
 *if ((karla_trust = 1) and ((karla_blue > karla_green) and (karla_mutuals or (karla_blue >= 25))))
     *set karla_mutuals true
     *set karla_sent_message true
@@ -152,22 +158,22 @@ Is there hope for the future? Is there hope for humanity in the age of the onlin
 Which blogs would you like to read?
 
 *choice
-    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch3_seen=1) (read)|}
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch3_seen=1) (read)|(${luna_rem})}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch3_seen=1) (read)|}
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch3_seen=1) (read)|(${brun_rem})}
         *set read_count + 1
         *gotoref "brun_1_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch3_seen=1) (read)|}
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch3_seen=1) (read)|(${shad_rem})}
         *set read_count + 1
         *gotoref "shad_1_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch3_seen=1) (read)|}
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch3_seen=1) (read)|(${nebu_rem})}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch3_seen=1) (read)|}
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch3_seen=1) (read)|(${apoc_rem})}
         *set read_count + 1
         *gotoref "apoc_1_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch3_seen=1) (read)|}
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch3_seen=1) (read)|(${trap_rem})}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
@@ -252,7 +258,7 @@ Anonymous asked: why are biological males like you always so obsessed with invad
 
 Anonymous asked: bro why do you still bother when no one's ever gonna really see you as a woman. everyone will always you as a boy who thinks he's a woman because he's mentally ill. no one gives a fuck bro.
 
-Anonymous asked: why are you such a violent and hate-filled man? Why are so many trans-identified males like you so filled with hate and cruelty?
+Anonymous asked: why are you such a violent and hate-filled man? Why are so many trans-identified males like you so filled with hate and cruelty? This is what America gets by not having free therapy.
 
 Anonymous asked: trans "women" don't exist. Only deranged males who desperately want to pretend they're oppressed.
 
@@ -315,6 +321,10 @@ Still at this?????
 @laughinghorsemotel asked: anyway Macmillan was right you really are mentally ill.
 
 The juxtaposition is incredible.
+
+@feministicemage asked: With all due respect, I think you're making your life unnecessarily difficult for yourself. It'd be easier if you had therapy to work out your issues with body image and your toxic feelings towards women.
+
+(checks blog) of course it's a t*rf. This is gaslighting, by the way. And the "therapy" you're suggesting is conversion therapy.
 
 @imoutofckr93 asked: [link to Luna's old selfie] lol i knew you were a tranny but you're just the ugliest motherfucker i've ever seen
 
@@ -1937,7 +1947,8 @@ Thus, you go to sleep for the night.
 
 *page_break
 
-*gosub_scene fic_wind
+*if writing_fic
+    *gosub_scene fic_wind
 *finish
 
 *label rx

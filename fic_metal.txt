@@ -116,66 +116,70 @@ You manage to stand up, despite your achy body. A familiar face soon approaches 
 
 "Yeah. They're probably all in the club room!"
 
-You follow Astra through the labyrinthine corridors of the Academy, until you end up in the empty classroom that so often served as your meeting place. The rest of the gang is there: Bruno, Tycho, and Capella. They smile and wave towards you.
+You follow Astra through the labyrinthine corridors of the Academy, until you end up in the empty classroom that so often served as your meeting place. Bruno and Capella are here, but not Tycho.
 
-"Welcome to the Mystery Club!" exclaims Tycho. "Astra's told us a great deal about you, about who you were back in your original world. There's a special mystery that we saved just for you!"
+"Welcome to the Mystery Club, Gali," Bruno says with a familiar smirk. "Astra has told us all about you."
 
-Suddenly, you feel tired. It's as if all of the strength has drained out of your body, or perhaps you've just caught up on all the exhaustion of the previous worlds. You have no energy left for this, nothing within you to help the Mystery Club or anything...
+*if (current_chapter >= 4)
+    Suddenly, you feel tired. It's as if all of the strength has drained out of your body, or perhaps you've just caught up on all the exhaustion of the previous worlds. You have no energy left for this, nothing within you to help the Mystery Club or anything...
 
-[A/N: you're feeling tired...]
+    [A/N: you're feeling tired...]
 
-*comment sorry but i just got tired of writing. it has to end.
-*choice
-    #You know what? No.
-        "Um, no. I don't want to do whatever it is you'll have me do."
+    *comment sorry but i just got tired of writing. it has to end.
+    *choice
+        #You know what? No.
+            "Um, no. I don't want to do whatever it is you'll have me do."
 
-        Astra frowns. "Oh? Why?"
+            Astra frowns. "Oh? Why?"
 
-        *choice
-            #I'm tired.
-                "I'm tired," you say. "I just... want to rest, I guess."
+            *choice
+                #I'm tired.
+                    "I'm tired," you say. "I just... want to rest, I guess."
 
-                "Oh. So, what do you want to do? Do you want to find a place to sleep?"
+                    "Oh. So, what do you want to do? Do you want to find a place to sleep?"
 
-                "Um, maybe? I just want to..."
+                    "Um, maybe? I just want to..."
 
-                *choice
-                    #Take a nap.
-                        "Yeah, I just want to take a nap..."
+                    *choice
+                        #Take a nap.
+                            "Yeah, I just want to take a nap..."
 
-                        Astra laughs. "Right! Yeah, taking care of your physiological needs! You must be tired from all the universe hopping. We'll find a room for you."
+                            Astra laughs. "Right! Yeah, taking care of your physiological needs! You must be tired from all the universe hopping. We'll find a room for you."
 
-                        She leaves the classroom, and you follow her to the dorms.
+                            She leaves the classroom, and you follow her to the dorms.
 
-                        *goto peaceful_world
-                    #Exit this world. Just move on from this place.
-                        "I just want to move on. If this isn't my home, then I don't want to stay here any longer than I have to."
+                            *goto peaceful_world
+                        #Exit this world. Just move on from this place.
+                            "I just want to move on. If this isn't my home, then I don't want to stay here any longer than I have to."
 
-                        "Oh." Astra sighs. "That isn't how it works. You should know that yet. You can only leave when something has been achieved, when you've done something in this world."
+                            "Oh." Astra sighs. "That isn't how it works. You should know that yet. You can only leave when something has been achieved, when you've done something in this world."
 
-                        "Then can I at least rest?"
+                            "Then can I at least rest?"
 
-                        "Sure, you can."
+                            "Sure, you can."
 
-                        She leaves the classroom, and you follow.
+                            She leaves the classroom, and you follow.
 
-                        *goto peaceful_world
-                    #Actually, let's hear about the magical mysteries!
-                        "Actually, let's hear about the mysteries."
+                            *goto peaceful_world
+                        #Actually, let's hear about the magical mysteries!
+                            "Actually, let's hear about the mysteries."
 
-                        "Great! This is the mystery of the..."
+                            "Great! This is the mystery of the..."
 
-                        You can't do this. Your eyes cannot stay open. Your body is too tired.
+                            You can't do this. Your eyes cannot stay open. Your body is too tired.
 
-                        *goto sleep
-            #[A/N: I'm tired.]
-                [Is there any point in writing this anymore? When the universe is like this, is there any point to writing these stories? Was this story ever worth anything?]
+                            *goto sleep
+                #[A/N: I'm tired.]
+                    [Is there any point in writing this anymore? When the universe is like this, is there any point to writing these stories? Was this story ever worth anything?]
 
-                *goto fic_continue
-    #[A/N: You know what? No.]
-        [What's the point? What's the point of writing these stories and working on these fictional universes when... when the world is like this?]
+                    *goto fic_continue
+        #[A/N: You know what? No.]
+            [What's the point? What's the point of writing these stories and working on these fictional universes when... when the world is like this?]
 
-        *goto fic_continue
+            *goto fic_continue
+*else
+    *comment TODO:
+    ""
 
 *label peaceful_world
 *page_break The dorm room...

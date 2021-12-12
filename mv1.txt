@@ -321,6 +321,8 @@ Wait... by what name does she call you?
               *set handle "gali"
           #Leo
               *set handle "leo"
+          #Lyra
+              *set handle "lyra"
           #Galileo
               *set handle "galileo"
           #Tycho
@@ -714,14 +716,10 @@ And which romantic pairing is your favorite ship?
         Brunova is probably the most popular ship in the fandom, so it's a safe choice. There are hundreds if not thousands of blogs and fic authors devoted solely to this ship to the exclusion of anything else in the Nebulaverse. Of course it has its detractors, but they are mostly marginal.
         *set top_ship "brunova"
         *set brunova + 10
-    #Astrapella - Astra/Capella
+    #Astrapella - Astra/Capella (Luna's favorite ship, and the most popular F/F ship)
         Astrapella is the most popular (well, only popular) F/F ship in the Nebulaverse fandom. It has a smaller fandom than the big m/m ships or the m/f ships, but its following is very devoted.
         *set top_ship "astrapella"
         *set astrapella + 10
-    #Astranova - Astra/Gali
-        Readers of the Chronicles who care about things like "canon" often argue about whether Gali should end up with Astra or Capella. The consensus is that Ellanova is more of the direction GTM is going in, but Astranova remains a popular ship.
-        *set top_ship "astranova"
-        *set astranova + 10
     #Ellanova - Capella/Gali (the closest there is to a "canon" ship)
         Readers of the Chronicles who care about things like "canon" often argue about whether Gali should end up with Astra or Capella. The consensus is that Ellanova is more of the direction GTM is going. It is the most "canon" ship.
         *set top_ship "ellanova"
@@ -945,11 +943,11 @@ Anyway, your parents are asleep, and you're probably done with homework. So what
 *temp luna_1_4_notes 3
 *temp luna_1_5_notes 342
 
-*temp brun_1_1_notes 1972
+*temp brun_1_1_notes 47326
 *temp brun_1_2_notes 12325
-*temp brun_1_3_notes 8141
+*temp brun_1_3_notes 141
 *temp brun_1_4_notes 5
-*temp brun_1_5_notes 73264
+*temp brun_1_5_notes 4972
 
 *temp shad_1_1_notes 1287
 *temp shad_1_2_notes 83212
@@ -958,7 +956,7 @@ Anyway, your parents are asleep, and you're probably done with homework. So what
 *temp shad_1_5_notes 101
 
 *temp nebu_1_1_notes 324874
-*temp nebu_1_2_notes 21
+*temp nebu_1_2_notes 2181
 *temp nebu_1_3_notes 120394
 *temp nebu_1_4_notes 238
 *temp nebu_1_5_notes 76291
@@ -996,12 +994,12 @@ Anyway, your parents are asleep, and you're probably done with homework. So what
 Online weather report: vibes steady. Chance of callouts: <1%. The blogging equivalent of a bright, cloudless summer day.
 
 *label montage_1
-*temp luna_rem (5 - luna_prog)
-*temp brun_rem (5 - brun_prog)
-*temp shad_rem (5 - shad_prog)
-*temp nebu_rem (5 - nebu_prog)
-*temp apoc_rem (5 - apoc_prog)
-*temp trap_rem (5 - trap_prog)
+*temp luna_rem (6 - luna_prog)
+*temp brun_rem (6 - brun_prog)
+*temp shad_rem (6 - shad_prog)
+*temp nebu_rem (6 - nebu_prog)
+*temp apoc_rem (6 - apoc_prog)
+*temp trap_rem (6 - trap_prog)
 
 *if (luna_sent_message and not(luna_message_read))
     Luna @lunan0va has sent you a message.
@@ -1009,7 +1007,7 @@ Online weather report: vibes steady. Chance of callouts: <1%. The blogging equiv
 Which blogs would you like to read?
 
 *choice
-    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch1_seen=1) (read)|(${luna_rem}}
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch1_seen=1) (read)|(${luna_rem})}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
     *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch1_seen=1) (read)|(${brun_rem})}
@@ -1051,7 +1049,7 @@ Luna is one of your oldest mutuals on this site, and your closest companion here
 
 How am I supposed to have time to write while taking 4 ap classes? I really wish we could put fanfic experience on our college apps. But I guess I need to do well in, like, actual school if I want to get out of here for college.
 
-Tags: #moondust
+Tags: #moondust, #uh im dying here
 
 ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 
@@ -1096,7 +1094,7 @@ ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 
 (don't tag as #kin or #id. don't remove this caption.)
 
-Tags: #astra #art
+Tags: #astra, #art
 
 ${luna_1_2_notes} notes
 
@@ -1131,7 +1129,7 @@ ${luna_1_2_notes} notes
 
 I love astrapella so much. These girls deserve the world.
 
-Tags: #astrapella #art #:)
+Tags: #astrapella, #art, #:)
 
 ${luna_1_3_notes} notes
 
@@ -1257,7 +1255,7 @@ Thank you! I have some responses:
 
 (Read more)
 
-Tags: #trans girl gali #reply #meta
+Tags: #trans girl gali, #reply, #meta, #the gali & capella relationship is key!!!, #it makes so much sense when you realize they're both gay girls!!!
 
 ${luna_1_5_notes} notes
 
@@ -1303,13 +1301,13 @@ ${luna_1_5_notes} notes
 
 Lux is one of your mutuals, but it's not like you've ever talked. Maybe he just followed back whoever. As his name suggests, he's a big fan of the brunova ship, and probably kins Bruno or something like that.
 
-[b]@brunova-official reblogged from @shadow-protectrix at 9:22 PM. OP: @cyanstars[/b]
+[b]@brunova-official reblogged from @gnosticore at 9:00 PM. OP: @fangirlingforever[/b]
 
-[Fanart of Galileo and Bruno hugging on a green field in a planet, half-body, with rays of light shining through clouds, illuminating the two of them. The image is a side profile, with Bruno's head closer to the audience resting on Gali's shoulder.]
+Remember that while likes are nice, reblogs are the threads that knit this website together. Reblogs are necessary for artists, especially small artists on this platform, because they're what brings in the eyeballs and attention and everything that comes with that. We live off reblogs, so if you reblog a post, that's an act of caring.
 
-"You mean the [i]worlds[/i] to me"
+So if you care about the people you follow, go ahead and slam that mf reblog button!
 
-Tags: #me, #brunova
+Tags: #yeah this, #as a small artist im dying for reblogs squirtle
 
 ${brun_1_1_notes} notes
 
@@ -1321,16 +1319,13 @@ ${brun_1_1_notes} notes
     *disable_reuse #Reblog 🔁
         *if rx
             *gosub lux_like
-            *gosub shipping
+            *gosub sympathy
 
         *set rb_count + 1
         *set lux_interact + 1
         *set lux_blue %+ 3
         *set brun_1_1_notes + 1
-        *set shipping %+ 3
-        *set brunova %+ 3
-        *set bruno %+ 2
-        *set gali %+ 2
+        *set sympathy %+ 3
         *goto brun_1_1
     #Next post.
         *goto brun_1_2
@@ -1341,11 +1336,13 @@ ${brun_1_1_notes} notes
 *set brun_prog 2
 [b]@brunova-official reblogged from @cyanstars at 9:17 PM. OP: @cyanstars[/b]
 
-[Fanart of Galileo and Bruno holding hands in the middle of space. Gali is glancing towards Bruno, smiling, while Bruno is frowning and gazing forward. Their bodies are framed by the purple and blue colors of the nebula.]
+[Fanart of Galileo and Bruno, two boys holding hands in the middle of space. Gali is glancing towards Bruno, smiling, while Bruno is frowning and gazing forward. Their bodies are framed by the purple and blue colors of the nebula.]
 
 I am genuinely incorrigibly afflicted by this ship.
 
-Tags: #me, #brunova
+(don't tag as kin)
+
+Tags: #asjkdfl;jafdlsk;jf this is amazing, #brunova, #thank you user cyanstars for my life
 
 ${brun_1_2_notes} notes
 
@@ -1378,20 +1375,22 @@ ${brun_1_2_notes} notes
 
 *label brun_1_3
 *set brun_prog 3
-[b]@brunova-official reblogged from @bruno-helios at 9:11 PM. OP: @bruno-helios[/b]
+[b]@brunova-official reblogged from @dailybrunohelios at 9:11 PM. OP: @dailybrunohelios[/b]
 
-[Black-and-white full-body sketch of Bruno Helios, a boy with white hair and a complex expression, brow slightly furrowed. His hands are in his jacket pocket, and he is glancing towards his left side.]
+Anonymous asked: can you draw an adult trans!bruno with top surgery scars? Thanks, that'd be really cool but it's okay if you're uncomfortable!
 
-I made this sketch at midnight last night. I'm more than a little in love with Bruno.
+[Black-and-white full-body sketch of Bruno Helios, a boy with white hair and a complex expression, brow slightly furrowed. His hands are in his jacket pocket, and he is glancing towards his left side. He is topless, and scars can be seen on his chest.]
 
-Tags: #me, #kin
+Mod Lux: sure, of course i can!
+
+Tags: #me, #kin, #id, #bruno, #my art, #thanks for the suggestion anon
 
 ${brun_1_3_notes} notes
 
 *choice
     *disable_reuse #Like ❤️
         *set brun_1_3_notes + 1
-        *set lux_blue %+ 2
+        *set lux_blue %+ 3
         *goto brun_1_3
     *disable_reuse #Reblog 🔁
         *if rx
@@ -1400,9 +1399,9 @@ ${brun_1_3_notes} notes
 
         *set rb_count + 1
         *set lux_interact + 1
-        *set lux_blue %+ 3
+        *set lux_blue %+ 4
         *set gen %+ 3
-        *set bruno %+ 3
+        *set bruno %+ 4
         *set brun_1_3_notes + 1
         *goto brun_1_3
     #Next post.
@@ -1414,11 +1413,11 @@ ${brun_1_3_notes} notes
 
 *label brun_1_4
 *set brun_prog 4
-[b]@brunova-official posted at 9:08 PM[/b]
+[b]@brunova-official posted at 9:01 PM[/b]
 
 if you think brunova is abusive then why the f are you following me
 
-Tags: #ajsdl;kfjadsl;jdafslkjasf
+Tags: #ajsdl;kfjadsl;jdafslkjasf, #no im not posting the ask, #im gonna reblog more brunova just to piss that anon off
 
 ${brun_1_4_notes} notes
 
@@ -1447,13 +1446,16 @@ ${brun_1_4_notes} notes
 
 *label brun_1_5
 *set brun_prog 5
-[b]@brunova-official reblogged from @gnosticore at 9:00 PM. OP: @fangirlingforever[/b]
 
-Remember that while likes are nice, reblogs are the yarn that knit this website together. Reblogs are necessary for artists, especially small artists on this platform, because they're what brings in the eyeballs and attention and everything that comes with that. We live off reblogs, so if you reblog a post, that's an act of caring.
+[b]@brunova-official reblogged from @shadow-protectrix at 8:22 PM. OP: @cyanstars[/b]
 
-So if you care about the people you follow, go ahead and slam that mf reblog button!
+[Fanart of Galileo and Bruno hugging on a green field in a planet, half-body, with rays of light shining through clouds, illuminating the two of them. The image is a side profile, with Bruno's head closer to the audience resting on Gali's shoulder.]
 
-Tags: #yeah this, #as a small artist im dying for reblogs squirtle
+"You mean the [i]worlds[/i] to me"
+
+(Don't tag as kin)
+
+Tags: #brunova, #thank you cyanstars...
 
 ${brun_1_5_notes} notes
 
@@ -1491,13 +1493,9 @@ Y'all, who's all excited for the NebulaCon this year? We have so many amazing th
 
 [gif of a man waving excitedly]
 
-[gif of a movie scene] 
+[gif of a movie scene of the main five characters running through the Pulsar Academy's hallways]
 
 Tags: #nebulacon
-
-@brunova-official reblogged this.
-*line_break
-Tags: #i am!!!!, #probably wont make it but i can hope
 
 ${shad_1_1_notes} notes
 
@@ -1524,6 +1522,7 @@ ${shad_1_1_notes} notes
     #Look at another blog.
         *goto montage_1
 
+*comment foreshadowing
 *label shad_1_2
 *set shad_prog 2
 [b]@shadow-protectrix reblogged from @nebulaincolor at 8:50 PM. OP: @jizzwailer[/b]
@@ -1757,13 +1756,30 @@ ${nebu_1_1_notes} notes
 
 *label nebu_1_2
 *set nebu_prog 2
-[b]@nebulascribbler posted at 5:30 PM[/b]
+[b]@nebulascribbler reblogged from @taikongs at 5:30 PM. OP: @taikongs[/b]
 
-To all the astrapellas out there, I am writing a new fic and you will *so* look forward to it.
+Has anyone realized yet that brunova and astrapella are the same ship?
 
-[gif of a scene from the first film, of Astra and Capella holding hands.]
+One of them is a gentle, innocent, loving person who is constantly afraid of showing their inner inadequacy. The other one is a lonely, aloof social outcast who projects a hard, even asshole-ish image while secretly yearning for companionship.
 
-Tags: #sofia speaks, #astrapella
+Am I talking about brunova or astrapella?
+
+[b]@taikongs[/b]:
+
+Okay, I thought about this for a bit while doing laundry and I think I finally understand what makes brunova (and astrapella, and johnlock, and destiel, and like every other ship) so good.
+
+Basically, in every ship, there are two kinds of people (ignoring polyships for now). I guess you could think of one of them as the "soft" one and the "hard" one, but that's super simplified. Gali is the one with the soft, innocent exterior, like the perfect, beautiful, radiant cinnamon roll that he is. But is he happy? No! He puts so much love and affection out into the world, but he never asks for anything back. He's always *yearning* for a genuine connection to someone!
+
+Now, there's Bruno on the other hand, and he's a pure nightmare of a human being! He's this prickly jerk who absolutely never shows weakness and always seems to live for himself. But is he happy? No! Bruno's secretly the loneliest person there is! He's always *yearning* for someplace, someone he can open up to.
+
+And that's why they fit so well together, like puzzle pieces!
+
+You can translate this dynamic to astrapella too, and it works so well for so many other ships.
+
+tl;dr: it's the yearning!!!
+
+Tags: #thanks for writing this! it is very cool!, #meta, #brunova, #astrapella
+*comment yeah this is a reference to "the dynamic" with the sweaterboy and absolute nightmare. i'll cite it in the references.
 
 ${nebu_1_2_notes} notes
 
@@ -1775,16 +1791,17 @@ ${nebu_1_2_notes} notes
     *disable_reuse #Reblog 🔁(tag it with something enthusiastic).
         *if rx
             *gosub sofia_like
+            *gosub meta
             *gosub shipping
 
         *set rb_count + 1
-        *set sofia_blue %+ 4
+        *set sofia_blue %+ 2
         *set sofia_interact + 1
         *set nebu_1_2_notes + 1
+        *set meta %+ 4
         *set shipping %+ 3
-        *set astrapella %+ 3
-        *set astra %+ 2
-        *set capella %+ 2
+        *set brunova %+ 3
+        *set astrapella %+ 2
         *goto nebu_1_2
     #Next post.
         *goto nebu_1_3
@@ -2397,7 +2414,7 @@ ${trap_1_5_notes} notes
 
 @lunan0va: no, why tf wouldnt you belong here?? you're awesome!
 
-@trappedinspace: Sorry if this sounds weird, but a lot of times there are boundary issues when adults interact in spaces with minors.
+@trappedinspace: There are a lot of potential issues with personal boundaries when adults interact in spaces with minors.
 
 @lunan0va: come on, you're literally just 5 years older than me. it's fine. you're fine!
 
@@ -2425,6 +2442,8 @@ ${trap_1_5_notes} notes
 
         @lunan0va: hi ${handle}!
 
+        *goto annc_chat_2
+    #Just stay silent, wait for someone else to talk.
         *label annc_chat_2
         *set annc_chat_ref "annc_chat_2"
         @trappedinspace: Hi @${username}.
@@ -2435,9 +2454,9 @@ ${trap_1_5_notes} notes
 
         @lunan0va: sure, go ahead!
 
-        @apocalypse-hoarder: so. Astrapella. Best ship or greatest ship?
+        @apocalypse-hoarder: so. we're all astrapellas here, right?
 
-        @lunan0va: it's the best ship obvs!
+        @lunan0va: yeah of course!
 
         @apocalypse-hoarder: have you read the fix that I reblogged?
 
@@ -2471,14 +2490,14 @@ ${trap_1_5_notes} notes
                 @apocalypse-hoarder: agreed, but it has a lot of potential!
 
                 *goto annc_chat_wait
-            #What about Ellanova or Astranova?
+            #What about Ellanova?
                 *set ellanova %+ 2
                 *set karla_blue %+ 3
                 *label annc_chat_ellanova_1
                 *set annc_chat_ref "annc_chat_ellanova_1"
-                @you: um... what about ellanova or astranova?
+                @you: um... what about ellanova?
 
-                @trappedinspace: Unfortunately I still have a soft spot for ellanova...
+                @trappedinspace: I still have a soft spot for ellanova...
 
                 @apocalypse-hoarder: $!{handle} and Karla have been canceled for heteronormativity crimes :P
 
@@ -2498,9 +2517,15 @@ ${trap_1_5_notes} notes
 
                 @trappedinspace: I self-inserted as Capella in all my fics lol, back when I still thought I was interested in boys.
 
+                @apocalypse-hoarder: LMAO
+
                 @lunan0va: do you still have those fics up? that sounds very interesting!
 
                 @trappedinspace: Yes, but it's probably not the time or place for that...
+
+                @lunan0va: well, alright, but i still want to see them :p
+
+                ...
 
                 The conversation has died off.
                 *choice
@@ -2521,6 +2546,8 @@ You have to return to reality. It's like receding behind the Veil of Illusion, b
 *label fanfiction
 
 [i]The stage of the world shifts. Gears lock into place. The curtain rises.[/i]
+
+[i]There is a place between worlds, a place governed by the rules of possibility, a place to escape, or[/i]
 
 [b]Universe - Noncanon?[/b]
 *script setMbmMode(false);
@@ -2949,6 +2976,19 @@ What will you title the story?
         *input_text story_title
         What is a short version or abbreviation of your story's title?
         *input_text story_title_short
+    #Actually, I don't want to write a fanfic.
+        Really? But people might be looking forward to this. And this might be your opportunity to finally be noticed, to be seen. Even if your fanfic isn't *good* exactly, isn't it better to have it out there, existing in the world, as proof that you existed?
+
+        Or something like that.
+        *choice
+            #I change my mind. Let's do it.
+                Okay.
+
+                *goto story_title_choice
+            #I am absolutely not writing a fanfiction.
+                Okay. You don't have to write it.
+                *set writing_fic false
+                *goto mv1_end
         
         
 Your story is titled "${story_title}". Is that what you're going with?

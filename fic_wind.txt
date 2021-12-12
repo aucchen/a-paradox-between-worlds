@@ -16,7 +16,6 @@ Once more you feel the ground beneath your body. The only other sensation is the
 You open your eyes. Where are you?
 *choice
     #A sandy desert world, scorched by twin suns.
-        *set ch3_setting "desert"
         *goto desert_feel
 
 *label desert_feel

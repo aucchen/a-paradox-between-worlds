@@ -132,26 +132,32 @@ A brief time in which you are allowed to exist for yourself.
 Internet weather report: fair so far. Storms lurk on the horizon; who knows where they're headed. But your small corner of the internet is doing just fine.
 
 *label montage_1
+*temp luna_rem (6 - luna_prog)
+*temp brun_rem (6 - brun_prog)
+*temp shad_rem (6 - shad_prog)
+*temp nebu_rem (6 - nebu_prog)
+*temp apoc_rem (6 - apoc_prog)
+*temp trap_rem (6 - trap_prog)
 
 Which blogs would you like to read?
 
 *choice
-    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch2_1_seen=1) (read)|}
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch2_1_seen=1) (read)|(${luna_rem})}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch2_1_seen=1) (read)|}
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch2_1_seen=1) (read)|(${brun_rem})}
         *set read_count + 1
         *gotoref "brun_1_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch2_1_seen=1) (read)|}
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch2_1_seen=1) (read)|(${shad_rem})}
         *set read_count + 1
         *gotoref "shad_1_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch2_1_seen=1) (read)|}
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch2_1_seen=1) (read)|(${nebu_rem})}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch2_1_seen=1) (read)|}
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch2_1_seen=1) (read)|(${apoc_rem})}
         *set read_count + 1
         *gotoref "apoc_1_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch2_1_seen=1) (read)|}
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch2_1_seen=1) (read)|(${trap_rem})}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *if ((in_claire_chat)) #See Claire's groupchat.
@@ -310,13 +316,17 @@ ${luna_1_3_notes} notes
 
 *label luna_1_4
 *set luna_prog 4
-[b]@lunan0va reblogged from @lunan0va 1 day ago.[/b]
+[b]@lunan0va reblogged from @ask-capella-taikong 1 day ago.[/b]
 
-This is an astrapella story I wrote... sorry if it's kind of angsty. It's exactly as the title says. I hope you can enjoy it.
+Anonymous asked: hi capella! just wondering, do you speak any languages besides Imperial Standard? ((Also asking for mun!))
 
-[Link to archive - "Holding hands until the end of the world" by @lunan0va. astrapella, hurt/comfort]
+[Illustration of Capella in her Academy uniform looking at the anon's question, with a finger to her lips and a quizzical expression]
 
-Tags: #my fanfic, #astrapella, #nebulaverse fanfic, #holding hands until the end of the world, #i literally skipped homework for this so you'd better read it
+"Um, let's see... 我说一些普通话. I learned from my parents, but I haven't had many opportunities to speak ever since entering the Academy."
+
+((Mun: yeah, I'm chinese malaysian and i speak 4 languages!! I have no idea what would be the equivalent of chinese in the nebulaverse bc neither does macmillan lmao, so im just calling it 普通话))
+
+Tags: #capella, #i mean yeah, #also I wish I spoke the same language as my parents lol
 
 ${luna_1_4_notes} notes
 
@@ -329,16 +339,15 @@ ${luna_1_4_notes} notes
     *disable_reuse #Reblog 🔁
         *if rx
             *gosub luna_like
-            *gosub shipping
+            *gosub gen
 
         *set rb_count + 1
         *set luna_1_4_notes + 1
         *set luna_interact + 1
         *set luna_blue %+ 5
-        *set shipping %+ 3
+        *set gen %+ 3
         *set astrapella %+ 3
-        *set astra %+ 2
-        *set capella %+ 2
+        *set capella %+ 4
         *goto luna_1_4
     #Next post.
         *goto luna_1_5
@@ -1129,7 +1138,6 @@ ${apoc_1_2_notes} notes
         *set rb_count + 1
         You reblog one of the people saying that this post is fiction, that this is not a real brain scan at all, that it's from a zombie TV show. Does that make you feel better about this abject disinformation?
         
-        
         *set apoc_1_2_notes + 1
         *goto apoc_1_3
     #Next post.
@@ -1338,7 +1346,7 @@ Me taking the cogiati as a "joke" in 9th grade: I hope this doesn't set back my 
 
 Me bookmarking tg storytime dot com in 10th grade: I just think this is good writing, that's all!
 
-Tags: #me reading the wikipedia page for aut*g*neph*lia in 9th grade: this isn't going to mess up my mind for the next five years at all
+Tags: #me reading the wikipedia page for aut*g*neph*lia in 9th grade: this isn't going to mess up my brain for the next five years at all
 
 ${trap_1_2_notes} Notes
 
@@ -1547,6 +1555,7 @@ Right, you've been invited to Claire's Nebulaverse writers groupchat. It doesn't
     #Um, thanks?
         *set claire_blue %+ 3
         *set sofia_blue %+ 4
+        *set lux_blue %+ 3
         *label writers_chat_1_2
         *set writers_chat_ref "writers_chat_1_2"
         @you: um, thanks...
@@ -1651,7 +1660,7 @@ This is the chat group that Luna invited you into.
 
 @apocalypse-hoarder: maybe the universe is just god's fabric/fanfic...
 
-@lunan0va: man that just reminds me. i used to pray to god that i would one day wake up as a girl. and when that never happened i kinda didn't know if i believed in god anymore.
+@lunan0va: that reminds me of how i used to pray to god that i would one day wake up as a girl. that was when i started doubting God.
 
 @lunan0va: wow why did i say that. that was unnecessarily dark lmao
 
@@ -1715,7 +1724,8 @@ You're done reading blogs for tonight. It's time to fall back behind the Veil on
 
 *page_break Another day, another night...
 
-*gosub_scene fic_ice
+*if writing_fic
+    *gosub_scene fic_ice
 
 
 *label mv2_pt2
@@ -1749,11 +1759,11 @@ When you fall, will you learn how to pick yourself up again? Or will you keep on
 *temp apoc_unread 1
 *temp trap_unread 1
 
-*temp luna_2_1_notes 6
-*temp luna_2_2_notes 16
-*temp luna_2_3_notes 11
-*temp luna_2_4_notes 21
-*temp luna_2_5_notes 5
+*temp luna_2_1_notes 232
+*temp luna_2_2_notes 6
+*temp luna_2_3_notes 16
+*temp luna_2_4_notes 11
+*temp luna_2_5_notes 21
 
 *temp brun_2_1_notes 187
 *temp brun_2_2_notes 3
@@ -1804,27 +1814,33 @@ When you fall, will you learn how to pick yourself up again? Or will you keep on
 It's nearly midnight in your time zone. Online feels different tonight. Something is off. The vibes are wrong, like the static in the air right before a thunderstorm. Darkness is coming. You'll find out what's going on soon enough.
 
 *label montage_2
+*temp luna_rem (6 - luna_prog)
+*temp brun_rem (6 - brun_prog)
+*temp shad_rem (6 - shad_prog)
+*temp nebu_rem (6 - nebu_prog)
+*temp apoc_rem (6 - apoc_prog)
+*temp trap_rem (6 - trap_prog)
 
 Which blogs would you like to read?
 
 
 *choice
-    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch2_2_seen=1) (read)|}
+    *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch2_2_seen=1) (read)|(${luna_rem})}
         *set read_count + 1
         *gotoref "luna_2_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch2_2_seen=1) (read)|}
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch2_2_seen=1) (read)|(${brun_rem})}
         *set read_count + 1
         *gotoref "brun_2_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch2_2_seen=1) (read)|}
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch2_2_seen=1) (read)|(${shad_rem})}
         *set read_count + 1
         *gotoref "shad_2_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch2_2_seen=1) (read)|}
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch2_2_seen=1) (read)|(${nebu_rem})}
         *set read_count + 1
         *gotoref "nebu_2_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch2_2_seen=1) (read)|}
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch2_2_seen=1) (read)|(${apoc_rem})}
         *set read_count + 1
         *gotoref "apoc_2_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch2_2_seen=1) (read)|}
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch2_2_seen=1) (read)|(${trap_rem})}
         *set read_count + 1
         *gotoref "trap_2_${trap_prog}"
     *if (read_count > 1) #See GTM's post that everyone's talking about.
@@ -1840,13 +1856,15 @@ Which blogs would you like to read?
 *set luna_prog 1
 [b]${luna_bio}[/b]
 
-[b]@lunan0va posted at 11:57 PM[/b]
+[b]@lunan0va reblogged from @noncanonical at 12:05 AM. OP: @nebulaverse-suggestions[/b]
 
-Okay one last post bc I'm about to die from reading all these fricking asks
+[b]@nebulaverse-suggestions:[/b]
 
-God fuck gtm. Just fuck her for posting that shit. So many fuckin fancy words just to say that you hate trans people. I hope all transphobes die and this includes GTM.
+A reminder for anyone who needs it: if you're feeling hungry, eat something. If you're feeling tired, go to bed, or take a nap. If your eyes hurt or your body is uncomfortable from sitting for too long, get up and go for a short stroll.
 
-Tags: #moondust, #d/ont r/eblog, #anyway all transphobes can die
+I really, really don't mean this to be condescending. It's just that whenever you're feeling like shit, whenever you feel sad or angry or anxious, not  taking care of your body will only make you feel worse. And maybe, just maybe, you'll find that the reasons behind your emotions were physical all along.
+
+Tags: #uhhh its not helping..., #i ate something and i still feel like shit, #help what am i supposed to do now., #do i go to sleep, #i still have homework i have to do by morning, #see normally I would say something like 'send me your astrapella headcanons', #but that doesn't seem appropriate now lmao
 
 ${luna_2_1_notes} note@{luna_2_1_notes=1 |s}
 
@@ -1854,44 +1872,17 @@ ${luna_2_1_notes} note@{luna_2_1_notes=1 |s}
     *disable_reuse #Like ❤️
         *set luna_interact + 1
         *set luna_2_1_notes + 1
-        *set luna_blue %+ 4
+        *set luna_blue %+ 1
         *goto luna_2_1
     *disable_reuse #Reblog 🔁
         *if rx
-            *gosub luna_st_dislike
+            *gosub luna_like
+            *gosub sympathy
 
         *set rb_count + 1
         *set luna_interact + 1
         *set luna_2_1_notes + 1
-        *set luna_green + 25
-        Luna messages you:
-
-        @lunan0va: hey can you delete the post you just reblogged?
-        *choice
-            #Delete the post.
-                *set luna_green - 24
-                *set luna_2_1_notes - 1
-                You delete the post and let Luna know.
-
-                @lunan0va: thanks
-                *goto luna_2_1
-            #No. I'm a total asshole.
-                @lunan0va: :(
-
-                @lunan0va: why?
-
-                @lunan0va: is it really that big of a deal?
-                *choice
-                    #Just delete the post.
-                        *set luna_2_1_notes - 1
-                        *set luna_green - 15
-                        @lunan0va: thanks
-                        *goto luna_2_1
-                    #No.
-                        *set luna_green + 10
-                        *set luna_blue - 10
-                        @lunan0va: fine. whatever. just don't keep on doing this.
-                        *goto luna_2_1
+        *set luna_blue %+ 3
         *goto luna_2_1
     #Next post.
         *goto luna_2_2
@@ -1900,19 +1891,80 @@ ${luna_2_1_notes} note@{luna_2_1_notes=1 |s}
 
 *label luna_2_2
 *set luna_prog 2
+
+[b]@lunan0va posted at 11:57 PM[/b]
+
+Okay one last post bc I'm about to die from reading all these fricking asks
+
+God fuck gtm. Just fuck her for posting that shit. So many fuckin fancy words just to say that you hate trans people. I hope all transphobes die and this includes GTM.
+
+Tags: #moondust, #d/ont r/eblog, #anyway all transphobes can die
+
+${luna_2_2_notes} note@{luna_2_2_notes=1 |s}
+
+*choice
+    *disable_reuse #Like ❤️
+        *set luna_interact + 1
+        *set luna_2_2_notes + 1
+        *set luna_blue %+ 4
+        *goto luna_2_2
+    *disable_reuse #Reblog 🔁
+        *if rx
+            *gosub luna_st_dislike
+
+        *set rb_count + 1
+        *set luna_interact + 1
+        *set luna_2_2_notes + 1
+        *set luna_green + 25
+        Luna messages you:
+
+        @lunan0va: hey can you delete the post you just reblogged?
+        *choice
+            #Delete the post.
+                *set luna_green - 24
+                *set luna_2_2_notes - 1
+                You delete the post and let Luna know.
+
+                @lunan0va: thanks
+                *goto luna_2_2
+            #No. I'm a total asshole.
+                @lunan0va: :(
+
+                @lunan0va: why?
+
+                @lunan0va: is it really that big of a deal?
+                *choice
+                    #Just delete the post.
+                        *set luna_2_2_notes - 1
+                        *set luna_green - 15
+                        @lunan0va: thanks
+                        *goto luna_2_2
+                    #No.
+                        *set luna_green + 10
+                        *set luna_blue - 10
+                        @lunan0va: fine. whatever. just don't keep on doing this.
+                        *goto luna_2_2
+        *goto luna_2_2
+    #Next post.
+        *goto luna_2_3
+    #Look at another blog.
+        *goto montage_2
+
+*label luna_2_3
+*set luna_prog 3
 [b]@lunan0va posted at 11:34 PM[/b]
 
 Content warning: transphobia, slurs
 
 *choice
     #See post
-        *goto luna_2_2_post
+        *goto luna_2_3_post
     #Next post
-        *goto luna_2_3
+        *goto luna_2_4
     #Prev post
-        *goto luna_2_1
+        *goto luna_2_2
 
-*label luna_2_2_post
+*label luna_2_3_post
 [b]@lunan0va posted at 11:34 PM[/b]
 
 Aaaaaaand the asks are rolling in!
@@ -1953,28 +2005,28 @@ ${luna_2_2_notes} notes
 
 *choice
     *disable_reuse #Like ❤️
-        *set luna_2_2_notes + 1
-        *goto luna_2_2
+        *set luna_2_3_notes + 1
+        *goto luna_2_3
     *disable_reuse #Reblog 🔁
         *if rx
             *gosub luna_dislike
             *gosub discourse
 
         *set rb_count + 1
-        *set luna_2_2_notes + 1
+        *set luna_2_3_notes + 1
         *set luna_interact + 1
         *set luna_green %+ 2
         *set discourse %+ 3
-        *goto luna_2_2
-    #Next post.
         *goto luna_2_3
+    #Next post.
+        *goto luna_2_4
     #Prev post.
-        *goto luna_2_1
+        *goto luna_2_2
     #Look at another blog.
         *goto montage_2
 
-*label luna_2_3
-*set luna_prog 3
+*label luna_2_4
+*set luna_prog 4
 [b]@lunan0va posted at 10:40 PM[/b]
 
 No I'm not fine actually. This was transphobic as fuck right? Like the whole point of that article is that I'm "erasing women" somehow? By being trans? That I'm taking away rights for women? That's pretty fucked up.
@@ -1985,66 +2037,11 @@ Honestly I'm still kinda in shock. This can't be happening.
 
 Tags: #moondust, #d/ont r/eblog
 
-${luna_2_3_notes} notes
-
-*choice
-    *disable_reuse #Like ❤️
-        *set luna_2_3_notes + 1
-        *goto luna_2_3
-    *disable_reuse #Reblog 🔁
-        Are you sure you want to reblog a post that's tagged "don't reblog"?
-        *choice
-            #Yes, reblog it.
-                Okay, you've reblogged it.
-
-                *if rx
-                    *gosub luna_st_dislike
-                    *gosub discourse
-
-                *set rb_count + 1
-                *set luna_interact + 1
-                *set luna_2_3_notes + 1
-                *set luna_blue %- 5
-                *set luna_green %+ 20
-                *goto luna_2_3
-            #No, never mind.
-                Good choice.
-
-                *goto luna_2_3
-    #Next post.
-        *goto luna_2_4
-    #Prev post.
-        *goto luna_2_2
-    #Look at another blog.
-        *goto montage_2
-
-*label luna_2_4
-*set luna_prog 4
-*set luna_ch2_2_seen 1
-[b]@lunan0va reblogged from @lunan0va at 10:31 PM[/b]
-
-God gtm literally posted about me. That was about my post. Wow wow wow.
-
-[b]@lunan0va:[/b]
-
-Okay I literally do not have the brainpower to read that shit I just had a calc midterm and this is like... how many pages of text again
-
-[b]@lunan0va:[/b]
-
-So I got called a brain-dead degenerate by gtm. Fun fun fun fun fun I'm fine I'm doing fine I'm doing fine I'm okay I'm okay
-
-
-Tags: #moondust, #d/ont r/eblog
-
 ${luna_2_4_notes} notes
-
-(the next few posts are the previous reblogs of this post.)
 
 *choice
     *disable_reuse #Like ❤️
         *set luna_2_4_notes + 1
-        *set luna_interact + 1
-        *set luna_blue %+ 4
         *goto luna_2_4
     *disable_reuse #Reblog 🔁
         Are you sure you want to reblog a post that's tagged "don't reblog"?
@@ -2059,7 +2056,6 @@ ${luna_2_4_notes} notes
                 *set rb_count + 1
                 *set luna_interact + 1
                 *set luna_2_4_notes + 1
-                *set discourse %+ 5
                 *set luna_blue %- 5
                 *set luna_green %+ 20
                 *goto luna_2_4
@@ -2067,8 +2063,63 @@ ${luna_2_4_notes} notes
                 Good choice.
 
                 *goto luna_2_4
+    #Next post.
+        *goto luna_2_5
     #Prev post.
         *goto luna_2_3
+    #Look at another blog.
+        *goto montage_2
+
+*label luna_2_5
+*set luna_prog 5
+*set luna_ch2_2_seen 1
+[b]@lunan0va reblogged from @lunan0va at 10:31 PM[/b]
+
+God gtm literally posted about me. That was about my post. Wow wow wow.
+
+[b]@lunan0va:[/b]
+
+Okay I literally do not have the brainpower to read that shit I just had a calc midterm and this is like... how many pages of text again
+
+[b]@lunan0va:[/b]
+
+So I got called a brain-dead degenerate by gtm. Fun fun fun fun fun I'm fine I'm doing fine I'm doing fine I'm okay I'm okay
+
+Tags: #moondust, #d/ont r/eblog
+
+${luna_2_5_notes} notes
+
+(the next few posts are the previous reblogs of this post.)
+
+*choice
+    *disable_reuse #Like ❤️
+        *set luna_2_5_notes + 1
+        *set luna_interact + 1
+        *set luna_blue %+ 4
+        *goto luna_2_5
+    *disable_reuse #Reblog 🔁
+        Are you sure you want to reblog a post that's tagged "don't reblog"?
+        *choice
+            #Yes, reblog it.
+                Okay, you've reblogged it.
+
+                *if rx
+                    *gosub luna_st_dislike
+                    *gosub discourse
+
+                *set rb_count + 1
+                *set luna_interact + 1
+                *set luna_2_5_notes + 1
+                *set discourse %+ 5
+                *set luna_blue %- 5
+                *set luna_green %+ 20
+                *goto luna_2_5
+            #No, never mind.
+                Good choice.
+
+                *goto luna_2_5
+    #Prev post.
+        *goto luna_2_4
     #Look at another blog.
         *goto montage_2
 
@@ -2976,7 +3027,7 @@ Reason #823 why Capella is a trans girl: ejaculates
 
 [Several screenshots of the phrase "Capella ejaculated" from various books in the Chronicles of the Shadow Nebula series, in different contexts but with context cropped out.]
 
-Tags: #nsfw, #iofjasdhfkjadljasdfkljaslkfjlkdsjafkldsfaj, #the nebulaverse made me trans part n, #though let's be honest here... this is not exclusive to tr*ns women, #anyway ell*n*va is a t4t couple between two transfems
+Tags: #nsfw, #iofjasdhfkjadljasdfkljaslkfjlkdsjafkldsfaj, #the nebulaverse made me trans part n, #though let's be honest here... this is not exclusive to tr*ns women, #anyway ellanova is a t4t couple between two transfems, #actually... the core of the nebulaverse is that astrapellanova is a t4t4t relationship between three transfems. no i will not elaborate.
 
 ${trap_2_3_notes} notes
 

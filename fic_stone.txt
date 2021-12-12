@@ -14,7 +14,6 @@ What is this place?
 
 *choice
     #A city [Modern AU].
-        *set ch1_setting "city"
         *goto investigate_city
 *comment    *selectable_if (1 = 0) #A small town or village [Medieval/Fantasy AU].
 *comment        *set ch1_setting "town"

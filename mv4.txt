@@ -147,7 +147,15 @@ What remains are only ruins, and the hardy survivors who fight within them.
 
 *comment TODO: Lux sends a message asking about what's wrong with Luna.
 
+*comment TODO: If you defended claire then maybe they send you a private message.
+
 *label montage_1
+*temp luna_rem (2 - luna_prog)
+*temp brun_rem (6 - brun_prog)
+*temp shad_rem (6 - shad_prog)
+*temp nebu_rem (6 - nebu_prog)
+*temp apoc_rem (6 - apoc_prog)
+*temp trap_rem (6 - trap_prog)
 
 *if (knows_nebulacon and ((sofia_helped > 0) and ((sofia_blue >= 25) and not(sofia_secret))))
     Maybe you should message Sofia about her plan to take over NebulaCon.
@@ -161,19 +169,19 @@ Which blogs would you like to read?
     *selectable_if ((luna_blocked = false)) #@lunan0va @{(luna_ch4_seen=1) (read)|}
         *set read_count + 1
         *gotoref "luna_1_${luna_prog}"
-    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch4_seen=1) (read)|}
+    *selectable_if ((lux_blocked = false)) #@brunova-official @{(lux_ch4_seen=1) (read)|(${brun_rem})}
         *set read_count + 1
         *gotoref "brun_1_${brun_prog}"
-    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch4_seen=1) (read)|}
+    *selectable_if ((claire_blocked = false)) #@shadow-protectrix @{(claire_ch4_seen=1) (read)|(${shad_rem})}
         *set read_count + 1
         *gotoref "shad_1_${shad_prog}"
-    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch4_seen=1) (read)|}
+    *selectable_if ((sofia_blocked = false)) #@nebulascribbler @{(sofia_ch4_seen=1) (read)|(${nebu_rem})}
         *set read_count + 1
         *gotoref "nebu_1_${nebu_prog}"
-    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch4_seen=1) (read)|}
+    *selectable_if ((stella_blocked = false)) #@apocalypse-hoarder @{(stella_ch4_seen=1) (read)|(${apoc_rem})}
         *set read_count + 1
         *gotoref "apoc_1_${apoc_prog}"
-    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch4_seen=1) (read)|}
+    *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch4_seen=1) (read)|(${trap_rem})}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
     *if ((luna_blocked = false) and (in_luna_chat)) #See Luna's groupchat.
@@ -1754,7 +1762,8 @@ There is nothing more to do here.
 
 *page_break
 
-*gosub_scene fic_metal
+*if writing_fic
+    *gosub_scene fic_metal
 
 *set luna_bio "luna | she/her"
 

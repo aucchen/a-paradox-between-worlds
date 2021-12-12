@@ -4,6 +4,25 @@
 
 - Seventy Years of Sleep, nikka ursula
 
+
+[i]ROSE: I have no comprehensible path. There's nothing to overcome, no lesson to learn, no cathartic light at the end of this preposterous tunnel.[/i]
+
+[i]ROSE: Not for me, at least![/i]
+
+[i]ROSE: I seriously have the DUMBEST arc anyone could conceivably imagine.[/i]
+
+[i]DAVE: rose we dont have fuckin "arcs" we are just human beings[/i]
+
+- Homestuck by Andrew Hussie
+
+*set luna_bio "Don't follow unless I know you."
+
+*set karla_bio "No longer trapped in space, but I still use this url for some reason. Karla, she, 22. f*ck m*cmillan as always."
+
+*set lux_bio "no [i]light[/i], no [i]light[/i] (Lux/Lucas, 18, he/him, bi mlm - yes i know i have this url but i am not interested in talking about the nebulaverse right now.)"
+
+*set claire_bio "I'm Claire, your favorite nonbinary aspiring novelist. Weaver of Wind, they/them, probably a lot older than you."
+
 *page_break
 
 *temp luna_1_prog 1
@@ -13,8 +32,8 @@
 *temp apoc_1_prog 1
 *temp trap_1_prog 1
 
-*temp luna_1_1_notes 1
-*temp luna_1_2_notes 1
+*temp luna_1_1_notes 0
+*temp luna_1_2_notes 17231
 
 *temp brun_1_1_notes 1
 *temp brun_1_2_notes 1
@@ -33,6 +52,8 @@
 *temp claire_message_ref "claire_message_1"
 *temp sofia_message_ref "sofia_message_1"
 *temp karla_message_ref "karla_message_1"
+
+*temp annc_ref "annc_1"
 
 *temp has_luna_message luna_end
 *temp has_lux_message lux_end
@@ -87,7 +108,9 @@ Which blogs would you like to read?
     *selectable_if (karla_end) #@trappedinspace
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
-    *if (has_claire_message) #See Claire's groupchat.
+    *if (in_luna_chat and (luna_end or (karla_end or lux_end))) #See Luna's groupchat (Anti-Nebulaverse Nebulaverse Club).
+        *gotoref annc_ref
+    *if (has_claire_message) #See Claire's message.
         *gotoref claire_message_ref
     *if (has_luna_message) #See Luna's message.
         *gotoref luna_message_ref
@@ -102,11 +125,17 @@ Which blogs would you like to read?
 *set luna_prog 1
 [b]${luna_bio}[/b]
 
-[b]@icemoongirl posted[/b]
+[b]@icemoongirl posted at 8:51 PM[/b]
 
-SAT is done and my scores kind of suck! Anyway, I'm applying to colleges now! The place i'm looking at is at least 100 miles away and has in-state tuition and isn't *that* selective lol
+Idk why but I feel like my parents are more... careful? around me? Like they're avoiding me or something. Especially my dad. It's honestly kind of creepy. We used to have conversations! Sure some of them degenerated into yelling sessions but at least I could tell how they felt! Of course maybe dad had an actual change of heart but nothing in my experience makes me believe he can change.
 
-Tags: #lunar specks
+Is this because of what my siblings said to them? Did they threaten my parents? Is my dad living in fear of CPS right now? Lmao, as if CPS in Texas would ever help a trans kid instead of stealing them from accepting parents.
+
+Anyway, I can't wait to turn 18 and get out of this place.
+
+Speaking of which, the SAT is done and my scores kind of suck! I'm applying to colleges now! The place I'm looking at is at least 100 miles away and has in-state tuition and isn't *that* selective lol
+
+Tags: #stardust
 
 ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 
@@ -128,18 +157,60 @@ ${luna_1_1_notes} note@{luna_1_1_notes=1 |s}
 
 
 *label luna_1_2
-*set luna_ch5_seen 1
 *set luna_prog 2
 
-[b]@icemoongirl posted[/b]
+[b]@icemoongirl reblogged from @trappedinspace at 8:11 PM.[/b]
 
-Idk why but I feel like my parents are more... careful? around me? Like they're avoiding me or something. Especially my dad. It's honestly kind of creepy. We used to have conversations! Sure some of them degenerated into yelling sessions but at least I could tell how they felt! Of course maybe dad had an actual change of heart but nothing in my experience makes me believe he can change.
+Content warnings: transphobia, misgendering, discourse
 
-Is this because of what my siblings said to them? Did they threaten my parents? Is my dad living in fear of CPS right now? Lmao, as if CPS in Texas would ever help a trans kid instead of stealing them from accepting parents.
+*choice
+    #Read the post.
+        *goto luna_1_2_post
+    #Look at something else.
+        *goto montage_1
 
-Anyway, I can't wait to turn 18 and get out of this place.
+*label luna_1_2_post
+[b]@icemoongirl reblogged from @violetdelights at 8:11 PM.[/b]
 
-Tags: #lunar specks
+[b]@ayanamis02:[/b]
+
+Why am I still seeing gifs of the sh*dow n*bula movie on my dash? Did people forget that g*tm is a transphobe?
+
+[b]@lesbiantaikongs:[/b]
+
+Reminder that gtm is a transphobe who supports transphobic politicians and misgendered a trans girl on her blog! Block me if you support gtm in any way.
+
+[b]@bookishgirl93:[/b]
+
+Why does no one on this website have critical thinking or reading comprehension skills? She never "misgendered" anyone, and she has always been a feminist who supports women's rights. She called out a trans male who was sending her rape and death threats. Are women not allowed to fight back against the men who abuse them on the internet?
+
+[b]@amaranthine-shores:[/b]
+
+Of course no one on this website has half a brain cell. They all believe their precious "trans women" can do no wrong, so they short-circuit when they get a reality check.
+
+[b]@lesbiantaikongs:[/b]
+
+Okay, first of all fuck you, fuck terfs and all that. Second of all, where is the proof? Where's the goddamned proof of any of the things you're saying? Does no one remember how she called a trans girl a degenerate freak for thinking Capella could be trans? And how that trans girl got a shitton of harassment because gtm tagged her fucking blog and went on to call her a "violent male" and all that? That's the misgendering, by the way.
+
+[b]@feministicemage:[/b]
+
+Are you delusional? There is literally no evidence that Macmillan harassed or otherwise insulted anyone, and there is no evidence that she is a transphobe or "terf" of any kind. It's really quite Orwellian, the way you people are making up things to smear her. So-called activists on this website are gaslighting anyone who doesn't cave to their insane demands.
+
+[b]@violetdelights:[/b]
+
+Does no one here know how to read carefully? There is thorough evidence of GTM's transphobic views, and how her posts lead to harassment. The details are off but the broad gist of what @lesbiantaikongs said is correct. And GTM's political alliances are all public knowledge.
+
+By the way, that trans girl's name was Luna @lunan0va. Last I heard, she attempted suicide and deleted. I really hope she's doing okay.
+
+[b]@stoneraugury:[/b]
+
+Wasn't this person an abuser who had a bunch of sock puppet URLs that they used to send death threats to people? And they only said they attempted suicide to fish for sympathy when they got caught?
+
+[b]@violetdelights:[/b]
+
+I think you're confusing this with an entirely different situation.
+
+Tags: #transphobia cw, #misgendering cw, #discourse cw, #...
 
 ${luna_1_2_notes} notes
 
@@ -151,7 +222,7 @@ ${luna_1_2_notes} notes
         *goto luna_1_2
     *disable_reuse #Reblog 🔁
         *set luna_interact + 1
-        *set luna_blue %+ 2
+        *set luna_blue %+ 1
         *set luna_1_2_notes + 1
         *goto luna_1_2
     #Prev post.
@@ -166,8 +237,14 @@ ${luna_1_2_notes} notes
 
 [b]@brunova-official posted at 7:00 PM[/b]
 
+guys, i really fucking need a new url. help me out here. tell me which one you wanna see.
 
-Tags: #capitalism is the real demiurge
+- @luzverde
+*line_break
+- @
+
+
+Tags: #akl;dfjl;dskafjlsakjff
 
 ${brun_1_1_notes} notes
 
@@ -190,22 +267,24 @@ ${brun_1_1_notes} notes
 *set brun_prog 2
 [b]@brunova-official posted[/b]
 
-Tags:
+[A webcomic page]
+
+Untitled Videogame Comic, pg 6
+
+Tags: #untitled videogame comic
 
 ${brun_1_2_notes} notes
 
 *choice
     *disable_reuse #Like ❤️
         *set brun_1_2_notes + 1
-        *set lux_blue %+ 2
+        *set lux_blue %+ 4
         *goto brun_1_2
     *disable_reuse #Reblog 🔁
         *set lux_interact + 1
-        *set lux_blue %+ 2
+        *set lux_blue %+ 4
         *set brun_1_2_notes + 1
         *goto brun_1_2
-    #Next post.
-        *goto brun_1_3
     #Prev post.
         *goto brun_1_1
     #Look at another blog.
@@ -217,7 +296,13 @@ ${brun_1_2_notes} notes
 *set shad_prog 1
 [b]${claire_bio}[/b]
 
-[b]@shadow-protectrix posted at 9:11 PM.[/b]
+[b]@shadow-protectrix posted one day ago.[/b]
+
+OMGOMGOMG I have to tell you guys... I have an agent!!!
+
+Now, you kids might not know what this means. It means that *someone* has decided to take a chance on my novel. She's going to shop it around to different publishers in order to find one that thinks my novel will sell.
+
+Now, what is this novel about? Well, you'll just have to wait! But here's a hint: Wind and Ice.
 
 Tags: #claire speaks
 
@@ -234,15 +319,13 @@ ${shad_1_1_notes} notes
         *set claire_blue %+ 5
         *set karla_green %+ 1
         *goto shad_1_1
-    #Next post
-        *goto shad_1_2
     #Look at another blog.
         *goto montage_1
 
 *label shad_1_2
 *set shad_prog 2
 *set claire_ch5_seen 1
-[b]@shadow-protectrix posted at 8:00 PM[/b]
+[b]@shadow-protectrix posted one day ago.[/b]
 
 ${shad_1_2_notes} notes
 
@@ -317,6 +400,9 @@ ${nebu_1_2_notes} notes
 
 [b]@trappedinspace posted[/b]
 
+[essay in tags]
+
+Tags: 
 
 ${trap_1_1_notes} Notes
 
@@ -338,7 +424,15 @@ ${trap_1_1_notes} Notes
 *set trap_prog 2
 [b]@trappedinspace posted[/b]
 
+Does anyone remember Sofia @nebulascribbler? Well, here are some things you should know.
 
+She had been running a number of sockpuppet accounts pretending to be different people. One of which was @apocalypse-hoarder, where she pretended to be a minor to gain the trust of others and infiltrate a number of fandom spaces, and just stir up shit more generally. There is also evidence that @nebulascribbler, aka @apocalypse-hoarder, aka @greenrockmage, aka a dozen of other handles, had been responsible for a huge amount of the drama in the nebulaverse fandom over the past few years.
+
+Here is the detailed evidence:
+
+(Read more)
+
+Tags: #thanks again to @${username} for a huge amount of this information!, #this post would not exist without ${em}
 
 ${trap_1_2_notes} Notes
 
@@ -437,7 +531,8 @@ ${trap_1_2_notes} Notes
                 @icemoongirl: thank you so much!!! here's the link: [link to doc]
 
                 @icemoongirl: tell me if it's terrible!
-                *goto montage_1
+
+                *goto luna_other_qs
             *disable_reuse #I don't have time right now, get back to me on that.
                 *set luna_message_ref "luna_essay_not_read"
                 *label luna_essay_not_read
@@ -445,10 +540,233 @@ ${trap_1_2_notes} Notes
 
                 @icemoongirl: that's okay! it's not due for a month. I'm just getting an early start for once lol
 
-                @icemoongirl: anyway uh... see you soon 💙️
-                *goto montage_1
+                *goto luna_other_qs
 
-*comment TODO
+*label luna_other_qs
+*set luna_message_ref "luna_other_qs"
+*temp in_confession false
+*choice
+    #Bye, Luna...
+        *label luna_goodbye
+        *set luna_message_ref "luna_goodbye"
+
+        @you: bye, luna...
+
+        @icemoongirl: see you later, ${handle} 💙️
+
+        *goto montage_1
+    *if (luna_blue > 50) #Um, Luna, how are you doing?
+        *label luna_how_1
+        *set luna_message_ref "luna_how_1"
+        @you: um, luna, how are you doing, like, in general?
+
+        @icemoongirl: um,... besides that huge diary entry i just posted? isn't that more information about me than you ever wanted to know?
+
+        @icemoongirl: although i guess i'm doing, uh, worse than my blog posts suggest.
+
+        *choice
+            #Do you want to talk about that? (keep asking)
+                @you: um, do you want to talk about that?
+                *choice
+                    #Yes, I want to hear...
+                        *goto luna_secret
+                    #Bye, Luna...
+                        *goto luna_goodbye
+            #Bye, Luna...
+                *goto luna_goodbye
+    *if (luna_confessed) #About that message I sent earlier (ask about ~romance~)...
+        *label luna_rom_1
+        *set luna_message_ref "luna_rom_1"
+        *set in_confession true
+        @you: um... about that one message I sent... (Ask about your relationship)
+
+        @icemoongirl: oh. *that* message?
+
+        @you: yeah...
+
+        @icemoongirl: i was hoping i wouldn't have to talk about this
+
+        @icemoongirl: honestly I hoped that you had forgotten...
+
+        @icemoongirl: i mean, i thought about it a lot, but you might not want to hear what i thought...
+
+        *choice
+            #I still want to hear...
+                @you: i still want to hear though...
+
+                @icemoongirl: okay. can I tell you something?
+
+                @you: of course, anything.
+
+                @icemoongirl: i feel like no one knows what i'm really like, deep down. and if you did know what i was like deep down, you wouldn't have "feelings" for me or whatever.
+
+                @you: try me. it's probably fine.
+
+                @icemoongirl: ${handle}, i'm really, really fucked up.
+
+                @icemoongirl: remember when i was running away and you talked me through it?
+
+                @icemoongirl: that wasn't the first time i had an episode like that, and that might not be the last time either.
+
+                @icemoongirl: uh this is gonna get dark i guess. so like... maybe we could talk about it later?
+
+                *choice
+                    #I still want to hear it.
+                        @you: i still want to hear it, if that's okay? even if it's dark.
+                        *label luna_secret
+                        *set luna_blue %+ 5
+
+                        @icemoongirl: alright, but, um, i warned you...
+
+                        @icemoongirl: since the whole g.t.m thing happened, i haven't been able to move on.
+
+                        @icemoongirl: sure i talk about moving on in my blog, but i still can't stop thinking about it. i say i'm doing better but i'm really not.
+
+                        @icemoongirl: you'd think i'd have tougher skin by now, but if anything i'm weaker. what doesn't kill you doesn't make you stronger, it just messes you up for life.
+                        
+                        @icemoongirl: i read the comments on that one post "subtly" misgendering me and calling me a threat to women and stuff and i want to die.
+
+                        @icemoongirl: but i can't stop reading them.
+
+                        @icemoongirl: i think about hurting myself a lot. i think about dying. i think about what would happen to my corpse and what people would think. and i think about how it's all inevitable, so why not deal with it sooner.
+
+                        @icemoongirl: but then i have these moments when i'm just terrified. there's a part of me that wants to die and at the same time i'm so so afraid.
+
+                        *if in_confession
+                            @icemoongirl: and like... do you really want to deal with that? does anyone really want to deal with that?
+
+                            @icemoongirl: so like... if you really *like* me, that's what you're getting. ignoring the fact that i'm physically ugly and all that. the real ugliness is inside.
+
+                        *page_break ...
+
+                        *if in_confession
+                            @icemoongirl: oh wow i just realized how bad all that sounded. sorry about that.
+
+                            @icemoongirl: i am not in any imminent danger right now so don't worry about me. i'm fine.
+
+                            @icemoongirl: what were we talking about again?
+
+                            
+                            *label luna_confession_choices
+                            *choice
+                                *hide_reuse #*Hugs*
+                                    @you: *hugs*
+
+                                    @you: imagine i am hugging you right now.
+
+                                    @icemoongirl: *you are hugging me right now*
+                                    *goto luna_confession_choices
+                                #I still like you (romantically, serious).
+                                    @you: um, i still like you...
+
+                                    @icemoongirl: no offense but that's kinda fucked up :/
+
+                                    @icemoongirl: so like... really? are you serious?
+
+                                    @you: yeah.
+
+                                    @icemoongirl: oh wow.
+                                    *choice
+                                        #Can we, um,...?
+                                            *achieve romance
+                                            @you: can we, um,...
+
+                                            *label luna_can_we
+
+                                            @icemoongirl: yeah...
+                                            *goto luna_chat_bye
+                                        #So does that mean, um...
+                                            @you: so does that mean, um,...
+                                            *goto luna_can_we
+                                #We can forget about this conversation.
+                                    *goto luna_chat_bye
+                                *hide_reuse #Do you have anyone else you can talk to? I'm worried about you.
+                                    @you: do you have anyone else you can talk to? i'm worried about you.
+
+                                    @icemoongirl: nope! if i ever talked to any adults like this i'd be institutionalized.
+                                    *goto luna_chat_bye
+                        *else
+                            *achieve friends
+                            @icemoongirl: oh wow i just realized how bad all that sounds.
+
+                            @icemoongirl: i am not in any imminent danger right now so don't worry about me.
+
+                            @icemoongirl: i'm really sorry about the rant lol.
+
+                            @you: it's okay...
+                            *label luna_friend_choices
+                            *choice
+                                *hide_reuse #*Hugs*
+                                    @you: *hugs*
+
+                                    @you: imagine i am hugging you right now.
+
+                                    @icemoongirl: *you are hugging me right now*
+
+                                    @icemoongirl: thanks.
+
+                                    *goto luna_chat_bye
+                                #Thanks for telling me this.
+                                    @you: thank you for telling me all this.
+
+                                    @icemoongirl: thank you for listening
+
+                                    *goto luna_chat_bye
+                                #We can forget about this conversation.
+                                    @you: we can forget about this conversation, if you'd like?
+
+                                    @icemoongirl: um... yeah, thats fine.
+
+                                    @icemoongirl: so i should probably go now.
+
+                                    *goto luna_chat_bye
+                                #Do you have anyone else you can talk to? I'm worried about you.
+                                    @you: do you have anyone else you can talk to? i'm worried about you.
+
+                                    @icemoongirl: nope! if i ever talked to any adults like this i'd be institutionalized.
+                                    *goto luna_chat_bye
+                                *if (luna_confessed) #I like you (romantically)...
+                                    @you: i like you.
+
+                                    @icemoongirl: what does that mean?
+
+                                    @you: yeah
+
+                                    @icemoongirl: wait, is this a romantic confession? after i said all *that*?
+
+                                    @icemoongirl: are you out of your mind?
+
+                                    *choice
+                                        #I'm not out of my mind.
+                                        #I might be a little out of my mind.
+
+
+                    #Let's talk about it later.
+                        @you: maybe we can talk about this later.
+
+                        @icemoongirl: sure. that'd be fine.
+
+                        *goto luna_chat_bye
+                    #We don't have to talk about it.
+                        @you: maybe we don't have to talk about it.
+
+                        @icemoongirl: yeah. maybe we don't.
+                
+                        *goto luna_chat_bye
+            #Maybe it's better to forget...
+                @you: maybe it's better to forget anything i said.
+
+                @icemoongirl: maybe that's better.
+                *goto luna_chat_bye
+
+*label luna_chat_bye
+*set luna_message_ref "luna_chat_bye"
+
+@icemoongirl: anyway, bye ${handle} 💙️
+
+@icemoongirl: see you soon.
+
+@you: bye ${heart_emoji}
 
 *goto montage_1
 
@@ -473,10 +791,80 @@ ${trap_1_2_notes} Notes
 *goto montage_1
 
 
+*label annc_1
+
+[b]Anti-Nebulaverse Nebulaverse Club[/b]
+
+@trappedinspace: Hey Luna?
+
+@icemoongirl: yeah?
+
+@trappedinspace: I'm writing a history of the nebulaverse fandom and the whole deal with GTM, and, well, you can probably guess where this is going.
+
+@trappedinspace: This feels like a historical moment that people will still care about in a few years' time. It would be really nice if you could contribute to this project.
+
+@icemoongirl: rly? that sounds... uh... idk if i really want that
+
+@trappedinspace: Sorry, you definitely don't have to do this! I got kind of carried away.
+
+@icemoongirl: um, it's not that i don't want to do it. more that i'm not sure if i'm ready to be *out there*. i don't want to become a personality anymore. right now i just want some space to exist.
+
+@icemoongirl: maybe i'll tell that story one day. i just hope i'll live to that day lol
+
+@trappedinspace: I hope we will, too.
+
+@icemoongirl: sorry that was dark. um, i'd be very interested in reading what you've written!
+
+@trappedinspace: Yeah, so, right now it's just some very scattered notes. There's nothing coherent or organized yet, no narrative. But I'll get a link soon.
+
+@icemoongirl: thanks 💙️
+
+*if karla_end
+    @trappedinspace: BTW @${username}!
+
+    @trappedinspace: Thanks again for the help with @nebulascribbler/@apocalypse-hoarder. It would be very cool if you could be a part of this too. What do you think?
+
+    *choice
+        #Yes, I'd love to be part of fandom history!
+            *label annc_k_yes
+            *set annc_ref "annc_k_yes"
+            @you: sure, i'd love to be a part of fandom history!
+
+            @trappedinspace: Great!
+
+            *goto annc_k_anyway
+        #No, I'd rather not.
+            *label annc_k_no
+            *set annc_ref "annc_k_no"
+            @you: no, i'd rather not...
+
+            @trappedinspace: That's okay...
+
+            *goto annc_k_anyway
+        #I don't know yet.
+            *label annc_k_maybe
+            *set annc_ref "annc_k_maybe"
+            @you: um, i don't know yet...
+
+            @trappedinspace: That's okay!
+
+            *label annc_k_anyway
+
+            @trappedinspace: Anyway...
+
+            @trappedinspace: This is just a hypothetical project for now. Maybe it'll never see the light of day.
+            *choice
+                #Go back.
+                    *goto montage_1
+*else
+    *choice
+        #Go back.
+            *goto montage_1
+
 
 *label montage1_end
 
-The story of the Shadow Nebula is over.
+The story of the Shadow Nebula is over. What will you do now?
 
 *page_break End.
 *ending

@@ -20,7 +20,6 @@ You open your eyes to a cavernous place. No, not a cavern exactly, but an artifi
 Where are you?
 *choice
     #[An empty room aboard a spaceship. Canon divergence AU]
-        *set ch2_setting "ship"
         *goto ship_feel
 *comment   *selectable_if (1 = 0) #[A prison cell on a cold, desolate planet. Canon divergence AU]
 *comment        TODO
@@ -167,6 +166,10 @@ He makes a beckoning gesture. "Let's become reacquainted with each other."
 
 *label bruno_convo_choices
 *choice
+    *hide_reuse #[A/N: Is Bruno in-character here?]
+        [Is Bruno's characterization correct here? What is Bruno's personality supposed to be, anyway?]
+        *gosub_scene characterizations bruno
+        *goto bruno_convo_choices
     *hide_reuse #Bruno puts his hand on your shoulder...
         *set lux_blue %+ 5
         *set protag_likes_bruno + 1
