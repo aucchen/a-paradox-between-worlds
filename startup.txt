@@ -7,6 +7,7 @@
   mv3
   mv4
   mv5
+  epilogue
   check_internet
   calc_new_followers
   check_blocked
@@ -19,6 +20,8 @@
   hearts_choice
   rx
   random_character_gen
+  characterizations
+  neutral_epilogue
 
 *create implicit_control_flow true
 
@@ -91,8 +94,8 @@
 *create astrapella 0
 *create brunova 0
 *create ellanova 0
-*create astranova 0
 *comment none of these ships actually occur in the game at any time
+*create astranova 0
 *create brunastra 0
 *create tychonova 0
 *create brunotycho 0
@@ -130,6 +133,7 @@
 *create nv_locations 0
 *create nv_elements 0
 *create nv_characters 0
+*create nv_academy 0
 *create nv_magic 0
 *create nv_secrets 0
 *create nv_bible 0
@@ -298,9 +302,16 @@
 *comment story progression*************************************
 *create in_universe false
 
+*comment anon comments
+
+*create mv2_1_anon false
+*create mv2_1_no_post_anon false
+
+*create mv2_2_anon false
+*create mv2_2_no_post_anon false
+
 *create gtm_support 0
 *create gtm_oppose 0
-
 *create mv2_gtm_support 0
 *create mv2_gtm_oppose 0
 *create mv3_gtm_support 0
@@ -310,6 +321,31 @@
 
 *create claire_support 0
 *create claire_oppose 0
+*create mv3_claire_support 0
+*create mv3_claire_oppose 0
+*create mv4_claire_support 0
+*create mv4_claire_oppose 0
+
+*create mv3_anon false
+*create mv3_pro_claire_anon false
+*create mv3_anti_claire_anon false
+*create mv3_pro_gtm_anon false
+*create mv3_anti_gtm_anon false
+*create mv3_anti_luna_anon false
+*create mv3_anon_read false
+*create mv3_anon_responded false
+*create mv3_no_post_anon false
+*create mv3_no_gtm_anon false
+
+*create mv4_anon false
+*create mv4_pro_claire_anon false
+*create mv4_anti_claire_anon false
+*create mv4_pro_gtm_anon false
+*create mv4_anti_gtm_anon false
+*create mv4_anon_read false
+*create mv4_anon_responded false
+*create mv4_no_post_anon false
+*create mv4_no_gtm_anon false
 
 *comment Universe state*****************************
 
@@ -340,6 +376,8 @@
 *create fic_ship ""
 *create fic_brunova true
 *create fic_astrapella true
+*create fic_ellanova false
+*create fic_astranova false
 
 *create protag_likes_bruno 0
 *create protag_bruno_red 0
@@ -405,6 +443,11 @@
 *comment ch4: academy (canon-divergence), school (modern AU), school (modern fantasy AU). Metalbound world.
 *create ch4_setting "academy"
 *create ch4_element "metal"
+
+*comment have you seen the relevant chapter?
+*create wind_seen false
+*create ice_seen false
+*create metal_seen false
 
 *comment popularity of your story... a linear scale?
 *create popularity 0
@@ -489,7 +532,7 @@
     A secret.
     Don't join any chats after the first movement.
 
-*achievement home visible 10 Never think about death
+*achievement home visible 10 You pick me up and take me home
     A secret.
     Help a friend in a key moment.
 

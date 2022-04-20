@@ -132,7 +132,11 @@ Main ship: ${fic_ship}
     *goto elements
   #Characters
     *goto nebulaverse_characters
-  #Magic and Technology
+  #Pulsar Academy
+    *goto nebulaverse_academy
+  #Government of the Empire
+    *goto nebulaverse_govt
+  #Magic, Technology, and Religion
     *goto nebulaverse_magic
   #Secrets
     *goto nebulaverse_secrets
@@ -189,7 +193,7 @@ The [b]Kingdom[/b] is the only external rival power to the Nebula Empire. It is 
 
 [b]Byblos[/b] is the planet that houses the [b]Pulsar Academy[/b], the primary setting of the Nebulaverse. It is a temperate-to-cold planet of scholars and wilderness, with few large settlements. Jagged ice-capped mountains and rainforest-covered hills span the continents. Its coastlines are dotted with fjords, where mountains meet the sea.
 
-[b]Antioch[/b] is the capital planet of the Empire, with a wide range of different climates and terrains. The capital city, [b]Antioch City[/b], is located in a highland equatorial area with a year-round temperate climate, a place considered paradise for the inhabitants of the Empire. Therein are the [b]Imperial Palace[/b], the [b]Homes of the Archons[/b], and the [b]Court of Magi[/b]. Astra Van Allen was born to a family of bureaucrats here.
+[b]Antioch[/b] is the capital planet of the Empire, with a wide range of different climates and terrains. The capital city, [b]Antioch City[/b], is located in a highland equatorial area with a year-round temperate climate, a place considered paradise for the inhabitants of the Empire. Therein are the [b]Imperial Palace[/b], the [b]Homes of the Archons[/b], and the [b]Court of Magi[/b]. Astra Van Allen was born to a family of technicians here.
 
 [b]Galilee[/b] is Gali's homeworld, where he was born and spent his life until age 16. It is a remote backwater of the Empire, a primarily rural and agricultural planet with vast temperate plains.
 
@@ -199,7 +203,7 @@ The [b]Kingdom[/b] is the only external rival power to the Nebula Empire. It is 
 
 [b]Ephesus[/b] is a world in strife, site to multiple struggles between Imperial forces and the rebels. Tycho was born to a peasant family here, who tried to stay neutral in the various conflicts.
 
-Other planets that are mentioned: [b]Samaria[/b], [b]Tripoli[/b], [b]Ilium[/b], [b]Galatia[/b]
+Other planets that are mentioned: [b]Samaria[/b], [b]Tripoli[/b], [b]Ilium[/b], [b]Galatia[/b]. A full list of planets and descriptions will be published in the upcoming [i]Guide to the Shadow Nebula[/i].
 
 *goto nebulaverse_wiki
 
@@ -274,7 +278,7 @@ Each mage is assigned a role, starting within the Academy and proceeding to the 
 
 The [b]Archons[/b] are the most powerful humans in the Nebula. They are the chief administrators of the Empire and advisors to the Emperor, appointed by the Emperor himself, and imbued with magical powers via their [b]mantles[/b]. There are five Archons, corresponding to the five elements (light, stone, metal, wind, ice). Their powers effectively make them immortal, impervious to attack except in a way that inverts their element.
 
-The [b]Emperor Ariel[/b] is leading the Empire down a ruinous path, according to the Administrator. He has been using his armies and police to violently suppress dissent and enforce conformity across the Empire; Gali's parents were the victims of one of these purges. The Emperor is in possession of the [b]Emperor's mantle[/b], a magical item that prevents all harm to the Emperor except by one specific person.
+The [b]Emperor[/b] (Ariel, his name is later discovered to be) is leading the Empire down a ruinous path, according to the Administrator. He has been using his armies and police to violently suppress dissent and enforce conformity across the Empire; Gali's parents were the victims of one of these purges. The Emperor is in possession of the [b]Emperor's mantle[/b], a magical item that prevents all harm to the Emperor except by one specific person.
 
 [b]Sirius Aldrin[/b] was the villain of Book 1. He was a criminal mastermind and assassin who was contacted by the Emperor (unknown at the time) to remove possible dissidents at the Academy, where he infiltrated undercover as a teacher. The Aldrin family is a very prominent family so he was easily accepted into the Academy. Speaker of Wind.
 
@@ -310,21 +314,91 @@ The [b]Emperor Ariel[/b] is leading the Empire down a ruinous path, according to
 
 *goto nebulaverse_wiki
 
+*label nebulaverse_academy
+*set nv_academy 1
+[b]Pulsar Academy[/b]
+
+[i]"To Understand is to Control"[/i]
+
+Pulsar Academy, located on the planet Byblos in the heart of the Nebula Empire, is the primary setting of the Chronicles of the Shadow Nebula. It is the premier educational institution of the Empire, and trains its future [b]Magi[/b], the magic-imbued elites of the Shadow Nebula. 
+
+[b]Academics[/b]
+
+The Academy's course is five years long. Most new students enter the Academy at about age 16, and graduate at about age 21. Admissions to the academy consists primarily of a sequence of exams testing one's theoretical proficiency in the magical language, administered to any youth in the Empire who so desires. However, a significant portion of students have been admitted because of their connections or for other reasons.
+
+The primary purpose of the academy is education in magic. The Academy is divided into five Houses, one for each element, which are the primary academic units. Most classes are affiliated with one of these houses, besides the general studies classes for history, human language, and so on. All students take classes on all five types of magic, and are expected to be proficient in all elements. Since magic and science are identical in the nebulaverse, magic classes also cover topics such as mathematics, physics, chemistry, geology, astronomy, biology, and so on. To understand is to control, as the saying goes.
+
+In the last two years, classes focus more on the student's expected Role as well as their primary element. These classes finalize the student's future career as a scholar-administrator-warrior in the service of the Empire.
+
+Indoctrination in the Empire's ruling ideology is not a primary part of the curriculum, as there have historically been no alternatives to service in the Empire, no other power base in the Nebula. However, with the rise of various rebel movements, there is an increasing emphasis on instilling students' loyalty throughout their years in the Academy. Many of these efforts are counterproductive (i.e. teaching students to recognize and counter anti-Emperor propaganda).
+
+[b]Student Life[/b]
+
+Residences are not divided by element, and in fact aim to place students of different elements into closer affinity. Most students have single bedrooms in suites of five, with one student for each element. The "main five" consist of one such suite. The dorms are the fanciest places they've ever lived in, is what poor students like Gali say. The dorms are trash, is what rich students like Bruno say. Same goes for the food.
+
+Starting from their second year, most students are assigned jobs corresponding to their assigned Roles. Students might be research or teaching assistants, prefects, members of the Academy's rudimentary militia, or be assigned to various undesirable service jobs that keep the Academy functional (food service, custodial work, tech support, gardening, and so on).
+
+There are many extracurriculars and clubs. The protagonists of the Chronicles form the [b]Mystery Club[/b], whose goal was originally to solve a series of mysterious deaths at the Academy.
+
+Deaths at the Academy are not a rare occurrence: about 0.5% of students fail to graduate because they die, or a 0.1% fatality rate annually. The faculty consider the deaths of a handful of students per year to be acceptable casualties in weeding out the chaff.
+
+[b]Secret Organizations[/b]
+
+Of course, no elite educational institution is without its secret societies. The [b]Penumbra[/b] is the Administrator's secret society, where he teaches Shadow magic and opposition to the Emperor. Gali, Astra, Capella, and Tycho become members. Their enemies are the [b]Emperor's Fingers[/b], a society of Emperor loyalists who seek to root out subversion. Bruno becomes a member. There are also the [b]Sublime Architects[/b] and the [b]Transcendence League[/b], whose purposes have not yet been revealed.
+
+*goto nebulaverse_wiki
+
+*label nebulaverse_govt
+
+[b]The Empire[/b]
+
+The Nebula Empire is the only significant human government in the Shadow Nebula, with the exception of some marginal worlds and pirate bases. There are over 100 inhabitable planets in the Empire, with a total population in the hundreds of billions.
+
+At the top is the [b]Emperor[/b], whose name is generally unknown. Since the time the Empire was founded, there has been no record of succession; it is unknown whether the Emperor is actually immortal, or if there is a secret succession process. Some dissidents question if he actually exists or is just a figurehead.
+
+Below the Emperor are the [b]Archons[/b], who, along with the Emperor, form the [b]Imperial Council[/b]. There are five Archons, one for each of the elements. As with the Emperor, the appointment and succession process, as well as the human identities of the Archons, are unknown. They are treated by most Imperial subjects as a force of nature.
+
+[b]The Imperial Bureaucracy[/b]
+
+The Imperial Bureaucracy is the actual government of the Empire, and the employer of most magi. It is divided into five Great Bureaus: Administration, Research, Construction, Education, and Defense. Within each Bureau there are many Departments, and many Units within these departments; a comprehensive list will be provided in [i]Guide to the Shadow Nebula[/i], whose publication is upcoming. In general, the Bureau of Administration is the largest and least prestigious Bureau, while the Bureau of Research is the smallest and most prestigious Bureau.
+
+Most employees of the Bureaucracy are not magi, but all high-ranking officers are.
+
+The heads of each of the Bureaus are appointed by the Imperial Council in a theoretically meritocratic manner, and together, the five Bureau chiefs form the Government Council. The Government Council is very public, and the Archons are happy to stay in the shadows and let the bureaucrats take the fall for anything bad happening in the Empire.
+
+[b]Magi and the Academies[/b]
+
+The title of "Mage" is protected in the Empire: only Academy graduates are allowed to call themselves Magi (although there are plenty of magic users who are not Magi, and almost anyone can learn to use Tier 1 formulae without formal education). Magi are the most highly skilled magic users, trained to be scholar-bureaucrat-warriors. Magi can be found working for the Imperial Bureaucracy or the private sector, where they almost inevitably rise in the ranks. Even in jobs that don't directly require magic, which is most jobs, magi are valued for their supposed ability to think; the practice of learning magic supposedly teaches mental discipline, creativity, and so on.
+
+The Academies are, according to Macmillan, inspired by a combination of her native UK's Oxbridge universities as well as the French [i]grandes écoles[/i] system. Pulsar Academy is one of the most prestigious Academies, but there are plenty of others located on every inhabited planet in the Empire. Admissions is mostly based on exams, but of course there is some nepotism and other factors. Around 1-10% of adult Imperial subjects are Magi; Macmillan has contradicted herself several times on this point. One of the largest groups of Magi are the Navigators who are necessary to control the counter-entropic engine for interstellar travel using Ice magic.
+
+Besides the Academies, other forms of higher education are General Institutes, which are like traditional universities, and Technical Institutes. General Institute graduates are called generalists, and Technical Institute graduates are called technicians. They are often looked down upon by Magi.
+
+*goto nebulaverse_wiki
+
+
 *label nebulaverse_magic
 *set nv_magic 1
 *gosub_scene check_backstory
 [b]Magic and Technology[/b]
 
-Magic in the Nebulaverse is based on the five elements. Anyone can be trained to use all types of magic to some extent, but they will be best attuned to magic that utilizes their persona. Magical abilities are described by sentences in some kind of formal language. The basic unit of the magical language is a [b]token[/b], which are then combined into an [b]expression[/b], a single command that calls upon one of the elements. Expressions can be combined into [b]phrases[/b] and longer units. Magic is used by reciting and mentally parsing the phrase while clearing out all other thoughts. It requires training to have the mental focus necessary; just memorizing the phrases is not enough except for the most basic of spells. Also, phrases often have to be adapted on the fly. The target and environmental conditions often must be encoded into the magic language.
+Magic in the Nebulaverse is based on the five elements. Anyone can be trained to use all types of magic to some extent, but they will be best attuned to magic that utilizes their persona. Magical abilities are described by sentences in some kind of formal language. The basic unit of the magical language is a [b]token[/b], which are then combined into an [b]expression[/b], a single command that calls upon one of the elements. Expressions can be combined into [b]formulae[/b], which is essentially a magical "spell". Magic is used by reciting and mentally parsing the formula while clearing out all other thoughts. It requires training to have the mental focus necessary; just memorizing the phrases is not enough except for the most basic of spells. Also, phrases often have to be adapted on the fly. The target and environmental conditions often must be encoded into the magic language.
 
-The domain of magic is the physical world, as governed by the five elements. The physical world and the human world are distinct; it is difficult to create magic that specifically affects another human, especially their minds. Using magic too much makes the user feel fatigued and unable to focus. The more complex and powerful the spell, the more fatigue one feels after using it. It is not possible to use multiple casters to cast one spell, but many spells can be broken up into smaller components that different people can cast. Theoretically it is possible to cast a spell that, say, crashes an asteroid onto a planet, but one would pass out before getting started. Slightly nudging an asteroid's orbit over the course of months, however...
+The domain of magic is the physical world, as governed by the five elements. Science and magic are equivalent in the Nebulaverse; using magic requires understanding physics, chemistry, etc. To understand is to control. However, the physical world and the human world are distinct; it is difficult to create magic that specifically affects another human, especially their minds. Using magic too much makes the user feel fatigued and unable to focus. The more complex and powerful the spell, the more fatigue one feels after using it. It is not possible to use multiple casters to cast one spell, but many spells can be broken up into smaller components that different people can cast. Theoretically it is possible to cast a spell that, say, crashes an asteroid onto a planet, but one would pass out before getting started. Slightly nudging an asteroid's orbit over the course of months, however...
 
-The difference between magic and technology is that magic requires the caster's presence, while technology can function autonomously (magic-imbued items do exist, however, which can sometimes straddle the line, but they cannot be mass-produced due to the effort required). Magic can be used to help develop technology, especially the Metal school. The Nebula has all sorts of fancy technology, like spaceships, laser guns, and so on, but healthcare and especially maternity care is apparently still poor. Psychology and social sciences are nonexistent. This is a society that focuses on the external world, not the internal one (except for the House of Shadow but no one knows they exist). Also no teleportation.
+The difference between magic and technology is that magic requires the caster's presence, while technology can function autonomously (magic-imbued items do exist, however, which can sometimes straddle the line, but they cannot be mass-produced due to the effort required). Magic can be used to help develop technology, especially the Metal school. The Nebula has all sorts of fancy technology, like spaceships, the counter-entropic engine for interstellar travel, laser guns, and so on, but healthcare and especially maternity care is apparently still poor. Psychology and social sciences are nonexistent. This is a society that focuses on the external world, not the internal one (except for the House of Shadow but no one knows they exist). Also no teleportation.
 
 *label nebulaverse_relationships
 [b]Relationships[/b]
 
 The Shipping Triangle: Using a technological device called the [b]Shipficator[/b], all relationships are associated with a position in the RGB color space. Red, Green, and Blue represent "pure sexuality", "pure opposition", and "pure companionship". Magenta RGB(255, 0, 255) is traditional romance, Yellow RGB(255, 255, 0) is a sexualized rivalry, and Cyan RGB(0, 255, 255) represents a friendly rivalry. White RGB(255, 255, 255) has presumably never been seen before.
+
+*label nebulaverse_religion
+[b]Religion[/b]
+
+The main faith worshipped in the Shadow Nebula is the [b]Binary Church[/b], whose holy book is the Binary Bible. In this faith there are two main deities, the Creator who created the immortal souls, and the Demiurge who corrupted the souls by bringing them into physical bodies in the material world.
+
+[i]The Binary Bible[/i] was published as an excerpt from the "actual" in-universe Binary Bible, with several layers of commentary. The "canonical" veracity of the BB or any of its commentaries is deliberately elided by the author.
 
 *goto nebulaverse_wiki
 
@@ -339,9 +413,11 @@ However, all emperors have been usurpers. The emperor's appointed successor is t
 
 It turns out that the Administrator is the Archon of Shadow. The [b]House of Shadow[/b] is a secret house in the Academy that recruits students for secret tasks against the Emperor. Astra is eventually recruited by the House of Shadow and is sent to infiltrate the Emperor at his court. However, the Emperor discovered the infiltration, and captured Astra, imprisoning and possibly torturing her. This is a topic heavily covered and sometimes romanticized in fanfiction, to the extent where Ariastra is the third most popular ship on AO3, although many view it as problematic. It is expected that in Book 5 Part 2, presumably the final book of the series, the heroes are going to rescue Astra from the Emperor.
 
-There might be greater forces of evil than the Emperor. Ariel serves the Demiurge, or Yaldabaoth, a deity generally considered to be pure evil. The Demiurge is locked in eternal conflict with the Creator, a deity generally considered to be pure good. The Archon of Shadow serves the Creator. In fact, every emperor has served one of the two deities, alternating the roles of ruler and rebel. The realm of humanity is nothing more than the playground of the Gods. Some say that the Creator and the Demiurge are in fact the same deity, and there are other deities preceding the Creator/Demiurge, but those views are considered heterodox at best, heretical at worst.
+There might be greater forces of evil than the Emperor. The Emperor serves the Demiurge, sometimes also called the Destroyer, a deity generally considered to be pure evil. The Demiurge is locked in eternal conflict with the Creator, a deity generally considered to be pure good. The Archon of Shadow serves the Creator. In fact, every emperor has served one of the two deities, alternating the roles of ruler and rebel. The realm of humanity is nothing more than the playground of the Gods. Some say that the Creator and the Demiurge are in fact the same deity, and there are other deities preceding the Creator/Demiurge, but those views are considered heterodox at best, heretical at worst.
 
 In Book 4 Part 3, the Administrator is killed, and after the battle Gali has somehow become the Archon of Shadow. He is going to kill the Emperor... or is he?
+
+[b]True Magic[/b] is a concept first mentioned in Book 4 Part 2. It somehow relates to "piercing the [b]Veil of Illusion[/b]," or merging the physical world and metaphysical concepts. However, the Veil of Illusion has also been used to refer to a number of potentially distinct concepts, including an illusory world created using mind control. Unlike "ordinary" magic, very few individuals are capable of using True Magic, including the Emperor, the Administrator, and possibly Gali and at least one of his closest friends. Details in the books have been sparse.
 
 *goto nebulaverse_wiki
 

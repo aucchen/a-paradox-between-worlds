@@ -1,4 +1,5 @@
 *script setMbmMode(false);
+*set wind_seen true
 *temp look false
 *temp listen false
 *temp smell false
@@ -13,10 +14,7 @@
 *label fanfic_1
 Once more you feel the ground beneath your body. The only other sensation is the harsh [b]wind[/b] scraping your cheeks. 
 
-You open your eyes. Where are you?
-*choice
-    #A sandy desert world, scorched by twin suns.
-        *goto desert_feel
+*page_break
 
 *label desert_feel
 You open your eyes, and see your two shadows, cast by twin suns. The ground is coarse sand. As your eyes move up, you see an endless sea of sand and stones, broken only by what appears to be a small settlement in the distance.
@@ -80,6 +78,12 @@ The gate opens. Out emerges... Capella? Older, with creases in her face, but sti
 
 She rolls her eyes. "I was told to say that. Just follow me."
 
+*if (current_chapter = 4)
+    *page_break Suddenly, you start to feel very tired.
+    *goto tired
+
+
+
 *page_break Follow Capella.
 
 "Don't worry, I still remember you," she says. "It's been 20 years now, but I still remember when we stepped into that portal."
@@ -136,6 +140,7 @@ She waves to you. "Follow me. We're going to meet some old friends."
                 *set astrapella %+ 4
                 *if (fic_ship = "astrapella")
                     *set ch3_wins + 1
+                *set fic_ship "astrapella"
                 [A/N: Astrapella all the way!]
             #[A/N: No! Retcon that development. That is NOT the Astrapella child!]
                 [A/N: Okay. Forget all that. Capella is a single mother and Astrapella are ABSOLUTELY NOT together here.]
@@ -351,6 +356,77 @@ You fall, and all turns black.
 *page_break
 *goto story_end
 
+*label tired
+*set return_point "tired"
+
+Suddenly, you start to feel very tired. Your vision blurs. You can barely stay standing.
+
+"Gali? Are you okay?" asks Capella.
+
+*choice
+    #I'm okay, just tired.
+        "Yes, I'm okay, just tired, that's all."
+
+        "Oh." Capella looks worried nevertheless. "Do you need to rest? Or is there anything else you need?"
+
+        *goto rest
+    #I'm not okay at all.
+        "No, I'm not. I'm not okay at all."
+
+        "Oh." Capella looks worried. "What's wrong? Is there something that could help?"
+        *label rest
+        *set return_point "rest"
+        *choice
+            #Just rest, that's all.
+                "I just need rest, that's all."
+
+                "Oh, okay," says Capella. "I have a place you can go. Don't worry about it."
+
+                You follow Capella as she glides through the village's dirt streets, to an unassuming domed house like all the others.
+
+                "This is the village guest house. You can stay here."
+
+                "Oh, um, thanks..."
+
+                *label collapse
+                *page_break You collapse on the bed.
+
+                You dream of falling, of a cavity opening up beneath your bed and sucking you in. Or perhaps it's not a dream. Perhaps it's reality, and you're finally leaving this world...
+
+                *page_break [A/N: Sorry about the short chapter! Life's been happening so much lately.]
+                *goto story_end
+            #I'm a total fuck-up.
+                "Yeah. I messed up..." You recount the entire story of your travel through the portal, and how you ended up in different worlds before ending up in this one. It is a long and sordid tale of your failures and inadequacies.
+
+                *goto collapse
+            #[A/N: I'm a total fuck-up.]
+                [Your old world lies in ruins. Your friends are scattered and broken. Could you have done anything to save them? Where did it all go wrong?]
+
+                [Anyway, do you want to continue the fic?]
+
+                *goto ch3_fic_continue
+            #[A/N: I'm tired of this.]
+                [You're tired of this, but do you think you can continue the fic?]
+
+                *goto ch3_fic_continue
+    #[A/N: I'm not okay at all.]
+        [No, you are not okay at all. Nothing about the nebulaverse is okay right now.]
+
+        [Do you want to continue the fanfic?]
+
+        *label ch3_fic_continue
+        *script setMbmMode(true);
+        *choice
+            #[Try to continue, at least for now?]
+                *script setMbmMode(false);
+                *gotoref return_point
+            #[No. I'm not writing this anymore.]
+                [Okay. The fic is abandoned, for now.]
+                *goto fic_end
+
+*comment TODO
+
+
 *label f_this
 *script setMbmMode(true);
 
@@ -405,30 +481,231 @@ Are you going to continue the fic, or abandon it?
 *set followers + new_followers
 *script setMbmMode(true);
 
+*temp luna_message_seen false
+*temp claire_message_seen false
+*temp sofia_message_seen false
+*temp karla_message_seen false
+*temp lux_message_seen false
+*temp stella_message_seen false
+
+*temp ch3_claire_message false
+*temp ch3_luna_message false
+*temp ch3_sofia_message false
+*temp ch3_karla_message false
+*temp ch3_lux_message false
+*temp ch3_stella_message false
+
+*temp chat_count 0
+*if (current_chapter = 2)
+    *if (ch3_wins > ch3_fails) and (((claire_blue > (claire_green*2)) and (claire_blue > 20)) or claire_chat)
+        *set ch3_claire_message true
+        *set chat_count + 1
+        *set claire_mutuals true
+    *if (luna_blue > (luna_green*2)) and (luna_blue >= 30)
+        *set ch3_luna_message true
+        *set chat_count + 1
+    *comment lux shouldn't comment on an astrapella i feel like
+    *if ((lux_blue > (lux_green*2)) and (lux_blue >= 50))
+        *set ch3_lux_message true
+        *set chat_count + 1
+    *comment karla isn't the type of person to send messages unprompted to people
+    *if ((karla_blue > (karla_green*2)) and (karla_blue >= 20))
+        *set karla_mutuals true
+*if (current_chapter >= 2)
+    *if ((sofia_blue > (sofia_green*2)) and (sofia_blue >= 20))
+        *set ch3_sofia_message true
+        *set chat_count + 1
+        *set sofia_mutuals true
+
 [b]IRL[/b]
 
-You post the story, whatever it's worth. Will anyone read this story, with all the drama flinging back and forth within the nebulaverse fandom? Who knows.
+*if (current_chapter = 2)
+    You post the story, whatever it's worth. And now you wait.
+*if (current_chapter = 3)
+    You post the story, whatever it's worth. Will anyone read this story, with all the drama flinging back and forth within the nebulaverse fandom? Who knows. Now, you have to wait.
+*if (current_chapter = 4)
+    You post the story, or whatever is completed of it.
+    *fake_choice
+        #Well this sucked.
+            *goto shrug
+        #It isn't even complete!
+            *goto shrug
+        #What even happened?
+            *label shrug
 
-Now you wait.
+            [shrug emoji]
+
+            Anyway, given the discord in the nebulaverse fandom at this moment, perhaps it wouldn't hurt to just post an incomplete and kind of bad chapter of the story?
+
+            Sure. It's better to have a story out there than locked up in your head, right? Right?
+        #Just shut up and post it already.
+            Okay. It's posted. Now to watch the notes roll in... eventually.
 
 *page_break Another day...
 [b]Online[/b]
 *if followers >= 220
     *achieve followers
 
-*if (ch3_likes >= 50)
-    Despite the ongoing strife in the Nebulaverse fandom, your fic is still very popular.
-*elseif (ch3_likes >= 25)
-    Despite the ongoing strife in the Nebulaverse fandom, your fic is still well-liked.
-*elseif (ch3_likes >= 10)
-    The ongoing strife in the Nebulaverse fandom has not hurt your fic's popularity.
-*else
-    Maybe the ongoing strife in the Nebulaverse fandom has hurt your popularity.
 You have ${ch3_likes} likes and ${ch3_rbs} reblogs on the fic. 
 *if new_followers > 0
     You have also gained ${new_followers} followers.
 
-Unfortunately, you do not have any new messages. The people who would normally comment are all caught up in their own problems. They don't have time for your silly stories at this moment.
+*if (ch3_likes >= 50)
+    *if (current_chapter >= 3)
+        Despite the ongoing strife in the Nebulaverse fandom, your fic is still very popular.
+    *else
+        Your fic is still very popular!
+*elseif (ch3_likes >= 25)
+    *if (current_chapter >= 3)
+        Despite the ongoing strife in the Nebulaverse fandom, your fic is still well-liked.
+    *else 
+        Your fic is still well-liked.
+*elseif (ch3_likes >= 10)
+    *if (current_chapter >= 3)
+        The ongoing strife in the Nebulaverse fandom has not hurt your fic's popularity.
+    *else
+        Your fic still has a readership, it seems.
+*else
+    *if (current_chapter >= 3)
+        Maybe the ongoing strife in the Nebulaverse fandom has hurt your popularity.
+    *else
+        Less than 10 likes is... not a good sign. But you'll get over it.
+
+*if ((current_chapter >= 3) and (chat_count = 0))
+    Unfortunately, you do not have any new messages. The people who would normally comment are all caught up in their own problems. They don't have time for your silly stories at this moment.
+
+*if chat_count > 0
+    Also, you have some messages!
+    *goto messages
+        
+*label messages
+*choice
+    *if (ch3_luna_message and not(luna_message_seen)) #See Luna's message.
+        *goto luna_msg
+    *if (ch3_lux_message and not(lux_message_seen)) #See Lux's message.
+        *goto lux_msg
+    *if (ch3_claire_message and not(claire_message_seen)) #See Claire's message.
+        *goto claire_msg
+    *if (ch3_sofia_message and not(sofia_message_seen)) #See Sofia's message.
+        *goto sofia_msg
+    #Continue.
+        *if (chat_count > 0)
+            Are you sure? You still have unread messages.
+            *choice 
+                #No, go back.
+                    *goto messages
+                #Yes, continue.
+                    *goto fic_end
+        *goto fic_end
+        
+*label luna_msg
+*set luna_message_seen true
+*set chat_count - 1
+
+@lunan0va: i loved this chapter!
+
+*if fic_astrapella
+    @lunan0va: okay i know this is basic but i am obligated to reblog astrapella.
+
+    @lunan0va: and the astrapella children are amazing!
+
+@lunan0va: i like the concept of the alternate (post-apocalyptic?) world. it's really cool! i wish it was longer and more detailed.
+
+*if protag_trans_girl
+    @lunan0va: also i still really appreciate that you're writing gali as a trans girl.
+
+*if in_luna_chat = false
+    @lunan0va: btw i might have asked already but would you like to join a groupchat for nebulaverse stuff that i'm a part of?
+
+    *choice
+        #Sure, join the groupchat.
+            *set luna_blue %+ 5
+            *set in_luna_chat true
+            @you: sure...
+
+            @lunan0va: great! here's the invite link: [link]
+        #No, not for now.
+            *set luna_green %+ 3
+            @you: sorry, not right now...
+
+            @lunan0va: okay, that's fine.
+
+    @lunan0va: anyway... sorry but i have to log off for now
+
+*else
+    @lunan0va: anyway... sorry but i have to log off for now
+
+*goto messages
+
+
+*label lux_msg
+*set lux_message_seen true
+*set chat_count - 1
+
+@brunova-official: this was an interesting story...
+
+@brunova-official: i mean i usually read brunova stuff but uh, i liked this.
+
+*goto messages
+
+
+*label claire_msg
+*set claire_message_seen true
+*set chat_count - 1
+
+@shadow-protectrix: Hey $!{handle}!
+
+@shadow-protectrix: I enjoyed your new chapter!
+
+@shadow-protectrix: I haven't been reading enough Astrapella lately. Femslash has historically not been my thing, but y'know, "eat your vegetables", right?
+
+*if in_claire_chat = false
+    @shadow-protectrix: Also, I'm running a group chat for nebulaverse fandom writers. Would you be interested in joining?
+    *choice
+        #Sure, join the groupchat.
+            *set claire_blue %+ 5
+            *set in_claire_chat true
+            @shadow-protectrix: Great! Here's the invite link: [link]
+        #No, not for now.
+            @shadow-protectrix: Okay, that's fine.
+
+    @shadow-protectrix: Anyway, signing off for now!
+    *goto messages
+*else
+    @shadow-protectrix: Anyway, signing off for now!
+*goto messages
+
+*label sofia_msg 
+*set sofia_message_seen true
+*set chat_count - 1
+
+@nebulascribbler: Hmm... this was an interesting story.
+
+@nebulascribbler: It reminds me of "After Sunset" by @mistressnyx. Have you read that one?
+
+*fake_choice
+    #Yes, I've read it.
+        @you: um, yeah, i've read it...
+
+        @nebulascribbler: Yes, there are quite a number of similarities, especially the post-apocalyptic elements.
+    #No, I haven't read it.
+        @you: um, no, i haven't read it.
+
+        @nebulascribbler: There are a lot of coincidental similarities in that case!
+    #I've never heard of that...
+        @you: um... i've never heard of that fic.
+
+        @nebulascribbler: There are a lot of coincidental similarities in that case!
+
+*if current_chapter = 2
+    @nebulascribbler: 
+*if current_chapter = 3
+    @nebulascribbler: So the basic idea throughout the story seems to be "looking for home". I feel like it relates to the situation that we're in, in the nebulaverse fandom right now.
+*if current_chapter = 4
+    @nebulascribbler: I feel like
+
+*goto messages
+
 
 *label fic_end
 *return

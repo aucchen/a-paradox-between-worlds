@@ -41,70 +41,52 @@
 
 *comment TODO: change the excerpt to be a book 4 quote
 
-[b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 1: The Academy of Magi[/i] by G. T. Macmillan[/b]
+[b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 4, Part 4: The Book of Boundaries[/i] by G. T. Macmillan[/b]
 
-"The principal purpose of a mage is to impose his vision upon the world."
+"You stand before me today, Galileo Nova. Mage. Keeper of Light. Archon of Shadow. Traitor."
 
-The Administrator's voice reverberated through the cavernous halls of the Academy Plaza. Metallic tables were arranged in neat rows, packed with 16 year old students sitting in uncomfortable chairs. Most were at least pretending to listen to the Administrator's speech.
+Gali lifted his head and saw the face of the Creator. It was red smoke coalescing into a pyrocumulus vortex high in the sky, golden tongues of flame burning in the air. The clouds formed into the shape of an eye, its lids wide open, its iris a circle of flame. He withered under its gaze.
 
-It was Galileo Nova's first night at the Pulsar Academy, and he was nowhere near ready for what would come.
+"You are the beginning and end. You are life and death. You are the creator and destroyer of the world. You are a tiny, pathetic creature."
 
-"This is all so trite," the blonde-haired boy next to him remarked. "They're nothing but platitudes. I'd much rather start learning our elements."
+The eyeball-cloud exploded, split apart into dozens and then hundreds of little scarlet eyeballs in the sky, all trained upon one man, no, a boy, a child, standing alone on the barren hilltop. He looked away.
 
-"Be quiet!" the girl with glasses whispered. "We need to listen! This is important for our future!"
+"This day, this fate, is nothing more than the culmination of all of your failures. Will you do anything differently, this time?"
 
-The boy just laid his head on his arms. Galileo started to doze off as well; the speech truly was boring.
+The ground opened up beneath Gali, and swallowed him into an endless abyss.
 
-*page_break "A mage will have absolute freedom, and out of it create absolute order."
+*page_break
 
-"A mage will have absolute freedom, and out of it create absolute order. With his command of the elements, the mage must protect the order that is at the heart of our Empire. That is all."
+Gali awoke on a hard, cold table, his head swirling.
 
-A round of applause. The centers of the tables opened up, and platters of food and utensils rose.
+"A mage will have absolute freedom, and out of it create absolute order. With his command of the elements, the mage must protect the order that is at the heart of our Empire."
 
-"Astra, did you really listen to all that?" the blonde boy asked.
+[i]You are Galileo Nova and you are alive.[/i]
 
-The girl, Astra, sighed. "Yes, Bruno. We have to understand the reasons why we're here."
+Gali remembered the scene perfectly well. It was his first night at Pulsar Academy, and the Administrator was giving a speech at the opening banquet, his voice droning on and on. It was here that he met Astra, Capella, Bruno, and Tycho, his four best friends, who were there for him all through his four years at the Academy, who would never betray him no matter what. That was what he had thought.
 
-Another girl, this one with raven black hair, interjected. "Those were all lies. Propaganda promulgated by the powers-that-be to lull us into complacency. It's all such a horrid worldview." Meanwhile, Astra visibly rolled her eyes.
+"Finally, you must realize that all your actions have consequences. You are but one small piece embedded in the fabric of the cosmos, connected to every other living being, and every action you take, no matter how small, reverberates through the universe...."
 
-"What about you?" Bruno turned to Galileo, who must have looked confused. "What do you think?"
+"This is all so boring," Capella ejaculated. "Propaganda promulgated by the powers-that-be to lull us into complacency."
 
-"Slow down! We haven't asked his name yet!" the raven-haired girl ejaculated. "I'm Capella, by the way."
+Astra visibly rolled her eyes. "Oh please," she said. "The Administrator is doing his best." Meanwhile a roaring round of applause erupted from the students as the Administrator concluded his speech.
 
-*page_break "I'm Galileo Nova. Or Gali for short."
+*page_break The scene was playing out exactly as he remembered.
 
-"I'm Galileo Nova. Or Gali for short."
+The scene was playing out exactly as he remembered. But why was he [i]here[/i]? Was this [i]real[/i], or was he simply trapped in yet another memory?
 
-"Gali?" Bruno said quizzically. "Why not Leo? That makes more sense."
+But just as Gali pondered, Capella tapped his shoulder, and whispered so that only he could hear: "I know what's happening. The Emperor imprisoned us and put us behind the Veil of Illusion, so none of this is real. We can get out, if you follow my lead."
 
-Gali shrugged. "I don't know. It's always been that way."
+Gali nodded, and took her hand.
 
-"And why were you sent here?" Capella asked.
-
-"Um, because I passed the entrance exam?" he replied.
-
-Astra smiled. "That's why we're all here, isn't it?"
-
-*page_break The Administrator's voice boomed again.
-
-The Administrator's voice boomed again.
-
-"And one more thing! Finally, you must realize that all your actions have consequences. You are but one small piece embedded in the fabric of the cosmos, connected to every other living being, and every move you make, every action you take, no matter how small, reverberates throughout the universe. From where you sit today to the words you speak, you have just set the foundation for your five years at our Academy. So take care, and be deliberate in what you do, and understand that you are not each a world unto yourself."
-
-Another roaring round of applause.
-
-"Well that was unnecessary," Bruno said, turning to his food again.
-
-"So we'll all be best friends, correct?" Astra asked the table. Capella simply shrugged. Gali glanced among the others.
-
-"Yeah. We'll be friends."
+[i]A note from the author: Here, you are to reread Books 1 through 3 of the Chronicles of the Shadow Nebula. In the next few pages, I have noted a number of key passages (the page numbers may be different in your edition). Take note of Gali's actions and inactions in these passages, and judge them for yourself. Does he possess any coherency, or any signs of growth? Does he ever understand who he is?[/i]
 
 *page_break
 *label universe1
 
 [A/N: All of your actions and inactions will have consequences. You can check the "Show Stats" page to see the reverberations of your actions upon the cosmos.]
 
-[A/N: Would you like to be notified of the consequences of your actions?]
+[A/N: Would you like to be notified of the consequences?]
 
 *choice
     #[Yes, turn on notifications.]
@@ -123,6 +105,8 @@ Another roaring round of applause.
 [b]Universe - Noncanon[/b]
 
 [b]Excerpt from "Another Light", WIP by Luna @lunan0va[/b]
+
+Gali [i]knew[/i] who she was.
 
 The planet of New Antioch was in sight, its blue oceans and red continents visible to the naked eye. But there was no beauty contained within the atmosphere. It was a warzone, fought over for centuries as it bounced back and forth between Empire and Kingdom control. As they approached the surface, the scars grew ever more visible, remnants of magical storms and atomic fires that left the planet nearly devoid of all but the hardiest life.
 
@@ -288,6 +272,8 @@ Wait... by what name does she call you?
               *set handle "hoshi"
           #Jupiter
               *set handle "jupiter"
+          #Orion
+              *set handle "orion"
           #Rigel
               *set handle "rigel"
           #Sitara
@@ -1025,7 +1011,7 @@ Which blogs would you like to read?
     *selectable_if ((karla_blocked = false)) #@trappedinspace @{(karla_ch1_seen=1) (read)|(${trap_rem})}
         *set read_count + 1
         *gotoref "trap_1_${trap_prog}"
-    *disable_reuse *if (luna_sent_message) #See Luna's message.
+    *if (luna_sent_message) #See Luna's message.
         *gotoref luna_message_ref
     *if (in_luna_chat) #See Luna's groupchat.
         *gotoref annc_chat_ref
@@ -1446,6 +1432,7 @@ ${brun_1_4_notes} notes
 
 *label brun_1_5
 *set brun_prog 5
+*set lux_ch1_seen 1
 
 [b]@brunova-official reblogged from @shadow-protectrix at 8:22 PM. OP: @cyanstars[/b]
 
@@ -2359,7 +2346,7 @@ ${trap_1_5_notes} notes
 @lunan0va: do you wanna join?
 
 *choice
-    #Sure, I'll join!
+    #"Sure, I'll join!"
         *set luna_message_read true
         *set luna_message_ref "luna_message_2"
         *set in_luna_chat true
@@ -2371,7 +2358,7 @@ ${trap_1_5_notes} notes
         *choice
             #Go back.
                 *goto montage_1
-    #Nah, I'd rather not join.
+    #"Nah, I'd rather not join."
         *set luna_message_read true
         *set luna_message_ref "luna_message_3"
         *set luna_green %+ 3
@@ -2429,14 +2416,14 @@ ${trap_1_5_notes} notes
 @lunan0va: oh hey @${username}! welcome!
 
 *choice
-    #I'm glad to be here!
+    #"I'm glad to be here!"
         *set luna_blue %+ 3
         @you: i'm glad to be here!
 
         @lunan0va: i'm glad you're here too!
 
         *goto annc_chat_2
-    #Hi Luna!
+    #"Hi Luna!"
         *set luna_blue %+ 3
         @you: hi luna!
 
@@ -2471,7 +2458,7 @@ ${trap_1_5_notes} notes
         There is a lull in the chat. You could say something, or just wait.
         *comment TODO: ??? how to deal with this...
         *choice
-            #I love Astrapella too!
+            #"I love Astrapella too!"
                 *set astrapella %+ 2
                 *set luna_blue %+ 2
                 *set stella_blue %+ 2
@@ -2480,7 +2467,7 @@ ${trap_1_5_notes} notes
                 @apocalypse-hoarder: Yay!
 
                 *goto annc_chat_wait
-            #So, how about Brunova?
+            #"So, how about Brunova?"
                 *set brunova %+ 2
                 *set luna_blue %+ 2
                 @you: um... so, how about that brunova?
@@ -2490,7 +2477,7 @@ ${trap_1_5_notes} notes
                 @apocalypse-hoarder: agreed, but it has a lot of potential!
 
                 *goto annc_chat_wait
-            #What about Ellanova?
+            #"What about Ellanova?"
                 *set ellanova %+ 2
                 *set karla_blue %+ 3
                 *label annc_chat_ellanova_1

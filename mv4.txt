@@ -134,6 +134,24 @@ He takes a deep breath. "And the man leading the shadow movement... is standing 
 *temp luna_message_seen false
 *temp knows_nebulacon false
 
+*comment anon message checks 
+*if (mv3_gtm_oppose > 1)
+    *set mv4_pro_gtm_anon true
+    *set mv4_anon true
+*if (mv3_gtm_support > 0)
+    *set mv4_anti_gtm_anon true
+    *set mv4_anon true
+*if (mv3_claire_support > 0)
+    *set mv4_anti_claire_anon true
+    *set mv4_anon true
+*if (mv3_claire_oppose > 0)
+    *set mv4_pro_claire_anon true
+    *set mv4_anon true
+*if ((mv3_gtm_oppose = 0) and (mv3_gtm_support = 0))
+    *set mv4_no_gtm_anon true
+    *set mv4_anon true
+
+
 *gosub_scene calc_new_followers
 
 *gosub_scene check_blocked
@@ -199,7 +217,9 @@ Which blogs would you like to read?
         *goto luna_msg_2
     *disable_reuse *if (knows_nebulacon and ((sofia_helped > 0) and (sofia_blue >= 25))) #Message Sofia about NebulaCon.
         *gotoref sofia_message_ref
-    *if (read_count > 1) #Stop looking at blogs.
+    *if (mv4_anon) #See the anonymous asks.
+        *goto anon_messages
+    *if (read_count >= 1) #Stop looking at blogs.
         *if (has_luna_password and ((luna_ch4_seen = 1) and not(luna_message_seen))) 
             Are you sure? There are unread messages from Luna @lunan0va.
             *choice
@@ -211,7 +231,6 @@ Which blogs would you like to read?
 
 *label luna_1_1
 *set luna_prog 1
-*set luna_ch4_seen 1
 
 Luna's blog is password-protected.
 
@@ -250,6 +269,7 @@ Luna's blog is password-protected.
         *goto montage_1
 
 *label luna_1_1_pre_post
+*set luna_ch4_seen 1
 [b]${luna_bio}[/b]
 
 [b]@lunan0va posted at 5:53 PM[/b]
@@ -1755,6 +1775,69 @@ You message Sofia @nebulascribbler.
     #Go back.
         *goto montage_1
 
+*label anon_messages
+*set mv4_anon_read true
+
+You've received some anon messages.
+
+*label anon_list
+*choice
+    *disable_reuse *if (mv4_pro_gtm_anon) #Anonymous asked: man i thought youd be better than this...
+        Anonymous asked: man i thought youd be better than this. why are you joining in the mob against gtm? nothing she said was transphobic in any way. some of yall are just paranoid.
+
+        *if (mv3_pro_gtm_anon)
+            You've seen this exact same message before. Is this a copypasta or a spammer? Or both?
+        *choice
+            #Post the ask without comments.
+                You post the ask without any comments.
+                *set discourse %+ 5
+                *goto anon_list
+            #Dunk on the anon.
+                You wish you could be more eloquent. Maybe your response seemed more like a childish insult. But whatever, it's done. Whether or not you've "succeeded", you've increased the quantity of discourse on this website.
+
+                *gosub discourse
+                *set discourse %+ 6
+                *goto anon_list
+            #Criticize them in some sort of intellectual way.
+                *set discourse %+ 5
+                You try to say something smart-sounding in response to the comments. Whether or not you've succeeded, you've increased the quantity of discourse on this website.
+
+                *gosub discourse
+                *goto anon_list
+            #Ignore the message.
+                You ignore the message.
+                *goto anon_list
+    *disable_reuse *if (mv4_anti_gtm_anon) #Anonymous asked: why the fuck are you defending gtm?...
+        Anonymous asked: why the fuck are you defending gtm? dude fuck you transphobe
+        *choice
+            #Post the ask without comments.
+                You just post the ask without responding to it.
+                *goto anon_list
+            #Ignore the message.
+                You ignore the message.
+                *goto anon_list
+    *disable_reuse *if (mv4_pro_claire_anon) #Anonymous asked: you're being really unfair to claire right now.
+        Anonymous asked: you're being really unfair to claire right now. the claims against them are massively overblown and the pile-on is really over-the-top.
+        *choice
+            #Post the ask without comments.
+                You post the ask without any response.
+                *goto anon_list
+            #Ignore the message.
+                You ignore the message.
+                *goto anon_list
+    *disable_reuse *if (mv4_anti_claire_anon) #Anonymous asked: In case you didn't know, claire @shadow-protectrix has been called out for...
+        Anonymous asked: In case you didn't know, claire @shadow-protectrix has been called out for a pervasive pattern of transmisogyny and egging on the harassment of minors on this website. You shouldn't be interacting with them.
+        *choice
+            #Post the ask without comments.
+                You post the ask without any response.
+                *goto anon_list
+            #Ignore the message.
+                You ignore the message.
+                *goto anon_list
+    #Go back.
+        *goto montage_1
+
+
 
 *label montage1_end
 
@@ -1763,7 +1846,14 @@ There is nothing more to do here.
 *page_break
 
 *if writing_fic
-    *gosub_scene fic_metal
+    It is time for the next chapter of your fanfic. What will this chapter be about?
+    *choice
+        *selectable_if (not(ice_seen)) #Ice - Canon divergence AU
+            *gosub_scene fic_ice
+        *selectable_if (not(wind_seen)) #Wind - Post-apocalyptic AU
+            *gosub_scene fic_wind 
+        *selectable_if (not(metal_seen)) #Metal - Dark academia AU
+            *gosub_scene fic_metal
 
 *set luna_bio "luna | she/her"
 

@@ -1,5 +1,7 @@
 *script setMbmMode(false);
+*set ice_seen true
 [b]Universe - Noncanon?[/b]
+*temp return_point "fic_1_scene_1"
 *temp look false
 *temp listen false
 *temp smell false
@@ -18,11 +20,6 @@ Until you hit the ground. A ground.
 You open your eyes to a cavernous place. No, not a cavern exactly, but an artificial space, a rectangular room with a floor cold as [b]ice[/b]. The flickering fluorescent lights in the ceiling make your headache worse.
 
 Where are you?
-*choice
-    #[An empty room aboard a spaceship. Canon divergence AU]
-        *goto ship_feel
-*comment   *selectable_if (1 = 0) #[A prison cell on a cold, desolate planet. Canon divergence AU]
-*comment        TODO
 
 *label ship_feel
 *if look
@@ -66,6 +63,9 @@ Where are you?
         *goto ship_feel
     #Continue.
         *goto fic_1_scene_2
+    *if (current_chapter >= 3) #[You know what? No.]
+        *goto f_this
+
 
 *label fic_1_scene_2
 The door opens. A masked figure in full body armor steps through.
@@ -93,6 +93,7 @@ He gazes at you with an intense stare, until his face breaks into a simulacrum o
 *comment TODO: change this to better account for Bruno's stuff...
 
 *label bruno_question_1
+*set return_point "bruno_question_1"
 *choice
     #Interject and ask a question.
         *label bruno_ask_question
@@ -138,6 +139,8 @@ He gazes at you with an intense stare, until his face breaks into a simulacrum o
         *goto bruno_question_1
     #Let him monologue.
         *goto bruno_question
+    *if (current_chapter >= 3) #[You know what? No.]
+        *goto f_this
 
 *label bruno_question
 
@@ -490,6 +493,49 @@ You find yourself in a void, an empty space of pure blackness devoid of light. T
 But before anyone can answer, then you begin to taste cherries once more. You feel a falling sensation. The two girls disappear from view. It, whatever "it" is, begins again.
 
 *page_break
+
+*goto irl
+
+*label f_this
+*script setMbmMode(true);
+
+Are you going to continue the fic, or abandon it?
+
+*choice
+    #Never mind, keep writing.
+        *script setMbmMode(false);
+        [Okay. Let's keep going.]
+
+        *gotoref return_point
+    #No, I won't write anymore.
+        Are you sure you want to stop?
+        *choice
+            #Yes. Stop writing.
+                *set popularity - 3
+                *if popularity < 0
+                    *set popularity 0
+                There's no point to writing this anymore. The fic is over, at least for now.
+                *goto fic_end
+            #I don't know, but I want to take a break.
+                *set popularity - 3
+                *if popularity < 0
+                    *set popularity 0
+                Alright. The fic is over, for now. Maybe you'll come back to it, or not.
+                *goto fic_end
+            #Never mind. The story must go on.
+                *script setMbmMode(false);
+                [Okay. Let's keep going.]
+
+                *gotoref return_point
+    #I want to stop writing, but the story must go on.
+        [Okay. Let's keep going.]
+
+        *gotoref return_point
+
+
+
+*label irl
+
 *script setMbmMode(true);
 
 [b]IRL?[/b]
@@ -522,23 +568,26 @@ But before anyone can answer, then you begin to taste cherries once more. You fe
 *temp ch2_stella_message false
 
 *temp chat_count 0
-*if (ch2_wins > ch2_fails) and (((claire_blue > (claire_green*2)) and (claire_blue > 20)) or claire_chat)
-    *set ch2_claire_message true
-    *set chat_count + 1
-    *set claire_mutuals true
-*if (luna_blue > (luna_green*2)) and (luna_blue >= 30)
-    *set ch2_luna_message true
-    *set chat_count + 1
-*if ((lux_blue > (lux_green*2)) and (lux_blue >= 20))
-    *set ch2_lux_message true
-    *set chat_count + 1
-*if ((sofia_blue > (sofia_green*2)) and (sofia_blue >= 20))
-    *set ch2_sofia_message true
-    *set chat_count + 1
-    *set sofia_mutuals true
-*comment karla isn't the type of person to send messages unprompted to people
-*if ((karla_blue > (karla_green*2)) and (karla_blue >= 20))
-    *set karla_mutuals true
+*if (current_chapter = 2)
+    *if (ch2_wins > ch2_fails) and (((claire_blue > (claire_green*2)) and (claire_blue > 20)) or claire_chat)
+        *set ch2_claire_message true
+        *set chat_count + 1
+        *set claire_mutuals true
+    *if (luna_blue > (luna_green*2)) and (luna_blue >= 30)
+        *set ch2_luna_message true
+        *set chat_count + 1
+    *if ((lux_blue > (lux_green*2)) and (lux_blue >= 20))
+        *set ch2_lux_message true
+        *set chat_count + 1
+        *comment karla isn't the type of person to send messages unprompted to people
+    *if ((karla_blue > (karla_green*2)) and (karla_blue >= 20))
+        *set karla_mutuals true
+*if (current_chapter >= 2)
+    *if ((sofia_blue > (sofia_green*2)) and (sofia_blue >= 20))
+        *set ch2_sofia_message true
+        *set chat_count + 1
+        *set sofia_mutuals true
+
  
  
 Okay, how do you feel about this chapter of the story?
@@ -780,7 +829,7 @@ The conversation dies down.
 
 @nebulascribbler: I know we haven't really talked, but I just saw your fic, and it's really cool!
 
-@nebulascribbler: I get the feeling that this chapter is a parody of Shadows in Midnight by tempusspatium? With the whole Gali getting kidnapped by Bruno in a spaceship and the whole casual interrogation with subtext-bubbling-up-to-text.
+@nebulascribbler: I get the feeling that this chapter is a parody of Shadows in Midnight by @tempusspatium? With the whole Gali getting kidnapped by Bruno in a spaceship and the whole casual interrogation with subtext-bubbling-up-to-text.
 
 *if fic_ship != "brunova"
     @nebulascribbler: I thought this wasn't tagged as a brunova fic.
@@ -817,4 +866,5 @@ The conversation dies down.
         *goto fic_messages
 
 *label mv2_pt2
+*label fic_end
 *return

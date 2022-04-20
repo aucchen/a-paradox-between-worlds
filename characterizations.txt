@@ -1,0 +1,79 @@
+
+*label gali
+
+*choice
+    #Gali is me, $!{handle}. Gali is a reflection of myself.
+        *set protag_personality "selfinsert"
+        [Okay. Gali is a self-insert character.]
+    #Gali is the creation of G.T. Macmillan, and I'm trying to portray Gali similar to her depiction.
+        *set protag_personality "canon"
+        [Okay, The Gali in this story should be the same as Gali from the canon.]
+    #Gali has a true personality that even GTM doesn't always realize.
+        *set protag_personality "noncanon"
+        [Okay, Gali]
+    #Gali is literally just some guy.
+        [Okay. Gali is just some guy.]
+
+*return
+
+*label astra
+*comment TODO
+
+*choice
+    #She's the smart girl, right?
+        [Astra is ]
+    #She's a fundamentally caring person who doesn't really know how to deal with awkward situations and ends up in over her head.
+    #She is a seemingly kind girl with a secret dark side.
+        [Sure. Some have said that she was captured and tortured/brainwashed by Emperor Ariel in Book 4 Part 3; others have said that she]
+    #She doesn't need to have a personality, since she's not the main character.
+        [Okay. Astra is not the main character.]
+
+*return
+
+
+*label capella
+
+*choice
+    #She's the other smart girl, right? Like Astra?
+        [Sure. Capella has basically the same personality as Astra, which is... "smart girl".]
+    #She is pessimistic, deeply philosophical, and has a stoic veneer hiding her vulnerabilities. In other words, an Augur of Ice.
+    #She doesn't need to have a personality because she's not the main character.
+    #She's a lesbian.
+        [That's not a personality though...]
+        *choice
+            #Maybe her personality is something else.
+                [Okay, what is Capella's characterization?]
+
+                *goto capella
+            #She's a lesbian and also trans. That is a personality, right?
+                That's not a personality either...
+
+*return
+
+*label bruno
+
+*label bruno_character_choices
+*fake_choice
+    #He's a jerk with a heart of gold.
+        [Okay, Bruno is a jerk with a heart of gold. He's mean, but he secretly cares deeply about his friends, especially Gali, despite their rivalry.]
+
+        [This is the standard fanon depiction of Gali.]
+    #He's a jerk with a heart of jerk.
+        [Okay, Bruno is a pure jerk. He's just an ass.]
+    #He secretly cares about Gali but is torn by his social status and external obligations.
+        [Bruno is a complicated character.]
+    #He's gay.
+        [Wait... being gay is not a personality.]
+        *fake_choice
+            #Maybe his personality is something else.
+                [Okay. What is Bruno's characterization?]
+
+                *goto bruno_character_choices
+            #It is for Bruno.
+                [Okay, sure, being gay can be a personality for Bruno. Fortunately, a good chunk of the fandom agrees with you.]
+            #He's gay and he's a jerk. That's his personality.
+                [Okay. Bruno's personality consists solely of the facts that he's gay and he's a jerk. A gay jerk. A gerk, if you will.]
+
+*return
+
+*comment sorry tycho fans (all 0 of you)

@@ -1,20 +1,16 @@
 *script setMbmMode(false);
+*set metal_seen true
 [b]Universe - Noncanon?[/b]
 *comment Astra/Metal fic
 *temp return_point ""
 
-You awaken in a room.
+You awaken in a room, your head resting on a table of cold [b]metal[/b].
 *temp look false
 *temp listen false
 *temp smell false
 *temp taste false
 *temp touch false
 *temp think false
-
-*fake_choice
-    #Back at Pulsar Academy?
-*comment    #A school, mich like the one you attend.
-*comment    #A fancy British boarding school.
 
 *label view1
 *set return_point "view1"
@@ -57,7 +53,7 @@ You awaken in a room.
         *goto view1
     #Get up.
         *goto stand_up
-    #[A/N: You know what? No.]
+    *if (current_chapter > 2) #[A/N: You know what? No.]
         [What's the point? What's the point of writing these stories and working on these fictional universes when... when the world is like this?]
         *goto fic_continue 
 
@@ -82,7 +78,7 @@ You manage to stand up, despite your achy body. A familiar face soon approaches 
         "What is this place?"
 
         "Back at the Pulsar Academy, of course!" She laughs. "After going through the portal I ended up in a few different places. Sometimes better, sometimes worse. But I always left after no more than a day. Until I ended up back here. It's like I never left."
-    #[A/N: You know what? No.]
+    *if (current_chapter > 2) #[A/N: You know what? No.]
         [What's the point? What's the point of writing these stories and working on these fictional universes when... when the world is like this?]
         *goto fic_continue 
 
@@ -97,7 +93,7 @@ You manage to stand up, despite your achy body. A familiar face soon approaches 
     *disable_reuse #Ask: Is this the world we came from?
         "Is this the world we came from? Is this our old world?"
 
-        Astra shakes her head. "No. There are some differences. This is a peaceful place. As far as I know, the Administrator is still alive. There's no civil war. The Emperor hasn't..." She pauses and looks at you. "It's a better world than the one we came from. But don't worry, there are still problems to solve, mysteries to interrogate."
+        Astra shakes her head. "No. There are some differences. This is a peaceful place. As far as I know, the Administrator is still alive. There's no civil war. The Emperor hasn't..." She pauses and looks at you. "But don't worry. I'm here trying to make this world a bit less boring."
         *goto astra_conv_2
     *disable_reuse #Ask: Can I stay here?
         "Can I stay here?"
@@ -105,6 +101,8 @@ You manage to stand up, despite your achy body. A familiar face soon approaches 
         Astra shrugs. "I don't know. Maybe that's for you to decide. I don't know how I ended up staying here, but it was just... right, you know?"
 
         "No, I don't know."
+
+        "Not yet, you don't."
         *goto astra_conv_2
         *comment TODO: shoutouts to astranova if that route were pursued.
     #Follow Astra.
@@ -164,7 +162,7 @@ You follow Astra through the labyrinthine corridors of the Academy, until you en
                         #Actually, let's hear about the magical mysteries!
                             "Actually, let's hear about the mysteries."
 
-                            "Great! This is the mystery of the..."
+                            "About Tycho..."
 
                             You can't do this. Your eyes cannot stay open. Your body is too tired.
 
@@ -178,8 +176,276 @@ You follow Astra through the labyrinthine corridors of the Academy, until you en
 
             *goto fic_continue
 *else
-    *comment TODO:
-    ""
+    *goto main_story
+
+*label main_story
+*set return_point "main_story"
+*comment TODO: write this
+"By the way, is Tycho missing?" asks Astra. "I haven't seen him at all today."
+
+She glances at Capella and Bruno. They shake their heads. "Me neither," says Bruno.
+
+"Hmm. This is exactly what we trained for as part of the Mystery Club," says Astra. "What do you think we should do?" she continues with a smile plastered on her face. "What do you think, Gali? How should we go about the project of finding our missing compatriot?"
+
+*label tycho_choices
+*choice
+    #Search Tycho's room.
+        "Can we search Tycho's room?" you ask.
+
+        "Of course," replies Astra.
+
+        The four of you make your way to the dorms, to the suite that you share. Everything seems so familiar, as if you are back at the Academy and the portal never happened. 
+
+        "Well, here we are," says Astra. "We haven't been here yet."
+
+        Tycho's room looks just as you last saw it. He was always a neat freak, and even in this world his room shows. No obvious mess, no sign of strife or discord.
+
+        *page_break Search.
+
+        "Hey, look, here's something," says Astra, as she hands you a typed note. "Top of Waterfall 0200"
+
+        [A/N: GTM never formally defined the time system used in the Empire so you'll have to excuse the usage of contemporary time measurements.]
+
+        "A time and a location," says Capella. "That must have been this morning."
+
+        "And nobody's seen him since," says Bruno. "Okay, top of the waterfall it is."
+
+        *page_break To the waterfall?
+        *goto meeting
+    *disable_reuse #Ask where they last saw Tycho.
+        "Where did you last see him?"
+
+        Astra looks pensive for a moment. "Hmm, it was yesterday evening, I think. He seemed agitated for some reason." She shrugs. "I think he received a message. You might find it if you look in his room."
+
+        *goto tycho_choices
+    *disable_reuse #Wait, is this some kind of game?
+        "Wait, is this some kind of game?" you ask. "Is this a mystery just for funsies, or is he really missing?"
+
+        Astra shrugs. "That's what we're supposed to find out, isn't it?"
+        *goto tycho_choices
+    *if (current_chapter >= 3) #[A/N: You know what? No.]
+        *goto fic_continue
+
+*label meeting
+
+It is a class day. You're not supposed to be leaving the Academy grounds on a day like this, but you don't have any time to waste.
+
+The path to the waterfall is a lightly maintained trail through the woods, cutting through the hills behind campus. It is a bit of a hike, at least 30 minutes on a good day. This is not a good day. The ground is mud and the air is frigid. Broken branches are strewn across the narrow trail, making the climb through the hills an ordeal.
+
+"If he were here last night, during the storm..." Capella trails off.
+
+*page_break
+
+Finally the four of you reach the top of the waterfall, the meeting place mentioned in Tycho's note.
+
+"If Tycho were here, what should we be looking for?" asks Astra.
+*temp look_clue false
+*temp listen_clue false
+*temp touch_clue false
+*temp think_clue false
+*temp ask_clue false
+*temp magic_clue false
+
+*label clues
+*set return_point "clues"
+
+*choice
+    *disable_reuse #Look
+        *set look_clue true
+        You find yourself between the mountains and the sea. It is high enough to see all the way to the buildings of the Academy, and Pulsar City beyond. Between the waterfall and the Academy is a tree-covered hill, and behind you are the coastal mountains rising in the distance.
+
+        "Admiring the view?" Astra asks. "It's really beautiful, isn't it?"
+        *fake_choice
+            #"You're beautiful..."
+                *set fic_astranova true
+                "Um, you-you're beautiful..."
+
+                Astra makes a nervous laugh. "Oh, really? You think so? Are you sure this is the best time for that conversation, when one of our beloved friends is missing?"
+                *fake_choice
+                    #"Tycho doesn't matter right now."
+                        "Maybe Tycho doesn't matter right now. Not more than you."
+
+                        Astra laughs again. "You really don't care? Isn't finding Tycho more important than flirting?"
+
+                        "Tycho isn't real. But you are."
+
+                        Astra takes your hand, and leads you closer to the waterfall, towards the edge.
+
+                        "This isn't our world, not really," she says. "We can leave. We can disappear. And none of this is real. Only we are. So won't you come with me?"
+
+                        You are dangerously close to the edge now. Beneath, you see that the waterfall has disappeared, and only a pitch black abyss remains. You taste cherries on your tongue.
+                        *fake_choice
+                            #Jump.
+                                You jump. Astra lets go.
+
+                                "Bye, Gali," she says. "I hope we meet under better circumstances."
+
+                                You fall, until you have no other sensation save the falling. It feels like an abyss without end.
+
+                                *page_break You keep falling...
+                                *goto story_end
+                            #Pull back.
+                                "No," you say. "I'm not done here yet."
+
+                                "Well that's too bad." Astra pushes, and you fall. It feels like an abyss without end.
+
+                                *page_break You keep falling...
+                                *goto story_end
+                    #Maybe we should just keep on searching...
+                        "You're right. We should keep looking," you say.
+
+                        *goto clues
+            #Look closer to earth.
+                You keep your head down and scan the grass and woods closest to the clearing. There's nothing here except grass and dirt. No sign or trace of human activity; not even any litter.
+
+        "Nothing's here," says Bruno. "What's the point in even looking?"
+        *goto clues
+    *disable_reuse #Listen
+        *set listen_clue true
+        There are no sounds save the crashing of the waterfall.
+        *goto clues
+    *disable_reuse #Touch
+        *set touch_clue true
+        You touch the grass, hoping to absorb some knowledge through osmosis. It doesn't work. Next you comb through the grass and fallen leaves, hoping to find some trace of human activity here. But there isn't anything obvious here.
+        *goto clues
+    *if (look_clue and not(think_clue)) #Think
+        *set think_clue true
+        You think about what you know, which is unfortunately very little. Your only clue is the fact that Tycho has been missing since roughly the meeting time that was stated on the note.
+
+        Astra and your other friends don't seem to be taking the search especially seriously. If you trusted Astra less, you would be suspicious at this point.
+        *goto clues
+    *if (look_clue and not(ask_clue)) #Ask
+        *set ask_clue true
+        "Um, what do you guys think?" you ask. "What do you think happened to Tycho?"
+
+        "Worst case scenario," says Bruno as he points down the waterfall.
+
+        "Hmm... I certainly hope that's not the case, because it would be terrible if anything happened to Tycho," says Astra.
+
+        "Yeah. Right," says Capella, glancing away.
+        *goto clues
+    *if (look_clue and not(magic_clue)) #Use magic
+        *set magic_clue true
+        High-level Ice magic can unwind time, letting you see a location as it was in the past. Unfortunately, you do not know that formula. Fortunately, there is a lower-level Ice/Metal formula to detect the presence of specific DNA sequences in the environment. You just happen to have that formula.
+
+        "Does anyone have a piece of Tycho's hair? Or skin? Or clothes? Or..."
+
+        "And why would you need that?" asks Bruno.
+
+        "Don't you remember that one formula where..."
+
+        "I don't think that would work," says Astra. "Too much time has passed, and we've already contaminated the site."
+
+        "But as long as we have a DNA sample that shouldn't be an issue," says Capella. "The formula can specify an exact match to a set of unique polymorphisms..."
+
+        She trails off. Astra glares harshly. "It won't work," she says. "Besides, we don't have a sample."
+        *goto clues
+    *if (magic_clue and (ask_clue or think_clue)) #Something's wrong.
+        *goto something_wrong
+    *if (current_chapter > 2) #[A/N: You know what? No.]
+        *goto fic_continue
+
+*label something_wrong
+
+Something feels wrong about this.
+
+"Why are all of you so nonchalant about this?" you ask. "Aren't you all worried about him?"
+
+"What do you mean?" asks Astra. "We're all worried about Tycho. Why do you think otherwise?"
+
+*if magic_clue
+    "You lied about the DNA detection formula," you say. "You knew how it worked. I remember from back in class."
+
+Astra glares daggers at you. "What are you accusing me of?"
+
+"Nothing. But it's remarkable that you immediately think I'm accusing you."
+
+*page_break Astra is expressionless.
+ 
+"Alright. Fine. I'll tell you what's going on." Astra is glaring at you, as is Bruno, while Capella paces behind them.
+
+"The world is a more complicated place than you might imagine. I used to be nothing more than a tool of the Administrator. And then the Emperor freed me from that yoke, but made me into his instrument instead. Only once I found and fixed the portal could I truly be free, in a new world. So I bounced around worlds, and only suffered more. I cannot count the number of times I died, or worse. I needed to end the suffering."
+
+"In my travels I learned that to have true freedom, I had to have control. To have control, I had to have True Magic. To have True Magic, I needed to show that I free will, to be able to act beyond the mechanisms that motivate the masses. Tycho was an obstacle. He was always so [i]normal[/i], so [i]boring[/i]. How else am I supposed to show the Demiurge that I exist?"
+
+"You have a choice, Nova. You can either stand with Tycho or you can stand with me. You can either join the secret rulers of this world, or you can join the apathetic masses sleepwalking their way through the cosmic tapestry."
+
+*label astras_choice
+*set return_point "astras_choice"
+*fake_choice
+    #Okay. Fine. I stand with Astra.
+        "Okay. Fine. I stand with you. What now?"
+
+        "Nothing."
+
+        "What?"
+
+        "I am the only human in this world. You are just another one in the mass. All of you."
+    #No! This is wrong!
+        "No! This is wrong! Killing people - killing your friend! That's... evil!"
+
+        Astra only laughs. "You know nothing about evil. I have seen things you would never be able to understand. I have seen true darkness, and have become it."
+    *hide_reuse #[A/N: This makes no sense, continuity-wise.]
+        [Okay, this story makes no sense, continuity-wise. As of the last Chronicles book, Astra was still under the Emperor's control. This would imply that in Chapter 1 of this story, Astra had already been freed from the Emperor, which would make it post-canon, which nothing else about this story suggests because everything was totally messed up by the time canon ends, so...]
+
+        [This is all too confusing.]
+        *fake_choice
+            #[Just roll with it.]
+                [Okay...]
+                *goto astras_choice
+            #[Quickly! Do some retcons!]
+                Something about Astra's words didn't add up.
+                "What do you mean, the Emperor kidnapped you?"
+
+                "You don't remember?"
+
+                "No!"
+
+                "Maybe we aren't from the same world after all."
+                *goto falling
+    #[A/N: Astrapella goes here - they have an epic confrontation or something.]
+        It's Capella who replies. "What is wrong with you?" she says. "You're ranting like a mad villain. I thought you were a decent person, once. I thought you cared about... someone. Anyone."
+
+        Astra laughs. "I have died almost as many times as I have seen you die. I've seen us become lovers, enemies, and everything in between. You're always so predictable. So boring and banal. I have grown as you have stayed the same. You know nothing about my darkness."
+        *goto falling
+    #[A/N: Ellanova goes here - get Capella to turn against Astra.]
+        You stare at Capella, and she stares back. She walks over to you, and takes your hand.
+
+        "We don't want anything to do with this anymore," you say to Astra. Capella shakes her head. "I don't know what got into me, to let you go through with your evil," she says.
+
+        Astra only laughs.
+    #[A/N: Brunova goes here - because why not.]
+        You stare at Bruno, and he stares back. "What the fuck are you staring at me for?" he asks. "Fucking pathetic." He sighs, and walks to you, taking your hand.
+
+        "We don't want anything to do with this anymore," you say to Astra. "I'm sick of being your underling," says Bruno.
+
+        Astra only laughs.
+    #[A/N: Astranova goes here - convince Astra to not be evil with the power of love.]
+        [A/N: Okay, um, here Gali tries to convince Astra to not be evil with the power of love. This doesn't really work but whatever.] 
+
+        "Um, this is wrong!" you say. "I love you Astra! Don't do this!"
+
+        Astra laughs. "You know nothing about my darkness! Do you know how many times I've died and seen you die? Do you know how many times I've seen us become lovers, enemies, everything in between? We don't need any of that anymore."
+    #[A/N: Astranova goes here - join Astra with the power of evil.]
+        "I love you, Astra. Of course I stand with you."
+
+        "Love. What is love? Once I have True Magic, would we be able to escape this world together?"
+    #[A/N: Tychonova goes here - ???]
+        "No, Astra! I hate you!"
+
+        Astra smirks at you. "And why is that?"
+
+        "I... I was in love with Tycho."
+
+        She laughs.
+
+*label falling
+And that is when the floor falls from underneath you.
+
+"Turns out you didn't have a place in this world after all," says Astra.
+
+*page_break Endless falling...
+*goto story_end
 
 *label peaceful_world
 *page_break The dorm room...
@@ -252,9 +518,46 @@ Are you going to continue this fic, or abandon it?
     *set new_followers 0
 *set followers + new_followers
 *script setMbmMode(true);
+
+*comment TODO: messages?
+*temp luna_message_seen false
+*temp claire_message_seen false
+*temp sofia_message_seen false
+*temp karla_message_seen false
+*temp lux_message_seen false
+*temp stella_message_seen false
+
+*temp ch4_claire_message false
+*temp ch4_luna_message false
+*temp ch4_sofia_message false
+*temp ch4_karla_message false
+*temp ch4_lux_message false
+*temp ch4_stella_message false
+
+*temp chat_count 0
+*if (current_chapter = 2)
+    *if (((claire_blue > (claire_green*2)) and (claire_blue > 20)) or claire_chat)
+        *set ch4_claire_message true
+        *set chat_count + 1
+        *set claire_mutuals true
+    *if (luna_blue > (luna_green*2)) and (luna_blue >= 30)
+        *set ch4_luna_message true
+        *set chat_count + 1
+    *if ((lux_blue > (lux_green*2)) and (lux_blue >= 20))
+        *set ch4_lux_message true
+        *set chat_count + 1
+        *comment karla isn't the type of person to send messages unprompted to people
+    *if ((karla_blue > (karla_green*2)) and (karla_blue >= 20))
+        *set karla_mutuals true
+*if (current_chapter >= 2)
+    *if ((sofia_blue > (sofia_green*2)) and (sofia_blue >= (20 + ((current_chapter - 2)*5))))
+        *set ch4_sofia_message true
+        *set chat_count + 1
+        *set sofia_mutuals true
+
 [b]IRL[/b]
 
-The story is over, for what it's worth.
+The story is over, for what it's worth. How do you feel about it?
 
 *choice
     #Well this sucked.
@@ -288,7 +591,132 @@ You have ${ch4_likes} likes and ${ch4_rbs} reblogs on the fic.
 *if new_followers > 0
     You have also gained ${new_followers} followers.
 
-Still no messages regarding the story, of course. You didn't expect any.
+*if chat_count > 0
+    Also, you have some messages!
+    *goto messages
+
+*label messages
+*choice
+    *if (ch4_luna_message and not(luna_message_seen)) #See Luna's message.
+        *goto luna_msg
+    *if (ch4_lux_message and not(lux_message_seen)) #See Lux's message.
+        *goto lux_msg
+    *if (ch4_claire_message and not(claire_message_seen)) #See Claire's message.
+        *goto claire_msg
+    *if (ch4_sofia_message and not(sofia_message_seen)) #See Sofia's message.
+        *goto sofia_msg
+    #Continue.
+        *if (chat_count > 0)
+            Are you sure? You still have unread messages.
+            *choice
+                #No, go back.
+                    *goto messages
+                #Yes, continue.
+                    *goto fic_end
+        *goto fic_end
+
+*label luna_msg
+*set luna_message_seen true
+*set chat_count - 1
+
+@lunan0va: this was an, um... interesting chapter?
+
+@lunan0va: i feel like the revelation that this is gonna be dark!astra was kinda sudden? like she wasn't like that at all in the previous chapters? it feels just kinda weird, idk.
+
+@lunan0va: but i still enjoyed the story! it has some cool concepts!
+
+*if fic_astrapella
+    @lunan0va: i do appreciate the ~subtle~ astrapella lol.
+
+
+*if protag_trans_girl
+    @lunan0va: also i still really appreciate that you're writing gali as a trans girl.
+
+*if in_luna_chat = false
+    @lunan0va: btw i might have asked already but would you like to join a groupchat for nebulaverse stuff that i'm a part of?
+
+    *choice
+        #Sure, join the groupchat.
+            *set luna_blue %+ 5
+            *set in_luna_chat true
+            @you: sure...
+
+            @lunan0va: great! here's the invite link: [link]
+        #No, not for now.
+            *set luna_green %+ 3
+            @you: sorry, not right now...
+
+            @lunan0va: okay, that's fine.
+
+    @lunan0va: anyway... sorry but i have to log off for now
+
+*else
+    @lunan0va: anyway... sorry but i have to log off for now
+
+*goto messages
+
+
+*label lux_msg
+
+*label claire_msg
+*set claire_message_seen true
+*set chat_count - 1
+
+@shadow-protectrix: Hey $!{handle}!
+
+@shadow-protectrix: I enjoyed your new chapter!
+
+@shadow-protectrix: This is a nebulaverse parody of The Secret History, right? I enjoyed that book a lot when I first read it, but it's been a while.
+
+@shadow-protectrix: Part of it also reminds me of Crime and Punishment by Dostoyevsky but idk if you've read that book.
+
+@shadow-protectrix: You've got some great ideas! Keep it up!
+
+*if in_claire_chat = false
+    @shadow-protectrix: Also, I'm running a group chat for nebulaverse fandom writers. Would you be interested in joining?
+    *choice
+        #Sure, join the groupchat.
+            *set claire_blue %+ 5
+            *set in_claire_chat true
+            @shadow-protectrix: Great! Here's the invite link: [link]
+        #No, not for now.
+            @shadow-protectrix: Okay, that's fine.
+
+    @shadow-protectrix: Anyway, signing off for now!
+    *goto messages
+
+*goto messages
+
+*label sofia_msg
+*set sofia_message_seen true
+*set chat_count - 1
+
+@nebulascribbler: Hmm... this was an interesting story.
+
+@nebulascribbler: This is obviously a parody of The Secret History by Donna Tartt. Have you read that book?
+
+*fake_choice
+    #Yes, I've read it.
+        @you: um, yeah, i've read it...
+
+        @nebulascribbler: Yes, that's what I thought. There's no shame in copying from superior works! Don't worry about it!
+    #No, I haven't read it.
+        @you: um, no, i haven't read it.
+
+        @nebulascribbler: There are a lot of coincidental similarities in that case! Although I suppose the idea might be more reminiscent of Crime and Punishment by Dostoyevsky with a nebulaverse twist.
+    #I've never heard of that book...
+        @you: um... i've never heard of that book.
+
+        @nebulascribbler: Are you serious? Have you ever heard of Dark Academia?
+
+        @you: um...
+
+        @nebulascribbler: Well, I'd strongly suggest that you read The Secret History.
+
+@nebulascribbler:
+
+*goto messages
+
 
 *label fic_end
 *page_break

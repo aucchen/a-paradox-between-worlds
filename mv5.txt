@@ -47,7 +47,7 @@ The wind around her swirled, picking up scattered pages. It was like a whirlwind
 
 *page_break Gali didn't know what to say.
 
-Gali didn't know what to say. Was he supposed to comfort the girl, to tell her that everything would be fine one day? That would be lying.
+Gali didn't know what to say. Was he supposed to comfort the girl, to tell her that everything would be fine one day? He did not enjoy lying.
 
 Then, suddenly, the door of the classroom opened again, and in strode Astra.
 
@@ -73,21 +73,6 @@ Capella was sobbing. The tension in her muscles dissipated, leaving her entire w
 
 *page_break
 *label online
-*comment not sure if i should do this (or if i even have time to do this)
-*comment [b]Universe[/b]
-*comment TODO: multiple potential segments
-*comment *if (luna_blue > claire_blue)
-*comment     *goto luna_fic
-*comment *label claire_fic
-*comment [b]Excerpt from "Are you the hero of this story?" by Claire @shadow-protectrix[/b]
-*comment TODO
-*comment *page_break
-*comment *goto online_1
-*comment *label luna_fic
-*comment [b]Excerpt from "Holding Hands Until the End of the World" by Luna @lunan0va[/b]
-*comment TODO
-*comment *page_break
-*comment *goto online_1
 
 *script setMbmMode(true);
 *label online_1
@@ -207,7 +192,7 @@ Which blogs would you like to read?
     *if ((claire_blocked = false) and ((claire_trust >= 1) and (claire_blue >= 30))) #Message Claire.
         *set has_chatted true
         *gotoref claire_message_ref
-    *if (read_count > 1) #Stop looking at blogs.
+    *if (read_count >= 1) #Stop looking at blogs.
         *goto montage1_end
 
 *label luna_1_1
@@ -899,7 +884,6 @@ There have been a lot of messages since you were last here.
 
 @icemoongirl: anyway, enough about me. how are you doing???
 
-*comment TODO: choices here... ask something?
 *choice
     #I'm doing fine (truth).
         *set luna_blue %+ 5
@@ -1221,8 +1205,18 @@ You close your browser. It's getting late. You have school tomorrow.
 *if not(has_chatted)
     *achieve alone
 
-*page_break Fin.
-*ending
+*if not(neutral_end)
+    *choice
+        #Epilogue: 6 months later?
+            *goto_scene epilogue
+        #End game.
+            *page_break Fin.
+            *ending
+*else
+    *page_break Fin.
+    *ending
+
+
 
 *label rx
 *comment reactions to you reblogging posts

@@ -15,8 +15,6 @@
 
 [b]Universe - Canon[/b]
 
-*comment TODO: change this scene into a different one...
-
 [b]Excerpt from [i]Chronicles of the Shadow Nebula, Book 2: Planetary Dreams[/i] by G. T. Macmillan[/b]
 
 Gali slipped on the goggles. Just as Astra had described, he saw his friends as silhouettes of different colors. Tycho was a deep navy blue. Bruno was lime green. Astra was violet. And Capella was gray with a purple tinge.
@@ -81,7 +79,6 @@ What if they saw through his hard exterior, and discovered the parts of him that
 *temp brun_1_3_notes 34
 *temp brun_1_4_notes 5381
 *temp brun_1_5_notes 3891
-
 *temp shad_1_1_notes 199
 *temp shad_1_2_notes 1781
 *temp shad_1_3_notes 4910
@@ -117,15 +114,27 @@ What if they saw through his hard exterior, and discovered the parts of him that
 *temp sofia_sent_message false
 
 *comment TODO: lux message?
+*comment TODO: if you reblogged anti-mcm posts, you get anon hate 
+*comment TODO: if you're friends with luna, you get anon hate
+*temp lux_sent_message false
 
 *temp annc_chat_ref "annc_chat"
 *temp writers_chat_ref "writers_chat"
 
+*comment anon message checks
+*if mv2_gtm_oppose > 1
+    *set mv3_pro_gtm_anon true
+    *set mv3_anon true
+*if ((luna_blue >= 35) and in_luna_chat)
+    *set mv3_anti_luna_anon true
+    *set mv3_anon true
+*if (mv2_gtm_oppose = 0)
+    *set mv3_no_gtm_anon true
+    *set mv3_anon true
+
 *gosub_scene calc_new_followers
 
 *gosub_scene check_blocked
-
-*comment TODO: you can get kicked out of the groupchat if your green gets too high.
 
 Vibes forecast for today: truly rancid, like the water after a sewage overflow. The rain is not helping. You hear lightning bolts and claps of thunder off in the distance, but they're coming closer. Or maybe they're already here.
 
@@ -154,6 +163,9 @@ Is there hope for the future? Is there hope for humanity in the age of the onlin
 
 *if (sofia_helped != 0) and (claire_trust = 0)
     You can message Claire about Sofia's plans, if you'd like.
+
+*if (mv3_anon and (not(mv3_anon_read)))
+    You have some anon asks!
 
 Which blogs would you like to read?
 
@@ -196,7 +208,9 @@ Which blogs would you like to read?
         *goto karla_message_1
     *if ((sofia_helped > 0)) #See the callout that Sofia talked about.
         *goto reblog_callout
-    *if (read_count > 1) #Stop looking at blogs.
+    *if (mv3_anon) #See the anonymous asks.
+        *goto anon_messages
+    *if (read_count >= 1) #Stop looking at blogs.
         *if (sofia_sent_message and (sofia_helped = 0)) or (karla_sent_message and (karla_investigation = 0))
             Are you sure? You still have unread messages.
             *choice
@@ -302,9 +316,9 @@ Anyway the messages are coming too fast. I'm disabling anon.
 
 Thanks. I'm never going to feel better but thanks anyway.
 
-@misgenderer asked: you'll never be a woman no matter how much you mutilate your body. when you die your bones will always reveal who you really were.
+@misgenderer asked: you'll never be a woman no matter how much you mutilate your body. when you die your bones will always reveal your true biological sex, which is male and will always be male.
 
-You don't even know who I am. Congrats on the highly apt username.
+You literally know nothing about me and also that's not even how anthropology works. Congrats on the highly apt username.
 
 @transsexualempire asked: #onlytwosexes #sexisreal #genderisamentalillness
 
@@ -560,6 +574,7 @@ ${brun_1_5_notes} notes
         *set brun_1_5_notes + 1
         *set discourse %+ 3
         *set lux_blue %+ 3
+        *set mv3_gtm_oppose + 1
         *goto brun_1_5
     #Prev post.
         *goto brun_1_4
@@ -600,6 +615,7 @@ ${shad_1_1_notes} notes
         *set luna_green %+ 4
         *set karla_green %+ 2
         *set discourse %+ 3
+        *set mv3_claire_support + 1
         *goto shad_1_1
     #Next post
         *goto shad_1_2
@@ -638,6 +654,7 @@ ${shad_1_2_notes} notes
         *set luna_green %+ 5
         *set karla_green %+ 4
         *set discourse %+ 3
+        *set mv3_claire_support + 1
         *goto shad_1_2
     #Next post.
         *goto shad_1_3
@@ -676,6 +693,7 @@ ${shad_1_3_notes} notes
         *set luna_green %+ 5
         *set karla_green %+ 4
         *set discourse %+ 3
+        *set mv3_claire_support + 1
         *goto shad_1_3
     #Next post.
         *goto shad_1_4
@@ -717,6 +735,8 @@ ${shad_1_4_notes} notes
         *set karla_green %+ 8
         *set stella_green %+ 2
         *set discourse %+ 3
+        *set mv3_claire_support + 1
+        *set mv3_gtm_support + 1
         *goto shad_1_4
     #Next post.
         *goto shad_1_5
@@ -758,6 +778,8 @@ ${shad_1_5_notes} notes
         *set luna_green %+ 20
         *set karla_green %+ 10
         *set discourse %+ 3
+        *set mv3_gtm_support + 1
+        *set mv3_claire_support + 1
         *goto shad_1_5
     #Prev post.
         *goto shad_1_4
@@ -813,7 +835,7 @@ I'm not sure if anyone still cares about this, given what's going on ~out there~
 
 [Link to archive - "The Milky Way in Your Heart" by @nebulascribbler, chapter 21/?. astrapella, slow burn, canon divergence.]
 
-Tags: #sofia speaks, #astrapella
+Tags: #sofia speaks, #astrapella, #astra van allen, #capella taikong, #nebulaverse, #my fanfic
 
 ${nebu_1_2_notes} notes
 
@@ -1014,6 +1036,7 @@ ${shad_1_5_notes} notes
         *set shad_1_5_notes + 1
         *set stella_blue %+ 3
         *set discourse %+ 3
+        *set mv3_claire_oppose + 1
         *goto apoc_1_1
     #Next post.
         *goto apoc_1_2
@@ -1045,6 +1068,7 @@ ${apoc_1_2_notes} notes
         *set apoc_1_2_notes + 1
         *set discourse %+ 3
         *set meta %+ 2
+        *set mv3_gtm_oppose + 1
         *goto apoc_1_2
     #Next post.
         *goto apoc_1_3
@@ -1088,6 +1112,7 @@ ${shad_1_4_notes} notes
         *set stella_blue %+ 3
         *set claire_green %+ 10
         *set discourse %+ 3
+        *set mv3_claire_oppose + 1
         *goto apoc_1_3
     #Next post.
         *goto apoc_1_4
@@ -1192,6 +1217,7 @@ ${trap_1_1_notes} Notes
             *set claire_green %+ 4
         *set trap_1_1_notes + 1
         *set discourse %+ 3
+        *set mv3_gtm_oppose + 1
         *goto trap_1_1
     #Next post.
         *goto trap_1_2
@@ -1234,6 +1260,7 @@ ${shad_1_2_notes} Notes
             *set claire_green %+ 4
         *set shad_1_2_notes + 1
         *set discourse %+ 3
+        *set mv3_gtm_oppose + 1
         *goto trap_1_2
     #Next post.
         *goto trap_1_3
@@ -1284,6 +1311,8 @@ ${shad_1_4_notes} notes
             *set claire_green %+ 10
         *set shad_1_4_notes + 1
         *set discourse %+ 3
+        *set mv3_claire_oppose + 1
+        *set mv3_gtm_oppose + 1
         *goto trap_1_3
     #Next post.
         *goto trap_1_4
@@ -1322,6 +1351,7 @@ ${trap_1_4_notes} notes
         *set karla_blue %+ 3
         *set trap_1_4_notes + 1
         *set discourse %+ 3
+        *set mv3_gtm_oppose + 1
         *goto trap_1_4
     #Next post.
         *goto trap_1_5
@@ -1346,9 +1376,9 @@ This is not an appropriate thing to say. No matter what you feel, it's horrible 
 
 [b]@macmillan-gt:[/b]
 
-Thank you, Claire, for calling out violent threats against women.
+Thank you, Claire, for calling out violent threats against women. Courage is in short supply these days.
 
-[b]@reaper-of-byblos:[/b] 
+[b]@redcapella:[/b] 
 
 Are you happy now @shadow-protectrix? Are you happy that you directed a transphobic hate mob against a girl who happened to make an off-the-cuff post in response to her own harassment? Are you proud of yourself?
 
@@ -1379,6 +1409,7 @@ ${shad_1_5_notes} notes
             *set claire_green %+ 10
         *set shad_1_5_notes + 1
         *set discourse %+ 3
+        *set mv3_claire_oppose + 1
         *goto trap_1_5
     #Prev post.
         *goto trap_1_4
@@ -1530,6 +1561,23 @@ ${shad_1_5_notes} notes
         @lunan0va: honestly i don't know what i want anymore.
 
         @lunan0va: part of me wants to be literally invisible right now and another part of me wants to be like a figurehead of trans activism or smth lol. the dichotomy...
+        *choice
+            #Go back
+                *goto montage_1
+    *if (mv3_anon_read and mv3_anti_luna_anon) #Ask about the anon messages.
+        *label annc_chat_anon
+        *set annc_chat_ref "annc_chat_anon"
+        @you: hey luna, i received an anon message about you...
+
+        @lunan0va: oh i bet. does it call me evil or whatever
+
+        @lunan0va: just in case, whatever they're saying is totally made up. they're literally making shit up about me and i see a bunch of people believing it.
+
+        @lunan0va: lol
+
+        @trappedinspace: I got some of those messages too. I just closed anon asks.
+
+        @apocalypse-hoarder: yeah i just deleted those messages.
         *choice
             #Go back
                 *goto montage_1
@@ -1898,7 +1946,7 @@ You've decided to tell Karla about Sofia's plan, because it might be useful for 
 @trappedinspace: LMAO
 
 *comment amogus
-@trappedinspace: Okay, that just raises my suspicions of @nebulascribbler, but I don't think it's proof of anything. She's always kinda seemed sus to me. idk.
+@trappedinspace: Okay, that just raises my suspicions of @nebulascribbler, but I don't think it's proof of anything. She's always kinda seemed suspicious to me. idk.
 
 @trappedinspace: Looking at their blogs, Stella's been reblogging quite a bit from Sofia, but that's not proof that @apocalypse-hoarder is a sock puppet.
 
@@ -1932,8 +1980,92 @@ This is a callout post for C/l/a/i/r/e @/s/h/a/d/o/w-p/r/o/t/e/c/t/r/i/x. As an 
         *set claire_green %+ 25
         *set sofia_trust 3
         *set sofia_helped 3
+        *set mv3_claire_oppose + 1
         *achieve callout
         *goto reblog_callout
+    #Go back.
+        *goto montage_1
+
+*label anon_messages
+*set mv3_anon_read true
+
+You've received some anon messages.
+
+*label anon_list
+*choice
+    *disable_reuse *if (mv3_anti_luna_anon) #Anonymous asked: why are you still friends with l/una @/l/unan0va?...
+        Anonymous asked: why r u still friends with l/una @/l/unan0va? they're an admitted abuser who has been harassing women on this site.
+        *choice
+            #Post the ask without comments.
+                You post the ask without any comments. Unfortunately, some will take this as an endorsement.
+
+                *gosub luna_dislike
+                *set discourse %+ 5
+                *set luna_green %+ 5
+                *goto anon_list
+            #Dunk on the anon.
+                You wish you could be more eloquent. Maybe your response seemed more like a childish insult. But whatever, it's done.
+
+                *gosub discourse
+                *set discourse %+ 6
+                *set luna_green %+ 2
+                *goto anon_list
+            #Criticize them in some sort of intellectual way.
+                *set discourse %+ 5
+                *set luna_green %+ 2
+                You try to say something smart-sounding in response to the comments. Who can say whether or not you've succeeded.
+
+                *gosub discourse
+                *goto anon_list
+            #Ignore the message.
+                *goto anon_list
+    *disable_reuse *if (mv3_pro_gtm_anon) #Anonymous asked: man i thought youd be better than this...
+        Anonymous asked: man i thought youd be better than this. why are you joining in the mob against gtm? nothing she said was transphobic in any way. some of yall are just paranoid.
+        *choice
+            #Post the ask without comments.
+                You post the ask without any comments.
+                *set discourse %+ 5
+                *goto anon_list
+            #Dunk on the anon.
+                You wish you could be more eloquent. Maybe your response seemed more like a childish insult. But whatever, it's done. Whether or not you've "succeeded", you've increased the quantity of discourse on this website.
+
+                *gosub discourse
+                *set discourse %+ 6
+                *goto anon_list
+            #Criticize them in some sort of intellectual way.
+                *set discourse %+ 5
+                You try to say something smart-sounding in response to the comments. Whether or not you've succeeded, you've increased the quantity of discourse on this website.
+
+                *gosub discourse
+                *goto anon_list
+            #Ignore the message.
+                *goto anon_list
+    *disable_reuse *if (mv3_no_gtm_anon) #Anonymous asked: just wondering, what do you think of the new gtm post...
+        Anonymous asked: just wondering, what do you think of the new gtm post? she made this one blog post and a lot of people have been blowing up over it. you haven't posted about it so i was wondering what you thought.
+        *choice
+            #Post the ask without comments.
+                You post the ask without any comments.
+                *set discourse %+ 2
+                *goto anon_list
+            #Make a dismissive response.
+                A throwaway comment deserves a throwaway response.
+                *set discourse %+ 3
+                *goto anon_list
+            #Ignore the message.
+                *goto anon_list
+    *disable_reuse *if (mv3_no_post_anon) #Anonymous asked: how come you haven't been posting...
+        Anonymous asked: how come you haven't been posting a lot recently? you used to post more often than this...
+        *choice
+            #Post the ask without comments.
+                You post the ask without any comments.
+                *set discourse %+ 2
+                *goto anon_list
+            #Make a dismissive response.
+                A throwaway comment deserves a throwaway response.
+                *set discourse %+ 3
+                *goto anon_list
+            #Ignore the message.
+                *goto anon_list
     #Go back.
         *goto montage_1
 
@@ -1948,7 +2080,14 @@ Thus, you go to sleep for the night.
 *page_break
 
 *if writing_fic
-    *gosub_scene fic_wind
+    It is time for the next chapter of your fanfic. What will this chapter be about?
+    *choice
+        *selectable_if (not(ice_seen)) #Ice - Canon divergence AU
+            *gosub_scene fic_ice
+        *selectable_if (not(wind_seen)) #Wind - Post-apocalyptic AU
+            *gosub_scene fic_wind
+        *selectable_if (not(metal_seen)) #Metal - Dark academia AU
+            *gosub_scene fic_metal
 *finish
 
 *label rx

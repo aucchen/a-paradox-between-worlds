@@ -71,9 +71,16 @@ Another day, another night.
     Once more you find yourself under the covers, late at night, with only your cell phone for company.
 A brief time in which you are allowed to exist for yourself.
 
+*comment anon checks
+*temp mv2_1_anon_read false
+*if ((rb_count - old_rb_count) <= 1)
+    *set mv2_1_anon true
+    *set mv2_1_no_post_anon true
+
 *gosub_scene calc_new_followers
 
 *gosub_scene check_blocked
+
 
 *temp read_count 0
 *temp luna_unread 1
@@ -164,7 +171,9 @@ Which blogs would you like to read?
         *gotoref writers_chat_ref
     *if ((in_luna_chat)) #See Luna's groupchat.
         *gotoref annc_chat_ref
-    *if (read_count > 1) #Stop looking at blogs.
+    *if (mv2_1_anon) #See the anonymous asks.
+        *goto anon_messages_1
+    *if (read_count >= 1) #Stop looking at blogs.
         *goto montage1_end
 
 *label luna_1_1
@@ -1031,7 +1040,7 @@ FINALLY my new Astrapella oneshot is done and published! It's another standalone
 
 I'm really sorry to say that this is another angsty one, taking place after the Battle of Ephesus...
 
-Tags: #nebulaverse, #fanfic, #astrapella, #astra van allen, #capella taikong, #my fanfic
+Tags: #sofia speaks, #astrapella, #astra van allen, #capella taikong, #nebulaverse, #my fanfic
 
 ${nebu_1_5_notes} notes
 
@@ -1552,7 +1561,7 @@ Right, you've been invited to Claire's Nebulaverse writers groupchat. It doesn't
 @shadow-protectrix: We have cookies in the pantry and milks in the fridge. Feel free to take anything you want :)
 
 *choice
-    #Um, thanks?
+    #"Um, thanks?"
         *set claire_blue %+ 3
         *set sofia_blue %+ 4
         *set lux_blue %+ 3
@@ -1595,7 +1604,7 @@ This is the chat group that Luna invited you into.
 @lunan0va: hey @${username} your fic is about the multiverse right?
 
 *choice
-    *hide_reuse #yeah...
+    *hide_reuse #"yeah..."
         *set luna_blue %+ 3
         *goto annc_chat_1_2
     #Look at something else for now.
@@ -1608,7 +1617,7 @@ This is the chat group that Luna invited you into.
 
 @lunan0va: that's so cool! i wish i could be smart enough to understand that stuff...
 
-@capellasgf: oh hey @${username}! what's this about your fic?
+@capellasgf: oh hey @${username}! what's your fic about?
 
 *choice
     #It's a metafictional narrative exploring how stories are constructed.
@@ -1665,14 +1674,14 @@ This is the chat group that Luna invited you into.
 @lunan0va: wow why did i say that. that was unnecessarily dark lmao
 
 *choice
-    #That's okay.
+    #"That's okay."
         *set luna_blue %+ 4
         *label annc_thats_okay
         *set annc_chat_ref "annc_thats_okay"
         @you: that's okay...
 
         *goto luna_thanks
-    #I don't mind hearing about your life.
+    #"I don't mind hearing about your life."
         *set luna_blue %+ 4
         *label annc_dont_mind
         *set annc_chat_ref "annc_dont_mind"
@@ -1683,7 +1692,7 @@ This is the chat group that Luna invited you into.
         @lunan0va: thanks...
 
         @apocalypse-hoarder: I don't mind hearing your stories either!
-    #Yeah that is pretty dark.
+    #"Yeah that is pretty dark."
         *set luna_blue %+ 3
         *label annc_dark
         *set annc_chat_ref "annc_dark"
@@ -1718,6 +1727,29 @@ The chat seems to have died down.
     #Look at something else.
         *goto montage_1
 
+*label anon_messages_1
+*set mv2_1_anon_read true
+
+You've received some anon messages.
+
+*label anon_list_1
+*choice
+    *disable_reuse *if (mv2_1_no_post_anon) #Anonymous asked: how come you haven't been posting...
+        Anonymous asked: how come you haven't been posting a lot recently? you used to post more often than this...
+        *choice
+            #Post the ask without comments.
+                You post the ask without any comments.
+                *set discourse %+ 2
+                *goto anon_list_1
+            #Make a dismissive response.
+                A throwaway comment deserves a throwaway response.
+                *set discourse %+ 3
+                *goto anon_list_1
+            #Ignore the message.
+                *goto anon_list_1
+    #Go back.
+        *goto montage_1
+
 *label montage1_end
 
 You're done reading blogs for tonight. It's time to fall back behind the Veil once more.
@@ -1725,7 +1757,14 @@ You're done reading blogs for tonight. It's time to fall back behind the Veil on
 *page_break Another day, another night...
 
 *if writing_fic
-    *gosub_scene fic_ice
+    It is time for the next chapter of your fanfic. What will this chapter be about?
+    *choice
+        *selectable_if (not(ice_seen)) #Ice - Canon divergence AU
+            *gosub_scene fic_ice
+        *selectable_if (not(wind_seen)) #Wind - Post-apocalyptic AU
+            *gosub_scene fic_wind
+        *selectable_if (not(metal_seen)) #Metal - Dark academia AU
+            *gosub_scene fic_metal
 
 
 *label mv2_pt2
@@ -1807,6 +1846,13 @@ When you fall, will you learn how to pick yourself up again? Or will you keep on
 *temp annc_chat_ref "annc_chat_2"
 *temp writers_chat_ref "writers_chat_2"
 
+*temp mv2_2_anon_read false
+*if ((rb_count - old_rb_count) <= 1)
+    *set mv2_2_anon true
+    *set mv2_2_no_post_anon true
+
+
+
 *gosub_scene calc_new_followers
 
 *gosub_scene check_blocked
@@ -1849,7 +1895,9 @@ Which blogs would you like to read?
         *gotoref annc_chat_ref
     *if ((claire_blocked = false) and (in_claire_chat)) #See Claire's groupchat.
         *gotoref writers_chat_ref
-    *if (read_count > 1) #Stop looking at blogs.
+    *if (mv2_2_anon) #See the anonymous asks.
+        *goto anon_messages_2
+    *if (read_count >= 1) #Stop looking at blogs.
         *goto montage2_end
 
 *label luna_2_1
@@ -2620,6 +2668,7 @@ ${nebu_2_2_notes} notes
         *set nebu_2_2_notes + 1
         *set shitposting %+ 3
         *set discourse %+ 2
+        *set mv2_gtm_oppose + 1
         *goto nebu_2_2
     #Next post.
         *goto nebu_2_3
@@ -2657,6 +2706,7 @@ ${nebu_2_3_notes} notes
         *set nebu_2_3_notes + 1
         *set discourse %+ 3
         *set meta %+ 2
+        *set mv2_gtm_oppose + 1
         *goto nebu_2_3
     #Next post.
         *goto nebu_2_4
@@ -2858,6 +2908,7 @@ ${apoc_2_3_notes} notes
         *set stella_blue %+ 3
         *set apoc_2_3_notes + 1
         *set discourse %+ 3
+        *set mv2_gtm_oppose + 1
         *goto apoc_2_3
     #Next post.
         *goto apoc_2_4
@@ -2969,6 +3020,7 @@ ${trap_2_1_notes} Notes
         *set karla_interact + 1
         *set trap_2_1_notes + 1
         *set discourse %+ 3
+        *set mv2_gtm_oppose + 1
         *goto trap_2_1
     #Next post.
         *goto trap_2_2
@@ -2998,6 +3050,7 @@ ${trap_2_2_notes} Notes
         *set karla_blue %+ 2
         *set trap_2_2_notes + 1
         *set discourse %+ 3
+        *set mv2_gtm_oppose + 1
         *goto trap_2_2
     #Next post.
         *goto trap_2_3
@@ -3258,6 +3311,29 @@ Everyone here is offline right now.
     #Look at something else.
         *goto montage_2
 
+*label anon_messages_2
+*set mv2_2_anon_read true
+
+You've received some anon messages.
+
+*label anon_list_2
+*choice
+    *disable_reuse *if (mv2_2_no_post_anon) #Anonymous asked: how come you haven't been posting...
+        Anonymous asked: how come you haven't been posting a lot recently? you used to post more often than this...
+        *choice
+            #Post the ask without comments.
+                You post the ask without any comments.
+                *set discourse %+ 2
+                *goto anon_list_2
+            #Make a dismissive response.
+                A throwaway comment deserves a throwaway response.
+                *set discourse %+ 3
+                *goto anon_list_2
+            #Ignore the message.
+                Fine. This message doesn't deserve a response.
+                *goto anon_list_2
+    #Go back.
+        *goto montage_2
 
 
 *label montage2_end

@@ -1,8 +1,9 @@
 *comment check if any of the characters should block you...
 
 *if (luna_green > (luna_blue + 10))
-    Luna has blocked you.
+    Luna has blocked you, and you have been removed from the groupchat.
     *set luna_blocked true
+    *set in_luna_chat false
     *achieve blood
 *if claire_green > claire_blue
     *if claire_green >= 20
